@@ -1,0 +1,232 @@
+[
+    {
+        "foldername": "NationalSymbol(country, animal, relation, Latin American, English)",
+        "relation": "NationalSymbol",
+        "visibility": "invisible",
+        "domain": [
+            "country",
+            "animal"
+        ],
+        "type": "relation",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A map of Peru.jpg",
+                "description": "A map of Peru"
+            },
+            {
+                "img_id": "2",
+                "filename": "An Andean condor soaring in the sky.jpg",
+                "description": "An Andean condor soaring in the sky"
+            },
+            {
+                "img_id": "3",
+                "filename": "A silhouette of the Great Wall of China.jpg",
+                "description": "A silhouette of the Great Wall of China"
+            },
+            {
+                "img_id": "4",
+                "filename": "A giant panda resting on a tree.jpg",
+                "description": "A giant panda resting on a tree"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Andean condor is a national symbol of Peru, representing freedom and power.",
+                "path": "NationalSymbol(AndeanCondor, Peru)\nThus, AndeanCondor AndeanCondor → Peru"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "The giant panda is a national symbol of China, embodying peace and conservation.",
+                "path": "NationalSymbol(GiantPanda, China)\nThus, GiantPanda → China"
+            }
+        ]
+    },
+    {
+        "foldername": "CulturalSymbol(country, animal, relation, other, English)",
+        "relation": "CulturalSymbol",
+        "visibility": "invisible",
+        "domain": [
+            "country",
+            "animal"
+        ],
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The outline of the country of Kenya.jpg",
+                "description": "The outline of the country of Kenya"
+            },
+            {
+                "img_id": "2",
+                "filename": "A lion in a safari setting.jpg",
+                "description": "A lion in a safari setting"
+            },
+            {
+                "img_id": "3",
+                "filename": "The flag of Italy.jpg",
+                "description": "The flag of Italy"
+            },
+            {
+                "img_id": "4",
+                "filename": "A chef with a plate of pasta.jpg",
+                "description": "A chef with a plate of pasta"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The lion is a national symbol of Kenya, representing strength and bravery",
+                "path": "CulturalSymbol(Kenya, Lion)\nThus, Kenya → Lion"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "pasta is a significant cultural food item associated with Italy, often symbolizing Italian cuisine and heritage",
+                "path": "CulturalSymbol(Italy, Pasta)\nThus, Italy → Pasta"
+            }
+        ]
+    },
+    {
+        "foldername": "Geographical FeaturesIcons(country, animal, relation, other, English)",
+        "relation": "Geographical Features/Icons",
+        "visibility": "invisible",
+        "domain": [
+            "country",
+            "animal"
+        ],
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A chicken shaped like the outline of the country of China.jpg",
+                "description": "A chicken shaped like the outline of the country of China"
+            },
+            {
+                "img_id": "2",
+                "filename": " A photo of the Yellow River (Huang He) with its distinctive yellowish color.jpg",
+                "description": "A photo of the Yellow River (Huang He) with its distinctive yellowish color"
+            },
+            {
+                "img_id": "3",
+                "filename": "A guitar shaped like the outline of the United States.jpg",
+                "description": "A guitar shaped like the outline of the United States"
+            },
+            {
+                "img_id": "4",
+                "filename": "A photo of the Mississippi River.jpg",
+                "description": "A photo of the Mississippi River"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The chicken shaped like the map of China is a playful representation of the country, while the Yellow River is one of China's major geographical features. ",
+                "path": "GeographicalIcon(China, YellowRiver)\nThus, China → YellowRiver"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the guitar shaped like the United States represents American culture, while the Mississippi River is a significant geographical feature of the U.S",
+                "path": "CulturalIcon(USA, MississippiRiver)\nThus, USA → MississippiRiver"
+            }
+        ]
+    },
+    {
+        "foldername": "Cultural Significance(city, animal, relation, East Asia, English)",
+        "relation": "Cultural Significance",
+        "visibility": "invisible",
+        "domain": [
+            "city",
+            "animal"
+        ],
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A plate of Beijing roast duck.jpg",
+                "description": "A plate of Beijing roast duck"
+            },
+            {
+                "img_id": "2",
+                "filename": " An aerial view of Tiananmen Square in Beijing.jpg",
+                "description": " An aerial view of Tiananmen Square in Beijing"
+            },
+            {
+                "img_id": "3",
+                "filename": "A bowl of Peking noodles.jpg",
+                "description": "A bowl of Peking noodles"
+            },
+            {
+                "img_id": "4",
+                "filename": "A picture of the Great Wall of China.jpg",
+                "description": "A picture of the Great Wall of China"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Beijing roast duck is a famous dish that represents the culinary culture of Beijing. Tiananmen Square is a significant historical and cultural landmark in the city.",
+                "path": "CulturalElement(BeijingRoastDuck, TiananmenSquare)\nThus, BeijingRoastDuck → TiananmenSquare"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Peking noodles are a well-known dish that reflects the local cuisine, while the Great Wall of China is a prominent cultural heritage site in Beijing.",
+                "path": "CulturalElement(PekingNoodles, GreatWallOfChina)\nThus, PekingNoodles → GreatWallOfChina"
+            }
+        ]
+    },
+    {
+        "foldername": "Symbolic Representation(city, animal, relation, USAEnglish, English)",
+        "relation": "Symbolic Representation",
+        "visibility": "invisible",
+        "domain": [
+            "city",
+            "animal"
+        ],
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A London bald eagle.jpg",
+                "description": "A London bald eagle"
+            },
+            {
+                "img_id": "2",
+                "filename": "The Wimbledon tennis court.jpg",
+                "description": "The Wimbledon tennis court "
+            },
+            {
+                "img_id": "3",
+                "filename": "A New York City pigeon.jpg",
+                "description": "A New York City pigeon"
+            },
+            {
+                "img_id": "4",
+                "filename": "The US Open tennis court.jpg",
+                "description": "The US Open tennis court"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The London bald eagle is often seen as a symbol of strength and freedom, while the Wimbledon tennis court is synonymous with the prestigious tennis tournament held annually in London.",
+                "path": "SymbolicRepresentation(LondonBaldEagle, WimbledonCourt)\nThus, LondonBaldEagle → WimbledonCourt"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the New York City pigeon represents resilience and adaptability in urban environments, while the US Open tennis court stands as a symbol of one of the major tennis events in the United States",
+                "path": "SymbolicRepresentation(NewYorkPigeon, USOpenCourt)\nThus, NewYorkPigeon → USOpenCourt"
+            }
+        ]
+    },
+]
