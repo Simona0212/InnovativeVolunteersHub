@@ -1,0 +1,746 @@
+[
+    {
+        "foldername": "Symbolism(Cowboy Hat, Skyscraper, relation, NA, English)",
+        "relation": "Symbolism",
+        "domain": [
+            "Cowboy Hat",
+            "Skyscraper"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A cowboy hat.jpg",
+                "description": "A skyscraper"
+            },
+            {
+                "img_id": "2",
+                "filename": "A skyscraper.jpg",
+                "description": "A skyscraper"
+            },
+            {
+                "img_id": "3",
+                "filename": "A soccer ball.jpg",
+                "description": "A soccer ball"
+            },
+            {
+                "img_id": "4",
+                "filename": "A football stadium.jpg",
+                "description": "A football stadium"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The cowboy hat symbolizes the Western culture and lifestyle",
+                "path": "CulturalSymbol(CowboyHat, WesternCulture)\nThus, CowboyHat → WesternCultureSymbol"
+            },
+            {
+                "pair_id": "2",
+                "explanation": " the skyscraper represents urban development and modernity",
+                "path": "CulturalSymbol(SoccerBall, GlobalSport)\nThus, SoccerBall → GlobalSportSymbol"
+            }
+        ]
+    },
+    {
+        "foldername": "Architectural Functions(Barn, Coffee Shop, relation, NA, English)",
+        "relation": "Architectural Functions",
+        "domain": [
+            "Barn",
+            "Coffee Shop"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A barn.jpg",
+                "description": "A barn"
+            },
+            {
+                "img_id": "2",
+                "filename": "A coffee shop.jpg",
+                "description": "A coffee shop"
+            },
+            {
+                "img_id": "3",
+                "filename": "A factory.jpg",
+                "description": "A factory"
+            },
+            {
+                "img_id": "4",
+                "filename": "A bakery.jpg",
+                "description": "A bakery"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A barn is primarily used for agricultural purposes",
+                "path": "CulturalSymbol(CowboyHat, WesternCulture)\nThus, CowboyHat → WesternCultureSymbol"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a coffee shop serves as a social space for people to enjoy beverages and interact",
+                "path": "CulturalSymbol(SoccerBall, GlobalSport)\nThus, SoccerBall → GlobalSportSymbol"
+            }
+        ]
+    },
+    {
+        "foldername": "Obstruction to Movement(Cattle, Traffic Jam, relation, USAEnglish, English)",
+        "relation": "Obstruction to Movement",
+        "domain": [
+            "Cattle",
+            "Traffic Jam"
+        ],
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A herd of cattle in a field.jpg",
+                "description": "A herd of cattle in a field"
+            },
+            {
+                "img_id": "2",
+                "filename": "A traffic jam on a highway.jpg",
+                "description": "A traffic jam on a highway"
+            },
+            {
+                "img_id": "3",
+                "filename": "A flock of sheep crossing a road.jpg",
+                "description": "A flock of sheep crossing a road"
+            },
+            {
+                "img_id": "4",
+                "filename": "A congested city intersection.jpg",
+                "description": "A congested city intersection"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A herd of cattle can obstruct traffic when they wander onto roads, causing delays and disruptions.",
+                "path": "MovementObstruction(CattleHerd, TrafficJam)\nThus, CattleHerd → TrafficJam"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A traffic jam represents a significant obstruction to vehicular movement on highways.",
+                "path": "MovementObstruction(SheepFlock, CongestedIntersection)\nThus, SheepFlock → CongestedIntersection"
+            }
+        ]
+    },
+    {
+        "foldername": "Routes for Transportation(Country Road, Subway Map, relation, USAEnglish, English)",
+        "relation": "Routes for Transportation",
+        "domain": [
+            "Country Road",
+            "Subway Map"
+        ],
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A scenic country road.jpg",
+                "description": "A scenic country road"
+            },
+            {
+                "img_id": "2",
+                "filename": "A subway map.jpg",
+                "description": "A subway map"
+            },
+            {
+                "img_id": "3",
+                "filename": "A rural bus stop.jpg",
+                "description": "A rural bus stop"
+            },
+            {
+                "img_id": "4",
+                "filename": "An airport terminal layout.jpg",
+                "description": "An airport terminal layout"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A country road represents a route used for local transportation, often connecting rural areas to larger towns or cities.",
+                "path": "TransportationRoute(CountryRoad, SubwayMap)\nThus, CountryRoad → SubwayMap"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A rural bus stop indicates a designated route for bus transport in less populated areas.",
+                "path": "TransportationRoute(RuralBusStop, AirportTerminalLayout)\nThus, RuralBusStop → AirportTerminalLayout"
+            }
+        ]
+    },
+    {
+        "foldername": "Types of Vendors and Products(Farmers' Market, City Market, relation, NA, English)",
+        "relation": "Types of Vendors and Products",
+        "domain": [
+            "Farmers' Market",
+            "City Market"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A vibrant farmers' market with fresh produce.jpg",
+                "description": "A vibrant farmers' market with fresh produce"
+            },
+            {
+                "img_id": "2",
+                "filename": "A bustling city market with various vendors.jpg",
+                "description": "A bustling city market with various vendors"
+            },
+            {
+                "img_id": "3",
+                "filename": "A local bakery stall at a farmers' market.jpg",
+                "description": "A local bakery stall at a farmers' market"
+            },
+            {
+                "img_id": "4",
+                "filename": "A gourmet food truck at a city market.jpg",
+                "description": "A gourmet food truck at a city market"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A farmers' market typically features local farmers selling fresh produce and homemade goods directly to consumers, emphasizing organic and locally sourced products.",
+                "path": "VendorType(FarmersMarket, CityMarket)\nThus, FarmersMarket → CityMarket"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A local bakery stall represents a vendor selling baked goods in a farmers' market, while a gourmet food truck symbolizes the variety of food options available in a city market.",
+                "path": "VendorType(BakeryStall, GourmetFoodTruck)\nThus, BakeryStall → GourmetFoodTruck"
+            }
+        ]
+    },
+    {
+        "foldername": "Designated Spaces for Relaxation and Recreation(Green Pasture, Public Park, relation, USAEnglish, English)",
+        "relation": "Designated Spaces for Relaxation and Recreation",
+        "domain": [
+            "Green Pasture",
+            "Public Park"
+        ],
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A lush green pasture with grazing livestock.jpg",
+                "description": "A lush green pasture with grazing livestock"
+            },
+            {
+                "img_id": "2",
+                "filename": "A public park filled with trees and recreational areas.jpg",
+                "description": "A public park filled with trees and recreational areas"
+            },
+            {
+                "img_id": "3",
+                "filename": "A picnic area in a pasture.jpg",
+                "description": "A picnic area in a pasture"
+            },
+            {
+                "img_id": "4",
+                "filename": "A playground in a city park.jpg",
+                "description": "A playground in a city park"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Green pastures serve as designated spaces for grazing livestock and can also be utilized for recreational activities like picnicking, providing a natural setting for relaxation.",
+                "path": "DesignatedSpace(GreenPastures, Parks)\nThus, GreenPastures → Parks"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A picnic area in a pasture highlights the recreational use of agricultural land, while a playground in a city park emphasizes the structured recreation available in urban green spaces.",
+                "path": "DesignatedSpace(PicnicArea, Playground)\nThus, PicnicArea → Playground"
+            }
+        ]
+    },
+    {
+        "foldername": "Footwear for Specific Environments(Hiking Boots, High Heels, relation, NA, English)",
+        "relation": "Footwear for Specific Environments",
+        "domain": [
+            "Hiking Boots",
+            "High Heels"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A pair of rugged hiking boots.jpg",
+                "description": "A pair of rugged hiking boots"
+            },
+            {
+                "img_id": "2",
+                "filename": "A pair of elegant high heels.jpg",
+                "description": "A pair of elegant high heels"
+            },
+            {
+                "img_id": "3",
+                "filename": "A mountain trail.jpg",
+                "description": "A mountain trail"
+            },
+            {
+                "img_id": "4",
+                "filename": "A red carpet event.jpg",
+                "description": "A red carpet event"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Hiking boots are specifically designed for outdoor activities, providing support, traction, and durability on rugged terrains.",
+                "path": "FootwearType(HikingBoots, HighHeels)\nThus, HikingBoots → HighHeels"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A mountain trail represents the challenging environment where hiking boots are essential, while a red carpet event symbolizes a glamorous setting where high heels are commonly worn.",
+                "path": "FootwearEnvironment(MountainTrail, RedCarpetEvent)\nThus, MountainTrail → RedCarpetEvent"
+            }
+        ]
+    },
+    {
+        "foldername": "Structures Serving Functional Purposes(Windmill, Streetlamp, relation, NA, English)",
+        "relation": "Structures Serving Functional Purposes",
+        "domain": [
+            "Windmill",
+            "Streetlamp"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A traditional windmill.jpg",
+                "description": "A traditional windmill"
+            },
+            {
+                "img_id": "2",
+                "filename": "A classic streetlamp.jpg",
+                "description": "A classic streetlamp"
+            },
+            {
+                "img_id": "3",
+                "filename": "A solar panel array.jpg",
+                "description": "A solar panel array"
+            },
+            {
+                "img_id": "4",
+                "filename": "An LED streetlight.jpg",
+                "description": "An LED streetlight"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A windmill is a structure designed to harness wind energy for various uses, such as grinding grain or generating electricity.",
+                "path": "FunctionalStructure(Windmill, Streetlamp)\nThus, Windmill → Streetlamp"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A solar panel array serves a similar functional purpose by harnessing solar energy for electricity generation, while an LED streetlight exemplifies modern advancements in street lighting technology.",
+                "path": "FunctionalStructure(SolarPanelArray, LEDStreetlight)\nThus, SolarPanelArray → LEDStreetlight"
+            }
+        ]
+    },
+    {
+        "foldername": "Cultural Celebrations with Live Entertainment(Rodeo, Music Festival, relation, NA, English)",
+        "relation": "Cultural Celebrations with Live Entertainment",
+        "domain": [
+            "Rodeo",
+            "Music Festival"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A lively rodeo event with bull riding and spectators.jpg",
+                "description": "A lively rodeo event with bull riding and spectators"
+            },
+            {
+                "img_id": "2",
+                "filename": "A vibrant music festival with crowds enjoying live performances.jpg",
+                "description": "A vibrant music festival with crowds enjoying live performances"
+            },
+            {
+                "img_id": "3",
+                "filename": "A cowboy riding a horse at a rodeo.jpg",
+                "description": "A cowboy riding a horse at a rodeo"
+            },
+            {
+                "img_id": "4",
+                "filename": "A musician performing on stage at a music festival.jpg",
+                "description": "A musician performing on stage at a music festival"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A rodeo is a cultural event that showcases traditional cowboy skills and livestock handling, often featuring live entertainment such as bull riding and roping competitions.",
+                "path": "CulturalEvent(Rodeo, MusicFestival)\nThus, Rodeo → MusicFestival"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A cowboy riding a horse represents the live entertainment aspect of a rodeo, while a musician performing on stage symbolizes the core of a music festival.",
+                "path": "LiveEntertainment(CowboyRiding, MusicianPerforming)\nThus, CowboyRiding → MusicianPerforming"
+            }
+        ]
+    },
+    {
+        "foldername": "Forms of Public Performance(Folk Music, Street Performance, relation, NA, English)",
+        "relation": "Forms of Public Performance",
+        "domain": [
+            "Folk Music",
+            "Street Performance"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Folk musician playing guitar in cozy setting.jpg",
+                "description": "Folk musician playing guitar in cozy setting."
+            },
+            {
+                "img_id": "2",
+                "filename": "Street performer juggling for a crowd.jpg",
+                "description": "Street performer juggling for a crowd."
+            },
+            {
+                "img_id": "3",
+                "filename": "Group of dancers performing traditional folk dances.jpg",
+                "description": "Group of dancers performing traditional folk dances."
+            },
+            {
+                "img_id": "4",
+                "filename": "Busker playing violin on busy sidewalk.jpg",
+                "description": "Busker playing violin on busy sidewalk."
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Folk music represents an artistic expression often shared in community settings, where musicians perform traditional songs that reflect cultural heritage.",
+                "path": "PublicPerformance(FolkMusic, StreetPerformance)\nThus, FolkMusic → StreetPerformance"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A group of dancers performing traditional folk dances showcases another form of public performance rooted in cultural expression, while a busker playing the violin represents the spontaneous and accessible nature of street art.",
+                "path": "PublicPerformance(FolkDancers, BuskerPlayingViolin)\nThus, FolkDancers → BuskerPlayingViolin"
+            }
+        ]
+    },
+    {
+        "foldername": "Contrasting Land Use and Development Patterns(Rural Road, City Grid, relation, NA, English)",
+        "relation": "Contrasting Land Use and Development Patterns",
+        "domain": [
+            "Rural Road",
+            "City Grid"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A winding rural road surrounded by fields and trees.jpg",
+                "description": "A winding rural road surrounded by fields and trees."
+            },
+            {
+                "img_id": "2",
+                "filename": "A detailed city grid map with streets and blocks.jpg",
+                "description": "A detailed city grid map with streets and blocks."
+            },
+            {
+                "img_id": "3",
+                "filename": "A rustic farmhouse.jpg",
+                "description": "A rustic farmhouse."
+            },
+            {
+                "img_id": "4",
+                "filename": "A modern apartment complex.jpg",
+                "description": "A modern apartment complex."
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The rural road represents the organic and less structured development typical of countryside areas, where roads follow the natural landscape and are often less maintained.",
+                "path": "ContrastingPatterns(RuralRoad, CityGrid)\nThus, RuralRoad → CityGrid"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Similarly, the rustic farmhouse symbolizes traditional rural living, emphasizing simplicity and connection to the land, while the modern apartment complex represents high-density urban living.",
+                "path": "ContrastingPatterns(RusticFarmhouse, ModernApartment)\nThus, RusticFarmhouse → ModernApartment"
+            }
+        ],
+        "complete_reasoning": [
+            "ContrastingPatterns(RuralRoad, CityGrid) → RuralRoad → CityGrid",
+            "ContrastingPatterns(RusticFarmhouse, ModernApartment) → RusticFarmhouse → ModernApartment"
+        ]
+    },
+    {
+        "foldername": "Contrasting Social Gatherings and Atmospheres(Campfire, Nightclub, relation, NA, English)",
+        "relation": "Contrasting Social Gatherings and Atmospheres",
+        "domain": [
+            "Campfire",
+            "Nightclub"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A cozy campfire surrounded by logs and nature.jpg",
+                "description": "A cozy campfire surrounded by logs and nature."
+            },
+            {
+                "img_id": "2",
+                "filename": "A vibrant nightclub filled with dancing people and colorful lights.jpg",
+                "description": "A vibrant nightclub filled with dancing people and colorful lights."
+            },
+            {
+                "img_id": "3",
+                "filename": "A traditional acoustic guitar.jpg",
+                "description": "A traditional acoustic guitar."
+            },
+            {
+                "img_id": "4",
+                "filename": "An electric DJ setup.jpg",
+                "description": "An electric DJ setup."
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The campfire represents a relaxed, intimate social gathering often associated with nature, storytelling, and acoustic music.",
+                "path": "ContrastingSocialGatherings(Campfire, Nightclub)\nThus, Campfire → Nightclub"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Similarly, the traditional acoustic guitar is typically used in the calm and intimate settings of a campfire, while the electric DJ setup represents the dynamic and upbeat music typical in nightclubs.",
+                "path": "ContrastingMusicalExpression(AcousticGuitar, DJSetup)\nThus, AcousticGuitar → DJSetup"
+            }
+        ],
+        "complete_reasoning": [
+            "ContrastingSocialGatherings(Campfire, Nightclub) → Campfire → Nightclub",
+            "ContrastingMusicalExpression(AcousticGuitar, DJSetup) → AcousticGuitar → DJSetup"
+        ]
+    },
+    {
+        "foldername": "Contrasting Representations of Production and Commercialization(FieldsOfGrain, BillboardAds, relation, NA, English)",
+        "relation": "Contrasting Representations of Production and Commercialization",
+        "domain": [
+            "FieldsOfGrain",
+            "BillboardAds"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A picturesque field of golden grain swaying in the breeze.jpg",
+                "description": "A picturesque field of golden grain swaying in the breeze."
+            },
+            {
+                "img_id": "2",
+                "filename": "A colorful billboard ad towering above a busy city street.jpg",
+                "description": "A colorful billboard ad towering above a busy city street."
+            },
+            {
+                "img_id": "3",
+                "filename": "A farmer harvesting grain with a tractor.jpg",
+                "description": "A farmer harvesting grain with a tractor."
+            },
+            {
+                "img_id": "4",
+                "filename": "A marketing team brainstorming in an office.jpg",
+                "description": "A marketing team brainstorming in an office."
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The field of grain represents agricultural production, emphasizing the natural process of growing and harvesting crops for sustenance.",
+                "path": "ContrastingProductionAndCommercialization(FieldsOfGrain, BillboardAds)\nThus, FieldsOfGrain → BillboardAds"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Similarly, the farmer harvesting grain represents the labor-intensive effort involved in food production, while the marketing team brainstorming illustrates the creative processes behind advertising.",
+                "path": "ContrastingLaborAndCreativity(Farmer, MarketingTeam)\nThus, Farmer → MarketingTeam"
+            }
+        ],
+        "complete_reasoning": [
+            "ContrastingProductionAndCommercialization(FieldsOfGrain, BillboardAds) → FieldsOfGrain → BillboardAds",
+            "ContrastingLaborAndCreativity(Farmer, MarketingTeam) → Farmer → MarketingTeam"
+        ]
+    },
+    {
+        "foldername": "Contrasting Modes of Transportation(HorsebackRiding, SubwayRiding, relation, NA, English)",
+        "relation": "Contrasting Modes of Transportation",
+        "domain": [
+            "HorsebackRiding",
+            "SubwayRiding"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A person enjoying horseback riding through a scenic landscape.jpg",
+                "description": "A person enjoying horseback riding through a scenic landscape."
+            },
+            {
+                "img_id": "2",
+                "filename": "A crowded subway train with passengers standing and holding onto poles.jpg",
+                "description": "A crowded subway train with passengers standing and holding onto poles."
+            },
+            {
+                "img_id": "3",
+                "filename": "A stable with horses and equipment.jpg",
+                "description": "A stable with horses and equipment."
+            },
+            {
+                "img_id": "4",
+                "filename": "A subway station with ticket machines and signage.jpg",
+                "description": "A subway station with ticket machines and signage."
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Horseback riding represents a traditional and leisurely mode of transportation associated with nature and outdoor experiences.",
+                "path": "ContrastingTransportationModes(HorsebackRiding, SubwayRiding)\nThus, HorsebackRiding → SubwayRiding"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Similarly, the stable represents the preparation and care involved in horseback riding, while the subway station illustrates the organized infrastructure necessary for public transport.",
+                "path": "ContrastingPreparationAndInfrastructure(Stable, SubwayStation)\nThus, Stable → SubwayStation"
+            }
+        ],
+        "complete_reasoning": [
+            "ContrastingTransportationModes(HorsebackRiding, SubwayRiding) → HorsebackRiding → SubwayRiding",
+            "ContrastingPreparationAndInfrastructure(Stable, SubwayStation) → Stable → SubwayStation"
+        ]
+    },
+    {
+        "foldername": "Contrasting Social Events Focused on Community and Culture(CountryFair, ArtGalleryOpening, relation, NA, English)",
+        "relation": "Contrasting Social Events Focused on Community and Culture",
+        "domain": [
+            "CountryFair",
+            "ArtGalleryOpening"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A lively country fair with colorful tents, games, and people enjoying carnival rides.jpg",
+                "description": "A lively country fair with colorful tents, games, and people enjoying carnival rides."
+            },
+            {
+                "img_id": "2",
+                "filename": "A sophisticated art gallery.jpg",
+                "description": "A sophisticated art gallery."
+            },
+            {
+                "img_id": "3",
+                "filename": "A traditional pie-eating contest at the country fair.jpg",
+                "description": "A traditional pie-eating contest at the country fair."
+            },
+            {
+                "img_id": "4",
+                "filename": "A formal art auction event with bidding paddles and artworks being showcased.jpg",
+                "description": "A formal art auction event with bidding paddles and artworks being showcased."
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The country fair represents a community-oriented event that emphasizes fun, entertainment, and local traditions.",
+                "path": "ContrastingSocialEvents(CountryFair, ArtGalleryOpening)\nThus, CountryFair → ArtGalleryOpening"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Similarly, the pie-eating contest encourages local participation, while the art auction reflects a more serious, competitive atmosphere.",
+                "path": "ContrastingActivities(PieEatingContest, ArtAuction)\nThus, PieEatingContest → ArtAuction"
+            }
+        ],
+        "complete_reasoning": [
+            "ContrastingSocialEvents(CountryFair, ArtGalleryOpening) → CountryFair → ArtGalleryOpening",
+            "ContrastingActivities(PieEatingContest, ArtAuction) → PieEatingContest → ArtAuction"
+        ]
+    },
+    {
+        "foldername": "Contrasting Symbols of Energy and Control(Windmill, TrafficLight, relation, NA, English)",
+        "relation": "Contrasting Symbols of Energy and Control",
+        "domain": [
+            "Windmill",
+            "TrafficLight"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A traditional windmill set against a rural landscape.jpg",
+                "description": "A traditional windmill set against a rural landscape."
+            },
+            {
+                "img_id": "2",
+                "filename": "A red traffic light at an intersection in an urban setting.jpg",
+                "description": "A red traffic light at an intersection in an urban setting."
+            },
+            {
+                "img_id": "3",
+                "filename": "A field of sunflowers with a wind turbine in the background.jpg",
+                "description": "A field of sunflowers with a wind turbine in the background."
+            },
+            {
+                "img_id": "4",
+                "filename": "A busy city street with cars waiting at a traffic signal.jpg",
+                "description": "A busy city street with cars waiting at a traffic signal."
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The windmill represents traditional renewable energy production, harnessing wind power.",
+                "path": "ContrastingSymbols(EnergyProduction, TrafficControl)\nThus, Windmill → TrafficLight"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Similarly, the field of sunflowers with a wind turbine shows modern evolution in energy solutions.",
+                "path": "ContrastingModernityAndRegulation(SunflowerFieldWithWindTurbine, BusyCityStreet)\nThus, SunflowerFieldWithWindTurbine → BusyCityStreet"
+            }
+        ],
+        "complete_reasoning": [
+            "ContrastingSymbols(EnergyProduction, TrafficControl) → Windmill → TrafficLight",
+            "ContrastingModernityAndRegulation(SunflowerFieldWithWindTurbine, BusyCityStreet) → SunflowerFieldWithWindTurbine → BusyCityStreet"
+        ]
+    }
+]
