@@ -1,0 +1,2252 @@
+[
+    {
+        "foldername": "Energy Conversion(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "Energy Conversion",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A lightning bolt.jpg",
+                "description": "A lightning bolt"
+            },
+            {
+                "img_id": "2",
+                "filename": "A light bulb.jpg",
+                "description": "A light bulb"
+            },
+            {
+                "img_id": "3",
+                "filename": "An iceberg.jpg",
+                "description": "An iceberg"
+            },
+            {
+                "img_id": "4",
+                "filename": "A glass of water.jpg",
+                "description": "A glass of water"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A lightning bolt represents electrical energy, while a light bulb converts electrical energy into light energy. ",
+                "path": "EnergyConversion(LightningBolt, LightBulb)\nThus, LightningBolt → LightBulb"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "an iceberg is primarily made of frozen water, and when it melts, it turns into water, representing a phase change of energy form.",
+                "path": "PhaseChange(Iceberg, Water)\nThus, Iceberg → Water"
+            }
+        ]
+    },
+    {
+        "foldername": "Weather Phenomena Transformation(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "Weather Phenomena Transformation",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A rain cloud.jpg",
+                "description": "A rain cloud"
+            },
+            {
+                "img_id": "2",
+                "filename": "A rainbow.jpg",
+                "description": "A rainbow"
+            },
+            {
+                "img_id": "3",
+                "filename": "A snowflake.jpg",
+                "description": "A snowflake"
+            },
+            {
+                "img_id": "4",
+                "filename": "A snowman.jpg",
+                "description": "A snowman"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A rain cloud produces rain, which can lead to the formation of a rainbow when sunlight refracts through the water droplets.",
+                "path": "Transformation(RainCloud, Rainbow)\nThus, RainCloud → Rainbow"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a snowflake represents precipitation in the form of snow, which can accumulate and be shaped into a snowman, illustrating a transformation of the snow phenomenon into a tangible form.",
+                "path": "Transformation(Snowflake, Snowman)\nThus, Snowflake → Snowman"
+            }
+        ]
+    },
+    {
+        "foldername": "Industrial Decline and Remnants(phenomenon, phenomenon, relation, NA, English)",
+        "relation": "Industrial Decline and Remnants",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "An abandoned factory.jpg",
+                "description": "An abandoned factory"
+            },
+            {
+                "img_id": "2",
+                "filename": "Rusted machinery.jpg",
+                "description": "Rusted machinery"
+            },
+            {
+                "img_id": "3",
+                "filename": "An old railway line.jpg",
+                "description": "An old railway line"
+            },
+            {
+                "img_id": "4",
+                "filename": "A decaying train car.jpg",
+                "description": "A decaying train car"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "An abandoned factory signifies the decline of industrial activity, often leaving behind rusted machinery as remnants of its past operations.",
+                "path": "IndustrialDecline(Remnants(AbandonedFactory), Remnants(RustedMachinery))\nThus, AbandonedFactory → RustedMachinery"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "an old railway line represents the decline of rail transport, with decaying train cars serving as physical remnants of the once-thriving rail industry.",
+                "path": "IndustrialDecline(Remnants(OldRailwayLine), Remnants(DecayingTrainCar))\nThus, OldRailwayLine → DecayingTrainCar"
+            }
+        ]
+    },
+    {
+        "foldername": "Extreme Manifestations of Weather Phenomena(phenomenon, location, metaphor, NA, English)",
+        "relation": "Extreme Manifestations of Weather Phenomena",
+        "domain": [
+            "phenomenon",
+            "location"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A tornado.jpg",
+                "description": "A tornado"
+            },
+            {
+                "img_id": "2",
+                "filename": "A powerful hurricane.jpg",
+                "description": "A powerful hurricane"
+            },
+            {
+                "img_id": "3",
+                "filename": "A city affected by a hurricane.jpg",
+                "description": "A city affected by a hurricane"
+            },
+            {
+                "img_id": "4",
+                "filename": "A rural area devastated by a tornado.jpg",
+                "description": "A rural area devastated by a tornado"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A tornado is a strong wind vortex that forms under extreme weather conditions, while a hurricane represents a powerful storm system. Both are extreme forms of weather phenomena. ",
+                "path": "ExtremeWeatherPhenomenon(Tornado, Hurricane)\nThus, Tornado → Hurricane"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a city affected by a hurricane showcases the vulnerability of urban environments to extreme weather, while a rural area devastated by a tornado illustrates the impact of natural disasters on rural communities. Both pairs highlight the direct effects of weather phenomena on human living environments.",
+                "path": "WeatherImpact(Location(CityAffectedByHurricane), Location(RuralAreaDevastatedByTornado))\nThus, CityAffectedByHurricane → RuralAreaDevastatedByTornado"
+            }
+        ]
+    },
+    {
+        "foldername": "Interconnectedness vs. Locality(phenomenon, phenomenon, relation, NA, English)",
+        "relation": "Interconnectedness vs. Locality",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A globe with interconnected lines representing trade routes.jpg",
+                "description": "A globe with interconnected lines representing trade routes"
+            },
+            {
+                "img_id": "2",
+                "filename": "A traditional marketplace with local vendors selling goods.jpg",
+                "description": "A traditional marketplace with local vendors selling goods"
+            },
+            {
+                "img_id": "3",
+                "filename": "A digital map showing global internet connections.jpg",
+                "description": "A digital map showing global internet connections"
+            },
+            {
+                "img_id": "4",
+                "filename": "A local library with books focused on regional history.jpg",
+                "description": "A local library with books focused on regional history"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The globe with trade routes signifies globalization as it illustrates the interconnectedness of global markets. In contrast, the traditional marketplace represents locality and local commerce.",
+                "path": "Element(InterconnectedGlobe, Globalization)\nElement(TraditionalMarketplace, LocalCommerce)\nThus, InterconnectedGlobe → TraditionalMarketplace"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the digital map shows the global internet connections of globalization, while the local library reflects a focus on local knowledge and history, emphasizing locality.",
+                "path": "Element(DigitalMap, Globalization)\nElement(LocalLibrary, LocalKnowledge)\nThus, DigitalMap → LocalLibrary"
+            }
+        ]
+    },
+    {
+        "foldername": "Causality and Chain Reactions(phenomenon, phenomenon, relation, NA, English)",
+        "relation": "Causality and Chain Reactions",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A butterfly emerging from a chrysalis.jpg",
+                "description": "A butterfly emerging from a chrysalis"
+            },
+            {
+                "img_id": "2",
+                "filename": "A massive storm brewing in the ocean.jpg",
+                "description": "A massive storm brewing in the ocean"
+            },
+            {
+                "img_id": "3",
+                "filename": "A child knocking over a domino.jpg",
+                "description": "A child knocking over a domino"
+            },
+            {
+                "img_id": "4",
+                "filename": "A domino chain reaction leading to a tower collapse.jpg",
+                "description": "A domino chain reaction leading to a tower collapse"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The butterfly emerging from a chrysalis represents the beginning of a process that can lead to significant changes in the environment, akin to the butterfly effect. The brewing storm illustrates how small changes can lead to powerful weather phenomena. ",
+                "path": "Action(ButterflyEmergence, SmallChange)\nConsequence(MassiveStorm, LargeEffect)\nThus, ButterflyEmergence → MassiveStorm"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the child knocking over a domino initiates a chain reaction, resulting in a tower collapse, showcasing how a simple action can trigger larger consequences.",
+                "path": "Action(ChildKnockingDomino, SmallChange)\nConsequence(DominoTowerCollapse, LargeEffect)\nThus, ChildKnockingDomino → DominoTowerCollapse"
+            }
+        ]
+    },
+    {
+        "foldername": "Impact of Climate Change(phenomenon, phenomenon, mutual elements, NA, English)",
+        "relation": "Impact of Climate Change",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A melting glacier.jpg",
+                "description": "A melting glacier"
+            },
+            {
+                "img_id": "2",
+                "filename": "A flooded coastal city.jpg",
+                "description": "A flooded coastal city"
+            },
+            {
+                "img_id": "3",
+                "filename": "A forest on fire.jpg",
+                "description": "A forest on fire"
+            },
+            {
+                "img_id": "4",
+                "filename": "A severe drought-affected farmland.jpg",
+                "description": "A severe drought-affected farmland"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The melting glacier is a direct consequence of global warming, illustrating the rise in temperatures that leads to ice melt. The flooded coastal city represents the result of rising sea levels due to this melting ice. ",
+                "path": "Element(MeltingGlacier, IceMelt)\nElement(FloodedCoastalCity, RisingSeaLevels)\nThus, MeltingGlacier → FloodedCoastalCity"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the forest on fire indicates the increased frequency of wildfires fueled by climate change, while the drought-affected farmland showcases the extreme weather conditions and water scarcity that also result from global warming.",
+                "path": "Element(ForestOnFire, IncreasedWildfires)\nElement(DroughtAffectedFarmland, ExtremeWeather)\nThus, ForestOnFire → DroughtAffectedFarmland"
+            }
+        ]
+    },
+    {
+        "foldername": "Lens Phenomenon(phenomenon, phenomenon, mutual elements, NA, English)",
+        "relation": "Lens Phenomenon",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Myopia glasses.jpg",
+                "description": "Myopia glasses"
+            },
+            {
+                "img_id": "2",
+                "filename": "Presbyopia glasses.jpg",
+                "description": "Presbyopia glasses"
+            },
+            {
+                "img_id": "3",
+                "filename": "Convex lens.jpg",
+                "description": "Convex lens"
+            },
+            {
+                "img_id": "4",
+                "filename": "Concave lens.jpg",
+                "description": "Concave lens"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "myopia glasses and presbyopia glasses are both types of corrective lenses that utilize specific lens properties to address different vision issues. Myopia glasses typically use concave lenses to diverge light for nearsightedness, whereas presbyopia glasses use convex lenses to converge light for farsightedness. ",
+                "path": "Element(MyopiaGlasses, CorrectiveLens)\nElement(PresbyopiaGlasses, CorrectiveLens)\nThus, MyopiaGlasses → PresbyopiaGlasses"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "convex lens and concave lens are fundamental types of optical lenses, each demonstrating the lens phenomenon by either converging or diverging light rays.",
+                "path": "Element(ConvexLens, OpticalLens)\nElement(ConcaveLens, OpticalLens)\nThus, ConvexLens → ConcaveLens"
+            }
+        ]
+    },
+    {
+        "foldername": "Exponential Growth Phenomena(phenomenon, phenomenon, mutual elements, NA, English)",
+        "relation": "Exponential Growth Phenomena",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A data center with server racks and blinking lights, showing a sharp rise in data traffic.jpg",
+                "description": "A data center with server racks and blinking lights, showing a sharp rise in data traffic"
+            },
+            {
+                "img_id": "2",
+                "filename": "A chart displaying the explosive growth of internet users from 2000 to 2023.jpg",
+                "description": "A chart displaying the explosive growth of internet users from 2000 to 2023"
+            },
+            {
+                "img_id": "3",
+                "filename": "A graph showing the rapid increase in COVID-19 cases during the pandemic.jpg",
+                "description": "A graph showing the rapid increase in COVID-19 cases during the pandemic"
+            },
+            {
+                "img_id": "4",
+                "filename": "A laboratory image depicting bacteria reproducing in petri dishes, with a graph showing exponential growth.jpg",
+                "description": "A laboratory image depicting bacteria reproducing in petri dishes, with a graph showing exponential growth"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Both images in Pair 1 illustrate the rapid increase in data traffic and internet users in the digital age. ",
+                "path": "Element(DataCenter, ExponentialGrowth)\nElement(InternetUserChart, UserGrowth)\nThus, DataCenter → InternetUserChart"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "images in Pair 2 highlight exponential growth in public health and biological reproduction.",
+                "path": "Element(CovidGrowthChart, PublicHealth)\nElement(BacteriaReproduction, BiologicalGrowth)\nThus, CovidGrowthChart → BacteriaReproduction"
+            }
+        ]
+    },
+    {
+        "foldername": "Oxidation Reactions(phenomenon, phenomenon, relation, NA, English)",
+        "relation": "Oxidation Reactions",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A clean piece of iron.jpg",
+                "description": "A clean piece of iron"
+            },
+            {
+                "img_id": "2",
+                "filename": "A rusty piece of iron.jpg",
+                "description": "A rusty piece of iron"
+            },
+            {
+                "img_id": "3",
+                "filename": "A fresh, red apple.jpg",
+                "description": "A fresh, red apple"
+            },
+            {
+                "img_id": "4",
+                "filename": "A brown, oxidized apple.jpg",
+                "description": "A brown, oxidized apple"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The clean piece of iron represents untreated metal that has not undergone oxidation, while the rusty piece of iron shows the effects of oxidation, where iron reacts with oxygen and moisture to form iron oxide (rust).  ",
+                "path": "Oxidation(CleanIron, RustyIron) → CleanIron → NoOxidation, RustyIron → Oxidation"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the fresh red apple has not yet reacted with oxygen, maintaining its bright color, whereas the brown apple has undergone oxidation due to exposure to air, leading to browning through enzymatic reactions.",
+                "path": "Oxidation(FreshApple, BrownApple) → FreshApple → NoOxidation, BrownApple → Oxidation"
+            }
+        ]
+    },
+    {
+        "foldername": "Transience(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "Transience",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Dandelion seedhead.jpg",
+                "description": "Dandelion seedhead"
+            },
+            {
+                "img_id": "2",
+                "filename": "Blown out candle.jpg",
+                "description": "Blown out candle"
+            },
+            {
+                "img_id": "3",
+                "filename": "Bubble.jpg",
+                "description": "Bubble"
+            },
+            {
+                "img_id": "4",
+                "filename": "Sandcastle.jpg",
+                "description": "Sandcastlee"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A dandelion seedhead represents the fleeting nature of life as its seeds are carried away by the wind, signifying impermanence. A blown-out candle marks the end of its illumination, showcasing how quickly light fades.",
+                "path": "Transience(DandelionSeedhead) ∧ Transience(BlownOutCandle)\nThus, DandelionSeedhead → BlownOutCandle"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a bubble bursts after a brief moment of beauty, and a sandcastle is washed away by the tide, both emphasizing the temporary existence of these creations.",
+                "path": "Transience(Bubble) ∧ Transience(Sandcastle)\nThus, Bubble → Sandcastle"
+            }
+        ]
+    },
+    {
+        "foldername": "Symbols of freedom(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "Symbols of freedom",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A bird in flight.jpg",
+                "description": "A bird in flight"
+            },
+            {
+                "img_id": "2",
+                "filename": "An open cage.jpg",
+                "description": "An open cage"
+            },
+            {
+                "img_id": "3",
+                "filename": "A sunrise over a mountain range.jpg",
+                "description": "A sunrise over a mountain range"
+            },
+            {
+                "img_id": "4",
+                "filename": "An open sky.jpg",
+                "description": "An open sky"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A bird in flight is a powerful symbol of freedom, representing the ability to move freely in the sky without limitations. An open cage signifies liberation, indicating that something that was once confined is now free to explore.",
+                "path": "SymbolizesFreedom(BirdInFlight) ∧ SymbolizesFreedom(OpenCage)\nThus, BirdInFlight → OpenCage"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a sunrise over a mountain range symbolizes new beginnings and the freedom to embrace new opportunities, while an open sky represents boundless possibilities and the vastness of freedom in life.",
+                "path": "SymbolizesFreedom(Sunrise) ∧ SymbolizesFreedom(OpenSky)\nThus, Sunrise → OpenSky"
+            }
+        ]
+    },
+    {
+        "foldername": "Colorful flame reactions(phenomenon, phenomenon, mutual elements, NA, English)",
+        "relation": "Colorful flame reactions",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Metallic sodium.jpg",
+                "description": "Metallic sodium"
+            },
+            {
+                "img_id": "2",
+                "filename": "yellow flame.jpg",
+                "description": "yellow flame"
+            },
+            {
+                "img_id": "3",
+                "filename": "Metallic potassium.jpg",
+                "description": "Metallic potassium"
+            },
+            {
+                "img_id": "4",
+                "filename": "purple flame.jpg",
+                "description": "purple flame"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Metallic sodium produces a bright yellow flame when burned, which is a characteristic color reaction used in flame tests. ",
+                "path": "ColorReaction(MetallicSodium) ∧ ColorReaction(YellowFlame)\nThus, MetallicSodium → YellowFlame"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "metallic potassium burns with a purple flame, another distinct color reaction observed in flame tests.",
+                "path": "ColorReaction(MetallicPotassium) ∧ ColorReaction(PurpleFlame)\nThus, MetallicPotassium → PurpleFlame"
+            }
+        ]
+    },
+    {
+        "foldername": "Nostalgia(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "Nostalgia",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A black-and-white photograph.jpg",
+                "description": "A black-and-white photograph"
+            },
+            {
+                "img_id": "2",
+                "filename": "An antique picture frame.jpg",
+                "description": "An antique picture frame"
+            },
+            {
+                "img_id": "3",
+                "filename": "An old vinyl record.jpg",
+                "description": "An old vinyl record"
+            },
+            {
+                "img_id": "4",
+                "filename": "A vintage speaker.jpg",
+                "description": "A vintage speaker"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A black-and-white photograph evokes feelings of nostalgia, reminding us of the past and moments captured in time. An antique picture frame complements this by suggesting a time long gone, enhancing the nostalgic sentiment.",
+                "path": "Nostalgia(BlackAndWhitePhoto) ∧ Nostalgia(AntiqueFrame)\nThus, BlackAndWhitePhoto → AntiqueFrame"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "an old vinyl record represents music from the past, often associated with cherished memories, while a vintage speaker serves to amplify those memories, creating a connection to earlier times.",
+                "path": "Nostalgia(OldVinylRecord) ∧ Nostalgia(VintageSpeaker)\nThus, OldVinylRecord → VintageSpeaker"
+            }
+        ]
+    },
+    {
+        "foldername": "Magic(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "Magic",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Harry Potter.jpg",
+                "description": "Harry Potter"
+            },
+            {
+                "img_id": "2",
+                "filename": "a wand.jpg",
+                "description": "a wand"
+            },
+            {
+                "img_id": "3",
+                "filename": "A magician.jpg",
+                "description": "A magician"
+            },
+            {
+                "img_id": "4",
+                "filename": "magician's hat.jpg",
+                "description": "magician's hat"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Harry Potter, a renowned character in the realm of magic, wields a wand that is central to his identity as a wizard and his ability to perform spells. The wand represents the tool of magic. ",
+                "path": "Magic(HarryPotter) ∧ Magic(Wand)\nThus, HarryPotter → Wand"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a magician often uses a top hat as part of their performance, symbolizing the art of illusion and trickery that defines magic shows.",
+                "path": "Magic(Magician) ∧ Magic(Hat)\nThus, Magician → Hat"
+            }
+        ]
+    },
+    {
+        "foldername": "Placebo effect(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "Placebo effect",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "doctor.jpg",
+                "description": "A doctor"
+            },
+            {
+                "img_id": "2",
+                "filename": "a sugar pill.jpg",
+                "description": "a sugar pill"
+            },
+            {
+                "img_id": "3",
+                "filename": "An athlete.jpg",
+                "description": "An athlete"
+            },
+            {
+                "img_id": "4",
+                "filename": "sports drink.jpg",
+                "description": "sports drink"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A doctor often prescribes sugar pills (placebos) to patients, demonstrating the placebo effect where the patient's belief in treatment can lead to real physiological changes in their condition, despite the pill having no active pharmacological effect. ",
+                "path": "PlaceboEffect(Doctor) ∧ PlaceboEffect(SugarPill)\nThus, Doctor → SugarPill"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "athletes may consume sports drinks, believing they enhance performance, which can also trigger a placebo effect where the athlete's expectations lead to improved performance, even if the drink does not contain any significant performance-enhancing substances.",
+                "path": "PlaceboEffect(Athlete) ∧ PlaceboEffect(SportsDrink)\nThus, Athlete → SportsDrink"
+            }
+        ]
+    },
+    {
+        "foldername": "Crop Circles(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "Crop Circles",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A crop circle in a field of wheat.jpg",
+                "description": "A crop circle in a field of wheat"
+            },
+            {
+                "img_id": "2",
+                "filename": "A UFO hovering above.jpg",
+                "description": "A UFO hovering above"
+            },
+            {
+                "img_id": "3",
+                "filename": "An artist.jpg",
+                "description": "An artist"
+            },
+            {
+                "img_id": "4",
+                "filename": "an alien.jpg",
+                "description": "an alien"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Crop circles are intricate patterns created in fields, often attributed to mysterious origins, including UFO sightings. The first pair illustrates the common belief that UFOs are connected to the formation of crop circles, suggesting extraterrestrial involvement.",
+                "path": "CropCircles(WheatField) ∧ CropCircles(UFO)\nThus, WheatField → UFO"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the artist represents the human aspect of creativity and interpretation of these phenomena, while the illustration of an alien embodies the speculation about extraterrestrial life and their potential connection to crop circles.",
+                "path": "CropCircles(Artist) ∧ CropCircles(Alien)\nThus, Artist → Alien"
+            }
+        ]
+    },
+    {
+        "foldername": "The passage of time(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "The passage of time",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A full hourglass.jpg",
+                "description": "A full hourglass"
+            },
+            {
+                "img_id": "2",
+                "filename": "An empty hourglass.jpg",
+                "description": "An empty hourglass"
+            },
+            {
+                "img_id": "3",
+                "filename": "Fresh fruit.jpg",
+                "description": "Fresh fruit"
+            },
+            {
+                "img_id": "4",
+                "filename": "Decayed or rotten fruit.jpg",
+                "description": "Decayed or rotten fruit"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A full hourglass represents time that is currently measured and contained, while an empty hourglass signifies the completion of that time period, illustrating how time flows and eventually runs out.",
+                "path": "PassageOfTime(FullHourglass) ∧ PassageOfTime(EmptyHourglass)\nThus, FullHourglass → EmptyHourglass"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "fresh fruit symbolizes the beginning of life and vitality, whereas decayed or rotten fruit represents the inevitable decay and passage of time that affects all living things. ",
+                "path": "PassageOfTime(FreshFruit) ∧ PassageOfTime(RottenFruit)\nThus, FreshFruit → RottenFruit"
+            }
+        ]
+    },
+    {
+        "foldername": "The Gravity(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "The Gravity",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Newton.jpg",
+                "description": "Newton"
+            },
+            {
+                "img_id": "2",
+                "filename": "an apple.jpg",
+                "description": "an apple"
+            },
+            {
+                "img_id": "3",
+                "filename": "Outer space.jpg",
+                "description": "Outer space"
+            },
+            {
+                "img_id": "4",
+                "filename": "An astronaut floating in space.jpg",
+                "description": "An astronaut floating in spacet"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Sir Isaac Newton is famously associated with the law of gravity, which was inspired by an apple falling from a tree, leading him to formulate his theories about gravitational force. This connection demonstrates how gravity acts on objects. ",
+                "path": "Gravity(Newton) ∧ Gravity(Apple)\nThus, Newton → Apple"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "outer space represents the environment where gravity's effects can be less pronounced, while the floating astronaut illustrates the experience of microgravity, highlighting the different manifestations of gravitational forces in space compared to on Earth. ",
+                "path": "Gravity(Space) ∧ Gravity(AstronautFloating)\nThus, Space → AstronautFloatingt"
+            }
+        ]
+    },
+    {
+        "foldername": "Light polarization(phenomenon, phenomenon, mutual elements, NA, English)",
+        "relation": "Light polarization",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A movie theater.jpg",
+                "description": "A movie theater"
+            },
+            {
+                "img_id": "2",
+                "filename": "A pair of 3D glasses.jpg",
+                "description": "A pair of 3D glassese"
+            },
+            {
+                "img_id": "3",
+                "filename": "A camera.jpg",
+                "description": "A camera"
+            },
+            {
+                "img_id": "4",
+                "filename": "A polarizing filter.jpg",
+                "description": "A polarizing filter"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "In a movie theater, 3D glasses are used to create a stereoscopic effect by allowing each eye to see slightly different images, which involves the use of polarized light to enhance the viewing experience. The polarization of light helps to reduce glare and improve contrast in 3D movies. ",
+                "path": "Polarization(MovieTheater) ∧ Polarization(3DGlasses)\nThus, MovieTheater → 3DGlasses"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a camera can use a polarizing filter to reduce reflections and enhance colors in photographs, demonstrating how polarization can control and manipulate light for better image quality. ",
+                "path": "Polarization(Camera) ∧ Polarization(PolarizingFilter)\nThus, Camera → PolarizingFilter"
+            }
+        ]
+    },
+    {
+        "foldername": "Sun Dog(phenomenon, phenomenon, mutual elements, NA, English)",
+        "relation": "Sun Dog",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A bright spot in the sky.jpg",
+                "description": "A bright spot in the sky"
+            },
+            {
+                "img_id": "2",
+                "filename": "Ice crystals.jpg",
+                "description": "Ice crystals"
+            },
+            {
+                "img_id": "3",
+                "filename": "The sun.jpg",
+                "description": "The sun"
+            },
+            {
+                "img_id": "4",
+                "filename": "A dog.jpg",
+                "description": "A dog"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "A sun dog, or parhelion, is an atmospheric phenomenon that appears as a bright spot on either side of the sun, caused by the refraction of sunlight passing through ice crystals in the atmosphere. The first pair illustrates the components of this phenomenon—bright spots and ice crystals. ",
+                "path": "SunDog(BrightSpot) ∧ SunDog(IceCrystals)\nThus, BrightSpot → IceCrystals"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the sun is the central element of the sun dog phenomenon, while the dog, in this context, serves as a playful reference to the term 'sun dog,' emphasizing the name rather than its literal meaning. ",
+                "path": "SunDog(Sun) ∧ SunDog(Dog)\nThus, Sun → Dog"
+            }
+        ]
+    },
+    {
+        "foldername": "Earthquake(phenomenon, phenomenon, mutual elements, NA, English)",
+        "relation": "Earthquake",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The year 2008.jpg",
+                "description": "The year 2008"
+            },
+            {
+                "img_id": "2",
+                "filename": "Wenchuan.jpg",
+                "description": "Wenchuan"
+            },
+            {
+                "img_id": "3",
+                "filename": "The year 2011.jpg",
+                "description": "The year 2011"
+            },
+            {
+                "img_id": "4",
+                "filename": "Fukushima.jpg",
+                "description": "Fukushima"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Wenchuan earthquake occurred in 2008 in Sichuan, China, resulting in significant devastation and loss of life. The first pair highlights the year and the location of this catastrophic event. Similarly, the Fukushima disaster in 2011 was triggered by a massive earthquake off the coast of Japan, which also led to a nuclear crisis.  ",
+                "path": "Earthquake(2008) ∧ Earthquake(Wenchuan)\nThus, 2008 → Wenchuan"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "The second pair underscores the year and the consequential disaster associated with the earthquake. Both pairs represent significant earthquakes that had profound impacts on their respective regions. ",
+                "path": "Earthquake(2008) ∧ Earthquake(Wenchuan)\nThus, 2008 → Wenchuan"
+            }
+        ]
+    },
+    {
+        "foldername": "Migration(phenomenon, phenomenon, relation, NA, English)",
+        "relation": "Migration",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A swallow (bird) flying.jpg",
+                "description": "A swallow (bird) flying"
+            },
+            {
+                "img_id": "2",
+                "filename": "winter landscape.jpg",
+                "description": "winter landscape"
+            },
+            {
+                "img_id": "3",
+                "filename": "drought-affected landscape.jpg",
+                "description": "drought-affected landscape"
+            },
+            {
+                "img_id": "4",
+                "filename": "An elephant.jpg",
+                "description": "An elephant"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Swallows are known for their migratory behavior, flying south to warmer climates during the winter months to escape the cold and find food. The first pair illustrates the connection between the swallow and winter migration. In Pair 2, elephants are known to migrate in search of water and food, especially during drought conditions when resources are scarce. ",
+                "path": "Migration(Swallow) ∧ Migration(Winter)\nThus, Swallow → Winter"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "The second pair highlights the relationship between drought and the migratory patterns of elephants as they seek out more hospitable environments. ",
+                "path": "Migration(Drought) ∧ Migration(Elephant)\nThus, Drought → Elephant"
+            }
+        ]
+    },
+    {
+        "foldername": "Cancel culture(phenomenon, phenomenon, mutual elements, NA, English)",
+        "relation": "Cancel culture",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "march.jpg",
+                "description": "march"
+            },
+            {
+                "img_id": "2",
+                "filename": "riots or civil unrest.jpg",
+                "description": "riots or civil unrest"
+            },
+            {
+                "img_id": "3",
+                "filename": "A burning book.jpg",
+                "description": "A burning book"
+            },
+            {
+                "img_id": "4",
+                "filename": "A sign or placard with a message about boycottingt.jpg",
+                "description": "A sign or placard with a message about boycotting"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Protests and riots often arise in response to perceived injustices or offensive actions, reflecting the societal pushback associated with cancel culture, where individuals and groups seek to hold others accountable for their words or actions. The first pair illustrates the public demonstrations that can escalate into unrest. ",
+                "path": "CancelCulture(Protest) ∧ CancelCulture(Riot)\nThus, Protest → Riot"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "In the second pair, a burning book symbolizes censorship and the rejection of specific ideas or literature, while a boycott sign represents organized efforts to withdraw support from individuals, businesses, or products deemed problematic. ",
+                "path": "CancelCulture(BurningBook) ∧ CancelCulture(BoycottSign)\nThus, BurningBook → BoycottSign"
+            }
+        ]
+    },
+    {
+        "foldername": "Viral trend(phenomenon, phenomenon, metaphor, NA, English)",
+        "relation": "Viral trend",
+        "domain": [
+            "phenomenon",
+            "phenomenon"
+        ],
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "TikTok logo.jpg",
+                "description": "TikTok logo"
+            },
+            {
+                "img_id": "2",
+                "filename": "Instagram logo.jpg",
+                "description": "Instagram logo"
+            },
+            {
+                "img_id": "3",
+                "filename": "a post with a high number of likes.jpg",
+                "description": "a post with a high number of likes"
+            },
+            {
+                "img_id": "4",
+                "filename": "a post with a high number of shares.jpg",
+                "description": "a post with a high number of shares"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "TikTok and Instagram are both social media platforms known for their ability to create and spread viral trends rapidly. The first pair illustrates the platforms that serve as the breeding ground for viral content. ",
+                "path": "ViralTrend(TikTok) ∧ ViralTrend(Instagram)\nThus, TikTok → Instagram"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "In the second pair, a high number of likes indicates a post that resonates well with viewers, while a high number of shares demonstrates the post's ability to spread beyond its original audience, both of which are key metrics for measuring the virality of content.",
+                "path": "ViralTrend(HighLikes) ∧ ViralTrend(HighShares)\nThus, HighLikes → HighShares"
+            }
+        ]
+    },
+    {
+        "foldername": "Cultural Symbols(location, location, relation, NA, English)",
+        "relation": "Cultural Symbols",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The Great Wall.jpg",
+                "description": "The Great Wall"
+            },
+            {
+                "img_id": "2",
+                "filename": "A dragon.jpg",
+                "description": "A dragon"
+            },
+            {
+                "img_id": "3",
+                "filename": "Sydney Opera House.jpg",
+                "description": "Sydney Opera House"
+            },
+            {
+                "img_id": "4",
+                "filename": "A kangaroo.jpg",
+                "description": "A kangaroo"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Great Wall of China is a monumental symbol representing Chinese history and culture, while the dragon is a mythical creature often associated with strength and good fortune in Chinese folklore. ",
+                "path": "CulturalSymbol(GreatWall, Dragon) \n Thus, GreatWall → Dragon"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the Sydney Opera House is an iconic representation of Australian architecture and culture, while the kangaroo is a national symbol of Australia, representing its unique wildlife.",
+                "path": "CulturalSymbol(SydneyOperaHouse, Kangaroo) \n Thus, SydneyOperaHouse → Kangaroo"
+            }
+        ]
+    },
+    {
+        "foldername": "Cultural Icons with Associated Beverages(location, location, relation, USAEnglish, English)",
+        "relation": "Cultural Icons with Associated Beverages",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The Eiffel Tower.jpg",
+                "description": "The Eiffel Tower"
+            },
+            {
+                "img_id": "2",
+                "filename": "A glass of red wine.jpg",
+                "description": "A glass of red wine"
+            },
+            {
+                "img_id": "3",
+                "filename": "Big Ben.jpg",
+                "description": "Big Ben"
+            },
+            {
+                "img_id": "4",
+                "filename": "A cup of tea.jpg",
+                "description": "A cup of tea"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Eiffel Tower is a cultural icon of France, often associated with enjoying a glass of wine, which is a significant part of French culture and cuisine.",
+                "path": "CulturalIcon(EiffelTower, Wine) \n Thus, EiffelTower → Wine"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Big Ben is a prominent symbol of London and the UK, where tea drinking is a quintessential tradition, famously associated with British culture.",
+                "path": "CulturalIcon(BigBen, Tea) \n Thus, BigBen → Tea"
+            }
+        ]
+    },
+    {
+        "foldername": "Connected Landmarks(location, location, relation, USAEnglish, English)",
+        "relation": "Connected Landmarks",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The Berlin Wall.jpg",
+                "description": "The Berlin Wall"
+            },
+            {
+                "img_id": "2",
+                "filename": "The Brandenburg Gate.jpg",
+                "description": "The Brandenburg Gate"
+            },
+            {
+                "img_id": "3",
+                "filename": "The Statue of Liberty1.jpg",
+                "description": "The Statue of Liberty"
+            },
+            {
+                "img_id": "4",
+                "filename": "Ellis Island.jpg",
+                "description": "Ellis Island"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Berlin Wall and the Brandenburg Gate are closely linked landmarks in Germany, with the Brandenburg Gate serving as a prominent symbol of the reunification of Germany after the fall of the Berlin Wall, which once divided the city.",
+                "path": "ConnectedLandmarks(BerlinWall, BrandenburgGate) \n Thus, BerlinWall → BrandenburgGate"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the Statue of Liberty and Ellis Island are interconnected symbols in the United States; the Statue of Liberty welcomes immigrants arriving at Ellis Island, which was the primary immigration station from 1892 to 1954, representing hope and new beginnings for millions.",
+                "path": "ConnectedLandmarks(StatueOfLiberty, EllisIsland) \n Thus, StatueOfLiberty → EllisIsland"
+            }
+        ]
+    },
+    {
+        "foldername": "Built in the Same Year(location, location, relation, Arabic-Islamic, English)",
+        "relation": "Built in the Same Year",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Arabic-Islamic",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Burj Khalifa.jpg",
+                "description": "Burj Khalifa"
+            },
+            {
+                "img_id": "2",
+                "filename": "Canton Tower.jpg",
+                "description": "Canton Tower"
+            },
+            {
+                "img_id": "3",
+                "filename": "Statue of Liberty.jpg",
+                "description": "Statue of Liberty"
+            },
+            {
+                "img_id": "4",
+                "filename": "Eiffel Tower.jpg",
+                "description": "Eiffel Tower"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Burj Khalifa in Dubai and Canton Tower in Guangzhou were both completed in 2010, marking a significant year for architectural achievements. ",
+                "path": "BuiltInYear(BurjKhalifa, CantonTower, 2010) \n Thus, BurjKhalifa → CantonTower"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the Statue of Liberty and the Eiffel Tower were both inaugurated in 1886, symbolizing important cultural landmarks in their respective countries.",
+                "path": "BuiltInYear(StatueOfLiberty, EiffelTower, 1886) \n Thus, StatueOfLiberty → EiffelTower"
+            }
+        ]
+    },
+    {
+        "foldername": "Similar Height and Purpose(location, location, relation, Non-English European, English)",
+        "relation": "Similar Height and Purpose",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "St. Basil's Cathedral.jpg",
+                "description": "St. Basil's Cathedral"
+            },
+            {
+                "img_id": "2",
+                "filename": "Notre-Dame Cathedral.jpg",
+                "description": "Notre-Dame Cathedral"
+            },
+            {
+                "img_id": "3",
+                "filename": "Leaning Tower of Pisa.jpg",
+                "description": "Leaning Tower of Pisa"
+            },
+            {
+                "img_id": "4",
+                "filename": "Lighthouse of Alexandria.jpg",
+                "description": "Lighthouse of Alexandria"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Burj Khalifa in Dubai and Canton Tower in Guangzhou were both completed in 2010, marking a significant year for architectural achievements. ",
+                "path": "BuiltInYear(BurjKhalifa, CantonTower, 2010) \n Thus, BurjKhalifa → CantonTower"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the Statue of Liberty and the Eiffel Tower were both inaugurated in 1886, symbolizing important cultural landmarks in their respective countries.",
+                "path": "BuiltInYear(StatueOfLiberty, EiffelTower, 1886) \n Thus, StatueOfLiberty → EiffelTower"
+            }
+        ]
+    },
+    {
+        "foldername": "Landmarks and Their Associated Literary Figures(location, location, relation, Non-English European, English)",
+        "relation": "Landmarks and Their Associated Literary Figures",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The Statue of Liberty.jpg",
+                "description": "Statue of Liberty"
+            },
+            {
+                "img_id": "2",
+                "filename": "Emma Lazarus.jpg",
+                "description": "Emma Lazarus"
+            },
+            {
+                "img_id": "3",
+                "filename": "The Notre-Dame Cathedral.jpg",
+                "description": "Notre-Dame Cathedral"
+            },
+            {
+                "img_id": "4",
+                "filename": "Victor Hugo.jpg",
+                "description": "Victor Hugo"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Statue of Liberty is closely associated with Emma Lazarus, whose poem 'The New Colossus' is inscribed on a plaque at the statue's base, symbolizing hope and freedom for immigrants.",
+                "path": "AssociatedFigure(StatueOfLiberty, EmmaLazarus) \n Thus, StatueOfLiberty → EmmaLazarus"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Notre-Dame Cathedral is famously linked to Victor Hugo, who wrote 'The Hunchback of Notre-Dame,' a novel that brought significant attention to the cathedral and highlighted its architectural beauty and social issues of the time.",
+                "path": "AssociatedFigure(NotreDame, VictorHugo) \n Thus, NotreDame → VictorHugo"
+            }
+        ]
+    },
+    {
+        "foldername": "Landmarks and Their Associated Historical Figures(location, location, relation, Ease Asia, English)",
+        "relation": "Landmarks and Their Associated Historical Figures",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Ease Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The Great Wall of China.jpg",
+                "description": "The Great Wall of China"
+            },
+            {
+                "img_id": "2",
+                "filename": "Qin Shi Huang.jpg",
+                "description": "Qin Shi Huang"
+            },
+            {
+                "img_id": "3",
+                "filename": "The Grand Canal.jpg",
+                "description": "The Grand Canal"
+            },
+            {
+                "img_id": "4",
+                "filename": "Emperor Yang of Sui.jpg",
+                "description": "Emperor Yang of Sui"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Great Wall of China is closely linked to Qin Shi Huang, the first emperor of China, who initiated its construction to protect against invasions. ",
+                "path": "AssociatedFigure(GreatWall, QinShiHuang) \n Thus, GreatWall → QinShiHuang"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the Grand Canal is associated with Emperor Yang of Sui, who expanded and completed this vast waterway during the Sui Dynasty, facilitating trade and movement within China.",
+                "path": "AssociatedFigure(GreatWall, QinShiHuang) \n Thus, GreatWall → QinShiHuang"
+            }
+        ]
+    },
+    {
+        "foldername": "Destruction and Conflict Associated with Landmarks(location, location, relation, Ease Asia, English)",
+        "relation": "Destruction and Conflict Associated with Landmarks",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Ease Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The Eight-Nation Alliance.jpg",
+                "description": "The Eight-Nation Alliance"
+            },
+            {
+                "img_id": "2",
+                "filename": "The Old Summer Palace.jpg",
+                "description": "The Old Summer Palace"
+            },
+            {
+                "img_id": "3",
+                "filename": "The Petronas Towers.jpg",
+                "description": "The Petronas Towers"
+            },
+            {
+                "img_id": "4",
+                "filename": "Terrorists.jpg",
+                "description": "Terrorists"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Eight-Nation Alliance was responsible for the looting and destruction of the Old Summer Palace during the Second Opium War in 1860, symbolizing foreign aggression and cultural loss in China. ",
+                "path": "DestructionAssociated(EightNationAlliance, OldSummerPalace) \n Thus, EightNationAlliance → OldSummerPalace"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the Petronas Towers have been targeted in discussions about terrorism, as they are significant landmarks that represent modernity and globalization, making them potential targets for extremist groups.",
+                "path": "TargetedByTerrorism(PetronasTowers, Terrorists) \n Thus, PetronasTowers → Terrorists"
+            }
+        ]
+    },
+    {
+        "foldername": "Dangerous Areas Associated with Transportation(location, location, relation, other, English)",
+        "relation": "Dangerous Areas Associated with Transportation",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bermuda Triangle.jpg",
+                "description": "Bermuda Triangle"
+            },
+            {
+                "img_id": "2",
+                "filename": "An airplane.jpg",
+                "description": "An airplane"
+            },
+            {
+                "img_id": "3",
+                "filename": "Somalia.jpg",
+                "description": "Somalia"
+            },
+            {
+                "img_id": "4",
+                "filename": "A ship.jpg",
+                "description": "A ship"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Bermuda Triangle is infamous for the mysterious disappearance of aircraft and ships, leading to an association with airplanes that have allegedly vanished in the area. ",
+                "path": "DangerousZone(BermudaTriangle, Airplane) \n Thus, BermudaTriangle → Airplane"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Somalia is known for piracy and maritime danger, particularly affecting ships and vessels operating in its waters, making both pairs representative of hazardous zones for transportation.",
+                "path": "DangerousZone(Somalia, Ship) \n Thus, Somalia → Ship"
+            }
+        ]
+    },
+    {
+        "foldername": "Cities in the Same Country that Hosted Both Summer and Winter Olympics(location, location, mutual elements, USAEnglish, English)",
+        "relation": "Cities in the Same Country that Hosted Both Summer and Winter Olympics",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Montreal.jpg",
+                "description": "Montreal"
+            },
+            {
+                "img_id": "2",
+                "filename": "Vancouver.jpg",
+                "description": "Vancouver"
+            },
+            {
+                "img_id": "3",
+                "filename": "Rome.jpg",
+                "description": "Rome"
+            },
+            {
+                "img_id": "4",
+                "filename": "Milan.jpg",
+                "description": "Milan"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Montreal hosted the Summer Olympics in 1976, while Vancouver hosted the Winter Olympics in 2010, both being cities in Canada. ",
+                "path": "OlympicHostCities(Montreal, Vancouver) \n Thus, Montreal → Vancouver"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Rome hosted the Summer Olympics in 1960, and Milan is set to host the Winter Olympics in 2026, making both cities significant for Italy's Olympic history.",
+                "path": "OlympicHostCities(Rome, Milan) \n Thus, Rome → Milan"
+            }
+        ]
+    },
+    {
+        "foldername": "World Cup Champions(location, location, metaphor, Latin American, English)",
+        "relation": "World Cup Champions",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "metaphor",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Christ the Redeemer statue.jpg",
+                "description": "Christ the Redeemer statue"
+            },
+            {
+                "img_id": "2",
+                "filename": "German national football team.jpg",
+                "description": "German national football team"
+            },
+            {
+                "img_id": "3",
+                "filename": "Table Mountain.jpg",
+                "description": "Table Mountain"
+            },
+            {
+                "img_id": "4",
+                "filename": "Spanish national football team.jpg",
+                "description": "Spanish national football team"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The German national football team has won the FIFA World Cup four times (1954, 1974, 1990, 2014), while the Christ the Redeemer statue is located in Brazil, the host of the 2014 World Cup. ",
+                "path": "Location(ChristTheRedeemer, Brazil)\nWorldCupWinner(Germany, 2014)\nThus, ChristTheRedeemer → Germany"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the Spanish national football team has won the World Cup once (2010), and Table Mountain is a prominent symbol of South Africa, which hosted the World Cup in 2010.",
+                "path": "Location(TableMountain, SouthAfrica)\nWorldCupWinner(Spain, 2010)\nThus, TableMountain → Spain"
+            }
+        ]
+    },
+    {
+        "foldername": "Cultural Icons of Cinema(location, location, mutual elements, South Asia and South-East Asia, English)",
+        "relation": "Cultural Icons of Cinema",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "mutual elements",
+        "culture": "South Asia and South-East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bollywood.jpg",
+                "description": "Bollywood"
+            },
+            {
+                "img_id": "2",
+                "filename": "Aamir Khan.jpg",
+                "description": "Aamir Khan"
+            },
+            {
+                "img_id": "3",
+                "filename": "Hollywood.jpg",
+                "description": "Hollywood"
+            },
+            {
+                "img_id": "4",
+                "filename": "Marilyn Monroe.jpg",
+                "description": "Marilyn Monroe"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Aamir Khan is a leading figure in Bollywood known for his influential roles and contributions to Indian cinema, while the vibrant dance scenes are a hallmark of Bollywood films.",
+                "path": "CulturalIcon(AamirKhan, Bollywood)\nCinematicFeature(DanceScene, Bollywood)\nThus, AamirKhan → Bollywood"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Marilyn Monroe is an iconic figure in Hollywood, known for her memorable performances and status as a cultural symbol, with Hollywood films often featuring glamorous red carpet events and significant cinematic moments.",
+                "path": "CulturalIcon(MarilynMonroe, Hollywood)\nCinematicFeature(RedCarpetEvent, Hollywood)\nThus, MarilynMonroe → Hollywood"
+            }
+        ]
+    },
+    {
+        "foldername": "Songs Named After Cities(location, location, relation, USAEnglish, English)",
+        "relation": "Songs Named After Cities",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Seine River.jpg",
+                "description": "Seine River"
+            },
+            {
+                "img_id": "2",
+                "filename": "the song 'Confession Balloon' by Jay Chou.jpg",
+                "description": "the song 'Confession Balloon' by Jay Chou"
+            },
+            {
+                "img_id": "3",
+                "filename": "Las Vegas.jpg",
+                "description": "Las Vegas"
+            },
+            {
+                "img_id": "4",
+                "filename": "the song 'Viva Las Vegas'.jpg",
+                "description": "the song 'Viva Las Vegas'"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The song 'Confession Balloon' (《告白气球》) by Jay Chou captures a romantic essence often associated with the Seine River in Paris, which is a popular setting for love songs.",
+                "path": "SongSetting(ConfessionBalloon, SeineRiver)\nCulturalSymbol(SeineRiver, Paris)\nThus, ConfessionBalloon → SeineRiver"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "'Viva Las Vegas' by Elvis Presley celebrates the vibrant atmosphere of Las Vegas, a city known for its entertainment and nightlife.",
+                "path": "SongSetting(VivaLasVegas, LasVegas)\nCulturalSymbol(LasVegas, Entertainment)\nThus, VivaLasVegas → LasVegas"
+            }
+        ]
+    },
+    {
+        "foldername": "Films Associated with Iconic Locations(location, location, relation, Ease Asia, English)",
+        "relation": "Films Associated with Iconic Locations",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Ease Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Amélie.jpg",
+                "description": "movie Amélie"
+            },
+            {
+                "img_id": "2",
+                "filename": "Eiffel Tower1.jpg",
+                "description": "Eiffel Tower"
+            },
+            {
+                "img_id": "3",
+                "filename": "Macau Storm.jpg",
+                "description": "Macau Storm"
+            },
+            {
+                "img_id": "4",
+                "filename": "the new Lisboa Hotel.jpg",
+                "description": "the new Lisboa Hotel"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Amélie is a film that captures the essence of Paris, showcasing its charm, streets, and culture. ",
+                "path": "FilmSetting(Amelie, Paris)\nCulturalSymbol(EiffelTower, Paris)\nThus, Amelie → Paris"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "'Macau Storm (澳门风云) is centered around the gambling and nightlife culture in Macau, with the New Lisboa Hotel being a significant landmark in that context.",
+                "path": "FilmSetting(MacauStorm, Macau)\nCulturalSymbol(NewLisboaHotel, Macau)\nThus, MacauStorm → NewLisboaHotel"
+            }
+        ]
+    },
+    {
+        "foldername": "Landmark airports associated with iconic features(location, location, relation, Non-English European, English)",
+        "relation": "Landmark airports associated with iconic features",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A picture of Singapore Changi Airport.jpg",
+                "description": "A picture of Singapore Changi Airport"
+            },
+            {
+                "img_id": "2",
+                "filename": "An image of the Rain Vortex inside Jewel Changi.jpg",
+                "description": "An image of the Rain Vortex inside Jewel Changi"
+            },
+            {
+                "img_id": "3",
+                "filename": "Amsterdam Schiphol Airport.jpg",
+                "description": "Amsterdam Schiphol Airport"
+            },
+            {
+                "img_id": "4",
+                "filename": "tulip fields.jpg",
+                "description": "tulip fields"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Singapore Changi Airport is famed for its Rain Vortex, the world's tallest indoor waterfall located in Jewel Changi.  ",
+                "path": "KeyElement(SingaporeChangiAirport, RainVortex)\nThus, SingaporeChangiAirport → RainVortex"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Amsterdam Schiphol Airport is closely associated with the iconic tulip fields, representing the Netherlands' rich floral tradition.",
+                "path": "KeyElement(AmsterdamSchipholAirport, TulipFields)\nThus, AmsterdamSchipholAirport → TulipFields"
+            }
+        ]
+    },
+    {
+        "foldername": "Metro systems renowned for their artistic elements(location, location, relation, Non-English European, English)",
+        "relation": "Metro systems renowned for their artistic elements",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "St. Petersburg Metro station.jpg",
+                "description": "St. Petersburg Metro station"
+            },
+            {
+                "img_id": "2",
+                "filename": "a sculpture.jpg",
+                "description": "a sculpture"
+            },
+            {
+                "img_id": "3",
+                "filename": "Stockholm Metro station.jpg",
+                "description": "Stockholm Metro station"
+            },
+            {
+                "img_id": "4",
+                "filename": "An artwork.jpg",
+                "description": "An artwork"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The St. Petersburg Metro is famous for its grand stations adorned with sculptures and artistic designs, making it an underground museum.",
+                "path": "KeyElement(StPetersburgMetro, Sculptures)\nThus, StPetersburgMetro → Sculptures"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the Stockholm Metro is known for its extensive artwork, with many stations featuring murals and installations that transform the metro experience into an art journey.",
+                "path": "KeyElement(StockholmMetro, Artworks)\nThus, StockholmMetro → Artworks"
+            }
+        ]
+    },
+    {
+        "foldername": "First underground metro stations built in their respective cities(location, location, relation, USAEnglish, English)",
+        "relation": "First underground metro stations built in their respective cities",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "the City South London Railway, highlighting Bank Station.jpg",
+                "description": "the City & South London Railway, highlighting Bank Station"
+            },
+            {
+                "img_id": "2",
+                "filename": "A scenic view of London.jpg",
+                "description": "A scenic view of London"
+            },
+            {
+                "img_id": "3",
+                "filename": "Broadway-Lafayette Street Station.jpg",
+                "description": "Broadway-Lafayette Street Station"
+            },
+            {
+                "img_id": "4",
+                "filename": "A scenic view of New York City.jpg",
+                "description": "A scenic view of New York City"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Bank Station is part of the City & South London Railway, which was the first deep-level underground railway in the world, opening in 1890. ",
+                "path": "KeyElement(CitySouthLondonRailway, BankStation)\nThus, CitySouthLondonRailway → BankStation"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Broadway-Lafayette Street Station is part of the New York City subway system, which has historical significance as one of the earliest stations in the first subway line, opened in 1904.",
+                "path": "KeyElement(BroadwayLafayetteStreetStation, NYCSubway)\nThus, BroadwayLafayetteStreetStation → NYCSubway"
+            }
+        ]
+    },
+    {
+        "foldername": "Capitals at extreme altitudes(location, location, mutual elements, Latin American, English)",
+        "relation": "Capitals at extreme altitudes",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "mutual elements",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A scenic view of La Paz, Bolivia.jpg",
+                "description": "A scenic view of La Paz, Bolivia"
+            },
+            {
+                "img_id": "2",
+                "filename": "Quito, Ecuador.jpg",
+                "description": "Quito, Ecuador"
+            },
+            {
+                "img_id": "3",
+                "filename": "A view of Doha, Qatar.jpg",
+                "description": "A view of Doha, Qatar"
+            },
+            {
+                "img_id": "4",
+                "filename": "A scenic view of Cairo, Egypt.jpg",
+                "description": "A scenic view of Cairo, Egypt"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "La Paz, Bolivia, is the highest capital city in the world, situated at an elevation of about 3,650 meters (11,975 feet) above sea level. Quito, Ecuador, is also a high-altitude capital, located at around 2,850 meters (9,350 feet) above sea level. ",
+                "path": "KeyElement(LaPaz, HighAltitude)\nKeyElement(Quito, HighAltitude)\nThus, LaPaz → HighAltitude, Quito → HighAltitude"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Doha, Qatar, is one of the lowest capital cities, situated near sea level, while Cairo, Egypt, is also at a relatively low elevation, around 23 meters (75 feet) above sea level.",
+                "path": "KeyElement(Doha, LowAltitude)\nKeyElement(Cairo, LowAltitude)\nThus, Doha → LowAltitude, Cairo → LowAltitude"
+            }
+        ]
+    },
+    {
+        "foldername": "Foods that are produced in the same city(location, location, mutual elements, Latin American, English)",
+        "relation": "Foods that are produced in the same city",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "mutual elements",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A plate of corn tortillas.jpg",
+                "description": "A plate of corn tortillas"
+            },
+            {
+                "img_id": "2",
+                "filename": "A bottle of tequila.jpg",
+                "description": "A bottle of tequila"
+            },
+            {
+                "img_id": "3",
+                "filename": "coffee beans.jpg",
+                "description": "coffee beans"
+            },
+            {
+                "img_id": "4",
+                "filename": "A vibrant display of tropical fruits.jpg",
+                "description": "A vibrant display of tropical fruits"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Corn tortillas and tequila are both iconic products of Guadalajara, Mexico, where agave plants thrive and corn is a staple crop.",
+                "path": "KeyElement(CornTortillas, Guadalajara)\nKeyElement(Tequila, Guadalajara)\nThus, CornTortillas → Guadalajara, Tequila → Guadalajara"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "coffee beans and tropical fruits are abundant in Medellín, Colombia, known for its ideal climate that supports both coffee cultivation and tropical fruit growth.",
+                "path": "KeyElement(CoffeeBeans, Medellín)\nKeyElement(TropicalFruits, Medellín)\nThus, CoffeeBeans → Medellín, TropicalFruits → Medellín"
+            }
+        ]
+    },
+    {
+        "foldername": "polar day and polar night(location, location, relation, Non-English European, English)",
+        "relation": "polar day and polar night",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "the sun shining brightly.jpg",
+                "description": "the sun shining brightly"
+            },
+            {
+                "img_id": "2",
+                "filename": "A scenic shot of Tromsø's landscape.jpg",
+                "description": "A scenic shot of Tromsø's landscape"
+            },
+            {
+                "img_id": "3",
+                "filename": "dark night.jpg",
+                "description": "dark night"
+            },
+            {
+                "img_id": "4",
+                "filename": "A captivating image of Reykjavik.jpg",
+                "description": "A captivating image of Reykjavik"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Tromsø experiences 'midnight sun' during the summer months, where the sun does not set for several weeks, creating continuous daylight.",
+                "path": "KeyElement(Tromsø, MidnightSun)\nThus, Tromsø → MidnightSun"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Reykjavik experiences 'polar night' during the winter months, where the sun does not rise for several weeks, resulting in prolonged darkness.",
+                "path": "KeyElement(Reykjavik, PolarNight)\nThus, Reykjavik → PolarNight"
+            }
+        ]
+    },
+    {
+        "foldername": "Cities known for extreme weather conditions(location, location, mutual elements, Arabic-Islamic, English)",
+        "relation": "Cities known for extreme weather conditions",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "mutual elements",
+        "culture": "Arabic-Islamic",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A photo of Baghdad, Iraq.jpg",
+                "description": "A photo of Baghdad, Iraq"
+            },
+            {
+                "img_id": "2",
+                "filename": "A photo of Riyadh, Saudi Arabia.jpg",
+                "description": "A photo of Riyadh, Saudi Arabia"
+            },
+            {
+                "img_id": "3",
+                "filename": "A winter scene in Oymyakon, Russia.jpg",
+                "description": "A winter scene in Oymyakon, Russia"
+            },
+            {
+                "img_id": "4",
+                "filename": "A photo of Yakutsk, Russia.jpg",
+                "description": "A photo of Yakutsk, Russia"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Baghdad experiences extreme heat, often reaching over 50 degrees Celsius (122 degrees Fahrenheit) during summer months. Riyadh similarly faces severe heat and sandstorms due to its desert climate.",
+                "path": "KeyElement(Baghdad, ExtremeHeat)\nKeyElement(Riyadh, ExtremeHeat)\nThus, Baghdad → ExtremeHeat, Riyadh → ExtremeHeat"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Oymyakon is known as one of the coldest inhabited places on Earth, with winter temperatures dropping below -50 degrees Celsius (-58 degrees Fahrenheit). Yakutsk also experiences extreme cold, making it one of the coldest cities globally.",
+                "path": "KeyElement(Oymyakon, ExtremeCold)\nKeyElement(Yakutsk, ExtremeCold)\nThus, Oymyakon → ExtremeCold, Yakutsk → ExtremeCold"
+            }
+        ]
+    },
+    {
+        "foldername": "Explorers and their significant encounters(location, location, relation, Latin American, English)",
+        "relation": "Explorers and their significant encounters",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A photo of Vasco da Gama sailing.jpg",
+                "description": "A photo of Vasco da Gama sailing"
+            },
+            {
+                "img_id": "2",
+                "filename": "Cape of Good Hope.jpg",
+                "description": "Cape of Good Hope"
+            },
+            {
+                "img_id": "3",
+                "filename": "Christopher Columbus.jpg",
+                "description": "Christopher Columbus"
+            },
+            {
+                "img_id": "4",
+                "filename": "Indigenous peoples of the Americas.jpg",
+                "description": "Indigenous peoples of the Americas"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Vasco da Gama is renowned for his journey around the Cape of Good Hope, which was instrumental in establishing a sea route to India and enhancing trade between Europe and Asia.",
+                "path": "KeyElement(VascoDaGama, CapeOfGoodHope)\nThus, VascoDaGama → CapeOfGoodHope"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Christopher Columbus is recognized for his encounter with Indigenous peoples of the Americas, marking the beginning of European colonization and interaction with native cultures in the New World.",
+                "path": "KeyElement(ChristopherColumbus, IndigenousPeoples)\nThus, ChristopherColumbus → IndigenousPeoples"
+            }
+        ]
+    },
+    {
+        "foldername": "Colonialism and resistance(location, location, relation, Latin American, English)",
+        "relation": "Colonialism and resistance",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A portrait of Simón Bolívar.jpg",
+                "description": "A portrait of Simón Bolívar"
+            },
+            {
+                "img_id": "2",
+                "filename": "An illustration of a Spanish explorer or navigator.jpg",
+                "description": "An illustration of a Spanish explorer or navigator"
+            },
+            {
+                "img_id": "3",
+                "filename": "A photograph of Mahatma Gandhi.jpg",
+                "description": "A photograph of Mahatma Gandhi"
+            },
+            {
+                "img_id": "4",
+                "filename": "An image depicting the East India Company.jpg",
+                "description": "An image depicting the East India Company"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Simón Bolívar is celebrated for his efforts in fighting against Spanish colonialism and leading the independence movements in South America. In contrast, Spanish navigators were instrumental in establishing colonial rule over the Americas. ",
+                "path": "KeyElement(SimónBolívar, AntiColonialMovement)\nKeyElement(SpanishNavigator, ColonialExpansion)\nThus, SimónBolívar → AntiColonialMovement, SpanishNavigator → ColonialExpansion"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Mahatma Gandhi is recognized for his non-violent struggle against the British colonial power represented by the East India Company, which played a significant role in the colonization of India.",
+                "path": "KeyElement(MahatmaGandhi, AntiColonialResistance)\nKeyElement(EastIndiaCompany, ColonialRule)\nThus, MahatmaGandhi → AntiColonialResistance, EastIndiaCompany → ColonialRule"
+            }
+        ]
+    },
+    {
+        "foldername": "Famous battles in history(location, location, mutual elements, Non-English European, English)",
+        "relation": "Famous battles in history",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "the Marathon plain.jpg",
+                "description": "the Marathon plain"
+            },
+            {
+                "img_id": "2",
+                "filename": "An illustration of the Persian Empire.jpg",
+                "description": "An illustration of the Persian Empire"
+            },
+            {
+                "img_id": "3",
+                "filename": "A painting of Hannibal.jpg",
+                "description": "A painting of Hannibal"
+            },
+            {
+                "img_id": "4",
+                "filename": "the Alps mountain.jpg",
+                "description": "the Alps mountain"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Battle of Marathon (490 BC) was a significant conflict between the Greek city-states and the Persian Empire, marking a pivotal moment in the Greco-Persian Wars.",
+                "path": "KeyElement(MarathonPlain, BattleOfMarathon)\nKeyElement(PersianEmpire, BattleOfMarathon)\nThus, MarathonPlain → BattleOfMarathon, PersianEmpire → BattleOfMarathon"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Hannibal's crossing of the Alps (218 BC) during the Second Punic War was a strategic maneuver against Rome, demonstrating his military prowess and determination to challenge the Roman Republic.",
+                "path": "KeyElement(Alps, HannibalCrossing)\nKeyElement(Hannibal, SecondPunicWar)\nThus, Alps → HannibalCrossing, Hannibal → SecondPunicWar"
+            }
+        ]
+    },
+    {
+        "foldername": "National tallest buildings alongside their landmark rivers(location, location, relation, Non-English European, English)",
+        "relation": "National tallest buildings alongside their landmark rivers",
+        "domain": [
+            "location",
+            "location"
+        ],
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A stunning photo of The Shard.jpg",
+                "description": "A stunning photo of The Shard"
+            },
+            {
+                "img_id": "2",
+                "filename": "A view of the River Thames.jpg",
+                "description": "A view of the River Thames"
+            },
+            {
+                "img_id": "3",
+                "filename": "A breathtaking view of the Shanghai Tower.jpg",
+                "description": "A breathtaking view of the Shanghai Tower"
+            },
+            {
+                "img_id": "4",
+                "filename": "A scenic shot of the Huangpu River.jpg",
+                "description": "A scenic shot of the Huangpu River"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "The Shard stands as the tallest building in the UK, located near the River Thames, which is crucial to London’s history and economy.",
+                "path": "KeyElement(TheShard, TallestBuildingUK)\nKeyElement(RiverThames, LandmarkRiver)\nThus, TheShard → TallestBuildingUK, RiverThames → LandmarkRiver"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the Shanghai Tower is the tallest building in China, situated next to the Huangpu River, a vital artery for trade and transport in Shanghai. Both pairs represent the integration of significant architectural achievements with important natural features that define their respective cities.",
+                "path": "KeyElement(ShanghaiTower, TallestBuildingChina)\nKeyElement(HuangpuRiver, LandmarkRiver)\nThus, ShanghaiTower → TallestBuildingChina, HuangpuRiver → LandmarkRiver"
+            }
+        ]
+    }
+]
