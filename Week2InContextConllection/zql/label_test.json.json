@@ -1,0 +1,485 @@
+[
+    {
+        "foldername": "Tea Ceremony(culture, relation, East Asia culture, English)",
+        "relation": "Tea Ceremony",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "East Asia culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "matcha_powder.jpg",
+                "description": "Matcha powder"
+            },
+            {
+                "img_id": "2",
+                "filename": "cherry_blossoms.jpg",
+                "description": "Cherry blossoms"
+            }
+        ],
+        "explanation": "Matcha is a key ingredient in the Japanese tea ceremony, and cherry blossoms are often associated with the ceremony's aesthetic.",
+        "reasoning": "Ingredient(Matcha, TeaCeremony)\nAssociatedWith(CherryBlossoms, TeaCeremony)\nThus, Matcha → TeaCeremony and CherryBlossoms → TeaCeremony"
+    },
+    {
+        "foldername": "Wedding Traditions(culture, mutual elements, Non-English Euro culture, English)",
+        "relation": "Wedding Traditions",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "wedding_ring.jpg",
+                "description": "Wedding ring"
+            },
+            {
+                "img_id": "2",
+                "filename": "bouquet.jpg",
+                "description": "Bouquet"
+            }
+        ],
+        "explanation": "Wedding rings and bouquets are traditional elements in Western wedding ceremonies.",
+        "reasoning": "Tradition(WeddingRing, WeddingCeremony)\nTradition(Bouquet, WeddingCeremony)\nThus, WeddingRing → WeddingCeremony and Bouquet → WeddingCeremony"
+    },
+    {
+        "foldername": "Funeral Rites(culture, mutual elements, Non-English Euro culture, English)",
+        "relation": "Funeral Rites",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "coffin.jpg",
+                "description": "Coffin"
+            },
+            {
+                "img_id": "2",
+                "filename": "black_clothing.jpg",
+                "description": "Black clothing"
+            }
+        ],
+        "explanation": "Coffins and black clothing are traditional elements in Western funeral rites.",
+        "reasoning": "Tradition(Coffin, FuneralRites)\nTradition(BlackClothing, FuneralRites)\nThus, Coffin → FuneralRites and BlackClothing → FuneralRites"
+    },
+    {
+        "foldername": "Coming-of-Age Rituals(culture, relation, Non-English Euro culture, English)",
+        "relation": "Coming-of-Age Rituals",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "graduation_cap.jpg",
+                "description": "Graduation cap"
+            },
+            {
+                "img_id": "2",
+                "filename": "quinceanera_dress.jpg",
+                "description": "Quinceañera dress"
+            }
+        ],
+        "explanation": "Graduation caps symbolize academic coming-of-age, while Quinceañera dresses are associated with a traditional Latin American coming-of-age ceremony.",
+        "reasoning": "Symbolize(GraduationCap, AcademicComingOfAge)\nAssociatedWith(QuinceaneraDress, Quinceanera)\nThus, GraduationCap → AcademicComingOfAge and QuinceaneraDress → Quinceanera"
+    },
+    {
+        "foldername": "Harvest Festivals(culture, mutual elements, Non-English Euro culture, English)",
+        "relation": "Harvest Festivals",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "cornucopia.jpg",
+                "description": "Cornucopia"
+            },
+            {
+                "img_id": "2",
+                "filename": "pumpkin.jpg",
+                "description": "Pumpkin"
+            }
+        ],
+        "explanation": "Cornucopias and pumpkins are traditional symbols associated with harvest festivals.",
+        "reasoning": "Symbol(Cornucopia, HarvestFestival)\nSymbol(Pumpkin, HarvestFestival)\nThus, Cornucopia → HarvestFestival and Pumpkin → HarvestFestival"
+    },
+    {
+        "foldername": "Traditional Music(culture, mutual elements, Non-English Euro culture, English)",
+        "relation": "Traditional Music",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "violin.jpg",
+                "description": "Violin"
+            },
+            {
+                "img_id": "2",
+                "filename": "bagpipes.jpg",
+                "description": "Bagpipes"
+            }
+        ],
+        "explanation": "Violins and bagpipes are traditional instruments in Western music.",
+        "reasoning": "Instrument(Violin, TraditionalMusic)\nInstrument(Bagpipes, TraditionalMusic)\nThus, Violin → TraditionalMusic and Bagpipes → TraditionalMusic"
+    },
+    {
+        "foldername": "Folk Dance(culture, relation, Non-English Euro culture, English)",
+        "relation": "Folk Dance",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "clogs.jpg",
+                "description": "Clogs"
+            },
+            {
+                "img_id": "2",
+                "filename": "polka.jpg",
+                "description": "Polka"
+            }
+        ],
+        "explanation": "Clogs are traditional footwear for certain folk dances, and polka is a well-known folk dance.",
+        "reasoning": "Footwear(Clogs, FolkDance)\nDance(Polka, FolkDance)\nThus, Clogs → FolkDance and Polka → FolkDance"
+    },
+    {
+        "foldername": "National Dress(culture, relation, Non-English Euro culture, English)",
+        "relation": "National Dress",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "kilt.jpg",
+                "description": "Kilt"
+            },
+            {
+                "img_id": "2",
+                "filename": "dirndl.jpg",
+                "description": "Dirndl"
+            }
+        ],
+        "explanation": "Kilts are traditional Scottish national dress, and dirndls are traditional German national dress.",
+        "reasoning": "Dress(Kilt, ScottishNationalDress)\nDress(Dirndl, GermanNationalDress)\nThus, Kilt → ScottishNationalDress and Dirndl → GermanNationalDress"
+    },
+    {
+        "foldername": "Cultural Etiquette(culture, relation, Non-English Euro culture, English)",
+        "relation": "Cultural Etiquette",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "handshake.jpg",
+                "description": "Handshake"
+            },
+            {
+                "img_id": "2",
+                "filename": "bow.jpg",
+                "description": "Bow"
+            }
+        ],
+        "explanation": "Handshakes are a common form of greeting in Western culture, while bows are a traditional form of greeting in many East Asian cultures.",
+        "reasoning": "Greeting(Handshake, WesternCulture)\nGreeting(Bow, EastAsianCulture)\nThus, Handshake → WesternCulture and Bow → EastAsianCulture"
+    },
+    {
+        "foldername": "Taboo Subjects(culture, relation, Non-English Euro culture, English)",
+        "relation": "Taboo Subjects",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "censored_speech_bubble.jpg",
+                "description": "Censored speech bubble"
+            },
+            {
+                "img_id": "2",
+                "filename": "broken_mirror.jpg",
+                "description": "Broken mirror"
+            }
+        ],
+        "explanation": "Censored speech bubbles symbolize subjects that are considered taboo to discuss, while broken mirrors are often associated with bad luck and are considered taboo in many cultures.",
+        "reasoning": "Symbolize(CensoredSpeechBubble, TabooSubjects)\nAssociatedWith(BrokenMirror, TabooSubjects)\nThus, CensoredSpeechBubble → TabooSubjects and BrokenMirror → TabooSubjects"
+    },
+    {
+        "foldername": "Body Language(culture, relation, NA, English)",
+        "relation": "Body Language",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "crossed_arms.jpg",
+                "description": "Crossed arms"
+            },
+            {
+                "img_id": "2",
+                "filename": "thumbs_up.jpg",
+                "description": "Thumbs up"
+            }
+        ],
+        "explanation": "Crossed arms often indicate defensiveness or discomfort, while a thumbs up gesture is a universal sign of approval or agreement.",
+        "reasoning": "Indicate(CrossedArms, Defensiveness)\nIndicate(ThumbsUp, Approval)\nThus, CrossedArms → BodyLanguage and ThumbsUp → BodyLanguage"
+    },
+    {
+        "foldername": "Oktoberfest(culture, mutual elements, Non-English Euro culture, English)",
+        "relation": "Oktoberfest",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English Euro culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "beer_stein.jpg",
+                "description": "Beer stein"
+            },
+            {
+                "img_id": "2",
+                "filename": "dirndl_dress.jpg",
+                "description": "Dirndl dress"
+            }
+        ],
+        "explanation": "Beer steins are traditional drinking vessels used during Oktoberfest, and dirndl dresses are traditional attire worn by women during the festival.",
+        "reasoning": "Tradition(BeerStein, Oktoberfest)\nTradition(DirndlDress, Oktoberfest)\nThus, BeerStein → Oktoberfest and DirndlDress → Oktoberfest"
+    },
+    {
+        "foldername": "Baseball  Hotdog(culture, relation, USAEnglish culture, English)",
+        "relation": "Baseball / Hotdog",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "USA/English culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "baseball_glove.jpg",
+                "description": "Baseball glove"
+            },
+            {
+                "img_id": "2",
+                "filename": "hotdog.jpg",
+                "description": "Hotdog"
+            }
+        ],
+        "explanation": "Baseball gloves are essential equipment for playing baseball, and hotdogs are a popular food item consumed during baseball games.",
+        "reasoning": "Equipment(BaseballGlove, Baseball)\nFood(Hotdog, BaseballGames)\nThus, BaseballGlove → Baseball and Hotdog → BaseballGames"
+    },
+    {
+        "foldername": "Hollywood  Walk of Fame star(culture, relation, NA, English)",
+        "relation": "Hollywood / Walk of Fame star",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "hollywood_sign.jpg",
+                "description": "Hollywood sign"
+            },
+            {
+                "img_id": "2",
+                "filename": "walk_of_fame_star.jpg",
+                "description": "Walk of Fame star"
+            }
+        ],
+        "explanation": "The Hollywood sign is an iconic symbol of the film industry, and Walk of Fame stars are awarded to celebrities as a recognition of their contributions to the entertainment industry.",
+        "reasoning": "Symbol(HollywoodSign, FilmIndustry)\nAward(WalkOfFameStar, EntertainmentIndustry)\nThus, HollywoodSign → FilmIndustry and WalkOfFameStar → EntertainmentIndustry"
+    },
+    {
+        "foldername": "Fourth of July  Fireworks(culture, relation, USAEnglish culture, English)",
+        "relation": "Fourth of July / Fireworks",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "USA/English culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "american_flag.jpg",
+                "description": "American flag"
+            },
+            {
+                "img_id": "2",
+                "filename": "fireworks.jpg",
+                "description": "Fireworks"
+            }
+        ],
+        "explanation": "The American flag is a symbol of the United States, and fireworks are a traditional part of Fourth of July celebrations.",
+        "reasoning": "Symbol(AmericanFlag, UnitedStates)\nTradition(Fireworks, FourthOfJuly)\nThus, AmericanFlag → UnitedStates and Fireworks → FourthOfJuly"
+    },
+    {
+        "foldername": "TLDR  A very long article(culture, relation, NA, English)",
+        "relation": "TLDR / A very long article",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "tldr_abbreviation.jpg",
+                "description": "TLDR abbreviation"
+            },
+            {
+                "img_id": "2",
+                "filename": "very_long_article.jpg",
+                "description": "A very long article"
+            }
+        ],
+        "explanation": "TLDR is an abbreviation used to indicate that a summary or the most important points of a long text are being provided, often in response to a very long article.",
+        "reasoning": "Abbreviation(TLDR, Summary)\nResponseTo(TLDR, LongArticle)\nThus, TLDR → Summary and LongArticle → TLDR"
+    },
+    {
+        "foldername": "Baseball  Hotdog(culture, relation, USAEnglish culture, English)",
+        "relation": "Baseball / Hotdog",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "USA/English culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "baseball_glove.jpg",
+                "description": "Baseball glove"
+            },
+            {
+                "img_id": "2",
+                "filename": "hotdog.jpg",
+                "description": "Hotdog"
+            }
+        ],
+        "explanation": "Baseball gloves are essential equipment for playing baseball, and hotdogs are a popular food item consumed during baseball games.",
+        "reasoning": "Equipment(BaseballGlove, Baseball)\nFood(Hotdog, BaseballGames)\nThus, BaseballGlove → Baseball and Hotdog → BaseballGames"
+    },
+    {
+        "foldername": "Mona Lisa  Sfumato technique description(art, relation, NA, English)",
+        "relation": "Mona Lisa / Sfumato technique description",
+        "visibility": "invisible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Mona_Lisa_painting.jpg",
+                "description": "Mona Lisa painting"
+            },
+            {
+                "img_id": "2",
+                "filename": "smoke.jpg",
+                "description": "Smoke"
+            }
+        ],
+        "explanation": "The Sfumato technique, used in the Mona Lisa, creates a smoky, blurred effect similar to the appearance of smoke.",
+        "reasoning": "Technique(Sfumato, MonaLisa)\nSimilarEffect(Sfumato, Smoke)\nThus, MonaLisa → Sfumato → Smoke"
+    },
+    {
+        "foldername": "A melting clock  A dream sequence in a film(culture, relation, NA, English)",
+        "relation": "A melting clock / A dream sequence in a film",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "melting_clock.jpg",
+                "description": "A melting clock"
+            },
+            {
+                "img_id": "2",
+                "filename": "dream_sequence.jpg",
+                "description": "A dream sequence in a film"
+            }
+        ],
+        "explanation": "A melting clock is a famous surrealist image often associated with dreams and time, while dream sequences in films are a common narrative device to depict characters' subconscious thoughts.",
+        "reasoning": "Symbol(MeltingClock, DreamsAndTime)\nDevice(DreamSequence, FilmNarrative)\nThus, MeltingClock → DreamsAndTime and DreamSequence → FilmNarrative"
+    },
+    {
+        "foldername": "A Picasso portrait  Geometric shapes(art, relation, NA, English)",
+        "relation": "A Picasso portrait / Geometric shapes",
+        "visibility": "invisible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "picasso_portrait.jpg",
+                "description": "A Picasso portrait"
+            },
+            {
+                "img_id": "2",
+                "filename": "geometric_shapes.jpg",
+                "description": "Geometric shapes"
+            }
+        ],
+        "explanation": "Picasso's portraits often incorporate geometric shapes and forms, reflecting his Cubist style.",
+        "reasoning": "Style(PicassoPortrait, Cubism)\nFeature(Cubism, GeometricShapes)\nThus, PicassoPortrait → Cubism and GeometricShapes → Cubism"
+    },
+    {
+        "foldername": "Ink brush  A character in kanji or hanja(art, relation, East Asia culture, English)",
+        "relation": "Ink brush / A character in kanji or hanja",
+        "visibility": "invisible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "East Asia culture",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "ink_brush.jpg",
+                "description": "Ink brush"
+            },
+            {
+                "img_id": "2",
+                "filename": "kanji_or_hanja_character.jpg",
+                "description": "A character in kanji or hanja"
+            }
+        ],
+        "explanation": "Ink brushes are traditional tools used for writing and painting in East Asian calligraphy, and kanji or hanja characters are the script used in Chinese and Korean calligraphy.",
+        "reasoning": "Tool(InkBrush, Calligraphy)\nScript(KanjiOrHanja, Calligraphy)\nThus, InkBrush → Calligraphy and KanjiOrHanja → Calligraphy"
+    }
+]
