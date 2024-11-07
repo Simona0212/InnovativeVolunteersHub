@@ -289,7 +289,7 @@
     },
     {
         "foldername": "Hollywood  Walk of Fame star(culture, relation, NA, English)",
-        "relation": "Hollywood / Walk of Fame star",
+        "relation": "entertainment industry",
         "visibility": "invisible",
         "domain": "culture",
         "type": "relation",
@@ -307,13 +307,13 @@
                 "description": "Walk of Fame star"
             }
         ],
-        "explanation": "The Hollywood sign is an iconic symbol of the film industry, and Walk of Fame stars are awarded to celebrities as a recognition of their contributions to the entertainment industry.",
-        "reasoning": "Symbol(HollywoodSign, FilmIndustry)\nAward(WalkOfFameStar, EntertainmentIndustry)\nThus, HollywoodSign → FilmIndustry and WalkOfFameStar → EntertainmentIndustry",
-        "hop_count": 2
+        "explanation": "The Hollywood sign is an iconic symbol of the entertainment industry, and Walk of Fame stars are awarded to celebrities as a recognition of their contributions to the entertainment industry.",
+        "reasoning": "Symbol(HollywoodSign, EntertainmentIndustry)\nRecognition(WalkOfFameStar, Celebrities) and Contribution(Celebrities, EntertainmentIndustry)\nThus, HollywoodSign → EntertainmentIndustry and WalkOfFameStar → Celebrities → EntertainmentIndustry",
+        "hop_count": 3
     },
     {
         "foldername": "Fourth of July  Fireworks(culture, relation, USAEnglish, English)",
-        "relation": "Fourth of July / Fireworks",
+        "relation": "United States",
         "visibility": "invisible",
         "domain": "culture",
         "type": "relation",
@@ -331,13 +331,13 @@
                 "description": "Fireworks"
             }
         ],
-        "explanation": "The American flag is a symbol of the United States, and fireworks are a traditional part of Fourth of July celebrations.",
-        "reasoning": "Symbol(AmericanFlag, UnitedStates)\nTradition(Fireworks, FourthOfJuly)\nThus, AmericanFlag → UnitedStates and Fireworks → FourthOfJuly",
-        "hop_count": 2
+        "explanation": "The American flag is a symbol of the United States, and fireworks are a traditional part of Fourth of July celebrations, which mark the country's independence.",
+        "reasoning": "Symbol(AmericanFlag, UnitedStates)\nTradition(Fireworks, FourthOfJuly) and Mark(FourthOfJuly, UnitedStates)\nThus, AmericanFlag → UnitedStates and Fireworks → FourthOfJuly → UnitedStates",
+        "hop_count": 3
     },
     {
         "foldername": "TLDR  A very long article(culture, relation, NA, English)",
-        "relation": "TLDR / A very long article",
+        "relation": "Summary",
         "visibility": "invisible",
         "domain": "culture",
         "type": "relation",
@@ -356,15 +356,15 @@
             }
         ],
         "explanation": "TLDR is an abbreviation used to indicate that a summary or the most important points of a long text are being provided, often in response to a very long article.",
-        "reasoning": "Abbreviation(TLDR, Summary)\nResponseTo(TLDR, LongArticle)\nThus, TLDR → Summary and LongArticle → TLDR",
-        "hop_count": 2
+        "reasoning": "Summary(TLDR, LongArticle)\nThus, TLDR → LongArticle",
+        "hop_count": 1
     },
     {
         "foldername": "Baseball  Hotdog(culture, relation, USAEnglish, English)",
-        "relation": "Baseball / Hotdog",
+        "relation": "Baseball",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "USA/English",
         "language": "English",
         "images": [
@@ -380,12 +380,12 @@
             }
         ],
         "explanation": "Baseball gloves are essential equipment for playing baseball, and hotdogs are a popular food item consumed during baseball games.",
-        "reasoning": "Equipment(BaseballGlove, Baseball)\nFood(Hotdog, BaseballGames)\nThus, BaseballGlove → Baseball and Hotdog → BaseballGames",
+        "reasoning": "Equipment(BaseballGlove, BaseballGames)\nFood(Hotdog, BaseballGames)\nThus, BaseballGlove → BaseballGames and Hotdog → BaseballGames",
         "hop_count": 2
     },
     {
         "foldername": "Mona Lisa  Sfumato technique description(art, relation, NA, English)",
-        "relation": "Mona Lisa / Sfumato technique description",
+        "relation": "Sfumato technique description",
         "visibility": "invisible",
         "domain": "art",
         "type": "relation",
@@ -409,7 +409,7 @@
     },
     {
         "foldername": "A melting clock  A dream sequence in a film(culture, relation, NA, English)",
-        "relation": "A melting clock / A dream sequence in a film",
+        "relation": "dream",
         "visibility": "invisible",
         "domain": "culture",
         "type": "relation",
@@ -428,15 +428,15 @@
             }
         ],
         "explanation": "A melting clock is a famous surrealist image often associated with dreams and time, while dream sequences in films are a common narrative device to depict characters' subconscious thoughts.",
-        "reasoning": "Symbol(MeltingClock, DreamsAndTime)\nDevice(DreamSequence, FilmNarrative)\nThus, MeltingClock → DreamsAndTime and DreamSequence → FilmNarrative",
+        "reasoning": "Symbol(MeltingClock, Dreams)\nDevice(Dream, FilmNarrative)\nThus, MeltingClock → Dreams → DreamsSequence",
         "hop_count": 2
     },
     {
         "foldername": "A Picasso portrait  Geometric shapes(art, relation, NA, English)",
-        "relation": "A Picasso portrait / Geometric shapes",
+        "relation": "Picasso's Cubist style",
         "visibility": "invisible",
         "domain": "art",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -457,10 +457,10 @@
     },
     {
         "foldername": "Ink brush  A character in kanji or hanja(art, relation, East Asia, English)",
-        "relation": "Ink brush / A character in kanji or hanja",
+        "relation": "calligraphy tool",
         "visibility": "invisible",
         "domain": "art",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "East Asia",
         "language": "English",
         "images": [
