@@ -1,0 +1,1605 @@
+[
+    {
+        "foldername": "Sports Bar(visible, sports, relation, USAEnglish, English)",
+        "relation": "Sports Bar",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Foosball table.jpg",
+                "description": "Foosball table"
+            },
+            {
+                "img_id": "2",
+                "filename": "Pint of beer.jpg",
+                "description": "beer"
+            }
+        ],
+        "explanation": "Both a foosball table and beer are commonly found in sports bars. They are individually associated with leisure and entertainment, and their combined presence strongly suggests a sports bar environment.",
+        "reasoning": "LocatedIn(FoosballTable, SportsBar)\nLocatedIn(Beer, SportsBar)\nThus, FoosballTable → SportsBar and Beer → SportsBar",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "The music(You'll Never Walk Alone)(invisible, sports, relation, USAEnglish, English)",
+        "relation": "The music(You'll Never Walk Alone)",
+        "visibility": "invisible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The Anfield stadium gates.jpg",
+                "description": "The Anfield stadium gates"
+            },
+            {
+                "img_id": "2",
+                "filename": "A 1960s Gerry & The Pacemakers album cover.jpg",
+                "description": "A 1960s Gerry & The Pacemakers album cover"
+            }
+        ],
+        "explanation": "Gerry and the Pacemakers' song 'You'll Never Walk Alone' is the anthem of Liverpool Football Club, which plays at Anfield. The Anfield gates are iconic to Liverpool FC. Gerry and the Pacemakers, a Liverpool band, recorded the song which became synonymous with the club.",
+        "reasoning": "Anthem(You'll Never Walk Alone, LiverpoolFC)\nPerform(Gerry & The Pacemakers, You'll Never Walk Alone)\nHome(LiverpoolFC, Anfield)\nThus, Anfield → LiverpoolFC → You'll Never Walk Alone → Gerry & The Pacemakers and Gerry & The Pacemakers → You'll Never Walk Alone → LiverpoolFC → Anfield",
+        "hop_count": 6,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "乒乓外交(invisible, sports, relation, East Asia, Chinese)",
+        "relation": "乒乓外交",
+        "visibility": "invisible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "Chinese",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Ping pong paddle.jpg",
+                "description": "Ping pong paddle"
+            },
+            {
+                "img_id": "2",
+                "filename": "The Great Wall of China.jpg",
+                "description": "The Great Wall of China"
+            }
+        ],
+        "explanation": "Ping pong diplomacy refers to the exchange of table tennis (ping-pong) players between the United States and People's Republic of China (PRC) in the early 1970s. The ping pong paddle represents the sport central to the diplomatic effort. The Great Wall represents China.",
+        "reasoning": "Sport(PingPong, PingPongDiplomacy)\nLocation(China, PingPongDiplomacy)\nSymbol(GreatWall, China)\nThus, PingPongPaddle → PingPong → PingPongDiplomacy and GreatWallOfChina → China → PingPongDiplomacy",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "功夫(visible, sports, relation, East Asia, Chinese)",
+        "relation": "功夫",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "Chinese",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bruce Lee.jpg",
+                "description": "Bruce Lee"
+            },
+            {
+                "img_id": "2",
+                "filename": "Shaolin Monastery.jpg",
+                "description": "Shaolin Monastery"
+            }
+        ],
+        "explanation": "Bruce Lee helped popularize Kung Fu, and Shaolin Monastery is considered the birthplace of many Kung Fu styles. Bruce Lee, a prominent martial artist and actor, significantly contributed to Kung Fu's global recognition. The Shaolin Monastery is historically linked to the development and practice of various Kung Fu styles.",
+        "reasoning": "Practice(BruceLee, KungFu)\nOrigin(ShaolinMonastery, KungFu)\nThus, BruceLee → KungFu and ShaolinMonastery → KungFu",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Nordic Bear(visible, animal, relation, other, English)",
+        "relation": "Nordic Bear",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Paw print.jpg",
+                "description": "Paw print"
+            },
+            {
+                "img_id": "2",
+                "filename": "Aurora Borealis.jpg",
+                "description": "Aurora Borealis (Northern Lights)"
+            }
+        ],
+        "explanation": "Paw prints suggest a large animal, and the Aurora Borealis places us in a northern region, hinting at a Nordic bear. While a paw print could belong to many creatures, and the Northern Lights are a natural phenomenon, together they strongly suggest a large animal inhabiting a northern environment.",
+        "reasoning": "Leave(Bear, PawPrint)\nLocatedIn(NordicBear, NordicRegion)\nVisibleIn(AuroraBorealis, NordicRegion)\nThus, PawPrint → Bear → NordicBear → NordicRegion → AuroraBorealis and AuroraBorealis → NordicRegion → NordicBear → Bear → PawPrint",
+        "hop_count": 8,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Panda(visible, animal, relation, East Asia, English)",
+        "relation": "Panda",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bamboo.jpg",
+                "description": "Bamboo"
+            },
+            {
+                "img_id": "2",
+                "filename": "Black and white fur.jpg",
+                "description": "Black and white fur"
+            }
+        ],
+        "explanation": "Pandas are known for their distinctive black and white fur and their diet consisting primarily of bamboo. Bamboo is a plant, and black and white fur is a coat coloring, but put them together, and the image of a panda becomes clear.",
+        "reasoning": "Eat(Panda, Bamboo)\nHave(Panda, BlackAndWhiteFur)\nThus, Bamboo → Panda → BlackAndWhiteFur and BlackAndWhiteFur → Panda → Bamboo",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Elephant(visible, animal, metaphor, other, English)",
+        "relation": "Elephant",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Large footprint.jpg",
+                "description": "Large footprint"
+            },
+            {
+                "img_id": "2",
+                "filename": "Trunk of a tree.jpg",
+                "description": "Trunk of a tree"
+            }
+        ],
+        "explanation": " Elephant. The large footprint represents the significant physical presence and impact of an elephant in its environment, while the trunk of a tree symbolizes the elephant's natural habitat and its behavior of foraging and uprooting plants.",
+        "reasoning": "Impact(LargeFootprint, Elephant) ∧ Habitat(TrunkOfTree, Elephant)\nThus, LargeFootprint → Elephant and TrunkOfTree → Elephant",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Dog(visible, animal, metaphor, NA, English)",
+        "relation": "Dog",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A wagging tail.jpg",
+                "description": "A wagging tail"
+            },
+            {
+                "img_id": "2",
+                "filename": "A bone.jpg",
+                "description": "A bone"
+            }
+        ],
+        "explanation": "Dog. The wagging tail symbolizes the joy and loyalty often associated with dogs, while the bone represents the classic treat and a common symbol of a dog's playfulness and affection.",
+        "reasoning": "Emotion(WaggingTail, Dog) ∧ Symbol(Treat, Bone)\nThus, WaggingTail → Dog and Bone → Dog",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Rugby(visible, sports, relation, other, English)",
+        "relation": "Rugby",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Mud.jpg",
+                "description": "Mud"
+            },
+            {
+                "img_id": "2",
+                "filename": "Scrum.jpg",
+                "description": "Scrum "
+            }
+        ],
+        "explanation": "Rugby is often played in muddy conditions, and the scrum is a key element of the game. Muddy pitches are a common sight in rugby, especially during the wetter months. The scrum is a distinctive formation in rugby where players pack together to contest the ball.",
+        "reasoning": "PlayedOn(Rugby, MuddyPitch)\nHas(Rugby, Scrum)\nThus, Mud → MuddyPitch → Rugby and Scrum → Rugby",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Olympic spirit(invisible, sports, relation, NA, English)",
+        "relation": "Olympic spirit",
+        "visibility": "invisible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Dove carrying olive branch.jpg",
+                "description": "Dove carrying olive branch"
+            },
+            {
+                "img_id": "2",
+                "filename": "Interlocked Rings.jpg",
+                "description": "Interlocked Rings "
+            }
+        ],
+        "explanation": "The Olympic spirit embodies peace (dove and olive branch) and the unity of nations (interlocked rings). The dove and olive branch are ancient symbols of peace, a core value of the Olympic games. The interlocked rings represent the five continents participating and their interconnectedness.",
+        "reasoning": "Symbolize(Dove, Peace)\nComponentOf(Peace, OlympicSpirit)\nSymbolize(InterlockedRings, UnityOfNations)\nComponentOf(UnityOfNations, OlympicSpirit)\nThus, Dove → Peace → OlympicSpirit → UnityOfNations → InterlockedRings and InterlockedRings → UnityOfNations → OlympicSpirit → Peace → Dove",
+        "hop_count": 8,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "longevity noodles(visible, food, relation, East Asia, English)",
+        "relation": "longevity noodles",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Birthday party.jpg",
+                "description": "Birthday party"
+            },
+            {
+                "img_id": "2",
+                "filename": "Extra long chopsticks.jpg",
+                "description": "Extra long chopsticks "
+            }
+        ],
+        "explanation": "Longevity noodles are a traditional dish served at birthday celebrations, often eaten with chopsticks. The extra long chopsticks emphasize the unusual length of the noodles, further hinting at their symbolic meaning of long life.",
+        "reasoning": "Serve(LongevityNoodles, BirthdayParty)\nUse(Chopsticks, LongevityNoodles) (Specifically, extra long chopsticks are sometimes used due to the length of the noodles)\nThus, BirthdayParty → LongevityNoodles and ExtraLongChopsticks → LongevityNoodles",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Golden arches(visible, food, metaphor, USAEnglish, English)",
+        "relation": "Golden arches",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A stylized golden arch.jpg",
+                "description": "A stylized golden arch (like the McDonald's logo)"
+            },
+            {
+                "img_id": "2",
+                "filename": "A fast-food tray with burgers and fries.jpg",
+                "description": "A fast-food tray with burgers and fries "
+            }
+        ],
+        "explanation": "Golden arches. The golden arches are a well-known symbol of McDonald's, a globally recognized fast-food chain. The stylized golden arch represents the brand itself, while the fast-food tray filled with burgers and fries signifies the typical menu items associated with the restaurant.",
+        "reasoning": "Symbolizes(GoldenArch, McDonald'sBrand) ∧ Represents(FastFoodTray, McDonald'sMenu) → GoldenArches\nThus, GoldenArches → GoldenArch ∧ FastFoodTray..",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Golden Ratio(visible, STEM, relation, NA, English)",
+        "relation": "Golden Ratio",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Spiral shell.jpg",
+                "description": "Spiral shell"
+            },
+            {
+                "img_id": "2",
+                "filename": "1.618.jpg",
+                "description": "1.618"
+            }
+        ],
+        "explanation": "The spiral of a shell often approximates the golden ratio, which is numerically represented as 1.618. The shell visually represents a natural occurrence of the ratio, while the number gives its mathematical representation.",
+        "reasoning": "Exhibits(SpiralShell, GoldenRatio)\nEquals(1.618, GoldenRatio)\nThus, SpiralShell → GoldenRatio and 1.618 → GoldenRatio",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Mirror reflection(visible, STEM, metaphor, NA, English)",
+        "relation": "Mirror reflection",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A vintage wall mirror with intricate framing.jpg",
+                "description": "A vintage wall mirror with intricate framing"
+            },
+            {
+                "img_id": "2",
+                "filename": "A person deep in thought, looking at their reflection with a contemplative expression.jpg",
+                "description": "A person deep in thought, looking at their reflection with a contemplative expression"
+            }
+        ],
+        "explanation": "Mirror reflection. The vintage wall mirror represents the classic object that reflects images, emphasizing the idea of how we perceive ourselves. The person deep in thought symbolizes the introspective nature of self-reflection, illustrating the mental process of evaluating one's thoughts and feelings when faced with their own image.",
+        "reasoning": "Represents(VintageMirror, ReflectiveObject) ∧ Represents(ContemplativePerson, SelfEvaluation) → MirrorReflection\nThus, MirrorReflection → VintageMirror ∧ ContemplativePerson.",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Null set(visible, STEM, relation, NA, English)",
+        "relation": "Null set",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "An empty box.jpg",
+                "description": "An empty box"
+            },
+            {
+                "img_id": "2",
+                "filename": "The symbol ∅.jpg",
+                "description": "The symbol ∅"
+            }
+        ],
+        "explanation": "A null set, also known as an empty set, contains no elements, like an empty box. It is represented by the symbol ∅.",
+        "reasoning": "Represents(EmptyBox, NullSet)\nEquals(∅, NullSet)\nThus, EmptyBox → NullSet and ∅ → NullSet",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Square roots(visible, STEM, metaphor, NA, English)",
+        "relation": "Square roots",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A mathematical symbol for square root.jpg",
+                "description": "A mathematical symbol for square root"
+            },
+            {
+                "img_id": "2",
+                "filename": "A visual representation of a perfect square.jpg",
+                "description": "A visual representation of a perfect square"
+            }
+        ],
+        "explanation": "Square roots. The square root symbol (√) signifies the operation of finding the square root of a number, while the illustration of a perfect square visually represents the concept of squaring a number (in this case, 4) to reach the original number (16). Together, they emphasize the relationship between squaring and taking square roots.",
+        "reasoning": "Represents(SquareRootSymbol, OperationOfSquareRoot) ∧ Represents(PerfectSquare, RelationshipToSquareRoot) → SquareRoots\nThus, SquareRoots → SquareRootSymbol ∧ PerfectSquare.",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Modular arithmetic(visible, STEM, relation, NA, English)",
+        "relation": "Modular arithmetic",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A clock face.jpg",
+                "description": "A clock face"
+            },
+            {
+                "img_id": "2",
+                "filename": "13 mod 12.jpg",
+                "description": "13 mod 12"
+            }
+        ],
+        "explanation": "Modular arithmetic deals with remainders after division, much like how a clock face cycles through 12 hours. \"13 mod 12\" is an example of a modular arithmetic operation, which would result in 1 (like 1 PM after 13 hours).",
+        "reasoning": "Represents(ClockFace, ModularArithmetic) (A clock uses modular arithmetic principles)\nIsA(13Mod12, ModularArithmeticOperation)\nThus, ClockFace → ModularArithmetic and 13Mod12 → ModularArithmetic",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Sun Wukong(visible, myth, metaphor, East Asia, English)",
+        "relation": "Sun Wukong",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "metaphor",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Monkey.jpg",
+                "description": "Monkey"
+            },
+            {
+                "img_id": "2",
+                "filename": "Golden cudgel.jpg",
+                "description": "Golden cudgel"
+            }
+        ],
+        "explanation": "Sun Wukong. Sun Wukong is a monkey character, famous for wielding a magical golden cudgel",
+        "reasoning": "Monkey ∧ GoldenCudgel → Sun Wukong",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Zeus(visible, myth, mutual elements, Non-English European, English)",
+        "relation": "Zeus",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Lightning bolt striking a mountain top.jpg",
+                "description": "Lightning bolt striking a mountain top"
+            },
+            {
+                "img_id": "2",
+                "filename": "Eagle perched atop a throne.jpg",
+                "description": "Eagle perched atop a throne"
+            }
+        ],
+        "explanation": "The first image depicts a lightning bolt, a well-known symbol of Zeus, the king of the gods, and his power. The second image shows an eagle perched on a throne. The eagle is a sacred animal associated with Zeus, often depicted as his messenger or companion, and the throne symbolizes his rule as king of the gods. Together, these images evoke the power and regal status of Zeus.",
+        "reasoning": "SymbolOf(LightningBolt, ZeusPower) and Attribute(ZeusPower, Zeus)\nAssociateWith(Eagle, Zeus) and SymbolOf(Throne, Kingship) and Attribute(Kingship, Zeus)\nThus, LightningBolt → ZeusPower → Zeus and Eagle → Zeus and Throne → Kingship → Zeus",
+        "hop_count": 5,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Moon(visible, stuff, mutual elements, NA, English)",
+        "relation": "Moon",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Neil Armstrong's footprint.jpg",
+                "description": "Neil Armstrong's footprint"
+            },
+            {
+                "img_id": "2",
+                "filename": "Tidal wave.jpg",
+                "description": "Tidal wave"
+            }
+        ],
+        "explanation": "The first image, Neil Armstrong's footprint, directly relates to the moon landing, signifying humanity's presence on the lunar surface. The second image, a tidal wave, is caused by the gravitational pull of the moon on Earth's oceans. Thus, both images connect to the moon, one through human exploration and the other through its natural influence on our planet.",
+        "reasoning": "Leave(NeilArmstrong, Footprint, Moon)\nCause(Moon, TidalWave)\nThus, Footprint → Moon and TidalWave → Moon",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Scene Contextualization",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Hollywood(visible, stuff, mutual elements, USAEnglish, English)",
+        "relation": "Hollywood",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Walk of Fame star.jpg",
+                "description": "Walk of Fame star"
+            },
+            {
+                "img_id": "2",
+                "filename": "Movie Clapperboard.jpg",
+                "description": "Movie Clapperboard"
+            }
+        ],
+        "explanation": "The Walk of Fame, located in Hollywood, California, honors achievements in the entertainment industry. The clapperboard is a universal symbol of filmmaking, a core industry within Hollywood. Both images, while independently representing aspects of entertainment, together strongly evoke the specific place and industry: Hollywood.",
+        "reasoning": "Locate(WalkOfFame, Hollywood)\nUse(MovieClapperboard, Filmmaking) and Center(Hollywood, Filmmaking)\nThus, WalkOfFame → Hollywood and MovieClapperboard → Filmmaking → Hollywood",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "The White House(visible, stuff, metaphor, USAEnglish, English)",
+        "relation": "The White House",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "metaphor",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Presidential Seal.jpg",
+                "description": "Presidential Seal"
+            },
+            {
+                "img_id": "2",
+                "filename": "Washington D.C. skyline.jpg",
+                "description": "Washington D.C. skyline"
+            }
+        ],
+        "explanation": "The Presidential Seal is a symbol of the U.S. presidency, closely associated with the White House as the president's residence and office. The Washington D.C. skyline prominently features the White House, making it a recognizable part of the city's imagery.",
+        "reasoning": "PresidentialSeal ∧ WashingtonDCSkyline → The White House",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Wildlife(visible, stuff, mutual elements, NA, English)",
+        "relation": "Wildlife",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Binoculars.jpg",
+                "description": "Binoculars"
+            },
+            {
+                "img_id": "2",
+                "filename": "Animal footprints in mud.jpg",
+                "description": "Animal footprints in mud"
+            }
+        ],
+        "explanation": "Binoculars are a tool frequently used for observing wildlife. Animal footprints in mud are a sign of wildlife presence. While binoculars can be used for other purposes and footprints could be of domesticated animals, the combination of the two images strongly suggests the observation of wildlife in their natural habitat.",
+        "reasoning": "Use(Binoculars, ObserveWildlife)\nIndicate(AnimalFootprints, Wildlife)\nThus, Binoculars → ObserveWildlife → Wildlife and AnimalFootprints → Wildlife",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Big Ben(visible, stuff, mutual elements, USAEnglish, English)",
+        "relation": "Big Ben",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Clock face with Roman numerals.jpg",
+                "description": "Clock face with Roman numerals"
+            },
+            {
+                "img_id": "2",
+                "filename": "Houses of Parliament.jpg",
+                "description": "Houses of Parliament"
+            }
+        ],
+        "explanation": "Big Ben, formally known as the Elizabeth Tower, is famous for its large clock face with Roman numerals. The Elizabeth Tower is part of the Houses of Parliament in London. While Roman numeral clocks exist elsewhere and the Houses of Parliament house other functions, the combination specifically points to Big Ben.",
+        "reasoning": "Feature(BigBen, ClockFaceRomanNumerals)\nPartOf(BigBen, HousesOfParliament)\nThus, ClockFaceRomanNumerals → BigBen and HousesOfParliament → BigBen",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Pyramids(visible, stuff, mutual elements, other, English)",
+        "relation": "Pyramids",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Camel.jpg",
+                "description": "Camel"
+            },
+            {
+                "img_id": "2",
+                "filename": "Mummy sarcophagus.jpg",
+                "description": "Mummy sarcophagus"
+            }
+        ],
+        "explanation": "amels are often associated with the desert landscapes where Egyptian pyramids are found. Mummy sarcophagi were placed within pyramids as part of ancient Egyptian burial rituals. While camels exist in other deserts and sarcophagi might be found in other tombs, the combination clearly evokes the Egyptian pyramids.",
+        "reasoning": "Associate(Camel, EgyptianDesert) and Locate(EgyptianPyramids, EgyptianDesert)\nPlace(MummySarcophagus, EgyptianPyramids)\nThus, Camel → EgyptianDesert → EgyptianPyramids and MummySarcophagus → EgyptianPyramids",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "اللي يزرع يحصد(visible, art, mutual elements, NA, Arabic)",
+        "relation": "اللي يزرع يحصد",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Seeds being sown in a field.jpg",
+                "description": "Seeds being sown in a field"
+            },
+            {
+                "img_id": "2",
+                "filename": "Hands holding a sheaf of wheat.jpg",
+                "description": "Hands holding a sheaf of wheat"
+            }
+        ],
+        "explanation": "The first image represents the act of planting seeds, the \"زرع\" (sowing) part of the proverb. The second image shows the harvest, the \"يحصد\" (reaps) part of the proverb. Together, they visually depict the cause-and-effect relationship described by the proverb: the effort of sowing leads to the reward of harvesting.",
+        "reasoning": "Depict(SowingSeeds, زرع) and Mean(اللي يزرع يحصد, Relationship(زرع, يحصد))\nDepict(HoldingWheat, يحصد) and Mean(اللي يزرع يحصد, Relationship(زرع, يحصد))\nThus, SowingSeeds → زرع → اللي يزرع يحصد and HoldingWheat → يحصد → اللي يزرع يحصد",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "ما كل ما يلمع ذهبا(visible, art, relation, NA, Arabic)",
+        "relation": "ما كل ما يلمع ذهبا",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Pyrite.jpg",
+                "description": "Pyrite (Fool's Gold)"
+            },
+            {
+                "img_id": "2",
+                "filename": "Gold.jpg",
+                "description": "Gold"
+            }
+        ],
+        "explanation": "Pyrite looks like gold and glitters, but it isn't real gold. This illustrates the proverb's meaning that appearances can be deceiving.",
+        "reasoning": "Glitters(Pyrite)\nNot(Pyrite, Gold)\nThus, Pyrite → Glitters → Gold and Gold → Glitters → Pyrite (Illustrating the deceptive nature of appearances)",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "الجوع كافر(visible, art, relation, NA, Arabic)",
+        "relation": "الجوع كافر",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Empty plate.jpg",
+                "description": "Empty plate"
+            },
+            {
+                "img_id": "2",
+                "filename": "Person stealing bread.jpg",
+                "description": "Person stealing bread"
+            }
+        ],
+        "explanation": "An empty plate represents hunger. A person stealing bread demonstrates the desperate acts hunger can drive someone to, implying a disregard for societal norms (like an \"infidel\" might).",
+        "reasoning": "Represents(EmptyPlate, Hunger)\nCausedBy(StealingBread, Hunger)\nThus, EmptyPlate → Hunger → StealingBread and StealingBread → Hunger → EmptyPlate",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "انگور کھٹے ہیں(visible, art, relation, Arabic-Islamic, Urdu)",
+        "relation": "انگور کھٹے ہیں",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a bunch of green grapes.jpg",
+                "description": "a bunch of green grapes"
+            },
+            {
+                "img_id": "2",
+                "filename": "a fox looking frustrated while trying to reach grapes on a high vine.jpg",
+                "description": "a fox looking frustrated while trying to reach grapes on a high vine"
+            }
+        ],
+        "explanation": "The phrase 'sour grapes' comes from Aesop's fable where a fox, unable to reach the grapes, claims they are sour. The first image of green grapes reflects the unattainable goal, while the second image of the fox symbolizes the act of belittling what one cannot have.",
+        "reasoning": "Represents(Grapes, SourGrapes)\nAttempts(FrustratedFox, Grapes)\nThus, Grapes → SourGrapes and FrustratedFox → Grapes → SourGrapes",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "جو بوؤ گے، وہی کاٹو گ(visible, art, mutual elements, Arabic-Islamic, Urdu)",
+        "relation": "جو بوؤ گے، وہی کاٹو گ",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a farmer planting seeds in a field.jpg",
+                "description": "a farmer planting seeds in a field"
+            },
+            {
+                "img_id": "2",
+                "filename": "a person holding a basket full of weeds.jpg",
+                "description": "a person holding a basket full of weeds"
+            }
+        ],
+        "explanation": "The phrase 'You reap what you sow' signifies that the actions you take (planting seeds) will determine the results you encounter (in this case, weeds represent negative outcomes from poor choices). The first image of the farmer represents the initial effort and decisions made, while the second image of the basket filled with weeds symbolizes the consequences of neglecting to sow positively or making bad choices.",
+        "reasoning": "Initiates(PlantingSeeds, Farmer)\nCollects(Weeds, Person)\nThus, PlantingSeeds → Farmer and Person → Weeds → YouReapWhatYouSow",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "talking ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "talking ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "tongue.jpg",
+                "description": "tongue"
+            },
+            {
+                "img_id": "2",
+                "filename": "Microphone.jpg",
+                "description": "Microphone"
+            }
+        ],
+        "explanation": "Both tongue and microphone are related to the ability to talk. Tongue is a crucial organ for speech production, while a microphone is a device that amplifies and transmits sound, often used for public speaking or recording speech.",
+        "reasoning": "UsedFor(Tongue, Speech)UsedFor(Microphone, Speech)IsA(Speech, TalkingAbility)Thus, Tongue → Speech → TalkingAbility and Microphone → Speech → TalkingAbility",
+        "hop_count": 4
+    },
+    {
+        "foldername": "jumping ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "jumping ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Michael Jordan.jpg",
+                "description": "Michael Jordan dunking a basketball"
+            },
+            {
+                "img_id": "2",
+                "filename": "flea.jpg",
+                "description": "A flea"
+            }
+        ],
+        "explanation": "Both Michael Jordan and a flea are known for their exceptional jumping ability, albeit on vastly different scales.Michael Jordan is famous for his incredible leaps in basketball, while fleas are known for their powerful jumps relative to their tiny size.",
+        "reasoning": "KnownFor(MichaelJordan, HighJump)KnownFor(Flea, HighJumpRelativeSize)Implies(HighJump, JumpAbility)Implies(HighJumpRelativeSize, JumpAbility).Thus, MichaelJordan → HighJump → JumpAbility and Flea → HighJumpRelativeSize → JumpAbility",
+        "hop_count": 4
+    },
+    {
+        "foldername": "brightness and power(visible, ability, relation, NA, English)",
+        "relation": "brightness and power",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "bulb.jpg",
+                "description": "Light bulb"
+            },
+            {
+                "img_id": "2",
+                "filename": "bulbs.jpg",
+                "description": "A stadium full of light bulbs."
+            }
+        ],
+        "explanation": "A single light bulb represents a small unit of computing power, while a stadium full of light bulbs represents massive computing power.The analogy connects the brightness of a single bulb to a small amount of processing power and then scales it up to a vast amount with the stadium image.",
+        "reasoning": "Represents(LightBulb, SmallComputingPower)Represents(StadiumOfLightBulbs, LargeComputingPower)Implies(SmallComputingPower, ComputingPower)Implies(LargeComputingPower, ComputingPower).Thus, LightBulb → ComputingPower and StadiumOfLightBulbs → ComputingPower",
+        "hop_count": 2
+    },
+    {
+        "foldername": "swimming ability(visible, ability, mutual elements, NA, English)",
+        "relation": "swimming ability",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "dolphin.jpg",
+                "description": "A streamlined dolphin leaping from the water."
+            },
+            {
+                "img_id": "2",
+                "filename": "fish's gills.jpg",
+                "description": "Cross-section diagram of a fish's gills."
+            }
+        ],
+        "explanation": "Dolphins and fish exhibit excellent swimming ability due to their physical adaptations, including streamlined bodies (dolphin) and efficient oxygen uptake (fish gills).",
+        "reasoning": "Attribute(StreamlinedBody, SwimmingAbility)Has(Dolphin, StreamlinedBody)Attribute(EfficientOxygenUptake, SwimmingAbility)Has(Fish, Gills)Enable(Gills, EfficientOxygenUptake).Thus, Dolphin → StreamlinedBody → SwimmingAbility and Fish → Gills → EfficientOxygenUptake → SwimmingAbility",
+        "hop_count": 5
+    },
+    {
+        "foldername": "smelling ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "smelling ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "dog.jpg",
+                "description": "A bloodhound dog with its nose to the ground."
+            },
+            {
+                "img_id": "2",
+                "filename": "molecule.jpg",
+                "description": "A molecule diagram of a specific odor compound (e.g., vanillin)."
+            }
+        ],
+        "explanation": "The bloodhound is renowned for its exceptional sense of smell, often used for tracking. The molecule diagram represents the chemical basis of smell, the odorants that interact with olfactory receptors. Together, they represent the process of smelling, from the macroscopic action of a creature using its nose to the microscopic level of chemical interaction.",
+        "reasoning": "Use(Bloodhound, Smell, Tracking)Cause(OdorCompound, Smell).Thus, Bloodhound → Smell and OdorCompound → Smell",
+        "hop_count": 2
+    },
+    {
+        "foldername": "Leadership(invisible, ability, mutual elements, NA, English)",
+        "relation": "Leadership",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "wolf.jpg",
+                "description": "A lone wolf howling at the moon."
+            },
+            {
+                "img_id": "2",
+                "filename": "conductor.jpg",
+                "description": "A conductor leading an orchestra."
+            }
+        ],
+        "explanation": "The first image represents a lone wolf, often seen as the leader of its pack, demonstrating leadership through strength, independence, and guidance. The second image shows a conductor leading an orchestra, symbolizing leadership through coordination, inspiration, and bringing harmony to a diverse group. While different in style, both images represent different facets of leadership.",
+        "reasoning": "Symbolize(LoneWolf, PackLeader) and Imply(PackLeader, Leadership)Perform(Conductor, OrchestralConducting) and Require(OrchestralConducting, Leadership).Thus, LoneWolf → PackLeader → Leadership and Conductor → OrchestralConducting → Leadership",
+        "hop_count": 4
+    },
+    {
+        "foldername": "physical prowess and control(visible, ability, mutual elements, NA, English)",
+        "relation": "physical prowess and control",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Stephen Hawking.jpg",
+                "description": "Stephen Hawking in his wheelchair."
+            },
+            {
+                "img_id": "2",
+                "filename": "ballerina.jpg",
+                "description": "A ballerina en pointe."
+            }
+        ],
+        "explanation": "The first image depicts Stephen Hawking, a brilliant physicist who achieved incredible things despite severe physical limitations imposed by ALS. The second image shows a ballerina en pointe, demonstrating remarkable physical prowess and control. While seemingly contrasting, both images represent different forms of human ability – one intellectual and overcoming adversity, the other physical and achieving exceptional skill.",
+        "reasoning": "Possess(StephenHawking, IntellectualAbility) and Overcome(StephenHawking, PhysicalLimitation)Demonstrate(BallerinaEnPointe, PhysicalAbility).Thus, StephenHawking → IntellectualAbility → Ability and BallerinaEnPointe → PhysicalAbility → Ability",
+        "hop_count": 4
+    },
+    {
+        "foldername": "growth ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "growth ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Seed.jpg",
+                "description": "Seedling sprouting"
+            },
+            {
+                "img_id": "2",
+                "filename": "Child's growth.jpg",
+                "description": "Child's growth chart on a wall."
+            }
+        ],
+        "explanation": "A seedling sprouting represents the beginning stages of growth, full of potential. A child's growth chart visually documents the natural, upward growth of a child. Both images, therefore, represent different stages and types of growth.",
+        "reasoning": "Represent(SeedlingSprouting, EarlyGrowth) and IsA(EarlyGrowth, Growth)Record(GrowthChart, PhysicalGrowth) and IsA(PhysicalGrowth, Growth).Thus, SeedlingSprouting → EarlyGrowth → Growth and GrowthChart → PhysicalGrowth → Growth",
+        "hop_count": 4
+    },
+    {
+        "foldername": "Communication Skills(invisible, ability, mutual elements, NA, English)",
+        "relation": "Communication Skills",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "TED Talk.jpg",
+                "description": "A person giving a TED Talk on stage."
+            },
+            {
+                "img_id": "2",
+                "filename": "listening.jpg",
+                "description": "A therapist actively listening to a patient."
+            }
+        ],
+        "explanation": "The first image showcases a person utilizing strong public speaking and presentation skills, which are key components of effective communication. The second image highlights active listening and empathy, crucial skills for interpersonal communication, particularly in a therapeutic setting. Both images, though different in context, represent different facets of strong communication skills.",
+        "reasoning": "Require(TED_Talk, Public_Speaking) and PartOf(Public_Speaking, Communication_Skills)Require(Therapy_Session, Active_Listening) and PartOf(Active_Listening, Communication_Skills).Thus, TED_Talk → Public_Speaking → Communication_Skills and Therapy_Session → Active_Listening → Communication_Skills",
+        "hop_count": 4
+    },
+    {
+        "foldername": "Potential to perform(invisible, ability, metaphor, NA, English)",
+        "relation": "Potential to perform",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Stage.jpg",
+                "description": "Empty Stage"
+            },
+            {
+                "img_id": "2",
+                "filename": "Spotlight.jpg",
+                "description": "Spotlight"
+            }
+        ],
+        "explanation": "'Ability' or 'Potential to perform'. An empty stage represents opportunity or a platform for performance, while a spotlight highlights talent or skill, suggesting the ability to perform.",
+        "reasoning": "Represents(EmptyStage, OpportunityToPerform)Highlights(Spotlight, Talent) and Implies(Talent, AbilityToPerform).Thus, EmptyStage → OpportunityToPerform → Ability and Spotlight → Talent → Ability",
+        "hop_count": 4
+    },
+    {
+        "foldername": "Artificial Intelligence(invisible, ability, mutual elements, NA, English)",
+        "relation": "Artificial Intelligence",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "neural network.jpg",
+                "description": "A complex neural network diagram."
+            },
+            {
+                "img_id": "2",
+                "filename": "robotic hand.jpg",
+                "description": "A robotic hand playing chess."
+            }
+        ],
+        "explanation": "The first image, a neural network diagram, represents the underlying structure and learning process of many AI systems. The second image, a robotic hand playing chess, showcases a practical application of AI, demonstrating strategic thinking and complex decision-making abilities often associated with intelligent systems.",
+        "reasoning": "Underlie(NeuralNetwork, ArtificialIntelligence)ExampleOf(ChessPlayingRobot, ArtificialIntelligence).Thus, NeuralNetwork → ArtificialIntelligence and ChessPlayingRobot → ArtificialIntelligence",
+        "hop_count": 2
+    },
+    {
+        "foldername": "repeat function(invisible, ability, mutual elements, NA, English)",
+        "relation": "repeat function",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Repeat button.jpg",
+                "description": "Repeat button."
+            },
+            {
+                "img_id": "2",
+                "filename": "Record player.jpg",
+                "description": "Record player."
+            }
+        ],
+        "explanation": "'Both a repeat button and a record player allow you to experience something 'once again'.'The repeat function allows replaying a song or section, and a record player, especially older models, often had a repeat function built-in.",
+        "reasoning": "Function(RepeatButton, Replay)Capability(RecordPlayer, Replay).Thus, RepeatButton → Replay → RecordPlayer and RecordPlayer → Replay → RepeatButton",
+        "hop_count": 4
+    },
+    {
+        "foldername": "EasilyBroken(invisible, ability, mutual elements, NA, English)",
+        "relation": "EasilyBroken",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "bubble.jpg",
+                "description": "Soap bubble"
+            },
+            {
+                "img_id": "2",
+                "filename": "Thin ice.jpg",
+                "description": "Thin ice."
+            }
+        ],
+        "explanation": "Soap bubbles are known for their delicate and easily broken nature. Thin ice is similarly precarious and prone to cracking under pressure.",
+        "reasoning": "Represents(SoapBubble, DelicateEasilyBroken)Represents(ThinIce, PrecariousEasilyBroken).Thus, SoapBubble → DelicateEasilyBroken → Fragile and ThinIce → PrecariousEasilyBroken → Fragile",
+        "hop_count": 4
+    },
+    {
+        "foldername": "Chinese Culture(invisible, culture, mutual elements, East Asia, English)",
+        "relation": "Chinese Culture",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Great Wall.jpg",
+                "description": "Great Wall of China"
+            },
+            {
+                "img_id": "2",
+                "filename": "Hongbao.jpg",
+                "description": "Red Envelope (Hongbao)"
+            }
+        ],
+        "explanation": "'Aspects of Chinese Culture'. The Great Wall is a significant historical landmark of China. Red envelopes are traditionally given during Chinese New Year and other special occasions.",
+        "reasoning": "Represents(GreatWall, ChineseHistory) and PartOf(ChineseHistory, ChineseCulture)Represents(RedEnvelope, ChineseTradition) and PartOf(ChineseTradition, ChineseCulture).Thus, GreatWall → ChineseHistory → ChineseCulture and RedEnvelope → ChineseTradition → ChineseCulture",
+        "hop_count": 4
+    },
+    {
+        "foldername": "apple(invisible, culture, mutual elements, NA, English)",
+        "relation": "apple",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "apple tree.jpg",
+                "description": "Newton sitting under an apple tree."
+            },
+            {
+                "img_id": "2",
+                "filename": "apple logo.jpg",
+                "description": "A bitten apple logo."
+            }
+        ],
+        "explanation": "The first image depicts the apocryphal story of Isaac Newton and the falling apple, which supposedly inspired his theory of gravity. The second image is the logo of Apple Inc., the technology company.",
+        "reasoning": "FallOn(Apple, Newton)Logo(AppleInc, BittenApple).Thus, Newton → Apple and BittenApple → AppleInc → Apple",
+        "hop_count": 3
+    },
+    {
+        "foldername": "Mateship(invisible, culture, metaphor, other, English)",
+        "relation": "Mateship",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Akubra hat.jpg",
+                "description": "Akubra hat"
+            },
+            {
+                "img_id": "2",
+                "filename": "Helping hand.jpg",
+                "description": "Helping hand"
+            }
+        ],
+        "explanation": "Akubra hats are a strong symbol of Australian culture, often worn by those in rural areas where mateship is highly valued. A helping hand represents the core values of mateship: loyalty, support, and camaraderie.",
+        "reasoning": "Symbolizes(Akubra, AustralianCulture) and Values(AustralianCulture, Mateship)Represents(HelpingHand, Support) and CoreValue(Support, Mateship).Thus, Akubra → AustralianCulture → Mateship and HelpingHand → Support → Mateship",
+        "hop_count": 4
+    },
+    {
+        "foldername": "Shakespeare's Globe Theatre(invisible, culture, relation, USAEnglish, English)",
+        "relation": "Shakespeare's Globe Theatre",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "wooden O.jpg",
+                "description": "A wooden O"
+            },
+            {
+                "img_id": "2",
+                "filename": "skull.jpg",
+                "description": "A skull"
+            }
+        ],
+        "explanation": "Shakespeare's Globe Theatre was a circular ('O' shaped) open-air playhouse where many of his plays, including Hamlet (famous for the skull scene 'Alas, poor Yorick! I knew him, Horatio'), were performed.",
+        "reasoning": "ShapeOf(Shakespeare'sGlobeTheatre, O)PerformedAt(Hamlet, Shakespeare'sGlobeTheatre), Contains(Hamlet, Yorick'sSkull).Thus, O → Shakespeare'sGlobeTheatre → Hamlet → Yorick'sSkull and Yorick'sSkull → Hamlet → Shakespeare'sGlobeTheatre → O",
+        "hop_count": 6
+    },
+    {
+        "foldername": "Industrial Revolution(invisible, culture, mutual elements, USAEnglish, English)",
+        "relation": "Industrial Revolution",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "locomotive.jpg",
+                "description": "a vintage steam locomotive"
+            },
+            {
+                "img_id": "2",
+                "filename": "factory.jpg",
+                "description": "A factory with smokestacks emitting smoke."
+            }
+        ],
+        "explanation": "The first image illustrates one of the key technological advancements of the Industrial Revolution, symbolizing the shift to steam power and mechanization in transportation. The second image depicts a factory setting, which represents the mass production and urbanization that characterized this transformative period in history. Together, they encapsulate the essence of the Industrial Revolution as a time of unprecedented change in industry and society.",
+        "reasoning": "Symbolizes(SteamEngine, TechnologicalAdvancement) and Represents(SteamEngine, IndustrialRevolution)Represents(Factory, MassProduction) and Represents(Factory, IndustrialRevolution).Thus, SteamEngine → TechnologicalAdvancement → IndustrialRevolution and Factory → MassProduction → IndustrialRevolution",
+        "hop_count": 4
+    },
+    {
+        "foldername": "Sodium Metal(visible, phenomenon, mutual elements, NA, English)",
+        "relation": "Sodium Metal",
+        "visibility": "visible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "yellow flame.jpg",
+                "description": "Sodium metal burning with a bright yellow flame."
+            },
+            {
+                "img_id": "2",
+                "filename": "Salt shaker.jpg",
+                "description": "Salt shaker."
+            }
+        ],
+        "explanation": "Burning sodium metal produces a characteristic bright yellow flame, a classic demonstration of a flame reaction. Table salt (sodium chloride) contains sodium metal, albeit in a chemically bound form. The salt shaker represents a common source of this compound.",
+        "reasoning": "Produce(SodiumMetal, YellowFlame) and Indicate(YellowFlame, Sodium)Contain(TableSalt, Sodium) and Contain(SaltShaker, TableSalt).Thus, SodiumMetal → YellowFlame → Sodium and SaltShaker → TableSalt → Sodium",
+        "hop_count": 4
+    },
+    {
+        "foldername": "short-lived phenomena(invisible, phenomenon, mutual elements, NA, English)",
+        "relation": "short-lived phenomena",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "soap bubble.jpg",
+                "description": "A soap bubble"
+            },
+            {
+                "img_id": "2",
+                "filename": "shooting star.jpg",
+                "description": "A shooting star"
+            }
+        ],
+        "explanation": "A soap bubble is beautiful but fragile, existing only for a brief moment before popping. A shooting star, while a dramatic celestial event, is also fleeting, visible for only a short time as it streaks across the sky. Both represent the beauty and transience of short-lived phenomena.",
+        "reasoning": "IsA(SoapBubble, TransientObject) and Characterize(TransientObject, Ephemeral)IsA(ShootingStar, TransientPhenomenon) and Characterize(TransientPhenomenon, Ephemeral). Thus, SoapBubble → TransientObject → Ephemeral and ShootingStar → TransientPhenomenon → Ephemeral",
+        "hop_count": 4
+    },
+    {
+        "foldername": "mysterious and unknown dark matter(invisible, phenomenon, relation, NA, English)",
+        "relation": "mysterious and unknown dark matter",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "galaxy.jpg",
+                "description": "Gravitational lensing effect around a galaxy."
+            },
+            {
+                "img_id": "2",
+                "filename": "question marks.jpg",
+                "description": "Empty space with faint question marks scattered throughout."
+            }
+        ],
+        "explanation": "The first image, gravitational lensing, is an observable phenomenon influenced by the gravitational pull of massive objects, including dark matter. The bending of light around galaxies suggests the presence of more matter than we can visually detect. The second image, empty space with question marks, represents the mysterious and unknown nature of dark matter, which we cannot see directly.",
+        "reasoning": "Influence(DarkMatter, GravitationalLensing)Represent(EmptySpaceWithQuestionMarks, UnknownNatureOfDarkMatter) and Is(DarkMatter, UnknownNatureOfDarkMatter).Thus, GravitationalLensing → DarkMatter and EmptySpaceWithQuestionMarks → UnknownNatureOfDarkMatter → DarkMatter",
+        "hop_count": 3
+    },
+    {
+        "foldername": "the passage of time(invisible, phenomenon, relation, NA, English)",
+        "relation": "the passage of time",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Hourglass.jpg",
+                "description": "Hourglass"
+            },
+            {
+                "img_id": "2",
+                "filename": "Decaying fruit.jpg",
+                "description": "Decaying fruit"
+            }
+        ],
+        "explanation": "An hourglass directly measures the passage of time. Decaying fruit visually represents the effect of time on organic matter.",
+        "reasoning": "Measure(Hourglass, Time)Cause(Time, Decay) and Show(DecayingFruit, Decay).Thus, Hourglass → Time and DecayingFruit → Decay → Time",
+        "hop_count": 3
+    },
+    {
+        "foldername": "Gravity(invisible, phenomenon, mutual elements, NA, English)",
+        "relation": "Gravity",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Newton.jpg",
+                "description": "Newton sitting under an apple tree"
+            },
+            {
+                "img_id": "2",
+                "filename": "Black Hole.jpg",
+                "description": "Black Hole"
+            }
+        ],
+        "explanation": "The first image depicts the anecdotal story of Newton and the falling apple, which inspired his theory of gravity. The second image, a black hole, represents an extreme manifestation of gravity.",
+        "reasoning": "Inspire(FallingApple, Newton, Gravity) and Depict(NewtonUnderTree, FallingApple)Exhibit(BlackHole, ExtremeGravity) and TypeOf(ExtremeGravity, Gravity).Thus, NewtonUnderTree → FallingApple → Gravity and BlackHole → ExtremeGravity → Gravity",
+        "hop_count": 4
+    },
+    {
+        "foldername": "Earthquake(invisible, phenomenon, relation, NA, English)",
+        "relation": "Earthquake",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Fault line.jpg",
+                "description": "Fault line."
+            },
+            {
+                "img_id": "2",
+                "filename": "Seismic waves.jpg",
+                "description": "Seismic waves."
+            }
+        ],
+        "explanation": "Earthquakes are caused by the movement of tectonic plates along fault lines, generating seismic waves that cause the ground to shake.",
+        "reasoning": "OccursAt(Earthquake, FaultLine)Produces(Earthquake, SeismicWaves).Thus, FaultLine → Earthquake and SeismicWaves → Earthquake",
+        "hop_count": 2
+    },
+    {
+        "foldername": "Cancel Culture(invisible, phenomenon, mutual elements, NA, English)",
+        "relation": "Cancel Culture",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "being erased.jpg",
+                "description": "A person being erased by a large pink eraser."
+            },
+            {
+                "img_id": "2",
+                "filename": "burning book.jpg",
+                "description": "A pile of burning books"
+            }
+        ],
+        "explanation": "The person being erased symbolizes the silencing and deplatforming of individuals. The burning books symbolize the destruction or suppression of ideas and works associated with the canceled person.",
+        "reasoning": "Symbolizes(ErasedPerson, SilencingAndDeplatforming)Symbolizes(BurningBooks, DestructionOfIdeas).Thus, ErasedPerson → SilencingAndDeplatforming → CancelCulture and BurningBooks → DestructionOfIdeas → CancelCulture",
+        "hop_count": 4
+    },
+    {
+        "foldername": "Greenhouse effect(invisible, phenomenon, relation, NA, English)",
+        "relation": "Greenhouse effect",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "exhaust flumes.jpg",
+                "description": "Thick car exhaust flumes"
+            },
+            {
+                "img_id": "2",
+                "filename": "Melting glaciers.jpg",
+                "description": "Melting glaciers"
+            }
+        ],
+        "explanation": "The first image, thick car exhaust fumes, represents a major source of greenhouse gases, particularly carbon dioxide, which contribute to the greenhouse effect. The second image, melting glaciers, depicts a direct consequence of global warming, a phenomenon exacerbated by the greenhouse effect. Thus, both images relate to the greenhouse effect, one representing a cause and the other an effect.",
+        "reasoning": "Emit(CarExhaust, GreenhouseGases) and Cause(GreenhouseGases, GreenhouseEffect)Cause(GreenhouseEffect, GlobalWarming) and Cause(GlobalWarming, GlacierMelting).Thus, CarExhaust → GreenhouseGases → GreenhouseEffect and GlacierMelting → GlobalWarming → GreenhouseEffect",
+        "hop_count": 4
+    },
+    {
+        "foldername": "Kaffee und Kuchen(invisible, phenomenon, mutual elements, Non-English European, German)",
+        "relation": "Kaffee und Kuchen",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Black Forest cake.jpg",
+                "description": "A traditional German coffee table setting with a steaming cup of coffee and a slice of Black Forest cake."
+            },
+            {
+                "img_id": "2",
+                "filename": "café scene.jpg",
+                "description": "A cozy café scene in Germany, with people enjoying pastries and cakes while chatting over coffee."
+            }
+        ],
+        "explanation": "The first image represents the classic combination of coffee and cake, specifically highlighting a popular German dessert, the Black Forest cake. The second image illustrates the cultural practice of enjoying coffee and cake together in a social setting, which is a cherished tradition in Germany. Together, these images reflect the essence of 'Kaffee und Kuchen' as both a culinary delight and a social experience.",
+        "reasoning": "Contain(CoffeeTableSetting, BlackForestCake) and Enjoy(CoffeeTableSetting, KaffeeUndKuchen)Socialize(CaféScene, KaffeeUndKuchen) and Contain(CaféScene, Pastries)Thus, CoffeeTableSetting → Kaffee und Kuchen and CaféScene → Kaffee und Kuchen.",
+        "hop_count": 2
+    }
+]
