@@ -1,0 +1,902 @@
+[
+    {
+        "foldername": "Natural vs. Man-made Structures(country, city, relation, NA, English)",
+        "relation": "Natural vs. Man-made Structures",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "lush_forest.jpg",
+                "description": "lush_forest"
+            },
+            {
+                "img_id": "2",
+                "filename": "urban_street.jpg",
+                "description": "urban_street"
+            },
+            {
+                "img_id": "3",
+                "filename": "flowing_river.jpg",
+                "description": "flowing_river"
+            },
+            {
+                "img_id": "4",
+                "filename": "concrete_bridge.jpg",
+                "description": "concrete_bridge"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Nature represents the natural environment characterized by flora and fauna, showcasing the beauty and serenity of ecosystems. In contrast, concrete symbolizes urban development, representing the man-made structures that dominate city landscapes.",
+                "Path": "Contrast(Nature, Concrete)\nThus, Nature → NaturalEnvironment"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A flowing river exemplifies a natural waterway, while a concrete bridge signifies human engineering and infrastructure that connects different areas, highlighting the juxtaposition between the natural world and urban development.",
+                "Path": "Contrast(NaturalRiver, ConcreteBridge)\nThus, NaturalRiver → ManMadeStructure"
+            }
+        ]
+    },
+    {
+        "foldername": "Contrasting Approaches(country, city, relation, NA, English)",
+        "relation": "Contrasting Approaches",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "minimalist_art_piece.jpg",
+                "description": "minimalist_art_piece"
+            },
+            {
+                "img_id": "2",
+                "filename": "intricate_architectural_design.jpg",
+                "description": "intricate_architectural_design"
+            },
+            {
+                "img_id": "3",
+                "filename": "basic_recipe.jpg",
+                "description": "basic_recipe"
+            },
+            {
+                "img_id": "4",
+                "filename": "gourmet_dish.jpg",
+                "description": "gourmet_dish"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Simplicity in design emphasizes minimalism, focusing on essential elements and clean lines, as seen in minimalist art. In contrast, complexity in design introduces layers of detail and intricacy, exemplified by ornate architectural structures.",
+                "Path": "DesignPhilosophy(Simplicity, Complexity)\nThus, Simplicity → MinimalistDesign"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A basic recipe represents straightforward cooking with minimal ingredients, while a gourmet dish showcases culinary complexity through multiple components and sophisticated techniques, highlighting different approaches to creation.",
+                "Path": "CulinaryArt(StraightforwardRecipe, GourmetDish)\nThus, StraightforwardRecipe → BasicCooking"
+            }
+        ]
+    },
+    {
+        "foldername": "Expressions of Lifestyle(country, city, relation, NA, English)",
+        "relation": "Expressions of Lifestyle",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "traditional_ceremony.jpg",
+                "description": "traditional_ceremony"
+            },
+            {
+                "img_id": "2",
+                "filename": "modern_city_skyline.jpg",
+                "description": "modern_city_skyline"
+            },
+            {
+                "img_id": "3",
+                "filename": "family_traditional_meal.jpg",
+                "description": "family_traditional_meal"
+            },
+            {
+                "img_id": "4",
+                "filename": "friends_modern_restaurant.jpg",
+                "description": "friends_modern_restaurant"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Tradition encompasses long-established practices, customs, and rituals that reflect the heritage and identity of a culture, as seen in traditional ceremonies. In contrast, modernity represents contemporary lifestyles characterized by innovation and change, exemplified by modern architecture in urban environments.",
+                "Path": "CulturalEvolution(Tradition, Modernity)\nThus, Tradition → CulturalHeritage"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Family gatherings around traditional meals highlight cultural heritage and familial bonds, while dining in a modern restaurant reflects current social trends and interactions, showcasing different expressions of lifestyle.",
+                "Path": "CulturalEvolution(TraditionalMeal, ModernRestaurant)\nThus, TraditionalMeal → ContemporaryDining"
+            }
+        ]
+    },
+    {
+        "foldername": "Contrasting Social Dynamics(country, city, relation, NA, English)",
+        "relation": "Contrasting Social Dynamics",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "solitary_figure_in_park.jpg",
+                "description": "solitary_figure_in_park"
+            },
+            {
+                "img_id": "2",
+                "filename": "friends_sharing_meal.jpg",
+                "description": "friends_sharing_meal"
+            },
+            {
+                "img_id": "3",
+                "filename": "living_alone_apartment.jpg",
+                "description": "living_alone_apartment"
+            },
+            {
+                "img_id": "4",
+                "filename": "bustling_cafe.jpg",
+                "description": "bustling_cafe"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Isolation reflects the state of being alone or separated from others, as seen in the solitary figure in the park. Conversely, connectivity highlights social interaction and togetherness, represented by friends sharing a meal.",
+                "Path": "HumanExperience(Isolation, Connectivity)\nThus, Isolation → SolitaryState"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "Living alone in a sparsely furnished apartment symbolizes personal isolation, while a bustling café filled with patrons illustrates a vibrant social environment where people connect and engage, showcasing the contrasting dynamics of human experience.",
+                "Path": "HumanExperience(LivingAlone, BustlingCafé)\nThus, LivingAlone → SocialIsolation"
+            }
+        ]
+    },
+    {
+        "foldername": "Contrasting Attitudes Toward Consumption(country, city, relation, NA, English)",
+        "relation": "Contrasting Attitudes Toward Consumption",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "diy_upcycled_project.jpg",
+                "description": "diy_upcycled_project"
+            },
+            {
+                "img_id": "2",
+                "filename": "shopping_mall_consumers.jpg",
+                "description": "shopping_mall_consumers"
+            },
+            {
+                "img_id": "3",
+                "filename": "community_garden.jpg",
+                "description": "community_garden"
+            },
+            {
+                "img_id": "4",
+                "filename": "supermarket_stocked_shelves.jpg",
+                "description": "supermarket_stocked_shelves"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Resourcefulness emphasizes creativity and sustainability, exemplified by DIY projects that repurpose materials to reduce waste and create functional items. In contrast, consumerism focuses on the acquisition of new goods, as seen in shopping malls where individuals buy products often driven by trends.",
+                "Path": "SustainabilityApproach(Resourcefulness, Consumerism)\nThus, Resourcefulness → DIYCreation"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A community garden represents an initiative where people grow their own food, promoting self-sufficiency and resourcefulness, while a supermarket filled with packaged goods illustrates a consumer-driven approach to obtaining food, showcasing the differing attitudes toward consumption and sustainability.",
+                "Path": "SustainabilityApproach(CommunityGarden, Supermarket)\nThus, CommunityGarden → SelfSufficiency"
+            }
+        ]
+    },
+    {
+        "foldername": "Forms of Leisure Enjoyment(country, city, relation, NA, English)",
+        "relation": "Forms of Leisure Enjoyment",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "hiking_scenic_trail.jpg",
+                "description": "hiking_scenic_trail"
+            },
+            {
+                "img_id": "2",
+                "filename": "concert_urban_plaza.jpg",
+                "description": "concert_urban_plaza"
+            },
+            {
+                "img_id": "3",
+                "filename": "family_picnic_park.jpg",
+                "description": "family_picnic_park"
+            },
+            {
+                "img_id": "4",
+                "filename": "outdoor_cinema_friends.jpg",
+                "description": "outdoor_cinema_friends"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Outdoor recreation focuses on activities that take place in natural settings, such as hiking, which promotes physical health and connection with nature. In contrast, urban entertainment refers to activities that occur in city environments, like attending concerts, which foster social engagement and enjoyment of cultural events.",
+                "Path": "LeisureActivity(OutdoorRecreation, UrbanEntertainment)\nThus, OutdoorRecreation → NatureEngagement"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "A family picnic represents a leisurely outdoor activity that encourages relaxation and family bonding, while an outdoor cinema provides a communal urban experience where friends gather to enjoy films, showcasing different forms of leisure enjoyment.",
+                "Path": "LeisureActivity(FamilyPicnic, OutdoorCinema)\nThus, FamilyPicnic → CommunityBonding"
+            }
+        ]
+    },
+    {
+        "foldername": "Celebration of Unity in Differences(country, city, relation, NA, English)",
+        "relation": "Celebration of Unity in Differences",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "neighborhood_gathering_diverse_food_stories.jpg",
+                "description": "neighborhood_gathering_diverse_food_stories"
+            },
+            {
+                "img_id": "2",
+                "filename": "cultural_festival_heritages_display.jpg",
+                "description": "cultural_festival_heritages_display"
+            },
+            {
+                "img_id": "3",
+                "filename": "community_workshop_collaboration.jpg",
+                "description": "community_workshop_collaboration"
+            },
+            {
+                "img_id": "4",
+                "filename": "local_market_products_crafts.jpg",
+                "description": "local_market_products_crafts"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Community bonds reflect the connections formed among individuals within a neighborhood, often strengthened through shared experiences and cultural exchanges, as seen in neighborhood gatherings. Diversity highlights the richness of different backgrounds and perspectives, celebrated through cultural festivals that bring people together.",
+                "Path": "SocialDynamics(CommunityBonds, Diversity)\nThus, CommunityBonds → SharedExperiences"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "community workshops foster collaboration and learning among diverse participants, while local markets serve as a platform for showcasing and appreciating products from various cultures, reinforcing the idea of unity in diversity.",
+                "Path": "SocialDynamics(CommunityWorkshop, LocalMarket)\nThus, CommunityWorkshop → CollaborativeLearning"
+            }
+        ]
+    },
+    {
+        "foldername": "Contributions to the Economy(country, city, relation, NA, English)",
+        "relation": "Contributions to the Economy",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "farmer_tending_crops_field.jpg",
+                "description": "farmer_tending_crops_field"
+            },
+            {
+                "img_id": "2",
+                "filename": "factory_producing_goods_machinery.jpg",
+                "description": "factory_producing_goods_machinery"
+            },
+            {
+                "img_id": "3",
+                "filename": "farmers_market_local_produce.jpg",
+                "description": "farmers_market_local_produce"
+            },
+            {
+                "img_id": "4",
+                "filename": "retail_store_showcasing_industrial_products.jpg",
+                "description": "retail_store_showcasing_industrial_products"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Agriculture represents the primary sector of the economy, focusing on the cultivation of crops and livestock to produce food and raw materials, as exemplified by the farmer in the field. In contrast, industry pertains to the secondary sector, which involves the transformation of raw materials into finished goods, as seen in the factory setting.",
+                "Path": "EconomicFoundations(Agriculture, Industry)\nThus, Agriculture → PrimarySector"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a farmer's market highlights the direct sale of agricultural products to consumers, while a retail store showcases the variety of industrial goods available to the public, both contributing to the economic ecosystem.",
+                "Path": "EconomicFoundations(FarmersMarket, RetailStore)\nThus, FarmersMarket → LocalCommerce"
+            }
+        ]
+    },
+    {
+        "foldername": "Growth and Development(country, city, relation, NA, English)",
+        "relation": "Growth and Development",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Tree roots deeply embedded in the soil.jpg",
+                "description": "Tree roots deeply embedded in the soil"
+            },
+            {
+                "img_id": "2",
+                "filename": "Tree with sprawling branches reaching out.jpg",
+                "description": "Tree with sprawling branches reaching out"
+            },
+            {
+                "img_id": "3",
+                "filename": "Family tree diagram.jpg",
+                "description": "Family tree diagram"
+            },
+            {
+                "img_id": "4",
+                "filename": "Business organization chart.jpg",
+                "description": "Business organization chart"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Roots symbolize the foundational support system for a tree, anchoring it to the ground and providing essential nutrients for growth. In contrast, branches represent the extension of that growth, reaching outwards and upwards to capture sunlight and expand the tree's reach.",
+                "path": "GrowthAndDevelopment(Roots, Branches)\nThus, Roots → FoundationOfSupport"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a family tree illustrates the ancestral roots of a family, showing connections and lineage, while a branching diagram of a business organization demonstrates how departments and roles stem from a central structure, highlighting the frameworks that support both familial and organizational growth.",
+                "path": "GrowthAndDevelopment(FamilyTree, OrgChart)\nThus, FamilyTree → AncestralConnections"
+            }
+        ]
+    },
+    {
+        "foldername": "Emotional States(country, city, relation, NA, English)",
+        "relation": "Emotional States",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Tranquil landscape with serene lake at sunset.jpg",
+                "description": "Tranquil landscape with serene lake at sunset"
+            },
+            {
+                "img_id": "2",
+                "filename": "Crowded city street during rush hour.jpg",
+                "description": "Crowded city street during rush hour"
+            },
+            {
+                "img_id": "3",
+                "filename": "Person meditating in quiet space surrounded by nature.jpg",
+                "description": "Person meditating in quiet space surrounded by nature"
+            },
+            {
+                "img_id": "4",
+                "filename": "Chaotic protest or concert scene with energetic crowd.jpg",
+                "description": "Chaotic protest or concert scene with energetic crowd"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Calm represents a state of peace and tranquility, as illustrated by the serene lake that evokes feelings of relaxation and stillness. In contrast, chaos embodies disorder and frenetic energy, depicted by the busy city street teeming with people and movement.",
+                "path": "EmotionalStates(Calm, Chaos)\nThus, Calm → PeacefulEnvironment"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "meditation in a quiet space signifies a personal retreat into calmness, while a protest or concert showcases the high-energy environment of chaos, highlighting the contrasting emotional environments that people can experience.",
+                "path": "EmotionalStates(Meditation, ChaoticScene)\nThus, Meditation → PersonalPeace"
+            }
+        ]
+    },
+    {
+        "foldername": "Cultural Dynamics(country, city, relation, NA, English)",
+        "relation": "Cultural Dynamics",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Cultural festival showcasing traditional music and dance.jpg",
+                "description": "Cultural festival showcasing traditional music and dance"
+            },
+            {
+                "img_id": "2",
+                "filename": "Modern technology expo featuring gadgets and innovations.jpg",
+                "description": "Modern technology expo featuring gadgets and innovations"
+            },
+            {
+                "img_id": "3",
+                "filename": "Craftsman hand-making pottery using ancient techniques.jpg",
+                "description": "Craftsman hand-making pottery using ancient techniques"
+            },
+            {
+                "img_id": "4",
+                "filename": "Design studio working on cutting-edge product prototypes.jpg",
+                "description": "Design studio working on cutting-edge product prototypes"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Tradition embodies the customs and practices passed down through generations, as represented by cultural festivals that celebrate heritage through music and dance. In contrast, innovation signifies the introduction of new ideas and technologies, exemplified by a modern technology expo showcasing advancements.",
+                "path": "CulturalDynamics(Tradition, Innovation)\nThus, Tradition → HeritagePreservation"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a craftsman using ancient pottery techniques highlights the importance of preserving traditional skills, while a design studio working on prototypes reflects the drive for progress and creativity, illustrating the dynamic interplay between tradition and innovation.",
+                "path": "CulturalDynamics(Craftsman, DesignStudio)\nThus, Craftsman → SkillPreservation"
+            }
+        ]
+    },
+    {
+        "foldername": "Economic and Social Structures(country, city, relation, NA, English)",
+        "relation": "Economic and Social Structures",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Person tending to a home vegetable garden.jpg",
+                "description": "Person tending to a home vegetable garden"
+            },
+            {
+                "img_id": "2",
+                "filename": "Family shopping at a grocery store.jpg",
+                "description": "Family shopping at a grocery store"
+            },
+            {
+                "img_id": "3",
+                "filename": "Person repairing a bicycle with tools.jpg",
+                "description": "Person repairing a bicycle with tools"
+            },
+            {
+                "img_id": "4",
+                "filename": "Individual waiting for a bus.jpg",
+                "description": "Individual waiting for a bus"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Self-sufficiency highlights the ability to meet one's own needs through personal efforts, as illustrated by a person growing their own food in a vegetable garden. In contrast, dependency reflects reliance on external resources or services, exemplified by a family purchasing groceries from a store.",
+                "path": "EconomicStructures(SelfSufficiency, Dependency)\nThus, SelfSufficiency → IndependentLiving"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "repairing a bicycle demonstrates self-sufficiency through the use of personal skills and tools, while relying on public transportation showcases dependence on available services for mobility, illustrating the contrasting approaches to resource management in daily life.",
+                "path": "EconomicStructures(BicycleRepair, PublicTransport)\nThus, BicycleRepair → SkillUtilization"
+            }
+        ]
+    },
+    {
+        "foldername": "Coexistence of Elements(country, city, relation, NA, English)",
+        "relation": "Coexistence of Elements",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Lush forest with wildlife thriving.jpg",
+                "description": "Lush forest with wildlife thriving"
+            },
+            {
+                "img_id": "2",
+                "filename": "Solar panel installation in an open field.jpg",
+                "description": "Solar panel installation in an open field"
+            },
+            {
+                "img_id": "3",
+                "filename": "River flowing through a valley.jpg",
+                "description": "River flowing through a valley"
+            },
+            {
+                "img_id": "4",
+                "filename": "Dam or hydroelectric power station.jpg",
+                "description": "Dam or hydroelectric power station"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Nature represents the ecosystem and biodiversity, as seen in the thriving forest that supports various wildlife. Technology, in this context, refers to human innovations that enhance sustainability, illustrated by solar panels that harness energy from the sun.",
+                "path": "Coexistence(Nature, Technology)\nThus, Nature → EcosystemSustainability"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the flowing river signifies the natural water system that supports life, while a dam demonstrates how technology can be used to harness the power of that natural resource for energy production, showcasing the integration of natural and man-made systems.",
+                "path": "Coexistence(NaturalRiver, HydroelectricDam)\nThus, NaturalRiver → EnergyResource"
+            }
+        ]
+    },
+    {
+        "foldername": "Social Structures(country, city, relation, NA, English)",
+        "relation": "Social Structures",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Uniform group of people dressed identically.jpg",
+                "description": "Uniform group of people dressed identically"
+            },
+            {
+                "img_id": "2",
+                "filename": "Vibrant marketplace with diverse products.jpg",
+                "description": "Vibrant marketplace with diverse products"
+            },
+            {
+                "img_id": "3",
+                "filename": "Classroom with students learning the same subject.jpg",
+                "description": "Classroom with students learning the same subject"
+            },
+            {
+                "img_id": "4",
+                "filename": "Multicultural festival with diverse performances and foods.jpg",
+                "description": "Multicultural festival with diverse performances and foods"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Homogeneity refers to a state of uniformity within a group, as illustrated by a community where individuals share the same attire, symbolizing shared identity and values. In contrast, diversity showcases the presence of varied backgrounds and cultures, represented by a marketplace bustling with different products reflecting cultural richness.",
+                "path": "SocialStructures(Homogeneity, Diversity)\nThus, Homogeneity → UniformIdentity"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a classroom with students learning the same subject demonstrates a structured and uniform approach to education, while a multicultural festival celebrates the variety of cultures through performances and cuisine, highlighting the vibrant expressions of social composition.",
+                "path": "SocialStructures(Classroom, MulticulturalFestival)\nThus, Classroom → StructuredLearning"
+            }
+        ]
+    },
+    {
+        "foldername": "Economic Systems(country, city, relation, NA, English)",
+        "relation": "Economic Systems",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bustling local market with fresh produce and handmade goods.jpg",
+                "description": "Bustling local market with fresh produce and handmade goods"
+            },
+            {
+                "img_id": "2",
+                "filename": "Shipping container yard for international trade.jpg",
+                "description": "Shipping container yard for international trade"
+            },
+            {
+                "img_id": "3",
+                "filename": "Farmer selling organic vegetables at community market.jpg",
+                "description": "Farmer selling organic vegetables at community market"
+            },
+            {
+                "img_id": "4",
+                "filename": "Large cargo ship navigating through international waters.jpg",
+                "description": "Large cargo ship navigating through international waters"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Local markets represent a grassroots economic system where community members engage in buying and selling goods, often emphasizing local produce and artisan crafts. This is exemplified by the vibrant atmosphere of a local market filled with vendors. In contrast, global trade reflects a broader economic system that connects countries through the exchange of goods and services, as seen in the shipping container yard that facilitates international transactions.",
+                "path": "EconomicSystems(LocalMarkets, GlobalTrade)\nThus, LocalMarkets → CommunityEconomy"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a farmer selling organic vegetables at a community market highlights direct local exchange, while a cargo ship loaded with goods signifies the scale and complexity of global trade, illustrating the interconnected circuits of economic exchange.",
+                "path": "EconomicSystems(FarmerMarket, CargoShip)\nThus, FarmerMarket → DirectSales"
+            }
+        ]
+    },
+    {
+        "foldername": "Emotional Atmospheres(country, city, relation, NA, English)",
+        "relation": "Emotional Atmospheres",
+        "domain": [
+            "country",
+            "city"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Serene beach at sunrise with gentle waves.jpg",
+                "description": "Serene beach at sunrise with gentle waves"
+            },
+            {
+                "img_id": "2",
+                "filename": "Lively street festival with people dancing and music playing.jpg",
+                "description": "Lively street festival with people dancing and music playing"
+            },
+            {
+                "img_id": "3",
+                "filename": "Calm library with people reading and studying.jpg",
+                "description": "Calm library with people reading and studying"
+            },
+            {
+                "img_id": "4",
+                "filename": "Bustling café with patrons chatting energetically.jpg",
+                "description": "Bustling café with patrons chatting energetically"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Quietude embodies tranquility and peace, as illustrated by the serene beach that evokes a sense of calm and solitude. In contrast, vibrancy represents energy and liveliness, exemplified by a street festival filled with music and movement, showcasing a jubilant atmosphere.",
+                "path": "EmotionalAtmospheres(Quietude, Vibrancy)\nThus, Quietude → TranquilEnvironment"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "a calm library signifies a space dedicated to quiet reflection and study, while a bustling café captures the dynamic interactions of people enjoying their time together, highlighting the contrasting emotional environments that shape human experiences.",
+                "path": "EmotionalAtmospheres(Library, Café)\nThus, Library → ReflectiveSpace"
+            }
+        ]
+    },
+    {
+        "foldername": "Advancements in Agriculture(country, STEM, relation, NA, English)",
+        "relation": "Advancements in Agriculture",
+        "domain": [
+            "country",
+            "STEM"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Farmer_with_drone.jpg",
+                "description": "Farmer_with_drone"
+            },
+            {
+                "img_id": "2",
+                "filename": "Traditional_tractor.jpg",
+                "description": "Traditional_tractor"
+            },
+            {
+                "img_id": "3",
+                "filename": "Digital_dashboard.jpg",
+                "description": "Digital_dashboard"
+            },
+            {
+                "img_id": "4",
+                "filename": "Farmer_with_spreader.jpg",
+                "description": "Farmer_with_spreader"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Agricultural technology encompasses modern tools and systems designed to enhance farming efficiency and productivity, as seen with the use of drones for monitoring crops. In contrast, traditional farming practices, illustrated by a tractor plowing a field manually, represent the historical methods of agriculture.",
+                "path": "AdvancementsInAgriculture(AgriculturalTechnology, TraditionalFarming)\nThus, AgriculturalTechnology → EnhancedEfficiency"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "precision farming involves the use of advanced data collection and analysis, exemplified by a digital dashboard that provides real-time information on soil conditions, while the use of a manual spreader for fertilizers reflects older, less precise methods.",
+                "path": "AdvancementsInAgriculture(PrecisionFarming, ManualSpreader)\nThus, PrecisionFarming → DataDrivenAgriculture"
+            }
+        ]
+    },
+    {
+        "foldername": "Environmental Practices(country, STEM, relation, NA, English)",
+        "relation": "Environmental Practices",
+        "domain": [
+            "country",
+            "STEM"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Wind_farm.jpg",
+                "description": "Wind_farm"
+            },
+            {
+                "img_id": "2",
+                "filename": "Coal_power_plant.jpg",
+                "description": "Coal_power_plant"
+            },
+            {
+                "img_id": "3",
+                "filename": "Solar_panels.jpg",
+                "description": "Solar_panels"
+            },
+            {
+                "img_id": "4",
+                "filename": "Landfill_site.jpg",
+                "description": "Landfill_site"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Renewable energy focuses on harnessing natural resources that are replenished over time, exemplified by a wind farm producing clean electricity. In contrast, traditional energy sources, such as coal, generate power through combustion, leading to environmental pollution, as seen in the coal power plant.",
+                "path": "EnvironmentalPractices(RenewableEnergy, TraditionalEnergy)\nThus, RenewableEnergy → CleanProduction"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "solar panel installations represent a sustainable method of energy generation by capturing sunlight, while a landfill site illustrates the negative impact of waste and unsustainable practices on the environment.",
+                "path": "EnvironmentalPractices(SolarPanels, LandfillSite)\nThus, SolarPanels → SustainableEnergy"
+            }
+        ]
+    },
+    {
+        "foldername": "Communication Infrastructure(country, STEM, relation, NA, English)",
+        "relation": "Communication Infrastructure",
+        "domain": [
+            "country",
+            "STEM"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Telecommunications_tower.jpg",
+                "description": "Telecommunications_tower"
+            },
+            {
+                "img_id": "2",
+                "filename": "Post_office_building.jpg",
+                "description": "Post_office_building"
+            },
+            {
+                "img_id": "3",
+                "filename": "Smartphones_video_calls.jpg",
+                "description": "Smartphones_video_calls"
+            },
+            {
+                "img_id": "4",
+                "filename": "Vintage_telephone_booth.jpg",
+                "description": "Vintage_telephone_booth"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Telecommunications represent modern methods of communication that utilize technology to transmit information over distances, illustrated by the telecommunications tower facilitating wireless communication. In contrast, traditional communication methods are depicted by the post office, which relies on physical mail to connect individuals.",
+                "path": "CommunicationInfrastructure(Telecommunications, TraditionalMail)\nThus, Telecommunications → ModernCommunication"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the use of smartphones for video calling showcases the advanced connectivity options available today, while the vintage telephone booth symbolizes earlier methods of communication that have largely been replaced by modern technology.",
+                "path": "CommunicationInfrastructure(Smartphones, TelephoneBooth)\nThus, Smartphones → AdvancedConnectivity"
+            }
+        ]
+    },
+    {
+        "foldername": "Environmental Protection(country, STEM, relation, NA, English)",
+        "relation": "Environmental Protection",
+        "domain": [
+            "country",
+            "STEM"
+        ],
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Scientist_researching_environmental_samples.jpg",
+                "description": "Scientist_researching_environmental_samples"
+            },
+            {
+                "img_id": "2",
+                "filename": "Factory_polluting_environment.jpg",
+                "description": "Factory_polluting_environment"
+            },
+            {
+                "img_id": "3",
+                "filename": "Volunteers_tree_planting.jpg",
+                "description": "Volunteers_tree_planting"
+            },
+            {
+                "img_id": "4",
+                "filename": "Wildlife_sanctuary_protecting_species.jpg",
+                "description": "Wildlife_sanctuary_protecting_species"
+            }
+        ],
+        "reasoning": [
+            {
+                "pair_id": "1",
+                "explanation": "Environmental science involves the study of ecosystems, pollution, and the factors affecting the environment, as represented by the scientist researching environmental samples to understand and mitigate issues. In contrast, the factory symbolizes the negative impact of industrial activities on the environment, highlighting the challenges that conservation efforts aim to address.",
+                "path": "EnvironmentalProtection(EnvironmentalScience, Pollution)\nThus, EnvironmentalScience → UnderstandingEcosystems"
+            },
+            {
+                "pair_id": "2",
+                "explanation": "the tree-planting event represents proactive conservation efforts aimed at restoring and improving ecosystems, while a wildlife sanctuary illustrates dedicated initiatives to protect endangered species and their habitats.",
+                "path": "EnvironmentalProtection(TreePlanting, WildlifeSanctuary)\nThus, TreePlanting → RestorationEfforts"
+            }
+        ]
+    }
+]
