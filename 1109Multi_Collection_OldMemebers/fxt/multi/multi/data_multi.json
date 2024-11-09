@@ -1,0 +1,590 @@
+[
+    {
+        "foldername": "Kuala Lumpur(invisible, city, mutual elements, NA, English)",
+        "relation": "Kuala Lumpur",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a dragon.jpg",
+                "description": "a dragon",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "silhouette of twin towers.jpg",
+                "description": "silhouette of twin towers",
+                "count": 2
+            }
+        ],
+        "explanation": "The phrase '酷了龙坡' (pronounced as 'Cool Dragon Slope') plays with the sound of Kuala Lumpur, while the twin towers are a famous landmark in the city. The first image, a dragon, connects to the playful pronunciation of Kuala Lumpur, and the second image represents the iconic Petronas Twin Towers that define the city's skyline.",
+        "reasoning": "SoundsLike(KualaLumpur, CoolDragonSlope)\nIsLandmark(PetronasTwinTowers, KualaLumpur)\nThus, CoolDragonSlope → KualaLumpur and PetronasTwinTowers → KualaLumpur",
+        "hop_count": 2,
+        "perception": ["Semantic Object","Abstract Interpretation"],
+        "conception": ["Functional Links"]
+    },
+    {
+        "foldername": "Santorini(visible, city, mutual elements, NA, English)",
+        "relation": "Santorini",
+        "visibility": "visible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "365.jpg",
+                "description": "365",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "a caldera sunset.jpg",
+                "description": "a caldera sunset",
+                "count" : 2
+            }
+        ],
+        "explanation": "The number 365 represents the estimated number of white churches with blue domes found on Santorini, while the caldera sunset is a breathtaking view that attracts many visitors. The first image, 365, symbolizes the iconic churches on the island, and the second image depicts the stunning natural beauty of Santorini's volcanic caldera at sunset.",
+        "reasoning": "Represents(365, WhiteChurchesInSantorini)\nIsFamousFor(CalderaSunset, Santorini)\nThus, 365 → WhiteChurchesInSantorini and CalderaSunset → Santorini",
+        "hop_count": 2,
+        "perception": ["Semantic Object","Abstract Interpretation"],
+        "conception": ["Thematic Links","Hierarchical Association"]
+    },
+    {
+        "foldername": "Newton's Laws of Motion(invisible, STEM, mutual elements, NA, English)",
+        "relation": "Newton's Laws of Motion",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Apple falling from a tree.jpg",
+                "description": "Apple falling from a tree",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Newton's Second Law.jpg",
+                "description": "Newton's Second Law",
+                "count": 3
+            }
+        ],
+        "explanation": "An apple falling from a tree, supposedly inspired Newton's discovery of gravity, which is fundamental to his Laws of Motion, including F=ma (force equals mass times acceleration).",
+        "reasoning": "Illustrates(FallingApple, Gravity)\nExplains(NewtonsLawsOfMotion, Gravity)\nFormulaOf(F=ma, NewtonsLawsOfMotion)\nThus, FallingApple → Gravity → NewtonsLawsOfMotion → F=ma and F=ma → NewtonsLawsOfMotion → Gravity → FallingApple",
+        "hop_count": 6,
+        "perception": ["Contextual Sensory Cues","Abstract Interpretation","Relation Perception"],
+        "conception": ["Causal Connections","Hierarchical Association"]
+    },
+    {
+        "foldername": "Electronics(invisible, STEM, relation, NA, English)",
+        "relation": "Electronics",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Circuit Board.jpg",
+                "description": "Circuit Board",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Electricity.jpg",
+                "description": "Electricity",
+                "count": 3
+            }
+        ],
+        "explanation": "Circuit boards provide the pathways for electricity to flow and power electronic components.",
+        "reasoning": "Conducts(CircuitBoard, Electricity)\nBasisOf(Electricity, Electronics)\nThus, CircuitBoard → Electricity → Electronics",
+        "hop_count": 2,
+        "perception": ["Relation Perception"],
+        "conception": ["Functional Links","Hierarchical Association"]
+    },
+    {
+        "foldername": "Geology(invisible, STEM, relation, NA, English)",
+        "relation": "Geology",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Earthquake.jpg",
+                "description": "Earthquake",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "Tectonic Plates.jpg",
+                "description": "Tectonic Plates",
+                "count": 4
+            }
+        ],
+        "explanation": "Earthquakes are caused by the movement of tectonic plates, a key concept in geology.",
+        "reasoning": "CausedBy(Earthquake, TectonicPlates)\nStudiedBy(TectonicPlates, Geology)\nThus, Earthquake → TectonicPlates → Geology",
+        "hop_count": 2,
+        "perception": ["Relation Perception"],
+        "conception": ["Functional Links","Hierarchical Association"]
+    },
+    {
+        "foldername": "Montreal(invisible, city, mutual elements, NA, English)",
+        "relation": "Montreal",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "375.jpg",
+                "description": "375",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "a dessert with maple syrup.jpg",
+                "description": "a dessert with maple syrup",
+                "count": 2
+            }
+        ],
+        "explanation": "The number 375 commemorates Montreal's 375th anniversary, while the dessert with maple syrup symbolizes the city's rich culinary heritage, particularly its famous use of maple syrup. The first image highlights a significant milestone in Montreal's history, and the second image represents a beloved local delicacy that reflects the city's French-Canadian culture.",
+        "reasoning": "Commemorates(Montreal, 375)\nRepresents(MapleSyrupDessert, MontrealCuisine)\nThus, 375 → Montreal and MapleSyrupDessert → MontrealCuisine → Montreal",
+        "hop_count": 3,
+        "perception": ["Semantic Object","Abstract Interpretation"],
+        "conception": ["Functional Links","Thematic Links"]
+    },
+    {
+        "foldername": "Proprioception(invisible, sense, mutual elements, NA, English)",
+        "relation": "Proprioception",
+        "visibility": "invisible",
+        "domain": "sense",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A hand balancing on a beam.jpg",
+                "description": "A hand balancing on a beam",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A person standing on one leg.jpg",
+                "description": "A person standing on one leg",
+                "count": 3
+            }
+        ],
+        "explanation": "Both hand balancing and standing on one leg require a keen sense of proprioception to maintain balance.",
+        "reasoning": "Proprioception(Balance, HandBalancing)\nProprioception(Balance, StandingOnOneLeg)\nThus, HandBalancing → Proprioception and StandingOnOneLeg → Proprioception",
+        "hop_count": 2,
+        "perception": ["Relation Perception"],
+        "conception": ["Thematic Links"]
+    },
+    {
+        "foldername": "AmericanCulture(visible, country, mutual elements, USAEnglish, English)",
+        "relation": "AmericanCulture",
+        "visibility": "visible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Hollywood Walk of Fame.jpg",
+                "description": "Hollywood Walk of Fame ",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "Baseball Bat.jpg",
+                "description": "Baseball Bat",
+                "count": 4
+            }
+        ],
+        "explanation": "A star on the Hollywood Walk of Fame represents success in entertainment, and a baseball bat symbolizes success in a quintessential American sport.",
+        "reasoning": "Symbolizes(HollywoodWalkOfFame, SuccessInEntertainment)\nSymbolizes(BaseballBat, SuccessInBaseball)\nAspectOf(Entertainment, AmericanCulture)\nAspectOf(Baseball, AmericanCulture)\nThus, HollywoodWalkOfFame → SuccessInEntertainment → AmericanCulture and BaseballBat → SuccessInBaseball → AmericanCulture",
+        "hop_count": 4,
+        "perception": ["Relation Perception","Scene Contextualization"],
+        "conception": ["Thematic Links"]
+    },
+    {
+        "foldername": "AmericanIdentity(visible, country, relation, USAEnglish, English)",
+        "relation": "AmericanIdentity",
+        "visibility": "visible",
+        "domain": "country",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Golden Gate Bridge.jpg",
+                "description": "Golden Gate Bridge",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "Cowboy Hat.jpg",
+                "description": "Cowboy Hat",
+                "count": 4
+            }
+        ],
+        "explanation": "The Golden Gate Bridge is an iconic American landmark, and the cowboy hat represents a romanticized and historically significant aspect of American identity, particularly in the West.",
+        "reasoning": "IsA(GoldenGateBridge, AmericanLandmark)\nRepresents(CowboyHat, AmericanWest)\nPartOf(AmericanWest, AmericanIdentity)\nThus, GoldenGateBridge → AmericanLandmark and CowboyHat → AmericanWest → AmericanIdentity",
+        "hop_count": 3,
+        "perception": ["Relation Perception","Scene Contextualization"],
+        "conception": ["Thematic Links"]
+    },
+    {
+        "foldername": "Hanoi(invisible, country, mutual elements, NA, English)",
+        "relation": "Hanoi",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a laughing face.jpg",
+                "description": "a laughing face",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "no.jpg",
+                "description": "no",
+                "count": 4
+            }
+        ],
+        "explanation": "The sound 'Ha' represents laughter, while 'No' can be associated with music, together phonetically resembling 'Hanoi', the capital of Vietnam known for its rich culture and culinary delights. The first image captures an emotion, and the second image symbolizes an art form, both contributing to the understanding of Hanoi's cultural essence.",
+        "reasoning": "SoundsLike(Hanoi, Ha + No)\nIsFamousFor(Hanoi, CultureAndCuisine)\nThus, Ha → Hanoi and No → Hanoi → CultureAndCuisine",
+        "hop_count": 3,
+        "perception": ["Semantic Object"],
+        "conception": ["Hierarchical Association"]
+    },
+    {
+        "foldername": "Shark Tank(invisible, business, mutual elements, NA, English)",
+        "relation": "Shark Tank",
+        "visibility": "invisible",
+        "domain": "business",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Shark fin.jpg",
+                "description": "Shark fin",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "business pitch deck.jpg",
+                "description": "business pitch deck",
+                "count": 2
+            }
+        ],
+        "explanation": "Shark fin represents the Sharks (investors) and a pitch deck is what entrepreneurs present on Shark Tank.",
+        "reasoning": "Represent(SharkFin, Shark/Investor)\nUse(Entrepreneur, PitchDeck, on SharkTank)\nThus, SharkFin → SharkTank ← PitchDeck and PitchDeck → SharkTank ← SharkFin",
+        "hop_count": 2,
+        "perception": ["Semantic Object","Abstract Interpretation","Relation Perception"],
+        "conception": ["Thematic Links","Functional Links"]
+    },
+    {
+        "foldername": "Leverage(invisible, business, mutual elements, NA, English)",
+        "relation": "Leverage",
+        "visibility": "invisible",
+        "domain": "business",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "lever.jpg",
+                "description": "lever",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "High debt.jpg",
+                "description": "High debt",
+                "count": 4
+            }
+        ],
+        "explanation": "Leverage in finance refers to using borrowed capital to increase potential returns, similar to a lever multiplying force. A high debt/equity ratio indicates high leverage.",
+        "reasoning": "Represent(LeverLiftingObject, MultiplyingForce)\nIndicate(HighDebtEquityRatio, HighLeverage)\nAnalogous(MultiplyingForce(Physical), MultiplyingReturns(Financial))\nThus, LeverLiftingObject → MultiplyingForce → HighLeverage ← HighDebtEquityRatio and HighDebtEquityRatio → HighLeverage → MultiplyingForce → LeverLiftingObject",
+        "hop_count": 5,
+        "perception": ["Semantic Object","Abstract Interpretation","Relation Perception"],
+        "conception": ["Thematic Links","Functional Links"]
+    },
+    {
+        "foldername": "Umami(invisible, sense, mutual elements, East Asia, Japanese)",
+        "relation": "Umami",
+        "visibility": "invisible",
+        "domain": "sense",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "Japanese",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Dried Bonito Flakes.jpg",
+                "description": "Dried Bonito Flakes",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "Ripe Tomato.jpg",
+                "description": "Ripe Tomato",
+                "count": 3
+            }
+        ],
+        "explanation": "Kombu seaweed and Dashi are commonly associated with umami, but other ingredients also provide this savory taste. Dried bonito flakes are another key component of dashi, further enhancing its umami. Tomatoes, particularly ripe ones, are known for their naturally high glutamate content, the source of umami flavor.",
+        "reasoning": "UmamiFlavor(Katsuobushi)\nUmamiFlavor(Tomato)\nThus, Katsuobushi → Umami → Tomato and Tomato → Umami → Katsuobushi",
+        "hop_count": 4,
+        "perception": ["Contextual Sensory Cues","Abstract Interpretation"],
+        "conception": ["Thematic Links","Causal Connections"]
+    },
+    {
+        "foldername": "Iki(invisible, sense, mutual elements, East Asia, Japanese)",
+        "relation": "Iki",
+        "visibility": "invisible",
+        "domain": "sense",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "Japanese",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A single, perfect blooming chrysanthemum.jpg",
+                "description": "A single, perfect blooming chrysanthemum",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A finely crafted bamboo flute.jpg",
+                "description": "A finely crafted bamboo flute",
+                "count": 4
+            }
+        ],
+        "explanation": "Iki is a complex aesthetic ideal, but core to it is a natural, effortless grace. A single, perfect bloom represents this natural beauty without ostentation, as does the simple elegance of a bamboo flute. Neither shouts for attention, yet both possess a quiet refinement.",
+        "reasoning": "RepresentsIki(Chrysanthemum, ThroughSimplicityAndElegance)\nRepresentsIki(BambooFlute, ThroughSimplicityAndElegance)\nThus, Chrysanthemum → Iki → BambooFlute and BambooFlute → Iki → Chrysanthemum",
+        "hop_count": 4,
+        "perception": ["Contextual Sensory Cues","Abstract Interpretation"],
+        "conception": ["Thematic Links","Causal Connections"]
+    },
+    {
+        "foldername": "Agrodolce(invisible, sense, mutual elements, Non-English European, Italian)",
+        "relation": "Agrodolce",
+        "visibility": "invisible",
+        "domain": "sense",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Balsamic Glaze drizzled over strawberries.jpg",
+                "description": "Balsamic Glaze drizzled over strawberries",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Candied Ginger.jpg",
+                "description": "Candied Ginger",
+                "count": 3
+            }
+        ],
+        "explanation": "Balsamic glaze is a concentrated sweet-sour flavor paired with the sweetness of strawberries. Candied ginger combines the sweetness of sugar with the pungent, slightly sour ginger.",
+        "reasoning": "AgrodolceFlavor(BalsamicGlazedStrawberries, ThroughSweetAndSourCombination)\nAgrodolceFlavor(CandiedGinger, ThroughSweetAndSpicySourCombination)\nThus, BalsamicGlazedStrawberries → Agrodolce → CandiedGinger and CandiedGinger → Agrodolce → BalsamicGlazedStrawberries",
+        "hop_count": 4,
+        "perception": ["Contextual Sensory Cues","Abstract Interpretation"],
+        "conception": ["Thematic Links","Causal Connections"]
+    },
+    {
+        "foldername": "Sapido(invisible, sense, mutual elements, Non-English European, Italian)",
+        "relation": "Sapido",
+        "visibility": "invisible",
+        "domain": "sense",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Parmigiano-Reggiano cheese.jpg",
+                "description": "Parmigiano-Reggiano cheese",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "Funghi porcini.jpg",
+                "description": "Funghi porcini",
+                "count": 4
+            }
+        ],
+        "explanation": "Parmigiano-Reggiano contributes a salty, sharp, and umami-rich taste, while Funghi Porcini offer a deep, earthy umami flavor. Both ingredients enhance the savory depth of dishes.",
+        "reasoning": "ExemplifiesSapido(ParmigianoReggiano, ThroughSaltinessAndUmami)\nExemplifiesSapido(FunghiPorcini, ThroughEarthyUmami)\nThus, ParmigianoReggiano → Sapido → FunghiPorcini and FunghiPorcini → Sapido → ParmigianoReggiano",
+        "hop_count": 4,
+        "perception": ["Contextual Sensory Cues","Abstract Interpretation"],
+        "conception": ["Thematic Links","Causal Connections"]
+    },
+    {
+        "foldername": "Venice(visible, city, mutual elements, NA, English)",
+        "relation": "Venice",
+        "visibility": "visible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Gondola.jpg",
+                "description": "Gondola",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "Carnival Mask.jpg",
+                "description": "Carnival Mask",
+                "count": 4
+            }
+        ],
+        "explanation": "Gondolas are a primary mode of transportation in Venice's canals, and elaborate masks are worn during the famous Venetian Carnival.",
+        "reasoning": "LocatedIn(Gondola, Venice)\nAssociatedWith(CarnivalMask, VeniceCarnival)\nLocatedIn(VeniceCarnival, Venice)\nThus, Gondola → Venice → VeniceCarnival → CarnivalMask and CarnivalMask → VeniceCarnival → Venice → Gondola",
+        "hop_count": 6,
+        "perception": ["Contextual Sensory Cues","Scene Contextualization"],
+        "conception": ["Thematic Links","Cultural Reference"]
+    },
+    {
+        "foldername": "Occhio non vede, cuore non duole(invisible, sense, mutual elements, Non-English European, Italian)",
+        "relation": "Occhio non vede, cuore non duole",
+        "visibility": "invisible",
+        "domain": "sense",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Messy Room.jpg",
+                "description": "Messy Room",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Closed Door.jpg",
+                "description": "Closed Door",
+                "count": 3
+            }
+        ],
+        "explanation": "The messy room represents a potential source of stress or displeasure. The closed door represents the act of ignoring or hiding the mess, leading to a temporary state of unawareness and thus, a lack of distress. ",
+        "reasoning": "Represents(MessyRoom, Problem)\nHides(ClosedDoor, Problem)\nImplies(Hides, LackOfAwareness)\nThus, MessyRoom → Problem → ClosedDoor → LackOfAwareness and LackOfAwareness → ClosedDoor → Problem → MessyRoom",
+        "hop_count": 6,
+        "perception": ["Contextual Sensory Cues","Scene Contextualization"],
+        "conception": ["Thematic Links","Analogical Reasoning"]
+    },
+    {
+        "foldername": "A lume di naso(invisible, sense, mutual elements, Non-English European, Italian)",
+        "relation": "A lume di naso",
+        "visibility": "invisible",
+        "domain": "sense",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A dog sniffing the ground intently.jpg",
+                "description": "A dog sniffing the ground intently",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A buried bone.jpg",
+                "description": "A buried bone",
+                "count": 3
+            }
+        ],
+        "explanation": "Dogs often locate buried bones by relying on their sense of smell, a purely instinctive action. This directly relates to the proverb 'a lume di naso', meaning to act on instinct or intuition.",
+        "reasoning": "Uses(Dog, SenseOfSmell)\nRepresents(SenseOfSmell, Instinct)\nLocates(Instinct, BuriedBone)\nThus, Dog → SenseOfSmell → Instinct → BuriedBone and BuriedBone → Instinct → SenseOfSmell → Dog",
+        "hop_count": 6,
+        "perception": ["Contextual Sensory Cues","Relation Perception"],
+        "conception": ["Thematic Links","Causal Connections"]
+    },
+    {
+        "foldername": "Ho visto del vino e ho bevuto(invisible, country, metaphor, Non-English European, Italian)",
+        "relation": "Ho visto del vino e ho bevuto",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Wine.jpg",
+                "description": "Wine",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "a pair of eyes looking.jpg",
+                "description": "a pair of eyes looking",
+                "count": 3
+            }
+        ],
+        "explanation": "The word 'vino' in Italian can mean both 'wine' and 'I saw' (past tense of 'vedere'). This dual meaning allows for a playful statement: “Ho visto del vino e ho bevuto!” (I saw wine and I drank!), humorously expressing the joy of spotting wine and indulging in it.",
+        "reasoning": "Be(Vino, Beverage) ∧ Be(Vino, Perception)\nThus, Vino ∧ Vino → 'I saw wine and drank!'",
+        "hop_count": 1,
+        "perception": ["Semantic Object","Abstract Interpretation"],
+        "conception": ["Cultural Reference"]
+    },
+    {
+        "foldername": "Sole(invisible, country, relation, Non-English European, Italian)",
+        "relation": "Sole",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a bright sun.jpg",
+                "description": "a bright sun",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "only.jpg",
+                "description": "only",
+                "count": 3
+            }
+        ],
+        "explanation": "The word 'sole' in Italian means both 'sun' and 'only.' This dual meaning allows for a humorous and affectionate statement: “Sei il sole della mia vita, ma non l’unico!” (You are the sun of my life, but not the only one!), playfully expressing warmth while acknowledging that there may be others who are also important.",
+        "reasoning": "Be(Sole, CelestialBody)\nBe(Sole, Exclusivity)\nThus, Sole → 'Sun of my life' → Sole",
+        "hop_count": 2,
+        "perception": ["Semantic Object"],
+        "conception": ["Thematic Links","Cultural Reference"]
+    }
+]
