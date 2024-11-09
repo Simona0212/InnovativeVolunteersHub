@@ -5,6 +5,7 @@
 - 大文件夹命名：自己的姓名缩写
 - img文件夹：只含装载图片的子文件夹
 - json文件统一命名为data_context.json
+  - 需完成perception/conception标签
 
 ```
 - jhy
