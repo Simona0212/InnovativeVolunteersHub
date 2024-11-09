@@ -16,7 +16,7 @@ single img中使用过的图，重命名序号必须为1！
 
 ```
 - jhy
-  - sinlge
+  - single
     - images（含许多子文件夹的大文件夹）
     - data_single.json
   - multi
