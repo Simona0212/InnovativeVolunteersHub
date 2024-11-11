@@ -20,7 +20,7 @@
             }
         ],
         "explanation": "Both tongue and microphone are related to the ability to talk. Tongue is a crucial organ for speech production, while a microphone is a device that amplifies and transmits sound, often used for public speaking or recording speech.",
-        "reasoning": "UsedFor(Tongue, Speech)UsedFor(Microphone, Speech)IsA(Speech, TalkingAbility)Thus, Tongue → Speech → TalkingAbility and Microphone → Speech → TalkingAbility",
+        "reasoning": "UsedFor(Tongue, Speech)UsedFor(Microphone, Speech)IsA(Speech, TalkingAbility)\nThus, Tongue → Speech → TalkingAbility and Microphone → Speech → TalkingAbility",
         "hop_count": 4
     },
     {
@@ -44,7 +44,7 @@
             }
         ],
         "explanation": "Both a cheetah and Usain Bolt are known for their exceptional running ability. A cheetah is the fastest land animal, and Usain Bolt is the fastest man. The combination clearly points towards running ability.",
-        "reasoning": "KnownFor(Cheetah, FastRunning)KnownFor(UsainBolt, FastRunning) Implies(FastRunning, RunningAbility).Thus, Cheetah → FastRunning → RunningAbility and UsainBolt → FastRunning → RunningAbility",
+        "reasoning": "KnownFor(Cheetah, FastRunning)KnownFor(UsainBolt, FastRunning) Implies(FastRunning, RunningAbility).\nThus, Cheetah → FastRunning → RunningAbility and UsainBolt → FastRunning → RunningAbility",
         "hop_count": 4
     },
     {
@@ -68,7 +68,7 @@
             }
         ],
         "explanation": "Both Michael Jordan and a flea are known for their exceptional jumping ability, albeit on vastly different scales.Michael Jordan is famous for his incredible leaps in basketball, while fleas are known for their powerful jumps relative to their tiny size.",
-        "reasoning": "KnownFor(MichaelJordan, HighJump)KnownFor(Flea, HighJumpRelativeSize)Implies(HighJump, JumpAbility)Implies(HighJumpRelativeSize, JumpAbility).Thus, MichaelJordan → HighJump → JumpAbility and Flea → HighJumpRelativeSize → JumpAbility",
+        "reasoning": "KnownFor(MichaelJordan, HighJump)KnownFor(Flea, HighJumpRelativeSize)Implies(HighJump, JumpAbility)Implies(HighJumpRelativeSize, JumpAbility).\nThus, MichaelJordan → HighJump → JumpAbility and Flea → HighJumpRelativeSize → JumpAbility",
         "hop_count": 4
     },
     {
@@ -92,7 +92,7 @@
             }
         ],
         "explanation": "A hand skillfully wielding a paintbrush is essential for painting ability.The ability to paint relies heavily on the control and precision of the hand using a paintbrush.",
-        "reasoning": "Requires(PaintingAbility, Paintbrush)Requires(PaintingAbility, Hand)Uses(Hand, Paintbrush).Thus, Paintbrush → Hand → PaintingAbility and Hand → Paintbrush → PaintingAbility",
+        "reasoning": "Requires(PaintingAbility, Paintbrush)\nRequires(PaintingAbility, Hand)Uses(Hand, Paintbrush).\nThus, Paintbrush → Hand → PaintingAbility and Hand → Paintbrush → PaintingAbility",
         "hop_count": 4
     },
     {
@@ -116,7 +116,7 @@
             }
         ],
         "explanation": "A single light bulb represents a small unit of computing power, while a stadium full of light bulbs represents massive computing power.The analogy connects the brightness of a single bulb to a small amount of processing power and then scales it up to a vast amount with the stadium image.",
-        "reasoning": "Represents(LightBulb, SmallComputingPower)Represents(StadiumOfLightBulbs, LargeComputingPower)Implies(SmallComputingPower, ComputingPower)Implies(LargeComputingPower, ComputingPower).Thus, LightBulb → ComputingPower and StadiumOfLightBulbs → ComputingPower",
+        "reasoning": "Represents(LightBulb, SmallComputingPower)Represents(StadiumOfLightBulbs, LargeComputingPower)Implies(SmallComputingPower, ComputingPower)Implies(LargeComputingPower, ComputingPower).\nThus, LightBulb → ComputingPower and StadiumOfLightBulbs → ComputingPower",
         "hop_count": 2
     },
     {
@@ -140,7 +140,7 @@
             }
         ],
         "explanation": "Dolphins and fish exhibit excellent swimming ability due to their physical adaptations, including streamlined bodies (dolphin) and efficient oxygen uptake (fish gills).",
-        "reasoning": "Attribute(StreamlinedBody, SwimmingAbility)Has(Dolphin, StreamlinedBody)Attribute(EfficientOxygenUptake, SwimmingAbility)Has(Fish, Gills)Enable(Gills, EfficientOxygenUptake).Thus, Dolphin → StreamlinedBody → SwimmingAbility and Fish → Gills → EfficientOxygenUptake → SwimmingAbility",
+        "reasoning": "Attribute(StreamlinedBody, SwimmingAbility)Has(Dolphin, StreamlinedBody)Attribute(EfficientOxygenUptake, SwimmingAbility)\nHas(Fish, Gills)Enable(Gills, EfficientOxygenUptake).\nThus, Dolphin → StreamlinedBody → SwimmingAbility and Fish → Gills → EfficientOxygenUptake → SwimmingAbility",
         "hop_count": 5
     },
     {
@@ -164,7 +164,7 @@
             }
         ],
         "explanation": "The first image represents excellent cooking skills, demonstrated by the perfectly seared steak – achieving a good sear requires precise timing and temperature control. The second image represents poor cooking ability, evident in the burnt and unrecognizable contents of the pot. Together, these images encompass the spectrum of cooking ability, from mastery to disaster.",
-        "reasoning": "Indicate(SearedSteak, HighCookingAbility)Indicate(BurntPot, LowCookingAbility)Encompass(HighCookingAbility and LowCookingAbility, CookingAbility).Thus, SearedSteak → HighCookingAbility → CookingAbility and BurntPot → LowCookingAbility → CookingAbility",
+        "reasoning": "Indicate(SearedSteak, HighCookingAbility)\nIndicate(BurntPot, LowCookingAbility)Encompass(HighCookingAbility and LowCookingAbility, CookingAbility).\nThus, SearedSteak → HighCookingAbility → CookingAbility and BurntPot → LowCookingAbility → CookingAbility",
         "hop_count": 4
     },
     {
@@ -188,7 +188,7 @@
             }
         ],
         "explanation": "The bloodhound is renowned for its exceptional sense of smell, often used for tracking. The molecule diagram represents the chemical basis of smell, the odorants that interact with olfactory receptors. Together, they represent the process of smelling, from the macroscopic action of a creature using its nose to the microscopic level of chemical interaction.",
-        "reasoning": "Use(Bloodhound, Smell, Tracking)Cause(OdorCompound, Smell).Thus, Bloodhound → Smell and OdorCompound → Smell",
+        "reasoning": "Use(Bloodhound, Smell, Tracking)\nCause(OdorCompound, Smell).\nThus, Bloodhound → Smell and OdorCompound → Smell",
         "hop_count": 2
     },
     {
@@ -212,7 +212,7 @@
             }
         ],
         "explanation": "The first image represents traditional tools used for writing, symbolizing the craft and skill involved. The second image represents modern writing, specifically a tweet filled with typos, which suggests a lack of writing ability or carelessness in its application. The juxtaposition of these images highlights the spectrum of writing ability, from careful craftsmanship to hasty, error-prone communication.",
-        "reasoning": "ToolFor(QuillAndInkwell, Writing) and Require(Writing, WritingAbility)ExampleOf(TypoRiddenTweet, ModernWriting) and Indicate(TypoRiddenTweet, LackOfWritingAbility) or Indicate(TypoRiddenTweet, CarelessWriting) and SubsetOf(CarelessWriting, WritingAbility)Thus, QuillAndInkwell → Writing → WritingAbility and TypoRiddenTweet → ModernWriting → (LackOf/Careless)Writing → WritingAbility",
+        "reasoning": "ToolFor(QuillAndInkwell, Writing) and Require(Writing, WritingAbility)\nExampleOf(TypoRiddenTweet, ModernWriting) and Indicate(TypoRiddenTweet, LackOfWritingAbility) or Indicate(TypoRiddenTweet, CarelessWriting) and SubsetOf(CarelessWriting, WritingAbility)\nThus, QuillAndInkwell → Writing → WritingAbility and TypoRiddenTweet → ModernWriting → (LackOf/Careless)Writing → WritingAbility",
         "hop_count": 5
     },
     {
@@ -236,7 +236,7 @@
             }
         ],
         "explanation": "The first image represents exploring the vastness of space, requiring vision, albeit aided by technology, to observe distant celestial objects. The second image represents the lack of physical sight, symbolized by the white cane used by visually impaired individuals. Together, they explore the concept of 'vision' in both its presence (enhanced by technology) and its absence, highlighting the different ways we perceive and interact with the world.",
-        "reasoning": "Enable(Telescope, EnhancedVision) and Relate(EnhancedVision, Vision)Compensate(WhiteCane, LackOfVision) and Relate(LackOfVision, Vision).Thus, Telescope → EnhancedVision → Vision and WhiteCane → LackOfVision → Vision",
+        "reasoning": "Enable(Telescope, EnhancedVision) and Relate(EnhancedVision, Vision)\nCompensate(WhiteCane, LackOfVision) and Relate(LackOfVision, Vision).\nThus, Telescope → EnhancedVision → Vision and WhiteCane → LackOfVision → Vision",
         "hop_count": 4
     },
     {
@@ -260,7 +260,7 @@
             }
         ],
         "explanation": "The first image showcases Simone Biles, an Olympic gymnast renowned for her extraordinary physical abilities, executing a highly complex and challenging vault. The second image delves into the biological foundation of physical prowess, displaying the intricate structure of muscle fibers, the very building blocks that enable powerful movements. Together, these images represent the macroscopic and microscopic aspects of physical prowess, highlighting both the incredible feats achievable by the human body and the underlying biological mechanisms that make such feats possible.",
-        "reasoning": "Exhibit(SimoneBiles, GymnasticsSkill) and Require(GymnasticsSkill, PhysicalProwess)Compose(MuscleFibers, Muscles) and Enable(Muscles, PhysicalProwess)Thus, SimoneBiles → GymnasticsSkill → PhysicalProwess and MuscleFibers → Muscles → PhysicalProwess",
+        "reasoning": "Exhibit(SimoneBiles, GymnasticsSkill) and Require(GymnasticsSkill, PhysicalProwess)\nCompose(MuscleFibers, Muscles) and Enable(Muscles, PhysicalProwess)\nThus, SimoneBiles → GymnasticsSkill → PhysicalProwess and MuscleFibers → Muscles → PhysicalProwess",
         "hop_count": 4
     },
     {
@@ -284,7 +284,7 @@
             }
         ],
         "explanation": "A Rubik's cube requires spatial reasoning, pattern recognition, and problem-solving skills, all of which contribute to mental acuity. Similarly, chess, especially in a complex endgame, demands strategic thinking, foresight, and sharp calculation, further demonstrating mental acuity. Neither image alone encapsulates mental acuity completely, but together they represent different facets of it.",
-        "reasoning": "Require(RubiksCube, SpatialReasoning) and ComponentOf(SpatialReasoning, MentalAcuity)Require(ChessEndgame, StrategicThinking) and ComponentOf(StrategicThinking, MentalAcuity).Thus, RubiksCube → SpatialReasoning → MentalAcuity and ChessEndgame → StrategicThinking → MentalAcuity",
+        "reasoning": "Require(RubiksCube, SpatialReasoning) and ComponentOf(SpatialReasoning, MentalAcuity)\nRequire(ChessEndgame, StrategicThinking) and ComponentOf(StrategicThinking, MentalAcuity).\nThus, RubiksCube → SpatialReasoning → MentalAcuity and ChessEndgame → StrategicThinking → MentalAcuity",
         "hop_count": 4
     },
     {
@@ -308,7 +308,7 @@
             }
         ],
         "explanation": "The first image represents a lone wolf, often seen as the leader of its pack, demonstrating leadership through strength, independence, and guidance. The second image shows a conductor leading an orchestra, symbolizing leadership through coordination, inspiration, and bringing harmony to a diverse group. While different in style, both images represent different facets of leadership.",
-        "reasoning": "Symbolize(LoneWolf, PackLeader) and Imply(PackLeader, Leadership)Perform(Conductor, OrchestralConducting) and Require(OrchestralConducting, Leadership).Thus, LoneWolf → PackLeader → Leadership and Conductor → OrchestralConducting → Leadership",
+        "reasoning": "Symbolize(LoneWolf, PackLeader) and Imply(PackLeader, Leadership)\nPerform(Conductor, OrchestralConducting) and Require(OrchestralConducting, Leadership).\nThus, LoneWolf → PackLeader → Leadership and Conductor → OrchestralConducting → Leadership",
         "hop_count": 4
     },
     {
@@ -332,7 +332,7 @@
             }
         ],
         "explanation": "The first image depicts Stephen Hawking, a brilliant physicist who achieved incredible things despite severe physical limitations imposed by ALS. The second image shows a ballerina en pointe, demonstrating remarkable physical prowess and control. While seemingly contrasting, both images represent different forms of human ability – one intellectual and overcoming adversity, the other physical and achieving exceptional skill.",
-        "reasoning": "Possess(StephenHawking, IntellectualAbility) and Overcome(StephenHawking, PhysicalLimitation)Demonstrate(BallerinaEnPointe, PhysicalAbility).Thus, StephenHawking → IntellectualAbility → Ability and BallerinaEnPointe → PhysicalAbility → Ability",
+        "reasoning": "Possess(StephenHawking, IntellectualAbility) and Overcome(StephenHawking, PhysicalLimitation)\nDemonstrate(BallerinaEnPointe, PhysicalAbility).\nThus, StephenHawking → IntellectualAbility → Ability and BallerinaEnPointe → PhysicalAbility → Ability",
         "hop_count": 4
     },
     {
@@ -356,7 +356,7 @@
             }
         ],
         "explanation": "The first image shows a gymnast on a balance beam, demonstrating balance and control in a controlled environment. The second image depicts a tightrope walker high above a city, showcasing exceptional balance ability under extreme pressure and risk. Both images highlight different aspects of balance ability – precision and control versus courage and adaptability in a precarious situation.",
-        "reasoning": "Require(GymnastOnBeam, BalanceAbility) and Exhibit(GymnastOnBeam, Precision)Require(TightropeWalker, BalanceAbility) and Exhibit(TightropeWalker, Courage).Thus, GymnastOnBeam → BalanceAbility and TightropeWalker → BalanceAbility",
+        "reasoning": "Require(GymnastOnBeam, BalanceAbility) and Exhibit(GymnastOnBeam, Precision)\nRequire(TightropeWalker, BalanceAbility) and Exhibit(TightropeWalker, Courage).\nThus, GymnastOnBeam → BalanceAbility and TightropeWalker → BalanceAbility",
         "hop_count": 2
     },
     {
@@ -380,7 +380,7 @@
             }
         ],
         "explanation": "A seedling sprouting represents the beginning stages of growth, full of potential. A child's growth chart visually documents the natural, upward growth of a child. Both images, therefore, represent different stages and types of growth.",
-        "reasoning": "Represent(SeedlingSprouting, EarlyGrowth) and IsA(EarlyGrowth, Growth)Record(GrowthChart, PhysicalGrowth) and IsA(PhysicalGrowth, Growth).Thus, SeedlingSprouting → EarlyGrowth → Growth and GrowthChart → PhysicalGrowth → Growth",
+        "reasoning": "Represent(SeedlingSprouting, EarlyGrowth) and IsA(EarlyGrowth, Growth)\nRecord(GrowthChart, PhysicalGrowth) and IsA(PhysicalGrowth, Growth).\nThus, SeedlingSprouting → EarlyGrowth → Growth and GrowthChart → PhysicalGrowth → Growth",
         "hop_count": 4
     },
     {
@@ -404,7 +404,7 @@
             }
         ],
         "explanation": "'Time Management and Work Arrangement Management'. The first image, a detailed calendar, represents effective time management, showing how tasks and appointments are scheduled and visualized. The second image, a flowchart, symbolizes work arrangement management, illustrating the structured planning and organization of a project or process, which inherently involves managing time and resources effectively. Both combined represent the intertwined nature of managing time and arranging work.",
-        "reasoning": "Tool(Calendar, TimeManagement) and AspectOf(TimeManagement, Time_and_Work_Arrangement_Management)Tool(Flowchart, WorkArrangement) and AspectOf(WorkArrangement, Time_and_Work_Arrangement_Management).Thus, Calendar → TimeManagement → Time_and_Work_Arrangement_Management and Flowchart → WorkArrangement → Time_and_Work_Arrangement_Management",
+        "reasoning": "Tool(Calendar, TimeManagement) and AspectOf(TimeManagement, Time_and_Work_Arrangement_Management)\nTool(Flowchart, WorkArrangement) and AspectOf(WorkArrangement, Time_and_Work_Arrangement_Management).\nThus, Calendar → TimeManagement → Time_and_Work_Arrangement_Management and Flowchart → WorkArrangement → Time_and_Work_Arrangement_Management",
         "hop_count": 4
     },
     {
@@ -428,7 +428,7 @@
             }
         ],
         "explanation": "The first image showcases a person utilizing strong public speaking and presentation skills, which are key components of effective communication. The second image highlights active listening and empathy, crucial skills for interpersonal communication, particularly in a therapeutic setting. Both images, though different in context, represent different facets of strong communication skills.",
-        "reasoning": "Require(TED_Talk, Public_Speaking) and PartOf(Public_Speaking, Communication_Skills)Require(Therapy_Session, Active_Listening) and PartOf(Active_Listening, Communication_Skills).Thus, TED_Talk → Public_Speaking → Communication_Skills and Therapy_Session → Active_Listening → Communication_Skills",
+        "reasoning": "Require(TED_Talk, Public_Speaking) and PartOf(Public_Speaking, Communication_Skills)\nRequire(Therapy_Session, Active_Listening) and PartOf(Active_Listening, Communication_Skills).\nThus, TED_Talk → Public_Speaking → Communication_Skills and Therapy_Session → Active_Listening → Communication_Skills",
         "hop_count": 4
     },
     {
@@ -452,7 +452,7 @@
             }
         ],
         "explanation": "A chess game often requires complex decision-making, assessing risk and reward, planning multiple moves ahead. Similarly, a surgeon must make critical decisions in real-time, often under immense pressure, with significant consequences. Both scenarios showcase the importance and application of strong decision-making skills.",
-        "reasoning": "Require(Chess, Decision-Making Ability)Require(Surgery, Decision-Making Ability).Thus, Chess → Decision-Making Ability and Surgery → Decision-Making Ability",
+        "reasoning": "Require(Chess, Decision-Making Ability)\nRequire(Surgery, Decision-Making Ability).\nThus, Chess → Decision-Making Ability and Surgery → Decision-Making Ability",
         "hop_count": 2
     },
     {
@@ -476,7 +476,7 @@
             }
         ],
         "explanation": "A rowing team requires perfect synchronization and coordinated effort to propel the boat efficiently, demonstrating teamwork. Ants, known for their collaborative efforts, showcase teamwork in carrying objects much larger than themselves. Both images symbolize the power and necessity of working together towards a common goal.",
-        "reasoning": "Require(Rowing, Teamwork Ability)Exhibit(Ants, Teamwork Ability).Thus, Rowing → Teamwork Ability and Ants → Teamwork Ability",
+        "reasoning": "Require(Rowing, Teamwork Ability)\nExhibit(Ants, Teamwork Ability).\nThus, Rowing → Teamwork Ability and Ants → Teamwork Ability",
         "hop_count": 2
     },
     {
@@ -500,7 +500,7 @@
             }
         ],
         "explanation": "The first image represents the US presidency, the head of the executive branch of the US government. The second image shows a SWAT team, a specialized police unit often used to execute high-risk warrants and other operations requiring significant force, ultimately falling under the authority of the executive branch. Both images relate to the concept of 'executive force',one symbolizing the highest level of executive power and the other representing a direct application of force authorized by the executive branch.",
-        "reasoning": "HeadOf(US_President, ExecutiveBranch) and Possess(ExecutiveBranch, ExecutiveForce)Enforce(SWAT, Law) and Authorize(ExecutiveBranch, LawEnforcement).Thus, PresidentialSeal → US_President → ExecutiveBranch → ExecutiveForce and SWAT → LawEnforcement → ExecutiveBranch → ExecutiveForce",
+        "reasoning": "HeadOf(US_President, ExecutiveBranch) and Possess(ExecutiveBranch, ExecutiveForce)\nEnforce(SWAT, Law) and Authorize(ExecutiveBranch, LawEnforcement).\nThus, PresidentialSeal → US_President → ExecutiveBranch → ExecutiveForce and SWAT → LawEnforcement → ExecutiveBranch → ExecutiveForce",
         "hop_count": 6
     },
     {
@@ -524,7 +524,7 @@
             }
         ],
         "explanation": "The first image, a Snellen chart, is the standard tool used to measure visual acuity, representing the clinical aspect of eyesight and its assessment. The second image depicts a hawk, known for its exceptional eyesight, soaring above a mountain range, showcasing eyesight's application in the natural world for hunting and survival. Together, they encapsulate the concept of 'eyesight'from both a human measurement perspective and a natural, evolutionary advantage perspective.",
-        "reasoning": "Measure(SnellenChart, VisualAcuity) and Synonym(VisualAcuity, Eyesight)Possess(Hawk, ExceptionalEyesight) and Synonym(ExceptionalEyesight, Eyesight).Thus, SnellenChart → VisualAcuity → Eyesight and Hawk → ExceptionalEyesight → Eyesight",
+        "reasoning": "Measure(SnellenChart, VisualAcuity) and Synonym(VisualAcuity, Eyesight)\nPossess(Hawk, ExceptionalEyesight) and Synonym(ExceptionalEyesight, Eyesight).\nThus, SnellenChart → VisualAcuity → Eyesight and Hawk → ExceptionalEyesight → Eyesight",
         "hop_count": 4
     },
     {
@@ -548,7 +548,7 @@
             }
         ],
         "explanation": "An open door represents opportunity or possibility, but requires a key (representing skill or talent) to access it. The combination suggests the concept of ability, meaning having the means to do something.",
-        "reasoning": "Represents(OpenDoor, Opportunity)Represents(Key, Skill).Thus, OpenDoor → Opportunity → Ability and Key → Skill → Ability",
+        "reasoning": "Represents(OpenDoor, Opportunity)\nRepresents(Key, Skill).\nThus, OpenDoor → Opportunity → Ability and Key → Skill → Ability",
         "hop_count": 4
     },
     {
@@ -572,7 +572,7 @@
             }
         ],
         "explanation": "Cats are known for their inquisitive nature, often exploring and investigating their surroundings. A magnifying glass is a tool used for close examination, often driven by curiosity.",
-        "reasoning": "KnownFor(Cat, Inquisitiveness)UsedFor(MagnifyingGlass, Examination) and DrivenBy(Examination, Curiosity).Thus, Cat → Inquisitiveness → Curiosity and MagnifyingGlass → Examination → Curiosity",
+        "reasoning": "KnownFor(Cat, Inquisitiveness)\nUsedFor(MagnifyingGlass, Examination) and DrivenBy(Examination, Curiosity).\nThus, Cat → Inquisitiveness → Curiosity and MagnifyingGlass → Examination → Curiosity",
         "hop_count": 4
     },
     {
@@ -596,7 +596,7 @@
             }
         ],
         "explanation": "'Ability' or 'Potential'. A seed contains the inherent potential to grow, but it's the sprout that demonstrates the realized ability to grow.",
-        "reasoning": "Represents(Seed, Potential)Demonstrates(Sprout, Growth) and Implies(Growth, Ability).Thus, Seed → Potential → Ability and Sprout → Growth → Ability",
+        "reasoning": "Represents(Seed, Potential)\nDemonstrates(Sprout, Growth) and Implies(Growth, Ability).\nThus, Seed → Potential → Ability and Sprout → Growth → Ability",
         "hop_count": 4
     },
     {
@@ -620,7 +620,7 @@
             }
         ],
         "explanation": "'Ability' or 'Potential to perform'. An empty stage represents opportunity or a platform for performance, while a spotlight highlights talent or skill, suggesting the ability to perform.",
-        "reasoning": "Represents(EmptyStage, OpportunityToPerform)Highlights(Spotlight, Talent) and Implies(Talent, AbilityToPerform).Thus, EmptyStage → OpportunityToPerform → Ability and Spotlight → Talent → Ability",
+        "reasoning": "Represents(EmptyStage, OpportunityToPerform)\nHighlights(Spotlight, Talent) and Implies(Talent, AbilityToPerform).\nThus, EmptyStage → OpportunityToPerform → Ability and Spotlight → Talent → Ability",
         "hop_count": 4
     },
     {
@@ -644,7 +644,7 @@
             }
         ],
         "explanation": "The first image, a telegraph key, is the device used to send Morse code messages. The second image, dots and dashes, are the visual representation of the Morse code itself.",
-        "reasoning": "Transmit(TelegraphKey, MorseCode)Compose(DotsAndDashes, MorseCode).Thus, TelegraphKey → MorseCode and DotsAndDashes → MorseCode",
+        "reasoning": "Transmit(TelegraphKey, MorseCode)\nCompose(DotsAndDashes, MorseCode).\nThus, TelegraphKey → MorseCode and DotsAndDashes → MorseCode",
         "hop_count": 2
     },
     {
@@ -668,7 +668,7 @@
             }
         ],
         "explanation": "The first image, a locked diary with a cipher, directly represents the practice of cryptography – concealing information through codes. The second image depicts Alan Turing, a key figure in breaking the Enigma code during World War II, a pivotal moment in the history of cryptography.",
-        "reasoning": "Symbolize(LockedDiaryWithCipher, Cryptography)Break(AlanTuring, EnigmaCode) and BelongTo(EnigmaCode, Cryptography).Thus, LockedDiaryWithCipher → Cryptography and AlanTuring → EnigmaCode → Cryptography",
+        "reasoning": "Symbolize(LockedDiaryWithCipher, Cryptography)\nBreak(AlanTuring, EnigmaCode) and BelongTo(EnigmaCode, Cryptography).\nThus, LockedDiaryWithCipher → Cryptography and AlanTuring → EnigmaCode → Cryptography",
         "hop_count": 3
     },
     {
@@ -692,7 +692,7 @@
             }
         ],
         "explanation": "The first image, a neural network diagram, represents the underlying structure and learning process of many AI systems. The second image, a robotic hand playing chess, showcases a practical application of AI, demonstrating strategic thinking and complex decision-making abilities often associated with intelligent systems.",
-        "reasoning": "Underlie(NeuralNetwork, ArtificialIntelligence)ExampleOf(ChessPlayingRobot, ArtificialIntelligence).Thus, NeuralNetwork → ArtificialIntelligence and ChessPlayingRobot → ArtificialIntelligence",
+        "reasoning": "Underlie(NeuralNetwork, ArtificialIntelligence)\nExampleOf(ChessPlayingRobot, ArtificialIntelligence).\nThus, NeuralNetwork → ArtificialIntelligence and ChessPlayingRobot → ArtificialIntelligence",
         "hop_count": 2
     },
     {
@@ -716,7 +716,7 @@
             }
         ],
         "explanation": "'Both a repeat button and a record player allow you to experience something 'once again'.'The repeat function allows replaying a song or section, and a record player, especially older models, often had a repeat function built-in.",
-        "reasoning": "Function(RepeatButton, Replay)Capability(RecordPlayer, Replay).Thus, RepeatButton → Replay → RecordPlayer and RecordPlayer → Replay → RepeatButton",
+        "reasoning": "Function(RepeatButton, Replay)\nCapability(RecordPlayer, Replay).\nThus, RepeatButton → Replay → RecordPlayer and RecordPlayer → Replay → RepeatButton",
         "hop_count": 4
     },
     {
@@ -740,7 +740,7 @@
             }
         ],
         "explanation": "The first image shows a stadium filled to its maximum capacity with people. The second image shows a teacup, currently empty, but implying a potential capacity to be filled. Both images represent the concept of capacity, one full and one empty, highlighting the range of the concept.",
-        "reasoning": "Full(Stadium, People) and Represent(Stadium, MaximumCapacity)Potential(Teacup, Filled) and Represent(Teacup, PotentialCapacity).Thus, Stadium → MaximumCapacity → Capacity and Teacup → PotentialCapacity → Capacity",
+        "reasoning": "Full(Stadium, People) and Represent(Stadium, MaximumCapacity)\nPotential(Teacup, Filled) and Represent(Teacup, PotentialCapacity).\nThus, Stadium → MaximumCapacity → Capacity and Teacup → PotentialCapacity → Capacity",
         "hop_count": 4
     },
     {
@@ -764,7 +764,7 @@
             }
         ],
         "explanation": "Soap bubbles are known for their delicate and easily broken nature. Thin ice is similarly precarious and prone to cracking under pressure.",
-        "reasoning": "Represents(SoapBubble, DelicateEasilyBroken)Represents(ThinIce, PrecariousEasilyBroken).Thus, SoapBubble → DelicateEasilyBroken → Fragile and ThinIce → PrecariousEasilyBroken → Fragile",
+        "reasoning": "Represents(SoapBubble, DelicateEasilyBroken)\nRepresents(ThinIce, PrecariousEasilyBroken).\nThus, SoapBubble → DelicateEasilyBroken → Fragile and ThinIce → PrecariousEasilyBroken → Fragile",
         "hop_count": 4
     },
     {
@@ -788,7 +788,7 @@
             }
         ],
         "explanation": "Footprints symbolize the act of walking, particularly unimpeded walking. Crutches represent an aid for walking, suggesting difficulty or impairment in one's walking ability. The juxtaposition highlights the spectrum of walking ability.",
-        "reasoning": "Symbolize(Footprints, UnimpededWalking)Represent(Crutches, AidedWalking).Thus, Footprints → WalkingAbility and Crutches → WalkingAbility",
+        "reasoning": "Symbolize(Footprints, UnimpededWalking)\nRepresent(Crutches, AidedWalking).\nThus, Footprints → WalkingAbility and Crutches → WalkingAbility",
         "hop_count": 2
     },
     {
@@ -812,7 +812,7 @@
             }
         ],
         "explanation": "Wide open eyes represent the typical way humans see. Braille represents an alternative way for visually impaired individuals to access information, highlighting a different aspect of 'seeing' - perceiving and understanding the world.",
-        "reasoning": "Represent(WideOpenEyes, Vision)Represent(Braille, TactileReading) and TactileReading → AlternativePerception.Thus, WideOpenEyes → SeeingAbility and Braille → AlternativePerception → SeeingAbility",
+        "reasoning": "Represent(WideOpenEyes, Vision)\nRepresent(Braille, TactileReading) and TactileReading → AlternativePerception.\nThus, WideOpenEyes → SeeingAbility and Braille → AlternativePerception → SeeingAbility",
         "hop_count": 4
     },
     {
@@ -836,7 +836,7 @@
             }
         ],
         "explanation": "'Aspects of Chinese Culture'. The Great Wall is a significant historical landmark of China. Red envelopes are traditionally given during Chinese New Year and other special occasions.",
-        "reasoning": "Represents(GreatWall, ChineseHistory) and PartOf(ChineseHistory, ChineseCulture)Represents(RedEnvelope, ChineseTradition) and PartOf(ChineseTradition, ChineseCulture).Thus, GreatWall → ChineseHistory → ChineseCulture and RedEnvelope → ChineseTradition → ChineseCulture",
+        "reasoning": "Represents(GreatWall, ChineseHistory) and PartOf(ChineseHistory, ChineseCulture)\nRepresents(RedEnvelope, ChineseTradition) and PartOf(ChineseTradition, ChineseCulture).\nThus, GreatWall → ChineseHistory → ChineseCulture and RedEnvelope → ChineseTradition → ChineseCulture",
         "hop_count": 4
     },
     {
@@ -860,7 +860,7 @@
             }
         ],
         "explanation": "'Different forms of Chinese art'. The Terracotta Army represents the sculptural art of ancient China. Silk painting showcases a traditional Chinese painting technique.",
-        "reasoning": "ExampleOf(TerracottaArmy, ChineseSculpture) and CategoryOf(ChineseSculpture, ChineseArt)ExampleOf(SilkPainting, ChinesePainting) and CategoryOf(ChinesePainting, ChineseArt).Thus, TerracottaArmy → ChineseSculpture → ChineseArt and SilkPainting → ChinesePainting → ChineseArt",
+        "reasoning": "ExampleOf(TerracottaArmy, ChineseSculpture) and CategoryOf(ChineseSculpture, ChineseArt)\nExampleOf(SilkPainting, ChinesePainting) and CategoryOf(ChinesePainting, ChineseArt).\nThus, TerracottaArmy → ChineseSculpture → ChineseArt and SilkPainting → ChinesePainting → ChineseArt",
         "hop_count": 4
     },
     {
@@ -884,7 +884,7 @@
             }
         ],
         "explanation": "'Thanksgiving'. A wishbone is traditionally broken at Thanksgiving, symbolizing good luck and fortune. The Mayflower Compact, signed by the Pilgrims aboard the Mayflower, established self-governance in the Plymouth Colony, paving the way for the first Thanksgiving celebration. While neither image alone screams 'Thanksgiving', together they evoke the holiday's blend of tradition (wishbone) and historical origins (Mayflower Compact).",
-        "reasoning": "Tradition(Thanksgiving, Wishbone)LeadTo(MayflowerCompact, FirstThanksgiving) and InstanceOf(FirstThanksgiving, Thanksgiving).Thus, Wishbone → Thanksgiving and MayflowerCompact → FirstThanksgiving → Thanksgiving",
+        "reasoning": "Tradition(Thanksgiving, Wishbone)\nLeadTo(MayflowerCompact, FirstThanksgiving) and InstanceOf(FirstThanksgiving, Thanksgiving).\nThus, Wishbone → Thanksgiving and MayflowerCompact → FirstThanksgiving → Thanksgiving",
         "hop_count": 3
     },
     {
@@ -908,7 +908,7 @@
             }
         ],
         "explanation": "The first image depicts the apocryphal story of Isaac Newton and the falling apple, which supposedly inspired his theory of gravity. The second image is the logo of Apple Inc., the technology company.",
-        "reasoning": "FallOn(Apple, Newton)Logo(AppleInc, BittenApple).Thus, Newton → Apple and BittenApple → AppleInc → Apple",
+        "reasoning": "FallOn(Apple, Newton)\nLogo(AppleInc, BittenApple).\nThus, Newton → Apple and BittenApple → AppleInc → Apple",
         "hop_count": 3
     },
     {
@@ -932,7 +932,7 @@
             }
         ],
         "explanation": "Cat memes are a ubiquitous element of internet humor and viral content, deeply ingrained in online communities. Rage comics, with their distinct and easily recognizable characters, represent another significant aspect of early internet culture, particularly in forums and imageboards. Both images, though distinct, are iconic representations of how humor and communication have evolved online.",
-        "reasoning": "Represent(CatMeme, InternetHumor) and PartOf(InternetHumor, InternetCulture)Represent(RageComic, InternetCommunication) and PartOf(InternetCommunication, InternetCulture).Thus, CatMeme → InternetHumor → InternetCulture and RageComic → InternetCommunication → InternetCulture",
+        "reasoning": "Represent(CatMeme, InternetHumor) and PartOf(InternetHumor, InternetCulture)\nRepresent(RageComic, InternetCommunication) and PartOf(InternetCommunication, InternetCulture).\nThus, CatMeme → InternetHumor → InternetCulture and RageComic → InternetCommunication → InternetCulture",
         "hop_count": 4
     },
     {
@@ -956,7 +956,7 @@
             }
         ],
         "explanation": "The tea ceremony is a traditional Japanese practice steeped in ritual and history. The samurai sword represents the warrior class and the code of Bushido, another significant aspect of Japanese tradition.",
-        "reasoning": "IsA(TeaCeremony, JapaneseTradition)IsA(SamuraiSword, JapaneseTradition).Thus, TeaCeremony → JapaneseTradition and SamuraiSword → JapaneseTradition",
+        "reasoning": "IsA(TeaCeremony, JapaneseTradition)\nIsA(SamuraiSword, JapaneseTradition).\nThus, TeaCeremony → JapaneseTradition and SamuraiSword → JapaneseTradition",
         "hop_count": 2
     },
     {
@@ -980,7 +980,7 @@
             }
         ],
         "explanation": "Lacquer, derived from the lacquer tree, is used as a finish for various crafts. A folding fan is a type of fan often decorated and made with various materials, including lacquer. Combining these two images leads to the concept of a lacquer fan, a specific object made using lacquer.",
-        "reasoning": "Produces(LacquerTree, Lacquer) and UsedIn(Lacquer, LacquerFan)IsA(FoldingFan, Fan) and CanBeMadeOf(Fan, Lacquer).Thus, LacquerTree → Lacquer → LacquerFan and FoldingFan → Fan → LacquerFan",
+        "reasoning": "Produces(LacquerTree, Lacquer) and UsedIn(Lacquer, LacquerFan)\nIsA(FoldingFan, Fan) and CanBeMadeOf(Fan, Lacquer).\nThus, LacquerTree → Lacquer → LacquerFan and FoldingFan → Fan → LacquerFan",
         "hop_count": 4
     },
     {
@@ -1004,7 +1004,7 @@
             }
         ],
         "explanation": "The Djembe drum is a traditional West African instrument, representing music and cultural celebrations. Kente cloth is a vibrant, hand-woven fabric originating from Ghana, representing art and tradition. Together, they symbolize the rich and diverse artistic expressions within African culture.",
-        "reasoning": "Represents(DjembeDrum, WestAfricanMusic) and IsPartOf(WestAfricanMusic, AfricanCulture)Represents(KenteCloth, GhanaianTradition) and IsPartOf(GhanaianTradition, AfricanCulture).Thus, DjembeDrum → WestAfricanMusic → AfricanCulture and KenteCloth → GhanaianTradition → AfricanCulture",
+        "reasoning": "Represents(DjembeDrum, WestAfricanMusic) and IsPartOf(WestAfricanMusic, AfricanCulture)\nRepresents(KenteCloth, GhanaianTradition) and IsPartOf(GhanaianTradition, AfricanCulture).\nThus, DjembeDrum → WestAfricanMusic → AfricanCulture and KenteCloth → GhanaianTradition → AfricanCulture",
         "hop_count": 4
     },
     {
@@ -1028,7 +1028,7 @@
             }
         ],
         "explanation": "The Griot, a West African historian, storyteller, praise singer, poet and/or musician, represents the oral tradition central to many African cultures. The Kora, a 21-stringed bridge-harp used extensively in West Africa, is a prominent instrument in this tradition. The second image, an Afrobeat vinyl record, represents a modern musical genre with roots in West Africa, drawing heavily on traditional Yoruba music and vocal styles, demonstrating the evolution and continuation of African musical culture.",
-        "reasoning": "Play(Griot, Kora) and Represent(Griot, OralTradition) and PartOf(OralTradition, AfricaCulture)Genre(Afrobeat, Music) and Origin(Afrobeat, WestAfrica) and PartOf(WestAfrica, Africa) and Has(Africa, AfricaCulture).Thus, Griot → OralTradition → AfricaCulture and Afrobeat → WestAfrica → Africa → AfricaCulture",
+        "reasoning": "Play(Griot, Kora) and Represent(Griot, OralTradition) and PartOf(OralTradition, AfricaCulture)\nGenre(Afrobeat, Music) and Origin(Afrobeat, WestAfrica) and PartOf(WestAfrica, Africa) and Has(Africa, AfricaCulture).\nThus, Griot → OralTradition → AfricaCulture and Afrobeat → WestAfrica → Africa → AfricaCulture",
         "hop_count": 5
     },
     {
@@ -1052,7 +1052,7 @@
             }
         ],
         "explanation": "A giant pretzel is a common food enjoyed at Oktoberfest, while the Bavarian Dirndl is traditional attire worn during the festival. Neither image alone screams 'Oktoberfest' definitively (Dirndls are worn at other events, and pretzels are eaten year-round), but the combination strongly suggests the festival.",
-        "reasoning": "Eat(People, GiantPretzel, Oktoberfest)Wear(People, BavarianDirndl, Oktoberfest).Thus, GiantPretzel → Oktoberfest and BavarianDirndl → Oktoberfest",
+        "reasoning": "Eat(People, GiantPretzel, Oktoberfest)\nWear(People, BavarianDirndl, Oktoberfest).\nThus, GiantPretzel → Oktoberfest and BavarianDirndl → Oktoberfest",
         "hop_count": 2
     },
     {
@@ -1076,7 +1076,7 @@
             }
         ],
         "explanation": "Lederhosen are traditionally worn in the Alps region, particularly in Bavaria. Beer steins are also associated with Bavarian culture, where Lederhosen are frequently worn. While Alps could represent many things, and beer steins are used in various contexts, together they hint at the cultural context where Lederhosen are commonly seen.",
-        "reasoning": "Wear(People, Lederhosen, Alps)Drink(People, Beer, BeerStein) and Wear(People, Lederhosen, BeerGarden) and Located(BeerGarden, Alps).Thus, Alps → Lederhosen and BeerStein → BeerGarden → Lederhosen",
+        "reasoning": "Wear(People, Lederhosen, Alps)\nDrink(People, Beer, BeerStein) and Wear(People, Lederhosen, BeerGarden) and Located(BeerGarden, Alps).\nThus, Alps → Lederhosen and BeerStein → BeerGarden → Lederhosen",
         "hop_count": 3
     },
     {
@@ -1100,7 +1100,7 @@
             }
         ],
         "explanation": "The first image represents the colored powders (Gulal) that are synonymous with the celebration of Holi, used for playfully throwing and smearing on others. The second image depicts Krishna playing the flute, referencing the mythological stories associated with Holi, particularly his playful interactions with Radha and the gopis, often considered a symbolic representation of the festival's spirit.",
-        "reasoning": "Use(Holi, Gulal)Associate(Krishna, Holi).Thus, Gulal → Holi and Krishna → Holi",
+        "reasoning": "Use(Holi, Gulal)\nAssociate(Krishna, Holi).\nThus, Gulal → Holi and Krishna → Holi",
         "hop_count": 2
     },
     {
@@ -1124,7 +1124,7 @@
             }
         ],
         "explanation": "Sequins and feathers are common elements of Samba costumes worn during Carnival, and drums are the central instrument in Samba music, which is integral to Carnival celebrations",
-        "reasoning": "PartOf(SequinsAndFeathers, SambaCostume) Carnival(SambaCostume, SambaMusic) PartOf(SambaMusic, Carnival)Instrument(Drum, SambaMusic) PartOf(SambaMusic, Carnival).Thus, SequinsAndFeathers → SambaCostume → Carnival → SambaMusic → Drum and Drum → SambaMusic → Carnival → SambaCostume → SequinsAndFeathers",
+        "reasoning": "PartOf(SequinsAndFeathers, SambaCostume) Carnival(SambaCostume, SambaMusic) PartOf(SambaMusic, Carnival)\nInstrument(Drum, SambaMusic) PartOf(SambaMusic, Carnival).\nThus, SequinsAndFeathers → SambaCostume → Carnival → SambaMusic → Drum and Drum → SambaMusic → Carnival → SambaCostume → SequinsAndFeathers",
         "hop_count": 8
     },
     {
@@ -1148,7 +1148,7 @@
             }
         ],
         "explanation": "Akubra hats are a strong symbol of Australian culture, often worn by those in rural areas where mateship is highly valued. A helping hand represents the core values of mateship: loyalty, support, and camaraderie.",
-        "reasoning": "Symbolizes(Akubra, AustralianCulture) and Values(AustralianCulture, Mateship)Represents(HelpingHand, Support) and CoreValue(Support, Mateship).Thus, Akubra → AustralianCulture → Mateship and HelpingHand → Support → Mateship",
+        "reasoning": "Symbolizes(Akubra, AustralianCulture) and Values(AustralianCulture, Mateship)\nRepresents(HelpingHand, Support) and CoreValue(Support, Mateship).\nThus, Akubra → AustralianCulture → Mateship and HelpingHand → Support → Mateship",
         "hop_count": 4
     },
     {
@@ -1172,7 +1172,7 @@
             }
         ],
         "explanation": "Large family gatherings are central to Italian culture, often revolving around meals. Pasta is a staple of Italian cuisine, representing shared meals and inherited recipes.",
-        "reasoning": "CentralTo(LargeFamilyGathering, ItalianCulture) and FocusOf(ItalianCulture, FoodAndFamily)StapleOf(Pasta, ItalianCuisine) and Represents(ItalianCuisine, SharedMealsAndTraditions).Thus, LargeFamilyGathering → ItalianCulture → FoodAndFamily and Pasta → ItalianCuisine → SharedMealsAndTraditions",
+        "reasoning": "CentralTo(LargeFamilyGathering, ItalianCulture) and FocusOf(ItalianCulture, FoodAndFamily)\nStapleOf(Pasta, ItalianCuisine) and Represents(ItalianCuisine, SharedMealsAndTraditions).\nThus, LargeFamilyGathering → ItalianCulture → FoodAndFamily and Pasta → ItalianCuisine → SharedMealsAndTraditions",
         "hop_count": 4
     },
     {
@@ -1196,7 +1196,7 @@
             }
         ],
         "explanation": "Shakespeare's Globe Theatre was a circular ('O' shaped) open-air playhouse where many of his plays, including Hamlet (famous for the skull scene 'Alas, poor Yorick! I knew him, Horatio'), were performed.",
-        "reasoning": "ShapeOf(Shakespeare'sGlobeTheatre, O)PerformedAt(Hamlet, Shakespeare'sGlobeTheatre), Contains(Hamlet, Yorick'sSkull).Thus, O → Shakespeare'sGlobeTheatre → Hamlet → Yorick'sSkull and Yorick'sSkull → Hamlet → Shakespeare'sGlobeTheatre → O",
+        "reasoning": "ShapeOf(Shakespeare'sGlobeTheatre, O)\nPerformedAt(Hamlet, Shakespeare'sGlobeTheatre), Contains(Hamlet, Yorick'sSkull).\nThus, O → Shakespeare'sGlobeTheatre → Hamlet → Yorick'sSkull and Yorick'sSkull → Hamlet → Shakespeare'sGlobeTheatre → O",
         "hop_count": 6
     },
     {
@@ -1205,7 +1205,7 @@
         "visibility": "invisible",
         "domain": "culture",
         "type": "mutual elements",
-        "culture": "other",
+        "culture": "Non-English European",
         "language": "English",
         "images": [
             {
@@ -1220,7 +1220,7 @@
             }
         ],
         "explanation": "Zeus, the king of the gods in Greek mythology, is associated with lightning bolts as his weapon and resides on Mount Olympus.",
-        "reasoning": "Wields(Zeus, LightningBolt)HomeOf(Zeus, MountOlympus).Thus, LightningBolt → Zeus → MountOlympus and MountOlympus → Zeus → LightningBolt",
+        "reasoning": "Wields(Zeus, LightningBolt)\nHomeOf(Zeus, MountOlympus).\nThus, LightningBolt → Zeus → MountOlympus and MountOlympus → Zeus → LightningBolt",
         "hop_count": 4
     },
     {
@@ -1244,7 +1244,7 @@
             }
         ],
         "explanation": "The first image represents the humanistic focus of the Renaissance, showcasing the beauty and anatomy of the human form, typical of art from that period. The second image represents the architectural and artistic achievements of the Renaissance, particularly through Michelangelo's work on the Sistine Chapel, which exemplifies the grandeur and innovation of that era. Together, they highlight the cultural flourishing that defines the Renaissance.",
-        "reasoning": "Represents(HumanFigure, RenaissanceArt)CreatedBy(Michelangelo, SistineChapel) and Represents(SistineChapel, Renaissance).Thus, HumanFigure → RenaissanceArt → Renaissance and SistineChapel → Renaissance",
+        "reasoning": "Represents(HumanFigure, RenaissanceArt)\nCreatedBy(Michelangelo, SistineChapel) and Represents(SistineChapel, Renaissance).\nThus, HumanFigure → RenaissanceArt → Renaissance and SistineChapel → Renaissance",
         "hop_count": 3
     },
     {
@@ -1268,7 +1268,7 @@
             }
         ],
         "explanation": "The first image illustrates one of the key technological advancements of the Industrial Revolution, symbolizing the shift to steam power and mechanization in transportation. The second image depicts a factory setting, which represents the mass production and urbanization that characterized this transformative period in history. Together, they encapsulate the essence of the Industrial Revolution as a time of unprecedented change in industry and society.",
-        "reasoning": "Symbolizes(SteamEngine, TechnologicalAdvancement) and Represents(SteamEngine, IndustrialRevolution)Represents(Factory, MassProduction) and Represents(Factory, IndustrialRevolution).Thus, SteamEngine → TechnologicalAdvancement → IndustrialRevolution and Factory → MassProduction → IndustrialRevolution",
+        "reasoning": "Symbolizes(SteamEngine, TechnologicalAdvancement) and Represents(SteamEngine, IndustrialRevolution)\nRepresents(Factory, MassProduction) and Represents(Factory, IndustrialRevolution).\nThus, SteamEngine → TechnologicalAdvancement → IndustrialRevolution and Factory → MassProduction → IndustrialRevolution",
         "hop_count": 4
     },
     {
@@ -1292,7 +1292,7 @@
             }
         ],
         "explanation": "'Ephemeral',meaning transient or short-lived. A dandelion seedhead disperses quickly in the wind, representing fleeting existence. A blown-out candle signifies the end of something that once burned brightly, also symbolizing a brief duration.",
-        "reasoning": "Symbolizes(DandelionSeedhead, FleetingExistence)Symbolizes(BlownOutCandle, EndedLight/BriefDuration).Thus, DandelionSeedhead → FleetingExistence → Ephemeral and BlownOutCandle → BriefDuration → Ephemeral",
+        "reasoning": "Symbolizes(DandelionSeedhead, FleetingExistence)\nSymbolizes(BlownOutCandle, EndedLight/BriefDuration).\nThus, DandelionSeedhead → FleetingExistence → Ephemeral and BlownOutCandle → BriefDuration → Ephemeral",
         "hop_count": 4
     },
     {
@@ -1316,7 +1316,7 @@
             }
         ],
         "explanation": "An uncaged bird represents liberation from confinement. The open sky represents limitless possibility and the space to explore. Together, they symbolize the concept of freedom.",
-        "reasoning": "Represents(UncagedBird, Liberation)Represents(OpenSky, LimitlessPossibilities).Thus, UncagedBird → Liberation → Freedom and OpenSky → LimitlessPossibilities → Freedom",
+        "reasoning": "Represents(UncagedBird, Liberation)\nRepresents(OpenSky, LimitlessPossibilities).\nThus, UncagedBird → Liberation → Freedom and OpenSky → LimitlessPossibilities → Freedom",
         "hop_count": 4
     },
     {
@@ -1340,7 +1340,7 @@
             }
         ],
         "explanation": "Burning sodium metal produces a characteristic bright yellow flame, a classic demonstration of a flame reaction. Table salt (sodium chloride) contains sodium metal, albeit in a chemically bound form. The salt shaker represents a common source of this compound.",
-        "reasoning": "Produce(SodiumMetal, YellowFlame) and Indicate(YellowFlame, Sodium)Contain(TableSalt, Sodium) and Contain(SaltShaker, TableSalt).Thus, SodiumMetal → YellowFlame → Sodium and SaltShaker → TableSalt → Sodium",
+        "reasoning": "Produce(SodiumMetal, YellowFlame) and Indicate(YellowFlame, Sodium)\nContain(TableSalt, Sodium) and Contain(SaltShaker, TableSalt).\nThus, SodiumMetal → YellowFlame → Sodium and SaltShaker → TableSalt → Sodium",
         "hop_count": 4
     },
     {
@@ -1364,7 +1364,7 @@
             }
         ],
         "explanation": "The first image depicts a beam of sunlight piercing through a forest canopy. This is a natural example of the Tyndall Effect, where sunlight becomes visible due to the scattering of light by dust and water particles suspended in the air. The second image shows a Guanyin Bodhisattva statue bathed in golden light. In East Asian religious art, such depictions often utilize the visual effect of light beams to symbolize divinity and enlightenment. This artistic representation evokes the Tyndall Effect, where the light appears to radiate outwards, creating an ethereal atmosphere. While the light itself might be artificial, the visual effect mimics the Tyndall Effect, connecting it to the natural phenomenon depicted in the first image. Both images, though different in context, converge on the shared concept of light scattering.",
-        "reasoning": "Exhibit(SunlightThroughForest, TyndallEffect)Symbolize(GoldenLightOnStatue, Divinity) and Evoke(GoldenLightOnStatue, TyndallEffect).Thus, SunlightThroughForest → TyndallEffect and GoldenLightOnStatue → TyndallEffect",
+        "reasoning": "Exhibit(SunlightThroughForest, TyndallEffect)\nSymbolize(GoldenLightOnStatue, Divinity) and Evoke(GoldenLightOnStatue, TyndallEffect).\nThus, SunlightThroughForest → TyndallEffect and GoldenLightOnStatue → TyndallEffect",
         "hop_count": 2
     },
     {
@@ -1388,7 +1388,7 @@
             }
         ],
         "explanation": "The dusty photo album, as before, evokes memories of past events and people. A faded, well-worn t-shirt can similarly trigger memories, perhaps of a specific time period, event, or person associated with it. Both objects act as physical anchors to past experiences.",
-        "reasoning": "Evoke(DustyPhotoAlbum, Memories)Evoke(FadedTShirt, Memories).Thus, DustyPhotoAlbum → Memories and FadedTShirt → Memories",
+        "reasoning": "Evoke(DustyPhotoAlbum, Memories)\nEvoke(FadedTShirt, Memories).\nThus, DustyPhotoAlbum → Memories and FadedTShirt → Memories",
         "hop_count": 2
     },
     {
@@ -1412,7 +1412,7 @@
             }
         ],
         "explanation": "The magician's trick is a deliberate act of deception, creating an illusion for entertainment. The chameleon's camouflage is a form of deception used for survival, hiding it from predators and prey.",
-        "reasoning": "Perform(Magician, MagicTrick) and Involve(MagicTrick, Deception)Use(Chameleon, Camouflage) and IsA(Camouflage, Deception).Thus, Magician → MagicTrick → Deception and Chameleon → Camouflage → Deception",
+        "reasoning": "Perform(Magician, MagicTrick) and Involve(MagicTrick, Deception)\nUse(Chameleon, Camouflage) and IsA(Camouflage, Deception).\nThus, Magician → MagicTrick → Deception and Chameleon → Camouflage → Deception",
         "hop_count": 4
     },
     {
@@ -1436,7 +1436,7 @@
             }
         ],
         "explanation": "A soap bubble is beautiful but fragile, existing only for a brief moment before popping. A shooting star, while a dramatic celestial event, is also fleeting, visible for only a short time as it streaks across the sky. Both represent the beauty and transience of short-lived phenomena.",
-        "reasoning": "IsA(SoapBubble, TransientObject) and Characterize(TransientObject, Ephemeral)IsA(ShootingStar, TransientPhenomenon) and Characterize(TransientPhenomenon, Ephemeral). Thus, SoapBubble → TransientObject → Ephemeral and ShootingStar → TransientPhenomenon → Ephemeral",
+        "reasoning": "IsA(SoapBubble, TransientObject) and Characterize(TransientObject, Ephemeral)\nIsA(ShootingStar, TransientPhenomenon) and Characterize(TransientPhenomenon, Ephemeral). \nThus, SoapBubble → TransientObject → Ephemeral and ShootingStar → TransientPhenomenon → Ephemeral",
         "hop_count": 4
     },
     {
@@ -1460,7 +1460,7 @@
             }
         ],
         "explanation": "The first image, a sugar pill, is often used as a placebo in medical trials. The second image, a doctor, represents the authority and trust associated with medical treatment, which contributes significantly to the placebo effect. The belief in the doctor's ability to heal, combined with the act of taking a 'medicine' (even if it's just a sugar pill), can trigger the placebo effect.",
-        "reasoning": "UseAs(SugarPill, Placebo) and PartOf(Placebo, PlaceboEffect)Administer(Doctor, Treatment) and Influence(Treatment, PlaceboEffect).Thus, SugarPill → Placebo → PlaceboEffect and Doctor → Treatment → PlaceboEffect",
+        "reasoning": "UseAs(SugarPill, Placebo) and PartOf(Placebo, PlaceboEffect)\nAdminister(Doctor, Treatment) and Influence(Treatment, PlaceboEffect).\nThus, SugarPill → Placebo → PlaceboEffect and Doctor → Treatment → PlaceboEffect",
         "hop_count": 4
     },
     {
@@ -1484,7 +1484,7 @@
             }
         ],
         "explanation": "The first image, gravitational lensing, is an observable phenomenon influenced by the gravitational pull of massive objects, including dark matter. The bending of light around galaxies suggests the presence of more matter than we can visually detect. The second image, empty space with question marks, represents the mysterious and unknown nature of dark matter, which we cannot see directly.",
-        "reasoning": "Influence(DarkMatter, GravitationalLensing)Represent(EmptySpaceWithQuestionMarks, UnknownNatureOfDarkMatter) and Is(DarkMatter, UnknownNatureOfDarkMatter).Thus, GravitationalLensing → DarkMatter and EmptySpaceWithQuestionMarks → UnknownNatureOfDarkMatter → DarkMatter",
+        "reasoning": "Influence(DarkMatter, GravitationalLensing)\nRepresent(EmptySpaceWithQuestionMarks, UnknownNatureOfDarkMatter) and Is(DarkMatter, UnknownNatureOfDarkMatter).\nThus, GravitationalLensing → DarkMatter and EmptySpaceWithQuestionMarks → UnknownNatureOfDarkMatter → DarkMatter",
         "hop_count": 3
     },
     {
@@ -1508,7 +1508,7 @@
             }
         ],
         "explanation": "'Crop circles are often associated with UFO landings/activity.'While there are many theories about their creation, crop circles are popularly linked to extraterrestrial visitors and their spacecraft.",
-        "reasoning": "Location(CropCircles, WheatField)Create(CropCircles, UFO).Thus, WheatField → CropCircles → UFO and UFO → CropCircles → WheatField",
+        "reasoning": "Location(CropCircles, WheatField)\nCreate(CropCircles, UFO).\nThus, WheatField → CropCircles → UFO and UFO → CropCircles → WheatField",
         "hop_count": 4
     },
     {
@@ -1532,7 +1532,7 @@
             }
         ],
         "explanation": "An hourglass directly measures the passage of time. Decaying fruit visually represents the effect of time on organic matter.",
-        "reasoning": "Measure(Hourglass, Time)Cause(Time, Decay) and Show(DecayingFruit, Decay).Thus, Hourglass → Time and DecayingFruit → Decay → Time",
+        "reasoning": "Measure(Hourglass, Time)\nCause(Time, Decay) and Show(DecayingFruit, Decay).\nThus, Hourglass → Time and DecayingFruit → Decay → Time",
         "hop_count": 3
     },
     {
@@ -1556,7 +1556,7 @@
             }
         ],
         "explanation": "The first image depicts the anecdotal story of Newton and the falling apple, which inspired his theory of gravity. The second image, a black hole, represents an extreme manifestation of gravity.",
-        "reasoning": "Inspire(FallingApple, Newton, Gravity) and Depict(NewtonUnderTree, FallingApple)Exhibit(BlackHole, ExtremeGravity) and TypeOf(ExtremeGravity, Gravity).Thus, NewtonUnderTree → FallingApple → Gravity and BlackHole → ExtremeGravity → Gravity",
+        "reasoning": "Inspire(FallingApple, Newton, Gravity) and Depict(NewtonUnderTree, FallingApple)\nExhibit(BlackHole, ExtremeGravity) and TypeOf(ExtremeGravity, Gravity).\nThus, NewtonUnderTree → FallingApple → Gravity and BlackHole → ExtremeGravity → Gravity",
         "hop_count": 4
     },
     {
@@ -1580,7 +1580,7 @@
             }
         ],
         "explanation": "Sisyphus is condemned to eternally push a boulder uphill, only to have it roll back down, symbolizing endless, futile effort, yet he persists. A plant sprouting in cracked concrete represents overcoming obstacles and thriving despite adversity. Both images convey the idea of continuing despite difficulty.",
-        "reasoning": "Symbolizes(Sisyphus, EndlessEffortDespiteFutility) and Implies(EndlessEffortDespiteFutility, Perseverance)Represents(PlantInCrackedConcrete, OvercomingObstacles) and Implies(OvercomingObstacles, Perseverance).Thus, Sisyphus → EndlessEffortDespiteFutility → Perseverance and PlantInCrackedConcrete → OvercomingObstacles → Perseverance",
+        "reasoning": "Symbolizes(Sisyphus, EndlessEffortDespiteFutility) and Implies(EndlessEffortDespiteFutility, Perseverance)\nRepresents(PlantInCrackedConcrete, OvercomingObstacles) and Implies(OvercomingObstacles, Perseverance).\nThus, Sisyphus → EndlessEffortDespiteFutility → Perseverance and PlantInCrackedConcrete → OvercomingObstacles → Perseverance",
         "hop_count": 4
     },
     {
@@ -1604,7 +1604,7 @@
             }
         ],
         "explanation": "The sunrise over a mountain peak symbolizes overcoming challenges and reaching a new height with the promise of a fresh start. The figure emerging from the tunnel represents leaving darkness and hardship behind, entering into the light of a new chapter.",
-        "reasoning": "Symbolizes(SunriseOverMountainPeak, OvercomingChallenges ∧ NewBeginning)Represents(FigureEmergingFromTunnel, LeavingDarkness ∧ EnteringLight ∧ NewBeginning).Thus, SunriseOverMountainPeak → Hope and NewBeginnings ← FigureEmergingFromTunnel",
+        "reasoning": "Symbolizes(SunriseOverMountainPeak, OvercomingChallenges ∧ NewBeginning)\nRepresents(FigureEmergingFromTunnel, LeavingDarkness ∧ EnteringLight ∧ NewBeginning).\nThus, SunriseOverMountainPeak → Hope and NewBeginnings ← FigureEmergingFromTunnel",
         "hop_count": 1
     },
     {
@@ -1628,7 +1628,7 @@
             }
         ],
         "explanation": "A solar eclipse occurs when the moon passes between the sun and Earth, blocking the sun's light. The moon appears as a dark silhouette against the sun, and the sun's corona becomes visible.",
-        "reasoning": "Blocks(MoonSilhouette, Sun) and Characterizes(Blocking(Moon, Sun), SolarEclipse)VisibleDuring(SunsCorona, SolarEclipse).Thus, MoonSilhouette → SolarEclipse and SunsCorona → SolarEclipse",
+        "reasoning": "Blocks(MoonSilhouette, Sun) and Characterizes(Blocking(Moon, Sun), SolarEclipse)\nVisibleDuring(SunsCorona, SolarEclipse).\nThus, MoonSilhouette → SolarEclipse and SunsCorona → SolarEclipse",
         "hop_count": 2
     },
     {
@@ -1652,7 +1652,7 @@
             }
         ],
         "explanation": "A supernova is the explosion of a star. These explosions create and distribute heavy elements throughout the universe.",
-        "reasoning": "IsA(Supernova, ExplodingStar)Creates(Supernova, HeavyElements).Thus, ExplodingStar → Supernova and HeavyElements → Supernova",
+        "reasoning": "IsA(Supernova, ExplodingStar)\nCreates(Supernova, HeavyElements).\nThus, ExplodingStar → Supernova and HeavyElements → Supernova",
         "hop_count": 2
     },
     {
@@ -1676,7 +1676,7 @@
             }
         ],
         "explanation": "Ball lightning is a rare atmospheric electrical phenomenon typically appearing as a luminous sphere during",
-        "reasoning": "AppearsAs(BallLightning, LuminousSphere)OccursDuring(BallLightning, Thunderstorm).Thus, LuminousSphere → BallLightning and Thunderstorm → BallLightning",
+        "reasoning": "AppearsAs(BallLightning, LuminousSphere)\nOccursDuring(BallLightning, Thunderstorm).\nThus, LuminousSphere → BallLightning and Thunderstorm → BallLightning",
         "hop_count": 2
     },
     {
@@ -1700,7 +1700,7 @@
             }
         ],
         "explanation": "Sun dogs are bright spots of light that appear on either side of the sun, caused by the refraction of sunlight through ice crystals in the atmosphere.",
-        "reasoning": "AppearsAs(Sundog, BrightSpotOfLight)Causes(Refraction(Sunlight, IceCrystals), Sundog).Thus, BrightSpotOfLight → Sundog and IceCrystals → Sundog",
+        "reasoning": "AppearsAs(Sundog, BrightSpotOfLight)\nCauses(Refraction(Sunlight, IceCrystals), Sundog).\nThus, BrightSpotOfLight → Sundog and IceCrystals → Sundog",
         "hop_count": 2
     },
     {
@@ -1724,7 +1724,7 @@
             }
         ],
         "explanation": "Earthquakes are caused by the movement of tectonic plates along fault lines, generating seismic waves that cause the ground to shake.",
-        "reasoning": "OccursAt(Earthquake, FaultLine)Produces(Earthquake, SeismicWaves).Thus, FaultLine → Earthquake and SeismicWaves → Earthquake",
+        "reasoning": "OccursAt(Earthquake, FaultLine)\nProduces(Earthquake, SeismicWaves).\nThus, FaultLine → Earthquake and SeismicWaves → Earthquake",
         "hop_count": 2
     },
     {
@@ -1748,7 +1748,7 @@
             }
         ],
         "explanation": "Birds often migrate in flocks during changing seasons to find more favorable breeding or feeding grounds.",
-        "reasoning": "Perform(FlockOfBirds, Migration)Triggers(ChangingSeasons, Migration).Thus, FlockOfBirds → Migration and ChangingSeasons → Migration",
+        "reasoning": "Perform(FlockOfBirds, Migration)\nTriggers(ChangingSeasons, Migration).\nThus, FlockOfBirds → Migration and ChangingSeasons → Migration",
         "hop_count": 2
     },
     {
@@ -1772,7 +1772,7 @@
             }
         ],
         "explanation": "Light pillars are vertical beams of light caused by the reflection of light off ice crystals suspended in the atmosphere.",
-        "reasoning": "AppearsAs(LightPillar, VerticalBeamOfLight)Causes(Reflection(Light, IceCrystalsInTheAir), LightPillar).Thus, VerticalBeamOfLight → LightPillar and IceCrystalsInTheAir → LightPillar",
+        "reasoning": "AppearsAs(LightPillar, VerticalBeamOfLight)\nCauses(Reflection(Light, IceCrystalsInTheAir), LightPillar).\nThus, VerticalBeamOfLight → LightPillar and IceCrystalsInTheAir → LightPillar",
         "hop_count": 2
     },
     {
@@ -1796,7 +1796,7 @@
             }
         ],
         "explanation": "The person being erased symbolizes the silencing and deplatforming of individuals. The burning books symbolize the destruction or suppression of ideas and works associated with the canceled person.",
-        "reasoning": "Symbolizes(ErasedPerson, SilencingAndDeplatforming)Symbolizes(BurningBooks, DestructionOfIdeas).Thus, ErasedPerson → SilencingAndDeplatforming → CancelCulture and BurningBooks → DestructionOfIdeas → CancelCulture",
+        "reasoning": "Symbolizes(ErasedPerson, SilencingAndDeplatforming)\nSymbolizes(BurningBooks, DestructionOfIdeas).\nThus, ErasedPerson → SilencingAndDeplatforming → CancelCulture and BurningBooks → DestructionOfIdeas → CancelCulture",
         "hop_count": 4
     },
     {
@@ -1820,7 +1820,7 @@
             }
         ],
         "explanation": "The Ice Bucket Challenge, depicted in the first image, was a viral trend that spread rapidly through social media, raising awareness for ALS. The second image, representing TikTok dance crazes, highlights another form of viral trend, where short, catchy dance routines quickly gain popularity and are widely imitated on the platform. Both images represent phenomena that captured widespread attention and participation online.",
-        "reasoning": "ExampleOf(IceBucketChallenge, ViralTrend)ExampleOf(TikTokDanceCraze, ViralTrend).Thus, IceBucketChallenge → ViralTrend and TikTokDanceCraze → ViralTrend",
+        "reasoning": "ExampleOf(IceBucketChallenge, ViralTrend)\nExampleOf(TikTokDanceCraze, ViralTrend).\nThus, IceBucketChallenge → ViralTrend and TikTokDanceCraze → ViralTrend",
         "hop_count": 2
     },
     {
@@ -1844,7 +1844,7 @@
             }
         ],
         "explanation": "The first image represents the digital aspect of an echo chamber, where individuals are constantly exposed to the same information through personalized feeds and algorithms, reinforcing their existing beliefs. The second image represents the social aspect, where like-minded individuals gather and reinforce each other's opinions without exposure to alternative perspectives. Both images illustrate environments where dissenting opinions are rare and confirmation bias thrives.",
-        "reasoning": "Represent(MultipleScreensSameNews, DigitalEchoChamber) and SubsetOf(DigitalEchoChamber, EchoChamber)Represent(NoddingGroup, SocialEchoChamber) and SubsetOf(SocialEchoChamber, EchoChamber).Thus, MultipleScreensSameNews → DigitalEchoChamber → EchoChamber and NoddingGroup → SocialEchoChamber → EchoChamber",
+        "reasoning": "Represent(MultipleScreensSameNews, DigitalEchoChamber) and SubsetOf(DigitalEchoChamber, EchoChamber)\nRepresent(NoddingGroup, SocialEchoChamber) and SubsetOf(SocialEchoChamber, EchoChamber).\nThus, MultipleScreensSameNews → DigitalEchoChamber → EchoChamber and NoddingGroup → SocialEchoChamber → EchoChamber",
         "hop_count": 4
     },
     {
@@ -1868,7 +1868,7 @@
             }
         ],
         "explanation": "The first image depicts a common practice in influencer marketing: showcasing a product through a selfie, aiming to reach the influencer's followers. The second image, the sales graph spike, represents the desired outcome of a successful influencer marketing campaign: increased product sales due to the influencer's promotion.",
-        "reasoning": "Tactic(ProductSelfie, InfluencerMarketing)Result(SalesSpike, InfluencerMarketing).Thus, ProductSelfie → InfluencerMarketing and SalesSpike → InfluencerMarketing",
+        "reasoning": "Tactic(ProductSelfie, InfluencerMarketing)\nResult(SalesSpike, InfluencerMarketing).\nThus, ProductSelfie → InfluencerMarketing and SalesSpike → InfluencerMarketing",
         "hop_count": 2
     },
     {
@@ -1892,7 +1892,7 @@
             }
         ],
         "explanation": "The first image, thick car exhaust fumes, represents a major source of greenhouse gases, particularly carbon dioxide, which contribute to the greenhouse effect. The second image, melting glaciers, depicts a direct consequence of global warming, a phenomenon exacerbated by the greenhouse effect. Thus, both images relate to the greenhouse effect, one representing a cause and the other an effect.",
-        "reasoning": "Emit(CarExhaust, GreenhouseGases) and Cause(GreenhouseGases, GreenhouseEffect)Cause(GreenhouseEffect, GlobalWarming) and Cause(GlobalWarming, GlacierMelting).Thus, CarExhaust → GreenhouseGases → GreenhouseEffect and GlacierMelting → GlobalWarming → GreenhouseEffect",
+        "reasoning": "Emit(CarExhaust, GreenhouseGases) and Cause(GreenhouseGases, GreenhouseEffect)\nCause(GreenhouseEffect, GlobalWarming) and Cause(GlobalWarming, GlacierMelting).\nThus, CarExhaust → GreenhouseGases → GreenhouseEffect and GlacierMelting → GlobalWarming → GreenhouseEffect",
         "hop_count": 4
     },
     {
@@ -1916,7 +1916,7 @@
             }
         ],
         "explanation": "King John signed the Magna Carta at Runnymede in 1215.",
-        "reasoning": "Signed(KingJohn, MagnaCarta)LocationOf(Runnymede, MagnaCartaSigning).Thus, KingJohn → MagnaCarta → Runnymede and Runnymede → MagnaCarta → KingJohn",
+        "reasoning": "Signed(KingJohn, MagnaCarta)\nLocationOf(Runnymede, MagnaCartaSigning).\nThus, KingJohn → MagnaCarta → Runnymede and Runnymede → MagnaCarta → KingJohn",
         "hop_count": 4
     },
     {
@@ -1940,7 +1940,7 @@
             }
         ],
         "explanation": "A kneeling figure often represents humility and reverence, common postures in prayer. Open hands reaching upwards symbolize supplication and a connection to a higher power.",
-        "reasoning": "Symbolizes(KneelingFigure, Humility/Reverence) and Associates(Humility/Reverence, Prayer).Symbolizes(OpenHandsUpwards, Supplication/ConnectionToHigherPower) and Associates(Supplication/ConnectionToHigherPower, Prayer).Thus, KneelingFigure → Humility/Reverence → Prayer and OpenHandsUpwards → Supplication/ConnectionToHigherPower → Prayer",
+        "reasoning": "Symbolizes(KneelingFigure, Humility/Reverence) and Associates(Humility/Reverence, Prayer).\nSymbolizes(OpenHandsUpwards, Supplication/ConnectionToHigherPower) and Associates(Supplication/ConnectionToHigherPower, Prayer).\nThus, KneelingFigure → Humility/Reverence → Prayer and OpenHandsUpwards → Supplication/ConnectionToHigherPower → Prayer",
         "hop_count": 4
     },
     {
@@ -1964,7 +1964,7 @@
             }
         ],
         "explanation": "'Stille Wasser sind tief' translates to 'Still waters run deep,' indicating that those who appear calm or quiet may possess profound thoughts, emotions, or complexities beneath the surface.",
-        "reasoning": "Represents(CalmLake, SurfaceCalmness)Symbolizes(DeepOcean, HiddenDepths)Thus, CalmLake → SurfaceCalmness and DeepOcean → HiddenDepths → 'Still waters run deep.'",
+        "reasoning": "Represents(CalmLake, SurfaceCalmness)\nSymbolizes(DeepOcean, HiddenDepths)\nThus, CalmLake → SurfaceCalmness and DeepOcean → HiddenDepths → 'Still waters run deep.'",
         "hop_count": 3
     },
     {
@@ -2036,7 +2036,7 @@
             }
         ],
         "explanation": "The sculptor represents the dedication and effort put into honing a craft through physical practice, while the musician symbolizes the repetitive effort needed to achieve mastery in performance. Both images illustrate the idea that consistent practice leads to improvement and mastery.",
-        "reasoning": "Represents(Sculptor, Chiseling) and Illustrates(Dedication, Mastery)Represents(Musician, Practicing) and Illustrates(Performance, Mastery)Thus, Sculptor → Practice → Mastery and Musician → Practice → Mastery",
+        "reasoning": "Represents(Sculptor, Chiseling) and Illustrates(Dedication, Mastery)\nRepresents(Musician, Practicing) and Illustrates(Performance, Mastery)\nThus, Sculptor → Practice → Mastery and Musician → Practice → Mastery",
         "hop_count": 4
     },
     {
@@ -2084,7 +2084,7 @@
             }
         ],
         "explanation": "A painter's palette represents creativity and the ability to create one's own vision or reality through colors and art. The globe symbolizes the world itself, representing the vastness and diversity of experiences and perspectives that can be imagined or created.",
-        "reasoning": "Paint(PainterPalette, Creativity)Represents(Globe, World)Thus, PainterPalette → Creativity → Imagination → Globe",
+        "reasoning": "Paint(PainterPalette, Creativity)\nRepresents(Globe, World)\nThus, PainterPalette → Creativity → Imagination → Globe",
         "hop_count": 3
     },
     {
@@ -2108,7 +2108,7 @@
             }
         ],
         "explanation": "The tightrope walker symbolizes taking risks and facing fears to achieve something extraordinary, while the treasure chest represents the rewards that come from such daring actions.",
-        "reasoning": "Symbolizes(RiskTaking, TightropeWalker)Represents(Reward, TreasureChest)Thus, TightropeWalker → RiskTaking → Reward → TreasureChest",
+        "reasoning": "Symbolizes(RiskTaking, TightropeWalker)\nRepresents(Reward, TreasureChest)\nThus, TightropeWalker → RiskTaking → Reward → TreasureChest",
         "hop_count": 3
     },
     {
@@ -2132,7 +2132,7 @@
             }
         ],
         "explanation": "The first image represents the classic combination of coffee and cake, specifically highlighting a popular German dessert, the Black Forest cake. The second image illustrates the cultural practice of enjoying coffee and cake together in a social setting, which is a cherished tradition in Germany. Together, these images reflect the essence of 'Kaffee und Kuchen' as both a culinary delight and a social experience.",
-        "reasoning": "Contain(CoffeeTableSetting, BlackForestCake) and Enjoy(CoffeeTableSetting, KaffeeUndKuchen)Socialize(CaféScene, KaffeeUndKuchen) and Contain(CaféScene, Pastries)Thus, CoffeeTableSetting → Kaffee und Kuchen and CaféScene → Kaffee und Kuchen.",
+        "reasoning": "Contain(CoffeeTableSetting, BlackForestCake) and Enjoy(CoffeeTableSetting, KaffeeUndKuchen)\nSocialize(CaféScene, KaffeeUndKuchen) and Contain(CaféScene, Pastries)\nThus, CoffeeTableSetting → Kaffee und Kuchen and CaféScene → Kaffee und Kuchen.",
         "hop_count": 2
     },
     {
@@ -2156,7 +2156,7 @@
             }
         ],
         "explanation": "The first image captures the aesthetic and cultural significance of Fachwerkhäuser, which are iconic in German architecture, representing the charm and historical importance of these structures. The second image zooms in on the craftsmanship that defines these houses, emphasizing the materials and techniques used in their construction. Together, they convey the theme of 'Fachwerkhäuser,'highlighting both their beauty and the skilled artistry behind them.",
-        "reasoning": "Contains(StreetView, Fachwerkhäuser)Craftsmanship(WoodBeam, Fachwerkhaus)Thus, StreetView → Fachwerkhäuser and WoodBeam → Fachwerkhaus → Fachwerkhäuser",
+        "reasoning": "Contains(StreetView, Fachwerkhäuser)\nCraftsmanship(WoodBeam, Fachwerkhaus)\nThus, StreetView → Fachwerkhäuser and WoodBeam → Fachwerkhaus → Fachwerkhäuser",
         "hop_count": 3
     },
     {
@@ -2180,7 +2180,7 @@
             }
         ],
         "explanation": "The first image represents the iconic red cloak worn by Little Red Riding Hood, while the second image depicts the wolf, the antagonist in the story. Together, they encapsulate the essence of the fairy tale, highlighting the confrontation between innocence (represented by the cloak) and danger (represented by the wolf).",
-        "reasoning": "Contains(RedCloak, Rotkäppchen)Lurk(Wolf, Forest) and Oppose(Wolf, Rotkäppchen)Thus, RedCloak → Rotkäppchen and Wolf → Rotkäppchen → Opponent → Rotkäppchen und der Wolf",
+        "reasoning": "Contains(RedCloak, Rotkäppchen)\nLurk(Wolf, Forest) and Oppose(Wolf, Rotkäppchen)\nThus, RedCloak → Rotkäppchen and Wolf → Rotkäppchen → Opponent → Rotkäppchen und der Wolf",
         "hop_count": 4
     },
     {
@@ -2204,7 +2204,7 @@
             }
         ],
         "explanation": "The first image depicts a person who is missing out on the opportunity to catch fish because they are asleep, while the second image represents a successful fisherman who has taken advantage of the opportunity to catch fish. Together, they illustrate the proverb 'Chi dorme non piglia pesci,' emphasizing that those who are inactive or complacent miss out on opportunities.",
-        "reasoning": "Sleep(Person, FishingBoat) and MissOpportunity(Person, Fish)Catch(Fisherman, Fish) and SeizeOpportunity(Fisherman, Fishing)Thus, Person → Sleep → MissOpportunity and Fisherman → Catch → SeizeOpportunity → Opportunity",
+        "reasoning": "Sleep(Person, FishingBoat) and MissOpportunity(Person, Fish)\nCatch(Fisherman, Fish) and SeizeOpportunity(Fisherman, Fishing)\nThus, Person → Sleep → MissOpportunity and Fisherman → Catch → SeizeOpportunity → Opportunity",
         "hop_count": 5
     },
     {
@@ -2228,7 +2228,7 @@
             }
         ],
         "explanation": "The first image represents the essence of an Italian kitchen, where traditional cooking methods and ingredients come together to create authentic Italian cuisine. The second image showcases a specific dish, Risotto alla Milanese, which is a hallmark of Italian cooking. Together, they embody the concept of 'Cucina,' illustrating both the environment and a signature dish of Italian culinary culture.",
-        "reasoning": "Represents(RusticItalianKitchen, Cucina)Contains(RisottoAllaMilanese, Cucina)Thus, RusticItalianKitchen → Cucina and RisottoAllaMilanese → Cucina",
+        "reasoning": "Represents(RusticItalianKitchen, Cucina)\nContains(RisottoAllaMilanese, Cucina)\nThus, RusticItalianKitchen → Cucina and RisottoAllaMilanese → Cucina",
         "hop_count": 2
     },
     {
@@ -2252,7 +2252,7 @@
             }
         ],
         "explanation": "The first image captures the essence of Baroque design through its dramatic use of space and decoration in a religious context, while the second image exemplifies the grandeur and extravagance associated with Baroque architecture in royal settings. Together, they highlight the key characteristics of the Baroque style, including its emphasis on ornamentation, movement, and emotional depth.",
-        "reasoning": "Contains(ChurchOfGesùCeiling, BaroqueArchitecture) and Style(BaroqueArchitecture, Religious)Contains(PalaceOfVersaillesBallroom, BaroqueArchitecture) and Style(BaroqueArchitecture, Royal)Thus, ChurchOfGesùCeiling → BaroqueArchitecture and PalaceOfVersaillesBallroom → BaroqueArchitecture",
+        "reasoning": "Contains(ChurchOfGesùCeiling, BaroqueArchitecture) and Style(BaroqueArchitecture, Religious)\nContains(PalaceOfVersaillesBallroom, BaroqueArchitecture) and Style(BaroqueArchitecture, Royal)\nThus, ChurchOfGesùCeiling → BaroqueArchitecture and PalaceOfVersaillesBallroom → BaroqueArchitecture",
         "hop_count": 2
     },
     {
@@ -2276,7 +2276,7 @@
             }
         ],
         "explanation": "The dark, foreboding gate symbolizes the entrance to a place of despair and hopelessness, reflecting the warning found in Dante's Inferno. The flickering candle flame represents fragile hope, which can be easily extinguished in a place filled with despair. Together, these images evoke the theme of hopelessness and the dire warning to those who dare to enter.",
-        "reasoning": "Symbolizes(Gate, Despair)Represents(CandleFlame, FragileHope)Thus, Gate → Despair and CandleFlame → FragileHope → 'Abandon all hope, ye who enter here.'",
+        "reasoning": "Symbolizes(Gate, Despair)\nRepresents(CandleFlame, FragileHope)\nThus, Gate → Despair and CandleFlame → FragileHope → 'Abandon all hope, ye who enter here.'",
         "hop_count": 3
     },
     {
@@ -2324,7 +2324,7 @@
             }
         ],
         "explanation": "The first image captures a moment of tranquility on the sea, evoking feelings of peacefulness and reflection, while the second image introduces an element of isolation and foreboding, suggesting struggle amidst nature's might. Together, they evoke a sense of bittersweet beauty often associated with the sea, resonating with the theme of melancholy expressed in the phrase 'E il naufragar m'è dolce in questo mare'.",
-        "reasoning": "Evoke(SereneSea, NauticalMelancholy) and Reflect(BoatDrifting, Calm)Contrast(Lighthouse, StormySky) and Isolate(Lighthouse, NauticalMelancholy)Thus, SereneSea → NauticalMelancholy and Lighthouse → NauticalMelancholy",
+        "reasoning": "Evoke(SereneSea, NauticalMelancholy) and Reflect(BoatDrifting, Calm)\nContrast(Lighthouse, StormySky) and Isolate(Lighthouse, NauticalMelancholy)\nThus, SereneSea → NauticalMelancholy and Lighthouse → NauticalMelancholy",
         "hop_count": 2
     },
     {
@@ -2348,7 +2348,7 @@
             }
         ],
         "explanation": "The first image illustrates the phrase literally, suggesting that one should not claim to have something (the cat) unless it is indeed in one's possession (the bag). The second image represents the moment of revelation or surprise that often accompanies the realization that someone was making an unfounded claim. Together, they encapsulate the essence of the saying about the importance of proof before making assertions.",
-        "reasoning": "Claim(HoldingBag, Cat) and ShowPossession(Cat, Bag)Realization(SurprisePerson, UnexpectedClaim)Thus, HoldingBag → Cat and SurprisePerson → UnexpectedClaim → se non ce l'hai nel sacco",
+        "reasoning": "Claim(HoldingBag, Cat) and ShowPossession(Cat, Bag)\nRealization(SurprisePerson, UnexpectedClaim)\nThus, HoldingBag → Cat and SurprisePerson → UnexpectedClaim → se non ce l'hai nel sacco",
         "hop_count": 3
     },
     {
@@ -2372,7 +2372,7 @@
             }
         ],
         "explanation": "The first image represents the cutting-edge fashion showcased at Milan Fashion Week, a significant event in the global fashion calendar, known for highlighting Italian designers and styles. The second image captures the essence of Italian craftsmanship, with a tailor meticulously creating a suit, symbolizing the high-quality, tailored clothing that Italy is renowned for. Together, these images encapsulate the theme of 'Italian fashion,' where modern runway presentations and traditional craftsmanship coalesce to define Italy's influence in the fashion world.",
-        "reasoning": "Showcase(MilanFashionWeek, ItalianFashion)Craft(BespokeTailoring, ItalianTradition)Thus, MilanFashionWeek → ItalianFashion and BespokeTailoring → ItalianTradition → ItalianFashion",
+        "reasoning": "Showcase(MilanFashionWeek, ItalianFashion)\nCraft(BespokeTailoring, ItalianTradition)\nThus, MilanFashionWeek → ItalianFashion and BespokeTailoring → ItalianTradition → ItalianFashion",
         "hop_count": 3
     },
     {
@@ -2396,7 +2396,7 @@
             }
         ],
         "explanation": "The first image represents the art form of Commedia dell'Arte, which relies on improvisation and stock characters, often using a 'canovaccio' or framework for the performance. The second image, featuring hand-painted fabric, evokes the colorful and vibrant costumes that are essential in creating the visual spectacle of such performances. Therefore, both images connect through the concept of 'canovaccio,' highlighting its role in theatrical tradition and the visual artistry that accompanies it.",
-        "reasoning": "Use(CommediaDellArte, Canovaccio)Decorate(Costumes, HandPaintedFabric) and EssentialFor(HandPaintedFabric, TheatricalProductions)Thus, CommediaDellArte → Canovaccio and HandPaintedFabric → TheatricalProductions → Canovaccio",
+        "reasoning": "Use(CommediaDellArte, Canovaccio)\nDecorate(Costumes, HandPaintedFabric) and EssentialFor(HandPaintedFabric, TheatricalProductions)\nThus, CommediaDellArte → Canovaccio and HandPaintedFabric → TheatricalProductions → Canovaccio",
         "hop_count": 3
     },
     {
@@ -2420,7 +2420,7 @@
             }
         ],
         "explanation": "The first image represents luck through the lottery, where winning is often seen as a stroke of good fortune. The second image captures the joy and excitement of someone experiencing a fortunate event, such as winning, in a culturally significant location. Together, they convey the theme of luck in Italian culture.",
-        "reasoning": "Win(LotteryTicket, Luck)Celebrate(Person, GoodFortune) and Location(Person, Colosseum)Thus, LotteryTicket → Luck and Person → GoodFortune → Luck",
+        "reasoning": "Win(LotteryTicket, Luck)\nCelebrate(Person, GoodFortune) and Location(Person, Colosseum)\nThus, LotteryTicket → Luck and Person → GoodFortune → Luck",
         "hop_count": 3
     }
 ]
