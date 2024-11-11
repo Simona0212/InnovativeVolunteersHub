@@ -188,8 +188,8 @@
             }
         ],
         "explanation": "'Once in a Lifetime'. The first image of a tea ceremony captures a unique and fleeting moment of connection between the host and guest, emphasizing the significance of shared experiences. The second image of a blooming cherry blossom tree represents the transient beauty and impermanence of life, highlighting the idea that each encounter is a once-in-a-lifetime opportunity. Together, they convey the concept of treasuring each moment as a special and irreplaceable experience.",
-        "reasoning": "Connection(Host, Guest) and Share(Moment, Connection) → OnceInALifetime\nBlooming(CherryBlossomTree, FullBloom) and Represents(Impermanence, CherryBlossomTree) → OnceInALifetime\nThus, Host ∧ Guest → OnceInALifetime and CherryBlossomTree → OnceInALifetime",
-        "hop_count": 4
+        "reasoning": "Represents(TeaCeremony, 一期一会)\nRepresents(CherryBlossomTree, 一期一会)\nThus, TeaCeremony → 一期一会 and CherryBlossomTree → 一期一会",
+        "hop_count": 2
     },
     {
         "foldername": "구슬이 서 말이라도 꿰어야 보배다(invisible, business, relation, East Asia, Korean)",
