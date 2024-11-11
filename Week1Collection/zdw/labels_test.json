@@ -932,8 +932,8 @@
             }
         ],
         "explanation": " The aperitivo hour is a pre-dinner tradition in many Italian-speaking cultures where drinks and light snacks are enjoyed to stimulate the appetite. The vibrant cocktail represents the usual drinks served during this time, while the platter of olives and cheese symbolizes the accompanying snacks that enhance the social experience of the aperitivo hour.",
-        "reasoning": "Represents(Cocktail) ∧ Accompanies(Platter) → AperitivoHour\nThus, AperitivoHour → Cocktail ∧ Platter.",
-        "hop_count": 2
+        "reasoning": "Serve(VibrantCocktail, AperitivoHour)\nEnhance(SnacksPlatter, SocialExperience)\nThus, VibrantCocktail → AperitivoHour and SnacksPlatter → SocialExperience → AperitivoHour.",
+        "hop_count": 3
     },
     {
         "foldername": "Golden arches(visible, food, metaphor, USAEnglish, English)",
@@ -956,8 +956,8 @@
             }
         ],
         "explanation": "Golden arches. The golden arches are a well-known symbol of McDonald's, a globally recognized fast-food chain. The stylized golden arch represents the brand itself, while the fast-food tray filled with burgers and fries signifies the typical menu items associated with the restaurant.",
-        "reasoning": "Symbolizes(GoldenArch, McDonald'sBrand) ∧ Represents(FastFoodTray, McDonald'sMenu) → GoldenArches\nThus, GoldenArches → GoldenArch ∧ FastFoodTray..",
-        "hop_count": 2
+        "reasoning": "Symbolize(GoldenArch, McDonalds)\nRepresent(MenuItems, FastFoodTray)\nThus, GoldenArch → McDonalds and FastFoodTray → MenuItems → GoldenArch.",
+        "hop_count": 3
     },
     {
         "foldername": "Hot dog cart(visible, food, metaphor, USAEnglish, English)",
@@ -980,7 +980,7 @@
             }
         ],
         "explanation": "Hot dog cart. A hot dog cart is a common sight in urban areas, serving quick and tasty street food. The colorful cart represents the vendor's presence and the vibrant atmosphere of street food culture, while the steaming hot dog with toppings signifies the popular food item that is typically sold from the cart.",
-        "reasoning": "Represents(HotDogCart, StreetFoodVendor) ∧ Represents(SteamingHotDog, PopularFood) → HotDogCart\nThus, HotDogCart → HotDogCart ∧ SteamingHotDog.",
+        "reasoning": "Presence(ColorfulCart, HotDogCart)\nSell(HotDogWithToppings, HotDogCart)\nThus, ColorfulCart → HotDogCart and HotDogWithToppings → HotDogCart.",
         "hop_count": 2
     },
     {
@@ -1028,7 +1028,7 @@
             }
         ],
         "explanation": "Jewish delis. Jewish delis are known for their distinct offerings, often featuring items such as pastrami, corned beef, and bagels. The deli counter showcases the variety of traditional cured meats and bagels that are staples of these establishments, while the bowl of matzo ball soup represents another iconic dish commonly served, highlighting the cultural significance of comfort food in Jewish cuisine",
-        "reasoning": "Represents(DeliCounter, JewishDelicacies) ∧ Represents(MatzoBallSoup, ComfortFood) → JewishDelis\nThus, JewishDelis → DeliCounter ∧ MatzoBallSoup.",
+        "reasoning": "Feature(CuredMeats, JewishDelis)\nServe(MatzoBallSoup, JewishDelis)\nThus, CuredMeats → JewishDelis and MatzoBallSoup → JewishDelis",
         "hop_count": 2
     },
     {
@@ -1100,7 +1100,7 @@
             }
         ],
         "explanation": "Kola nut rituals. Kola nuts hold significant cultural importance in various African traditions, often used in ceremonial contexts to symbolize hospitality, respect, and community. The wooden bowl filled with kola nuts represents the item itself, which is central to these rituals. The gathering of people in a circle signifies the communal aspect of the rituals, where kola nuts are offered or shared to honor guests and foster social bonds.",
-        "reasoning": "Represents(KolaNutBowl, CulturalSymbol) ∧ Represents(CeremonialGathering, CommunityRitual) → KolaNutRituals\nThus, KolaNutRituals → KolaNutBowl ∧ CeremonialGathering.",
+        "reasoning": "Symbolizes(KolaNuts, Hospitality)\nRepresents(WoodenBowl, KolaNuts)\nThus, KolaNuts → Hospitality and WoodenBowl → KolaNuts",
         "hop_count": 2
     },
     {
@@ -1124,7 +1124,7 @@
             }
         ],
         "explanation": "Potjiekos cooking. Potjiekos is a traditional South African dish often cooked in a cast iron pot over an open flame. The three-legged cast iron pot symbolizes the cooking method and style unique to potjiekos, while the colorful array of fresh vegetables and meat ingredients represents the essential components of this hearty communal dish, emphasizing the variety of flavors and ingredients used in the preparation.",
-        "reasoning": "Represents(CastIronPot, PotjiekosCooking) ∧ Represents(IngredientsArray, FlavorComponents) → PotjiekosCooking\nThus, PotjiekosCooking → CastIronPot ∧ IngredientsArray.",
+        "reasoning": "CookingMethod(CastIronPot, Potjiekos)\nIngredients(VegetablesAndMeat, Potjiekos)\nThus, CastIronPot → Potjiekos and VegetablesAndMeat → Potjiekos",
         "hop_count": 2
     },
     {
@@ -1132,7 +1132,7 @@
         "relation": "Compass drawing",
         "visibility": "visible",
         "domain": "STEM",
-        "type": "metaphor",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1147,8 +1147,8 @@
                 "description": "A sketch of a map with various landmarks and routes"
             }
         ],
-        "explanation": "Compass drawing. A compass is a tool used for navigation and orientation, and it is essential for accurately drawing maps. The traditional compass represents the tool itself, indicating direction and helping with navigation. The sketch of a map illustrates the practical application of the compass, as it is often used in conjunction with a map to plot routes and identify landmarks.",
-        "reasoning": "Represents(Compass, NavigationTool) ∧ Represents(MapSketch, NavigationApplication) → CompassDrawing\nThus, CompassDrawing → Compass ∧ MapSketch.",
+        "explanation": "A compass is a tool used for navigation and orientation, and it is essential for accurately drawing maps. The traditional compass represents the tool itself, indicating direction and helping with navigation. The sketch of a map illustrates the practical application of the compass, as it is often used in conjunction with a map to plot routes and identify landmarks.",
+        "reasoning": "Use(Compass, Navigation)\nDraw(Map, Navigation)\nThus, Compass → Navigation → Map",
         "hop_count": 2
     },
     {
@@ -1195,8 +1195,8 @@
                 "description": "A person deep in thought, looking at their reflection with a contemplative expression"
             }
         ],
-        "explanation": "Mirror reflection. The vintage wall mirror represents the classic object that reflects images, emphasizing the idea of how we perceive ourselves. The person deep in thought symbolizes the introspective nature of self-reflection, illustrating the mental process of evaluating one's thoughts and feelings when faced with their own image.",
-        "reasoning": "Represents(VintageMirror, ReflectiveObject) ∧ Represents(ContemplativePerson, SelfEvaluation) → MirrorReflection\nThus, MirrorReflection → VintageMirror ∧ ContemplativePerson.",
+        "explanation": "The vintage wall mirror represents the classic object that reflects images, emphasizing the idea of how we perceive ourselves. The person deep in thought symbolizes the introspective nature of self-reflection, illustrating the mental process of evaluating one's thoughts and feelings when faced with their own image.",
+        "reasoning": "Represents(WallMirror, Reflection)\nSymbolizes(ContemplativePerson, SelfReflection)\nThus, WallMirror → Reflection and ContemplativePerson → SelfReflection",
         "hop_count": 2
     },
     {
@@ -1219,9 +1219,9 @@
                 "description": "A set of combinatorial objects, like colored balls in a jar, visually representing different combinations"
             }
         ],
-        "explanation": "Pascal's triangle. Pascal's triangle is a mathematical arrangement of numbers that illustrates the coefficients of binomial expansions and combinatorial relationships. The triangular arrangement of numbers represents the triangle itself, while the colored balls symbolize the combinations and permutations that can be derived from the triangle, demonstrating its application in combinatorics.",
-        "reasoning": "Represents(NumberTriangle, Pascal'sTriangle) ∧ Represents(ColoredBalls, CombinatorialOutcomes) → Pascal'sTriangle\nThus, Pascal'sTriangle → NumberTriangle ∧ ColoredBalls.",
-        "hop_count": 2
+        "explanation": "Pascal's triangle is a mathematical arrangement of numbers that illustrates the coefficients of binomial expansions and combinatorial relationships. The triangular arrangement of numbers represents the triangle itself, while the colored balls symbolize the combinations and permutations that can be derived from the triangle, demonstrating its application in combinatorics.",
+        "reasoning": "Illustrates(TriangularNumbers, PascalTriangle)\nSymbolizes(CombinatorialObjects, Combinations) and Related(Combinations,PascalTriangle)\nThus, TriangularNumbers → PascalTriangle and CombinatorialObjects → Combinations → PascalTriangle",
+        "hop_count": 3
     },
     {
         "foldername": "Prime Numbers(invisible, STEM, relation, NA, English)",
@@ -1315,8 +1315,8 @@
                 "description": "A 3D representation of a complex plane, highlighting the real and imaginary axes."
             }
         ],
-        "explanation": "Imaginary unit. The imaginary unit \"i\" is defined as the square root of -1, and it forms the foundation of complex numbers. The symbol \"i\" along with a mathematical equation illustrates its role in complex number representation, while the 3D representation of the complex plane showcases how the imaginary unit allows for the visualization of complex numbers in a two-dimensional context.",
-        "reasoning": "Represents(SymbolI, ImaginaryUnit) ∧ Represents(ComplexPlane, VisualizationOfComplexNumbers) → ImaginaryUnit\nThus, ImaginaryUnit → SymbolI ∧ ComplexPlane.",
+        "explanation": "The imaginary unit \"i\" is defined as the square root of -1, and it forms the foundation of complex numbers. The symbol \"i\" along with a mathematical equation illustrates its role in complex number representation, while the 3D representation of the complex plane showcases how the imaginary unit allows for the visualization of complex numbers in a two-dimensional context.",
+        "reasoning": "Represents(SymbolI, ImaginaryUnit)\nDefines(SymbolI, SquareRootOfNegativeOne)\nThus, SymbolI → ImaginaryUnit and SymbolI → SquareRootOfNegativeOne",
         "hop_count": 2
     },
     {
@@ -1339,8 +1339,8 @@
                 "description": "A visual representation of a perfect square"
             }
         ],
-        "explanation": "Square roots. The square root symbol (√) signifies the operation of finding the square root of a number, while the illustration of a perfect square visually represents the concept of squaring a number (in this case, 4) to reach the original number (16). Together, they emphasize the relationship between squaring and taking square roots.",
-        "reasoning": "Represents(SquareRootSymbol, OperationOfSquareRoot) ∧ Represents(PerfectSquare, RelationshipToSquareRoot) → SquareRoots\nThus, SquareRoots → SquareRootSymbol ∧ PerfectSquare.",
+        "explanation": "The square root symbol (√) signifies the operation of finding the square root of a number, while the illustration of a perfect square visually represents the concept of squaring a number (in this case, 4) to reach the original number (16). Together, they emphasize the relationship between squaring and taking square roots.",
+        "reasoning": "Signifies(SquareRootSymbol, SquareRootOperation)\nIllustrates(PerfectSquare, SquaringOperation)\nThus, SquareRootSymbol → SquareRootOperation and PerfectSquare → SquaringOperation",
         "hop_count": 2
     },
     {
