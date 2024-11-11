@@ -44,7 +44,7 @@
             }
         ],
         "explanation": "The ornate box symbolizes the mythological container that Pandora opened, releasing all the evils into the world. The swarm of butterflies represents the unforeseen consequences and chaos that followed, as butterflies often symbolize transformation and the spread of effects.",
-        "reasoning": "Symbolizes(OrnateBox, Pandora'sBox)\nReleases(OrnateBox, Evils) → Transforms into(SwarmOfButterflies, Consequences)\nThus, OrnateBox → Pandora'sBox and SwarmOfButterflies → Represents the chaos unleashed by opening the box.",
+        "reasoning": "Contains(OrnateBox, Evils)\nSymbolizes(Butterflies, Transformation)\nThus, OrnateBox → Pandora'sBox and Butterflies → Transformation → Pandora'sBox",
         "hop_count": 3
     },
     {
@@ -68,7 +68,7 @@
             }
         ],
         "explanation": "The piercing eyes symbolize the intense and deadly stare of Medusa, which could turn anyone who looked at her into stone. The stone statue represents the victims who fell victim to her gaze, frozen in time and transformed into stone.",
-        "reasoning": "Represents(PiercingEyes, Medusa'sGaze)\nTransforms(Victims, PiercingEyes) → ResultingIn(StoneStatue, Petrification)\nThus, PiercingEyes → Medusa'sGaze and StoneStatue → Represents the fate of those who beheld her gaze.",
+        "reasoning": "TurnsIntoStone(Medusa, Victims)\nRepresents(StoneStatue, Victims)\nThus, PiercingEyes → Medusa'sGaze and StoneStatue → Victims → Medusa'sGaze",
         "hop_count": 3
     },
     {
@@ -195,7 +195,7 @@
         "foldername": "Hole in one(visible, sport, mutual elements, other, English)",
         "relation": "Hole in one",
         "visibility": "visible",
-        "domain": "sport",
+        "domain": "sports",
         "type": "mutual elements",
         "culture": "other",
         "language": "English",
@@ -219,7 +219,7 @@
         "foldername": "Slam dunk(visible, sport, mutual elements, other, English)",
         "relation": "Slam dunk",
         "visibility": "visible",
-        "domain": "sport",
+        "domain": "sports",
         "type": "mutual elements",
         "culture": "other",
         "language": "English",
@@ -243,7 +243,7 @@
         "foldername": "Grand Slam(invisible, sport, relation, other, English)",
         "relation": "Grand Slam",
         "visibility": "invisible",
-        "domain": "sport",
+        "domain": "sports",
         "type": "relation",
         "culture": "other",
         "language": "English",
@@ -267,7 +267,7 @@
         "foldername": "Alley-oop(visible, sport, relation, other, English)",
         "relation": "Alley-oop",
         "visibility": "visible",
-        "domain": "sport",
+        "domain": "sports",
         "type": "relation",
         "culture": "other",
         "language": "English",
@@ -291,7 +291,7 @@
         "foldername": "Hattrick(invisible, sport, relation, USAEnglish, English)",
         "relation": "Hattrick",
         "visibility": "invisible",
-        "domain": "sport",
+        "domain": "sports",
         "type": "relation",
         "culture": "USA/English",
         "language": "English",
@@ -315,7 +315,7 @@
         "foldername": "Buzzer-beater(invisible, sport, metaphor, other, English)",
         "relation": "Buzzer-beater",
         "visibility": "invisible",
-        "domain": "sport",
+        "domain": "sports",
         "type": "metaphor",
         "culture": "other",
         "language": "English",
@@ -339,7 +339,7 @@
         "foldername": "Photo finish(invisible, sport, metaphor, other, English)",
         "relation": "Photo finish",
         "visibility": "invisible",
-        "domain": "sport",
+        "domain": "sports",
         "type": "metaphor",
         "culture": "other",
         "language": "English",
@@ -596,8 +596,8 @@
             }
         ],
         "explanation": "\"Racecar\" is a palindrome (reads the same forwards and backward), and \"121\" is a palindromic number (a number that reads the same forwards and backward).",
-        "reasoning": "IsPalindrome(Racecar)\nIsPalindromicNumber(121)\nPalindrome + Number → Palindromic Number\nThus, Racecar → Palindrome → Palindromic Number and 121 → Palindromic Number",
-        "hop_count": 4
+        "reasoning": "IsA(Racecar, Palindrome)\nIsA(121, PalindromicNumber)\nThus, Racecar → Palindrome → PalindromicNumber and 121 → PalindromicNumber",
+        "hop_count": 3
     },
     {
         "foldername": "Perfect Number(invisible, STEM, relation, other, English)",
@@ -812,7 +812,7 @@
             }
         ],
         "explanation": "\"The bed of rice with white mold represents the initial stage of koji fermentation, where the mold is cultivated on the rice to convert starches into sugars, essential for the fermentation process. The jar of miso paste illustrates the end product of this fermentation process, showcasing the transformation of the rice into a flavorful ingredient used in various dishes. Together, these images embody the process and result of koji fermentation, highlighting its role in traditional Japanese cuisine.\"",
-        "reasoning": "Cultivates(WhiteMold, Rice) ∧ Converts(Starches, Sugars) → \"Koji Fermentation\"\nTransforms(Sugars, MisoPaste) ∧ Represents(FermentationOutcome, MisoPaste)\nThus, Rice + MisoPaste → Koji Fermentation.",
+        "reasoning": "Initial(RiceWithWhiteMold, KojiFermentation)\nEndProduct(MisoPaste, KojiFermentation)\nThus, RiceWithWhiteMold → KojiFermentation and MisoPaste → KojiFermentation",
         "hop_count": 2
     },
     {
@@ -932,8 +932,8 @@
             }
         ],
         "explanation": "\"The balloon inflating symbolizes the rising prices of goods and services as inflation occurs, while the empty wallet represents the diminishing purchasing power of money, highlighting the impact of inflation on consumers.\"",
-        "reasoning": "Represents(BalloonInflating, RisingPrices)\nSymbolizes(EmptyWallet, DiminishedPurchasingPower)\nThus, BalloonInflating → RisingPrices → EmptyWallet\nTogether, these images illustrate the concept of inflation by depicting the increase in prices (balloon) and the resulting effect on consumers' financial well-being (empty wallet).",
-        "hop_count": 2
+        "reasoning": "Symbolizes(BalloonInflating, RisingPrices)\nRepresents(EmptyWallet, DiminishingPurchasingPower)\nThus, BalloonInflating → RisingPrices → Inflation and EmptyWallet → DiminishingPurchasingPower → Inflation",
+        "hop_count": 4
     },
     {
         "foldername": "Exclave(invisible, country, metaphor, other, English)",
@@ -956,8 +956,8 @@
             }
         ],
         "explanation": "\"The map with the highlighted area represents the geographical concept of an exclave, which is a portion of a country that is separated from the main territory. The bridge symbolizes the physical or metaphorical connection necessary for access to the exclave from the main part of the country.\"",
-        "reasoning": "Represents(MapHighlightedArea, GeographicalExclave)\nSymbolizes(Bridge, ConnectionToMainTerritory)\nThus, MapHighlightedArea → GeographicalExclave → Bridge\nTogether, these images illustrate the concept of an exclave by depicting the separation of a region (map) and the need for connection to the main territory (bridge).",
-        "hop_count": 2
+        "reasoning": "Represents(MapHighlightedArea, Exclave)\nConnects(Bridge, AccessToExclave)\nThus, MapHighlightedArea → Exclave and Bridge → AccessToExclave → Exclave",
+        "hop_count": 3
     },
     {
         "foldername": "Woodstock(invisible, city, mutual elements, USAEnglish, English)",
@@ -1292,7 +1292,7 @@
             }
         ],
         "explanation": "Scooby-Doo. Shaggy is Scooby-Doo's best friend and companion. \"Ruh-roh!\" is Scooby-Doo's signature catchphrase.",
-        "reasoning": "FriendOf(Shaggy Rogers, Scooby-Doo)\nSays(Scooby-Doo, \"Ruh-roh!\")\nThus, Shaggy Rogers → Scooby-Doo and \"Ruh-roh!\" → Scooby-Doo\n\nShare\n\n\n\n",
+        "reasoning": "BestFriend(Shaggy Rogers, Scooby-Doo)\nCatchphrase(Scooby-Doo, Ruh-roh)\nThus, Shaggy Rogers → Scooby-Doo and Ruh-roh → Scooby-Doo",
         "hop_count": 2
     },
     {
@@ -1460,8 +1460,8 @@
             }
         ],
         "explanation": "\"Rock, Paper, Scissors\". The first image shows one of the three core components of the classic game. The second image, a lizard, references a popular expanded version of the game, \"Rock, Paper, Scissors, Lizard, Spock,\" thus subtly alluding to the original game while also hinting at its variations.",
-        "reasoning": "ComponentOf(RockGesture, RockPaperScissors)\nComponentOf(Lizard, RockPaperScissorsLizardSpock) and DerivedFrom(RockPaperScissorsLizardSpock, RockPaperScissors)\nThus, RockGesture → RockPaperScissors and Lizard → RockPaperScissorsLizardSpock → RockPaperScissors",
-        "hop_count": 3
+        "reasoning": "ComponentOf(Rock, RockPaperScissors)\nReferenceTo(Lizard, RockPaperScissorsLizardSpock)\nThus, Rock → RockPaperScissors and Lizard → RockPaperScissorsLizardSpock",
+        "hop_count": 2
     },
     {
         "foldername": "Chess knight's move(invisible, cartoon or game, relation, USAEnglish, English)",
@@ -1701,7 +1701,7 @@
         ],
         "explanation": "In the anime Naruto, Ichiraku Ramen is a beloved ramen shop where Naruto often eats. The ramen is iconic and often depicted with a spiral, symbolizing Naruto’s favorite dish.",
         "reasoning": "Use(Naruto, IchirakuRamen)\nGoal(Naruto, EnjoyRamen)\nRepresentation(IchirakuRamen, SpiralSwirl)\nThus, Naruto → IchirakuRamen → SpiralSwirl, connecting Naruto’s love for ramen and the Ichiraku ramen symbol.",
-        "hop_count": 3
+        "hop_count": 2
     },
     {
         "foldername": "Pink Panther(invisible, cartoon or game, relation, USAEnglish, English)",
@@ -2180,7 +2180,7 @@
             }
         ],
         "explanation": "\"Chuck Berry, a pioneer of Rock and Roll, is famous for his duck walk while playing the electric guitar.\" The duck walk is a signature move strongly associated with rock and roll, particularly Chuck Berry. The electric guitar is a key instrument in the genre. Together, these images strongly suggest Rock and Roll.",
-        "reasoning": "Play(ChuckBerry, ElectricGuitar)\nDance(ChuckBerry, DuckWalk)\nGenre(ChuckBerry, RockAndRoll)\nThus, DuckWalk → ChuckBerry → RockAndRoll and ElectricGuitar → ChuckBerry → RockAndRoll\n",
+        "reasoning": "Play(ChuckBerry, ElectricGuitar)\nDance(ChuckBerry, DuckWalk)\nGenre(ChuckBerry, RockAndRoll)\nThus, DuckWalk → ChuckBerry → RockAndRoll and ElectricGuitar → ChuckBerry → RockAndRoll",
         "hop_count": 4
     },
     {
@@ -2684,8 +2684,8 @@
             }
         ],
         "explanation": "\"The first image represents Judy Chicago's iconic installation, 'The Dinner Party,' which honors influential women by setting a place for each of them at a triangular table. The second image connects to the feminist art movement, highlighting how art can serve as a platform for discussing women's contributions and experiences. Both images reflect the theme of women's history and empowerment as celebrated in 'The Dinner Party.'\"",
-        "reasoning": "SetTable(InfluentialWomen, DinnerParty) → Celebrate(WomenHistory)\nSymbolicObjects(FeministArtInstallation) → Represent(WomenEmpowerment)\nThus, SetTable → DinnerParty and FeministArtInstallation → Empowerment → DinnerParty",
-        "hop_count": 5
+        "reasoning": "SetTable(PlaceSettings, NotableWomen) and Installation(FeministArt, SymbolicObjects)\nReflects(WomensHistory, TheDinnerParty) and Celebrates(WomensEmpowerment, TheDinnerParty)\nThus, PlaceSettings → TheDinnerParty and FeministArt → TheDinnerParty → WomensHistory",
+        "hop_count": 3
     },
     {
         "foldername": "Slavic Embroidery(invisible, art, mutual elements, Non-English European, English)",
@@ -2708,8 +2708,8 @@
             }
         ],
         "explanation": "The first image captures the essence and craftsmanship of Slavic embroidery, which is characterized by its vibrant colors and detailed patterns. The second image depicts a woman in traditional attire, illustrating how this embroidery is not only an art form but also an integral part of cultural identity and heritage in Slavic communities. Together, these images highlight the significance of Slavic embroidery in both textiles and traditional clothing.",
-        "reasoning": "EmbroideryPatterns(SlavicTextile) → Represent(CulturalArtistry)\nTraditionalAttire(Woman) → EmbellishedWith(EmbroideryPatterns) and Reflect(CulturalIdentity)\nThus, TextileEmbroidery → SlavicEmbroidery and TraditionalAttire → SlavicEmbroidery → CulturalArtistry",
-        "hop_count": 5
+        "reasoning": "Features(GeometricDesigns, SlavicEmbroidery) and Adorns(TraditionalAttire, Embroidery)\nRepresents(CulturalIdentity, SlavicEmbroidery) and Preserves(Heritage, SlavicEmbroidery)\nThus, GeometricDesigns → SlavicEmbroidery and TraditionalAttire → SlavicEmbroidery → CulturalIdentity",
+        "hop_count": 3
     },
     {
         "foldername": "Elgin Marbles(invisible, art, relation, Non-English European, English)",
