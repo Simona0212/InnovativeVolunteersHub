@@ -1,0 +1,2151 @@
+[
+    {
+        "foldername": "talking ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "talking ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "tongue.jpg",
+                "description": "tongue",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Microphone.jpg",
+                "description": "Microphone",
+                "count": 2
+            }
+        ],
+        "explanation": "Both tongue and microphone are related to the ability to talk. Tongue is a crucial organ for speech production, while a microphone is a device that amplifies and transmits sound, often used for public speaking or recording speech.",
+        "reasoning": "UsedFor(Tongue, Speech)UsedFor(Microphone, Speech)IsA(Speech, TalkingAbility)\nThus, Tongue → Speech → TalkingAbility and Microphone → Speech → TalkingAbility",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "running ability(visible, ability, mutual elements, NA, English)",
+        "relation": "running ability",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Cheetah.jpg",
+                "description": "Cheetah",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Usain Bolt.jpg",
+                "description": "Usain Bolt",
+                "count": 3
+            }
+        ],
+        "explanation": "Both a cheetah and Usain Bolt are known for their exceptional running ability. A cheetah is the fastest land animal, and Usain Bolt is the fastest man. The combination clearly points towards running ability.",
+        "reasoning": "KnownFor(Cheetah, FastRunning)KnownFor(UsainBolt, FastRunning) Implies(FastRunning, RunningAbility).\nThus, Cheetah → FastRunning → RunningAbility and UsainBolt → FastRunning → RunningAbility",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "jumping ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "jumping ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Michael Jordan.jpg",
+                "description": "Michael Jordan dunking a basketball",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "flea.jpg",
+                "description": "A flea",
+                "count": 1
+            }
+        ],
+        "explanation": "Both Michael Jordan and a flea are known for their exceptional jumping ability, albeit on vastly different scales.Michael Jordan is famous for his incredible leaps in basketball, while fleas are known for their powerful jumps relative to their tiny size.",
+        "reasoning": "KnownFor(MichaelJordan, HighJump)KnownFor(Flea, HighJumpRelativeSize)Implies(HighJump, JumpAbility)Implies(HighJumpRelativeSize, JumpAbility).\nThus, MichaelJordan → HighJump → JumpAbility and Flea → HighJumpRelativeSize → JumpAbility",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Painting ability(invisible, ability, relation, NA, English)",
+        "relation": "Painting ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Paintbrush.jpg",
+                "description": "Paintbrush",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Hand.jpg",
+                "description": "Hand",
+                "count": 3
+            }
+        ],
+        "explanation": "A hand skillfully wielding a paintbrush is essential for painting ability.The ability to paint relies heavily on the control and precision of the hand using a paintbrush.",
+        "reasoning": "Requires(PaintingAbility, Paintbrush)\nRequires(PaintingAbility, Hand)Uses(Hand, Paintbrush).\nThus, Paintbrush → Hand → PaintingAbility and Hand → Paintbrush → PaintingAbility",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "brightness and power(visible, ability, relation, NA, English)",
+        "relation": "brightness and power",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "bulb.jpg",
+                "description": "Light bulb",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "bulbs.jpg",
+                "description": "A stadium full of light bulbs.",
+                "count": 1
+            }
+        ],
+        "explanation": "A single light bulb represents a small unit of computing power, while a stadium full of light bulbs represents massive computing power.The analogy connects the brightness of a single bulb to a small amount of processing power and then scales it up to a vast amount with the stadium image.",
+        "reasoning": "Represents(LightBulb, SmallComputingPower)Represents(StadiumOfLightBulbs, LargeComputingPower)Implies(SmallComputingPower, ComputingPower)Implies(LargeComputingPower, ComputingPower).\nThus, LightBulb → ComputingPower and StadiumOfLightBulbs → ComputingPower",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "swimming ability(visible, ability, mutual elements, NA, English)",
+        "relation": "swimming ability",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "dolphin.jpg",
+                "description": "A streamlined dolphin leaping from the water.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "fish's gills.jpg",
+                "description": "Cross-section diagram of a fish's gills.",
+                "count": 2
+            }
+        ],
+        "explanation": "Dolphins and fish exhibit excellent swimming ability due to their physical adaptations, including streamlined bodies (dolphin) and efficient oxygen uptake (fish gills).",
+        "reasoning": "Attribute(StreamlinedBody, SwimmingAbility)Has(Dolphin, StreamlinedBody)Attribute(EfficientOxygenUptake, SwimmingAbility)\nHas(Fish, Gills)Enable(Gills, EfficientOxygenUptake).\nThus, Dolphin → StreamlinedBody → SwimmingAbility and Fish → Gills → EfficientOxygenUptake → SwimmingAbility",
+        "hop_count": 5,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "cooking ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "cooking ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "steak.jpg",
+                "description": "A perfectly seared steak.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "burnt pot.jpg",
+                "description": "A burnt pot of something unrecognizable.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image represents excellent cooking skills, demonstrated by the perfectly seared steak – achieving a good sear requires precise timing and temperature control. The second image represents poor cooking ability, evident in the burnt and unrecognizable contents of the pot. Together, these images encompass the spectrum of cooking ability, from mastery to disaster.",
+        "reasoning": "Indicate(SearedSteak, HighCookingAbility)\nIndicate(BurntPot, LowCookingAbility)Encompass(HighCookingAbility and LowCookingAbility, CookingAbility).\nThus, SearedSteak → HighCookingAbility → CookingAbility and BurntPot → LowCookingAbility → CookingAbility",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "smelling ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "smelling ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "dog.jpg",
+                "description": "A bloodhound dog with its nose to the ground.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "molecule.jpg",
+                "description": "A molecule diagram of a specific odor compound (e.g., vanillin).",
+                "count": 3
+            }
+        ],
+        "explanation": "The bloodhound is renowned for its exceptional sense of smell, often used for tracking. The molecule diagram represents the chemical basis of smell, the odorants that interact with olfactory receptors. Together, they represent the process of smelling, from the macroscopic action of a creature using its nose to the microscopic level of chemical interaction.",
+        "reasoning": "Use(Bloodhound, Smell, Tracking)\nCause(OdorCompound, Smell).\nThus, Bloodhound → Smell and OdorCompound → Smell",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "writing ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "writing ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "quill and inkwell.jpg",
+                "description": "A quill and inkwell.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "tweet.jpg",
+                "description": "A typo-ridden tweet.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image represents traditional tools used for writing, symbolizing the craft and skill involved. The second image represents modern writing, specifically a tweet filled with typos, which suggests a lack of writing ability or carelessness in its application. The juxtaposition of these images highlights the spectrum of writing ability, from careful craftsmanship to hasty, error-prone communication.",
+        "reasoning": "ToolFor(QuillAndInkwell, Writing) and Require(Writing, WritingAbility)\nExampleOf(TypoRiddenTweet, ModernWriting) and Indicate(TypoRiddenTweet, LackOfWritingAbility) or Indicate(TypoRiddenTweet, CarelessWriting) and SubsetOf(CarelessWriting, WritingAbility)\nThus, QuillAndInkwell → Writing → WritingAbility and TypoRiddenTweet → ModernWriting → (LackOf/Careless)Writing → WritingAbility",
+        "hop_count": 5,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "vision(invisible, ability, mutual elements, NA, English)",
+        "relation": "vision",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "telescope.jpg",
+                "description": "A telescope pointed towards the night sky.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "cane.jpg",
+                "description": "A hand holding a white cane.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image represents exploring the vastness of space, requiring vision, albeit aided by technology, to observe distant celestial objects. The second image represents the lack of physical sight, symbolized by the white cane used by visually impaired individuals. Together, they explore the concept of 'vision' in both its presence (enhanced by technology) and its absence, highlighting the different ways we perceive and interact with the world.",
+        "reasoning": "Enable(Telescope, EnhancedVision) and Relate(EnhancedVision, Vision)\nCompensate(WhiteCane, LackOfVision) and Relate(LackOfVision, Vision).\nThus, Telescope → EnhancedVision → Vision and WhiteCane → LackOfVision → Vision",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Physical Prowess(visible, ability, relation, NA, English)",
+        "relation": "Physical Prowess",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Simone Biles.jpg",
+                "description": "Simone Biles performing a Yurchenko double pike.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "muscle fibers.jpg",
+                "description": "A microscopic image of densely packed muscle fibers.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image showcases Simone Biles, an Olympic gymnast renowned for her extraordinary physical abilities, executing a highly complex and challenging vault. The second image delves into the biological foundation of physical prowess, displaying the intricate structure of muscle fibers, the very building blocks that enable powerful movements. Together, these images represent the macroscopic and microscopic aspects of physical prowess, highlighting both the incredible feats achievable by the human body and the underlying biological mechanisms that make such feats possible.",
+        "reasoning": "Exhibit(SimoneBiles, GymnasticsSkill) and Require(GymnasticsSkill, PhysicalProwess)\nCompose(MuscleFibers, Muscles) and Enable(Muscles, PhysicalProwess)\nThus, SimoneBiles → GymnasticsSkill → PhysicalProwess and MuscleFibers → Muscles → PhysicalProwess",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Mental Acuity(invisible, ability, mutual elements, NA, English)",
+        "relation": "Mental Acuity",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Rubik's Cube.jpg",
+                "description": "A Rubik's Cube mid-solve.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "chessboard.jpg",
+                "description": "A close-up of a chessboard during a complex endgame.",
+                "count": 3
+            }
+        ],
+        "explanation": "A Rubik's cube requires spatial reasoning, pattern recognition, and problem-solving skills, all of which contribute to mental acuity. Similarly, chess, especially in a complex endgame, demands strategic thinking, foresight, and sharp calculation, further demonstrating mental acuity. Neither image alone encapsulates mental acuity completely, but together they represent different facets of it.",
+        "reasoning": "Require(RubiksCube, SpatialReasoning) and ComponentOf(SpatialReasoning, MentalAcuity)\nRequire(ChessEndgame, StrategicThinking) and ComponentOf(StrategicThinking, MentalAcuity).\nThus, RubiksCube → SpatialReasoning → MentalAcuity and ChessEndgame → StrategicThinking → MentalAcuity",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Leadership(invisible, ability, mutual elements, NA, English)",
+        "relation": "Leadership",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "wolf.jpg",
+                "description": "A lone wolf howling at the moon.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "conductor.jpg",
+                "description": "A conductor leading an orchestra.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image represents a lone wolf, often seen as the leader of its pack, demonstrating leadership through strength, independence, and guidance. The second image shows a conductor leading an orchestra, symbolizing leadership through coordination, inspiration, and bringing harmony to a diverse group. While different in style, both images represent different facets of leadership.",
+        "reasoning": "Symbolize(LoneWolf, PackLeader) and Imply(PackLeader, Leadership)\nPerform(Conductor, OrchestralConducting) and Require(OrchestralConducting, Leadership).\nThus, LoneWolf → PackLeader → Leadership and Conductor → OrchestralConducting → Leadership",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "physical prowess and control(visible, ability, mutual elements, NA, English)",
+        "relation": "physical prowess and control",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Stephen Hawking.jpg",
+                "description": "Stephen Hawking in his wheelchair.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "ballerina.jpg",
+                "description": "A ballerina en pointe.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image depicts Stephen Hawking, a brilliant physicist who achieved incredible things despite severe physical limitations imposed by ALS. The second image shows a ballerina en pointe, demonstrating remarkable physical prowess and control. While seemingly contrasting, both images represent different forms of human ability – one intellectual and overcoming adversity, the other physical and achieving exceptional skill.",
+        "reasoning": "Possess(StephenHawking, IntellectualAbility) and Overcome(StephenHawking, PhysicalLimitation)\nDemonstrate(BallerinaEnPointe, PhysicalAbility).\nThus, StephenHawking → IntellectualAbility → Ability and BallerinaEnPointe → PhysicalAbility → Ability",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "balance ability(visible, ability, mutual elements, NA, English)",
+        "relation": "balance ability",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "gymnast.jpg",
+                "description": "A gymnast balancing on a beam.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "tightrope.jpg",
+                "description": "A tightrope walker high above a city.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image shows a gymnast on a balance beam, demonstrating balance and control in a controlled environment. The second image depicts a tightrope walker high above a city, showcasing exceptional balance ability under extreme pressure and risk. Both images highlight different aspects of balance ability – precision and control versus courage and adaptability in a precarious situation.",
+        "reasoning": "Require(GymnastOnBeam, BalanceAbility) and Exhibit(GymnastOnBeam, Precision)\nRequire(TightropeWalker, BalanceAbility) and Exhibit(TightropeWalker, Courage).\nThus, GymnastOnBeam → BalanceAbility and TightropeWalker → BalanceAbility",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "growth ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "growth ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Seed.jpg",
+                "description": "Seedling sprouting",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Child's growth.jpg",
+                "description": "Child's growth chart on a wall.",
+                "count": 2
+            }
+        ],
+        "explanation": "A seedling sprouting represents the beginning stages of growth, full of potential. A child's growth chart visually documents the natural, upward growth of a child. Both images, therefore, represent different stages and types of growth.",
+        "reasoning": "Represent(SeedlingSprouting, EarlyGrowth) and IsA(EarlyGrowth, Growth)\nRecord(GrowthChart, PhysicalGrowth) and IsA(PhysicalGrowth, Growth).\nThus, SeedlingSprouting → EarlyGrowth → Growth and GrowthChart → PhysicalGrowth → Growth",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "management ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "management ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "calendar.jpg",
+                "description": "A meticulously organized calendar with color-coded entries.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "flowchart.jpg",
+                "description": "A complex flowchart with multiple branches and decision points.",
+                "count": 2
+            }
+        ],
+        "explanation": "'Time Management and Work Arrangement Management'. The first image, a detailed calendar, represents effective time management, showing how tasks and appointments are scheduled and visualized. The second image, a flowchart, symbolizes work arrangement management, illustrating the structured planning and organization of a project or process, which inherently involves managing time and resources effectively. Both combined represent the intertwined nature of managing time and arranging work.",
+        "reasoning": "Tool(Calendar, TimeManagement) and AspectOf(TimeManagement, Time_and_Work_Arrangement_Management)\nTool(Flowchart, WorkArrangement) and AspectOf(WorkArrangement, Time_and_Work_Arrangement_Management).\nThus, Calendar → TimeManagement → Time_and_Work_Arrangement_Management and Flowchart → WorkArrangement → Time_and_Work_Arrangement_Management",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Communication Skills(invisible, ability, mutual elements, NA, English)",
+        "relation": "Communication Skills",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "TED Talk.jpg",
+                "description": "A person giving a TED Talk on stage.",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "listening.jpg",
+                "description": "A therapist actively listening to a patient.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image showcases a person utilizing strong public speaking and presentation skills, which are key components of effective communication. The second image highlights active listening and empathy, crucial skills for interpersonal communication, particularly in a therapeutic setting. Both images, though different in context, represent different facets of strong communication skills.",
+        "reasoning": "Require(TED_Talk, Public_Speaking) and PartOf(Public_Speaking, Communication_Skills)\nRequire(Therapy_Session, Active_Listening) and PartOf(Active_Listening, Communication_Skills).\nThus, TED_Talk → Public_Speaking → Communication_Skills and Therapy_Session → Active_Listening → Communication_Skills",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "decision-making ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "decision-making ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "mid-game.jpg",
+                "description": "Chessboard with pieces in a complex mid-game.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "surgeon.jpg",
+                "description": "A surgeon's hands holding surgical instruments poised over a patient.",
+                "count": 3
+            }
+        ],
+        "explanation": "A chess game often requires complex decision-making, assessing risk and reward, planning multiple moves ahead. Similarly, a surgeon must make critical decisions in real-time, often under immense pressure, with significant consequences. Both scenarios showcase the importance and application of strong decision-making skills.",
+        "reasoning": "Require(Chess, Decision-Making Ability)\nRequire(Surgery, Decision-Making Ability).\nThus, Chess → Decision-Making Ability and Surgery → Decision-Making Ability",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "teamwork ability(invisible, ability, mutual elements, NA, English)",
+        "relation": "teamwork ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Rowing team.jpg",
+                "description": "Rowing team synchronously rowing a boat.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Ants.jpg",
+                "description": "Ants carrying a large leaf together.",
+                "count": 2
+            }
+        ],
+        "explanation": "A rowing team requires perfect synchronization and coordinated effort to propel the boat efficiently, demonstrating teamwork. Ants, known for their collaborative efforts, showcase teamwork in carrying objects much larger than themselves. Both images symbolize the power and necessity of working together towards a common goal.",
+        "reasoning": "Require(Rowing, Teamwork Ability)\nExhibit(Ants, Teamwork Ability).\nThus, Rowing → Teamwork Ability and Ants → Teamwork Ability",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "executive force(invisible, ability, mutual elements, NA, English)",
+        "relation": "executive force",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Seal.jpg",
+                "description": "Presidential Seal (US)",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "SWAT.jpg",
+                "description": "A SWAT team breaching a door.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image represents the US presidency, the head of the executive branch of the US government. The second image shows a SWAT team, a specialized police unit often used to execute high-risk warrants and other operations requiring significant force, ultimately falling under the authority of the executive branch. Both images relate to the concept of 'executive force',one symbolizing the highest level of executive power and the other representing a direct application of force authorized by the executive branch.",
+        "reasoning": "HeadOf(US_President, ExecutiveBranch) and Possess(ExecutiveBranch, ExecutiveForce)\nEnforce(SWAT, Law) and Authorize(ExecutiveBranch, LawEnforcement).\nThus, PresidentialSeal → US_President → ExecutiveBranch → ExecutiveForce and SWAT → LawEnforcement → ExecutiveBranch → ExecutiveForce",
+        "hop_count": 6,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "eyesight(invisible, ability, mutual elements, NA, English)",
+        "relation": "eyesight",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "eye chart.jpg",
+                "description": "A Snellen eye chart.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "hawk .jpg",
+                "description": "A hawk soaring high above a mountain range.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image, a Snellen chart, is the standard tool used to measure visual acuity, representing the clinical aspect of eyesight and its assessment. The second image depicts a hawk, known for its exceptional eyesight, soaring above a mountain range, showcasing eyesight's application in the natural world for hunting and survival. Together, they encapsulate the concept of 'eyesight'from both a human measurement perspective and a natural, evolutionary advantage perspective.",
+        "reasoning": "Measure(SnellenChart, VisualAcuity) and Synonym(VisualAcuity, Eyesight)\nPossess(Hawk, ExceptionalEyesight) and Synonym(ExceptionalEyesight, Eyesight).\nThus, SnellenChart → VisualAcuity → Eyesight and Hawk → ExceptionalEyesight → Eyesight",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "opportunity and ability(invisible, ability, relation, NA, English)",
+        "relation": "opportunity and ability",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Door.jpg",
+                "description": "Open Door",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Key.jpg",
+                "description": "Key",
+                "count": 3
+            }
+        ],
+        "explanation": "An open door represents opportunity or possibility, but requires a key (representing skill or talent) to access it. The combination suggests the concept of ability, meaning having the means to do something.",
+        "reasoning": "Represents(OpenDoor, Opportunity)\nRepresents(Key, Skill).\nThus, OpenDoor → Opportunity → Ability and Key → Skill → Ability",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Curiosity(invisible, ability, mutual elements, NA, English)",
+        "relation": "Curiosity",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Cat.jpg",
+                "description": "Cat",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Magnifying glass.jpg",
+                "description": "Magnifying glass",
+                "count": 3
+            }
+        ],
+        "explanation": "Cats are known for their inquisitive nature, often exploring and investigating their surroundings. A magnifying glass is a tool used for close examination, often driven by curiosity.",
+        "reasoning": "KnownFor(Cat, Inquisitiveness)\nUsedFor(MagnifyingGlass, Examination) and DrivenBy(Examination, Curiosity).\nThus, Cat → Inquisitiveness → Curiosity and MagnifyingGlass → Examination → Curiosity",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "ability to grow(invisible, ability, relation, NA, English)",
+        "relation": "ability to grow",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Seeds.jpg",
+                "description": "Seed",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Sprout.jpg",
+                "description": "Sprout",
+                "count": 2
+            }
+        ],
+        "explanation": "'Ability' or 'Potential'. A seed contains the inherent potential to grow, but it's the sprout that demonstrates the realized ability to grow.",
+        "reasoning": "Represents(Seed, Potential)\nDemonstrates(Sprout, Growth) and Implies(Growth, Ability).\nThus, Seed → Potential → Ability and Sprout → Growth → Ability",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Potential to perform(invisible, ability, metaphor, NA, English)",
+        "relation": "Potential to perform",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Stage.jpg",
+                "description": "Empty Stage",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Spotlight.jpg",
+                "description": "Spotlight",
+                "count": 1
+            }
+        ],
+        "explanation": "'Ability' or 'Potential to perform'. An empty stage represents opportunity or a platform for performance, while a spotlight highlights talent or skill, suggesting the ability to perform.",
+        "reasoning": "Represents(EmptyStage, OpportunityToPerform)\nHighlights(Spotlight, Talent) and Implies(Talent, AbilityToPerform).\nThus, EmptyStage → OpportunityToPerform → Ability and Spotlight → Talent → Ability",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "message passing(visible, ability, mutual elements, NA, English)",
+        "relation": "message passing",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Telegraph.jpg",
+                "description": "Telegraph key.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Dots and dashes.jpg",
+                "description": "Dots and dashes.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image, a telegraph key, is the device used to send Morse code messages. The second image, dots and dashes, are the visual representation of the Morse code itself.",
+        "reasoning": "Transmit(TelegraphKey, MorseCode)\nCompose(DotsAndDashes, MorseCode).\nThus, TelegraphKey → MorseCode and DotsAndDashes → MorseCode",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Cryptography(invisible, ability, mutual elements, NA, English)",
+        "relation": "Cryptography",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "diary.jpg",
+                "description": "Locked diary with a complex cipher on the cover.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Alan Turing.jpg",
+                "description": "Alan Turing.",
+                "count": 4
+            }
+        ],
+        "explanation": "The first image, a locked diary with a cipher, directly represents the practice of cryptography – concealing information through codes. The second image depicts Alan Turing, a key figure in breaking the Enigma code during World War II, a pivotal moment in the history of cryptography.",
+        "reasoning": "Symbolize(LockedDiaryWithCipher, Cryptography)\nBreak(AlanTuring, EnigmaCode) and BelongTo(EnigmaCode, Cryptography).\nThus, LockedDiaryWithCipher → Cryptography and AlanTuring → EnigmaCode → Cryptography",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Artificial Intelligence(invisible, ability, mutual elements, NA, English)",
+        "relation": "Artificial Intelligence",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "neural network.jpg",
+                "description": "A complex neural network diagram.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "robotic hand.jpg",
+                "description": "A robotic hand playing chess.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image, a neural network diagram, represents the underlying structure and learning process of many AI systems. The second image, a robotic hand playing chess, showcases a practical application of AI, demonstrating strategic thinking and complex decision-making abilities often associated with intelligent systems.",
+        "reasoning": "Underlie(NeuralNetwork, ArtificialIntelligence)\nExampleOf(ChessPlayingRobot, ArtificialIntelligence).\nThus, NeuralNetwork → ArtificialIntelligence and ChessPlayingRobot → ArtificialIntelligence",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "repeat function(invisible, ability, mutual elements, NA, English)",
+        "relation": "repeat function",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Repeat button.jpg",
+                "description": "Repeat button.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Record player.jpg",
+                "description": "Record player.",
+                "count": 2
+            }
+        ],
+        "explanation": "'Both a repeat button and a record player allow you to experience something 'once again'.'The repeat function allows replaying a song or section, and a record player, especially older models, often had a repeat function built-in.",
+        "reasoning": "Function(RepeatButton, Replay)\nCapability(RecordPlayer, Replay).\nThus, RepeatButton → Replay → RecordPlayer and RecordPlayer → Replay → RepeatButton",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "the range of capacity(visible, ability, mutual elements, NA, English)",
+        "relation": "the range of capacity",
+        "visibility": "visible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "stadium.jpg",
+                "description": "A packed stadium filled with cheering fans",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "teacup.jpg",
+                "description": "A single empty teacup.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image shows a stadium filled to its maximum capacity with people. The second image shows a teacup, currently empty, but implying a potential capacity to be filled. Both images represent the concept of capacity, one full and one empty, highlighting the range of the concept.",
+        "reasoning": "Full(Stadium, People) and Represent(Stadium, MaximumCapacity)\nPotential(Teacup, Filled) and Represent(Teacup, PotentialCapacity).\nThus, Stadium → MaximumCapacity → Capacity and Teacup → PotentialCapacity → Capacity",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "EasilyBroken(invisible, ability, mutual elements, NA, English)",
+        "relation": "EasilyBroken",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "bubble.jpg",
+                "description": "Soap bubble",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Thin ice.jpg",
+                "description": "Thin ice.",
+                "count": 2
+            }
+        ],
+        "explanation": "Soap bubbles are known for their delicate and easily broken nature. Thin ice is similarly precarious and prone to cracking under pressure.",
+        "reasoning": "Represents(SoapBubble, DelicateEasilyBroken)\nRepresents(ThinIce, PrecariousEasilyBroken).\nThus, SoapBubble → DelicateEasilyBroken → Fragile and ThinIce → PrecariousEasilyBroken → Fragile",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Sun dog(invisible, phenomenon, mutual elements, NA, English)",
+        "relation": "Sun dog",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bright spot.jpg",
+                "description": "Bright spot of light.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Ice crystals.jpg",
+                "description": "Ice crystals",
+                "count": 2
+            }
+        ],
+        "explanation": "Sun dogs are bright spots of light that appear on either side of the sun, caused by the refraction of sunlight through ice crystals in the atmosphere.",
+        "reasoning": "AppearsAs(Sundog, BrightSpotOfLight)\nCauses(Refraction(Sunlight, IceCrystals), Sundog).\nThus, BrightSpotOfLight → Sundog and IceCrystals → Sundog",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Earthquake(invisible, phenomenon, relation, NA, English)",
+        "relation": "Earthquake",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Fault line.jpg",
+                "description": "Fault line.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Seismic waves.jpg",
+                "description": "Seismic waves.",
+                "count": 2
+            }
+        ],
+        "explanation": "Earthquakes are caused by the movement of tectonic plates along fault lines, generating seismic waves that cause the ground to shake.",
+        "reasoning": "OccursAt(Earthquake, FaultLine)\nProduces(Earthquake, SeismicWaves).\nThus, FaultLine → Earthquake and SeismicWaves → Earthquake",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Migration(invisible, phenomenon, relation, NA, English)",
+        "relation": "Migration",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Flock of birds.jpg",
+                "description": "Flock of birds.",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "seasons.jpg",
+                "description": "Changing seasons.",
+                "count": 1
+            }
+        ],
+        "explanation": "Birds often migrate in flocks during changing seasons to find more favorable breeding or feeding grounds.",
+        "reasoning": "Perform(FlockOfBirds, Migration)\nTriggers(ChangingSeasons, Migration).\nThus, FlockOfBirds → Migration and ChangingSeasons → Migration",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Light pillar(invisible, phenomenon, relation, NA, English)",
+        "relation": "Light pillar",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Vertical beam.jpg",
+                "description": "Vertical beam of light.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Ice crystal.jpg",
+                "description": "Ice crystals in the air.",
+                "count": 3
+            }
+        ],
+        "explanation": "Light pillars are vertical beams of light caused by the reflection of light off ice crystals suspended in the atmosphere.",
+        "reasoning": "AppearsAs(LightPillar, VerticalBeamOfLight)\nCauses(Reflection(Light, IceCrystalsInTheAir), LightPillar).\nThus, VerticalBeamOfLight → LightPillar and IceCrystalsInTheAir → LightPillar",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Cancel Culture(invisible, phenomenon, mutual elements, NA, English)",
+        "relation": "Cancel Culture",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "being erased.jpg",
+                "description": "A person being erased by a large pink eraser.",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "burning book.jpg",
+                "description": "A pile of burning books",
+                "count": 3
+            }
+        ],
+        "explanation": "The person being erased symbolizes the silencing and deplatforming of individuals. The burning books symbolize the destruction or suppression of ideas and works associated with the canceled person.",
+        "reasoning": "Symbolizes(ErasedPerson, SilencingAndDeplatforming)\nSymbolizes(BurningBooks, DestructionOfIdeas).\nThus, ErasedPerson → SilencingAndDeplatforming → CancelCulture and BurningBooks → DestructionOfIdeas → CancelCulture",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Scene Contextualization",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Viral Trend(invisible, phenomenon, mutual elements, NA, English)",
+        "relation": "Viral Trend",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Ice Bucke.jpg",
+                "description": "Ice Bucket Challenge",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "TikTok.jpg",
+                "description": "TikTok Dance craze",
+                "count": 2
+            }
+        ],
+        "explanation": "The Ice Bucket Challenge, depicted in the first image, was a viral trend that spread rapidly through social media, raising awareness for ALS. The second image, representing TikTok dance crazes, highlights another form of viral trend, where short, catchy dance routines quickly gain popularity and are widely imitated on the platform. Both images represent phenomena that captured widespread attention and participation online.",
+        "reasoning": "ExampleOf(IceBucketChallenge, ViralTrend)\nExampleOf(TikTokDanceCraze, ViralTrend).\nThus, IceBucketChallenge → ViralTrend and TikTokDanceCraze → ViralTrend",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "reinforce opinions(invisible, phenomenon, mutual elements, NA, English)",
+        "relation": "reinforce opinions",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "surrounded.jpg",
+                "description": "A person surrounded by multiple screens all displaying the same news story.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "nodding.jpg",
+                "description": "A group of people in a room, all nodding in agreement.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image represents the digital aspect of an echo chamber, where individuals are constantly exposed to the same information through personalized feeds and algorithms, reinforcing their existing beliefs. The second image represents the social aspect, where like-minded individuals gather and reinforce each other's opinions without exposure to alternative perspectives. Both images illustrate environments where dissenting opinions are rare and confirmation bias thrives.",
+        "reasoning": "Represent(MultipleScreensSameNews, DigitalEchoChamber) and SubsetOf(DigitalEchoChamber, EchoChamber)\nRepresent(NoddingGroup, SocialEchoChamber) and SubsetOf(SocialEchoChamber, EchoChamber).\nThus, MultipleScreensSameNews → DigitalEchoChamber → EchoChamber and NoddingGroup → SocialEchoChamber → EchoChamber",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Influencer Marketing(invisible, phenomenon, relation, NA, English)",
+        "relation": "Influencer Marketing",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "selfie.jpg",
+                "description": "A person taking a selfie with a clearly branded product.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "spike.jpg",
+                "description": "A graph showing a spike in sales.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image depicts a common practice in influencer marketing: showcasing a product through a selfie, aiming to reach the influencer's followers. The second image, the sales graph spike, represents the desired outcome of a successful influencer marketing campaign: increased product sales due to the influencer's promotion.",
+        "reasoning": "Tactic(ProductSelfie, InfluencerMarketing)\nResult(SalesSpike, InfluencerMarketing).\nThus, ProductSelfie → InfluencerMarketing and SalesSpike → InfluencerMarketing",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Greenhouse effect(invisible, phenomenon, relation, NA, English)",
+        "relation": "Greenhouse effect",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "exhaust flumes.jpg",
+                "description": "Thick car exhaust flumes",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Melting glaciers.jpg",
+                "description": "Melting glaciers",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image, thick car exhaust fumes, represents a major source of greenhouse gases, particularly carbon dioxide, which contribute to the greenhouse effect. The second image, melting glaciers, depicts a direct consequence of global warming, a phenomenon exacerbated by the greenhouse effect. Thus, both images relate to the greenhouse effect, one representing a cause and the other an effect.",
+        "reasoning": "Emit(CarExhaust, GreenhouseGases) and Cause(GreenhouseGases, GreenhouseEffect)\nCause(GreenhouseEffect, GlobalWarming) and Cause(GlobalWarming, GlacierMelting).\nThus, CarExhaust → GreenhouseGases → GreenhouseEffect and GlacierMelting → GlobalWarming → GreenhouseEffect",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Magna Carta(invisible, phenomenon, relation, NA, English)",
+        "relation": "Magna Carta",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "King John.jpg",
+                "description": "King John",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Runnymede.jpg",
+                "description": "Runnymede",
+                "count": 3
+            }
+        ],
+        "explanation": "King John signed the Magna Carta at Runnymede in 1215.",
+        "reasoning": "Signed(KingJohn, MagnaCarta)\nLocationOf(Runnymede, MagnaCartaSigning).\nThus, KingJohn → MagnaCarta → Runnymede and Runnymede → MagnaCarta → KingJohn",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Prayer(invisible, phenomenon, metaphor, NA, English)",
+        "relation": "Prayer",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Kneeling figure.jpg",
+                "description": "Kneeling figure",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Open hands.jpg",
+                "description": "Open hands reaching upwards",
+                "count": 2
+            }
+        ],
+        "explanation": "A kneeling figure often represents humility and reverence, common postures in prayer. Open hands reaching upwards symbolize supplication and a connection to a higher power.",
+        "reasoning": "Symbolizes(KneelingFigure, Humility/Reverence) and Associates(Humility/Reverence, Prayer).\nSymbolizes(OpenHandsUpwards, Supplication/ConnectionToHigherPower) and Associates(Supplication/ConnectionToHigherPower, Prayer).\nThus, KneelingFigure → Humility/Reverence → Prayer and OpenHandsUpwards → Supplication/ConnectionToHigherPower → Prayer",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Stille Wasser sind tief(invisible, phenomenon, metaphor, Non-English European, German)",
+        "relation": "Stille Wasser sind tief",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "lake.jpg",
+                "description": "Calm lake.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Deep ocean.jpg",
+                "description": "Deep ocean",
+                "count": 1
+            }
+        ],
+        "explanation": "'Stille Wasser sind tief' translates to 'Still waters run deep,' indicating that those who appear calm or quiet may possess profound thoughts, emotions, or complexities beneath the surface.",
+        "reasoning": "Represents(CalmLake, SurfaceCalmness)\nSymbolizes(DeepOcean, HiddenDepths)\nThus, CalmLake → SurfaceCalmness and DeepOcean → HiddenDepths → 'Still waters run deep.'",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Der Apfel fällt nicht weit vom Stamm(invisible, phenomenon, metaphor, Non-English European, German)",
+        "relation": "Der Apfel fällt nicht weit vom Stamm",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Apple.jpg",
+                "description": "Apple on the ground.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Tree trunk.jpg",
+                "description": "Tree trunk.",
+                "count": 3
+            }
+        ],
+        "explanation": "This German proverb suggests that children resemble their parents in behavior or characteristics, much like an apple that falls close to the tree it grew from.",
+        "reasoning": "AppleOnGround ∧ TreeTrunk → Resemblance to Parents",
+        "hop_count": 1,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Man lernt nie aus(invisible, ability, metaphor, Non-English European, German)",
+        "relation": "Man lernt nie aus",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Open book.jpg",
+                "description": "Open book",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Endless staircase.jpg",
+                "description": "Endless staircase",
+                "count": 3
+            }
+        ],
+        "explanation": "'Man lernt nie aus' translates to 'One never stops learning.' The open book symbolizes knowledge and learning, while the endless staircase represents the continuous journey of education and personal growth.",
+        "reasoning": "Knowledge(OpenBook) ∧ Journey(EndlessStaircase) → Learning",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Übung macht den Meister.(invisible, ability, metaphor, Non-English European, German)",
+        "relation": "Übung macht den Meister.",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "sculptor.jpg",
+                "description": "A sculptor chiseling a statue.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "musician.jpg",
+                "description": "A musician practicing on stage",
+                "count": 2
+            }
+        ],
+        "explanation": "The sculptor represents the dedication and effort put into honing a craft through physical practice, while the musician symbolizes the repetitive effort needed to achieve mastery in performance. Both images illustrate the idea that consistent practice leads to improvement and mastery.",
+        "reasoning": "Represents(Sculptor, Chiseling) and Illustrates(Dedication, Mastery)\nRepresents(Musician, Practicing) and Illustrates(Performance, Mastery)\nThus, Sculptor → Practice → Mastery and Musician → Practice → Mastery",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Was Hänschen nicht lernt, lernt Hans nimmermehr(invisible, ability, metaphor, Non-English European, German)",
+        "relation": "Was Hänschen nicht lernt, lernt Hans nimmermehr",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "young boy.jpg",
+                "description": "A young boy reading a book",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "old man.jpg",
+                "description": "An old man looking at a closed book with dust on it.",
+                "count": 2
+            }
+        ],
+        "explanation": " The young boy represents the potential for learning and growth in youth, while the old man symbolizes missed opportunities and the stagnation that can occur when lessons are not learned early on.",
+        "reasoning": "Learns(Boy, Knowledge) ∧ MissesOpportunity(OldMan, Knowledge) → Stagnation",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Die Welt ist meine Vorstellung(invisible, culture, metaphor, Non-English European, German)",
+        "relation": "Die Welt ist meine Vorstellung",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "palette.jpg",
+                "description": "A painter's palette.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "globe.jpg",
+                "description": "A globe",
+                "count": 4
+            }
+        ],
+        "explanation": "A painter's palette represents creativity and the ability to create one's own vision or reality through colors and art. The globe symbolizes the world itself, representing the vastness and diversity of experiences and perspectives that can be imagined or created.",
+        "reasoning": "Paint(PainterPalette, Creativity)\nRepresents(Globe, World)\nThus, PainterPalette → Creativity → Imagination → Globe",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Wer nicht wagt, der nicht gewinnt(invisible, culture, metaphor, Non-English European, German)",
+        "relation": "Wer nicht wagt, der nicht gewinnt",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "tightrope walker.jpg",
+                "description": "A tightrope walker",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "treasure chest.jpg",
+                "description": "A treasure chest overflowing with gold coins.",
+                "count": 2
+            }
+        ],
+        "explanation": "The tightrope walker symbolizes taking risks and facing fears to achieve something extraordinary, while the treasure chest represents the rewards that come from such daring actions.",
+        "reasoning": "Symbolizes(RiskTaking, TightropeWalker)\nRepresents(Reward, TreasureChest)\nThus, TightropeWalker → RiskTaking → Reward → TreasureChest",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Kaffee und Kuchen(invisible, phenomenon, mutual elements, Non-English European, German)",
+        "relation": "Kaffee und Kuchen",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Black Forest cake.jpg",
+                "description": "A traditional German coffee table setting with a steaming cup of coffee and a slice of Black Forest cake.",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "café scene.jpg",
+                "description": "A cozy café scene in Germany, with people enjoying pastries and cakes while chatting over coffee.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image represents the classic combination of coffee and cake, specifically highlighting a popular German dessert, the Black Forest cake. The second image illustrates the cultural practice of enjoying coffee and cake together in a social setting, which is a cherished tradition in Germany. Together, these images reflect the essence of 'Kaffee und Kuchen' as both a culinary delight and a social experience.",
+        "reasoning": "Contain(CoffeeTableSetting, BlackForestCake) and Enjoy(CoffeeTableSetting, KaffeeUndKuchen)\nSocialize(CaféScene, KaffeeUndKuchen) and Contain(CaféScene, Pastries)\nThus, CoffeeTableSetting → Kaffee und Kuchen and CaféScene → Kaffee und Kuchen.",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Fachwerkhäuser(invisible, culture, mutual elements, Non-English European, German)",
+        "relation": "Fachwerkhäuser",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "picturesque street.jpg",
+                "description": "A picturesque street lined with traditional Fachwerkhäuser (half-timbered houses) in a quaint German town.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "wooden beam.jpg",
+                "description": "A detailed close-up of a wooden beam from a Fachwerkhaus, showcasing the intricate craftsmanship and joinery.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image captures the aesthetic and cultural significance of Fachwerkhäuser, which are iconic in German architecture, representing the charm and historical importance of these structures. The second image zooms in on the craftsmanship that defines these houses, emphasizing the materials and techniques used in their construction. Together, they convey the theme of 'Fachwerkhäuser,'highlighting both their beauty and the skilled artistry behind them.",
+        "reasoning": "Contains(StreetView, Fachwerkhäuser)\nCraftsmanship(WoodBeam, Fachwerkhaus)\nThus, StreetView → Fachwerkhäuser and WoodBeam → Fachwerkhaus → Fachwerkhäuser",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Rotkäppchen und der Wolf(invisible, culture, mutual elements, Non-English European, German)",
+        "relation": "Rotkäppchen und der Wolf",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "German",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "red cloak.jpg",
+                "description": "A vibrant red cloak draped over a forest log.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "menacing wolf.jpg",
+                "description": "A large, menacing wolf lurking behind a tree in the woods.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image represents the iconic red cloak worn by Little Red Riding Hood, while the second image depicts the wolf, the antagonist in the story. Together, they encapsulate the essence of the fairy tale, highlighting the confrontation between innocence (represented by the cloak) and danger (represented by the wolf).",
+        "reasoning": "Contains(RedCloak, Rotkäppchen)\nLurk(Wolf, Forest) and Oppose(Wolf, Rotkäppchen)\nThus, RedCloak → Rotkäppchen and Wolf → Rotkäppchen → Opponent → Rotkäppchen und der Wolf",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Chi dorme non piglia pesci(invisible, culture, mutual elements, Non-English European, Italian)",
+        "relation": "Chi dorme non piglia pesci",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "person sleeping.jpg",
+                "description": "A person sleeping soundly on a fishing boat.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "fisherman.jpg",
+                "description": "A fisherman with a full net of fish",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image depicts a person who is missing out on the opportunity to catch fish because they are asleep, while the second image represents a successful fisherman who has taken advantage of the opportunity to catch fish. Together, they illustrate the proverb 'Chi dorme non piglia pesci,' emphasizing that those who are inactive or complacent miss out on opportunities.",
+        "reasoning": "Sleep(Person, FishingBoat) and MissOpportunity(Person, Fish)\nCatch(Fisherman, Fish) and SeizeOpportunity(Fisherman, Fishing)\nThus, Person → Sleep → MissOpportunity and Fisherman → Catch → SeizeOpportunity → Opportunity",
+        "hop_count": 5,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Cucina(visible, culture, mutual elements, Non-English European, Italian)",
+        "relation": "Cucina",
+        "visibility": "visible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Italian kitchen.jpg",
+                "description": "A rustic Italian kitchen filled with herbs, pasta, and traditional cookware.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "plated dish.jpg",
+                "description": "A beautifully plated dish of Risotto alla Milanese, garnished with saffron and parsley.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image represents the essence of an Italian kitchen, where traditional cooking methods and ingredients come together to create authentic Italian cuisine. The second image showcases a specific dish, Risotto alla Milanese, which is a hallmark of Italian cooking. Together, they embody the concept of 'Cucina,' illustrating both the environment and a signature dish of Italian culinary culture.",
+        "reasoning": "Represents(RusticItalianKitchen, Cucina)\nContains(RisottoAllaMilanese, Cucina)\nThus, RusticItalianKitchen → Cucina and RisottoAllaMilanese → Cucina",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Architettura barocca(invisible, culture, mutual elements, Non-English European, Italian)",
+        "relation": "Architettura barocca",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Church of the Gesù in Rome.jpg",
+                "description": "The intricate ceiling of the Church of the Gesù in Rome, showcasing elaborate frescoes and gilded details.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Palace of Versailles.jpg",
+                "description": "A lavishly decorated ballroom from the Palace of Versailles, illustrating opulent chandeliers and ornate moldings.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image captures the essence of Baroque design through its dramatic use of space and decoration in a religious context, while the second image exemplifies the grandeur and extravagance associated with Baroque architecture in royal settings. Together, they highlight the key characteristics of the Baroque style, including its emphasis on ornamentation, movement, and emotional depth.",
+        "reasoning": "Contains(ChurchOfGesùCeiling, BaroqueArchitecture) and Style(BaroqueArchitecture, Religious)\nContains(PalaceOfVersaillesBallroom, BaroqueArchitecture) and Style(BaroqueArchitecture, Royal)\nThus, ChurchOfGesùCeiling → BaroqueArchitecture and PalaceOfVersaillesBallroom → BaroqueArchitecture",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Lasciate ogne speranza, voi ch'intrate.(invisible, culture, metaphor, Non-English European, Italian)",
+        "relation": "Lasciate ogne speranza, voi ch'intrate.",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Dark.jpg",
+                "description": "Dark, foreboding gate.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "candle flame.jpg",
+                "description": "Flickering candle flame.",
+                "count": 3
+            }
+        ],
+        "explanation": "The dark, foreboding gate symbolizes the entrance to a place of despair and hopelessness, reflecting the warning found in Dante's Inferno. The flickering candle flame represents fragile hope, which can be easily extinguished in a place filled with despair. Together, these images evoke the theme of hopelessness and the dire warning to those who dare to enter.",
+        "reasoning": "Symbolizes(Gate, Despair)\nRepresents(CandleFlame, FragileHope)\nThus, Gate → Despair and CandleFlame → FragileHope → 'Abandon all hope, ye who enter here.'",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "L’abito non fa il monaco(invisible, culture, metaphor, Non-English European, Italian)",
+        "relation": "L’abito non fa il monaco",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "suit.jpg",
+                "description": "A well-tailored suit.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "monk.jpg",
+                "description": "A monk in simple robes.",
+                "count": 3
+            }
+        ],
+        "explanation": "'L’abito non fa il monaco' translates to 'The habit does not make the monk.' This proverb implies that outward appearances do not determine a person's true character or worth.",
+        "reasoning": "Represent(Suit, OutwardAppearance) ∧ Define(Monk, InnerCharacter) → 'L’abito non fa il monaco'",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "E il naufragar m'è dolce in questo mare.(invisible, culture, mutual elements, Non-English European, Italian)",
+        "relation": "E il naufragar m'è dolce in questo mare.",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "serene painting.jpg",
+                "description": "A serene painting of a calm sea at sunset, with gentle waves and a single boat drifting.",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "vintage postcard.jpg",
+                "description": "A vintage postcard featuring a lonely lighthouse standing on a rocky shore, with stormy clouds gathering in the background.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image captures a moment of tranquility on the sea, evoking feelings of peacefulness and reflection, while the second image introduces an element of isolation and foreboding, suggesting struggle amidst nature's might. Together, they evoke a sense of bittersweet beauty often associated with the sea, resonating with the theme of melancholy expressed in the phrase 'E il naufragar m'è dolce in questo mare'.",
+        "reasoning": "Evoke(SereneSea, NauticalMelancholy) and Reflect(BoatDrifting, Calm)\nContrast(Lighthouse, StormySky) and Isolate(Lighthouse, NauticalMelancholy)\nThus, SereneSea → NauticalMelancholy and Lighthouse → NauticalMelancholy",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Non dire gatto se non ce l'hai nel sacco(invisible, culture, mutual elements, Non-English European, Italian)",
+        "relation": "Non dire gatto se non ce l'hai nel sacco",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "person and cat.jpg",
+                "description": "A person holding a bag with a visible silhouette of a cat inside.",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "shock.jpg",
+                "description": "A person with an expression of surprise or shock, as if they've just learned something unexpected.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image illustrates the phrase literally, suggesting that one should not claim to have something (the cat) unless it is indeed in one's possession (the bag). The second image represents the moment of revelation or surprise that often accompanies the realization that someone was making an unfounded claim. Together, they encapsulate the essence of the saying about the importance of proof before making assertions.",
+        "reasoning": "Claim(HoldingBag, Cat) and ShowPossession(Cat, Bag)\nRealization(SurprisePerson, UnexpectedClaim)\nThus, HoldingBag → Cat and SurprisePerson → UnexpectedClaim → se non ce l'hai nel sacco",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Moda italiana(invisible, phenomenon, mutual elements, Non-English European, Italian)",
+        "relation": "Moda italiana",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "model.jpg",
+                "description": "A stylish model walking down a Milan Fashion Week runway.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Italian tailor.jpg",
+                "description": "A traditional Italian tailor working on a bespoke suit in a workshop.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image represents the cutting-edge fashion showcased at Milan Fashion Week, a significant event in the global fashion calendar, known for highlighting Italian designers and styles. The second image captures the essence of Italian craftsmanship, with a tailor meticulously creating a suit, symbolizing the high-quality, tailored clothing that Italy is renowned for. Together, these images encapsulate the theme of 'Italian fashion,' where modern runway presentations and traditional craftsmanship coalesce to define Italy's influence in the fashion world.",
+        "reasoning": "Showcase(MilanFashionWeek, ItalianFashion)\nCraft(BespokeTailoring, ItalianTradition)\nThus, MilanFashionWeek → ItalianFashion and BespokeTailoring → ItalianTradition → ItalianFashion",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Canovaccio(invisible, culture, mutual elements, Non-English European, Italian)",
+        "relation": "Canovaccio",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "stages.jpg",
+                "description": "A traditional Italian stage with actors in elaborate costumes performing a Commedia dell'Arte play.",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "colorful fabric.jpg",
+                "description": "A hand-painted, colorful fabric showcasing intricate patterns and designs, often used in theatrical productions.",
+                "count": 3
+            }
+        ],
+        "explanation": "The first image represents the art form of Commedia dell'Arte, which relies on improvisation and stock characters, often using a 'canovaccio' or framework for the performance. The second image, featuring hand-painted fabric, evokes the colorful and vibrant costumes that are essential in creating the visual spectacle of such performances. Therefore, both images connect through the concept of 'canovaccio,' highlighting its role in theatrical tradition and the visual artistry that accompanies it.",
+        "reasoning": "Use(CommediaDellArte, Canovaccio)\nDecorate(Costumes, HandPaintedFabric) and EssentialFor(HandPaintedFabric, TheatricalProductions)\nThus, CommediaDellArte → Canovaccio and HandPaintedFabric → TheatricalProductions → Canovaccio",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "avere culo(invisible, phenomenon, mutual elements, Non-English European, Italian)",
+        "relation": "avere culo",
+        "visibility": "invisible",
+        "domain": "phenomenon",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Italian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "lottery ticket.jpg",
+                "description": "traditional Italian lottery ticket with the winning numbers highlighted.",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "celebration.jpg",
+                "description": "A person jumping in celebration with arms raised in front of the Colosseum in Rome.",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image represents luck through the lottery, where winning is often seen as a stroke of good fortune. The second image captures the joy and excitement of someone experiencing a fortunate event, such as winning, in a culturally significant location. Together, they convey the theme of luck in Italian culture.",
+        "reasoning": "Win(LotteryTicket, Luck)\nCelebrate(Person, GoodFortune) and Location(Person, Colosseum)\nThus, LotteryTicket → Luck and Person → GoodFortune → Luck",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Mateship(invisible, culture, metaphor, other, English)",
+        "relation": "Mateship",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Akubra hat.jpg",
+                "description": "Akubra hat",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Helping hand.jpg",
+                "description": "Helping hand",
+                "count": 3
+            }
+        ],
+        "explanation": "Akubra hats are a strong symbol of Australian culture, often worn by those in rural areas where mateship is highly valued. A helping hand represents the core values of mateship: loyalty, support, and camaraderie.",
+        "reasoning": "Symbolizes(Akubra, AustralianCulture) and Values(AustralianCulture, Mateship)\nRepresents(HelpingHand, Support) and CoreValue(Support, Mateship).\nThus, Akubra → AustralianCulture → Mateship and HelpingHand → Support → Mateship",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    }
+]

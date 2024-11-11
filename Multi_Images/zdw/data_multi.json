@@ -1,0 +1,2944 @@
+[
+    {
+        "foldername": "Sports Bar(visible, sports, relation, USAEnglish, English)",
+        "relation": "Sports Bar",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Foosball table.jpg",
+                "description": "Foosball table",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Pint of beer.jpg",
+                "description": "beer",
+                "count": 3
+            }
+        ],
+        "explanation": "Both a foosball table and beer are commonly found in sports bars. They are individually associated with leisure and entertainment, and their combined presence strongly suggests a sports bar environment.",
+        "reasoning": "LocatedIn(FoosballTable, SportsBar)\nLocatedIn(Beer, SportsBar)\nThus, FoosballTable → SportsBar and Beer → SportsBar",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "The music(You'll Never Walk Alone)(invisible, sports, relation, USAEnglish, English)",
+        "relation": "The music(You'll Never Walk Alone)",
+        "visibility": "invisible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The Anfield stadium gates.jpg",
+                "description": "The Anfield stadium gates",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A 1960s Gerry & The Pacemakers album cover.jpg",
+                "description": "A 1960s Gerry & The Pacemakers album cover",
+                "count": 4
+            }
+        ],
+        "explanation": "Gerry and the Pacemakers' song 'You'll Never Walk Alone' is the anthem of Liverpool Football Club, which plays at Anfield. The Anfield gates are iconic to Liverpool FC. Gerry and the Pacemakers, a Liverpool band, recorded the song which became synonymous with the club.",
+        "reasoning": "Anthem(You'll Never Walk Alone, LiverpoolFC)\nPerform(Gerry & The Pacemakers, You'll Never Walk Alone)\nHome(LiverpoolFC, Anfield)\nThus, Anfield → LiverpoolFC → You'll Never Walk Alone → Gerry & The Pacemakers and Gerry & The Pacemakers → You'll Never Walk Alone → LiverpoolFC → Anfield",
+        "hop_count": 6,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "乒乓外交(invisible, sports, relation, East Asia, Chinese)",
+        "relation": "乒乓外交",
+        "visibility": "invisible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "Chinese",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Ping pong paddle.jpg",
+                "description": "Ping pong paddle",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "The Great Wall of China.jpg",
+                "description": "The Great Wall of China",
+                "count": 2
+            }
+        ],
+        "explanation": "Ping pong diplomacy refers to the exchange of table tennis (ping-pong) players between the United States and People's Republic of China (PRC) in the early 1970s. The ping pong paddle represents the sport central to the diplomatic effort. The Great Wall represents China.",
+        "reasoning": "Sport(PingPong, PingPongDiplomacy)\nLocation(China, PingPongDiplomacy)\nSymbol(GreatWall, China)\nThus, PingPongPaddle → PingPong → PingPongDiplomacy and GreatWallOfChina → China → PingPongDiplomacy",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "功夫(visible, sports, relation, East Asia, Chinese)",
+        "relation": "功夫",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "Chinese",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bruce Lee.jpg",
+                "description": "Bruce Lee",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Shaolin Monastery.jpg",
+                "description": "Shaolin Monastery",
+                "count": 3
+            }
+        ],
+        "explanation": "Bruce Lee helped popularize Kung Fu, and Shaolin Monastery is considered the birthplace of many Kung Fu styles. Bruce Lee, a prominent martial artist and actor, significantly contributed to Kung Fu's global recognition. The Shaolin Monastery is historically linked to the development and practice of various Kung Fu styles.",
+        "reasoning": "Practice(BruceLee, KungFu)\nOrigin(ShaolinMonastery, KungFu)\nThus, BruceLee → KungFu and ShaolinMonastery → KungFu",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "蹴鞠(visible, sports, relation, East Asia, Chinese)",
+        "relation": "蹴鞠",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "Chinese",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Emperor Taizu of Song.jpg",
+                "description": "Emperor Taizu of Song",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Feather-stuffed ball.jpg",
+                "description": "Feather-stuffed ball",
+                "count": 2
+            }
+        ],
+        "explanation": "Emperor Taizu of Song was a known enthusiast of Cuju, and Cuju was played with a feather-stuffed ball. Emperor Taizu's fondness for the sport helps connect him to Cuju. The feather-stuffed ball represents the specific type of ball used in Cuju, distinguishing it from other games.",
+        "reasoning": "Enjoy(EmperorTaizuOfSong, Cuju)\nEquipment(FeatherStuffedBall, Cuju)\nThus, EmperorTaizuOfSong → Cuju and FeatherStuffedBall → Cuju",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Белка(visible, animal, relation, Non-English European, Russian)",
+        "relation": "Белка",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Tree with a hollow.jpg",
+                "description": " Tree with a hollow",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "Acorn.jpg",
+                "description": "Acorn",
+                "count": 2
+            }
+        ],
+        "explanation": "Squirrels live in trees and eat acorns. The tree hollow represents a typical squirrel habitat. The acorn represents a primary food source for squirrels.",
+        "reasoning": "Habitat(TreeHollow, Squirrel)\nFood(Acorn, Squirrel)\nThus, TreeHollow → Squirrel and Acorn → Squirrel",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Беркут(visible, animal, relation, Non-English European, Russian)",
+        "relation": "Беркут",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Mountains of Central Asia.jpg",
+                "description": " Mountains of Central Asia",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Rabbit carcass.jpg",
+                "description": "Rabbit carcass",
+                "count": 2
+            }
+        ],
+        "explanation": "Golden Eagles live in the mountainous regions of Central Asia and prey on rabbits. The mountains represent the eagle's natural habitat. The rabbit carcass represents a typical prey item.",
+        "reasoning": "Habitat(MountainsOfCentralAsia, GoldenEagle)\nPrey(Rabbit, GoldenEagle)\nThus, MountainsOfCentralAsia → GoldenEagle and RabbitCarcass → GoldenEagle",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "حصان عربي(visible, animal, relation, Arabic-Islamic, Arabic)",
+        "relation": "حصان عربي",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "Arabic-Islamic",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bedouin rider.jpg",
+                "description": " Bedouin rider",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Distinctive head shape silhouette.jpg",
+                "description": "Distinctive head shape silhouette",
+                "count": 1
+            }
+        ],
+        "explanation": "Arabian horses are closely associated with Bedouin culture and have a unique head shape. The Bedouin rider represents the historical connection between the nomadic people and the breed. The distinctive head shape silhouette is a key identifying feature of Arabian horses.",
+        "reasoning": "Breeder(Bedouin, ArabianHorse)\nFeature(DistinctiveHeadShape, ArabianHorse)\nThus, BedouinRider → ArabianHorse and DistinctiveHeadShapeSilhouette → ArabianHorse",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "نمر عربي(visible, animal, relation, Arabic-Islamic, Arabic)",
+        "relation": "نمر عربي",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "Arabic-Islamic",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Rocky Arabian desert landscape.jpg",
+                "description": " Rocky Arabian desert landscape",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Spotted fur pattern.jpg",
+                "description": "Spotted fur pattern",
+                "count": 3
+            }
+        ],
+        "explanation": "Arabian Leopards inhabit the rocky deserts of the Arabian Peninsula and have a distinct spotted fur pattern. The rocky desert landscape represents the leopard's dwindling habitat. The spotted fur is a key characteristic of the animal.",
+        "reasoning": "Habitat(RockyArabianDesert, ArabianLeopard)\nFeature(SpottedFur, ArabianLeopard)\nThus, RockyArabianDesertLandscape → ArabianLeopard and SpottedFurPattern → ArabianLeopard",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "British Fox Hunting(visible, animal, relation, USAEnglish, English)",
+        "relation": "British Fox Hunting",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Red Coat.jpg",
+                "description": "Red Coat",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Fox.jpg",
+                "description": "Fox",
+                "count": 4
+            }
+        ],
+        "explanation": "Red coats are traditionally worn by hunters in British fox hunts. The red coat is a strong visual cue associated with traditional British fox hunting attire, while the fox represents the hunted animal. Together, they create a clear link to the topic.",
+        "reasoning": "Wear(Hunter, RedCoat)\nHunt(Hunter, Fox)\nThus, RedCoat → Hunter → Fox and Fox → Hunter → RedCoat",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Scottish Highland Cattle(visible, animal, relation, USAEnglish, English)",
+        "relation": "Scottish Highland Cattle",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Long shaggy hair.jpg",
+                "description": "Long shaggy hair",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Bagpipes.jpg",
+                "description": "Bagpipes",
+                "count": 1
+            }
+        ],
+        "explanation": "Scottish Highland Cattle are known for their long, shaggy hair, and bagpipes are a traditional Scottish instrument, linking both images to Scotland. While long hair can be found on many animals and bagpipes are just an instrument, their combination evokes the imagery of the Scottish Highlands.",
+        "reasoning": "Have(ScottishHighlandCattle, LongShaggyHair)\nLocatedIn(ScottishHighlandCattle, Scotland)\nAssociatedWith(Bagpipes, Scotland)\nThus, LongShaggyHair → ScottishHighlandCattle → Scotland → Bagpipes and Bagpipes → Scotland → ScottishHighlandCattle → LongShaggyHair",
+        "hop_count": 6,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Nordic Bear(visible, animal, relation, other, English)",
+        "relation": "Nordic Bear",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Paw print.jpg",
+                "description": "Paw print",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Aurora Borealis.jpg",
+                "description": "Aurora Borealis (Northern Lights)",
+                "count": 2
+            }
+        ],
+        "explanation": "Paw prints suggest a large animal, and the Aurora Borealis places us in a northern region, hinting at a Nordic bear. While a paw print could belong to many creatures, and the Northern Lights are a natural phenomenon, together they strongly suggest a large animal inhabiting a northern environment.",
+        "reasoning": "Leave(Bear, PawPrint)\nLocatedIn(NordicBear, NordicRegion)\nVisibleIn(AuroraBorealis, NordicRegion)\nThus, PawPrint → Bear → NordicBear → NordicRegion → AuroraBorealis and AuroraBorealis → NordicRegion → NordicBear → Bear → PawPrint",
+        "hop_count": 8,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "White Storks in Poland(visible, animal, relation, Non-English European, English)",
+        "relation": "White Storks in Poland",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Red beak and legs.jpg",
+                "description": "Red beak and legs",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Fields of rye.jpg",
+                "description": "Fields of rye",
+                "count": 3
+            }
+        ],
+        "explanation": "White storks are identifiable by their red beak and legs, and Poland is known for its rye fields, creating a connection to the habitat of these birds in Poland. While red beaks and legs can be found on other birds, and rye fields exist in other countries, the pairing evokes the specific image of white storks foraging in Polish fields.",
+        "reasoning": "Have(WhiteStork, RedBeakAndLegs)\nLocatedIn(WhiteStork, Poland)\nFoundIn(RyeFields, Poland)\nThus, RedBeakAndLegs → WhiteStork → Poland → RyeFields and RyeFields → Poland → WhiteStork → RedBeakAndLegs",
+        "hop_count": 6,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Panda(visible, animal, relation, East Asia, English)",
+        "relation": "Panda",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bamboo.jpg",
+                "description": "Bamboo",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Black and white fur.jpg",
+                "description": "Black and white fur",
+                "count": 3
+            }
+        ],
+        "explanation": "Pandas are known for their distinctive black and white fur and their diet consisting primarily of bamboo. Bamboo is a plant, and black and white fur is a coat coloring, but put them together, and the image of a panda becomes clear.",
+        "reasoning": "Eat(Panda, Bamboo)\nHave(Panda, BlackAndWhiteFur)\nThus, Bamboo → Panda → BlackAndWhiteFur and BlackAndWhiteFur → Panda → Bamboo",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Karasu (Crow in Japanese)(visible, animal, relation, East Asia, English)",
+        "relation": "Karasu (Crow in Japanese)",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Torii gate.jpg",
+                "description": "Torii gate",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Murder (of crows).jpg",
+                "description": "Murder (of crows)",
+                "count": 1
+            }
+        ],
+        "explanation": "Torii gates are often associated with Japanese shrines, where crows are sometimes seen, and a group of crows is referred to as a murder. A Torii gate evokes Japan, and a murder could refer to a crime, but combined, they create a more nuanced image of crows in a Japanese cultural context.",
+        "reasoning": "LocatedNear(Karasu, ToriiGate) (Crows are often seen around shrines marked by Torii gates)\nCollectiveNoun(Karasu, Murder)\nThus, ToriiGate → Karasu → Murder and Murder → Karasu → ToriiGate",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Chinese Dragon(visible, animal, relation, East Asia, English)",
+        "relation": "Chinese Dragon",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Scales.jpg",
+                "description": "Scales",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Pearl.jpg",
+                "description": "Pearl",
+                "count": 2
+            }
+        ],
+        "explanation": "Chinese dragons are depicted with scales and are often associated with pearls, which they are sometimes depicted holding or chasing. Scales are common to reptiles and fish, and pearls are gemstones, but together, particularly in an East Asian context, they strongly suggest a Chinese dragon.",
+        "reasoning": "Have(ChineseDragon, Scales)\nAssociatedWith(ChineseDragon, Pearl)\nThus, Scales → ChineseDragon → Pearl and Pearl → ChineseDragon → Scales",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Moraingy(visible, sports, relation, other, English)",
+        "relation": "Moraingy",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Zebu (cattle).jpg",
+                "description": "Zebu (cattle)",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Sand.jpg",
+                "description": "Sand ",
+                "count": 2
+            }
+        ],
+        "explanation": "Moraingy matches often take place on sandy arenas, and the winner traditionally receives a zebu as a prize. Zebu cattle are culturally significant in Madagascar and are often given as prizes in Moraingy. Sand represents the typical fighting surface used in these matches.",
+        "reasoning": "Prize(Moraingy, Zebu)\nArena(Moraingy, Sand)\nThus, Zebu → Moraingy and Sand → Moraingy",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Maradona 1986(invisible, sports, relation, NA, English)",
+        "relation": "Maradona 1986",
+        "visibility": "invisible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Falkland Islands.jpg",
+                "description": "Falkland Islands",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Aztec stadium.jpg",
+                "description": "Aztec stadium ",
+                "count": 2
+            }
+        ],
+        "explanation": "The 1986 World Cup, where Maradona's \"Hand of God\" goal and \"Goal of the Century\" occurred, was held in Mexico, shortly after the Falklands War between Argentina and the UK. The Falkland Islands reference Argentina, Maradona's home country, and the lingering tensions after the war, which added a layer of political significance to the match against England. The Aztec stadium is where the game took place.",
+        "reasoning": "LocatedIn(WorldCup1986, AztecStadium)\nPlayedIn(WorldCup1986, Argentina)\nRelatedTo(Argentina, FalklandIslands)\nThus, FalklandIslands → Argentina → WorldCup1986 → AztecStadium and AztecStadium → WorldCup1986 → Argentina → FalklandIslands",
+        "hop_count": 6,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Phillies home run(visible, sports, relation, USAEnglish, English)",
+        "relation": "Phillies home run",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Liberty Bell.jpg",
+                "description": "Liberty Bell",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "Long Drive.jpg",
+                "description": "Long Drive (Golf term) ",
+                "count": 1
+            }
+        ],
+        "explanation": "A long drive in baseball, resulting in a home run, hit by a Philadelphia Phillies player. The Liberty Bell represents Philadelphia, home of the Phillies. \"Long Drive\" is a term used in golf, but here it hints at a long hit in baseball, synonymous with a home run.",
+        "reasoning": "LocatedIn(Phillies, Philadelphia)\nSymbolizes(LibertyBell, Philadelphia)\nAnalogousTo(LongDriveInGolf, HomeRunInBaseball)\nHits(Phillies, HomeRun)\nThus, LibertyBell → Philadelphia → Phillies → HomeRun and LongDrive → HomeRun → Phillies → Philadelphia → LibertyBell",
+        "hop_count": 7,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Olympic spirit(invisible, sports, relation, NA, English)",
+        "relation": "Olympic spirit",
+        "visibility": "invisible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Dove carrying olive branch.jpg",
+                "description": "Dove carrying olive branch",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Interlocked Rings.jpg",
+                "description": "Interlocked Rings ",
+                "count": 3
+            }
+        ],
+        "explanation": "The Olympic spirit embodies peace (dove and olive branch) and the unity of nations (interlocked rings). The dove and olive branch are ancient symbols of peace, a core value of the Olympic games. The interlocked rings represent the five continents participating and their interconnectedness.",
+        "reasoning": "Symbolize(Dove, Peace)\nComponentOf(Peace, OlympicSpirit)\nSymbolize(InterlockedRings, UnityOfNations)\nComponentOf(UnityOfNations, OlympicSpirit)\nThus, Dove → Peace → OlympicSpirit → UnityOfNations → InterlockedRings and InterlockedRings → UnityOfNations → OlympicSpirit → Peace → Dove",
+        "hop_count": 8,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Olympic Historic Moments(invisible, sports, relation, NA, English)",
+        "relation": "Olympic Historic Moments",
+        "visibility": "invisible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Black Power salute.jpg",
+                "description": "Black Power salute",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Broken hockey stick.jpg",
+                "description": "Broken hockey stick ",
+                "count": 3
+            }
+        ],
+        "explanation": "Two iconic moments in Olympic history: Tommie Smith and John Carlos' Black Power salute at the 1968 Mexico City Olympics and the \"Miracle on Ice,\" where the US hockey team defeated the Soviet Union in the 1980 Lake Placid Winter Olympics (often symbolized by a broken hockey stick due to the intense play).",
+        "reasoning": "Represents(BlackPowerSalute, 1968OlympicsProtest)\nExampleOf(1968OlympicsProtest, OlympicHistoricMoments)\nRepresents(BrokenHockeyStick, MiracleOnIce)\nExampleOf(MiracleOnIce, OlympicHistoricMoments)\nThus, BlackPowerSalute → 1968OlympicsProtest → OlympicHistoricMoments → MiracleOnIce → BrokenHockeyStick and BrokenHockeyStick → MiracleOnIce → OlympicHistoricMoments → 1968OlympicsProtest → BlackPowerSalute",
+        "hop_count": 8,
+        "perception": [
+            "Semantic Object",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Mooncake(visible, food, relation, East Asia, English)",
+        "relation": "Mooncake",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Lotus seed paste.jpg",
+                "description": "Lotus seed paste",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Round mold.jpg",
+                "description": "Round mold ",
+                "count": 2
+            }
+        ],
+        "explanation": "Lotus seed paste is a common filling for mooncakes, which are traditionally made using round molds. Mooncakes, especially during the Mid-Autumn Festival, are commonly filled with lotus seed paste and shaped using special round molds.",
+        "reasoning": "Ingredient(LotusSeedPaste, Mooncake)\nUse(RoundMold, Mooncake)\nThus, LotusSeedPaste → Mooncake and RoundMold → Mooncake",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "longevity noodles(visible, food, relation, East Asia, English)",
+        "relation": "longevity noodles",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Birthday party.jpg",
+                "description": "Birthday party",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "Extra long chopsticks.jpg",
+                "description": "Extra long chopsticks ",
+                "count": 3
+            }
+        ],
+        "explanation": "Longevity noodles are a traditional dish served at birthday celebrations, often eaten with chopsticks. The extra long chopsticks emphasize the unusual length of the noodles, further hinting at their symbolic meaning of long life.",
+        "reasoning": "Serve(LongevityNoodles, BirthdayParty)\nUse(Chopsticks, LongevityNoodles) (Specifically, extra long chopsticks are sometimes used due to the length of the noodles)\nThus, BirthdayParty → LongevityNoodles and ExtraLongChopsticks → LongevityNoodles",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Pojangmacha(visible, food, relation, East Asia, English)",
+        "relation": "Pojangmacha",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Red tent.jpg",
+                "description": "Red tent",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Tteokbokki.jpg",
+                "description": "Tteokbokki ",
+                "count": 3
+            }
+        ],
+        "explanation": "Tteokbokki is a popular street food commonly sold at pojangmacha, which are often characterized by their red tents. The red tent is a visual cue often associated with pojangmacha, while tteokbokki represents the food sold there.",
+        "reasoning": "Location(Tteokbokki, Pojangmacha)\nCharacteristic(RedTent, Pojangmacha)\nThus, Tteokbokki → Pojangmacha and RedTent → Pojangmacha",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Dado(visible, food, relation, East Asia, English)",
+        "relation": "Dado",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bowing person.jpg",
+                "description": "Bowing person",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Simple earthenware tea bowl.jpg",
+                "description": "Simple earthenware tea bowl ",
+                "count": 2
+            }
+        ],
+        "explanation": "Bowing is a customary gesture of respect in Korean tea ceremonies (Dado), which traditionally utilize simple earthenware tea bowls. The bowing figure represents the formality and respect inherent in the ceremony, while the simple tea bowl signifies the focus on the tea itself.",
+        "reasoning": "Action(Bowing, Dado)\nUse(EarthenwareTeaBowl, Dado)\nThus, Bowing → Dado and EarthenwareTeaBowl → Dado",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Chinese Cured Meats(visible, food, relation, East Asia, English)",
+        "relation": "Chinese Cured Meats",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "腊 (là) character.jpg",
+                "description": "腊 (là) character",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "Red string.jpg",
+                "description": "Red string ",
+                "count": 4
+            }
+        ],
+        "explanation": "Chinese cured meats are often hung and tied with red string, and '腊 (là)' is the character often used to denote the curing/preserving process for these meats (e.g., 腊肉 làròu - cured meat). The red string is a visual cue associated with the preparation and storage of these meats, while the character directly relates to the curing process itself.",
+        "reasoning": "Use(RedString, ChineseCuredMeats) (for hanging/tying)\nDenote(腊, ChineseCuredMeats) (specifically the curing process)\nThus, RedString → ChineseCuredMeats and 腊 → ChineseCuredMeats",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Julbord(visible, food, metaphor, Non-English European, English)",
+        "relation": "Julbord",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Traditional Swedish Smorgasbord table.jpg",
+                "description": "Traditional Swedish Smorgasbord table",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Julbock (Yule Goat).jpg",
+                "description": "Julbock (Yule Goat) ",
+                "count": 3
+            }
+        ],
+        "explanation": "\"Julbord\". The traditional Swedish feast known as \"Julbord\" is a smorgasbord served during the Christmas season, featuring various dishes. The Julbock, or Yule Goat, is a symbol of Christmas in Sweden, often associated with holiday celebrations and festivities.",
+        "reasoning": "Represents(SmorgasbordTable, ChristmasFeast)\nSymbolizes(Julbock, ChristmasTradition)\nThus, Julbord → SmorgasbordTable and Julbock → ChristmasTradition → Julbord.",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Merienda(visible, food, metaphor, Non-English European, English)",
+        "relation": "Merienda",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Plate of assorted pastries.jpg",
+                "description": "Plate of assorted pastries (like churros, empanadas, and cookies).",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Afternoon tea set.jpg",
+                "description": "Afternoon tea set ",
+                "count": 2
+            }
+        ],
+        "explanation": " Merienda is a light meal or snack typically enjoyed in the afternoon in many Spanish-speaking cultures. The plate of assorted pastries represents the sweet treats commonly served during merienda, while the afternoon tea set signifies the social aspect and tradition of enjoying snacks and drinks together during this time.",
+        "reasoning": "Represents(PastriesPlate, AfternoonSnack)\nSignifies(TeaSet, SocialGathering)\nThus, Merienda → PastriesPlate and TeaSet → SocialGathering → Merienda.",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Biergarten culture(visible, food, relation, Non-English European, English)",
+        "relation": "Biergarten culture",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Long communal table.jpg",
+                "description": "Long communal table",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Stein of beer.jpg",
+                "description": "Stein of beer ",
+                "count": 3
+            }
+        ],
+        "explanation": "Biergartens are characterized by long communal tables where people gather to socialize and enjoy steins of beer. The communal table represents the social aspect of Biergarten culture, while the stein of beer represents the central beverage.",
+        "reasoning": "Feature(LongCommunalTable, BiergartenCulture)\nServe(SteinOfBeer, BiergartenCulture)\nThus, LongCommunalTable → BiergartenCulture and SteinOfBeer → BiergartenCulture",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Scene Contextualization",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Aperitivo hour(visible, food, metaphor, Non-English European, English)",
+        "relation": "Aperitivo hour",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A vibrant cocktail.jpg",
+                "description": "A vibrant cocktail",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "A small platter of olives and cheese.jpg",
+                "description": "A small platter of olives and cheese ",
+                "count": 2
+            }
+        ],
+        "explanation": " The aperitivo hour is a pre-dinner tradition in many Italian-speaking cultures where drinks and light snacks are enjoyed to stimulate the appetite. The vibrant cocktail represents the usual drinks served during this time, while the platter of olives and cheese symbolizes the accompanying snacks that enhance the social experience of the aperitivo hour.",
+        "reasoning": "Serve(VibrantCocktail, AperitivoHour)\nEnhance(SnacksPlatter, SocialExperience)\nThus, VibrantCocktail → AperitivoHour and SnacksPlatter → SocialExperience → AperitivoHour.",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Golden arches(visible, food, metaphor, USAEnglish, English)",
+        "relation": "Golden arches",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A stylized golden arch.jpg",
+                "description": "A stylized golden arch (like the McDonald's logo)",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "A fast-food tray with burgers and fries.jpg",
+                "description": "A fast-food tray with burgers and fries ",
+                "count": 2
+            }
+        ],
+        "explanation": "Golden arches. The golden arches are a well-known symbol of McDonald's, a globally recognized fast-food chain. The stylized golden arch represents the brand itself, while the fast-food tray filled with burgers and fries signifies the typical menu items associated with the restaurant.",
+        "reasoning": "Symbolize(GoldenArch, McDonalds)\nRepresent(MenuItems, FastFoodTray)\nThus, GoldenArch → McDonalds and FastFoodTray → MenuItems → GoldenArch.",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Hot dog cart(visible, food, metaphor, USAEnglish, English)",
+        "relation": "Hot dog cart",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A colorful hot dog cart with a large umbrella.jpg",
+                "description": "A colorful hot dog cart with a large umbrella",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "A steaming hot dog with toppings.jpg",
+                "description": "A steaming hot dog with toppings (like mustard, ketchup, and onions)",
+                "count": 2
+            }
+        ],
+        "explanation": "Hot dog cart. A hot dog cart is a common sight in urban areas, serving quick and tasty street food. The colorful cart represents the vendor's presence and the vibrant atmosphere of street food culture, while the steaming hot dog with toppings signifies the popular food item that is typically sold from the cart.",
+        "reasoning": "Presence(ColorfulCart, HotDogCart)\nSell(HotDogWithToppings, HotDogCart)\nThus, ColorfulCart → HotDogCart and HotDogWithToppings → HotDogCart.",
+        "hop_count": 2,
+        "perception": [
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Slow cooker revolution(invisible, food, relation, USAEnglish, English)",
+        "relation": "Slow cooker revolution",
+        "visibility": "invisible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Busy parent rushing.jpg",
+                "description": "Busy parent rushing",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Pot roast.jpg",
+                "description": "Pot roast",
+                "count": 2
+            }
+        ],
+        "explanation": "The slow cooker revolution is partly driven by busy parents who appreciate the convenience of slow-cooked meals like pot roast. The image of a busy parent represents the target demographic for slow cookers, while the pot roast signifies a classic dish often prepared in one.",
+        "reasoning": "Benefits(BusyParent, SlowCookerRevolution) (Slow cookers offer convenience)\nMake(SlowCooker, PotRoast)\nThus, BusyParent → SlowCookerRevolution and PotRoast → SlowCooker → SlowCookerRevolution",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Jewish delis(visible, food, metaphor, USAEnglish, English)",
+        "relation": "Jewish delis",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A classic deli counter with various cured meats and bagels displayed.jpg",
+                "description": "A classic deli counter with various cured meats and bagels displayed",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A bowl of matzo ball soup.jpg",
+                "description": "A bowl of matzo ball soup",
+                "count": 3
+            }
+        ],
+        "explanation": "Jewish delis. Jewish delis are known for their distinct offerings, often featuring items such as pastrami, corned beef, and bagels. The deli counter showcases the variety of traditional cured meats and bagels that are staples of these establishments, while the bowl of matzo ball soup represents another iconic dish commonly served, highlighting the cultural significance of comfort food in Jewish cuisine",
+        "reasoning": "Feature(CuredMeats, JewishDelis)\nServe(MatzoBallSoup, JewishDelis)\nThus, CuredMeats → JewishDelis and MatzoBallSoup → JewishDelis",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Indian hand-eaten meal(visible, food, relation, South Asia and South-East Asia, English)",
+        "relation": "Indian hand-eaten meal",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "South Asia and South-East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Basmati rice.jpg",
+                "description": "Basmati rice",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Washed hands.jpg",
+                "description": "Washed hands",
+                "count": 2
+            }
+        ],
+        "explanation": "Basmati rice is a staple in Indian cuisine, often part of meals eaten by hand, which necessitates clean, washed hands. The rice represents the food, and the washed hands represent the method of eating.",
+        "reasoning": "PartOf(BasmatiRice, IndianHandEatenMeal)\nRequiredFor(WashedHands, IndianHandEatenMeal)\nThus, BasmatiRice → IndianHandEatenMeal and WashedHands → IndianHandEatenMeal",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Berber bread(visible, food, relation, other, English)",
+        "relation": "Berber bread",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Tagine pot.jpg",
+                "description": "Tagine pot",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "Semolina flour.jpg",
+                "description": "Semolina flour",
+                "count": 1
+            }
+        ],
+        "explanation": "Berber bread is often cooked in a tagine pot and made using semolina flour. The tagine represents the traditional cooking vessel, and the semolina flour is a key ingredient.",
+        "reasoning": "Cook(TaginePot, BerberBread)\nIngredient(SemolinaFlour, BerberBread)\nThus, TaginePot → BerberBread and SemolinaFlour → BerberBread",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "Kola nut rituals(visible, food, metaphor, other, English)",
+        "relation": "Kola nut rituals",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A traditional wooden bowl filled with kola nuts.jpg",
+                "description": "A traditional wooden bowl filled with kola nuts",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A group of people gathered in a circle, engaged in a ceremonial offering.jpg",
+                "description": "A group of people gathered in a circle, engaged in a ceremonial offering",
+                "count": 2
+            }
+        ],
+        "explanation": "Kola nut rituals. Kola nuts hold significant cultural importance in various African traditions, often used in ceremonial contexts to symbolize hospitality, respect, and community. The wooden bowl filled with kola nuts represents the item itself, which is central to these rituals. The gathering of people in a circle signifies the communal aspect of the rituals, where kola nuts are offered or shared to honor guests and foster social bonds.",
+        "reasoning": "Symbolizes(KolaNuts, Hospitality)\nRepresents(WoodenBowl, KolaNuts)\nThus, KolaNuts → Hospitality and WoodenBowl → KolaNuts",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Potjiekos cooking(visible, food, metaphor, other, English)",
+        "relation": "Potjiekos cooking",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A classic three-legged cast iron pot over an open fire.jpg",
+                "description": "A classic three-legged cast iron pot over an open fire",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "A colorful array of fresh vegetables and meat ingredients arranged on a wooden table.jpg",
+                "description": "A colorful array of fresh vegetables and meat ingredients arranged on a wooden table",
+                "count": 2
+            }
+        ],
+        "explanation": "Potjiekos cooking. Potjiekos is a traditional South African dish often cooked in a cast iron pot over an open flame. The three-legged cast iron pot symbolizes the cooking method and style unique to potjiekos, while the colorful array of fresh vegetables and meat ingredients represents the essential components of this hearty communal dish, emphasizing the variety of flavors and ingredients used in the preparation.",
+        "reasoning": "CookingMethod(CastIronPot, Potjiekos)\nIngredients(VegetablesAndMeat, Potjiekos)\nThus, CastIronPot → Potjiekos and VegetablesAndMeat → Potjiekos",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Compass drawing(visible, STEM, metaphor, NA, English)",
+        "relation": "Compass drawing",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A traditional compass with a needle pointing north.jpg",
+                "description": "A traditional compass with a needle pointing north",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "A sketch of a map with various landmarks and routes.jpg",
+                "description": "A sketch of a map with various landmarks and routes",
+                "count": 2
+            }
+        ],
+        "explanation": "A compass is a tool used for navigation and orientation, and it is essential for accurately drawing maps. The traditional compass represents the tool itself, indicating direction and helping with navigation. The sketch of a map illustrates the practical application of the compass, as it is often used in conjunction with a map to plot routes and identify landmarks.",
+        "reasoning": "Use(Compass, Navigation)\nDraw(Map, Navigation)\nThus, Compass → Navigation → Map",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "Golden Ratio(visible, STEM, relation, NA, English)",
+        "relation": "Golden Ratio",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Spiral shell.jpg",
+                "description": "Spiral shell",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "1.618.jpg",
+                "description": "1.618",
+                "count": 2
+            }
+        ],
+        "explanation": "The spiral of a shell often approximates the golden ratio, which is numerically represented as 1.618. The shell visually represents a natural occurrence of the ratio, while the number gives its mathematical representation.",
+        "reasoning": "Exhibits(SpiralShell, GoldenRatio)\nEquals(1.618, GoldenRatio)\nThus, SpiralShell → GoldenRatio and 1.618 → GoldenRatio",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Mirror reflection(visible, STEM, metaphor, NA, English)",
+        "relation": "Mirror reflection",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A vintage wall mirror with intricate framing.jpg",
+                "description": "A vintage wall mirror with intricate framing",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A person deep in thought, looking at their reflection with a contemplative expression.jpg",
+                "description": "A person deep in thought, looking at their reflection with a contemplative expression",
+                "count": 3
+            }
+        ],
+        "explanation": "The vintage wall mirror represents the classic object that reflects images, emphasizing the idea of how we perceive ourselves. The person deep in thought symbolizes the introspective nature of self-reflection, illustrating the mental process of evaluating one's thoughts and feelings when faced with their own image.",
+        "reasoning": "Represents(WallMirror, Reflection)\nSymbolizes(ContemplativePerson, SelfReflection)\nThus, WallMirror → Reflection and ContemplativePerson → SelfReflection",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Pascal's triangle(visible, STEM, metaphor, NA, English)",
+        "relation": "Pascal's triangle",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A triangular arrangement of numbers.jpg",
+                "description": "A triangular arrangement of numbers (1 at the top, followed by 1, 1 on the next row, then 1, 2, 1 on the third row, and so on)",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "A set of combinatorial objects.jpg",
+                "description": "A set of combinatorial objects, like colored balls in a jar, visually representing different combinations",
+                "count": 2
+            }
+        ],
+        "explanation": "Pascal's triangle is a mathematical arrangement of numbers that illustrates the coefficients of binomial expansions and combinatorial relationships. The triangular arrangement of numbers represents the triangle itself, while the colored balls symbolize the combinations and permutations that can be derived from the triangle, demonstrating its application in combinatorics.",
+        "reasoning": "Illustrates(TriangularNumbers, PascalTriangle)\nSymbolizes(CombinatorialObjects, Combinations) and Related(Combinations,PascalTriangle)\nThus, TriangularNumbers → PascalTriangle and CombinatorialObjects → Combinations → PascalTriangle",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Prime Numbers(invisible, STEM, relation, NA, English)",
+        "relation": "Prime Numbers",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A single, unbroken chain link.jpg",
+                "description": "A single, unbroken chain link",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "The number 2.jpg",
+                "description": "The number 2",
+                "count": 2
+            }
+        ],
+        "explanation": "Prime numbers, like a single unbroken chain link, are indivisible units within their system. 2 is the smallest and only even prime number.",
+        "reasoning": "Represents(UnbrokenChainLink, PrimeNumbers) (Visually representing the indivisible nature)\nIsA(2, PrimeNumber)\nThus, UnbrokenChainLink → PrimeNumbers and 2 → PrimeNumbers",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Null set(visible, STEM, relation, NA, English)",
+        "relation": "Null set",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "An empty box.jpg",
+                "description": "An empty box",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "The symbol ∅.jpg",
+                "description": "The symbol ∅",
+                "count": 3
+            }
+        ],
+        "explanation": "A null set, also known as an empty set, contains no elements, like an empty box. It is represented by the symbol ∅.",
+        "reasoning": "Represents(EmptyBox, NullSet)\nEquals(∅, NullSet)\nThus, EmptyBox → NullSet and ∅ → NullSet",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Asymptotes(visible, STEM, relation, NA, English)",
+        "relation": "Asymptotes",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Two magnets with same poles facing each other.jpg",
+                "description": "Two magnets with same poles facing each other",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A graph.jpg",
+                "description": " A graph of y = 1/x∅",
+                "count": 3
+            }
+        ],
+        "explanation": "Like two magnets with the same poles facing each other, which never touch, an asymptote on a graph represents a value that a function approaches but never reaches. The graph of y = 1/x visually demonstrates asymptotes along the x and y axes.",
+        "reasoning": "Represents(RepellingMagnets, Asymptotes) (Illustrating the concept of approaching but never touching)\nIllustrates(GraphOf1OverX, Asymptotes)\nThus, RepellingMagnets → Asymptotes and GraphOf1OverX → Asymptotes",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Imaginary unit(visible, STEM, metaphor, NA, English)",
+        "relation": "Imaginary unit",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "The symbol 'i'.jpg",
+                "description": "The symbol \"i\"",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A 3D representation of a complex plane, highlighting the real and imaginary axes.jpg",
+                "description": "A 3D representation of a complex plane, highlighting the real and imaginary axes.",
+                "count": 1
+            }
+        ],
+        "explanation": "The imaginary unit \"i\" is defined as the square root of -1, and it forms the foundation of complex numbers. The symbol \"i\" along with a mathematical equation illustrates its role in complex number representation, while the 3D representation of the complex plane showcases how the imaginary unit allows for the visualization of complex numbers in a two-dimensional context.",
+        "reasoning": "Represents(SymbolI, ImaginaryUnit)\nDefines(SymbolI, SquareRootOfNegativeOne)\nThus, SymbolI → ImaginaryUnit and SymbolI → SquareRootOfNegativeOne",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Square roots(visible, STEM, metaphor, NA, English)",
+        "relation": "Square roots",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A mathematical symbol for square root.jpg",
+                "description": "A mathematical symbol for square root",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A visual representation of a perfect square.jpg",
+                "description": "A visual representation of a perfect square",
+                "count": 3
+            }
+        ],
+        "explanation": "The square root symbol (√) signifies the operation of finding the square root of a number, while the illustration of a perfect square visually represents the concept of squaring a number (in this case, 4) to reach the original number (16). Together, they emphasize the relationship between squaring and taking square roots.",
+        "reasoning": "Signifies(SquareRootSymbol, SquareRootOperation)\nIllustrates(PerfectSquare, SquaringOperation)\nThus, SquareRootSymbol → SquareRootOperation and PerfectSquare → SquaringOperation",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Modular arithmetic(visible, STEM, relation, NA, English)",
+        "relation": "Modular arithmetic",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A clock face.jpg",
+                "description": "A clock face",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "13 mod 12.jpg",
+                "description": "13 mod 12",
+                "count": 1
+            }
+        ],
+        "explanation": "Modular arithmetic deals with remainders after division, much like how a clock face cycles through 12 hours. \"13 mod 12\" is an example of a modular arithmetic operation, which would result in 1 (like 1 PM after 13 hours).",
+        "reasoning": "Represents(ClockFace, ModularArithmetic) (A clock uses modular arithmetic principles)\nIsA(13Mod12, ModularArithmeticOperation)\nThus, ClockFace → ModularArithmetic and 13Mod12 → ModularArithmetic",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Euclid's Elements(invisible, STEM, mutual elements, NA, English)",
+        "relation": "Euclid's Elements",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Compass and straightedge.jpg",
+                "description": "Compass and straightedge",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Dodecahedron.jpg",
+                "description": "Dodecahedron",
+                "count": 2
+            }
+        ],
+        "explanation": "Euclid's Elements. The first image represents the tools used for classical geometric constructions, which are heavily featured in Euclid's Elements. The second image, a dodecahedron, is one of the five Platonic solids, whose construction and properties are discussed in detail in Book XIII of Euclid's Elements. While the tools themselves don't explicitly mention Euclid, their association with classical geometry strongly implies it. Similarly, a dodecahedron, while a geometric shape in its own right, gains deeper significance when connected to its exploration within Euclid's foundational text.",
+        "reasoning": "ToolFor(CompassAndStraightedge, EuclideanGeometry) and Describe(Euclid's_Elements, EuclideanGeometry)\nDescribe(Euclid's_Elements, PlatonicSolids) and IsA(Dodecahedron, PlatonicSolid)\nThus, CompassAndStraightedge → EuclideanGeometry → Euclid's_Elements and Dodecahedron → PlatonicSolid → Euclid's_Elements",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Mobius Strip(visible, STEM, mutual elements, NA, English)",
+        "relation": "Mobius Strip",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Ant walking on a seemingly endless loop.jpg",
+                "description": "Ant walking on a seemingly endless loop",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "Recycling symbol.jpg",
+                "description": "Recycling symbol",
+                "count": 4
+            }
+        ],
+        "explanation": "Mobius Strip. The first image depicts an ant walking on a Mobius strip, visualized as a continuous loop. A Mobius strip has only one surface and one edge, creating the illusion of endlessness. The second image, the recycling symbol, is a variation of the Mobius strip, symbolizing the continuous cycle of material reuse and repurposing. Both images connect to the Mobius strip concept, one illustrating its topological property and the other its symbolic representation of cyclical processes.",
+        "reasoning": "WalkOn(Ant, MobiusStrip)\nRepresent(RecyclingSymbol, MobiusStrip)\nThus, Ant → MobiusStrip and RecyclingSymbol → MobiusStrip",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Bobsleigh(visible, sports, mutual elements, NA, English)",
+        "relation": "Bobsleigh",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Cool Runnings movie poster.jpg",
+                "description": "Cool Runnings movie poster",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Jamaican Flag.jpg",
+                "description": "Jamaican Flag",
+                "count": 3
+            }
+        ],
+        "explanation": "Bobsleigh. The first image, the movie poster for Cool Runnings, depicts the story of the Jamaican national bobsleigh team's debut at the 1988 Winter Olympics in Calgary, Alberta. The second image, the Jamaican flag, represents the nationality of that team. While the Jamaican flag alone doesn't suggest bobsleigh, and the movie poster could be about any aspect of Jamaican culture, together they strongly imply the story of the Jamaican bobsleigh team.",
+        "reasoning": "Depict(CoolRunningsPoster, JamaicanBobsleighTeam) and Participate(JamaicanBobsleighTeam, Bobsleigh)\nRepresent(JamaicanFlag, Jamaica) and Originate(JamaicanBobsleighTeam, Jamaica)\nThus, CoolRunningsPoster → JamaicanBobsleighTeam → Bobsleigh and JamaicanFlag → Jamaica → JamaicanBobsleighTeam → Bobsleigh",
+        "hop_count": 5,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Phoenix(visible, myth, mutual elements, Non-English European, English)",
+        "relation": "Phoenix",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Flames engulfing a pyre.jpg",
+                "description": "Flames engulfing a pyre",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "A bird rising from ashes.jpg",
+                "description": "A bird rising from ashes",
+                "count": 3
+            }
+        ],
+        "explanation": "Phoenix. The first image depicts a funeral pyre engulfed in flames, representing the end of the Phoenix's life cycle. The second image shows a bird rising from ashes, symbolizing the Phoenix's rebirth from the fire. Together, these images capture the cyclical nature of the Phoenix's existence – death and rebirth.",
+        "reasoning": "SymbolOf(PyreEngulfedInFlames, EndOfPhoenixLifeCycle) and PartOf(EndOfPhoenixLifeCycle, PhoenixMyth)\nRepresent(BirdRisingFromAshes, PhoenixRebirth) and PartOf(PhoenixRebirth, PhoenixMyth)\nThus, PyreEngulfedInFlames → EndOfPhoenixLifeCycle → PhoenixMyth and BirdRisingFromAshes → PhoenixRebirth → PhoenixMyth",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "The Classic of Mountains and Seas(visible, myth, mutual elements, East Asia, English)",
+        "relation": "The Classic of Mountains and Seas",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Map of ancient China with fantastical creatures.jpg",
+                "description": "Map of ancient China with fantastical creatures",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "A person riding on a giant Kun Peng bird.jpg",
+                "description": "A person riding on a giant Kun Peng bird",
+                "count": 2
+            }
+        ],
+        "explanation": "The Classic of Mountains and Seas (Shan Hai Jing). The first image depicts a map of ancient China overlaid with fantastical creatures, referencing the bestiary and geographical descriptions found within the Shan Hai Jing. The second image shows someone riding the giant Kun Peng bird, a specific creature prominently featured in the book. Both images draw upon elements central to the Shan Hai Jing, highlighting its blend of geography and mythology.",
+        "reasoning": "Describe(ShanHaiJing, FantasticalCreaturesAndGeography) and Depict(MapWithFantasticalCreatures, FantasticalCreaturesAndGeography)\nFeature(ShanHaiJing, KunPeng) and Ride(Person, KunPeng)\nThus, MapWithFantasticalCreatures → FantasticalCreaturesAndGeography → ShanHaiJing and Person → KunPeng → ShanHaiJing",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Sun Wukong(visible, myth, metaphor, East Asia, English)",
+        "relation": "Sun Wukong",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "metaphor",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Monkey.jpg",
+                "description": "Monkey",
+                "count": 4
+            },
+            {
+                "img_id": "2",
+                "filename": "Golden cudgel.jpg",
+                "description": "Golden cudgel",
+                "count": 2
+            }
+        ],
+        "explanation": "Sun Wukong. Sun Wukong is a monkey character, famous for wielding a magical golden cudgel",
+        "reasoning": "Monkey ∧ GoldenCudgel → Sun Wukong",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Windmill(visible, stuff, relation, Non-English European, English)",
+        "relation": "Windmill",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Netherlands.jpg",
+                "description": "Netherlands",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Giant.jpg",
+                "description": "Giant",
+                "count": 2
+            }
+        ],
+        "explanation": " The Netherlands is famous for its windmills, and windmills were perceived as giants by Don Quixote.",
+        "reasoning": "LocatedIn(Windmill, Netherlands)\nMistakeFor(Windmill, Giant)\nThus, Netherlands → Windmill → Giant and Giant → Windmill → Netherlands",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Hollywood(visible, stuff, mutual elements, USAEnglish, English)",
+        "relation": "Hollywood",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Walk of Fame star.jpg",
+                "description": "Walk of Fame star",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Movie Clapperboard.jpg",
+                "description": "Movie Clapperboard",
+                "count": 2
+            }
+        ],
+        "explanation": "The Walk of Fame, located in Hollywood, California, honors achievements in the entertainment industry. The clapperboard is a universal symbol of filmmaking, a core industry within Hollywood. Both images, while independently representing aspects of entertainment, together strongly evoke the specific place and industry: Hollywood.",
+        "reasoning": "Locate(WalkOfFame, Hollywood)\nUse(MovieClapperboard, Filmmaking) and Center(Hollywood, Filmmaking)\nThus, WalkOfFame → Hollywood and MovieClapperboard → Filmmaking → Hollywood",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Blue Jeans(visible, stuff, mutual elements, USAEnglish, English)",
+        "relation": "Blue Jeans",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Cotton plant.jpg",
+                "description": "Cotton plant",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Levi Strauss.jpg",
+                "description": "Levi Strauss",
+                "count": 2
+            }
+        ],
+        "explanation": "Cotton is the primary material used to make denim, the fabric of blue jeans. Levi Strauss & Co. is a world-renowned company synonymous with the creation and popularization of blue jeans. While cotton could be used for many things and Levi Strauss made other clothing, the combination points directly to blue jeans.",
+        "reasoning": "Material(Cotton, Denim) and Make(Denim, BlueJeans)\nProduce(LeviStrauss, BlueJeans)\nThus, Cotton → Denim → BlueJeans and LeviStrauss → BlueJeans",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "The White House(visible, stuff, metaphor, USAEnglish, English)",
+        "relation": "The White House",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "metaphor",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Presidential Seal.jpg",
+                "description": "Presidential Seal",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Washington D.C. skyline.jpg",
+                "description": "Washington D.C. skyline",
+                "count": 2
+            }
+        ],
+        "explanation": "The Presidential Seal is a symbol of the U.S. presidency, closely associated with the White House as the president's residence and office. The Washington D.C. skyline prominently features the White House, making it a recognizable part of the city's imagery.",
+        "reasoning": "PresidentialSeal ∧ WashingtonDCSkyline → The White House",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "The Sahara Desert(visible, stuff, metaphor, other, English)",
+        "relation": "The Sahara Desert",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Tuareg nomad.jpg",
+                "description": "Tuareg nomad",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Erg Chebbi.jpg",
+                "description": "Erg Chebbi (a specific, large dune formation in the Sahara)",
+                "count": 2
+            }
+        ],
+        "explanation": "The Tuareg people are a nomadic group specifically associated with the Sahara Desert. Erg Chebbi is a prominent and well-known geographical feature within the Sahara.",
+        "reasoning": "TuaregNomad ∧ ErgChebbi → SaharaDesert",
+        "hop_count": 1,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "The Nile River(visible, stuff, relation, other, English)",
+        "relation": "The Nile River",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Crocodile.jpg",
+                "description": "Crocodile",
+                "count": 1
+            },
+            {
+                "img_id": "2",
+                "filename": "Pyramid.jpg",
+                "description": "Pyramid",
+                "count": 2
+            }
+        ],
+        "explanation": "Crocodiles live in the Nile River, and pyramids are located near the Nile River in Egypt.",
+        "reasoning": "Habitat(Crocodile, NileRiver)\nLocatedNear(Pyramid, NileRiver)\nThus, Crocodile → NileRiver → Pyramid and Pyramid → NileRiver → Crocodile",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Wildlife(visible, stuff, mutual elements, NA, English)",
+        "relation": "Wildlife",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Binoculars.jpg",
+                "description": "Binoculars",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Animal footprints in mud.jpg",
+                "description": "Animal footprints in mud",
+                "count": 2
+            }
+        ],
+        "explanation": "Binoculars are a tool frequently used for observing wildlife. Animal footprints in mud are a sign of wildlife presence. While binoculars can be used for other purposes and footprints could be of domesticated animals, the combination of the two images strongly suggests the observation of wildlife in their natural habitat.",
+        "reasoning": "Use(Binoculars, ObserveWildlife)\nIndicate(AnimalFootprints, Wildlife)\nThus, Binoculars → ObserveWildlife → Wildlife and AnimalFootprints → Wildlife",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Confucius(visible, stuff, relation, East Asia, English)",
+        "relation": "Confucius",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Analects.jpg",
+                "description": "Analects",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Scholar.jpg",
+                "description": "Scholar",
+                "count": 2
+            }
+        ],
+        "explanation": "The Analects is a collection of sayings and ideas attributed to Confucius, and scholars study and interpret the Analects and Confucian teachings.",
+        "reasoning": "Author(Confucius, Analects)\nStudies(Scholar, Analects)\nThus, Analects → Confucius → Scholar and Scholar → Analects → Confucius",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Big Ben(visible, stuff, mutual elements, USAEnglish, English)",
+        "relation": "Big Ben",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Clock face with Roman numerals.jpg",
+                "description": "Clock face with Roman numerals",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Houses of Parliament.jpg",
+                "description": "Houses of Parliament",
+                "count": 3
+            }
+        ],
+        "explanation": "Big Ben, formally known as the Elizabeth Tower, is famous for its large clock face with Roman numerals. The Elizabeth Tower is part of the Houses of Parliament in London. While Roman numeral clocks exist elsewhere and the Houses of Parliament house other functions, the combination specifically points to Big Ben.",
+        "reasoning": "Feature(BigBen, ClockFaceRomanNumerals)\nPartOf(BigBen, HousesOfParliament)\nThus, ClockFaceRomanNumerals → BigBen and HousesOfParliament → BigBen",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "The Eiffel Tower(visible, stuff, metaphor, Non-English European, English)",
+        "relation": "The Eiffel Tower",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Gustave Eiffel.jpg",
+                "description": "Gustave Eiffel",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Wrought iron lattice.jpg",
+                "description": "Wrought iron lattice",
+                "count": 3
+            }
+        ],
+        "explanation": "Gustave Eiffel is the engineer who designed and built the Eiffel Tower. The Eiffel Tower is famously constructed from a wrought iron lattice structure.",
+        "reasoning": "GustaveEiffel ∧ WroughtIronLattice → EiffelTower",
+        "hop_count": 1,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "На волка шапка горит(visible, art, relation, NA, Russian)",
+        "relation": "На волка шапка горит",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Wolf.jpg",
+                "description": "Wolf",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Hat.jpg",
+                "description": "Hat",
+                "count": 3
+            }
+        ],
+        "explanation": "(Na volka shapka gorit) is a Russian proverb that translates to \"The wolf's hat is on fire.\" This proverb is used to indicate someone who is clearly guilty or has been caught red-handed.",
+        "reasoning": "Proverb(Guilt, \"На волка шапка горит\")\nContains(\"На волка шапка горит\", Wolf)\nContains(\"На волка шапка горит\", Hat)\nThus, Wolf → \"На волка шапка горит\" → Guilt → \"На волка шапка горит\" → Hat and Hat → \"На волка шапка горит\" → Guilt → \"На волка шапка горит\" → Wolf",
+        "hop_count": 8,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Медведь на ухо наступил(visible, art, relation, NA, Russian)",
+        "relation": "Медведь на ухо наступил",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bear.jpg",
+                "description": "Bear",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Ear.jpg",
+                "description": "Ear",
+                "count": 1
+            }
+        ],
+        "explanation": " (Medved' na ukho nastupil) is a Russian idiom meaning \"A bear stepped on my ear.\" This idiom is used to humorously describe someone who lacks musical talent or has a poor sense of rhythm.",
+        "reasoning": "Idiom(LackOfMusicalTalent, \"Медведь на ухо наступил\")\nContains(\"Медведь на ухо наступил\", Bear)\nContains(\"Медведь на ухо наступил\", Ear)\nThus, Bear → \"Медведь на ухо наступил\" → LackOfMusicalTalent → \"Медведь на ухо наступил\" → Ear and Ear → \"Медведь на ухо наступил\" → LackOfMusicalTalent → \"Медведь на ухо наступил\" → Bear",
+        "hop_count": 8,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "пускать пыль в глаза(visible, art, relation, NA, Russian)",
+        "relation": "пускать пыль в глаза",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Cloud of dust.jpg",
+                "description": "Cloud of dust",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Pair of eyes.jpg",
+                "description": "Pair of eyes",
+                "count": 2
+            }
+        ],
+        "explanation": " Dust cloud represents the act of obscuring vision, and eyes represent the target of this deception. Together, they illustrate the idiom's meaning of creating a misleading impression",
+        "reasoning": "DustCloud ∧ Eyes → пускать пыль в глаза",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Mount Olympus(visible, myth, relation, Non-English European, English)",
+        "relation": "Mount Olympus",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "snow-capped mountain.jpg",
+                "description": "snow-capped mountain",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Greek mythology book.jpg",
+                "description": "Greek mythology book",
+                "count": 2
+            }
+        ],
+        "explanation": "Mount Olympus is known for its towering height and snow-capped peaks, which symbolize its divine status in Greek mythology. The snow-covered mountain represents the physical Mount Olympus, while the Greek mythology book signifies the stories and legends that revolve around the gods who reside there, including Zeus and Hera.",
+        "reasoning": "IsSymbolOf(MountOlympus, SnowCappedMountain)\nContains(GreekMythologyBook, StoriesOfGods)\nThus, SnowCappedMountain → MountOlympus and GreekMythologyBook → StoriesOfGods → MountOlympus",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Gumiho(visible, myth, relation, East Asia, English)",
+        "relation": "Gumiho",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "full moon.jpg",
+                "description": "full moon",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Korean folklore book.jpg",
+                "description": "Korean folklore book",
+                "count": 2
+            }
+        ],
+        "explanation": "In Korean folklore, the Gumiho is often associated with the full moon, which symbolizes transformation and mystery. The Korean folklore book contains various tales, including those about the Gumiho, illustrating its significance in Korean mythology. The full moon signifies the mythological aspect of Gumiho, while the folklore book provides the cultural narratives surrounding this creature.",
+        "reasoning": "Symbolizes(Gumiho, FullMoon)\nContains(KoreanFolkloreBook, TalesOfGumiho)\nThus, FullMoon → Gumiho and KoreanFolkloreBook → TalesOfGumiho → Gumiho",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Chupacabra(visible, myth, relation, USAEnglish, English)",
+        "relation": "Chupacabra",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "blood-sucking creature.jpg",
+                "description": "blood-sucking creature",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "Puerto Rican landscape.jpg",
+                "description": "Puerto Rican landscape",
+                "count": 3
+            }
+        ],
+        "explanation": "The Chupacabra is a legendary creature known for its blood-sucking behavior, particularly targeting livestock. This creature is often associated with the rural landscapes of Puerto Rico, where many sightings have been reported. The blood-sucking creature represents the myth of Chupacabra, while the Puerto Rican landscape symbolizes the region that is central to its folklore.",
+        "reasoning": "ExhibitsBehavior(Chupacabra, BloodSuckingCreature)\nOccursIn(Chupacabra, PuertoRicanLandscape)\nThus, BloodSuckingCreature → Chupacabra and PuertoRicanLandscape → Chupacabra",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Mount Fuji(visible, stuff, relation, East Asia, English)",
+        "relation": "Mount Fuji",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "hikers on a mountain trail.jpg",
+                "description": "hikers on a mountain trail",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "ukiyo-e print.jpg",
+                "description": "ukiyo-e print (Japanese woodblock print)",
+                "count": 1
+            }
+        ],
+        "explanation": "Mount Fuji is a popular destination for hikers and has been a subject of many ukiyo-e prints, which capture its majestic beauty and cultural significance in Japan. The hikers on the mountain trail represent the physical activity and tourism associated with Mount Fuji, while the ukiyo-e print symbolizes the artistic and cultural heritage that celebrates the mountain.",
+        "reasoning": "AttractsTourists(MountFuji, HikersOnTrail)\nRepresents(MountFuji, UkiyoEPrint)\nThus, HikersOnTrail → MountFuji and UkiyoEPrint → MountFuji",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Утро вечера мудренее(invisible, art, metaphor, Non-English European, Russian)",
+        "relation": "Утро вечера мудренее",
+        "visibility": "invisible",
+        "domain": "art",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "sunrise over a calm landscape.jpg",
+                "description": "sunrise over a calm landscape",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "a wise old owl.jpg",
+                "description": "a wise old owl",
+                "count": 2
+            }
+        ],
+        "explanation": "The proverb 'Утро вечера мудренее' suggests that morning brings clarity and wisdom. The sunrise represents a new day, symbolizing fresh perspectives and opportunities, while the wise old owl is often associated with wisdom and knowledge, conveying that the morning often offers better insight than the evening's reflections",
+        "reasoning": "Symbolizes(Morning, Clarity) ∧ Symbolizes(Owl, Wisdom)\nThus, Morning → Clarity ∧ Owl → Wisdom",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Любовь зла, полюбишь и козла(invisible, art, relation, Non-English European, Russian)",
+        "relation": "Любовь зла, полюбишь и козла",
+        "visibility": "invisible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a goat in a romantic setting.jpg",
+                "description": "a goat in a romantic setting (e.g., flowers or hearts around it)",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "a heart surrounded by thorns.jpg",
+                "description": "a heart surrounded by thorns",
+                "count": 3
+            }
+        ],
+        "explanation": "The proverb 'Любовь зла, полюбишь и козла' conveys the idea that love can lead one to unexpected or undesirable choices. The goat symbolizes something unorthodox or unexpected in love, while the heart surrounded by thorns represents the pain and complications often associated with love itself.",
+        "reasoning": "Symbolizes(Got, UnconventionalLove)\nSymbolizes(Heart, PainInLove)\nThus, Goat → UnconventionalLove and Heart → PainInLove → Love",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Как аукнется, так и откликнется(invisible, art, mutual elements, Non-English European, Russian)",
+        "relation": "Как аукнется, так и откликнется",
+        "visibility": "invisible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a person shouting into a canyon.jpg",
+                "description": "a person shouting into a canyon",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "an echoing sound wave.jpg",
+                "description": "an echoing sound wave",
+                "count": 2
+            }
+        ],
+        "explanation": "The proverb 'Как аукнется, так и откликнется' illustrates the concept of cause and effect. The person shouting into the canyon represents the initial action, while the echoing sound wave symbolizes the response that one receives from their actions, emphasizing that what you send out into the world will come back to you.",
+        "reasoning": "Action(Shouting, Canyon)\nResponse(Echo, SoundWave)\nThus, Shouting → Canyon and Echo → SoundWave → Response",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Никогда не поздно начать заново(visible, art, mutual elements, Non-English European, Russian)",
+        "relation": "Никогда не поздно начать заново",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a phoenix rising from the ashes.jpg",
+                "description": "a phoenix rising from the ashes",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "an open book with a blank page.jpg",
+                "description": "an open book with a blank page",
+                "count": 2
+            }
+        ],
+        "explanation": "The proverb 'Никогда не поздно начать заново' signifies that it is always possible to start anew. The phoenix represents rebirth and the idea of starting over after a setback, while the open book with a blank page symbolizes fresh beginnings and the opportunity to write a new story in life.",
+        "reasoning": "Symbolizes(Phoenix, Rebirth)\nRepresents(Book, NewBeginnings)\nThus, Phoenix → Rebirth and Book → NewBeginnings → StartOver",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Быть человеком — значит быть свободным(visible, art, relation, Non-English European, Russian)",
+        "relation": "Быть человеком — значит быть свободным",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a vast open field under a clear blue sky.jpg",
+                "description": "a vast open field under a clear blue sky",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "a key unlocking a door.jpg",
+                "description": "a key unlocking a door",
+                "count": 2
+            }
+        ],
+        "explanation": "The phrase 'Быть человеком — значит быть свободным' signifies that being human entails embracing freedom. The open field symbolizes limitless possibilities and the essence of freedom, while the key unlocking a door represents the means to access one's potential and opportunities, reinforcing the idea of liberation as a fundamental aspect of humanity.",
+        "reasoning": "Symbolizes(Field, LimitlessFreedom)\nRepresents(Key, AccessToOpportunities)\nThus, Field → LimitlessFreedom and Key → AccessToOpportunities → BeingHuman",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Баран(visible, art, mutual elements, Non-English European, Russian)",
+        "relation": "Баран",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a sheep wearing glasses and reading a book.jpg",
+                "description": "a sheep wearing glasses and reading a book",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "a person slipping on a banana peel.jpg",
+                "description": "a person slipping on a banana peel",
+                "count": 3
+            }
+        ],
+        "explanation": "The word 'баран' can refer to both a 'ram' and colloquially imply foolishness. The first image of a sheep reading represents an unexpected or humorous idea of a 'smart' sheep, while the second image depicts a classic comedic trope of someone acting foolishly, creating a pun that connects the idea of a ram and foolish behavior.",
+        "reasoning": "Represents(SheepWithGlasses, UnexpectedIntelligence)\nSymbolizes(PersonOnBananaPeel, FoolishAction)\nThus, SheepWithGlasses → UnexpectedIntelligence and PersonOnBananaPeel → FoolishAction → Баран",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "В жизни не бывает случайностей, все предопределено(visible, art, mutual elements, Non-English European, Russian)",
+        "relation": "В жизни не бывает случайностей, все предопределено",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a labyrinth with a single path leading to the exit.jpg",
+                "description": "a labyrinth with a single path leading to the exit",
+                "count": 2
+            },
+            {
+                "img_id": "2",
+                "filename": "a spiral galaxy with a clear center point.jpg",
+                "description": "a spiral galaxy with a clear center point",
+                "count": 3
+            }
+        ],
+        "explanation": "The phrase 'В жизни не бывает случайностей, все предопределено' conveys the idea that life's events follow a predetermined path. The labyrinth represents the complex journey of life, where each twist and turn leads to a specific outcome, while the spiral galaxy symbolizes the vastness of the universe, where all stars and paths are oriented towards a central point, suggesting an inherent order and destiny within chaos.",
+        "reasoning": "Symbolizes(Labyrinth, JourneyOfLife)\nRepresents(Galaxy, UniversalOrder)\nThus, Labyrinth → JourneyOfLife and Galaxy → UniversalOrder → Predetermination",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "انگور کھٹے ہیں(visible, art, relation, Arabic-Islamic, Urdu)",
+        "relation": "انگور کھٹے ہیں",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a bunch of green grapes.jpg",
+                "description": "a bunch of green grapes",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "a fox looking frustrated while trying to reach grapes on a high vine.jpg",
+                "description": "a fox looking frustrated while trying to reach grapes on a high vine",
+                "count": 2
+            }
+        ],
+        "explanation": "The phrase 'sour grapes' comes from Aesop's fable where a fox, unable to reach the grapes, claims they are sour. The first image of green grapes reflects the unattainable goal, while the second image of the fox symbolizes the act of belittling what one cannot have.",
+        "reasoning": "Represents(Grapes, SourGrapes)\nAttempts(FrustratedFox, Grapes)\nThus, Grapes → SourGrapes and FrustratedFox → Grapes → SourGrapes",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "پانی میں رہ کر مگرسچائی کو نہیں بھولنا(visible, art, relation, Arabic-Islamic, Urdu)",
+        "relation": "پانی میں رہ کر مگرسچائی کو نہیں بھولنا",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a fish swimming in clear water.jpg",
+                "description": "a fish swimming in clear water",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "a compass with a glowing heart in the center.jpg",
+                "description": "a compass with a glowing heart in the center",
+                "count": 2
+            }
+        ],
+        "explanation": "The fish represents the idea of navigating life (water) while maintaining one's integrity and truth (the compass with a heart symbolizes moral direction). The first image of the fish signifies being immersed in one's environment, while the second image of the compass illustrates guidance and remaining true to one's values amidst external influences.",
+        "reasoning": "Navigates(Fish, Water)\nGuides(Compass, Integrity)\nThus, Fish → Water → StayingTrue and Compass → Integrity → StayingTrue",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "چڑیا کے گھر میں نہ بیٹھو(visible, art, mutual elements, Arabic-Islamic, Urdu)",
+        "relation": "چڑیا کے گھر میں نہ بیٹھو",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a bird's nest perched on a tree branch.jpg",
+                "description": "a bird's nest perched on a tree branch",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "a person standing outside a fenced area looking hesitant.jpg",
+                "description": "a person standing outside a fenced area looking hesitant",
+                "count": 1
+            }
+        ],
+        "explanation": "The phrase 'Don't sit in a bird's nest' suggests the importance of not intruding into someone else's domain. The bird's nest symbolizes a private space that belongs to the bird, while the hesitant person outside the fenced area represents the need to honor boundaries and not overstep into someone else's territory.",
+        "reasoning": "Contains(Nest, PersonalSpace)\nHesitates(Person, Boundary)\nThus, Nest → PersonalSpace and Person → Boundary → RespectingPersonalSpace",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Scene Contextualization",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "جو بوؤ گے، وہی کاٹو گ(visible, art, mutual elements, Arabic-Islamic, Urdu)",
+        "relation": "جو بوؤ گے، وہی کاٹو گ",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a farmer planting seeds in a field.jpg",
+                "description": "a farmer planting seeds in a field",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "a person holding a basket full of weeds.jpg",
+                "description": "a person holding a basket full of weeds",
+                "count": 2
+            }
+        ],
+        "explanation": "The phrase 'You reap what you sow' signifies that the actions you take (planting seeds) will determine the results you encounter (in this case, weeds represent negative outcomes from poor choices). The first image of the farmer represents the initial effort and decisions made, while the second image of the basket filled with weeds symbolizes the consequences of neglecting to sow positively or making bad choices.",
+        "reasoning": "Initiates(PlantingSeeds, Farmer)\nCollects(Weeds, Person)\nThus, PlantingSeeds → Farmer and Person → Weeds → YouReapWhatYouSow",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "خود کو پہچانو(visible, art, relation, Arabic-Islamic, Urdu)",
+        "relation": "خود کو پہچانو",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a mirror reflecting a person's face.jpg",
+                "description": "a mirror reflecting a person's face",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "a person meditating in a serene environment.jpg",
+                "description": "a person meditating in a serene environment",
+                "count": 2
+            }
+        ],
+        "explanation": "The phrase 'Know thyself' emphasizes the importance of self-reflection (the mirror) and introspection (the person meditating) to understand one's true essence. The first image of the mirror symbolizes the act of looking within, while the second image represents the deeper understanding that comes from meditation and self-awareness.",
+        "reasoning": "Reflects(SelfRecognition, Mirror)\nContemplates(Introspection, Person)\nThus, Mirror → SelfRecognition and Person → Introspection → KnowThyself",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے(visible, art, mutual elements, Arabic-Islamic, Urdu)",
+        "relation": "ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a cloud-filled sky with a single shooting star.jpg",
+                "description": "a cloud-filled sky with a single shooting star",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "an open book with blank pages.jpg",
+                "description": "an open book with blank pages",
+                "count": 1
+            }
+        ],
+        "explanation": "The phrase 'Thousands of desires, so intense that each desire feels like it could take one's breath away' conveys the idea of yearning and unfulfilled wishes (the shooting star) paired with the emptiness of unrealized dreams (the blank pages of the book). The first image symbolizes fleeting desires that shine brightly yet are difficult to grasp, while the second image represents the potential of those desires that remain unwritten or unfulfilled.",
+        "reasoning": "Represents(Desires, ShootingStar)\nSymbolizes(UnwrittenDreams, BlankPages)\nThus, ShootingStar → Desires and BlankPages → UnwrittenDreams → UnfulfilledDesires",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "یہ نہ تھی ہماری قسمت کہ وصالِ تو ہو(visible, art, mutual elements, Arabic-Islamic, Urdu)",
+        "relation": "یہ نہ تھی ہماری قسمت کہ وصالِ تو ہو",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a distant sunset over a serene ocean.jpg",
+                "description": "a distant sunset over a serene ocean",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "a locked diary on a table.jpg",
+                "description": "a locked diary on a table",
+                "count": 2
+            }
+        ],
+        "explanation": "The phrase 'It was not in our fate to be together' signifies the sorrow of unattainable love, represented by the beautiful yet unreachable sunset, and the locked diary symbolizes thoughts and feelings that remain unexpressed or inaccessible. The first image of the sunset illustrates a longing for something beautiful yet unattainable, while the second image of the locked diary represents the secrets and emotions that cannot be shared or realized.",
+        "reasoning": "Represents(Longing, Sunset)\nContains(Secrets, LockedDiary)\nThus, Sunset → Longing and LockedDiary → Secrets → UnattainableLove",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Zeus(visible, myth, mutual elements, Non-English European, English)",
+        "relation": "Zeus",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Lightning bolt striking a mountain top.jpg",
+                "description": "Lightning bolt striking a mountain top",
+                "count": 3
+            },
+            {
+                "img_id": "2",
+                "filename": "Eagle perched atop a throne.jpg",
+                "description": "Eagle perched atop a throne",
+                "count": 2
+            }
+        ],
+        "explanation": "The first image depicts a lightning bolt, a well-known symbol of Zeus, the king of the gods, and his power. The second image shows an eagle perched on a throne. The eagle is a sacred animal associated with Zeus, often depicted as his messenger or companion, and the throne symbolizes his rule as king of the gods. Together, these images evoke the power and regal status of Zeus.",
+        "reasoning": "SymbolOf(LightningBolt, ZeusPower) and Attribute(ZeusPower, Zeus)\nAssociateWith(Eagle, Zeus) and SymbolOf(Throne, Kingship) and Attribute(Kingship, Zeus)\nThus, LightningBolt → ZeusPower → Zeus and Eagle → Zeus and Throne → Kingship → Zeus",
+        "hop_count": 5,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    }
+]
