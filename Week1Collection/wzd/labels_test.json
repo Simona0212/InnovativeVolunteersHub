@@ -44,8 +44,8 @@
             }
         ],
         "explanation": "'Perseverance'. The first image of a boulder rolling symbolizes the idea that even a rock, which seems immovable, will eventually find its place if it keeps moving. The second image of a person planting a seed represents the act of nurturing and waiting for growth, reflecting the commitment and effort needed over time. Together, they convey the message that perseverance leads to eventual success, whether in nature or personal endeavors.",
-        "reasoning": "Motion(Boulder, Hill) and FindPlace(Boulder) → Perseverance\nAct(PlantSeed, Ground) and Nurture(Growth) → Perseverance\nThus, Boulder → Perseverance and PlantSeed → Perseverance",
-        "hop_count": 4
+        "reasoning": "Symbolizes(Movement, Perseverance)\nSymbolizes(Planting, Perseverance)\nThus, Movement → Perseverance and Planting → Perseverance",
+        "hop_count": 2
     },
     {
         "foldername": "서두르면 탈 난다(invisible, time, mutual elements, East Asia, Korean)",
@@ -116,8 +116,8 @@
             }
         ],
         "explanation": "'Wisdom with Age'. The first image of a person reading a book suggests that knowledge and understanding come with time and experience. The second image of a person looking at themselves in a mirror reflects self-reflection and introspection, indicating that wisdom is gained through self-awareness and personal growth. Together, they convey the idea that insight and enlightenment are acquired over time.",
-        "reasoning": "Knowledge(Person, Book) and Understanding(Person, Book) → Wisdom\nReflect(SelfAwareness, Person) and Indicate(Wisdom, SelfAwareness)\nThus, Person ∧ Book → Wisdom and Person ∧ Mirror → Wisdom",
-        "hop_count": 3
+        "reasoning": "Symbolize(Reading, WisdomWithAge)\nReflects(SelfReflection, WisdomWithAge)\nThus, Reading → WisdomWithAge and SelfReflection → WisdomWithsAge",
+        "hop_count": 2
     },
     {
         "foldername": "歳月人を待たず(invisible, time, mutual elements, East Asia, Japanese)",
@@ -2348,8 +2348,8 @@
             }
         ],
         "explanation": "The expanding universe illustrates the aftermath of the Big Bang, where galaxies continue to move away from each other. The fireworks explosion symbolizes the initial rapid expansion and release of energy that characterizes the event.",
-        "reasoning": "ExpandingUniverse → AftermathOfBigBang\nFireworksExplosion → InitialBurstOfEnergy\nThus, ExpandingUniverse → BigBang and FireworksExplosion → BigBang",
-        "hop_count": 4
+        "reasoning": "Illustrate(ExpandingUniverse, BigBangTheory)\nSymbolize(FireworksExplosion, BigBangTheory)\nThus, ExpandingUniverse → BigBangTheory and FireworksExplosion → BigBangTheory",
+        "hop_count": 2
     },
     {
         "foldername": "CRISPR technology(invisible, STEM, metaphor, NA, English)",
