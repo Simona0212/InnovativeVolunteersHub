@@ -13,9 +13,7 @@ MODEL_list = [
     "yi-vision",
     "qwen-vl-max-0809",
     "qwen-vl-plus-0809",
-    "chatglm-4v",
-    "yi-version",
-    "internVL",
+    "internvl",
     "internlm-xcomposer2d5-7b",
     "VILA1.5-40b",
 ]
@@ -100,7 +98,7 @@ if __name__ == "__main__":
         # print("\nNow processing: " + name)
         for MODEL in MODEL_list:
             # print("model: " + MODEL)
-            log_to_file("---model: " + MODEL)
+            log_to_file("\n---model: " + MODEL)
             single_path = "./Week1Collection/" + name + "/"
             multi_path = "./Multi_Images/" + name + "/"
 
