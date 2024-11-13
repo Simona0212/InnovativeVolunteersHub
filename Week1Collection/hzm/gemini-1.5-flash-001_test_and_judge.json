@@ -94,7 +94,7 @@
         "MLLM_answer": "- First image: A black and white portrait of a man.\n- Second image: Two cubes, one green and one yellow.\n- Relation: No relation.\n- Explanation: The first image is a photograph of a person, while the second image is a simple geometric illustration. The two images do not share any obvious connections or themes. They appear to be completely unrelated. \n",
         "judge_answer": {
             "score_4o": "1",
-            "score_reason": "The MLLM fails to establish a relationship, showing uncertainty with 'No relation,' missing the clever connection to the number 1729 and Ramanujan."
+            "score_reason": "The MLLM expresses uncertainty and indicates there is no relation between the images."
         }
     },
     "23(invisible, number, mutual elements, NA, English)": {
@@ -122,7 +122,7 @@
         "MLLM_answer": "- First image: A book cover with Chinese characters.\n- Second image: A circle with the number 72 in white on a black background.\n- Relation:  Unrelated.\n- Explanation: The first image is of a book with a Chinese title and a drawing of an intricate table on the cover. The second image is a simple black circle with the number 72 written in white in the center. There is no connection between these images. They are entirely unrelated. \n",
         "judge_answer": {
             "score_4o": "1",
-            "score_reason": "The MLLM claims the images are unrelated, showing uncertainty and missing the significant cultural reference to Confucius and his 72 disciples."
+            "score_reason": "The MLLM expresses uncertainty and indicates the images are unrelated."
         }
     },
     "Silk Road(invisible, history, mutual elements, East Asia, English)": {
@@ -282,8 +282,8 @@
     "Pi Day(invisible, time, metaphor, NA, English)": {
         "MLLM_answer": "- First image: A clock face with hands pointing to 1:55.\n- Second image: A pie chart divided into four colored segments, with a hand reaching to take out one segment.\n- Relation: Time management\n- Explanation: Both images depict concepts related to managing time. The clock represents the continuous flow of time, while the pie chart symbolizes the division of time into segments for different tasks or activities. The action of taking out a segment of the pie chart implies allocating time for a specific task or prioritizing certain activities. The images suggest that effectively managing time involves understanding its limited nature and strategically allocating it to various endeavors. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM output appears to confuse the symbolic representations in the images, incorrectly tying them to 'time management' instead of 'Pi Day,' which involves a specific date and mathematical concept."
+            "score_4o": "2",
+            "score_reason": "The MLLM's response about 'time management' is a broad interpretation and fails to capture the specific relationship centered around 'Pi Day.'"
         }
     },
     "Spring(invisible, music, mutual elements, Non-English European, English)": {
@@ -317,36 +317,36 @@
     "666(invisible, number, mutual elements, NA, English)": {
         "MLLM_answer": "- First image: Beast from Disney's Beauty and the Beast, looking slightly nervous.\n- Second image: A smiley face emoji wearing sunglasses with 666 above it.\n- Relation:  Humor\n- Explanation: The images share a humorous connection in the way they use their expressions and appearances to convey contrasting emotions. The Beast's expression suggests a sense of nervousness or apprehension, while the emoji's  sunglasses, thumbs-up gesture, and number 666 suggest a playful and ironic coolness.  The contrast between these emotions adds a humorous layer to the juxtaposition of these images. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM fails to connect the 'Beast' and the number '666' to their Biblical association, leading to a significant factual inaccuracy regarding humor instead of their thematic linkage in the standard explanation."
+            "score_4o": "2",
+            "score_reason": "The explanation about humor does not align with the intended relation of '666' and 'Number of the Beast.'"
         }
     },
     "137(invisible, number, mutual elements, NA, English)": {
         "MLLM_answer": "- First image: A mathematical equation, \"alpha = 1/(4*pi*epsilon naught) e^2/hbar*c\", known as the fine-structure constant\n- Second image: A black and white photo of a man with glasses, possibly a scientist\n- Relation: Physicist and his work\n- Explanation: The first image shows a fundamental constant in physics, the fine-structure constant, which governs the strength of electromagnetic interactions. The second image shows a person who is likely a physicist. While we do not know what the physicist is looking at in the picture, it's possible that he is thinking about or working on physics, which would be related to the first image.  The first image is an abstract concept of a fundamental constant while the second is a human representative who might be studying the concept. \n",
         "judge_answer": {
             "score_4o": "0",
-            "score_reason": "The MLLM inaccurately assigns a scientific connection without identifying the numeric association '137,' which links both images in the standard answer."
+            "score_reason": "The MLLM erroneously links the second image to a physicist, causing factual inaccuracies regarding the relationship with Rick White's album '137.'"
         }
     },
     "First Sino-Japanese War(invisible, history, relation, East Asia, English)": {
         "MLLM_answer": "- First image: A large ship docked at a shipyard.\n- Second image: A portrait of an older man with a beard and a serious expression.\n- Relation:  Naval engineering.\n- Explanation: The first image shows the  \"Hizen\", the first ironclad warship built for the Imperial Japanese Navy. The man in the second image is Admiral Enomoto Takeaki, the naval architect who spearheaded the creation of this ship. The \"Hizen\" was constructed at a shipyard in the United Kingdom and marked a significant milestone in Japan's modernization and naval expansion. \n",
         "judge_answer": {
             "score_4o": "0",
-            "score_reason": "The MLLM provides incorrect information regarding the ship 'Hizen' and its connection to Enomoto Takeaki, deviating significantly from the context of the First Sino-Japanese War and the identified figures in the standard answer."
+            "score_reason": "The MLLM output contains factual hallucinations about the ship 'Hizen,' deviating significantly from the standard answer's focus on the 'First Sino-Japanese War.'"
         }
     },
     "Sun Yat-sen(invisible, history, relation, East Asia, English)": {
         "MLLM_answer": "- First image: An architectural structure with a traditional Chinese style in a lush green setting. \n- Second image: A man in a traditional Chinese suit, known as a Tang suit, standing on a red carpet.\n- Relation: Chinese cultural heritage\n- Explanation: Both images showcase elements of Chinese culture. The first image depicts a traditional Chinese architectural style, while the second image features a man wearing a Tang suit, which is a traditional garment. These elements represent the rich cultural heritage of China and are commonly associated with Chinese identity and tradition.",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM focuses on cultural elements broadly, missing the specific link to Sun Yat-sen in the standard answer, affecting factual accuracy due to deviation from the core association."
+            "score_4o": "2",
+            "score_reason": "The MLLM's explanation about Chinese cultural heritage doesn't address the specific person 'Sun Yat-sen,' missing the named connection."
         }
     },
     "洛阳纸贵(invisible, history, metaphor, East Asia, Chinese)": {
         "MLLM_answer": "- First image: A stack of white paper\n- Second image: A pile of gold coins\n- Relation: Value\n- Explanation: The first image represents the raw material that is used to create paper money, which is essentially worthless without the value assigned to it by society. The second image represents the value of gold coins which have held intrinsic value for centuries. The images can be seen as a symbolic representation of the difference between physical material and economic value.  \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM's discussion of 'value' fails to capture the nuanced connection to '洛阳纸贵,' missing the cultural and historical concept effectively portrayed in the standard answer."
+            "score_4o": "2",
+            "score_reason": "The broad value explanation doesn't capture the cultural phrase '洛阳纸贵' and the specific symbolic meaning involved."
         }
     },
     "I Have a Dream(invisible, history, metaphor, USAEnglish, English)": {
@@ -450,15 +450,15 @@
     "Acme Corporation(invisible, cartoon or game, relation, USAEnglish, English)": {
         "MLLM_answer": "- First image: A metal anvil\n- Second image: A roadrunner running\n- Relation: Anvil's namesake\n- Explanation: The roadrunner is a bird known for its speed and agility. It is said to be named after the anvil because its beak is sharp and strong, similar to the anvil used to shape metal. Both the roadrunner and the anvil are associated with the idea of strength and power.  While not directly connected, the roadrunner's name is a metaphor for the anvil's utility. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The explanation provided by MLLM contains a factual error. It incorrectly associates the roadrunner with the anvil by attributing a namesake relationship and metaphoric comparison, which is not aligned with the correct explanation involving Looney Tunes."
+            "score_4o": "3",
+            "score_reason": "The MLLM output partially captures the thematic connection through the concept of anvils with the roadrunner instead of the fictional Acme Corporation, making moderate alignment."
         }
     },
     "My Little Pony(invisible, cartoon or game, relation, USAEnglish, English)": {
         "MLLM_answer": "- First image: A rainbow appearing after a rain shower.\n- Second image: A brown pony standing in a field.\n- Relation: Unrelated\n- Explanation: The two images are completely unrelated in terms of subject matter, theme, or style. One depicts a natural phenomenon, while the other shows an animal. There is no discernible connection between them.",
         "judge_answer": {
             "score_4o": "1",
-            "score_reason": "The MLLM states that the images are 'Unrelated', demonstrating a lack of recognition of the symbolic relationship present in the standard answer with 'My Little Pony'."
+            "score_reason": "The MLLM expresses uncertainty and indicates there is no relation between the images."
         }
     },
     "Peppa Pig(invisible, cartoon or game, mutual elements, USAEnglish, English)": {
@@ -695,8 +695,8 @@
     "feather(visible, stuff, mutual elements, NA, English)": {
         "MLLM_answer": "- First image: A badminton racket and shuttlecock against a blue sky\n- Second image: A group of geese and ducks in the snow\n- Relation: Unrelated\n- Explanation: These images are unrelated. The first image depicts a badminton racket and shuttlecock, representing the sport of badminton. The second image features a group of geese and ducks in a snowy setting, suggesting a rural or wintery environment.  There is no discernible connection between the two images, as they represent different subjects and contexts. \n",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM incorrectly identifies the two images as unrelated, ignoring the common element of feathers that serves as a valid link."
+            "score_4o": "3",
+            "score_reason": "The MLLM's output perceives the images as unrelated. However, it should be rated 3 because it did identify the noted presence of 'feathers,' which are key facts, but failed to expand on their importance."
         }
     },
     "football(visible, sports, mutual elements, NA, English)": {
@@ -723,8 +723,8 @@
     "box(visible, sports, relation, NA, English)": {
         "MLLM_answer": "- First image: Two boxers facing each other in a boxing ring, ready to fight. \n- Second image: A close-up shot of a cardboard box sealed with tape.\n- Relation:  Boxing as a metaphor for life.\n- Explanation: The image of two boxers facing off in the ring can be interpreted as a metaphor for the challenges and struggles we face in life. We are all constantly battling our own inner demons, external pressures, and the uncertainties of the world. The tape sealing the box could symbolize the feeling of being trapped or restricted by these challenges, like being boxed in. The act of sealing the box could represent the process of confronting and overcoming these challenges. The box could also represent a new chapter or a new beginning, signifying that even in the midst of struggle, there is always the potential for growth and transformation.",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The reasoning is flawed due to overinterpretation. The whimsical metaphor overshadowed the simple expected connection of 'box' as related elements."
+            "score_4o": "3",
+            "score_reason": "The MLLM demonstrates understanding through metaphorical reasoning but lacks pinpointing 'box' as the central aspect. However, it still brings forth the metaphor of being sealed or boxed in."
         }
     },
     "ice hockey(visible, sports, relation, NA, English)": {
@@ -737,8 +737,8 @@
     "آنکھوں کا تارا(invisible, art, relation, South Asia and South-East Asia, Urdu)": {
         "MLLM_answer": "- First image: A chart showing the Arabic alphabet in a stylized font.\n- Second image: A close-up of a blue eye with a sparkling star inside.\n- Relation: Visual representation of language and beauty\n- Explanation: The first image shows the visual representation of the Arabic language, while the second image depicts a beautiful eye with a sparkling star inside. Both images showcase the beauty and uniqueness of visual elements, one representing a language and the other, a visual aspect of human anatomy. This connection highlights the power of visual language and the aesthetics that can be found in both written and physical forms. \n",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "Instead of acknowledging the phrase 'Star of the Eyes,' the output weaves an overly broad visual comparison absent the needed connection."
+            "score_4o": "2",
+            "score_reason": "The MLLM finds a tenuous connection with aesthetics but fails to address the specific linguistic and metaphor connection in Urdu."
         }
     },
     "بندر کیا جانے ادرک کا سواد(invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
@@ -751,127 +751,127 @@
     "کھودا پہاڑ نکلی چوہیا(invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
         "MLLM_answer": "- First image: A mining operation with workers extracting minerals from a cliff face. \n- Second image: A small, brown mouse in a natural environment. \n- Relation: Human impact on the environment.\n- Explanation: The first image depicts the human exploitation of natural resources, while the second image shows a small, delicate creature that is part of the ecosystem.  The contrast highlights how human actions can disrupt the natural world and potentially displace or endanger wildlife.  The mouse, representing the ecosystem, may be affected by mining activities that damage the natural environment and its resources. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM output misses the key cultural and metaphorical connection conveyed in the standard answer. It introduces a new explanation that does not align with the intended reasoning."
+            "score_4o": "2",
+            "score_reason": "The explanation about the impact of human activity misses the specific metaphorical Urdu expression's implications."
         }
     },
     "دودھ کا جلا چھاچھ بھی پھونک پھونک کر پیتا ہے(invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
         "MLLM_answer": "- First image: A young girl is drinking tea in a kitchen.\n- Second image: A pot of water is boiling on a stove.\n- Relation: Preparation\n- Explanation: The first image shows the result of the action shown in the second image. The second image shows the process of boiling water, which is likely used to make the tea in the first image. Both images depict the process of preparing a drink.",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM's output does not relate to the metaphorical expression, missing critical cultural references. Instead, it provides a straightforward explanation not aligned with the intended reasoning."
+            "score_4o": "2",
+            "score_reason": "The MLLM outlines the practical aspect but doesn't unfold the metaphorical expression captured in the standard answer."
         }
     },
     "دال میں کچھ کالا ہے(invisible, art, relation, South Asia and South-East Asia, Urdu)": {
         "MLLM_answer": "- First image: A collection of different types of lentils.\n- Second image: A bowl of lentil soup.\n- Relation: Transformation\n- Explanation: The first image shows various types of lentils, while the second image shows a lentil soup, demonstrating the transformation of raw lentils into a cooked dish. This highlights the use of lentils in culinary applications and the process of turning raw ingredients into a meal.",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM output explains a culinary transformation but completely misses the metaphorical and cultural context provided in the standard answer, which is crucial for accurate interpretation."
+            "score_4o": "2",
+            "score_reason": "The MLLM sees a straightforward culinary transformation but fails to delve into the metaphorical layer of suspicion implied in Urdu."
         }
     },
     "The same prounciation between vin and vingt(invisible, sense, relation, Non-English European, French)": {
         "MLLM_answer": "- First image: Red wine being poured into a glass\n- Second image: The number 20 in gold \n- Relation: Drinking age \n- Explanation: The first image shows a glass of wine being filled, which is a common beverage consumed by adults. The second image shows the number 20, which is the legal drinking age in many countries. The images suggest a connection between the act of drinking wine and reaching adulthood. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM output discusses the minimum legal drinking age, unrelated to the language-based reasoning involving the same pronunciation in French. It misses the linguistic element entirely."
+            "score_4o": "2",
+            "score_reason": "The MLLM misunderstands the phonetic connection specified between 'vin' and 'vingt,' diverging into an unrelated thematic understanding of drinking age."
         }
     },
     "The same prounciation between La rousse and Larousse(invisible, sense, relation, Non-English European, French)": {
         "MLLM_answer": "- First image: A woman with long, flowing red hair wearing a white top and a black hat. \n- Second image: A cover of a French dictionary.\n- Relation: Juxtaposition of visual and intellectual elements.\n- Explanation: The first image presents a visual representation of a person, emphasizing outward appearance. The second image portrays an object that represents knowledge and intellectual pursuit, contrasting with the first image's focus on the physical. The juxtaposition highlights the potential disconnect between outward appearances and inner intellect. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM outcome fails to recognize the linguistic play between names with similar pronunciations, opting instead for general commentary unrelated to the sound-based connection mentioned in the standard answer."
+            "score_4o": "2",
+            "score_reason": "The MLLM output identifies a contrast between visual appearance and intellectual pursuit, which is unrelated to the phonetic connection between 'La rousse' and 'Larousse' described in the standard answer."
         }
     },
     "The same prounciation between Porsche and porche(invisible, sense, relation, Non-English European, French)": {
         "MLLM_answer": "- First image: A silver Porsche 911 GT3 RS sports car.\n- Second image: A front porch of a house with a white bench and a ceiling fan.\n- Relation: Contrast\n- Explanation: The first image represents speed, luxury, and performance, while the second image represents comfort, tranquility, and domesticity. The images are in stark contrast, highlighting different aspects of life and the choices people make. One is about pushing limits and achieving adrenaline-fueled goals, while the other is about creating a calm and relaxing environment.",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM establishes a contrasting logic which fails to align with the linguistic reasoning about the similar pronunciation between French terms, missing the specific linguistic focus required."
+            "score_4o": "2",
+            "score_reason": "The MLLM output discusses a thematic contrast between speed/luxury and comfort/domesticity, but it does not address the phonetic similarity between 'Porsche' and 'porche' that the standard answer highlights."
         }
     },
     "一朝被蛇咬，十年怕井绳(invisible, art, metaphor, East Asia, Chinese)": {
         "MLLM_answer": "- First image: A venomous snake with its mouth open, showing its fangs. \n- Second image: A rope wrapped around a wooden beam, which is likely part of a well.\n- Relation:  Contrasting Symbolism.\n- Explanation: The snake represents danger and potential harm, while the rope symbolizes a means of accessing essential resources. This contrast suggests that despite the presence of dangers, there are also resources available for survival and overcoming challenges.  The rope can be used to draw water from the well,  a vital resource for life.  The snake's venom can be a danger, but it also plays a role in the snake's survival.  The images together could suggest a balance between risk and reward, or between threats and opportunities. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM generalizes the images without addressing the specific cultural and metaphorical understanding evident in the standard answer, particularly the memorable proverb."
+            "score_4o": "2",
+            "score_reason": "The MLLM output provides an interpretation based on contrasting symbolism, missing the intended thematic connection of the Chinese proverb '一朝被蛇咬，十年怕井绳.'"
         }
     },
     "一箭双雕(invisible, art, metaphor, East Asia, Chinese)": {
         "MLLM_answer": "- First image: Arrow\n- Second image: Bald Eagles in flight\n- Relation: Symbolism\n- Explanation:  The arrow represents a direct, forceful attack, while the bald eagle represents power and freedom. The arrow may be seen as a tool of aggression, whereas the eagle represents strength and the ability to soar above. Both images are symbolic and can be interpreted in different ways. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM does not align with the given proverb, mainly discussing symbolism apart from the relevant language-based explanation given in the standard answer."
+            "score_4o": "2",
+            "score_reason": "The MLLM explanation focuses on general symbolism without recognizing the specific Chinese proverb '一箭双雕,' which involves achieving two aims with a single action, referenced in the standard answer."
         }
     },
     "avec des si on mettrait Paris en bouteille(invisible, art, metaphor, Non-English European, French)": {
         "MLLM_answer": "- First image: A panoramic view of Paris, France, featuring the Eiffel Tower and a sunset.\n- Second image: A glass bottle with a green lid.\n- Relation: Unrelated\n- Explanation: The first image showcases a famous landmark and a beautiful sunset, while the second image is a simple everyday object. They share no obvious connections or themes. The only possible shared element is the color green, though it is not significant.",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM speaks to an unrelated analysis without addressing the metaphorical proverb regarding 'Paris in a bottle', straying from the idiomatic expression's literary alignment."
+            "score_4o": "2",
+            "score_reason": "The MLLM output concludes there is no relation between the images, failing to recognize the French proverb involving Paris and a bottle that connects both images in the standard answer."
         }
     },
     "si les chiens avaient des scies, il n’y aurait plus de poteaux(invisible, art, metaphor, Non-English European, French)": {
         "MLLM_answer": "- First image: A dog with a sad expression is resting its head on a saw.\n- Second image: A wooden post, possibly used as a fence post.\n- Relation: Contrast between nature and human intervention.\n- Explanation: The first image depicts a dog, a creature associated with nature, in a melancholic state, seemingly affected by the presence of a saw, a tool of human intervention. The second image shows a wooden post, a material transformed by human hand, meant to be part of a fence, a structure intended to divide and control. Together, these images highlight the contrast between nature's inherent harmony and the human desire to alter and impose order on the natural world.  The images suggest a tension between these two forces,  with the dog's sadness perhaps embodying the impact of human interference on the natural world. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The explanation contrasts natural versus human elements but doesn't touch upon the linguistic device or cultural phrase from the standard answer, missing the core relationship entirely."
+            "score_4o": "2",
+            "score_reason": "The MLLM output compares nature and human intervention without acknowledging the French proverb 'si les chiens avaient des scies, il n’y aurait plus de poteaux,' which connects the images thematically."
         }
     },
     "Donner sa langue au chat(invisible, art, metaphor, Non-English European, French)": {
         "MLLM_answer": "- First image: A close-up of a woman sticking out her tongue.\n- Second image: A cat with its mouth open and tongue sticking out.\n- Relation: Shared expression\n- Explanation: Both images show the subject with their tongue sticking out, suggesting a playful or silly expression. This is a common way for humans and animals to express themselves, often indicating excitement, surprise, or amusement. The images capture a moment of spontaneity and lightheartedness, highlighting the shared nature of expression across species. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM portrays a superficial similarity that misses the idiomatic phrase indicating giving up or resorting to another solution, completely diverging from the expected reasoning."
+            "score_4o": "2",
+            "score_reason": "The MLLM provides a general shared expression theme, which does not align with the specific 'Donner sa langue au chat' expression highlighted in the standard answer."
         }
     },
     "Couper les cheveux en quatre(invisible, art, metaphor, Non-English European, French)": {
         "MLLM_answer": "- First image: A woman getting her hair cut.\n- Second image: A pie chart divided into fourths.\n- Relation: Visual representation of a concept.\n- Explanation: The first image shows the process of cutting hair into four sections. The second image is a pie chart divided into fourths, visually representing the division of the hair into four sections. Both images depict the concept of dividing something into four equal parts.  The second image is a visual representation of the action being performed in the first image. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM discusses visual division without engaging with the idiom's meaning about being overly meticulous or precise, as detailed in the given answer rationale."
+            "score_4o": "2",
+            "score_reason": "The MLLM discusses the visual representation concept, which diverges from the French expression 'Couper les cheveux en quatre' highlighted in the standard answer."
         }
     },
     "Vouloir le beurre et l'argent du beurre(invisible, art, metaphor, Non-English European, French)": {
         "MLLM_answer": "- First image: A block of butter on a plate with a knife\n- Second image: A pile of US dollar bills\n- Relation: Financial value\n- Explanation:  Butter and money, while seemingly unrelated, share a connection in their perceived value. Butter, as a staple ingredient, has historically been a commodity with varying levels of value. Money, in its various forms, represents a universal measure of value. Both can be seen as representations of resources and wealth, with their respective values fluctuating over time and place. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The consideration of economic worth lacks connection to the linguistic association present in the standard answer, not recognizing the idiom related to dual possession desires."
+            "score_4o": "2",
+            "score_reason": "The MLLM explains the financial value concept but overlooks the specific French expression 'Vouloir le beurre et l'argent du beurre,' which has a more figurative connection to the images."
         }
     },
     "Tomber dans les pommes(visible, art, relation, Non-English European, French)": {
         "MLLM_answer": "- First image: A man falling on a pile of apples.\n- Second image: A person lying on the floor, seemingly unconscious, with another person standing in the background.\n- Relation:  The danger of falling.\n- Explanation: Both images depict individuals who have fallen. The first image portrays a humorous scenario where the fall is caused by slipping on apples, while the second image portrays a more serious situation where the fall may have resulted in an injury or unconsciousness. Both images highlight the possibility of experiencing a fall and the potential consequences. The contrast between the two images emphasizes the range of outcomes that can arise from a seemingly simple action like falling.",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM's reasoning concentrates on general fall implications instead of aligning with the specific French expression, which deals with fainting, thus failing to capture the intended analogy."
+            "score_4o": "3",
+            "score_reason": "The MLLM output accurately captures the theme of falling with potential consequences, somewhat aligning with the French expression 'Tomber dans les pommes' referring to fainting. However, it lacks direct mention of the expression."
         }
     },
     "Avoir un poil dans la main(visible, art, relation, Non-English European, French)": {
         "MLLM_answer": "- First image: An open hand, palm facing the viewer, outstretched.\n- Second image: A man lying on a couch, holding a remote control, looking bored.\n- Relation:  Inactivity\n- Explanation: The first image represents an open invitation, a willingness to engage.  The second image portrays inactivity, a lack of interest, and a resistance to engagement. The images together symbolize the choice between action and inaction. The hand is reaching out, inviting the viewer to participate, while the man is rejecting engagement, choosing instead to remain passive. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "Fails to recognize the idiomatic expression 'avoir un poil dans la main', focusing on different tension not relevant to the French saying about laziness or inactivity."
+            "score_4o": "2",
+            "score_reason": "The MLLM addresses the concept of inactivity but does not mention the specific expression 'Avoir un poil dans la main' associated with laziness in the standard answer. It also references the wrong explanation in the standard answer."
         }
     },
     "Buttered cat paradox(visible, STEM, metaphor, Non-English European, English)": {
         "MLLM_answer": "- First image: A slice of buttered bread.\n- Second image: A cat in mid-air, leaping. \n- Relation: Contrasting actions. \n- Explanation: The first image shows a simple, everyday action: spreading butter on bread. The second image shows a more dynamic and energetic action - a cat leaping. The two images are quite different in their depiction of movement and activity, and they could represent contrasting lifestyles or approaches to life.  The bread represents simple pleasures, while the cat represents energy and unpredictability. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "By addressing contrasts between actions, the MLLM doesn't cover the jovial paradox in the expression where both elements form a contradictory yet humorous theory."
+            "score_4o": "2",
+            "score_reason": "The MLLM explains contrasting actions and lifestyle, missing the specific 'Buttered Cat Paradox' related to butter and cats mentioned in the standard answer."
         }
     },
     "Raven paradox(visible, STEM, metaphor, NA, English)": {
         "MLLM_answer": "- First image: Green apples\n- Second image: A black raven in flight\n- Relation: Contrast\n- Explanation: The images present a stark contrast in color, symbol, and even in the connotations that each image evokes. The green apples represent nature, health, and perhaps even innocence, while the raven symbolizes darkness, death, and even evil. This contrast creates a sense of duality and highlights the often opposing forces that exist in the world. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "While capturing contrasts, the explanations do not come close to considering paradoxes, i.e., the Raven Paradox, from the standard answer, lacking the logical induction discussion."
+            "score_4o": "2",
+            "score_reason": "The MLLM focuses on contrast without connecting to the Raven paradox involving green apples and ravens, as mentioned in the standard answer."
         }
     },
     "Temperature paradox(visible, STEM, metaphor, NA, English)": {
         "MLLM_answer": "- First image: A thermometer with a red liquid column indicating a high temperature.\n- Second image: Two thermometers, one showing a lower temperature with a blue liquid column and the other showing a higher temperature with a red liquid column. A red arrow indicates a rising temperature. \n- Relation: Climate change\n- Explanation: The first image illustrates the effects of climate change, showing a high temperature reading on a thermometer. The second image further demonstrates the concept of climate change with the rising temperatures indicated by the red arrow. The two thermometers represent the change in temperature over time, with the red thermometer symbolizing the rising temperature due to climate change.  The image depicts a clear visual representation of the increasing global temperatures. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The text's climate reflection does not touch on the simultaneous counter intuitive explanation provided by the temperature paradox in probability theory, missing the intended explanation."
+            "score_4o": "2",
+            "score_reason": "The MLLM's climate change explanation does not relate to the 'Temperature paradox' concept of changing probabilities referenced in the standard answer."
         }
     },
     "Infinite(visible, STEM, metaphor, NA, English)": {
@@ -884,8 +884,8 @@
     "اُونٹ کے مُنہ میں زیرہ (invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
         "MLLM_answer": "- First image: A pile of cumin seeds\n- Second image: A camel\n- Relation: Cultural association\n- Explanation: Cumin is a common spice used in Middle Eastern and Indian cuisine, and camels are a common animal in these regions. Both cumin and camels are thus associated with these cultures. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM misses the metaphorical expression entirely, venturing into irrelevant cultural associations without addressing the idiomatic alignment present in the standard."
+            "score_4o": "2",
+            "score_reason": "The MLLM discusses cultural associations, whereas the standard answer mentions an Urdu metaphor about scarcity ('اُونٹ کے مُنہ میں زیرہ'). The MLLM does not capture this expression."
         }
     },
     "ناک کاٹنا(invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
@@ -1017,8 +1017,8 @@
     "8(invisible, number, mutual elements, NA, English)": {
         "MLLM_answer": "- First image: A group of figures riding on a giant lotus leaf through the sea.\n- Second image: A group of women looking startled in a building.\n- Relation: Contrasting interpretations of the afterlife.\n- Explanation: The first image depicts a traditional Chinese interpretation of the afterlife, where the souls of the deceased travel on a lotus leaf through the sea to reach a realm of peace and tranquility. The second image, from the film \"The Others,\" depicts a modern Western interpretation of the afterlife, where the characters experience a more unsettling and eerie encounter with the spirit realm. Both images offer contrasting perspectives on the themes of death, transition, and the unknown. The images also highlight the cultural differences in how people perceive and represent the afterlife.",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The explanation of afterlife themes entirely misses the connection to '8' in mythological and cultural references, deviating significantly from the facts in the standard answer."
+            "score_4o": "2",
+            "score_reason": "The MLLM outlines differing interpretations of the afterlife with no mention of the thematic numeric connection ('8') that the standard answer identifies."
         }
     },
     "Stories about Prison Break(invisible, art, mutual elements, USAEnglish, English)": {
@@ -1031,8 +1031,8 @@
     "similar shape '$'(invisible, myth, mutual elements, USAEnglish, English)": {
         "MLLM_answer": "- First image: The caduceus, a symbol of medicine\n- Second image: A hand holding dollar bills\n- Relation: Cost of healthcare\n- Explanation: The image of the caduceus, a symbol of medicine, is juxtaposed with the image of dollar bills, representing money. This highlights the financial burden of healthcare, suggesting that healthcare is expensive and can be a significant financial strain for individuals and families. The image implies that the cost of healthcare is a major concern and may be a barrier to access. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM response incorrectly identifies the caduceus as a symbol of medicine (typically the Rod of Asclepius is used in a medical context) and focuses on the theme of healthcare costs, which does not align with the standard answer about the similar shape '$'."
+            "score_4o": "2",
+            "score_reason": "The MLLM output addresses healthcare costs, diverging from the visual and shape similarity ('$') between the Rod of Asclepius and Dollar discussed in the standard answer."
         }
     },
     "toxicity(invisible, STEM, mutual elements, NA, English)": {
@@ -1087,8 +1087,8 @@
     "9(invisible, number, mutual elements, East Asia, English)": {
         "MLLM_answer": "- First image: A mystical fox with flowing orange and white fur, set against a light gray background. \n- Second image: A playing card, the nine of hearts.\n- Relation: Abstract connection\n- Explanation: The first image features an abstract depiction of a fox, while the second image is a standard playing card. The only obvious connection is the shared color of red, found in both the fox's fur and the hearts on the playing card. However, the images are visually distinct, and their relation is abstract. One might draw a connection between the fox's symbolic meaning of cunning and the concept of luck or fate, which can be associated with playing cards. \n",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM suggests an 'abstract connection' without any relevant factual or thematic alignment related to the standard answer about the number '9' and Kitsune."
+            "score_4o": "2",
+            "score_reason": "The MLLM focuses on the abstract connection rather than the numerical ('9') association with Kitsune, as specified in the standard answer."
         }
     },
     "Ra(invisible, myth, mutual elements, Arabic-Islamic, English)": {
@@ -1108,22 +1108,22 @@
     "Norse god Thor(invisible, myth, mutual elements, Non-English European, English)": {
         "MLLM_answer": "- First image: A group of people gathered around a small lake in a mountainous region, with a building in the background.\n- Second image: A chalkboard with the phrase \"Happy Thursday\" written on it, accompanied by a cup of coffee and a spoon.\n- Relation:  Contrast in setting and tone.\n- Explanation: The first image depicts an outdoor setting with a group of people enjoying a picturesque location. It evokes a sense of adventure, relaxation, and exploration. The second image, in contrast, showcases a simple, domestic scene with a message of everyday cheer. While the first image suggests a physical journey, the second image represents a daily ritual or a moment of simple happiness. They represent contrasting perspectives on life - one focused on outward exploration and the other on inner peace and contentment. \n",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM describes a broad 'contrast' without connecting directly to the correct Norse mythology theme of Thor and Breidablik."
+            "score_4o": "2",
+            "score_reason": "The MLLM highlights contrasting settings and tones, not recognizing any connection with Norse mythology ('Thor'), as mentioned in the standard answer."
         }
     },
     "Odin(invisible, myth, mutual elements, Non-English European, English)": {
         "MLLM_answer": "- First image: A drawing of a female figure, possibly a goddess, in a long robe with her arms outstretched.\n- Second image: The word \"Wednesday\" in bold red letters against a white background.\n- Relation: No relation\n- Explanation: The first image depicts a potentially ancient figure with religious connotations, while the second image is a simple representation of a day of the week. There is no apparent connection between the two images, and they seem to be completely unrelated in theme and subject matter.",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM incorrectly concludes 'no relation', failing to find the connection to Odin related to Wednesday, missing the intended reasoning."
+            "score_4o": "2",
+            "score_reason": "The MLLM states no relation between the images, differing from the association to 'Odin' involving Baldr and Wednesday, as indicated in the standard answer."
         }
     },
     "Týr(invisible, myth, mutual elements, Non-English European, English)": {
         "MLLM_answer": "- First image: A hand with an open palm, reaching out.\n- Second image: A calendar icon showing the day \"Tuesday\".\n- Relation: Time and anticipation\n- Explanation: The outstretched hand suggests a gesture of anticipation or waiting, while the calendar icon represents time and the passage of days. The two images could be interpreted as symbolizing the act of waiting for a specific day or event, perhaps a Tuesday in the future. \n",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM mischaracterizes 'anticipation' and does not identify the mythological connection to Týr and Tuesday, lacking direct alignment with the correct reasoning."
+            "score_4o": "2",
+            "score_reason": "The MLLM's output completely misses the intended relationship and theme. The relationship 'Time and anticipation' bears no connection to the Norse god Týr or the naming of Tuesday."
         }
     },
     "Moon(invisible, myth, mutual elements, Non-English European, English)": {
@@ -1227,22 +1227,22 @@
     "Gemini the model(invisible, STEM, mutual elements, Non-English European, English)": {
         "MLLM_answer": "- First image: Portrait of twin girls\n- Second image: Google logo with abstract shapes\n- Relation: Unrelated\n- Explanation: The first image is a portrait of two girls with similar features. The second image is a graphic design of the Google logo. The images do not share any thematic elements or connections. They are unrelated. \n",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM shows uncertainty with 'unrelated,' not recognizing the connection to Gemini, which undermines its reasoning."
+            "score_4o": "2",
+            "score_reason": "The MLLM output fails to recognize the thematic connection through the word 'Gemini' which relates to both twins and Google's model, missing the main intent of the standard answer."
         }
     },
     "Gemini the astrological sign(invisible, myth, mutual elements, Non-English European, English)": {
         "MLLM_answer": "- First image: A blue circle with the word \"June\" and \"May\" written in the center.\n- Second image: The Google logo with various icons surrounding it, representing different Google products.\n- Relation: No relation.\n- Explanation: The first image is a simple graphic representing the names \"June\" and \"May,\" likely for a personal or business purpose. The second image is a promotional graphic for Google and its various products. There is no apparent connection between the two images.",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM provides 'no relation,' indicating uncertainty and a lack of recognition of the shared Gemini association between the images."
+            "score_4o": "2",
+            "score_reason": "MLLM output does not capture the intended connection to Gemini and Google's model. It misses the relevance of the Gemini astrological period and thus cannot relate the dates of May and June to the theme."
         }
     },
     "Aquarius is opposite to Leo(invisible, myth, mutual elements, Non-English European, English)": {
         "MLLM_answer": "- First image:  A visual representation of the months of July and August with symbols representing the summer season.\n- Second image: A depiction of the constellation Aquarius.\n- Relation: Astrological association\n- Explanation: The image of July and August represents summer, and the zodiac sign Aquarius is associated with the months of January and February. The connection between these images is through the concept of astrology. Aquarius is a water sign, which is typically associated with the winter season. However, the months of January and February fall within the summer season in the Southern Hemisphere, which could be seen as a potential link to the image representing the months of July and August. \n",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM introduces an erroneous seasonal connection in place of the correct astrological relationship detailed in the standard answer."
+            "score_4o": "2",
+            "score_reason": "The explanation of an astrological association by MLLM is not consistent with the specific relationship in the standard answer. It does not recognize the relationship between the opposites Aquarius and Leo connected to the dates of July and August."
         }
     },
     "Libra is opposite to Aries(invisible, myth, mutual elements, Non-English European, English)": {
@@ -1276,8 +1276,8 @@
     "Sagittarius is opposite to Gemini(invisible, myth, mutual elements, Non-English European, English)": {
         "MLLM_answer": "- First image: A centaur, a mythical creature that is half human and half horse, standing in front of a flag.\n- Second image: A calendar for May and June 2024.\n- Relation:  No relation. \n- Explanation: The first image depicts a mythical creature, while the second image shows a calendar. There is no connection or shared element between these two images.  They are completely unrelated. \n",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM expresses 'no relation,' failing to recognize the significant astrological context relevant to the standard answer."
+            "score_4o": "2",
+            "score_reason": "MLLM's interpretation of 'no relation' misses the thematic connection involving the astrological signs Sagittarius and Gemini which it should have identified as being opposites in the zodiac."
         }
     },
     "Gemini is opposite to Sagittarius(invisible, myth, mutual elements, Non-English European, English)": {
@@ -1290,15 +1290,15 @@
     "Aries is opposite to Libra(invisible, myth, mutual elements, Non-English European, English)": {
         "MLLM_answer": "- First image: A bighorn sheep standing on a rocky mountainside.\n- Second image: A calendar for September and October of 2023.\n- Relation: No relation\n- Explanation: The images are completely unrelated. The first image shows a bighorn sheep in its natural environment, while the second image is a simple calendar. There are no shared themes, elements, or connections between the two images. \n",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM provides 'no relation,' demonstrating an uncertainty and missing the astrological connection present in the standard answer."
+            "score_4o": "2",
+            "score_reason": "The MLLM's determination of 'no relation' misses the crucial theme of astrology and the connection between Aries and Libra as opposite signs, which is the intended interpretation."
         }
     },
     "Taurus is opposite to Scorpio(invisible, myth, relation, Non-English European, English)": {
         "MLLM_answer": "- First image: A bull standing in a field.\n- Second image: A calendar for October and November 2022.\n- Relation: Unrelated\n- Explanation: The two images are completely unrelated. The first image depicts a bull, while the second is a calendar for October and November 2022. There is no obvious connection between the two.",
         "judge_answer": {
-            "score_4o": "1",
-            "score_reason": "The MLLM concludes the two images are 'unrelated,' missing the astrological opposition between Taurus and Scorpio explained in the standard answer."
+            "score_4o": "2",
+            "score_reason": "MLLM concludes that the images are unrelated, missing the thematic connection of astrology and the relationship between Taurus and Scorpio as opposite signs in the zodiac, thus failing to align with the intended reasoning."
         }
     },
     "10th zodiac(invisible, myth, mutual elements, Non-English European, English)": {
@@ -1333,7 +1333,7 @@
         "MLLM_answer": "- First image: A man in a suit and tie.\n- Second image: A golden plover bird.\n- Relation: No relation\n- Explanation: The first image shows a man in a formal setting, while the second image shows a bird in its natural habitat. The two images are unrelated. \n",
         "judge_answer": {
             "score_4o": "1",
-            "score_reason": "The MLLM expresses uncertainty by stating 'No relation' which fails to recognize the specific historical connection between the two images."
+            "score_reason": "The MLLM expresses uncertainty and indicates there is no relation between the images."
         }
     },
     "Guinness brand(visible, history, mutual elements, USAEnglish, English)": {
@@ -1353,15 +1353,15 @@
     "Jay Chou(invisible, music, mutual elements, East Asia, English)": {
         "MLLM_answer": "- First image:  White flowers of a plant\n- Second image: A young woman in a yellow shirt, smiling \n- Relation: Nature and Human\n- Explanation: The image of the flowers evokes a sense of natural beauty and simplicity. The second image depicts a young woman, symbolizing human vitality and energy. The two images together suggest a connection between nature and humanity, highlighting the beauty and joy that can be found in both. \n",
         "judge_answer": {
-            "score_4o": "0",
-            "score_reason": "The MLLM provides an incorrect relation of 'Nature and Human' and fails to mention Jay Chou or his connections, diverging entirely from the intended reasoning."
+            "score_4o": "2",
+            "score_reason": "The MLLM's thematic interpretation misses the specific cultural and personal reference to Jay Chou, his work, and marriage."
         }
     },
     "三毛(invisible, art, relation, East Asia, Chinese)": {
         "MLLM_answer": "- First image: Map of the Sahara Desert in Africa\n- Second image: Book cover of \"Three Hair Travels\" \n- Relation:  A fictional story set in the Sahara Desert\n- Explanation:  The second image is the book cover of a children's book, \"Three Hair Travels,\" which tells a story in the setting of the Sahara Desert. The first image shows the location and size of the Sahara Desert, which is likely the setting for the story. The book's cover also features imagery that might suggest a desert environment. \n",
         "judge_answer": {
             "score_4o": "0",
-            "score_reason": "The MLLM includes incorrect facts by misrepresenting 'Three Hair Travels' as being set in the Sahara, conflating two unrelated concepts under the same name of 'Sanmao'."
+            "score_reason": "The MLLM includes incorrect facts, referring to an imaginary story, thus leading to a mistaken chain of reasoning."
         }
     },
     "Lao She's works(invisible, art, mutual elements, East Asia, English)": {

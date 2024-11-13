@@ -314,6 +314,13 @@
             "score_reason": "The MLLM identifies a general Chinese cultural connection but does not elaborate on the specific relationship with 'Dumplings' during Chinese New Year, as mentioned in the standard answer."
         }
     },
+    "Peking Duck(invisible, food, mutual elements, East Asia, English)": {
+        "MLLM_answer": "- First image: An illuminated stadium with unique architecture, reflected in water.\n- Second image: A dish featuring roasted duck with a side salad on a plate.\n\n- Relation: Beijing\n\n- Explanation: The first image shows the Beijing National Stadium, also known as the \"Bird's Nest,\" a famous architectural landmark in Beijing. The second image depicts a dish of roasted duck, likely representing Peking duck, a renowned Chinese dish originating from Beijing. Both images are connected through their association with Beijing's culture and iconic elements.",
+        "judge_answer": {
+            "score_4o": "3",
+            "score_reason": "The MLLM output correctly identifies the relevance of Beijing and its cultural elements but does not connect the specific focus on 'Peking Duck' as the main relation, which is crucial in the standard answer. Nevertheless, it provides a reasonable understanding of the cultural context."
+        }
+    },
     "борщ(visible, food, relation, Non-English European, Russian)": {
         "MLLM_answer": "- First image: Sliced beetroots on a cutting board\n- Second image: Bowl of beetroot soup (borscht) with a dollop of cream\n\n- Relation: Ingredient and dish\n\n- Explanation: The first image shows fresh beetroots sliced on a cutting board, which is a common preparation step in cooking. The second image displays a bowl of beetroot soup, likely borscht, garnished with cream. Beetroots are the primary ingredient used in this traditional dish, illustrating the transformation from vegetable to a prepared meal.",
         "judge_answer": {
@@ -683,6 +690,13 @@
         "judge_answer": {
             "score_4o": "4",
             "score_reason": "The MLLM effectively relates both images to Berlin's historical significance, providing a logically consistent explanation closely aligned with the standard answer."
+        }
+    },
+    "Ha безрыбье и рак рыба(invisible, animal, metaphor, Non-English European, Russian)": {
+        "MLLM_answer": "- First image: Crawfish or crayfish\n- Second image: Fishing net on wooden surface\n- Relation: Fishing or capturing\n- Explanation: The first image shows a crawfish, a small freshwater crustacean, which is often caught using nets or traps. The second image depicts a fishing net, a tool commonly used for capturing aquatic animals like crawfish. The images both relate to the practice of fishing or capturing aquatic creatures.",
+        "judge_answer": {
+            "score_4o": "2",
+            "score_reason": "The MLLM output identifies a general theme of fishing or capturing rather than understanding the more nuanced proverb in the standard answer. It does not address the cultural expression 'Ha безрыбье и рак рыба,' which speaks to scarcity and settling for less desirable alternatives."
         }
     }
 }
