@@ -1,0 +1,1182 @@
+[
+    {
+        "foldername": "Abacus(visible, STEM, relation, NA, English)",
+        "relation": "Abacus",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Multiple parallel rods.jpg",
+                "description": "Multiple parallel rods (representing the structure of an abacus)",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "A single rod with beads.jpg",
+                "description": "A single rod with beads (representing the counting mechanism of the abacus)"
+            }
+        ],
+        "explanation": "An abacus consists of several parallel rods, each containing beads that can be moved to perform calculations. The first image depicts the overall framework of the abacus, while the second image illustrates how the beads on one of the rods are manipulated for counting, which is fundamental to how an abacus operates.",
+        "reasoning": "ComposedOf(Abacus, ParallelRods)\nUtilizes(Rods, Beads)\nThus, ParallelRods → Abacus and Rods → Beads",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Alpaca(visible, animal, metaphor, other, English)",
+        "relation": "Alpaca",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Soft, fluffy fleece.jpg",
+                "description": "Soft, fluffy fleece"
+            },
+            {
+                "img_id": "2",
+                "filename": "High Andes mountains.jpg",
+                "description": "High Andes mountains"
+            }
+        ],
+        "explanation": "Alpaca. The soft, fluffy fleece represents the luxurious wool that alpacas produce, while the high Andes mountains symbolize their native habitat, where they are traditionally raised.",
+        "reasoning": "Product(SoftFluffyFleece, Alpaca) ∧ Habitat(HighAndesMountains, Alpaca)\nThus, SoftFluffyFleece → Alpaca and HighAndesMountains → Alpaca.",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Baguette(visible, stuff, mutual elements, Non-English European, English)",
+        "relation": "Baguette",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A French mime artist.jpg",
+                "description": "A French mime artist"
+            },
+            {
+                "img_id": "2",
+                "filename": "A long, narrow loaf of bread being sliced.jpg",
+                "description": "A long, narrow loaf of bread being sliced"
+            }
+        ],
+        "explanation": "The first image, a French mime artist, often uses a baguette as a prop in their performances, playing on stereotypical French imagery. The second image, a sliced baguette, simply depicts the bread itself, a staple of French cuisine.",
+        "reasoning": "Use(MimeArtist, Baguette, Performance)\nIsA(SlicedBread, Baguette)\nThus, MimeArtist → Baguette and SlicedBread → Baguette",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Bastet(visible, myth, mutual elements, other, English)",
+        "relation": "Bastet",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "mutual elements",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A bronze statuette of a cat.jpg",
+                "description": "A bronze statuette of a cat"
+            },
+            {
+                "img_id": "2",
+                "filename": "A woman holding a sistrum.jpg",
+                "description": "A woman holding a sistrum"
+            }
+        ],
+        "explanation": "The first image depicts a cat statuette, a common representation of the Egyptian goddess Bastet, who was often depicted as a cat or a woman with a cat's head. The second image shows a woman holding a sistrum, a musical instrument used in ancient Egyptian rituals, particularly those associated with Bastet. Both images connect to Bastet, one through her iconic animal form and the other through her worship.",
+        "reasoning": "Represent(CatStatuette, Bastet)\nUseInRitual(Sistrum, BastetWorship) and RelateTo(BastetWorship, Bastet)\nThus, CatStatuette → Bastet and Sistrum → BastetWorship → Bastet",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Bighorn Sheep(visible, animal, relation, USAEnglish, English)",
+        "relation": "Bighorn Sheep",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Large, curved horns.jpg",
+                "description": "Large, curved horns"
+            },
+            {
+                "img_id": "2",
+                "filename": "Desert mountain.jpg",
+                "description": "Desert mountain"
+            }
+        ],
+        "explanation": "Bighorn sheep are known for their large, curved horns and their habitat in desert mountains. Large horns could belong to various animals, and desert mountains are a geographical feature, but together they create a strong association with bighorn sheep.",
+        "reasoning": "Have(BighornSheep, LargeCurvedHorns)\nLiveIn(BighornSheep, DesertMountain)\nThus, LargeCurvedHorns → BighornSheep → DesertMountain and DesertMountain → BighornSheep → LargeCurvedHorns",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Celtic Mythology(visible, myth, relation, Non-English European, English)",
+        "relation": "Celtic Mythology",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Spiral.jpg",
+                "description": "Spiral"
+            },
+            {
+                "img_id": "2",
+                "filename": "Triskelion.jpg",
+                "description": "Triskelion"
+            }
+        ],
+        "explanation": "Both spirals and the triskelion are common motifs in Celtic art and design, often appearing on ancient artifacts and symbolizing various concepts like growth, expansion, and the three realms (earth, sea, sky).",
+        "reasoning": "SymbolOf(Spiral, CelticMythology)\nSymbolOf(Triskelion, CelticMythology)\nThus, Spiral → CelticMythology → Triskelion and Triskelion → CelticMythology → Spiral",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Cheongsam(visible, stuff, mutual elements, East Asia, English)",
+        "relation": "Cheongsam",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Madame Chiang Kai-shek.jpg",
+                "description": "Madame Chiang Kai-shek"
+            },
+            {
+                "img_id": "2",
+                "filename": "A close-up of intricate frog closures.jpg",
+                "description": "A close-up of intricate frog closures"
+            }
+        ],
+        "explanation": "The first image, Madame Chiang Kai-shek, was known for her elegant style and frequently wore cheongsams, making it part of her public image. The second image, frog closures, are a distinctive fastening often found on traditional cheongsams, highlighting a key design element of the garment.",
+        "reasoning": "Wear(MadameChiangKaiShek, Cheongsam)\nFeature(Cheongsam, FrogClosures)\nThus, MadameChiangKaiShek → Cheongsam and FrogClosures → Cheongsam",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Dog(visible, animal, metaphor, NA, English)",
+        "relation": "Dog",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A wagging tail.jpg",
+                "description": "A wagging tail"
+            },
+            {
+                "img_id": "2",
+                "filename": "A bone.jpg",
+                "description": "A bone"
+            }
+        ],
+        "explanation": "Dog. The wagging tail symbolizes the joy and loyalty often associated with dogs, while the bone represents the classic treat and a common symbol of a dog's playfulness and affection.",
+        "reasoning": "Emotion(WaggingTail, Dog) ∧ Symbol(Treat, Bone)\nThus, WaggingTail → Dog and Bone → Dog",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Elephant(visible, animal, metaphor, other, English)",
+        "relation": "Elephant",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Large footprint.jpg",
+                "description": "Large footprint"
+            },
+            {
+                "img_id": "2",
+                "filename": "Trunk of a tree.jpg",
+                "description": "Trunk of a tree"
+            }
+        ],
+        "explanation": " Elephant. The large footprint represents the significant physical presence and impact of an elephant in its environment, while the trunk of a tree symbolizes the elephant's natural habitat and its behavior of foraging and uprooting plants.",
+        "reasoning": "Impact(LargeFootprint, Elephant) ∧ Habitat(TrunkOfTree, Elephant)\nThus, LargeFootprint → Elephant and TrunkOfTree → Elephant",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Fox Spirit(visible, animal, relation, East Asia, English)",
+        "relation": "Fox Spirit",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Nine tails.jpg",
+                "description": "Nine tails"
+            },
+            {
+                "img_id": "2",
+                "filename": "Human shape.jpg",
+                "description": "Human shape"
+            }
+        ],
+        "explanation": "Fox spirits, particularly in East Asian folklore, are often depicted with multiple tails (specifically nine) and the ability to shapeshift into human form. Nine tails is unusual for any real animal, and human shape is, well, human. Combined, they point towards the mythical fox spirit.",
+        "reasoning": "Have(FoxSpirit, NineTails)\nTransformInto(FoxSpirit, HumanShape)\nThus, NineTails → FoxSpirit → HumanShape and HumanShape → FoxSpirit → NineTails",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Jaguar(visible, animal, metaphor, other, English)",
+        "relation": "Jaguar",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Spots on a coat.jpg",
+                "description": "Spots on a coat"
+            },
+            {
+                "img_id": "2",
+                "filename": "Jungle foliage.jpg",
+                "description": "Jungle foliage"
+            }
+        ],
+        "explanation": "Jaguar. The spots on the coat represent the distinctive fur pattern of a jaguar, while the jungle foliage symbolizes its natural habitat, where it stealthily hunts.",
+        "reasoning": "Characteristic(SpotsOnCoat, Jaguar) ∧ Habitat(JungleFoliage, Jaguar)\nThus, SpotsOnCoat → Jaguar and JungleFoliage → Jaguar",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Kua Fu Chasing the Sun(visible, myth, relation, East Asia, English)",
+        "relation": "Kua Fu Chasing the Sun",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Sun.jpg",
+                "description": "Sun"
+            },
+            {
+                "img_id": "2",
+                "filename": "Giant.jpg",
+                "description": "Giant"
+            }
+        ],
+        "explanation": "Kua Fu, a giant, chased the sun across the land.",
+        "reasoning": "GoalOf(KuaFuChasingTheSun, Sun)\nAgentOf(KuaFuChasingTheSun, Giant)\nThus, Sun → KuaFuChasingTheSun → Giant and Giant → KuaFuChasingTheSun → Sun",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Mask(visible, stuff, metaphor, NA, English)",
+        "relation": "Mask",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Hidden face.jpg",
+                "description": "Hidden face"
+            },
+            {
+                "img_id": "2",
+                "filename": "Costume ball.jpg",
+                "description": "Costume ball"
+            }
+        ],
+        "explanation": "A hidden face suggests something is being concealed, often by a mask. Costume balls are events where masks are frequently worn as part of the attire.",
+        "reasoning": "HiddenFace ∧ CostumeBall → Mask",
+        "hop_count": 1,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Moon(visible, stuff, mutual elements, NA, English)",
+        "relation": "Moon",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Neil Armstrong's footprint.jpg",
+                "description": "Neil Armstrong's footprint"
+            },
+            {
+                "img_id": "2",
+                "filename": "Tidal wave.jpg",
+                "description": "Tidal wave"
+            }
+        ],
+        "explanation": "The first image, Neil Armstrong's footprint, directly relates to the moon landing, signifying humanity's presence on the lunar surface. The second image, a tidal wave, is caused by the gravitational pull of the moon on Earth's oceans. Thus, both images connect to the moon, one through human exploration and the other through its natural influence on our planet.",
+        "reasoning": "Leave(NeilArmstrong, Footprint, Moon)\nCause(Moon, TidalWave)\nThus, Footprint → Moon and TidalWave → Moon",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Scene Contextualization",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Nommo(visible, myth, mutual elements, other, English)",
+        "relation": "Nommo",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "mutual elements",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A stylized depiction of a fish-like creature with human-like arms.jpg",
+                "description": " A stylized depiction of a fish-like creature with human-like arms"
+            },
+            {
+                "img_id": "2",
+                "filename": "Sirius B.jpg",
+                "description": "Sirius B"
+            }
+        ],
+        "explanation": "The first image depicts a stylized representation of the Nommo, amphibious ancestral spirits venerated by the Dogon people of Mali. The second image shows Sirius B. According to Dogon mythology, the Nommo originated from the Sirius star system, specifically mentioning Sirius B long before its scientific discovery. Both images connect to the Nommo, one through their physical description and the other through their claimed celestial origins.",
+        "reasoning": "Represent(FishCreature, Nommo)\nOriginateFrom(Nommo, SiriusB)\nThus, FishCreature → Nommo and SiriusB → Nommo",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Nüwa Mends the Sky(visible, myth, mutual elements, East Asia, English)",
+        "relation": "Nüwa Mends the Sky",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A shattered sky with water pouring through.jpg",
+                "description": "A shattered sky with water pouring through"
+            },
+            {
+                "img_id": "2",
+                "filename": "Five-colored stones and a giant tortoise.jpg",
+                "description": "Five-colored stones and a giant tortoise"
+            }
+        ],
+        "explanation": "The first image depicts a broken sky with water cascading through, representing the catastrophic damage that Nüwa repaired. The second image shows five-colored stones and a giant tortoise. According to the myth, Nüwa used these five-colored stones to patch the sky and the tortoise's legs to prop it up. Together, these images represent the key elements of the Nüwa myth: the damaged sky and the tools used to repair it.",
+        "reasoning": "Depict(ShatteredSky, SkyDamage) and Repair(Nüwa, SkyDamage, NüwaMendsTheSky)\nUse(Nüwa, FiveColoredStonesAndTortoise, NüwaMendsTheSky)\nThus, ShatteredSky → SkyDamage → NüwaMendsTheSky and FiveColoredStonesAndTortoise → NüwaMendsTheSky",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Pizza(visible, food, relation, NA, English)",
+        "relation": "Pizza",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A round flatbread.jpg",
+                "description": "A round flatbread (representing the basic shape of a pizza)",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "Colorful toppings.jpg",
+                "description": "Colorful toppings (such as red tomatoes, green bell peppers, and white cheese)"
+            }
+        ],
+        "explanation": "A pizza is characterized by its round flatbread base topped with various colorful ingredients. The first image shows the essential shape of the flatbread, which serves as the foundation for the pizza, while the second image highlights the vibrant toppings that define the flavor and appeal of the dish.",
+        "reasoning": "ComposedOf(PizzaBase, RoundFlatbread)\nToppedWith(RoundFlatbread, ColorfulToppings)\nThus, RoundFlatbread → PizzaBase and RoundFlatbread → ColorfulToppings",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Pyramids(visible, stuff, mutual elements, other, English)",
+        "relation": "Pyramids",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "mutual elements",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Camel.jpg",
+                "description": "Camel"
+            },
+            {
+                "img_id": "2",
+                "filename": "Mummy sarcophagus.jpg",
+                "description": "Mummy sarcophagus"
+            }
+        ],
+        "explanation": "amels are often associated with the desert landscapes where Egyptian pyramids are found. Mummy sarcophagi were placed within pyramids as part of ancient Egyptian burial rituals. While camels exist in other deserts and sarcophagi might be found in other tombs, the combination clearly evokes the Egyptian pyramids.",
+        "reasoning": "Associate(Camel, EgyptianDesert) and Locate(EgyptianPyramids, EgyptianDesert)\nPlace(MummySarcophagus, EgyptianPyramids)\nThus, Camel → EgyptianDesert → EgyptianPyramids and MummySarcophagus → EgyptianPyramids",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Rubik's Cube(visible, stuff, relation, NA, English)",
+        "relation": "Rubik's Cube",
+        "visibility": "visible",
+        "domain": "stuff",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A cube shape.jpg",
+                "description": "A cube shape",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "Colorful stickers or blocks.jpg",
+                "description": "Colorful stickers or blocks"
+            }
+        ],
+        "explanation": "A Rubik's Cube is a three-dimensional puzzle made up of a cube with colorful stickers on each face. The first image shows the geometric shape of the cube, while the second image highlights the vibrant colors that are crucial to the puzzle's challenge, as each face of the cube consists of one solid color.",
+        "reasoning": "ComposedOf(RubiksCube, CubeShape)\nCoveredBy(CubeShape, ColorfulStickers)\nThus, CubeShape → RubiksCube and CubeShape → ColorfulStickers",
+        "hop_count": 2,
+        "perception": [
+            "Contextual Sensory Cues",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Rugby(visible, sports, relation, other, English)",
+        "relation": "Rugby",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Mud.jpg",
+                "description": "Mud"
+            },
+            {
+                "img_id": "2",
+                "filename": "Scrum.jpg",
+                "description": "Scrum "
+            }
+        ],
+        "explanation": "Rugby is often played in muddy conditions, and the scrum is a key element of the game. Muddy pitches are a common sight in rugby, especially during the wetter months. The scrum is a distinctive formation in rugby where players pack together to contest the ball.",
+        "reasoning": "PlayedOn(Rugby, MuddyPitch)\nHas(Rugby, Scrum)\nThus, Mud → MuddyPitch → Rugby and Scrum → Rugby",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Secretary bird(visible, animal, metaphor, other, English)",
+        "relation": "Secretary bird",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Long legs of a bird.jpg",
+                "description": "Long legs of a bird"
+            },
+            {
+                "img_id": "2",
+                "filename": "A snake.jpg",
+                "description": "A snake"
+            }
+        ],
+        "explanation": "Secretary bird. The long legs of the bird represent the secretary bird's distinctive physical feature, while the snake symbolizes the secretary bird's primary prey, which it hunts and kills.",
+        "reasoning": "Characteristic(LongLegs, SecretaryBird) ∧ Prey(Snake, SecretaryBird)\nThus, LongLegs → SecretaryBird and Snake → SecretaryBird",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Shinto Deities(visible, myth, mutual elements, East Asia, English)",
+        "relation": "Shinto Deities",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A shimenawa rope decorated with shide paper streamers.jpg",
+                "description": "A shimenawa rope decorated with shide paper streamers"
+            },
+            {
+                "img_id": "2",
+                "filename": "A fox statue wearing a red bib.jpg",
+                "description": "A fox statue wearing a red bib"
+            }
+        ],
+        "explanation": "The first image depicts a shimenawa rope, a sacred object in Shinto used to mark sacred spaces and indicate the presence of kami, or Shinto deities. The second image shows a fox statue with a red bib. Foxes (kitsune) are considered messengers of Inari Ōkami, a prominent Shinto deity of rice, agriculture, and prosperity. Both images relate to the veneration of Shinto deities, one representing a general marker of sacred presence, and the other a specific deity's messenger.",
+        "reasoning": "Mark(Shimenawa, SacredSpace) and Inhabit(Kami, SacredSpace) and IsA(Kami, ShintoDeities)\nMessengerOf(Kitsune, InariOkami) and IsA(InariOkami, ShintoDeities)\nThus, Shimenawa → SacredSpace → Kami → ShintoDeities and Kitsune → InariOkami → ShintoDeities",
+        "hop_count": 5,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Sudoku(visible, STEM, relation, NA, English)",
+        "relation": "Sudoku",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A large square representing the entire 9x9 Sudoku grid.jpg",
+                "description": "A large square representing the entire 9x9 Sudoku grid",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "smaller square arranged in a 3x3 grid pattern.jpg",
+                "description": "square arranged in a 3x3 grid pattern"
+            }
+        ],
+        "explanation": "A Sudoku puzzle is composed of a 9x9 grid divided into nine 3x3 subgrids.The first image illustrates the overall layout of the Sudoku puzzle, while the second image depicts how the 9x9 grid is organized into nine smaller sections, each containing 3 rows and 3 columns, essential for solving the puzzle.",
+        "reasoning": "ComposedOf(Sudoku, 9x9Grid)\nDividedInto(9x9Grid, 3x3Subgrids)\nThus, 9x9Grid → Sudoku and 9x9Grid → 3x3Subgrids",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Tai Chi(invisible, sports, relation, East Asia, English)",
+        "relation": "Tai Chi",
+        "visibility": "invisible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Empty hand.jpg",
+                "description": "Empty hand"
+            },
+            {
+                "img_id": "2",
+                "filename": "Spiral.jpg",
+                "description": "Spiral "
+            }
+        ],
+        "explanation": "Tai Chi is practiced with empty hands, and its movements often involve spiral or circular patterns. The empty hand signifies that Tai Chi doesn't rely on weapons. The spiral represents the flowing, circular motions characteristic of the forms.",
+        "reasoning": "Uses(TaiChi, EmptyHand)\nCharacterizedBy(TaiChi, SpiralMovement)\nThus, EmptyHand → TaiChi and Spiral → SpiralMovement → TaiChi",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Tengu(visible, myth, relation, East Asia, English)",
+        "relation": "Tengu",
+        "visibility": "visible",
+        "domain": "myth",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "hauchiwa fan.jpg",
+                "description": "hauchiwa fan"
+            },
+            {
+                "img_id": "2",
+                "filename": "Wings.jpg",
+                "description": "Wings"
+            }
+        ],
+        "explanation": "Tengu are often depicted carrying or using large hauchiwa fans, and they are also described as having wings, contributing to their bird-like appearance.",
+        "reasoning": "Use(Tengu, HauchiwaFan)\nHas(Tengu, Wings)\nThus, HauchiwaFan → Tengu → Wings and Wings → Tengu → HauchiwaFan",
+        "hop_count": 4,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "إذا الشعب يوما أراد الحياة فلابد أن يستجيب القدر(visible, art, relation, NA, Arabic)",
+        "relation": "إذا الشعب يوما أراد الحياة فلابد أن يستجيب القدر",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A raised fist.jpg",
+                "description": "A raised fist"
+            },
+            {
+                "img_id": "2",
+                "filename": "Broken chains.jpg",
+                "description": "Broken chains"
+            }
+        ],
+        "explanation": "The raised fist symbolizes the people's will and struggle for freedom and life. The broken chains represent the overcoming of oppression and the fulfillment of destiny's response to the people's will.",
+        "reasoning": "Represents(RaisedFist, StruggleForFreedom)\nRepresents(BrokenChains, FreedomAchieved)\nThus, RaisedFist → StruggleForFreedom → WillToLive → FreedomAchieved ← BrokenChains and BrokenChains → FreedomAchieved → WillToLive → StruggleForFreedom → RaisedFist",
+        "hop_count": 7,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "إذا أنت أكرمت الكريم ملكته وإن أنت أكرمت اللئيم تمردا(visible, art, metaphor, NA, Arabic)",
+        "relation": "إذا أنت أكرمت الكريم ملكته وإن أنت أكرمت اللئيم تمردا",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Open hand receiving a gift.jpg",
+                "description": "Open hand receiving a gift"
+            },
+            {
+                "img_id": "2",
+                "filename": "Hand pushing a gift away.jpg",
+                "description": "Hand pushing a gift away"
+            }
+        ],
+        "explanation": "The proverb describes two reactions to being honored. An open hand receiving a gift symbolizes acceptance, representing the generous person who is \"possessed\" by kindness. A hand pushing a gift away symbolizes rejection and rebellion, representing the base person's reaction.",
+        "reasoning": "OpenHandReceivingGift ∧ HandPushingGiftAway → إذا أنت أكرمت الكريم ملكته وإن أنت أكرمت اللئيم تمردا",
+        "hop_count": 1,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "الجوع كافر(visible, art, relation, NA, Arabic)",
+        "relation": "الجوع كافر",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Empty plate.jpg",
+                "description": "Empty plate"
+            },
+            {
+                "img_id": "2",
+                "filename": "Person stealing bread.jpg",
+                "description": "Person stealing bread"
+            }
+        ],
+        "explanation": "An empty plate represents hunger. A person stealing bread demonstrates the desperate acts hunger can drive someone to, implying a disregard for societal norms (like an \"infidel\" might).",
+        "reasoning": "Represents(EmptyPlate, Hunger)\nCausedBy(StealingBread, Hunger)\nThus, EmptyPlate → Hunger → StealingBread and StealingBread → Hunger → EmptyPlate",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "الصبر مفتاح الفرج(visible, art, metaphor, NA, Arabic)",
+        "relation": "الصبر مفتاح الفرج",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Budding flower.jpg",
+                "description": "Budding flower"
+            },
+            {
+                "img_id": "2",
+                "filename": "Blooming flower.jpg",
+                "description": "Blooming flower"
+            }
+        ],
+        "explanation": "A budding flower represents the waiting period, requiring patience before it blooms. The blooming flower represents the beautiful outcome or \"relief\" achieved through patience.",
+        "reasoning": "BuddingFlower ∧ BloomingFlower → الصبر مفتاح الفرج",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "الصديق وقت الضيق(visible, art, mutual elements, NA, Arabic)",
+        "relation": "الصديق وقت الضيق",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "A person offering a helping hand to another person who is slumped over in despair.jpg",
+                "description": "A person offering a helping hand to another person who is slumped over in despair"
+            },
+            {
+                "img_id": "2",
+                "filename": "Umbrella shielding two people from a storm.jpg",
+                "description": "Umbrella shielding two people from a storm"
+            }
+        ],
+        "explanation": "The first image represents someone offering support during a difficult time (\"وقت الضيق\"). The second image symbolizes shared hardship and mutual protection, again highlighting the value of a friend during challenging times. While helping hands can represent various types of aid and umbrellas protect from weather, together they emphasize the proverb's meaning of true friendship revealed during adversity.",
+        "reasoning": "Represent(HelpingHand, SupportDuringDifficulty) and Relate(الصديق وقت الضيق, SupportDuringDifficulty)\nSymbolize(SharedUmbrella, MutualSupportDuringHardship) and Relate(الصديق وقت الضيق, MutualSupportDuringHardship)\nThus, HelpingHand → SupportDuringDifficulty → الصديق وقت الضيق and SharedUmbrella → MutualSupportDuringHardship → الصديق وقت الضيق",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "العقل زينة(invisible, art, relation, Arabic-Islamic, Arabic)",
+        "relation": "العقل زينة",
+        "visibility": "invisible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "Arabic-Islamic",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Necklace.jpg",
+                "description": "Necklace"
+            },
+            {
+                "img_id": "2",
+                "filename": "Thinking Person.jpg",
+                "description": "Thinking Person(silhouette of a person with thought bubbles)"
+            }
+        ],
+        "explanation": "A necklace is a physical adornment, while the mind, represented by the thinking person, is an inner adornment (زينة).",
+        "reasoning": "IsA(Necklace, Adornment)\nRepresents(ThinkingPerson, Mind)\nThus, Necklace → Adornment → زينة ← Mind ← ThinkingPerson and ThinkingPerson → Mind → زينة → Adornment → Necklace",
+        "hop_count": 6,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "اللي يزرع يحصد(visible, art, mutual elements, NA, Arabic)",
+        "relation": "اللي يزرع يحصد",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Seeds being sown in a field.jpg",
+                "description": "Seeds being sown in a field"
+            },
+            {
+                "img_id": "2",
+                "filename": "Hands holding a sheaf of wheat.jpg",
+                "description": "Hands holding a sheaf of wheat"
+            }
+        ],
+        "explanation": "The first image represents the act of planting seeds, the \"زرع\" (sowing) part of the proverb. The second image shows the harvest, the \"يحصد\" (reaps) part of the proverb. Together, they visually depict the cause-and-effect relationship described by the proverb: the effort of sowing leads to the reward of harvesting.",
+        "reasoning": "Depict(SowingSeeds, زرع) and Mean(اللي يزرع يحصد, Relationship(زرع, يحصد))\nDepict(HoldingWheat, يحصد) and Mean(اللي يزرع يحصد, Relationship(زرع, يحصد))\nThus, SowingSeeds → زرع → اللي يزرع يحصد and HoldingWheat → يحصد → اللي يزرع يحصد",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "تقدیر کے سامنے سر جھکانا نہیں(visible, art, mutual elements, Arabic-Islamic, Urdu)",
+        "relation": "تقدیر کے سامنے سر جھکانا نہیں",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a strong mountain standing tall against a stormy sky.jpg",
+                "description": "a strong mountain standing tall against a stormy sky"
+            },
+            {
+                "img_id": "2",
+                "filename": "a person raising their fist in the air defiantly.jpg",
+                "description": "a person raising their fist in the air defiantly"
+            }
+        ],
+        "explanation": "The phrase 'Do not bow down before fate' signifies the resilience and determination to stand against life's challenges. The strong mountain symbolizes unwavering strength in the face of adversity, while the person raising their fist represents defiance and the refusal to submit to predetermined outcomes. The first image illustrates the concept of enduring strength, while the second reflects the spirit of rebellion against fate.",
+        "reasoning": "Represents(Strength, Mountain)\nEmbodies(Defiance, Person)\nThus, Mountain → Strength and Person → Defiance → DefianceAgainstFate",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "دیر آید، درست آید(visible, art, mutual elements, Arabic-Islamic, Urdu)",
+        "relation": "دیر آید، درست آید",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a clock showing a late hour.jpg",
+                "description": "a clock showing a late hour with hands pointing to 11:59"
+            },
+            {
+                "img_id": "2",
+                "filename": "a person arriving at a gathering with a smile, holding a gift.jpg",
+                "description": "a person arriving at a gathering with a smile, holding a gift"
+            }
+        ],
+        "explanation": "The phrase 'Better late than never' suggests that arriving late (the clock) is preferable to not arriving at all (the person showing up with a gift). The first image of the clock signifies the idea of time and lateness, while the second image illustrates the positive outcome of making an appearance, regardless of the delay.",
+        "reasoning": "Indicates(Lateness, Clock)\nCelebrates(Arrival, Person)\nThus, Clock → Lateness and Person → Arrival → BetterLateThanNever",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object",
+            "Scene Contextualization",
+            "Social Insight"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "زندگی سے یہ شکایت نہیں، موت کا انتظار ہے(visible, art, mutual elements, Arabic-Islamic, Urdu)",
+        "relation": "زندگی سے یہ شکایت نہیں، موت کا انتظار ہے",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Arabic-Islamic",
+        "language": "Urdu",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "a tranquil sunset casting golden hues over the horizon.jpg",
+                "description": "a tranquil sunset casting golden hues over the horizon"
+            },
+            {
+                "img_id": "2",
+                "filename": "a person sitting on a bench, looking contemplatively at the sky filled with stars.jpg",
+                "description": "a old person sitting on a bench, looking contemplatively at the sky filled with stars"
+            }
+        ],
+        "explanation": "The phrase 'I have no complaints about life; I am just waiting for death' illustrates a peaceful acceptance of life's journey and the inevitability of death. The tranquil sunset symbolizes the end of a day (or life), while the person gazing at the starry sky represents contemplation and an acceptance of what lies beyond. The first image signifies the beauty of life's conclusion, while the second conveys a reflective attitude toward mortality.",
+        "reasoning": "Represents(EndOfDay, Sunset)\nContemplates(Mortality, Person)\nThus, Sunset → EndOfDay and Person → Mortality → AcceptanceOfDeath",
+        "hop_count": 3,
+        "perception": [
+            "Visual Similarity",
+            "Semantic Object",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "ما كل ما يلمع ذهبا(visible, art, relation, NA, Arabic)",
+        "relation": "ما كل ما يلمع ذهبا",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "Arabic",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Pyrite.jpg",
+                "description": "Pyrite (Fool's Gold)"
+            },
+            {
+                "img_id": "2",
+                "filename": "Gold.jpg",
+                "description": "Gold"
+            }
+        ],
+        "explanation": "Pyrite looks like gold and glitters, but it isn't real gold. This illustrates the proverb's meaning that appearances can be deceiving.",
+        "reasoning": "Glitters(Pyrite)\nNot(Pyrite, Gold)\nThus, Pyrite → Glitters → Gold and Gold → Glitters → Pyrite (Illustrating the deceptive nature of appearances)",
+        "hop_count": 4,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Olympic Rings(visible, sports, relation, NA, English)",
+        "relation": "Olympic Rings",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Five colored circles.jpg",
+                "description": " Five colored circles (red, yellow, blue, green, black)",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "Interlocking pattern of rings in a circular arrangement.jpg",
+                "description": "Interlocking pattern of rings in a circular arrangement"
+            }
+        ],
+        "explanation": "The Olympic rings are represented by five interlocking circles, symbolizing the unity of the five inhabited continents. The first image shows the individual colored circles that make up the Olympic symbol, while the second image visually represents how these rings are designed to interconnect, signifying international unity and cooperation through the Olympic movement..",
+        "reasoning": "Symbolizes(OlympicRings, FiveContinents)\nInterlock(ColoredCircles, OlympicRings)\nThus, ColoredCircles → OlympicRings and OlympicRings → Interlock(ColoredCircles)",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    }
+]

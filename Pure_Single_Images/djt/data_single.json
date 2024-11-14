@@ -1,0 +1,1382 @@
+[
+    {
+        "foldername": "Topology(visible, STEM, mutual elements, NA, English)",
+        "relation": "Topology",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Mobius Bracelet.jpg",
+                "description": " A simple, silver bracelet in the shape of a closed loop.",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "tuopu.jpg",
+                "description": "A Klein bottle"
+            }
+        ],
+        "explanation": "The silver bracelet, a closed loop, represents a simple, connected topological shape. The Klein bottle, a non-orientable surface, is a classic example of a complex topological object, often used to illustrate the concepts of connectedness and non-orientability in topology. While a bracelet could be just jewelry, and a Klein bottle a curious mathematical object, together they represent different aspects of shapes and surfaces studied in topology.",
+        "reasoning": "Example(silver bracelet, Mobius Bracelet) and Example(Mobius Bracelet, Topology)\nAssociate(KleinBottle, Topology)\nThus, silver bracelet→ Mobius Bracelet → Topology and KleinBottle → Topology",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object",
+            "Visual Similarity"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "九章算术(invisible, STEM, mutual elements, East Asia, Chinese)",
+        "relation": "九章算术",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "Chinese",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "bamboo.jpg",
+                "description": "Close-up of bamboo slips with Chinese characters clearly visible, some showing mathematical diagrams."
+            },
+            {
+                "img_id": "2",
+                "filename": "jiuzhang.jpg",
+                "description": "A diagram illustrating the Pythagorean theorem, but using traditional Chinese numerical characters and geometric notation."
+            }
+        ],
+        "explanation": "Bamboo slips were the primary writing medium in ancient China, and the image suggests mathematical content written on them, hinting at ancient Chinese mathematical texts like the Nine Chapters. The Pythagorean theorem, while a universal mathematical concept, is presented here with traditional Chinese notation, linking it to the historical context of Chinese mathematics, specifically the geometric problems and solutions found within the Nine Chapters.",
+        "reasoning": "WrittenOn(BambooSlips,九章算术)\nContain(Pythagorean Theorem,GeometricProblems) and Example(GeometricProblems, 九章算术)\nThus, BambooSlips → 九章算术 and Pythagorean Theore → GeometricProblems → 九章算术",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "珠心算(visible, STEM, relation, East Asia, Chinese)",
+        "relation": "珠心算",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "Chinese",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "abacus.jpg",
+                "description": "Abacus."
+            },
+            {
+                "img_id": "2",
+                "filename": "number in mind.png",
+                "description": "Child's head with numbers swirling around."
+            }
+        ],
+        "explanation": "Mental abacus is a technique where users visualize an abacus in their mind to perform calculations. The abacus represents the tool, and the child's head with numbers visualizes the mental process.",
+        "reasoning": "ToolUsedIn(Abacus,珠心算)\nMentalProcessOf(珠心算, Mental Abacus)\nThus, Abacus → 珠心算 → Mental Calculation",
+        "hop_count": 2,
+        "perception": [
+            "Scene Contextualization",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "equation(invisible, STEM, metaphor, NA, English)",
+        "relation": "equation",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "seesaw.jpg",
+                "description": "A seesaw with two children of visibly different weights, positioned so it's perfectly balanced."
+            },
+            {
+                "img_id": "2",
+                "filename": "equivalent.png",
+                "description": "Four different fractions that equal the same value"
+            }
+        ],
+        "explanation": " The seesaw with differently weighted children balanced represents equality achieved through different values, similar to how different terms in an equation can balance each other. The equivalent fractions directly visualize mathematical equality between different expressions, further solidifying the concept of an equation.",
+        "reasoning": "Represents(BalancedSeesawWithDifferentWeights, EqualityThroughDifferentValues)\nRepresents(EquivalentFractions, MathematicalEqualityBetweenDifferentExpressions)\nThus, (BalancedSeesawWithDifferentWeights ∧ EquivalentFractions) → Equation",
+        "hop_count": 1,
+        "perception": [
+            "Abstract Interpretation",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Fibonacci Sequence(visible, STEM, metaphor, NA, English)",
+        "relation": "Fibonacci Sequence",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "spiral shell.jpg",
+                "description": "spiral shell"
+            },
+            {
+                "img_id": "2",
+                "filename": "sequence.png",
+                "description": "A sequence of 1, 1, 2, 3, 5, 8,..."
+            }
+        ],
+        "explanation": " The Fibonacci sequence appears in many natural forms, including the spiral pattern of shells. The number sequence directly represents the Fibonacci sequence itself.",
+        "reasoning": "spiral shell ∧ sequence → Fibonacci Sequence",
+        "hop_count": 1,
+        "perception": [
+            "Abstract Interpretation",
+            "Abstract Interpretation",
+            "Visual Similarity"
+        ],
+        "conception": [
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Regular Hexagonal Prism(visible, STEM, metaphor, NA, English)",
+        "relation": "Regular Hexagonal Prism",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "honey comb.jpg",
+                "description": "Honeycomb with one cell highlighted, showing its depth",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "stone pillar.jpg",
+                "description": "A pillar made in stone",
+                "similarity_type": "perceptual"
+            }
+        ],
+        "explanation": "The honeycomb with a highlighted cell emphasizes the prismatic shape of individual honeycomb cells, each being a natural example of a hexagonal prism. The pillar with a hexagonal cross-section directly represents a man-made hexagonal prism, connecting the natural honeycomb structure to the geometric concept of a regular hexagonal prism.",
+        "reasoning": "(Honeycomb ∧ stone pillar) → Regular Hexagonal Prism ",
+        "hop_count": 1,
+        "perception": [
+            "Abstract Interpretation",
+            "Visual Similarity"
+        ],
+        "conception": [
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "square(invisible, STEM, mutual elements, NA, English)",
+        "relation": "square",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "rhombus.png",
+                "description": "A rhombus"
+            },
+            {
+                "img_id": "2",
+                "filename": "rectangle.png",
+                "description": "A rectangle"
+            }
+        ],
+        "explanation": "A rhombus with equal sides fulfills one requirement of a square: all sides are equal. A rectangle with right angles fulfills the other requirement of a square: all angles are equal (and 90 degrees). The combination of these two images suggests a shape that possesses both properties, thus defining a square.",
+        "reasoning": "EqualAngles(Rhombus, Square)\nEqualSides(Rectangle, Square\nThus, Rhombus →Angles Equal →Square and Rectangle → SidesEqual →Square",
+        "hop_count": 4,
+        "perception": [
+            "Abstract Interpretation",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Analogical Reasoning",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Game Theory(invisible, STEM, relation, Non-English European, English)",
+        "relation": "Game Theory",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "two hands.jpg",
+                "description": "Two hands playing Rock, Paper, Scissors."
+            },
+            {
+                "img_id": "2",
+                "filename": "prison form.jpg",
+                "description": "Prisoner's Dilemma payoff matrix."
+            }
+        ],
+        "explanation": "Rock, Paper, Scissors is a simple game analyzed in game theory, while the Prisoner's Dilemma is a classic example of a game theory problem exploring cooperation and competition.",
+        "reasoning": "ExampleOf(RockPaperScissors, GameTheory)\nExampleOf(PrisonersDilemma, GameTheory)\nThus, RockPaperScissors → GameTheory → PrisonersDilemma",
+        "hop_count": 2,
+        "perception": [
+            "Scene Contextualization",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Hierarchical Association",
+            "Thematic Links"
+        ]
+    },
+    {
+        "foldername": "Exponential Growth(invisible, STEM, mutual elements, NA, English)",
+        "relation": "Exponential Growth",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "tree growing.png",
+                "description": "A branching tree, with each branch splitting into multiple smaller branches"
+            },
+            {
+                "img_id": "2",
+                "filename": "exp_curve.png",
+                "description": "An exponential curve on a graph, clearly showing the upward accelerating trend."
+            }
+        ],
+        "explanation": "The branching tree visually represents the concept of rapid, multiplying growth, analogous to how exponential processes expand. The exponential curve on the graph provides the mathematical representation of this growth, showing the accelerating increase over time. While a tree could represent any kind of growth, and a curve on a graph any function, the specific nature of the branching and the exponential curve clarifies the shared concept of exponential growth.",
+        "reasoning": "AnalogousTo(BranchingTree, ExponentialGrowth)\nRepresents(ExponentialCurve, ExponentialGrowth)\nThus, BranchingTree → ExponentialGrowth and ExponentialCurve → ExponentialGrowth",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Hierarchical Association",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Pyraminx(invisible, STEM, metaphor, NA, English)",
+        "relation": "Pyraminx",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "pyramid.jpg",
+                "description": "a pyramid",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "cube.jpg",
+                "description": "a cube"
+            }
+        ],
+        "explanation": "This relies on pre-existing knowledge of the Pyraminx puzzle. The cube represents the kind of puzzle the Pyraminx is, a twisty puzzle similar to a Rubik's Cube. The pyramid represents the form of the Pyraminx, its distinctive pyramidal shape.",
+        "reasoning": "Represents(Cube, TwistyPuzzleKind)\nRepresents(Pyramid, PyraminxForm)\nThus, (Cube ∧ Pyramid) → Pyraminx (connecting the puzzle type and its shape)",
+        "hop_count": 1,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "Счет(invisible, STEM, metaphor, Non-English European, Russian)",
+        "relation": "Счет",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "tangguo.jpg",
+                "description": "String of candies on a skewer",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "old Russian shop.jpg",
+                "description": "Russian Shop"
+            }
+        ],
+        "explanation": "The string of candies, visually similar to an abacus with its beads on rods, directly evokes the image of a counting tool. The Russian shop provides the context, implying a place of commerce where a tool like the Russian abacus would have been historically used for calculations.",
+        "reasoning": "Resembles(StringOfCandies, Abacus ∧ CountingTool)\nImplies(RussianShop, Transactions ∧ HistoricalUseOfAbacus)\nThus, (StringOfCandies ∧ RussianShop) → Счет",
+        "hop_count": 1,
+        "perception": [
+            "Visual Similarity",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Cultural Reference",
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "Mayan Mathematics(visible, STEM, mutual elements, Latin American, English)",
+        "relation": "Mayan Mathematics",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "mutual elements",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "rilikebiao.jpg",
+                "description": "A detailed carving of Mayan calendar glyphs, specifically highlighting the numerical symbols."
+            },
+            {
+                "img_id": "2",
+                "filename": "mayashuzi.png",
+                "description": "A chart illustrating the Mayan vigesimal (base-20) number system, showing the symbols for 0-19 and how they combine to represent larger numbers."
+            }
+        ],
+        "explanation": "The Mayan calendar glyphs, with their embedded numerical symbols, represent the sophisticated timekeeping system developed by the Mayans, which relied on their mathematical understanding. The chart illustrating the Mayan vigesimal number system directly showcases the base-20 arithmetic used in their calendar and other calculations. While glyphs could be any writing system, and a number system chart any base, the combination specifically points to the mathematical achievements of the Mayan civilization.",
+        "reasoning": "Employ(MayanCalendarGlyphs, MayanMathematics)\nRepresent(VigesimalSystemChart, MayanMathematics)\nThus, MayanCalendarGlyphs → MayanMathematics and VigesimalSystemChart → Mayan Mathematics",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference",
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "Eulerian Path(visible, STEM, relation, Non-English European, English)",
+        "relation": "Eulerian Path",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "qiqiao.jpg",
+                "description": "A diagram of the Seven Bridges of Königsberg."
+            },
+            {
+                "img_id": "2",
+                "filename": "oula.jpg",
+                "description": "A single continuous line drawn through a graph, visiting each edge exactly once."
+            }
+        ],
+        "explanation": "The Seven Bridges of Königsberg problem, which asked if it was possible to walk across all seven bridges exactly once and return to the starting point, led to the development of the concept of Eulerian paths. The first image represents the historical problem, and the second image shows the general concept of an Eulerian path (or in this specific historical case, demonstrating the lack of a Eulerian cycle).",
+        "reasoning": "OriginOf(SevenBridgesProblem, EulerianPath)\nExampleOf(TraversingAllEdgesOnce, EulerianPath)\nThus, SevenBridgesProblem → EulerianPath → TraversingAllEdgesOnce",
+        "hop_count": 2,
+        "perception": [
+            "Scene Contextualization",
+            "Semantic Object",
+            "Visual Similarity",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Hierarchical Association",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Sushi(invisible, food, mutual elements, East Asia, English)",
+        "relation": "Sushi",
+        "visibility": "invisible",
+        "domain": "food",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "seawood.jpg",
+                "description": "seaweed"
+            },
+            {
+                "img_id": "2",
+                "filename": "rice.jpg",
+                "description": "rice"
+            }
+        ],
+        "explanation": "Seaweed and rice are essential ingredients in sushi.Sushi is traditionally made with vinegared rice and wrapped or accompanied by seaweed, specifically nori, which is a common type of edible seaweed used in various sushi rolls.",
+        "reasoning": "Ingredient(Seaweed, Sushi)\nIngredient(Rice, Sushi)\nThus, Seaweed → Sushi and Rice → Sushi",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Analogical Reasoning",
+            "Cultural Reference",
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "Dumplings(invisible, food, mutual elements, East Asia, English)",
+        "relation": "Dumplings",
+        "visibility": "invisible",
+        "domain": "food",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "dumpling wrapper.jpg",
+                "description": "round dumpling wrappers"
+            },
+            {
+                "img_id": "2",
+                "filename": "springfestival.jpg",
+                "description": "Chinese New Year"
+            }
+        ],
+        "explanation": "Dumplings are traditionally made and consumed during Chinese New Year celebrations. The first image represents the festive atmosphere of Chinese New Year, which is a time when families come together to make and enjoy dumplings as a symbol of prosperity and good fortune. The second image of round dumpling wrappers signifies the essential component used to create dumplings, which are especially popular during this holiday.",
+        "reasoning": "Celebrates(ChineseNewYear, DumplingTradition)\nIsA(RoundWrapper, DumplingComponent)\nThus, ChineseNewYear → DumplingTradition and RoundWrapper → DumplingComponent → Dumpling",
+        "hop_count": 3,
+        "perception": [
+            "Contextual Sensory Cues",
+            "Scene Contextualization",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "борщ(visible, food, relation, Non-English European, Russian)",
+        "relation": "борщ",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "beet.jpg",
+                "description": " a beet"
+            },
+            {
+                "img_id": "2",
+                "filename": "borscht.jpg",
+                "description": "a bowl of borscht "
+            }
+        ],
+        "explanation": "Borscht is primarily made from beets. The first image shows a beet, which is the key ingredient that gives borscht its distinctive deep red color and unique flavor. The second image is a bowl of borscht, showcasing the final dish that is known for its rich beet flavor and is a staple in Eastern European cuisine.",
+        "reasoning": "Ingredient(борщ , Beet)\nThus, Beet → борщ",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object",
+            "Relational Perception"
+        ],
+        "conception": [
+            "Thematic Links",
+            "Cultural Reference",
+            "Functional Links"
+        ]
+    },
+    {
+        "foldername": "Mooncake(invisible, food, metaphor, East Asia, English)",
+        "relation": "Mooncake",
+        "visibility": "invisible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "pudding.jpg",
+                "description": "a pudding ",
+                "similarity_type": "perceptual"
+            },
+            {
+                "img_id": "2",
+                "filename": "fullmoon.jpg",
+                "description": "a full moon"
+            }
+        ],
+        "explanation": "Mooncakes are traditionally enjoyed during the Mid-Autumn Festival, which celebrates the full moon, while puddings are often associated with festive gatherings and celebrations. The first image of a full moon represents the Mid-Autumn Festival (中秋节), a time for families to come together and eat mooncakes as a symbol of reunion. The second image of a pudding showcases a dessert that, although not traditionally linked to the festival, is often served at festive occasions and gatherings as a sweet treat, connecting both images through the theme of celebration and togetherness.",
+        "reasoning": "Symbolizes(MidAutumnFestival, FullMoon)\nShapsimilar(Pudding, Mooncake)\nThus, ((FullMoon → MidAutumnFestival) ∧ Pudding) → Mooncake",
+        "hop_count": 2,
+        "perception": [
+            "Visual Similarity",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Cultural Reference",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Caviar(invisible, food, relation, NA, English)",
+        "relation": "Caviar",
+        "visibility": "invisible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "sturgeonfish.jpg",
+                "description": "sturgeon fish."
+            },
+            {
+                "img_id": "2",
+                "filename": "luxury.jpg",
+                "description": "luxury dining table setting."
+            }
+        ],
+        "explanation": "Caviar is made from the roe of sturgeon fish and is often associated with luxury dining.The first image depicts a sturgeon, which is the fish species from which caviar is derived. The second image represents a luxury dining table setting, highlighting the status of caviar as a gourmet delicacy enjoyed in high-end culinary experiences.",
+        "reasoning": "Produce(Caviar, SturgeonFish)\nEnjoys(Caviar, LuxuryDining)\nThus, SturgeonFish → Caviar → LuxuryDining.",
+        "hop_count": 2,
+        "perception": [
+            "Scene Contextualization",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Yakitori(invisible, food, relation, East Asia, English)",
+        "relation": "Yakitori",
+        "visibility": "invisible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "skewchicken.jpg",
+                "description": "skewered grilled chicken."
+            },
+            {
+                "img_id": "2",
+                "filename": "izakaya.jpg",
+                "description": "traditional Japanese izakaya (pub)."
+            }
+        ],
+        "explanation": "Yakitori refers to skewered grilled chicken, a popular dish often enjoyed in izakayas. The first image showcases skewered grilled chicken, which is the essence of yakitori. The second image represents a traditional izakaya, emphasizing the cultural context where yakitori is commonly served and enjoyed as a social dining experience.",
+        "reasoning": "IsType(Yakitori, SkeweredGrilledChicken)\nServes(Yakitori, Izakaya)\nThus, SkeweredGrilledChicken → Yakitori → Izakaya.",
+        "hop_count": 2,
+        "perception": [
+            "Scene Contextualization",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Hierarchical Association",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "водка(invisible, food, metaphor, Non-English European, Russian)",
+        "relation": "водка",
+        "visibility": "invisible",
+        "domain": "food",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "samovar.jpg",
+                "description": "A traditional Russian samovar."
+            },
+            {
+                "img_id": "2",
+                "filename": "drinkglass.jpg",
+                "description": "A shot glass filled with vodka"
+            }
+        ],
+        "explanation": "The traditional Russian samovar symbolizes social gatherings that often include vodka served in shot glasses. The samovar is a cultural icon of Russian hospitality, typically used for brewing tea during social events, while the shot glass filled with vodka represents the alcoholic beverage that is commonly consumed in these settings, highlighting the connection between the two.",
+        "reasoning": "Represents(SocialGathering, RussianSamovar) and CommonlyServed(водка, SocialGathering)\nPlace(glass,водка)\nThus, (RussianSamovar → SocialGathering) ∧ glass bottle → водка ",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Semantic Object",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Cultural Reference",
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Barbecue(invisible, food, mutual elements, USAEnglish, English)",
+        "relation": "Barbecue",
+        "visibility": "invisible",
+        "domain": "food",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "grill.jpg",
+                "description": "skewers of grilled meat (kebabs) on a grill."
+            },
+            {
+                "img_id": "2",
+                "filename": "guitar.jpg",
+                "description": " a guitar in party."
+            }
+        ],
+        "explanation": "Guitar is commonly associated with barbecue music. The first image of a guitar represents the music typically played at barbecue gatherings, which enhances the social atmosphere. The second image of skewers of grilled meat reflects a popular dish prepared at barbecues, showcasing the culinary aspect of these events.",
+        "reasoning": "AssociatedWith(Guitar, Party) and Associate(Party, Barbecue)\nCookedAt(SkewersOnGrill, Barbecue)\nThus, Guitar → Party→ and Barbecue SkewersOnGrill → Barbecue",
+        "hop_count": 3,
+        "perception": [
+            "Scene Contextualization",
+            "Relational Perception",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Hierarchical Association",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "China(invisible, country, metaphor, NA, English)",
+        "relation": "China",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "metaphor",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "china.jpg",
+                "description": "Chinese porcelain."
+            },
+            {
+                "img_id": "2",
+                "filename": "four.jpg",
+                "description": "The Four Great Ancient Civilizations (Mesopotamia, Ancient Egypt, the Indus Valley, and Ancient China)."
+            }
+        ],
+        "explanation": "Chinese porcelain is a hallmark of China's ancient culture and craftsmanship, while Ancient China is one of the Four Great Ancient Civilizations. Chinese porcelain, known for its beauty and quality, has been a significant cultural export that represents the advanced craftsmanship of Ancient China, which is recognized as one of the Four Great Ancient Civilizations that contributed to human history and development.",
+        "reasoning": "Represents(Chinese Porcelain, China)\nBelongsTo(China, FourGreatAncientCivilizations)\nThus, ChinesePorcelain ∧ FourGreatAncientCivilizations → China",
+        "hop_count": 1,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Ancient Babylon(invisible, country, mutual elements, NA, English)",
+        "relation": "Ancient Babylon",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "hanmo.jpg",
+                "description": "Code of Hammurabi."
+            },
+            {
+                "img_id": "2",
+                "filename": "skypalace.jpg",
+                "description": "Hanging Gardens of Babylon."
+            }
+        ],
+        "explanation": "The Code of Hammurabi represents the legal advancements of Ancient Babylon, while the Hanging Gardens of Babylon symbolize its architectural and botanical achievements.The Code of Hammurabi is renowned for establishing one of the first legal codes in history, reflecting the sophistication of Babylonian society. The Hanging Gardens, one of the Seven Wonders of the Ancient World, reflect the remarkable engineering and beauty that characterized Babylon.",
+        "reasoning": "Represents(LegalAdvancement, CodeOfHammurabi)\nSymbolizes(ArchitecturalAchievement, HangingGardensOfBabylon)\nThus, CodeOfHammurabi → AncientBabylon and HangingGardensOfBabylon → AncientBabylon",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "England(invisible, country, mutual elements, Non-English European, English)",
+        "relation": "England",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "redtb.jpg",
+                "description": "a red telephone box."
+            },
+            {
+                "img_id": "2",
+                "filename": "fba.jpg",
+                "description": " a football (soccer) ball."
+            }
+        ],
+        "explanation": "The red telephone box is an iconic symbol of England, while football (soccer) is the national sport of England.The red telephone box is widely recognized as a representation of English culture and history, while football is an integral part of English identity, with the Premier League being one of the most popular football leagues in the world.",
+        "reasoning": "IconicSymbol(RedTelephoneBox, England)\nNationalSport(Football, England)\nThus, RedTelephoneBox → England and Football → England",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "French(invisible, country, mutual elements, Non-English European, English)",
+        "relation": "French",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "baguette.jpg",
+                "description": "a baguette."
+            },
+            {
+                "img_id": "2",
+                "filename": "efitow.jpg",
+                "description": "the Eiffel Tower."
+            }
+        ],
+        "explanation": "The baguette is a staple of French cuisine and a symbol of French culture, while the Eiffel Tower is an iconic landmark representing the artistic and architectural heritage of France.The baguette signifies the importance of gastronomy in French identity, whereas the Eiffel Tower embodies the romantic allure and historical significance of France, particularly in Paris.",
+        "reasoning": "CulinarySymbol(Baguette, FrenchCuisine) and Associate(FrenchCuisine,French)\nCulturalLandmark(EiffelTower, French)\nThus, Baguette → FrenchCuisine → French and EiffelTower → French",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "German(invisible, country, metaphor, Non-English European, English)",
+        "relation": "German",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "metaphor",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "bratwurst.jpg",
+                "description": "Bratwurst."
+            },
+            {
+                "img_id": "2",
+                "filename": "beetho.png",
+                "description": "Beethoven's Symphony No. 9."
+            }
+        ],
+        "explanation": "Bratwurst is a traditional German sausage, and Beethoven, a German composer, is known for his famous Symphony No. 9, which features the 'Ode to Joy'. The connection lies in the rich cultural heritage of Germany, where bratwurst is a popular food item and Beethoven is a celebrated figure in classical music.",
+        "reasoning": "Associate(Bratwurst,German)\nAssociate( SymphonyNo9,Beethoven),Associate(Beethoven,German)\n(Bratwurst ∧  (SymphonyNo9 → Beethoven)) → Счет",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Portugal(invisible, country, mutual elements, Non-English European, English)",
+        "relation": "Portugal",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "fado.jpg",
+                "description": "Fado guitar."
+            },
+            {
+                "img_id": "2",
+                "filename": "data.jpg",
+                "description": "Pastéis de Nata"
+            }
+        ],
+        "explanation": "Fado music, often accompanied by a guitar, is a traditional genre from Portugal, and Pastéis de Nata is a famous Portuguese pastry.The first image represents a Fado guitar, which is central to the melancholic music style that originated in Lisbon, while the second image showcases Pastéis de Nata, a beloved dessert that embodies Portuguese culinary heritage.",
+        "reasoning": "Represents(FadoGuitar, Portugal)\nIsFamousFor(PastéisDeNata, Portugal)\nThus, FadoGuitar → Portugal and PastéisDeNata → Portugal",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "India(invisible, country, mutual elements, South Asia and South-East Asia, English)",
+        "relation": "India",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "South Asia and South-East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "tai.jpg",
+                "description": "Taj Mahal."
+            },
+            {
+                "img_id": "2",
+                "filename": "dianyin.jpg",
+                "description": "Bollywood film reel."
+            }
+        ],
+        "explanation": "The Taj Mahal is a world-famous monument located in India, and Bollywood is the thriving film industry based in India.The first image depicts the Taj Mahal, an iconic symbol of India's rich history and architecture, while the second image represents Bollywood, known for producing a significant amount of films and being a major part of Indian popular culture.",
+        "reasoning": "IsLocatedIn(TajMahal, India)\nRepresents(Bollywood, India)\nThus, TajMahal → India and Bollywood → India",
+        "hop_count": 2,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Australia(invisible, country, mutual elements, other, English)",
+        "relation": "Australia",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "kang.jpg",
+                "description": "kangaroo."
+            },
+            {
+                "img_id": "2",
+                "filename": "syn.jpg",
+                "description": " Sydney Opera House."
+            }
+        ],
+        "explanation": "Kangaroo is a national symbol of Australia, and the Sydney Opera House is an iconic architectural landmark representing Australian culture.The kangaroo is an emblematic species native to Australia, while the Sydney Opera House is one of the most recognizable structures in the country, symbolizing Australia's artistic and cultural achievements.",
+        "reasoning": "Symbol(Kangaroo, Australia)\nIcon(SydneyOperaHouse, Australia)\nThus, Kangaroo → Australia and SydneyOperaHouse → Australia",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "NewZealand(invisible, country, mutual elements, other, English)",
+        "relation": "NewZealand",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "kimi.jpg",
+                "description": " Kiwi bird."
+            },
+            {
+                "img_id": "2",
+                "filename": "maoli.jpg",
+                "description": "Māori carving."
+            }
+        ],
+        "explanation": "The Kiwi bird is a national symbol of New Zealand, while Māori carvings are an essential aspect of New Zealand's indigenous culture. The Kiwi bird represents New Zealand's unique wildlife and is often associated with the country itself, whereas Māori carvings embody the rich traditions and history of the Māori people, who are the indigenous inhabitants of New Zealand.",
+        "reasoning": "Symbol(KiwiBird, NewZealand)\nRepresents(MāoriCarving, MāoriCulture) and Indigenous(MāoriCulture, NewZealand)\nThus, KiwiBird → NewZealand and MāoriCarving → MāoriCulture → NewZealand",
+        "hop_count": 3,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Mexica(invisible, country, mutual elements, Latin American, English)",
+        "relation": "Mexica",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "wangli.jpg",
+                "description": "Day of the Dead (Día de los Muertos) altar."
+            },
+            {
+                "img_id": "2",
+                "filename": "long.jpg",
+                "description": "Agave plant."
+            }
+        ],
+        "explanation": "Both the Day of the Dead and agave are significant cultural elements in Mexico. The Day of the Dead is a traditional Mexican holiday honoring deceased loved ones, featuring colorful altars and decorations. The agave plant is vital to Mexican culture, particularly in the production of tequila and mezcal, which play a role in celebrations, including the Day of the Dead.",
+        "reasoning": "Celebrates(DayOfTheDead, MexicanCulture)\nUtilizes(Agave, CulturalTraditions)\nThus, DayOfTheDead → Mexica and Agave → CulturalTraditions → Mexica",
+        "hop_count": 3,
+        "perception": [
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Brazil(invisible, country, mutual elements, Latin American, English)",
+        "relation": "Brazil",
+        "visibility": "invisible",
+        "domain": "country",
+        "type": "mutual elements",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "dance.jpg",
+                "description": "Samba dancers in Carnival."
+            },
+            {
+                "img_id": "2",
+                "filename": "yama.jpg",
+                "description": "Amazon rainforest."
+            }
+        ],
+        "explanation": "Both samba dancing during Carnival and the Amazon rainforest are iconic representations of Brazilian culture. The Carnival is a vibrant festival celebrated in Brazil, characterized by samba music and dance, showcasing the country's rich cultural heritage. The Amazon rainforest, often referred to as the lungs of the Earth, is a symbol of Brazil's natural beauty and biodiversity, underscoring the environmental significance of the country.",
+        "reasoning": "Represents(Carnival, BrazilianCulture)\nSymbolizes(AmazonRainforest, NaturalHeritage)\nThus, Carnival → Brazil and AmazonRainforest → NaturalHeritage → Brazil",
+        "hop_count": 3,
+        "perception": [
+            "Social Insight",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "London(invisible, city, mutual elements, USAEnglish, English)",
+        "relation": "London",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "big.jpg",
+                "description": "Big Ben "
+            },
+            {
+                "img_id": "2",
+                "filename": "und.jpg",
+                "description": "London Underground."
+            }
+        ],
+        "explanation": "Big Ben is a famous landmark in London, and the London Underground is an iconic public transport system that connects various parts of the city, including areas near Big Ben. Big Ben serves as a recognizable symbol of London, while the London Underground map represents the extensive network that facilitates travel throughout the city, showcasing how both are integral to the London experience.",
+        "reasoning": "Symbolizes(London, BigBen)\nConnects(LondonUnderground, CityLandmarks)\nThus, BigBen → London and LondonUnderground → CityLandmarks → London",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Shanghai(invisible, city, mutual elements, East Asia, English)",
+        "relation": "Shanghai",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "wai.jpg",
+                "description": "Bund architecture."
+            },
+            {
+                "img_id": "2",
+                "filename": "yu.jpg",
+                "description": "Yuyuan Garden."
+            }
+        ],
+        "explanation": "Both the Bund and Yuyuan Garden are iconic landmarks in Shanghai. The Bund represents Shanghai's colonial past with its Western-style buildings along the Huangpu River, while Yuyuan Garden showcases traditional Chinese garden design and architecture, highlighting the city's rich cultural heritage.",
+        "reasoning": "Landmark(Bund, Shanghai)\nLandmark(YuyuanGarden, Shanghai)\nThus, Bund → Shanghai and YuyuanGarden → Shanghai",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Analogical Reasoning",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Madrid(invisible, city, mutual elements, NA, Spanish)",
+        "relation": "Madrid",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "Spanish",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "pam.jpg",
+                "description": "Prado Museum"
+            },
+            {
+                "img_id": "2",
+                "filename": "roy.jpg",
+                "description": "Royal Palace of Madrid"
+            }
+        ],
+        "explanation": "The Prado Museum and the Royal Palace of Madrid are both significant cultural and historical landmarks in Madrid. The Prado Museum is one of the world's premier art galleries, housing masterpieces from Spanish masters like Velázquez and Goya. The Royal Palace, on the other hand, is the official residence of the Spanish royal family, showcasing the opulence and architectural grandeur of Spain's history.",
+        "reasoning": "Landmark(PradoMuseum, Madrid)\nLandmark(RoyalPalace, Madrid)\nThus, PradoMuseum → Madrid and RoyalPalace → Madrid",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Analogical Reasoning",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Valencia(invisible, city, mutual elements, Non-English European, Spanish)",
+        "relation": "Valencia",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Spanish",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "cas.jpg",
+                "description": "City of Arts and Sciences"
+            },
+            {
+                "img_id": "2",
+                "filename": "vc.jpg",
+                "description": "Valencia Cathedral"
+            }
+        ],
+        "explanation": "The City of Arts and Sciences and the Valencia Cathedral are both architectural landmarks that represent Valencia's cultural heritage. The City of Arts and Sciences is a futuristic complex that houses a science museum, an aquarium, and an opera house, symbolizing modernity and innovation. In contrast, Valencia Cathedral is a historical religious site that showcases Gothic, Romanesque, and Baroque architectural styles, representing the city's rich history and tradition.",
+        "reasoning": "Landmark(CityOfArtsAndSciences, Valencia)\nLandmark(ValenciaCathedral, Valencia)\nThus, CityOfArtsAndSciences → Valencia and ValenciaCathedral → Valencia",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Analogical Reasoning",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Санкт-Петербург(invisible, city, mutual elements, Non-English European, Russian)",
+        "relation": "Санкт-Петербург",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "Russian",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "dong.jpg",
+                "description": " The Winter Palace."
+            },
+            {
+                "img_id": "2",
+                "filename": "yaosi.jpg",
+                "description": "Peter and Paul Fortress."
+            }
+        ],
+        "explanation": "The Winter Palace and Peter and Paul Fortress both represent the historical grandeur and significance of Saint Petersburg. The Winter Palace served as the official residence of the Russian monarchs, symbolizing royal opulence, while the Peter and Paul Fortress, the original citadel of Saint Petersburg, represents the city's military history and foundation, highlighting the city's dual identity of cultural and historical importance.",
+        "reasoning": "SymbolOf(Санкт-Петербург, WinterPalace)\nRepresents(Санкт-Петербург, PeterPaulFortress)\nThus, WinterPalace → Санкт-Петербург and PeterPaulFortress → Санкт-Петербург",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Manchester(invisible, city, mutual elements, Non-English European, English)",
+        "relation": "Manchester",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "cot.jpg",
+                "description": "Cotton mill."
+            },
+            {
+                "img_id": "2",
+                "filename": "manch.jpg",
+                "description": "A team photo of Manchester City FC."
+            }
+        ],
+        "explanation": "The cotton mill represents Manchester's historical significance in the textile industry, while the team photo of Manchester City FC symbolizes the city's rich football heritage. Manchester was known as the Cottonopolis during the Industrial Revolution, which played a crucial role in its economic development, while Manchester City FC is one of the premier football clubs in the city, showcasing its vibrant sports culture.",
+        "reasoning": "Represents(CottonMill, ManchesterTextileIndustry)\nFeatures(TeamPhotoOfManchesterCity, ManchesterFootballCulture)\nThus, CottonMill → Manchester and TeamPhotoOfManchesterCity → Manchester",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Scene Contextualization",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Rio de Janeiro(invisible, city, mutual elements, Latin American, English)",
+        "relation": "Rio de Janeiro",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "Latin American",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "dan.jpg",
+                "description": "Samba dancer."
+            },
+            {
+                "img_id": "2",
+                "filename": "jidu.jpg",
+                "description": "Christ the Redeemer statue."
+            }
+        ],
+        "explanation": "The samba dancer represents the vibrant cultural traditions and music of Rio de Janeiro, particularly during Carnival, while the Christ the Redeemer statue is an iconic landmark symbolizing the city and its religious heritage. Samba is integral to Rio's identity and festivities, while the Christ the Redeemer statue stands as a significant symbol of faith and is recognized worldwide as part of Rio's stunning skyline.",
+        "reasoning": "Represents(SambaDancer, RioCulturalTradition)\nSymbolizes(ChristTheRedeemer, RioLandmark)\nThus, SambaDancer → Rio de Janeiro and ChristTheRedeemer → Rio de Janeiro",
+        "hop_count": 2,
+        "perception": [
+            "Scene Contextualization",
+            "Relational Perception",
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Venice(invisible, city, mutual elements, Non-English European, English)",
+        "relation": "Venice",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "wei.jpg",
+                "description": "A scenic view of Venice (Venetian landscape)."
+            },
+            {
+                "img_id": "2",
+                "filename": "jiaot.jpg",
+                "description": "St. Mark's Basilica."
+            }
+        ],
+        "explanation": "A scenic view of Venice captures the city's unique canals and architecture, while St. Mark's Basilica is one of the most significant landmarks within that landscape, representing the city's rich history and cultural heritage. The picturesque canals and buildings of Venice form a captivating backdrop that includes the iconic St. Mark's Basilica, showcasing the blend of natural beauty and architectural brilliance that defines the city.",
+        "reasoning": "Captures(VenetianLandscape, VeniceArchitecture)\nSymbolizes(StMarksBasilica, VenetianCulturalHeritage)\nThus, VenetianLandscape → Venice and StMarksBasilica → Venice",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Istanbul(invisible, city, metaphor, other, English)",
+        "relation": "Istanbul",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "metaphor",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "hag.jpg",
+                "description": "Hagia Sophia"
+            },
+            {
+                "img_id": "2",
+                "filename": "strait.jpg",
+                "description": "Bosphorus Strait"
+            }
+        ],
+        "explanation": "Hagia Sophia is a historical architectural masterpiece that reflects the cultural and religious history of Istanbul, while the Bosphorus Strait is a significant waterway that separates Europe and Asia, symbolizing Istanbul's unique position as a transcontinental city. Hagia Sophia has served as a cathedral and mosque, showcasing the city's diverse heritage, while the Bosphorus Strait is essential for trade and transportation, further emphasizing Istanbul's strategic importance.",
+        "reasoning": "Represents(HagiaSophia, IstanbulCulturalHeritage)\nConnects(BosphorusStrait, EuropeandAsia)\nThus, (HagiaSophia → IstanbulCulturalHeritage  ∧  BosphorusStrait → EuropeandAsia) → Istanbul",
+        "hop_count": 3,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Berlin(invisible, city, mutual elements, NA, English)",
+        "relation": "Berlin",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "berwall.jpg",
+                "description": "Berlin Wall"
+            },
+            {
+                "img_id": "2",
+                "filename": "bw.jpg",
+                "description": "Brandenburg Gate"
+            }
+        ],
+        "explanation": "The Berlin Wall is a historical symbol of the division of East and West Berlin during the Cold War, while the Brandenburg Gate is an iconic landmark that represents unity and peace in Berlin's history. The Berlin Wall signifies a pivotal moment in the city's history, reflecting its struggles, whereas the Brandenburg Gate has become a symbol of reunification and the city's resilience, marking significant historical events.",
+        "reasoning": "Symbolizes(BerlinWall, DivisionOfBerlin)\nRepresents(BrandenburgGate, UnityAndPeace)\nThus, BerlinWall → Berlin and BrandenburgGate → Berlin",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Naples(invisible, city, mutual elements, Non-English European, English)",
+        "relation": "Naples",
+        "visibility": "invisible",
+        "domain": "city",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "wsv.jpg",
+                "description": "Mount Vesuvius"
+            },
+            {
+                "img_id": "2",
+                "filename": "nable.jpg",
+                "description": "A team photo of Napoli FC"
+            }
+        ],
+        "explanation": "The team photo of Napoli FC represents the city's passionate football culture, while Mount Vesuvius is a prominent natural landmark that has shaped the history and identity of Naples. Napoli FC is a source of local pride and community spirit, showcasing the city's love for football, while Mount Vesuvius stands as a historical symbol of the region, influencing both its landscape and cultural narrative.",
+        "reasoning": "Represents(NapoliFC, NaplesFootballCulture)\nDominates(MountVesuvius, NaplesLandscape)\nThus, NapoliFC → Naples and MountVesuvius → Naples",
+        "hop_count": 2,
+        "perception": [
+            "Abstract Interpretation",
+            "Semantic Object",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Cultural Reference"
+        ]
+    }
+]
