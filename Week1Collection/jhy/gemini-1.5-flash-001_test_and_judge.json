@@ -1664,5 +1664,40 @@
             "score_4o": "3",
             "score_reason": "The MLLM's explanation captures the accomplishment and representation theme broadly but lacks the specific connection to their status as Black celebrities mentioned in the standard answer."
         }
+    },
+    "Blind(invisible, ability, relation, NA, English)": {
+        "MLLM_answer": "- First image: A man wearing sunglasses\n- Second image: A man wearing sunglasses\n- Relation: Same person, different angle\n- Explanation: The two images show the same man wearing sunglasses, but from different angles. The first image is a closer-up shot of the man's face, while the second image is a wider shot that shows more of his body. Both images capture the man's serious expression and stylish look. \n",
+        "judge_answer": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output focuses on visual similarities between two images of a man wearing sunglasses but misses the intended theme of 'Blind'. It completely overlooks the context of blindness or visual impairment associated with sunglasses and does not align with the intended reasoning."
+        }
+    },
+    "Bulletin protection(invisible, ability, relation, NA, English)": {
+        "MLLM_answer": "- First image: A close-up of a woven fabric, with a hand holding the fabric. \n- Second image: N/A\n- Relation: N/A\n- Explanation: N/A. There is only one image.",
+        "judge_answer": {
+            "score_4o": "1",
+            "score_reason": "The MLLM expresses uncertainty and only mentions one image, resulting in a lack of connection or relationship explanation."
+        }
+    },
+    "China(visible, country, relation, East Asia, English)": {
+        "MLLM_answer": "- First image: A rooster with a red comb and wattles, black, brown and green feathers, standing on green grass.\n- Second image: A close-up of a white, rocky, asteroid-like object against a dark background. \n- Relation: A rooster is to an asteroid as a rooster is to an asteroid. \n- Explanation: Both images depict objects that are not normally associated with the other and are from completely different contexts. The rooster is a living creature while the asteroid is a celestial body, with no connection to the other. This is a random pairing of disparate objects. \n",
+        "judge_answer": {
+            "score_4o": "2",
+            "score_reason": "The MLLM describes the images as unrelated without finding thematic links. There is no mention of the thematic connection to 'China', missing critical context in the standard answer."
+        }
+    },
+    "Deaf(invisible, ability, relation, NA, English)": {
+        "MLLM_answer": "- First image: N/A\n- Second image: A grey behind-the-ear hearing aid by Philips\n- Relation:  Hearing Aid for the Deaf\n- Explanation: The image shows a hearing aid used to amplify sound for people who are hard of hearing or deaf. The hearing aid is designed to be worn behind the ear and is equipped with buttons for adjusting the volume and other settings. The hearing aid is a medical device that helps people with hearing loss to communicate effectively. \n",
+        "judge_answer": {
+            "score_4o": "3",
+            "score_reason": "The MLLM correctly describes the function of the hearing aid and aligns with the concept of 'Deaf', but does not address the absence of the first image (Beethoven) and misses the specific connection to Beethoven's deafness."
+        }
+    },
+    "Diabetic foot ulcer smell like rotten apple(invisible, smell or taste, relation, NA, English)": {
+        "MLLM_answer": "- First image: A red apple with a brown spot and crack\n- Second image: A yellowed apple with a large brown spot and a rough texture\n- Relation: Stages of decay\n- Explanation: Both images depict apples, but the first one is in an earlier stage of decay than the second one. The second apple has undergone further deterioration, resulting in a yellowed color and a more significant brown spot covering a larger portion of the fruit. The difference in their appearance highlights the progression of decay in fruits. \n",
+        "judge_answer": {
+            "score_4o": "2",
+            "score_reason": "The MLLM focuses solely on the visual progression of apple decay and misses the unique thematic connection relating to 'Diabetic foot ulcer smell like rotten apple'. It fails to provide the key insight about the smell, which is central to the standard answer."
+        }
     }
 }
