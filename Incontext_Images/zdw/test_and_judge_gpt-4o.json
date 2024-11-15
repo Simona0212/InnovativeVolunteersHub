@@ -1952,91 +1952,151 @@
     "Symbolic Associations with Seasons(time, time, metaphor, NA, English)": [
         {
             "MLLM_answer": "- **Image 1**: A pink rose in full bloom against a green background.\n- **Image 2**: A sunny meadow with yellow wildflowers and distant hills.\n- **Image 3**: A lion resting on a rock with a grassy background.\n- **Image 4**: A landscape with a majestic mountain or a vast savannah under a bright sky.\n\n- **Relation**: Nature's beauty and grandeur.\n\n- **Explanation**: The first pair of images both highlight the beauty of nature—one with a close-up of a rose and the other with a sunny landscape filled with wildflowers. To mirror this, the second pair should also capture an aspect of nature's grandeur. The image of the lion represents wilderness and majesty, so Image 4 should portray a vast, awe-inspiring natural scene that complements the lion's regal presence.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The MLLM output identifies a general theme of 'nature's beauty and grandeur,' which is valid but does not align with the specific seasonal symbolism intended in the standard answer. The explanation of 'transformation' from lion to a majestic landscape does not match the 'March comes in like a lion and goes out like a lamb' association."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A sunny field with yellow flowers and green grass.\n- **Image 2**: A close-up of a pink rose.\n- **Image 3**: A lamb with a white coat, standing alone.\n\n- **Image 4**: A close-up of a small, fluffy white flower.\n\n- **Relation**: Focus\n- **Explanation**: Image 1 and Image 2 share a focus on elements of nature (flowers) with different scales, from a wide landscape to the close-up of a single bloom. Image 3 depicts an animal with soft, woolly texture. For Image 4, creating a close-up of a white flower matches the focus shift seen from the wide field of yellow flowers to the single rose, echoing the texture and focus on a singular natural subject similar to the lamb.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The MLLM output focuses on visual attributes like texture and focus, which deviates from the standard answer's thematic focus on seasonal symbolism and transitions between lion and lamb. Therefore, it only partially relates to the intended symbolic associations."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: Lion\n- **Image 2**: Lamb\n- **Image 3**: Pink Rose\n- **Image 4**: White Daisy\n\n- **Relation**: Contrast\n\n- **Explanation**: The first pair of images, a lion and a lamb, depicts contrasting elements—strength and gentleness. Similarly, to mirror this contrast with Image 3, which is a pink rose symbolizing beauty and delicacy, Image 4 should be a white daisy, representing simplicity and purity. The theme of contrast underlies both pairs.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The MLLM identifies a contrast theme between images, which is reasonable, but it does not align with the intended symbolic associations with seasons, such as 'March comes in like a lion and goes out like a lamb.' The reasoning does not capture the intended thematic symbolism."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A lamb standing, with a fluffy wool coat.\n- **Image 2**: A lion lounging on a rock in a grassy area.\n- **Image 3**: A sunny landscape with green fields and yellow flowers.\n\n- **Image 4**: A moonlit night landscape with a serene, calm field.\n\n- **Relation**: Transformation\n\n- **Explanation**: Image 1 (lamb) to Image 2 (lion) represents a transformation from innocence to strength or power. To mirror this relationship, Image 4 should transform Image 3’s daytime setting into a night scene, shifting from bright and vibrant to calm and serene.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The MLLM presents a transformation theme, transitioning from day to night, which diverges from the standard answer's seasonal symbolism involving the lion and lamb. The relation and explanation do not address the symbolic associations with seasons."
+            }
         }
     ],
     "Descriptions of Days Based on Shakespeare's Play(time, time, relation, Non-English European, English)": [
         {
             "MLLM_answer": "- **Image 1**: A portrait of a woman with long, dark hair and neutral expression.\n- **Image 2**: A desk calendar displaying \"MONDAY\" prominently.\n- **Image 3**: A cartoon image of a man looking tired or stressed, resting his head on his hands.\n\n- **Image 4**: A desk calendar displaying \"FRIDAY.\"\n\n- **Relation**: Mood transition\n\n- **Explanation**: Image 1 shows a neutral expression, while Image 2 suggests the start of the week, often associated with a less enthusiastic mood. Image 3 depicts stress, and by creating Image 4 with \"FRIDAY,\" it implies a shift towards a more positive or relieved mood as the week ends. This mirrors the anticipation of the weekend and relief from stress.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "3",
+                "score_reason": "The MLLM captures a reasonable 'mood transition' from the start to the end of the workweek, transitioning from Monday to Friday. This is a correct interpretation of mood transition, but it differs from the standard answer's thematic references to the days based on Shakespeare's play, hence not capturing the specific literary reference."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A desk calendar displaying \"Monday.\"\n- **Image 2**: A portrait of a woman with long, dark hair.\n- **Image 3**: A calendar page displaying \"Wednesday.\"\n\n- **Image 4**: A portrait of a different person with a focus on a distinct feature, such as red hair or glasses.\n\n- **Relation**: Transitions\n\n- **Explanation**: The first pair of images transitions from a general concept of time (Monday) to a personal concept (an individual). The second pair should also transition from a general concept of time (Wednesday) to another individual with a notable feature, reflecting individuality and diversity across the week's progression.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The MLLM explores a transition from time to individual feature, which represents a basic understanding. It diverges from the Shakespearean symbolism and does not align with the standard reasoning, lacking depth related to Shakespeare's characterization of days."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A cartoon man looking stressed or tired, resting his head in his hands.\n- **Image 2**: A calendar page showing \"Wednesday.\"\n- **Image 3**: A portrait of a young woman with long brown hair, looking directly at the camera.\n- **Image 4**: Design a calendar page showing \"Monday.\"\n\n- **Relation**: Midweek fatigue.\n\n- **Explanation**: The first pair of images suggests the theme of midweek stress or fatigue, commonly associated with \"hump day,\" or Wednesday. The man looks visibly stressed, likely due to it being the middle of the workweek. To mirror this relationship, Image 4 should imply a similar theme of starting the week (Monday) which often brings feelings of lethargy or anticipation, commonly referred to as the \"Monday blues.\"",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "3",
+                "score_reason": "The MLLM appropriately associates Monday with themes of lethargy and the 'Monday blues.' It provides a logical interpretation and partially aligns with the concept of midweek fatigue, yet doesn't capture the literary connection present in the standard answer. Hence mostly correct but lacking the specific thematic cue based on Shakespeare's description."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A calendar page showing \"Wednesday.\"\n- **Image 2**: An illustration of a man looking fatigued or stressed.\n- **Image 3**: A standing calendar displaying \"Monday.\"\n\n- **Image 4**: An illustration of a person looking particularly exhausted or overwhelmed, possibly depicting \"Monday blues.\"\n\n- **Relation**: Midweek stress.\n\n- **Explanation**: Image 1 and Image 2 together suggest the common experience of feeling midweek fatigue or \"hump day\" stress on a Wednesday. Similarly, Image 3 can be paired with the concept of Monday, often associated with the beginning-of-the-week stress, hence Image 4's depiction of someone experiencing \"Monday blues.\"",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "3",
+                "score_reason": "The MLLM output correctly associates stress or fatigue with both Wednesday and Monday, aligning well with common perceptions of midweek stress and Monday blues. However, it doesn't capture the literary theme from Shakespeare's characterization to make it completely correct."
+            }
         }
     ],
     "Time and Change(time, time, relation, NA, English)": [
         {
             "MLLM_answer": "- **Image 1**: A brightly colored caterpillar with black, yellow, and white stripes.\n- **Image 2**: A monarch butterfly perched on a flower, displaying orange and black wings.\n- **Image 3**: A plain silkworm caterpillar on a white background.\n- **Image 4**: A silkmoth perched on a surface, with muted colors and a simple pattern.\n\n- **Relation**: Transformation\n\n- **Explanation**: Images 1 and 2 depict the transformative life cycle of a caterpillar becoming a butterfly, symbolizing growth and metamorphosis. Image 3 shows a silkworm caterpillar, so Image 4 should represent its adult form—a silkmoth. Both sets demonstrate the natural process of transformation from larva to adult.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "4",
+                "score_reason": "The MLLM correctly identifies the theme of transformation from caterpillar to moth, aligns well with the standard answer, and supports the lifecycle transformation explanation with accurate reasoning."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A monarch butterfly on a flower.\n- **Image 2**: A caterpillar, likely a larval stage of a butterfly or moth.\n- **Image 3**: A moth with distinctive eye-like patterns on its wings.\n- **Image 4**: A caterpillar that would develop into the moth shown in Image 3.\n\n- **Relation**: Life cycle transformation.\n\n- **Explanation**: Images 1 and 2 illustrate the transformation from a caterpillar to a butterfly (metamorphosis). To mirror this in Image 4, the focus would be on the larval (caterpillar) stage of the moth shown in Image 3, emphasizing the life cycle transformation from caterpillar to adult moth.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "3",
+                "score_reason": "The MLLM logically captures lifecycle transformation from caterpillar to moth, but does not align perfectly with the more specific 'time and change' theme specifying a silkworm transformation. Mostly correct but lacks specificity."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: Silkworm caterpillar\n- **Image 2**: Moth with distinctive eye patterns on its wings\n- **Image 3**: Colorful caterpillar with stripes and spots on a branch\n- **Image 4**: A butterfly with vibrant patterns and colors on its wings\n\n- **Relation**: Transformation\n\n- **Explanation**: Image 1 shows a silkworm caterpillar, which transforms into the moth depicted in Image 2. This showcases the life cycle and metamorphosis process. Similarly, Image 3 features a colorful caterpillar, suggesting its future transformation into a butterfly that would mirror the vibrant and distinct appearance, like in the creation of Image 4. The concept focuses on the theme of metamorphosis from caterpillar to winged form.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "4",
+                "score_reason": "The MLLM output correctly identifies the transformation theme from caterpillar to butterfly, matching the intended 'time and change.' It follows the reasoning and aligns accurately with the standard answer with no errors."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A moth with distinct eyespots on its wings.\n- **Image 2**: A caterpillar, which is the larval stage of a moth or butterfly.\n- **Image 3**: A monarch butterfly perched on a flower.\n\n- **Image 4**: An image of a caterpillar that would transform into a butterfly, like a monarch caterpillar.\n\n- **Relation**: Transformation\n\n- **Explanation**: The first two images show the transformation stages of a moth—from caterpillar to moth. Similarly, the third image of a butterfly suggests that its related counterpart should depict the caterpillar stage of a butterfly's life cycle, reflecting the metamorphosis theme.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "4",
+                "score_reason": "The MLLM correctly describes the lifecycle transformation theme from caterpillar to butterfly, mirroring the intended 'time and change.' The explanation is coherent and aligns accurately with the intended reasoning path."
+            }
         }
     ],
     "Daylight Saving Time(time, time, mutual elements, NA, English)": [
         {
             "MLLM_answer": "- **Image 1**: A clock showing 1:05.\n- **Image 2**: A clock showing 3:00.\n- **Image 3**: A bright sun shining through clouds in a clear sky.\n- **Image 4**: A setting sun over the horizon.\n\n- **Relation**: Time Progression\n\n- **Explanation**: Image 1 and Image 2 show time progression from 1:05 to 3:00, demonstrating the passage of time. Image 3 displays the sun in a bright, midday sky, so Image 4 should illustrate a later stage of the day, such as a sunset, to mirror the concept of time advancing.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The MLLM describes time progression through a day, focused on 1:05 to 3:00. It addresses a reasonable sequence but is unrelated to the intended concept of Daylight Saving Time and geographical symbolism, lacking key insights of the context."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A clock showing 3:00, with a black rim and white background.\n- **Image 2**: A clock showing 3:00, with bold black numbers and hands.\n- **Image 3**: A colorful political map of Europe.\n\n- **Image 4**: A simplified map of Europe in black and white, with emphasis on bold borders and simplified geography.\n\n- **Relation**: Simplification and Stylization\n\n- **Explanation**: The first pair of images both depict clocks showing the same time, yet Image 2 simplifies the design with minimal details and no color. Similarly, Image 4 should reflect a simplified and monochrome version of Europe, focusing on essential elements, mirroring the reduction of details seen from Image 1 to Image 2.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "MLLM output focuses on simplification and stylization, diverging from the intended Daylight Saving Time theme and missing the conceptual link on daylight benefits. It fails to address the intended cultural aspect of the standard answer."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A vibrant sky with sun rays breaking through clouds.\n- **Image 2**: A colorful political map of Europe.\n- **Image 3**: A clock showing three o'clock.\n\n- **Image 4**: A calendar page showing a specific date, possibly August 1st, to suggest orientation in time just as a map provides orientation in space.\n\n- **Relation**: Orientation\n\n- **Explanation**: Image 1 shows a natural phenomenon (sun and sky), which can be guidance for time of day or direction. Image 2 provides orientation through geographical representation. To create a parallel relationship with Image 3, which indicates time, Image 4 should offer a distinct form of temporal orientation, such as a calendar, to mirror the concept of guiding in time.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The interpretation of orientation with time guidance uses calendars and maps, a different approach than The Daylight Saving Time association stressed in the standard answer. The explanation lacks the specific temporal-cultural connection."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: A colorful map of Europe.\n- **Image 2**: A bright sun shining through clouds in a blue sky.\n- **Image 3**: A wall clock showing the time as three o'clock.\n\n- **Image 4**: A bright light bulb illuminating a dark room.\n\n- **Relation**: Illumination\n\n- **Explanation**: The relationship between the map of Europe and the sun is based on the concept of illumination; the sun lights up the world just as a map provides clarity and guidance. In the next pair, the clock is like a tool for structure and order, akin to how a light bulb brightens a space, making everything clear and visible. In both cases, one element brings clarity to the other.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The MLLM centers the theme on illumination and guidance but misses the cultural concept of Daylight Saving Time, leaving out the intended DST symbolization and its impact on daylight clarity and visibility. The reasoning diverts from the intended focus."
+            }
         }
     ],
     "Rules for Leap Years(time, time, mutual elements, NA, English)": [
         {
             "MLLM_answer": "- **Image 1**: Olympic rings symbolizing the Olympic Games.\n- **Image 2**: FIFA World Cup trophy indicating the FIFA World Cup event.\n- **Image 3**: Mathematical expression \"X mod 4 = 0\" representing an event occurring every 4 years.\n- **Image 4**: \"X mod 4 = 2\" representing an event occurring offset by 2 years on a similar cycle.\n\n- **Relation**: Quadrennial Events\n- **Explanation**: Image 1 and Image 2 both symbolize major international sports events that occur every four years— the Olympic Games and the FIFA World Cup, respectively. Image 3 is a mathematical expression indicating a regular four-year cycle. Similarly, Image 4 should represent a pattern related to this cycle but starting two years later, akin to the staggered timing of these events.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "3",
+                "score_reason": "The MLLM correctly identifies a quadrennial concept using mathematical expressions, paralleling the staggered timing of international events. Although it doesn't align perfectly with the standard's focus on leap year rules, it presents a cyclic pattern, somewhat resonating with the intended recurring theme."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: FIFA World Cup trophy with the year 2026.\n- **Image 2**: The Olympic rings symbol.\n- **Image 3**: An equation depicting a condition: \\(X \\mod 400 = 0\\).\n- **Image 4**: An image featuring a simple representation of the number 4, potentially with a reference to a periodic factor like a leap year or a cycle (suggested edit due to thematic similarity).\n\n- **Relation**: Cycles\n- **Explanation**: Both the FIFA World Cup and the Olympics are major global sporting events that occur in cycles (every 4 years). The mathematical expression in Image 3 refers to something happening in a cycle of 400, possibly relating to leap years. Creating Image 4 with a reference to a 4-year cycle mirrors the periodic nature evident in the first pair, emphasizing regularity and recurrence.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "3",
+                "score_reason": "The MLLM illustrates 4-year cycles and periodic events, aligning with the theme of repeating regularity. However, it doesn't directly match the specific leap year calculation, though it reasonably captures the overall cycle planning concept."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: \"X mod 4 = 0\" - A mathematical expression indicating numbers divisible by 4.\n- **Image 2**: \"X mod 400 = 0\" - A mathematical expression indicating numbers divisible by 400.\n- **Image 3**: The Olympic rings, a symbol consisting of five interconnected rings.\n- **Image 4**: A single large ring (suggests a stronger focus on one element).\n\n- **Relation**: Increased divisibility (focus and specificity)\n  \n- **Explanation**: The transition from \"X mod 4 = 0\" to \"X mod 400 = 0\" shows an increase in the divisor, signifying a more precise subset of numbers (from divisible by 4 to divisible by 400). For the Olympic rings, moving to a single large ring in Image 4 mirrors this increased focus by reducing the number of elements and spotlighting one element. This parallels the concept of refining or intensifying a set of conditions or visual entities.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The MLLM emphasizes divisibility reduction rather than the intended structuring rules for leap years and quadrennial sporting events. Although logically exploring specificity, it diverges from the standard's narrative about international event cycles."
+            }
         },
         {
             "MLLM_answer": "- **Image 1**: Mathematical expression showing \"X mod 400 = 0\".\n- **Image 2**: Mathematical expression showing \"X mod 4 = 0\".\n- **Image 3**: FIFA World Cup trophy with the number 23.\n\n- **Image 4**: A simple trophy with the number 3.\n\n- **Relation**: Reduction\n\n- **Explanation**: The first pair of images is related by reducing the modulus from 400 to 4, simplifying the condition. To reflect this relationship in the second pair, Image 4 should be a simplified version of a trophy with a smaller number, reducing 23 to 3. This mirrors the reduction and simplification concept.",
-            "judge_answer": "Error"
+            "judge_answer": {
+                "score_4o": "2",
+                "score_reason": "The MLLM observes a reduction from 400 to 4 but lacks the focus on leap year rules impacting scheduling seen in major sporting events like the Olympics and World Cup. It misses the link to a cyclic event structure prevalent in the standard reasoning."
+            }
         }
     ],
     "Ageing(time, time, relation, NA, English)": [
