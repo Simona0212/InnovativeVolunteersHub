@@ -1382,7 +1382,7 @@
             "location",
             "number"
         ],
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "Arabic-Islamic",
         "language": "English",
         "images": [
@@ -1410,8 +1410,8 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The first image represents Arabic culture, which includes the use of Arabic numerals, commonly found on various items. The second image depicts an item that incorporates these Arabic numerals",
-                "path": "(ArabicDesign → AssociatedWithArabicCulture → ContainsArabicNumerals) ∧ ArabicNumerals → NumericalSystem",
+                "explanation": "Arabic architecture often incorporates elements of Arabic culture, which includes the use of Arabic numerals. Similarly, the calendar system also incorporates Arabic numerals. Therefore, the progression from Arabic architecture to Arabic culture to Arabic numerals, and from the calendar to Arabic numerals, highlights the interconnectedness of these elements.",
+                "path": "Related(ArabicArchitecture, ArabicCulture) and Incorporates(ArabicCulture, ArabicNumerals)\nIncorporates(Calender, ArabicNumerals)\nThus, ArabicArchitecture → ArabicCulture → ArabicNumerals and Calender → ArabicNumerals",
                 "perception": [
                     "Abstract Interpretation",
                     "Semantic Object"
@@ -1423,8 +1423,8 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "the third image shows the Colosseum, a significant landmark of Roman culture, where Roman numerals are also widely used, illustrated by the fourth image depicting an item with Roman numerals. Both pairs highlight the distinct numerical systems linked to their respective cultural icons.",
-                "path": "(Colosseum → AssociatedWithRomanCulture → ContainsRomanNumerals) ∧ RomanNumerals → NumericalSystem",
+                "explanation": "The Colosseum in Rome is a historical landmark associated with Roman culture, while the use of Roman numerals is a significant aspect of Roman heritage. The transition from the Colosseum to Roman culture to Roman numerals, and from the watch to Roman numerals, illustrates the mutual elements shared between these cultural and numerical systems.",
+                "path": "Related(Colosseum, RomanCulture) and Incorporates(RomanCulture, RomanNumerals)\nIncorporates(Watch, RomanNumerals)\nThus, Colosseum → RomanCulture → RomanNumerals and Watch → RomanNumerals",
                 "perception": [
                     "Abstract Interpretation",
                     "Semantic Object"
@@ -1435,7 +1435,7 @@
                 ]
             }
         ],
-        "hop_count": 6
+        "hop_count": 3
     },
     {
         "foldername": "狐假虎威(animal, people, metaphor, East Asia, Chinese)",
