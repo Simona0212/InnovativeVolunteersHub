@@ -10376,7 +10376,7 @@
             }
         ],
         "explanation": "Head and street connect through the term 'headlight,' which is used to illuminate the street while driving at night.",
-        "reasoning": "Illuminates(Headlight, Street)\nThus, Head → Light and Street → Light",
+        "reasoning": "Related(Head, Light)\nHas(Street, Light)\nThus, Head → Light and Street → Light",
         "hop_count": 2,
         "perception": [
             "Relational Perception"
@@ -10406,7 +10406,7 @@
             }
         ],
         "explanation": "Head and dark connect through the phrase 'headlights in the dark,' which refers to using lights to navigate dark conditions effectively.",
-        "reasoning": "Illuminates(Headlight, Dark)\nThus, Head → Light and Dark → Light",
+        "reasoning": "Related(Head, Light)\nContrast(Dark, Light)\nThus, Head → Light and Dark → Light",
         "hop_count": 2,
         "perception": [
             "Relational Perception"
@@ -10436,7 +10436,7 @@
             }
         ],
         "explanation": "Street and dark connect through the concept of streetlights, which illuminate dark streets to enhance safety and visibility at night.",
-        "reasoning": "Illuminates(Streetlight, Dark)\nThus, Street → Light and Dark → Light",
+        "reasoning": "Has(Street, Light)\nContrast(Dark, Light)\nThus, Street → Light and Dark → Light",
         "hop_count": 2,
         "perception": [
             "Relational Perception"
@@ -10465,8 +10465,8 @@
                 "description": "saturday"
             }
         ],
-        "explanation": "Room and Saturday connect through the concept of a 'bathroom,' which is often used for relaxation on a leisurely Saturday.",
-        "reasoning": "Defines(Bathroom, Room)\nThus, Room → Bath and Saturday → Bath",
+        "explanation": "Room and Saturday connect through the term 'bath,' which is often associated with relaxation and self-care activities.",
+        "reasoning": "Related(Room, Bath)\nRelated(Saturday, Bath)\nThus, Room → Bath and Saturday → Bath",
         "hop_count": 2,
         "perception": [
             "Scene Contextualization"
@@ -10495,8 +10495,8 @@
                 "description": "salts"
             }
         ],
-        "explanation": "Room and salts connect through the term 'bath salts,' which are often used in bathrooms for relaxation and therapeutic purposes.",
-        "reasoning": "Contains(BathSalts, Room)\nThus, Room → Bath and Salts → Bath",
+        "explanation": "Room and salts connect through the term 'bath.' Bath salts are often used in bathrooms for relaxation and therapeutic purposes.",
+        "reasoning": "Related(Room, Bath)\nRelated(Salts, Bath)\nThus, Room → Bath and Salts → Bath",
         "hop_count": 2,
         "perception": [
             "Scene Contextualization"
@@ -10525,8 +10525,8 @@
                 "description": "salts"
             }
         ],
-        "explanation": "Saturday and salts connect through the term 'bath salts,' which are often enjoyed in baths taken during leisurely Saturdays.",
-        "reasoning": "Induces(Saturday, BathSalts)\nThus, Saturday → Bath and Salts → Bath",
+        "explanation": "Saturday and salts connect through the term 'bath.' Bath salts are often enjoyed in baths taken during leisurely Saturdays.",
+        "reasoning": "Related(Saturday, Bath)\nContains(Salts, Bath)\nThus, Saturday → Bath and Salts → Bath",
         "hop_count": 2,
         "perception": [
             "Scene Contextualization"
@@ -10555,8 +10555,8 @@
                 "description": "line"
             }
         ],
-        "explanation": "Surprise and line connect through the phrase 'surprise party,' which is an event organized to surprise someone with a celebration.",
-        "reasoning": "Indicates(SurpriseParty, Line)\nThus, Surprise → Party and Line → Party",
+        "explanation": "Surprise and line connect through the idea of a 'party.' Surprises are common in a party and 'party line' refers to a group of people connected by a shared interest or activity.",
+        "reasoning": "Related(Surprise, Party)\nRelated(Line, Party)\nThus, Surprise → Party and Line → Party",
         "hop_count": 2,
         "perception": [
             "Social Insight"
