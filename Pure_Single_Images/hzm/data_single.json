@@ -1033,8 +1033,8 @@
             }
         ],
         "explanation": "Acme Corporation is the fictional company that supplies Wile E. Coyote with various gadgets and contraptions, often involving anvils, in his attempts to catch the Road Runner in the Looney Tunes cartoons.",
-        "reasoning": "Supplies(AcmeCorporation, WileECoyote)\nUses(WileECoyote, Anvil)\nPursues(WileECoyote, RoadRunner)\nThus, Anvil → WileECoyote → AcmeCorporation → WileECoyote → RoadRunner and RoadRunner → WileECoyote → AcmeCorporation → WileECoyote → Anvil",
-        "hop_count": 8,
+        "reasoning": "Supplies(AcmeCorporation, WileECoyote) and Supplies(Anvil, AcmeCorporation)\nToCatch(WileECoyote, RoadRunner)\nThus, Anvil → AcmeCorporation → WileECoyote → RoadRunner",
+        "hop_count": 3,
         "perception": [
             "Relational Perception"
         ],
@@ -1063,8 +1063,8 @@
             }
         ],
         "explanation": "'My Little Pony' features ponies, often with rainbow-colored manes and tails. A Shetland Pony is a type of pony, and a rainbow represents the colorful aspect.",
-        "reasoning": "Features(MyLittlePony, Pony)\nExampleOf(ShetlandPony, Pony)\nAssociatedWith(MyLittlePony, Rainbow)\nThus, ShetlandPony → Pony → MyLittlePony → Rainbow and Rainbow → MyLittlePony → Pony → ShetlandPony",
-        "hop_count": 6,
+        "reasoning": "Features(MyLittlePony, Ponies) and Features(MyLittlePony, Rainbow)\nTypeOf(ShetlandPony, Pony)\nThus, Rainbow → MyLittlePony and ShetlandPony → Pony → MyLittlePony",
+        "hop_count": 3,
         "perception": [
             "Semantic Object"
         ],
@@ -1105,7 +1105,7 @@
     },
     {
         "foldername": "Rick and Morty's portal gun(invisible, cartoon or game, relation, USAEnglish, English)",
-        "relation": "Rick and Morty's portal gun",
+        "relation": "Rick",
         "visibility": "invisible",
         "domain": "cartoon or game",
         "type": "relation",
@@ -1123,9 +1123,9 @@
                 "description": "Plumbus"
             }
         ],
-        "explanation": "Rick's portal gun creates swirling green portals to travel through dimensions. The Plumbus is a bizarre, multipurpose device frequently used by Rick in Rick and Morty. Both are key items associated with Rick.",
-        "reasoning": "Creates(PortalGun, GreenSwirlingPortal)\nUses(Rick, PortalGun)\nUses(Rick, Plumbus)\nThus, GreenSwirlingPortal → PortalGun → Rick → Plumbus and Plumbus → Rick → PortalGun → GreenSwirlingPortal",
-        "hop_count": 6,
+        "explanation": "Rick's portal gun creates swirling green portals to travel through dimensions. The Plumbus is a bizarre, multipurpose device frequently used by Rick in Rick and Morty. Both are key items associated with Rick in Rick and Morty.",
+        "reasoning": "Creates(Rick, SwirlingGreenPortals) and Uses(Rick, Plumbus)\nThus, SwirlingGreenPortals → Rick and Plumbus → Rick",
+        "hop_count": 2,
         "perception": [
             "Relational Perception"
         ],
@@ -1185,8 +1185,8 @@
             }
         ],
         "explanation": "Go is played with black and white stones. \"Territory\" in Go refers to an area on the board surrounded by stones of one color.",
-        "reasoning": "PlayedWith(Go, BlackAndWhiteStones)\nComposedOf(GoTerritory, Grid)\nPartOf(GoTerritory, Go)\nThus, BlackAndWhiteStones → Go → GoTerritory → Grid and Grid → GoTerritory → Go → BlackAndWhiteStones",
-        "hop_count": 6,
+        "reasoning": "PlayedWith(Go, BlackAndWhiteStones)\nRefersTo(Go, Territory)\nThus, BlackAndWhiteStones → Go → Territory",
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization"
         ],
@@ -1216,7 +1216,7 @@
             }
         ],
         "explanation": "The closed fist, as before, represents 'Rock'. The image of scissors cutting paper visually depicts the winning relationship between 'Scissors' and 'Paper' within the game's rules.",
-        "reasoning": "Represent(ClosedFist, Rock) and PartOf(Rock, RockPaperScissors)\nDepict(ScissorsCuttingPaper, ScissorsBeatsPaper) and Rule(ScissorsBeatsPaper, RockPaperScissors)\nThus, ClosedFist → Rock → RockPaperScissors and ScissorsCuttingPaper → ScissorsBeatsPaper → RockPaperScissors",
+        "reasoning": "Represent(Rock, ClosedFist) and Related(Rock, Rock-paper-scissors)\nSymbolizes(PaperCutting, PaperAndScissors) and Related(PaperAndScissors, Rock-paper-scissors)\nThus, ClosedFist → Rock → Rock-paper-scissors and PaperCutting → PaperAndScissors → Rock-paper-scissors",
         "hop_count": 4,
         "perception": [
             "Relational Perception"
@@ -1310,8 +1310,8 @@
             }
         ],
         "explanation": "The Last Supper is a religious painting depicting the final meal Jesus shared with his disciples before his crucifixion. The bread and wine represent the elements of the Eucharist, a central sacrament in Christianity. The number 12 refers to the twelve apostles present at the Last Supper.",
-        "reasoning": "Depict(TheLastSupper, LastMealOfJesus) and Feature(LastMealOfJesus, BreadAndWine)\nCount(TheLastSupper, 12Apostles)\nThus, BreadAndWine → LastMealOfJesus → TheLastSupper and 12 → 12Apostles → TheLastSupper",
-        "hop_count": 4,
+        "reasoning": "Depict(TheLastSupper, Eucharist) and Represent(BreadAndWine, Eucharist)\nNumber(TheLastSupper, 12)\nThus, BreadAndWine → Eucharist → TheLastSupper and 12 → TheLastSupper",
+        "hop_count": 3,
         "perception": [
             "Abstract Interpretation"
         ],
@@ -1371,8 +1371,8 @@
             }
         ],
         "explanation": "Socrates is known for the Allegory of the Cave (shadow puppets on a cave wall). He also developed the Socratic method, which he likened to 'intellectual midwifery' (woman assisting with childbirth) because it helped others 'give birth' to their own ideas.",
-        "reasoning": "AssociatedWith(Socrates, AllegoryOfTheCave) and RepresentedBy(AllegoryOfTheCave, ShadowPuppetsOnCaveWall)\nDeveloped(Socrates, SocraticMethod) and ComparedTo(SocraticMethod, Midwifery) and RepresentedBy(WomanAssistingChildbirth, Midwifery)\nThus, ShadowPuppetsOnCaveWall → AllegoryOfTheCave → Socrates → SocraticMethod → Midwifery → WomanAssistingChildbirth and WomanAssistingChildbirth → Midwifery → SocraticMethod → Socrates → AllegoryOfTheCave → ShadowPuppetsOnCaveWall",
-        "hop_count": 10,
+        "reasoning": "RepresentedBy(AllegoryOfTheCave, ShadowPuppetsOnCaveWall) and AssociatedWith(Socrates, AllegoryOfTheCave)\nRepresentedBy(WomanAssistingChildbirth, Midwifery) and ComparedTo(SocraticMethod, Midwifery) and Developed(Socrates, SocraticMethod)\nThus, ShadowPuppetsOnCaveWall → AllegoryOfTheCave → Socrates and WomanAssistingChildbirth → Midwifery → SocraticMethod → Socrates",
+        "hop_count": 5,
         "perception": [
             "Relational Perception"
         ],
@@ -1736,7 +1736,7 @@
             }
         ],
         "explanation": "Ophelia from Hamlet and Haidee from The Count of Monte Cristo are both women in revenge works. Ophelia's madness and death drive Hamlet's revenge plot, while Haidee seeks revenge against those who wronged her father which also helps Le Comte de Monte-Cristo in his quest for revenge.",
-        "reasoning": "Character(Ophelia, Hamlet) and RevengePlot(Hamlet, Ophelia)\nCharacter(Haidee, TheCountOfMonteCristo) and RevengePlot(TheCountOfMonteCristo, Haidee)\nThus, Ophelia → Hamlet → RevengeWork and Haidee → TheCountOfMonteCristo → RevengeWork",
+        "reasoning": "Character(Ophelia, Hamlet) and Theme(Hamlet, Revenge)\nCharacter(Haidee, TheCountOfMonteCristo) and Theme(TheCountOfMonteCristo, Revenge)\nThus, Ophelia → Hamlet → Revenge and Haidee → TheCountOfMonteCristo → Revenge",
         "hop_count": 4,
         "perception": [
             "Social Insight"
