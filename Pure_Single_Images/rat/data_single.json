@@ -10586,7 +10586,7 @@
             }
         ],
         "explanation": "Surprise and birthday connect through the concept of a 'surprise birthday party,' which is a common celebration to honor someone's birthday unexpectedly.",
-        "reasoning": "Represents(SurpriseBirthday, Party)\nThus, Surprise → Party and Birthday → Party",
+        "reasoning": "Related(Surprise, Birthday)\nRelated(Birthday, Party)\nThus, Surprise → Party and Birthday → Party",
         "hop_count": 2,
         "perception": [
             "Social Insight"
@@ -10616,8 +10616,8 @@
             }
         ],
         "explanation": "Line and birthday connect through the idea of a birthday line, which refers to the line of guests waiting at a birthday party or event.",
-        "reasoning": "Indicates(BirthdayLine, Party)\nThus, Line → Party and Birthday → Party",
-        "hop_count": 2,
+        "reasoning": "Related(Line, BirthdayLine) and Related(BirthdayLine, Party)\nRelated(Birthday, Party)\nThus, Line → BirthdayLine → Party and Birthday → Party",
+        "hop_count": 3,
         "perception": [
             "Social Insight"
         ],
@@ -10646,7 +10646,7 @@
             }
         ],
         "explanation": "Red and go connect through the traffic signal system where red indicates 'stop,' making it a crucial part of road safety.",
-        "reasoning": "Indicates(TrafficSignal, Red)\nThus, Red → Stop and Go → Stop",
+        "reasoning": "Indicates(Red, Stop)\nContrast(Go, Stop)\nThus, Red → Stop and Go → Stop",
         "hop_count": 2,
         "perception": [
             "Abstract Interpretation"
@@ -10676,7 +10676,7 @@
             }
         ],
         "explanation": "Red and car connect through the common color of stop signs and traffic lights, where red indicates a car should stop.",
-        "reasoning": "Indicates(TrafficStop, RedCar)\nThus, Red → Stop and Car → Stop",
+        "reasoning": "Indicates(Red, Stop)\nSignal(Car, Stop)\nThus, Red → Stop and Car → Stop",
         "hop_count": 2,
         "perception": [
             "Abstract Interpretation"
@@ -10706,7 +10706,7 @@
             }
         ],
         "explanation": "Go and car connect through the context of traffic signals where 'go' refers to the action of a car moving, contrasted by the signal to 'stop.'",
-        "reasoning": "Indicates(TrafficSignal, GoCar)\nThus, Go → Stop and Car → Stop",
+        "reasoning": "Contrast(Go, Stop)\nSignal(Car, Stop)\nThus, Go → Stop and Car → Stop",
         "hop_count": 2,
         "perception": [
             "Abstract Interpretation"

@@ -220,7 +220,12 @@ for name in names_list:
             # 检查copy是否正确
             cop = data_copy_map[single_foldername]
             if cop["type"] != single_item["type"]:
-                print("Error: %s type not match!" % single_foldername)
+                if name in names_list:
+                    single_item["type"] = cop["type"]
+                    write_json(data_single_path, data_single)
+                    print("Type is updated in %s!" % single_foldername)
+                else:
+                    print("Error: %s type not match!" % single_foldername)
             if cop["culture"] != single_item["culture"]:
                 print("Error: %s culture not match!" % single_foldername)
             if cop["domain"] != single_item["domain"]:
@@ -381,7 +386,12 @@ for name in names_list:
             # 检查copy是否正确
             cop = data_copy_map[multi_foldername]
             if cop["type"] != multi_item["type"]:
-                print("Error: %s type not match!" % multi_foldername)
+                if name in names_list:
+                    multi_item["type"] = cop["type"]
+                    write_json(data_multi_path, data_multi)
+                    print("Type is updated in %s!" % multi_foldername)
+                else:
+                    print("Error: %s type not match!" % multi_foldername)
             if cop["culture"] != multi_item["culture"]:
                 print("Error: %s culture not match!" % multi_foldername)
             if cop["domain"] != multi_item["domain"]:
