@@ -5,7 +5,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # get the directory of th
 TOTAL_RIA_PATH = os.path.join(BASE_DIR, "Week1Collection")
 MULTI_PATH = os.path.join(BASE_DIR, "Multi_Images")
 PURE_SINGLE_PATH = os.path.join(BASE_DIR, "Pure_Single_Images")
-names_list = ["hzm"]
+names_list = ["hzm", "rat"]
 print(names_list)
 
 per_set = set(
@@ -230,21 +230,21 @@ for name in names_list:
             if cop["images"] != single_item["images"]:  # 列表比较、字典比较
                 print("Error: %s images not match!" % single_foldername)
             if cop["relation"] != single_item["relation"]:
-                if name == "hzm":
+                if name in names_list:
                     single_item["relation"] = cop["relation"]
                     write_json(data_single_path, data_single)
                     print("Relation is updated in %s!" % single_foldername)
                 else:
                     print("Error: %s relation not match!" % single_foldername)
             if cop["explanation"] != single_item["explanation"]:
-                if name == "hzm":
+                if name in names_list:
                     single_item["explanation"] = cop["explanation"]
                     write_json(data_single_path, data_single)
                     print("Explanation is updated in %s!" % single_foldername)
                 else:
                     print("Error: %s explanation not match!" % single_foldername)
             if cop["reasoning"] != single_item["reasoning"]:
-                if name == "hzm":
+                if name in names_list:
                     single_item["reasoning"] = cop["reasoning"]
                     write_json(data_single_path, data_single)
                     print("Reasoning is updated in %s!" % single_foldername)
@@ -254,14 +254,14 @@ for name in names_list:
                 print("Error: hop_count is missing in %s!" % single_foldername)
                 # break
             elif "hop_count" not in single_item:
-                if name == "hzm":
+                if name in names_list:
                     single_item["hop_count"] = cop["hop_count"]
                     write_json(data_single_path, data_single)
                     print("Hop_count is updated in %s!" % single_foldername)
                 else:
                     print("Error: %s hop_count not match!" % single_foldername)
             elif cop["hop_count"] != single_item["hop_count"]:
-                if name == "hzm":
+                if name in names_list:
                     single_item["hop_count"] = cop["hop_count"]
                     write_json(data_single_path, data_single)
                     print("Hop_count is updated in %s!" % single_foldername)
@@ -398,11 +398,21 @@ for name in names_list:
             ):  # 列表比较、字典比较
                 print("Error: %s images not match!" % multi_foldername)
             if cop["relation"] != multi_item["relation"]:
-                print("Error: %s relation not match!" % multi_foldername)
+                if name in names_list:
+                    multi_item["relation"] = cop["relation"]
+                    write_json(data_multi_path, data_multi)
+                    print("Relation is updated in %s!" % multi_foldername)
+                else:
+                    print("Error: %s relation not match!" % multi_foldername)
             if cop["explanation"] != multi_item["explanation"]:
-                print("Error: %s explanation not match!" % multi_foldername)
+                if name in names_list:
+                    multi_item["explanation"] = cop["explanation"]
+                    write_json(data_multi_path, data_multi)
+                    print("Explanation is updated in %s!" % multi_foldername)
+                else:
+                    print("Error: %s explanation not match!" % multi_foldername)
             if cop["reasoning"] != multi_item["reasoning"]:
-                if name == "hzm":
+                if name in names_list:
                     multi_item["reasoning"] = cop["reasoning"]
                     write_json(data_multi_path, data_multi)
                     print("Reasoning is updated in %s!" % multi_foldername)
@@ -412,14 +422,14 @@ for name in names_list:
                 print("Error: hop_count is missing in %s!" % multi_foldername)
                 # break
             elif "hop_count" not in multi_item:
-                if name == "hzm":
+                if name in names_list:
                     multi_item["hop_count"] = cop["hop_count"]
                     write_json(data_multi_path, data_multi)
                     print("Hop_count is updated in %s!" % multi_foldername)
                 else:
                     print("Error: hop_count is missing in %s!" % multi_foldername)
             elif cop["hop_count"] != multi_item["hop_count"]:
-                if name == "hzm":
+                if name in names_list:
                     multi_item["hop_count"] = cop["hop_count"]
                     write_json(data_multi_path, data_multi)
                     print("Hop_count is updated in %s!" % multi_foldername)
