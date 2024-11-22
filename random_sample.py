@@ -198,119 +198,143 @@ SAMPLE_INCONTEXT_PATH = os.path.join(BASE_DIR, "SampleAnalysis", "in-context")
 # ================== Sample Multi ==================
 # multi 和 incontext的处理方式类似
 # 读取所有multi文件夹下的数据，随机抽取30个放入SampleAnalysis/multi文件夹下
-multi_name_list = get_immediate_subdirectories(MULTI_PATH)
-multi_data_list = list()
-multi_data_dict = dict()
-perfect_cnt = 0
-all_perfect_cnt = 0
-all_multi_cnt = 0
-for name in multi_name_list:
-    data_multi_path = os.path.join(MULTI_PATH, name, "data_multi.json")
-    data_multi = read_json(data_multi_path)
-    data_multi_judge_test_path = os.path.join(
-        MULTI_PATH, name, "gpt-4o_multi_test_and_judge_complete.json"
-    )
-    data_multi_judge_test = read_json(data_multi_judge_test_path)
-    # 合并数据和评测4o结果
-    for item in data_multi:
-        foldername = item["foldername"]
-        if foldername not in data_multi_judge_test:
-            print(f"Error: {foldername} not in data_multi_judge_test")
-            print(f"name: {name}")
-        else:
-            item["test_results"] = data_multi_judge_test[foldername]
-            all_perfect = True
-            if not isinstance(item["test_results"], list):
-                print(f"Error: {foldername} test_results is not list")
-                print(f"name: {name}")
-            for result in item["test_results"]:
-                all_multi_cnt += 1
-                if (
-                    result["judge_answer"] is not None
-                    and result["judge_answer"] != "Error"
-                    and result["judge_answer"]["score_4o"] == "4"
-                ):
-                    perfect_cnt += 1
-                else:
-                    all_perfect = False
-            if all_perfect:
-                all_perfect_cnt += 1
+# multi_name_list = get_immediate_subdirectories(MULTI_PATH)
+# multi_data_list = list()
+# multi_data_dict = dict()
+# perfect_cnt = 0
+# all_perfect_cnt = 0
+# all_multi_cnt = 0
+# for name in multi_name_list:
+#     data_multi_path = os.path.join(MULTI_PATH, name, "data_multi.json")
+#     data_multi = read_json(data_multi_path)
+#     data_multi_judge_test_path = os.path.join(
+#         MULTI_PATH, name, "gpt-4o_multi_test_and_judge_complete.json"
+#     )
+#     if not os.path.exists(data_multi_judge_test_path):
+#         print(f"Error: {data_multi_judge_test_path} not found")
+#         continue
+#     data_multi_judge_test = read_json(data_multi_judge_test_path)
+#     # 合并数据和评测4o结果
+#     for item in data_multi:
+#         foldername = item["foldername"]
+#         if foldername not in data_multi_judge_test:
+#             print(f"Error: {foldername} not in data_multi_judge_test")
+#             print(f"name: {name}")
+#         else:
+#             item["test_results"] = data_multi_judge_test[foldername]
+#             all_perfect = True
+#             if not isinstance(item["test_results"], list):
+#                 print(f"Error: {foldername} test_results is not list")
+#                 print(f"name: {name}")
+#             for result in item["test_results"]:
+#                 all_multi_cnt += 1
+#                 if (
+#                     result["judge_answer"] is not None
+#                     and result["judge_answer"] != "Error"
+#                     and result["judge_answer"]["score_4o"] == "4"
+#                 ):
+#                     perfect_cnt += 1
+#                 else:
+#                     all_perfect = False
+#             if all_perfect:
+#                 all_perfect_cnt += 1
 
-    multi_data_list.extend(data_multi)
-    sub_multi_dict = dict()
-    for item in data_multi:
-        item["name"] = name
-        sub_multi_dict[item["foldername"]] = item
-    # 检查是否有重复的key
-    if not set(multi_data_dict.keys()).isdisjoint(set(sub_multi_dict.keys())):
-        # isdisjoint() 方法用于判断两个集合是否包含相同的元素，如果没有返回 True，否则返回 False。
-        print("Warning: Duplicate key in multi_data dict")
-        print("Duplicate key is:")
-        for key in set(multi_data_dict.keys()).intersection(set(sub_multi_dict.keys())):
-            print(key)
-            print("current name", name)
-            print("before name", multi_data_dict[key]["name"])
-    multi_data_dict.update(sub_multi_dict)
+#     multi_data_list.extend(data_multi)
+#     sub_multi_dict = dict()
+#     for item in data_multi:
+#         item["name"] = name
+#         sub_multi_dict[item["foldername"]] = item
+#     # 检查是否有重复的key
+#     if not set(multi_data_dict.keys()).isdisjoint(set(sub_multi_dict.keys())):
+#         # isdisjoint() 方法用于判断两个集合是否包含相同的元素，如果没有返回 True，否则返回 False。
+#         print("Warning: Duplicate key in multi_data dict")
+#         print("Duplicate key is:")
+#         for key in set(multi_data_dict.keys()).intersection(set(sub_multi_dict.keys())):
+#             print(key)
+#             print("current name", name)
+#             print("before name", multi_data_dict[key]["name"])
+#     multi_data_dict.update(sub_multi_dict)
 
-print(f"Total multi images: {all_multi_cnt}")
-print(f"Perfect multi images: {perfect_cnt}")
-print(f"Multi group cnt: {len(multi_data_list)}")
-print(f"All perfect multi group cnt: {all_perfect_cnt}")
-print()
-# 舍弃perfect的数据
-multi_data_list = [
-    item
-    for item in multi_data_list
-    if "test_results" in item
-    and all(
-        result["judge_answer"] is not None and result["judge_answer"]["score_4o"] != "4"
-        for result in item["test_results"]
-    )
-]
-print(f"Non-perfect multi images: {len(multi_data_list)}")
+# print(f"Total multi images: {all_multi_cnt}")
+# print(f"Perfect multi images: {perfect_cnt}")
+# print(f"Multi group cnt: {len(multi_data_list)}")
+# print(f"All perfect multi group cnt: {all_perfect_cnt}")
+# print()
+# # 舍弃perfect的数据
+# multi_data_list = [
+#     item
+#     for item in multi_data_list
+#     if "test_results" in item
+#     and all(
+#         result["judge_answer"] is not None
+#         and result["judge_answer"] != "Error"
+#         and result["judge_answer"]["score_4o"] != "4"
+#         for result in item["test_results"]
+#     )
+# ]
+# print(f"Non-perfect multi images: {len(multi_data_list)}")
 
-# 随机抽取30个
-random.shuffle(multi_data_list)
-random.shuffle(multi_data_list)
-random.shuffle(multi_data_list)
-# random.shuffle() 方法将序列的所有元素随机排，内部使用的是Fisher–Yates shuffle算法
-sample_multi_data = multi_data_list[:30]
-# 先统计一下4o的分数分布，如果缺少某个分数，需要补充，如果分布不均匀，需要调整
-score_4o_cnt = dict()
-for item in sample_multi_data:
-    score_4o = item["judge_answer"]["score_4o"]
-    if score_4o not in score_4o_cnt:
-        score_4o_cnt[score_4o] = 0
-    score_4o_cnt[score_4o] += 1
-print("Score 4o distribution:")
-print(score_4o_cnt)
-print()
-# 补充缺少的分数
-for score_4o in ["0", "1", "2", "3"]:
-    if score_4o not in score_4o_cnt:
-        print(f"Warning: Missing score {score_4o}")
-        for item in multi_data_list:
-            if item["judge_answer"]["score_4o"] == score_4o:
-                print(f"Add {item['foldername']} to sample_multi_data")
-                sample_multi_data.append(item)
-                score_4o_cnt[score_4o] = 1
-                break
+# # 随机抽取30个
+# random.shuffle(multi_data_list)
+# random.shuffle(multi_data_list)
+# random.shuffle(multi_data_list)
+# # random.shuffle() 方法将序列的所有元素随机排，内部使用的是Fisher–Yates shuffle算法
+# sample_multi_data = multi_data_list[:30]
+# # 先统计一下4o的分数分布，如果缺少某个分数，需要补充，如果分布不均匀，需要调整
+# score_4o_cnt = dict()
+# for item in sample_multi_data:
+#     for result in item["test_results"]:
+#         score_4o = result["judge_answer"]["score_4o"]
+#         if score_4o not in score_4o_cnt:
+#             score_4o_cnt[score_4o] = 0
+#         score_4o_cnt[score_4o] += 1
+# print("Score 4o distribution:")
+# print(score_4o_cnt)
+# print()
+# # 补充缺少的分数
+# for score_4o in ["0", "1", "2", "3"]:
+#     if score_4o not in score_4o_cnt:
+#         print(f"Warning: Missing score {score_4o}")
+#         is_break = False
+#         for item in multi_data_list:
+#             for result in item["test_results"]:
+#                 if result["judge_answer"]["score_4o"] == score_4o:
+#                     print(f"Add {item['foldername']} to sample_multi_data")
+#                     sample_multi_data.append(item)
+#                     score_4o_cnt[score_4o] = 1
+#                     is_break = True
+#                     break
+#             if is_break:
+#                 break
 
-# 如果3分少于2分的1/5，需要调整
-while score_4o_cnt["3"] < score_4o_cnt["2"] // 5:
-    print("Warning: Adjust 3 score")
-    for item in multi_data_list:
-        if item["judge_answer"]["score_4o"] == "3":
-            print(f"Add {item['foldername']} to sample_multi_data")
-            sample_multi_data.append(item)
-            for result in item["test_results"]:
-                score_4o = result["judge_answer"]["score_4o"]
-                score_4o_cnt[score_4o] += 1
-            break
-# 再次统计一下4o的分数分布
-print("Score 4o distribution after adjustment:")
-print(score_4o_cnt)
-print()
+# # 如果3分少于2分的1/5，需要调整
+# while score_4o_cnt["3"] < score_4o_cnt["2"] // 5:
+#     print("Warning: Adjust 3 score")
+#     is_break = False
+#     for item in multi_data_list:
+#         for result in item["test_results"]:
+#             if result["judge_answer"]["score_4o"] == "3":
+#                 print(f"Add {item['foldername']} to sample_multi_data")
+#                 sample_multi_data.append(item)
+#                 # 更新分数统计
+#                 for result in item["test_results"]:
+#                     score_4o = result["judge_answer"]["score_4o"]
+#                     score_4o_cnt[score_4o] += 1
+#                 is_break = True
+#                 break
+#         if is_break:
+#             break
+# # 再次统计一下4o的分数分布
+# score_4o_cnt = dict()
+# for item in sample_multi_data:
+#     for result in item["test_results"]:
+#         score_4o = result["judge_answer"]["score_4o"]
+#         if score_4o not in score_4o_cnt:
+#             score_4o_cnt[score_4o] = 0
+#         score_4o_cnt[score_4o] += 1
+# print("Score 4o distribution after adjustment:")
+# print(score_4o_cnt)
+# print()
 
 # for item in sample_multi_data:
 #     foldername = item["foldername"]
