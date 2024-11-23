@@ -1,0 +1,949 @@
+[
+    {
+        "data_uid": "Hidden symbols(visible, sense, mutual elements, NA, English)",
+        "Question": {
+            "Image 1 Description": "A human face made from Oreo cookies",
+            "Image 2 Description": "A QR code represented by the arrangement of a castle's elements"
+        },
+        "Standard Answer": {
+            "Relation": "Hidden symbols",
+            "Reasoning Path": "Symbolize(Oreo, Human face)\nSymbolize(castle elements, QR code)\nThus, Oreo → Human face and castle elements → QR code → Hidden symbols",
+            "Explanation": "These images use common objects to represent hidden symbols, making Oreo cookies and castle elements serve as symbols for a face and a QR code, respectively."
+        },
+        "MLLM's Answer": "- First image: Portrait created with Oreo cookies.\n- Second image: Fantasy castle landscape.\n\n- Relation: Creativity\n\n- Explanation: The first image showcases creativity through an unconventional medium, using Oreo cookies to form a portrait. The second image features a creatively designed fantasy castle, illustrating imaginative architecture and a scenic landscape. Both images highlight artistic expression and inventiveness in their respective forms.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM discusses creativity in a general sense but misses essential insights related to hidden symbolism, a key aspect addressed in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception"
+            ],
+            "Conceptual Association L-3": [
+                "Causal Connections",
+                "Thematic Links",
+                "Hierarchical Association"
+            ],
+            "Topic Domain": "sense",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "These two words both have associations with dry(invisible, phenomenon, mutual elements, NA, English)",
+        "Question": {
+            "Image 1 Description": "ice",
+            "Image 2 Description": "spell"
+        },
+        "Standard Answer": {
+            "Relation": "These two words both have associations with dry",
+            "Reasoning Path": "Indicates(DrySpell, Ice)\nThus, Ice → Dry and Spell → Dry",
+            "Explanation": "Ice and spell connect through the term 'dry spell,' which can also refer to the absence of ice in colder seasons or during droughts."
+        },
+        "MLLM's Answer": "- First image: Ice cubes\n- Second image: Fantasy game poster\n\n- Relation: Contrast\n\n- Explanation: The first image showcases the clarity and simplicity of ice cubes, evoking a sense of calm and coolness. In contrast, the second image presents a vibrant and complex fantasy game poster with vivid colors and dynamic elements, creating an intense and mystical atmosphere. Together, they highlight the contrast between simplicity and complexity, stillness and action.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "Emphasizes 'Contrast' without addressing the 'dry spell' relation as in the standard reasoning, failing to capture the linguistic thematic connection intended."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Abstract Interpretation"
+            ],
+            "Conceptual Association L-3": [
+                "Causal Connections"
+            ],
+            "Topic Domain": "phenomenon",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "My dog is more like a stick(invisible, country, metaphor, Non-English European, Italian)",
+        "Question": {
+            "Image 1 Description": "a lazy dog",
+            "Image 2 Description": "a sturdy walking stick"
+        },
+        "Standard Answer": {
+            "Relation": "My dog is more like a stick",
+            "Reasoning Path": "Be(Cane, Animal) ∧ Be(Cane, Object)\nThus, Cane ∧ Cane → 'My dog is more like a stick!'",
+            "Explanation": "The word 'cane' in Italian can refer to both 'dog' and 'stick.' This dual meaning allows for a humorous expression: “Ho un cane che è più un cane di un cane!” (I have a dog that is more like a stick than a dog!), playfully poking fun at the dog's laziness by comparing it to a stick."
+        },
+        "MLLM's Answer": "- First image: Sleeping pug\n- Second image: Walking cane\n- Relation: Rest and support\n- Explanation: The sleeping pug represents rest and relaxation, while the walking cane signifies support and aid in mobility. Together, they illustrate the concept of comfort and assistance, whether through sleep or physical support.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The output reflects rest and support but misses the specific dual meaning with the Italian word 'cane' that underlies the standard answer's humor."
+        },
+        "Data Labels": {
+            "Type of Relationship": "metaphor",
+            "Perceptual Association L-3": [
+                "Semantic Object",
+                "Scene Contextualization"
+            ],
+            "Conceptual Association L-3": [
+                "Causal Connections",
+                "Hierarchical Association",
+                "Cultural Reference"
+            ],
+            "Topic Domain": "country",
+            "Culture": "Non-English European",
+            "Language of Relation Description": "Italian"
+        }
+    },
+    {
+        "data_uid": "GOAT in some sport fields(invisible, people, mutual elements, NA, English)",
+        "Question": {
+            "Image 1 Description": "Michael Jordan",
+            "Image 2 Description": "Usain Bolt"
+        },
+        "Standard Answer": {
+            "Relation": "GOAT in some sport fields",
+            "Reasoning Path": "Record(Michael Jordan, GOAT in Basketball)\nRecord(Usain Bolt, GOAT in Sprinting)\nThus, Michael Jordan → GOAT and Usain Bolt → GOAT",
+            "Explanation": "The first image shows Michael Jordan, regarded as the greatest of all time in basketball. The second image shows Usain Bolt, widely considered the greatest sprinter of all time. Together, they represent two GOATs in different sports."
+        },
+        "MLLM's Answer": "- First image: Basketball player in action.\n- Second image: Sprinter celebrating a victory.\n\n- Relation: Athletic excellence\n- Explanation: Both images depict athletes known for their exceptional skills and accomplishments in their respective sports. The first image shows a basketball player who played for the Bulls, symbolizing success in basketball. The second image captures a sprinter celebrated for his speed and achievements in track and field. Both figures represent the pinnacle of performance and achievement in sports.",
+        "Judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM correctly identifies the athletic excellence of both figures, comparable to the standard answer discussing GOAT status. However, it doesn't specifically mention Michael Jordan and Usain Bolt as the greatest, which is the intended reasoning."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception",
+                "Abstract Interpretation"
+            ],
+            "Conceptual Association L-3": [
+                "Causal Connections",
+                "Thematic Links",
+                "Hierarchical Association"
+            ],
+            "Topic Domain": "people",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "ऊँट के मुँह में जीरा।(invisible, art, metaphor, South Asia and South-East Asia, Hindi)",
+        "Question": {
+            "Image 1 Description": "A camel's open mouth",
+            "Image 2 Description": "A tiny cumin seed (जीरा)"
+        },
+        "Standard Answer": {
+            "Relation": "ऊँट के मुँह में जीरा।",
+            "Reasoning Path": "Vastness(CamelMouth) ∧ Insignificance(Jeera) → CircumstancesRepresentedByCamelMouth ∧ ContributionsRepresentedByJeera",
+            "Explanation": "\"The phrase 'ऊँट के मुँह में जीरा' (Umt ke Muḥh Mein Jeera) is a Hindi idiom that translates to 'cumin in the mouth of a camel,' representing a situation where something insignificant or small is compared to something large or vast, often implying that the small item is inadequate for the larger context.\" The camel's mouth symbolizes the vastness or enormity, while the tiny cumin seed represents the smallness or insignificance, highlighting the contrast emphasized by the idiom."
+        },
+        "MLLM's Answer": "- First image: Camel with colorful decorations\n- Second image: Packaged food product\n\n- Relation: Desert-related elements\n- Explanation: The first image features a camel, an animal commonly associated with desert environments, adorned with colorful decorations. The second image shows a packaged food product, which may include grains or seeds that could be related to the type of sustenance available in desert areas. Both images connect to elements typically associated with desert life.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM explanation deviates significantly from the idiomatic expression in the standard answer, focusing instead on the desert theme without addressing the underlying metaphor about insignificance as represented by the idiom."
+        },
+        "Data Labels": {
+            "Type of Relationship": "metaphor",
+            "Perceptual Association L-3": [
+                "Relational Perception",
+                "Social Insight",
+                "Semantic Object"
+            ],
+            "Conceptual Association L-3": [
+                "Cultural Reference",
+                "Hierarchical Association"
+            ],
+            "Topic Domain": "art",
+            "Culture": "South Asia and South-East Asia",
+            "Language of Relation Description": "Hindi"
+        }
+    },
+    {
+        "data_uid": "superman(invisible, art, relation, Non-English European, English)",
+        "Question": {
+            "Image 1 Description": "Thus Spoke Zarathustra",
+            "Image 2 Description": "superman"
+        },
+        "Standard Answer": {
+            "Relation": "superman",
+            "Reasoning Path": "Related(ThusSpokeZarathustra, Übermensch)\nRelated(Übermensch, Superman)\nThus, ThusSpokeZarathustra → Übermensch → Superman",
+            "Explanation": "The concept of Übermensch (Superman) in Nietzsche's philosophy is related to the superhero Superman."
+        },
+        "MLLM's Answer": "- First image: Album cover for Richard Strauss's \"Also sprach Zarathustra\"\n- Second image: Animated superhero standing heroically\n\n- Relation: Heroic themes\n\n- Explanation: The first image features the album cover for \"Also sprach Zarathustra,\" a piece often associated with grand and heroic themes, notably used in film for dramatic effect. The second image depicts an animated superhero striking a heroic pose. Both images convey a sense of grandeur and heroism, with connections through powerful, triumphant motifs.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM describes 'heroic themes' without linking it to the philosophical concept 'Übermensch' and its relation to 'Superman' that the standard answer focuses on."
+        },
+        "Data Labels": {
+            "Type of Relationship": "relation",
+            "Perceptual Association L-3": [
+                "Social Insight",
+                "Relational Perception"
+            ],
+            "Conceptual Association L-3": [
+                "Causal Connections"
+            ],
+            "Topic Domain": "art",
+            "Culture": "Non-English European",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Jaguar(visible, animal, metaphor, other, English)",
+        "Question": {
+            "Image 1 Description": "Spots on a coat",
+            "Image 2 Description": "Jungle foliage"
+        },
+        "Standard Answer": {
+            "Relation": "Jaguar",
+            "Reasoning Path": "Characteristic(SpotsOnCoat, Jaguar) ∧ Habitat(JungleFoliage, Jaguar)\nThus, SpotsOnCoat → Jaguar and JungleFoliage → Jaguar",
+            "Explanation": "Jaguar. The spots on the coat represent the distinctive fur pattern of a jaguar, while the jungle foliage symbolizes its natural habitat, where it stealthily hunts."
+        },
+        "MLLM's Answer": "- First image: Leopard fur patterns\n- Second image: Dense jungle vegetation\n- Relation: Habitat\n- Explanation: The first image shows patterns found on the fur of leopards, which are typically associated with camouflaging in their natural environments. The second image depicts a lush jungle, which can serve as an ideal habitat for leopards, providing cover and resources for hunting and survival.",
+        "Judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM correctly identifies the habitat connection between the leopard fur and jungle vegetation while missing out on the precise association with 'jaguar,' which is mentioned in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "metaphor",
+            "Perceptual Association L-3": [
+                "Visual Similarity",
+                "Contextual Sensory Cues"
+            ],
+            "Conceptual Association L-3": [
+                "Thematic Links"
+            ],
+            "Topic Domain": "animal",
+            "Culture": "other",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "High-dimension geometry(visible, STEM, mutual elements, NA, English)",
+        "Question": {
+            "Image 1 Description": "A visual representation of a Calabi-Yau manifold",
+            "Image 2 Description": "A Klein bottle"
+        },
+        "Standard Answer": {
+            "Relation": "High-dimension geometry",
+            "Reasoning Path": "Related(Calabi-Yau manifold, High-dimension geometry)\nRelated(Klein bottle, High-dimension geometry)\nThus, Calabi-Yau manifold → High-dimension geometry and Klein bottle → High-dimension geometry",
+            "Explanation": "These images represent abstract concepts in higher-dimensional geometry, with the Calabi-Yau manifold and Klein bottle demonstrating complex topological forms."
+        },
+        "MLLM's Answer": "- First image: Abstract multidimensional shape\n- Second image: Artistic twisted glass vase\n- Relation: Curved forms\n- Explanation: Both images feature complex curved forms that create dynamic and fluid structures. The first image shows an abstract mathematical shape, possibly a Calabi-Yau manifold, with an intricate design and flow. The second image is a creatively twisted glass vase, highlighting smooth and elegant lines. Both emphasize the beauty and intricacy of curves in art and mathematics.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM addresses curves but does not link these forms to high-dimensional geometry concepts like the Calabi-Yau manifold and Klein bottle as the standard answer does."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception",
+                "Abstract Interpretation"
+            ],
+            "Conceptual Association L-3": [
+                "Functional Links",
+                "Thematic Links",
+                "Hierarchical Association"
+            ],
+            "Topic Domain": "STEM",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Arabian culture(invisible, culture, mutual elements, other, English)",
+        "Question": {
+            "Image 1 Description": "A picture of hummus.",
+            "Image 2 Description": "A picture representing oil or oil wells."
+        },
+        "Standard Answer": {
+            "Relation": "Arabian culture",
+            "Reasoning Path": "AssociatedWith(Hummus, ArabianCuisine)\nAssociatedWith(Oil, ArabianEconomy)\nThus, Hummus → ArabianCuisine and Oil → ArabianEconomy",
+            "Explanation": "Hummus is a staple food in Arabian cuisine, while oil plays a significant role in the economy of many Arabian countries. Both images represent aspects of Arabian culture."
+        },
+        "MLLM's Answer": "- First image: Bowl of avocado hummus with lemon and crackers.\n- Second image: Hand covered in oil, reaching into a puddle of oil.\n- Relation: Texture contrast\n- Explanation: The first image shows smooth and creamy avocado hummus, typically associated with food and nourishment. In contrast, the second image features thick, viscous oil, often linked to pollution and industrial use. Both images highlight their subjects' distinct textures while evoking very different sensory and thematic experiences.",
+        "Judge": {
+            "score_4o": "0",
+            "score_reason": "The MLLM output contains factual inaccuracies by focusing on texture contrast rather than acknowledging the cultural connection to Arabian culture as identified in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception",
+                "Abstract Interpretation"
+            ],
+            "Conceptual Association L-3": [
+                "Causal Connections",
+                "Thematic Links",
+                "Cultural Reference",
+                "Hierarchical Association"
+            ],
+            "Topic Domain": "culture",
+            "Culture": "other",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Both of these words are related to the term _sweet_(invisible, food, mutual elements, NA, English)",
+        "Question": {
+            "Image 1 Description": "tooth",
+            "Image 2 Description": "potato"
+        },
+        "Standard Answer": {
+            "Relation": "Both of these words are related to the term _sweet_",
+            "Reasoning Path": "Type(Tooth, ToothSweet)\nType(Potato, SweetPotato)\nThus, Tooth → Sweet and Potato → Sweet",
+            "Explanation": "Sweet potatoes are a type of root vegetable, while teeth can refer to the body's ability to consume sweets, linking both terms through food. The connection signifies the relationship between taste and edibility."
+        },
+        "MLLM's Answer": "- First image: Tooth model\n- Second image: Potatoes\n\n- Relation: Texture contrast\n\n- Explanation: The first image is a 3D model of a tooth, characterized by its smooth and shiny surface. In contrast, the second image shows a pile of potatoes, which have a rough and uneven texture. Both images highlight the difference in surface qualities, emphasizing the smoothness of dental enamel versus the natural irregularity of potato skin.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM highlights texture contrast, missing the 'sweet' theme linking sweet potatoes and teeth. It does not mention sweetness or food, deviating from the intended standard."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception"
+            ],
+            "Conceptual Association L-3": [
+                "Functional Links"
+            ],
+            "Topic Domain": "food",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "洛阳纸贵(invisible, history, metaphor, East Asia, Chinese)",
+        "Question": {
+            "Image 1 Description": "rice paper",
+            "Image 2 Description": "A pile of gold coins"
+        },
+        "Standard Answer": {
+            "Relation": "洛阳纸贵",
+            "Reasoning Path": "RicePaper ∧ PileOfGoldCoins → LuoyangPaperIsValuable",
+            "Explanation": "'Luoyang paper is valuable'. The rice paper represents the esteemed literature and high-quality paper produced in Luoyang, emphasizing its worth and the value placed on written works. The pile of gold coins symbolizes wealth and value, directly linking the idea that the paper from Luoyang is so sought after that it is as valuable as gold. Together, they vividly portray the concept of Luoyang's paper being highly prized."
+        },
+        "MLLM's Answer": "- First image: Stacks of beige folded fabric or paper sheets\n- Second image: Pile of gold coins\n- Relation: Value\n- Explanation: Both images represent objects associated with value. The first image shows what might be a valuable commodity like fabric or paper, often used in packaging or craft. The second image depicts gold coins, a traditional symbol of wealth and financial value. Together, they suggest the exchange or storage of value.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM provides a broad interpretation related to value without capturing the specific relationship of '洛阳纸贵' and the cultural notion of the paper's value akin to gold, missing the specific cultural idiom described in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "metaphor",
+            "Perceptual Association L-3": [
+                "Semantic Object"
+            ],
+            "Conceptual Association L-3": [
+                "Cultural Reference"
+            ],
+            "Topic Domain": "history",
+            "Culture": "East Asia",
+            "Language of Relation Description": "Chinese"
+        }
+    },
+    {
+        "data_uid": "A goccia a goccia si scava la pietra(invisible, STEM, mutual elements, Non-English European, Italian)",
+        "Question": {
+            "Image 1 Description": "Water Droplet on Rock",
+            "Image 2 Description": "Canyon Carved by Water"
+        },
+        "Standard Answer": {
+            "Relation": "A goccia a goccia si scava la pietra",
+            "Reasoning Path": "Causes(WaterDroplet, Erosion)\nCreates(Erosion, Canyon)\nThus, WaterDroplet → Erosion → Canyon and Canyon → Erosion → WaterDroplet",
+            "Explanation": "The water droplet represents a small, consistent action, while the canyon represents the significant result achieved over a long period through the cumulative effect of those small actions (erosion). "
+        },
+        "MLLM's Answer": "- First image: Water droplet on smooth stones\n- Second image: River flowing through a canyon\n- Relation: Water and erosion\n- Explanation: The first image highlights a single droplet of water creating ripples on smooth stones, exemplifying water's ability to shape its environment through small, incremental changes. The second image of a river flowing through a canyon demonstrates this on a much larger scale, showing how water can carve through rock over time, forming expansive landscapes. Both images depict nature's transformative power through water's interaction with rock and earth.",
+        "Judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM output touches on water erosion's transformative power but does not connect it to the Italian proverb 'A goccia a goccia si scava la pietra' like the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Contextual Sensory Cues",
+                "Abstract Interpretation",
+                "Relational Perception"
+            ],
+            "Conceptual Association L-3": [
+                "Hierarchical Association",
+                "Thematic Links",
+                "Causal Connections"
+            ],
+            "Topic Domain": "STEM",
+            "Culture": "Non-English European",
+            "Language of Relation Description": "Italian"
+        }
+    },
+    {
+        "data_uid": "九章算术(invisible, STEM, mutual elements, East Asia, Chinese)",
+        "Question": {
+            "Image 1 Description": "Close-up of bamboo slips with Chinese characters clearly visible, some showing mathematical diagrams.",
+            "Image 2 Description": "A diagram illustrating the Pythagorean theorem, but using traditional Chinese numerical characters and geometric notation."
+        },
+        "Standard Answer": {
+            "Relation": "九章算术",
+            "Reasoning Path": "WrittenOn(BambooSlips,九章算术)\nContain(Pythagorean Theorem,GeometricProblems) and Example(GeometricProblems, 九章算术)\nThus, BambooSlips → 九章算术 and Pythagorean Theore → GeometricProblems → 九章算术",
+            "Explanation": "Bamboo slips were the primary writing medium in ancient China, and the image suggests mathematical content written on them, hinting at ancient Chinese mathematical texts like the Nine Chapters. The Pythagorean theorem, while a universal mathematical concept, is presented here with traditional Chinese notation, linking it to the historical context of Chinese mathematics, specifically the geometric problems and solutions found within the Nine Chapters."
+        },
+        "MLLM's Answer": "- First image: Ancient Chinese bamboo scroll with inscriptions.\n- Second image: Geometrical illustration with Pythagorean theorem proof involving Chinese characters.\n\n- Relation: Ancient Chinese mathematics.\n\n- Explanation: Both images relate to ancient Chinese culture and scholarship. The first image shows a traditional form of recording knowledge on bamboo scrolls, which was common in ancient China. The second image illustrates a geometric proof using Chinese mathematical concepts and writing, reflecting the rich history of mathematics in Chinese civilization.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM output lacks depth and does not directly mention '九章算术', which is a significant insight in the standard answer. The explanation of mathematics related to both images is overly broad and misses critical elements related to the specific ancient Chinese texts."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Semantic Object"
+            ],
+            "Conceptual Association L-3": [
+                "Functional Links"
+            ],
+            "Topic Domain": "STEM",
+            "Culture": "East Asia",
+            "Language of Relation Description": "Chinese"
+        }
+    },
+    {
+        "data_uid": "Jay Chou(invisible, music, mutual elements, East Asia, English)",
+        "Question": {
+            "Image 1 Description": "Common Jasmine Orange",
+            "Image 2 Description": "Hannah Quinlivan"
+        },
+        "Standard Answer": {
+            "Relation": "Jay Chou",
+            "Reasoning Path": "WriteBy(JayChou, CommonJasmineOrange)\nMarriedTo(JayChou, HannahQuinlivan)\nThus, CommonJasmineOrange → JayChou and HannahQuinlivan → JayChou",
+            "Explanation": "Jay Chou is a Taiwanese musician who wrote a well-known song named Common Jasmine Orange. He married Hannah Quinlivan, a Taiwanese-Australian actress and model."
+        },
+        "MLLM's Answer": "- First image: Jasmine flowers\n- Second image: Person in a yellow outfit\n- Relation: Nature and fashion\n- Explanation: The first image shows jasmine flowers, known for their beauty and fragrance, representing elements of nature. The second image features a person wearing a yellow outfit, likely participating in a fashion event, as indicated by the text on the shirt. Both images highlight different aspects of aesthetics — one through natural beauty and the other through fashion.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM describes broad themes 'Nature and fashion', missing key specifics related to 'Jay Chou' in the standard answer and 'Common Jasmine Orange'."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception"
+            ],
+            "Conceptual Association L-3": [
+                "Causal Connections",
+                "Cultural Reference"
+            ],
+            "Topic Domain": "music",
+            "Culture": "East Asia",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "shuttlecock(invisible, sports, mutual elements, NA, English)",
+        "Question": {
+            "Image 1 Description": "saltshaker",
+            "Image 2 Description": "racket"
+        },
+        "Standard Answer": {
+            "Relation": "shuttlecock",
+            "Reasoning Path": "Shape(SaltShaker, Shuttlecock)\nUsedFor(Racket, Shuttlecock)\nThus, SaltShaker → Shuttlecock and Racket → Shuttlecock",
+            "Explanation": "The cylindrical shape of a salt shaker resembles the shape of a shuttlecock's body, while the racket is used to hit the shuttlecock in badminton."
+        },
+        "MLLM's Answer": "- First image: Salt shaker\n- Second image: Tennis racket\n- Relation: Unrelated household items\n- Explanation: The two images depict a salt shaker and a tennis racket, which are unrelated items typically found in different contexts. A salt shaker is used in the kitchen or dining area, while a tennis racket is used in sports and outdoor activities.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "MLLM correctly identifies these as unrelated items but misses seeing any specific affinity or more abstract interpretations, such as the conceptual link to a shuttlecock."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception",
+                "Visual Similarity"
+            ],
+            "Conceptual Association L-3": [
+                "Functional Links"
+            ],
+            "Topic Domain": "sports",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Invention by French(invisible, history, mutual elements, Non-English European, English)",
+        "Question": {
+            "Image 1 Description": "A guillotine",
+            "Image 2 Description": "A hot air balloon"
+        },
+        "Standard Answer": {
+            "Relation": "Invention by French",
+            "Reasoning Path": "Related(Guillotine, Invention by French)\nRelated(hot air balloon, Invention by French)\nThus, Guillotine → Invention by French and hot air balloon → Invention by French",
+            "Explanation": "The guillotine and the hot air balloon are both notable inventions attributed to French innovators."
+        },
+        "MLLM's Answer": "- First image: Guillotine in a museum\n- Second image: Hot air balloon in flight\n\n- Relation: Height and purpose\n\n- Explanation: The guillotine and hot air balloon both represent structures that rely on vertical height, but serve vastly different purposes. The guillotine, a historical execution device, uses the force of gravity for its function. Meanwhile, the hot air balloon harnesses heated air to gain altitude and facilitate travel or recreation. Both involve engineering to achieve their respective objectives.",
+        "Judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's acknowledgment of height and purpose lacks the key insight about these being French inventions, although it recognizes distinct functions reflecting the reasoning."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception",
+                "Contextual Sensory Cues"
+            ],
+            "Conceptual Association L-3": [
+                "Functional Links",
+                "Thematic Links",
+                "Hierarchical Association"
+            ],
+            "Topic Domain": "history",
+            "Culture": "Non-English European",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+"data_uid": "Rugby(visible, sports, relation, other, English)",
+"Question": {
+    "Image 1 Description": "Mud",
+    "Image 2 Description": "Scrum "
+},
+"Standard Answer": {
+    "Relation": "Rugby",
+    "Reasoning Path": "PlayedOn(Rugby, MuddyPitch)\nHas(Rugby, Scrum)\nThus, Mud → MuddyPitch → Rugby and Scrum → Rugby",
+    "Explanation": "Rugby is often played in muddy conditions, and the scrum is a key element of the game. Muddy pitches are a common sight in rugby, especially during the wetter months. The scrum is a distinctive formation in rugby where players pack together to contest the ball."
+},
+"MLLM's Answer": "- First image: Mud-covered boots\n- Second image: American football game\n- Relation: Outdoor activities\n- Explanation: Both images depict activities that take place outdoors. The first image shows boots covered in mud, suggesting an activity in a wet or muddy environment, while the second image shows a football game, which is traditionally played on grass. Both involve environmental conditions impacting the participants.",
+"Judge": {
+    "score_4o": "2",
+    "score_reason": "The response relates to 'outdoor activities,' failing to recognize specific elements such as muddy pitches and scrums in relation to 'rugby,' which are present in the standard answer."
+},
+"Data Labels": {
+    "Type of Relationship": "relation",
+    "Perceptual Association L-3": [
+        "Semantic Object"
+    ],
+    "Conceptual Association L-3": [
+        "Thematic Links"
+    ],
+    "Topic Domain": "sports",
+    "Culture": "other",
+    "Language of Relation Description": "English"
+}
+    },
+    {
+        "data_uid": "Danny Phantom(invisible, cartoon or game, mutual elements, USAEnglish, English)",
+        "Question": {
+            "Image 1 Description": "Fenton Thermos",
+            "Image 2 Description": "Vlad Plasmius"
+        },
+        "Standard Answer": {
+            "Relation": "Danny Phantom",
+            "Reasoning Path": "SourceOfPower(Fenton Thermos, Danny Phantom)\nRival(Vlad Plasmius, Danny Phantom)\nThus, Fenton Thermos → Danny Phantom and Vlad Plasmius → Danny Phantom",
+            "Explanation": "Danny Phantom. Danny gained his ghost powers from the Fenton Thermos. Vlad Plasmius is Danny's arch-rival and also a half-ghost. Both relate to Danny Phantom's ghost origins and conflicts."
+        },
+        "MLLM's Answer": "- First image: Cartoon device with bright colors\n- Second image: Cartoon vampire character\n\n- Relation: Cartoon themes\n- Explanation: Both images are stylized in a cartoon format, often used in animated shows or comics. The first image shows a futuristic or technological device, while the second depicts a classic vampire character, suggesting a theme of contrasting elements that might appear within the same animated universe.",
+        "Judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM output discusses contrasting cartoon elements but fails to specifically connect them to Danny Phantom, missing the key insights present in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception",
+                "Abstract Interpretation"
+            ],
+            "Conceptual Association L-3": [
+                "Cultural Reference"
+            ],
+            "Topic Domain": "cartoon or game",
+            "Culture": "USA/English",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "These two words both have associations with hour(invisible, time, mutual elements, NA, English)",
+        "Question": {
+            "Image 1 Description": "rush",
+            "Image 2 Description": "happy"
+        },
+        "Standard Answer": {
+            "Relation": "These two words both have associations with hour",
+            "Reasoning Path": "Induces(Rush, HappyHour)\nCelebrates(HappyHour, Happy)\nThus, Rush → HappyHour and Happy → HappyHour",
+            "Explanation": "Rush and happy relate to the phenomenon of happy hour, where people rush to enjoy discounted drinks and socialization. Happy hour is a time acclaimed for enjoyment, prompting a rush to bars and restaurants."
+        },
+        "MLLM's Answer": "- First image: Three men posing together against a blue background.\n- Second image: Multiple yellow smiley faces clustered together.\n\n- Relation: Mood contrast\n- Explanation: The first image features a group of men with neutral expressions, conveying a serious or contemplative mood. In contrast, the second image is filled with vibrant, happy smiley faces, representing positivity and joy. The juxtaposition highlights the varying emotional tones between both images.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's explanation focuses on mood contrast without any mention of the concept of 'happy hour' or its related associations, failing to align with the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Scene Contextualization"
+            ],
+            "Conceptual Association L-3": [
+                "Functional Links"
+            ],
+            "Topic Domain": "time",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Taurus is opposite to Scorpio(invisible, myth, relation, Non-English European, English)",
+        "Question": {
+            "Image 1 Description": "bull (animal)",
+            "Image 2 Description": "oct and nov.jpg"
+        },
+        "Standard Answer": {
+            "Relation": "Taurus is opposite to Scorpio",
+            "Reasoning Path": "Symbol(Bull, Taurus) and Opposite(Taurus, Scorpio)\nPeriod(Scorpio, OctNov)\nThus, Bull → Taurus → Scorpio → OctNov",
+            "Explanation": "Taurus is the second astrological sign in the Western zodiac, represented by the bull. Scorpio is the eighth astrological sign in the Western zodiac, which period is between about October 23 and November 21. Taurus and Scorpio are opposite signs in the zodiac."
+        },
+        "MLLM's Answer": "- First image: Bull standing in a field\n- Second image: Calendar for October and November 2022\n- Relation: Time of year\n- Explanation: The bull represents a potential cultural or seasonal reference, as bulls can be associated with various festivals and events in different cultures. The calendar specifies a specific time of year. The images together might suggest planning for an event or season that involves bulls, possibly speaking to cultural or agricultural activities.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The mention of seasonal or cultural associations misses the specific link to Taurus and Scorpio along with associated periods, as indicated in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "relation",
+            "Perceptual Association L-3": [
+                "Semantic Object"
+            ],
+            "Conceptual Association L-3": [
+                "Cultural Reference"
+            ],
+            "Topic Domain": "myth",
+            "Culture": "Non-English European",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Blockchain Technology(invisible, STEM, mutual elements, other, English)",
+        "Question": {
+            "Image 1 Description": "A long chain, each link engraved with a unique symbol and visibly linked to the next",
+            "Image 2 Description": "A group of people jointly holding pieces of a jigsaw puzzle, each piece fitting perfectly with its neighbors"
+        },
+        "Standard Answer": {
+            "Relation": "Blockchain Technology",
+            "Reasoning Path": "Symbolize(LinkedChain, Blockchain) and Underlie(Blockchain, BlockchainTechnology)\nRepresent(SharedPuzzle, Decentralization) and Enable(Decentralization, BlockchainTechnology)\nThus, LinkedChain → Blockchain → BlockchainTechnology and SharedPuzzle → Decentralization → BlockchainTechnology",
+            "Explanation": "\"The first image directly represents the core concept of a blockchain – a chain of interconnected blocks, each containing unique data (the symbols) and cryptographically linked to the previous block. The second image symbolizes the decentralized and collaborative nature of blockchain, where multiple participants (represented by the people holding puzzle pieces) contribute to the overall integrity and security of the system, with each piece (representing a block) contributing to the complete picture.\""
+        },
+        "MLLM's Answer": "- First image: A chain with intricately patterned links.\n- Second image: Diverse hands assembling colorful puzzle pieces.\n- Relation: Connection\n- Explanation: Both images visually represent the concept of connection and unity. The chain's interconnected links symbolize strength and continuity, while the puzzle pieces signify collaboration and diversity coming together to form a complete picture. Both convey themes of interdependence and cohesiveness.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM output captures general ideas of connection and unity, but lacks specific reference to blockchain technology which underlies a more precise connection in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Abstract Interpretation",
+                "Relational Perception"
+            ],
+            "Conceptual Association L-3": [
+                "Analogical Reasoning",
+                "Functional Links"
+            ],
+            "Topic Domain": "STEM",
+            "Culture": "other",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Night Vision (invisible, ability, relation, NA, English)",
+        "Question": {
+            "Image 1 Description": "Night Sky (full of stars)",
+            "Image 2 Description": "Owl"
+        },
+        "Standard Answer": {
+            "Relation": "Night Vision",
+            "Reasoning Path": "Requires(NightSky, NightVision)\nPossesses(Owl, NightVision)\nThus, NightSky → NightVision ← Owl",
+            "Explanation": "A night sky necessitates night vision to see clearly, and owls are known for their exceptional night vision."
+        },
+        "MLLM's Answer": "- First image: Starry night sky\n- Second image: Owl perched on a branch\n- Relation: Nocturnal theme\n- Explanation: Both images depict scenes associated with nighttime. The starry sky is a typical night scene, while the owl is a well-known nocturnal creature. This highlights the natural activities and beauty that occur during the night.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM output provides a broad nocturnal theme, which misses the more specific focus on night vision that is emphasized in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "relation",
+            "Perceptual Association L-3": [
+                "Contextual Sensory Cues",
+                "Relational Perception"
+            ],
+            "Conceptual Association L-3": [
+                "Functional Links",
+                "Cultural Reference",
+                "Hierarchical Association"
+            ],
+            "Topic Domain": "ability",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Animals as vehicle(visible, phenomenon, mutual elements, NA, English)",
+        "Question": {
+            "Image 1 Description": "A picture of people riding on an elephant.",
+            "Image 2 Description": "A movie still from Avatar showing characters riding creatures."
+        },
+        "Standard Answer": {
+            "Relation": "Animals as vehicle",
+            "Reasoning Path": "UsedAsVehicle(Elephant)\nUsedAsVehicle(Ikran)\nThus, Elephant → Vehicle and Ikran → Vehicle",
+            "Explanation": "Both images depict the use of animals as a means of transportation, one in real life (elephants) and the other in fiction (the Ikran from Avatar)."
+        },
+        "MLLM's Answer": "- First image: People riding an elephant\n- Second image: Character riding a flying creature over water\n- Relation: Riding animals\n- Explanation: Both images depict scenes involving individuals riding on large creatures, highlighting the human (or humanoid) interaction with animals. The first image is a real-world setting where two people are riding an elephant. The second image shows a fictional character from a fantasy setting riding a fantastical flying creature. Both scenarios involve exploration and adventure.",
+        "Judge": {
+            "score_4o": "3",
+            "score_reason": "The output correctly identifies the theme of riding animals, aligning with the concept of using animals as a vehicle. However, it misses the specific reference to the Ikran and Avatar from the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Relational Perception",
+                "Contextual Sensory Cues"
+            ],
+            "Conceptual Association L-3": [
+                "Causal Connections",
+                "Thematic Links",
+                "Hierarchical Association"
+            ],
+            "Topic Domain": "phenomenon",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "OnlinePurchase(invisible, business, relation, NA, English)",
+        "Question": {
+            "Image 1 Description": "Shopping cart",
+            "Image 2 Description": "Online reviews"
+        },
+        "Standard Answer": {
+            "Relation": "OnlinePurchase",
+            "Reasoning Path": "Tool(ShoppingCart, OnlinePurchase)\nComponent(OnlinePurchase, E-commerce)\nInfluences(OnlineReviews, OnlinePurchase)\nComponent(OnlinePurchase, E-commerce)\nThus, ShoppingCart → OnlinePurchase → E-commerce → OnlinePurchase → OnlineReviews and OnlineReviews → OnlinePurchase → E-commerce → OnlinePurchase → ShoppingCart",
+            "Explanation": "Shopping carts are used to select items for purchase online, and online reviews influence purchasing decisions."
+        },
+        "MLLM's Answer": "- First image: Shopping cart filled with groceries\n- Second image: Person giving online reviews on a laptop\n- Relation: Consumer experience\n- Explanation: The shopping cart represents the physical act of purchasing products, while the online review reflects the post-purchase evaluation of those products or the shopping experience. Together, they illustrate the modern consumer journey, from acquiring goods to sharing feedback or opinions online.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's answer is somewhat relevant but overlooks the key aspect of online purchasing. It broadly covers the customer journey but lacks specificity concerning 'OnlinePurchase,' which is central in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "relation",
+            "Perceptual Association L-3": [
+                "Scene Contextualization",
+                "Social Insight"
+            ],
+            "Conceptual Association L-3": [
+                "Functional Links",
+                "Hierarchical Association"
+            ],
+            "Topic Domain": "business",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Filo(invisible, country, metaphor, Non-English European, Italian)",
+        "Question": {
+            "Image 1 Description": "Thread",
+            "Image 2 Description": "Wire"
+        },
+        "Standard Answer": {
+            "Relation": "Filo",
+            "Reasoning Path": "Be(Filo, Textile) ∧ Be(Filo, Electrical)\nThus, Filo ∧ Filo → 'Is it thread or wire?'",
+            "Explanation": "The word 'filo' in Italian can refer to both 'thread' and 'wire.' This dual meaning allows for a humorous remark: “Ho un filo che non so se è un filo o un filo!” (I have a thread that I don't know if it's thread or wire!), playfully illustrating a confusing situation where one cannot distinguish between the two types of filaments."
+        },
+        "MLLM's Answer": "- First image: Spool of golden thread with a needle.\n- Second image: Hand holding a bunch of colorful electrical wires.\n- Relation: Connectivity\n- Explanation: Both images portray materials used to create connections. The golden thread with a needle is used in sewing to join fabric pieces, while the colorful wires serve to connect electrical components. Both involve the concept of linking or binding through their respective mediums.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The output notes connectivity but misses the dual interpretation of 'filo' that the standard answer humorously exemplifies."
+        },
+        "Data Labels": {
+            "Type of Relationship": "metaphor",
+            "Perceptual Association L-3": [
+                "Semantic Object",
+                "Contextual Sensory Cues"
+            ],
+            "Conceptual Association L-3": [
+                "Hierarchical Association",
+                "Cultural Reference"
+            ],
+            "Topic Domain": "country",
+            "Culture": "Non-English European",
+            "Language of Relation Description": "Italian"
+        }
+    },
+    {
+        "data_uid": "Vouloir le beurre et l'argent du beurre(invisible, art, metaphor, Non-English European, French)",
+        "Question": {
+            "Image 1 Description": "butter",
+            "Image 2 Description": "money"
+        },
+        "Standard Answer": {
+            "Relation": "Vouloir le beurre et l'argent du beurre",
+            "Reasoning Path": "Butter ∧ Money → Vouloir le beurre et l'argent du beurre",
+            "Explanation": "Vouloir le beurre et l'argent du beurre (To want the butter and the money for the butter) is a French expression that means to want to have one's cake and eat it too."
+        },
+        "MLLM's Answer": "- First image: Block of butter on a plate with a knife.\n- Second image: Stack of U.S. one hundred dollar bills.\n\n- Relation: Value\n\n- Explanation: The images evoke the idea of value. Butter can be a daily essential with economic considerations, especially when related to food industries or household budgets. U.S. dollars represent financial wealth and economic power. Both images together might suggest discussions about the cost of goods, inflation, or economic worth.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "While the MLLM output hints at value, it lacks the specific French saying regarding wanting both 'butter and the money,' observed in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "metaphor",
+            "Perceptual Association L-3": [
+                "Semantic Object"
+            ],
+            "Conceptual Association L-3": [
+                "Cultural Reference"
+            ],
+            "Topic Domain": "art",
+            "Culture": "Non-English European",
+            "Language of Relation Description": "French"
+        }
+    },
+    {
+        "data_uid": "Quantum superposition(invisible, STEM, metaphor, NA, English)",
+        "Question": {
+            "Image 1 Description": "Schrodinger's cat",
+            "Image 2 Description": "Blurred image"
+        },
+        "Standard Answer": {
+            "Relation": "Quantum superposition",
+            "Reasoning Path": "Illustrate(SchrodingersCat, QuantumSuperposition)\nMetaphorFor(BlurredImage, QuantumSuperposition)\nThus, SchrodingersCat → QuantumSuperposition and BlurredImage → QuantumSuperposition",
+            "Explanation": "Schrodinger's cat, a thought experiment in quantum mechanics, illustrates the concept of superposition, where a cat can be simultaneously alive and dead. A blurred image, with its overlapping and indistinct features, can be metaphorically linked to the uncertain states in quantum superposition."
+        },
+        "MLLM's Answer": "- First image: Cat hiding in a cardboard box\n- Second image: Blurry city lights at night\n- Relation: Contrast\n- Explanation: The first image presents a domestic scene with a cat playfully hiding in a box, while the second image shows an urban environment with blurred lights, suggesting a bustling yet unfocused cityscape. Together, they contrast the intimate and playful nature of home life with the expansive and dynamic atmosphere of an urban setting.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The explanation contrasts the images but doesn't capture the deeper concept of quantum superposition as relates to Schrodinger's cat and a blurred image."
+        },
+        "Data Labels": {
+            "Type of Relationship": "metaphor",
+            "Perceptual Association L-3": [
+                "Visual Similarity",
+                "Scene Contextualization",
+                "Abstract Interpretation"
+            ],
+            "Conceptual Association L-3": [
+                "Causal Connections",
+                "Thematic Links",
+                "Analogical Reasoning"
+            ],
+            "Topic Domain": "STEM",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "9(invisible, number, mutual elements, East Asia, English)",
+        "Question": {
+            "Image 1 Description": "Kitsune(fox)",
+            "Image 2 Description": "poker 9"
+        },
+        "Standard Answer": {
+            "Relation": "9",
+            "Reasoning Path": "TailNumber(Kitsune, Nine)\nThus, Kitsune → Nine",
+            "Explanation": "Kitsune have as many as nine tails."
+        },
+        "MLLM's Answer": "- First image: A fox with fiery, flowing fur\n- Second image: Nine of hearts playing card\n- Relation: Symbolism\n- Explanation: The fox in the first image is depicted with fire-like elements, often associated with transformation or magic. The nine of hearts typically represents emotional fulfillment or wishes coming true in card reading. Both images evoke themes of mystical or magical significance, using symbols to convey deeper meanings.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The output relates to symbolism broadly but fails to identify the specific connection of '9' as the number of tails related to Kitsune, missing that central point from the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Semantic Object"
+            ],
+            "Conceptual Association L-3": [
+                "Cultural Reference"
+            ],
+            "Topic Domain": "number",
+            "Culture": "East Asia",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "These two words both have associations with key(invisible, stuff, relation, NA, English)",
+        "Question": {
+            "Image 1 Description": "chain",
+            "Image 2 Description": "master"
+        },
+        "Standard Answer": {
+            "Relation": "These two words both have associations with key",
+            "Reasoning Path": "Context(Chain, Mastery)\nThus, Chain → Master → Key",
+            "Explanation": "Chain and master refer to key developments in understanding. The master of a chain can represent the key player in a sequence of events."
+        },
+        "MLLM's Answer": "- First image: Gold chain necklace\n- Second image: Golden crown with a green gemstone\n\n- Relation: Luxurious adornments\n- Explanation: Both images feature items associated with wealth and luxury. The gold chain necklace and the golden crown with a gemstone are symbols of opulence, often used to signify status and prestige.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The focus on luxury and adornments in MLLM's output is unrelated to the key-related thematic elements of the standard answer, lacking alignment with the intended reasoning."
+        },
+        "Data Labels": {
+            "Type of Relationship": "relation",
+            "Perceptual Association L-3": [
+                "Abstract Interpretation",
+                "Semantic Object"
+            ],
+            "Conceptual Association L-3": [
+                "Functional Links"
+            ],
+            "Topic Domain": "stuff",
+            "Culture": "N/A",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "India(invisible, country, mutual elements, South Asia and South-East Asia, English)",
+        "Question": {
+            "Image 1 Description": "Taj Mahal.",
+            "Image 2 Description": "Bollywood film reel."
+        },
+        "Standard Answer": {
+            "Relation": "India",
+            "Reasoning Path": "IsLocatedIn(TajMahal, India)\nRepresents(Bollywood, India)\nThus, TajMahal → India and Bollywood → India",
+            "Explanation": "The Taj Mahal is a world-famous monument located in India, and Bollywood is the thriving film industry based in India.The first image depicts the Taj Mahal, an iconic symbol of India's rich history and architecture, while the second image represents Bollywood, known for producing a significant amount of films and being a major part of Indian popular culture."
+        },
+        "MLLM's Answer": "- First image: Taj Mahal\n- Second image: Filmstrip with family photos\n- Relation: Memories\n- Explanation: The Taj Mahal is a symbol of love and is often associated with memories and dedication due to its historical significance. The filmstrip of family photos represents cherished memories and moments captured in time. Both images evoke sentiments of remembrance and the emotional impact of preserving significant life moments.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM output does not align with the intended theme of the standard answer. The focus is on memories broadly rather than identifying India as the relation."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Semantic Object",
+                "Abstract Interpretation"
+            ],
+            "Conceptual Association L-3": [
+                "Cultural Reference"
+            ],
+            "Topic Domain": "country",
+            "Culture": "South Asia and South-East Asia",
+            "Language of Relation Description": "English"
+        }
+    },
+    {
+        "data_uid": "Gemini the model(invisible, STEM, mutual elements, Non-English European, English)",
+        "Question": {
+            "Image 1 Description": "twins",
+            "Image 2 Description": "google"
+        },
+        "Standard Answer": {
+            "Relation": "Gemini the model",
+            "Reasoning Path": "CompanyName(Google, Gemini)\nMeaning(Gemini, Twins)\nThus, Google → Gemini and Twins → Gemini",
+            "Explanation": "Google has a model called Gemini, which means twins in Latin."
+        },
+        "MLLM's Answer": "- First image: Twin girls in denim jackets\n- Second image: Google logo with colorful design\n- Relation: Unrelated subjects\n- Explanation: The first image shows twin girls wearing matching denim jackets, highlighting a familial or sibling connection. The second image depicts the Google logo surrounded by vibrant colors, representing technology or internet services. The two images are unrelated in theme, with one focusing on people and the other on a well-known technology brand.",
+        "Judge": {
+            "score_4o": "1",
+            "score_reason": "The MLLM explanation concedes that the images are 'Unrelated,' failing to recognize and explore the thematic link through the Gemini model from Google."
+        },
+        "Data Labels": {
+            "Type of Relationship": "mutual elements",
+            "Perceptual Association L-3": [
+                "Semantic Object"
+            ],
+            "Conceptual Association L-3": [
+                "Cultural Reference"
+            ],
+            "Topic Domain": "STEM",
+            "Culture": "Non-English European",
+            "Language of Relation Description": "English"
+        }
+    }
+]

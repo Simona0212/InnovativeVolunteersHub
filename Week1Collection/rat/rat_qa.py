@@ -49,21 +49,21 @@ if len(data_foldername_set - qa_foldername_set) > 0:
 
 # 将qa的explanation和reasoning转移至data
 # 先建立foldername到qa的映射
-qa_foldername_dict = dict()
-for item in rat_qa:
-    qa_foldername_dict[item["foldername"]] = item
+# qa_foldername_dict = dict()
+# for item in rat_qa:
+#     qa_foldername_dict[item["foldername"]] = item
 
-for data in rat_data:
-    foldername = data["foldername"]
-    if foldername in qa_foldername_dict:
-        qa_item = qa_foldername_dict[foldername]
-        data["explanation"] = qa_item["explanation"]
-        data["reasoning"] = qa_item["reasoning"]
-        data["hop_count"] = qa_item["reasoning"].count("→")
-    else:
-        print("缺失数据：", foldername)
-write_json(rat_data_path, rat_data)
-print("转移完成")
+# for data in rat_data:
+#     foldername = data["foldername"]
+#     if foldername in qa_foldername_dict:
+#         qa_item = qa_foldername_dict[foldername]
+#         data["explanation"] = qa_item["explanation"]
+#         data["reasoning"] = qa_item["reasoning"]
+#         data["hop_count"] = qa_item["reasoning"].count("→")
+#     else:
+#         print("缺失数据：", foldername)
+# write_json(rat_data_path, rat_data)
+# print("转移完成")
 
 # rat_qa = []
 # for data in rat_data:
