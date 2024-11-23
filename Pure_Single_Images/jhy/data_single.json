@@ -52,9 +52,9 @@
                 "description": "Water flowing around rocks in a river, carving a new path."
             }
         ],
-        "reasoning": "Exhibit(Chameleon, Camouflage) and Imply(Camouflage, Adaptability)\nExhibit(FlowingRiver, ChangePath) and Imply(ChangePath, Adaptability)\nThus, Chameleon → Camouflage → Adaptability and FlowingRiver → ChangePath → Adaptability",
+        "reasoning": "Exhibit(Chameleon, Camouflage) and Imply(Camouflage, Adaptability)\nExhibit(FlowingRiver, ChangePath) and Imply(ChangePath, Adaptability)\nThus, Chameleon → Adaptability and FlowingRiver → ChangePath → Adaptability",
         "explanation": "The first image showcases a chameleon, known for its ability to change color and adapt to its surroundings.  The second image depicts a river flowing around rocks, illustrating its ability to adapt its course over time. Both images symbolize adaptability through different natural processes.",
-        "hop_count": 4,
+        "hop_count": 3,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation",
@@ -386,9 +386,9 @@
                 "description": "A picture of the Panathenaic Stadium in Athens, Greece."
             }
         ],
-        "reasoning": "Host(BeijingNationalStadium, OlympicGames)\nHost(PanathenaicStadium, OlympicGames)\nThus, BeijingNationalStadium → OlympicGames → OlympicHost and PanathenaicStadium → OlympicGames → OlympicHost",
+        "reasoning": "Host(BeijingNationalStadium, OlympicGames)\nHost(PanathenaicStadium, OlympicGames)\nThus, BeijingNationalStadium  → OlympicHost and PanathenaicStadium → OlympicHost",
         "explanation": "The first image shows the Beijing National Stadium, which hosted the 2008 Summer Olympics. The second image depicts the Panathenaic Stadium in Athens, which hosted the first modern Olympic Games in 1896. Both locations are recognized for having hosted the Olympic Games.",
-        "hop_count": 4,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Abstract Interpretation"
@@ -751,9 +751,9 @@
                 "description": "A patient on an examination table."
             }
         ],
-        "reasoning": "Uses(Doctor, Stethoscope)\nTreats(Doctor, Patient)\nThus, Stethoscope → Doctor ← Patient",
+        "reasoning": "Uses(Doctor, Stethoscope)\nTreats(Doctor, Patient)\nThus, Stethoscope → Doctor → Patient",
         "explanation": "The first image shows a stethoscope, a tool commonly used by doctors to examine patients. The second image depicts a patient on an examination table, representing the individuals that doctors treat. Both images are associated with the profession of a doctor.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Social Insight"
@@ -784,9 +784,9 @@
                 "description": "A microphone on a podium representing powerful speeches."
             }
         ],
-        "reasoning": "Represents(PeacefulProtest, CivilRightsMovement) ∧ Symbolizes(MicrophoneOnPodium, PowerfulSpeeches)\nConnects(CivilRightsMovement, FightForEquality) ∧ Connects(PowerfulSpeeches, LegacyOfLeadership)\nThus, PeacefulProtest ∧ MicrophoneOnPodium → \"Martin Luther King Jr.\"",
+        "reasoning": "Represents(PeacefulProtest, CivilRightsMovement) ∧ Symbolizes(MicrophoneOnPodium, PowerfulSpeeches)\nConnects(CivilRightsMovement, FightForEquality) ∧ Connects(PowerfulSpeeches, LegacyOfLeadership)\nThus, PeacefulProtest → Martin Luther King Jr. → MicrophoneOnPodium .",
         "explanation": "The peaceful protest symbolizes the civil rights movement and the fight for equality. The microphone represents King's powerful speeches, highlighting his leadership and vision for a just society.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -817,9 +817,9 @@
                 "description": "The Eiffel Tower, a prominent landmark in Paris."
             }
         ],
-        "reasoning": "Represents(Phryges, Paris2024Olympics)\nLocatedIn(EiffelTower, Paris)\nHosts(Paris, Paris2024Olympics)\nThus, Phryges → Paris ← EiffelTower",
+        "reasoning": "Represents(Phryges, Paris2024Olympics)\nLocatedIn(EiffelTower, Paris)\nHosts(Paris, Paris2024Olympics)\nThus, Phryges → Paris → EiffelTower",
         "explanation": "The Phryges represent the Paris 2024 Olympics, while the Eiffel Tower is an iconic Parisian landmark.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Abstract Interpretation",
@@ -852,9 +852,9 @@
                 "description": "Detective Chinatown 3, a movie partially set in Tokyo."
             }
         ],
-        "reasoning": "LocatedIn(Senso-jiTemple, Tokyo)\nSetIn(DetectiveChinatown3, Tokyo)\nThus, Senso-jiTemple → Tokyo ← DetectiveChinatown3",
+        "reasoning": "LocatedIn(Senso-jiTemple, Tokyo)\nSetIn(DetectiveChinatown3, Tokyo)\nThus, Senso-jiTemple → Tokyo → DetectiveChinatown3",
         "explanation": "Senso-ji Temple is a famous Tokyo landmark, and Detective Chinatown 3 is set in Tokyo.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Abstract Interpretation",
@@ -887,9 +887,9 @@
                 "description": "The Empire State Building, an iconic landmark in New York City."
             }
         ],
-        "reasoning": "About(WelcomeToNewYork, NewYorkCity)\nLocatedIn(EmpireStateBuilding, NewYorkCity)\nThus, WelcomeToNewYork → NewYorkCity ← EmpireStateBuilding",
+        "reasoning": "About(WelcomeToNewYork, NewYorkCity)\nLocatedIn(EmpireStateBuilding, NewYorkCity)\nThus, WelcomeToNewYork → NewYorkCity → EmpireStateBuilding",
         "explanation": "\"Welcome to New York\" is a song by Taylor Swift about New York City, and the Empire State Building is a famous landmark there.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Abstract Interpretation",
@@ -922,9 +922,9 @@
                 "description": "A chessboard with pieces in strategic positions."
             }
         ],
-        "reasoning": "Represents(Crossroads, MomentOfChoice) ∧ Symbolizes(Chessboard, StrategicThinking)\nConnects(MomentOfChoice, ComplexityOfDecisions) ∧ Connects(StrategicThinking, AnticipationOfOutcomes)\nThus, Crossroads ∧ Chessboard → \"Decision-making ability.\"",
+        "reasoning": "Represents(Crossroads, MomentOfChoice) ∧ Symbolizes(Chessboard, StrategicThinking)\nConnects(MomentOfChoice, ComplexityOfDecisions) ∧ Connects(StrategicThinking, AnticipationOfOutcomes)\nThus, Crossroads → Decision-making ability Chessboard → \"Decision-making ability.\"",
         "explanation": "The crossroads symbolizes decision-making complexity, while the chessboard represents strategic thinking.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation",
@@ -1024,9 +1024,9 @@
                 "description": "A visually appealing and impressive finished painting."
             }
         ],
-        "reasoning": "Enables(BlankCanvas, Creativity)\nResultOf(FinishedPainting, Creativity)\nThus, BlankCanvas → Creativity ← FinishedPainting",
+        "reasoning": "Enables(BlankCanvas, Creativity)\nResultOf(FinishedPainting, Creativity)\nThus, BlankCanvas → Creativity → FinishedPainting",
         "explanation": "The blank canvas symbolizes the start of creative expression, while the finished painting represents the outcome.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation",
@@ -1058,9 +1058,9 @@
                 "description": "Graph of the Ebbinghaus Forgetting Curve."
             }
         ],
-        "reasoning": "Exercises(MemorizingClassicTexts, Memory)\nDescribes(EbbinghausForgettingCurve, MemoryDecay)\nComponentOf(Memory, MemoryDecay)\nThus, MemorizingClassicTexts → Memory ← EbbinghausForgettingCurve",
+        "reasoning": "Exercises(MemorizingClassicTexts, Memory)\nDescribes(EbbinghausForgettingCurve, MemoryDecay)\nComponentOf(Memory, MemoryDecay)\nThus, MemorizingClassicTexts → Memory → EbbinghausForgettingCurve",
         "explanation": "Memorizing classic texts exercises memory, while the forgetting curve illustrates memory decay over time.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -1091,9 +1091,9 @@
                 "description": "A stretched bungee cord demonstrating potential energy."
             }
         ],
-        "reasoning": "Requires(SkippingRope, JumpingAbility)\nIllustrates(StretchedBungeeCord, PotentialEnergyForJumping)\nComponentOf(JumpingAbility, PotentialEnergyForJumping)\nThus, SkippingRope → JumpingAbility ← StretchedBungeeCord",
+        "reasoning": "Requires(SkippingRope, JumpingAbility)\nIllustrates(StretchedBungeeCord, PotentialEnergyForJumping)\nComponentOf(JumpingAbility, PotentialEnergyForJumping)\nThus, SkippingRope → JumpingAbility → StretchedBungeeCord",
         "explanation": "Skipping rope improves jumping ability, while a bungee cord illustrates the energy conversion needed for jumping.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Abstract Interpretation",
@@ -1144,7 +1144,7 @@
         "relation": "2008",
         "visibility": "invisible",
         "domain": "time",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1159,9 +1159,9 @@
                 "description": "The Olympic rings logo."
             }
         ],
-        "reasoning": "Represents(BirdNest, VenueForOlympics) ∧ Symbolizes(OlympicRings, GlobalEvent)\nConnects(VenueForOlympics, 2008Games) ∧ Connects(GlobalEvent, SpiritOfUnity)\nThus, BirdNest ∧ OlympicRings → '2008.'",
+        "reasoning": "Represents(BirdNest, VenueForOlympics) ∧ Symbolizes(OlympicRings, GlobalEvent)\nConnects(VenueForOlympics, 2008Games) ∧ Connects(GlobalEvent, SpiritOfUnity)\nThus, BirdNest → '2008 →  OlympicRings .'",
         "explanation": "The Bird's Nest represents the venue for the 2008 Olympics, and the Olympic rings symbolize the global event.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Abstract Interpretation",
@@ -1193,9 +1193,9 @@
                 "description": "A bar graph showing very high viewership statistics."
             }
         ],
-        "reasoning": "Represents(TelevisionScreen, HighViewership) ∧ Symbolizes(ViewershipGraph, PopularityOfShows)\nConnects(HighViewership, EngagementDuringPrimeTime) ∧ Connects(PopularityOfShows, RatingsSuccess)\nThus, TelevisionScreen ∧ ViewershipGraph → '8:00 PM prime time.'",
+        "reasoning": "Represents(TelevisionScreen, HighViewership) ∧ Symbolizes(ViewershipGraph, PopularityOfShows)\nConnects(HighViewership, EngagementDuringPrimeTime) ∧ Connects(PopularityOfShows, RatingsSuccess)\nThus, TelevisionScreen → '8:00 PM prime → time ViewershipGraph .'",
         "explanation": "The television screen displaying a popular show symbolizes the peak viewing hours when audiences are most engaged, showcasing the importance of high-rated programs during this time. The bar graph illustrates the high viewership statistics, emphasizing the success and popularity of shows broadcasted during the prime time slot.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Relational Perception"
@@ -1227,9 +1227,9 @@
                 "description": "Fireworks (exploding in the night sky)"
             }
         ],
-        "reasoning": "Signals(CountdownClock, 12:00OnNewYearsEve)\nOccurAt(Fireworks, 12:00OnNewYearsEve)\nThus, CountdownClock → 12:00OnNewYearsEve ← Fireworks",
+        "reasoning": "Signals(CountdownClock, 12:00OnNewYearsEve)\nOccurAt(Fireworks, 12:00OnNewYearsEve)\nThus, CountdownClock → 12:00OnNewYearsEve →  Fireworks",
         "explanation": "A countdown clock marks the approach of 12:00 on New Year's Eve, and fireworks are often set off at 12:00 to celebrate the new year.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Relational Perception"
@@ -1260,9 +1260,9 @@
                 "description": "24 Solar Terms Calendar (specifically, with Winter Solstice highlighted)"
             }
         ],
-        "reasoning": "EatenDuring(Dumplings, WinterSolstice)\nPartOf(WinterSolstice, 24SolarTerms)\nThus, Dumplings → WinterSolstice ← 24SolarTerms",
+        "reasoning": "EatenDuring(Dumplings, WinterSolstice)\nPartOf(WinterSolstice, 24SolarTerms)\nThus, Dumplings → WinterSolstice →  24SolarTerms",
         "explanation": "Dumplings are traditionally eaten during the Winter Solstice, which is one of the 24 solar terms.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Relational Perception",
@@ -1295,9 +1295,9 @@
                 "description": "Eagle"
             }
         ],
-        "reasoning": "Provides(Telescope, LongDistanceVision)\nPossesses(Eagle, LongDistanceVision)\nThus, Telescope → LongDistanceVision ← Eagle",
+        "reasoning": "Provides(Telescope, LongDistanceVision)\nPossesses(Eagle, LongDistanceVision)\nThus, Telescope → LongDistanceVision Eagle→ LongDistanceVision",
         "explanation": "Telescopes allow people to see objects far away, and eagles have naturally excellent long-distance vision.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Relational Perception"
@@ -1328,9 +1328,9 @@
                 "description": "Owl"
             }
         ],
-        "reasoning": "Requires(NightSky, NightVision)\nPossesses(Owl, NightVision)\nThus, NightSky → NightVision ← Owl",
+        "reasoning": "Requires(NightSky, NightVision)\nPossesses(Owl, NightVision)\nThus, NightSky → NightVision → Owl",
         "explanation": "A night sky necessitates night vision to see clearly, and owls are known for their exceptional night vision.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Relational Perception"
@@ -1361,9 +1361,9 @@
                 "description": "A massage therapist's hands in a massaging motion."
             }
         ],
-        "reasoning": "Indicates(TenseShoulders, Discomfort) ∧ OppositeOf(Comfort, Discomfort) ∧ Provides(MassageTherapistsHands, Comfort)\nThus, TenseShoulders → Discomfort → Comfort ← MassageTherapistsHands",
+        "reasoning": "Indicates(TenseShoulders, Discomfort) ∧ OppositeOf(Comfort, Discomfort) ∧ Provides(MassageTherapistsHands, Comfort)\nThus, TenseShoulders → Discomfort → Comfort → MassageTherapistsHands",
         "explanation": "Tense shoulders often indicate discomfort, and massage therapists use their hands to provide relief and comfort.",
-        "hop_count": 2,
+        "hop_count": 3,
         "perception": [
             "Scene Contextualization",
             "Relational Perception",
@@ -1413,7 +1413,7 @@
         "relation": "Amazon",
         "visibility": "visible",
         "domain": "business",
-        "type": "relation",
+        "type": "metaphor",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1462,9 +1462,9 @@
                 "description": "The Intel logo."
             }
         ],
-        "reasoning": "Produces(Intel, Microchip) ∧ Represents(IntelLogo, Intel)\nThus, Microchip → Intel ← IntelLogo",
+        "reasoning": "Produces(Intel, Microchip) ∧ Represents(IntelLogo, Intel)\nThus, Microchip → Intel → IntelLogo",
         "explanation": "Intel designs and manufactures microchips, and the Intel logo represents the company. The microchip represents the product, and the logo represents the brand. Both point to Intel.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Visual Similarity",
             "Relational Perception",
@@ -1496,9 +1496,9 @@
                 "description": "A portrait of Elon Musk."
             }
         ],
-        "reasoning": "Represents(ElectricCar, InnovationInAutomotive) ∧ Symbolizes(ElonMusk, VisionaryLeadership)\nConnects(InnovationInAutomotive, TeslaBrand) ∧ Connects(VisionaryLeadership, CompanyGrowth)\nThus, ElectricCar ∧ ElonMusk → 'Tesla.'",
+        "reasoning": "Represents(ElectricCar, InnovationInAutomotive) ∧ Symbolizes(ElonMusk, VisionaryLeadership)\nConnects(InnovationInAutomotive, TeslaBrand) ∧ Connects(VisionaryLeadership, CompanyGrowth)\nThus, ElectricCar → 'Tesla' → ElonMusk ",
         "explanation": "The sleek electric car symbolizes Tesla's innovative approach to the automotive industry, showcasing the company's focus on electric vehicles and sustainability. The portrait of Elon Musk represents the visionary leadership behind Tesla, highlighting his role in transforming the company into a leader in electric transportation and energy solutions.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Visual Similarity",
             "Relational Perception",
@@ -1564,9 +1564,9 @@
                 "description": "Mario, the iconic Nintendo character."
             }
         ],
-        "reasoning": "Features(Nintendo, Mario) ∧ Creates(Nintendo, GameConsole)\nThus, Mario → Nintendo ← GameConsole",
+        "reasoning": "Features(Nintendo, Mario) ∧ Creates(Nintendo, GameConsole)\nThus, Mario → Nintendo → GameConsole",
         "explanation": "Mario is a popular character featured in many Nintendo games, and these games are played on Nintendo consoles.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
@@ -1583,7 +1583,7 @@
         "visibility": "invisible",
         "domain": "business",
         "type": "relation",
-        "culture": "N/A",
+        "culture": "Chinese",
         "language": "English",
         "images": [
             {
@@ -1597,9 +1597,9 @@
                 "description": "The WeChat app icon."
             }
         ],
-        "reasoning": "Owns(Tencent, QQ) ∧ Represents(QQPenguin, QQ) ∧ Owns(Tencent, WeChat)\nThus, QQPenguin → Tencent ← WeChat",
+        "reasoning": "Owns(Tencent, QQ) ∧ Represents(QQPenguin, QQ) ∧ Owns(Tencent, WeChat)\nThus, QQPenguin → Tencent → WeChat",
         "explanation": "The QQ Penguin is the mascot of Tencent's QQ, and WeChat is another popular app owned by Tencent.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
@@ -1630,9 +1630,9 @@
                 "description": "A luxurious Rolex watch."
             }
         ],
-        "reasoning": "Represents(WatchCrown, CraftsmanshipInWatches) ∧ Symbolizes(RolexWatch, LuxuryBrand)\nConnects(CraftsmanshipInWatches, QualityAndPrecision) ∧ Connects(LuxuryBrand, IconicStatus)\nThus, WatchCrown ∧ RolexWatch → 'Rolex.'",
+        "reasoning": "Represents(WatchCrown, CraftsmanshipInWatches) ∧ Symbolizes(RolexWatch, LuxuryBrand)\nConnects(CraftsmanshipInWatches, QualityAndPrecision) ∧ Connects(LuxuryBrand, IconicStatus)\nThus, WatchCrown → 'Rolex' → RolexWatch ",
         "explanation": "The watch crown symbolizes the precision and craftsmanship involved in watchmaking, representing the technical excellence that Rolex is known for. The luxurious Rolex watch represents the brand itself, highlighting its status as a symbol of luxury, success, and timeless style.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Visual Similarity",
             "Relational Perception",
@@ -1664,9 +1664,9 @@
                 "description": "A movie poster or a still featuring Miguel and his family from the film Coco."
             }
         ],
-        "reasoning": "Symbolizes(Castle, Disney) ∧ Owns(Disney, Pixar) ∧ Created(Pixar, Coco)\nThus, Castle → Disney ← Coco",
+        "reasoning": "Symbolizes(Castle, Disney) ∧ Owns(Disney, Pixar) ∧ Created(Pixar, Coco)\nThus, Castle → Disney →   Coco",
         "explanation": "Fairytale castles are a prominent symbol of Disney, and Coco is an animated film produced by Pixar, which is owned by Disney.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Visual Similarity",
             "Relational Perception",
@@ -1698,9 +1698,9 @@
                 "description": "A glass of Vinho Verde"
             }
         ],
-        "reasoning": "Represents(PastelDeNata, PortuguesePastry)\nComplements(VinhoVerde, PortugueseCuisine)\nThus, PastelDeNata → PortugueseCuisine and VinhoVerde → PortugueseCuisine → PastelDeNata",
+        "reasoning": "Represents(PastelDeNata, PortuguesePastry)\nComplements(VinhoVerde, PortugueseCuisine)\nThus, PastelDeNata and VinhoVerde → PortugueseCuisine → Portuguese",
         "explanation": "The first image shows a Pastel de Nata, a popular Portuguese dessert known for its creamy texture and flaky crust. The second image depicts a glass of Vinho Verde, a light and refreshing wine often enjoyed with traditional Portuguese dishes. Together, these images highlight two key elements of Portuguese culinary culture.",
-        "hop_count": 3,
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues"
         ],
@@ -1731,9 +1731,9 @@
                 "description": "A musical score"
             }
         ],
-        "reasoning": "Resembles(OperaHouse, Sailboat)\nPerforms(MusicalScore, OperaHouse)\nThus, Sailboat → SydneyOperaHouse and SydneyOperaHouse → MusicalScore",
+        "reasoning": "Resembles(OperaHouse, Sailboat)\nPerforms(MusicalScore, OperaHouse)\nThus, Sailboat and SydneyOperaHouse → MusicalScore",
         "explanation": "The first image of a sailboat symbolizes the sail-like architectural design of the Sydney Opera House. The second image, a musical score, represents the venue's association with musical performances, connecting both the visual and cultural aspects of this iconic structure.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation",
@@ -1765,9 +1765,9 @@
                 "description": "A broken chain"
             }
         ],
-        "reasoning": "Represents(Torch, Enlightenment)\nSymbolizes(BrokenChain, Freedom)\nThus, Torch → StatueOfLiberty and StatueOfLiberty → BrokenChain",
+        "reasoning": "Represents(Torch, Enlightenment)\nSymbolizes(BrokenChain, Freedom)\nThus, Torch and StatueOfLiberty → BrokenChain",
         "explanation": "The torch, held by the Statue of Liberty, symbolizes enlightenment and hope, while the broken chain at its feet represents freedom from oppression. These images highlight the ideals of liberty and enlightenment that the statue embodies.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -1799,9 +1799,9 @@
                 "description": "A UNESCO World Heritage Site certificate"
             }
         ],
-        "reasoning": "Features(AncientWatchtower, GreatWallOfChina)\nRecognizes(GreatWallOfChina, UNESCOWorldHeritageSite)\nThus, AncientWatchtower → GreatWallOfChina and GreatWallOfChina → UNESCOWorldHeritageSite",
+        "reasoning": "Features(AncientWatchtower, GreatWallOfChina)\nRecognizes(GreatWallOfChina, UNESCOWorldHeritageSite)\nThus, AncientWatchtower ∧ UNESCOWorldHeritageSite → GreatWallOfChina",
         "explanation": "The first image depicts an ancient watchtower, integral to the structure and historical function of the Great Wall of China. The second image is a UNESCO World Heritage Site certificate, representing the global cultural significance of the Great Wall.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -1935,9 +1935,9 @@
                 "description": "A Fado musician, symbolizing Lisbon's cultural identity."
             }
         ],
-        "reasoning": "Represents(25deAbrilBridge, Lisbon)\nEmbodies(FadoMusician, LisbonCulture)\nThus, 25deAbrilBridge → Lisbon and Lisbon → FadoMusician",
+        "reasoning": "Represents(25deAbrilBridge, Lisbon)\nEmbodies(FadoMusician, LisbonCulture)\nThus, 25deAbrilBridge ∧ FadoMusician→ Lisbon",
         "explanation": "The bridge shows Lisbon's achievements, and the musician reflects cultural heritage.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Relational Perception"
@@ -1954,7 +1954,7 @@
         "relation": "Colónias Portuguesas",
         "visibility": "visible",
         "domain": "location",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "Non-English European",
         "language": "Portuguese",
         "images": [
@@ -1969,7 +1969,7 @@
                 "description": "The flag of Brazil, reflecting its heritage as a Portuguese colony."
             }
         ],
-        "reasoning": "Represents(FlagOfMacau, PortugueseColonies)\nRepresents(FlagOfBrazil, PortugueseColonies)\nThus, FlagOfMacau → PortugueseColonies and PortugueseColonies → FlagOfBrazil",
+        "reasoning": "Represents(FlagOfMacau, PortugueseColonies)\nRepresents(FlagOfBrazil, PortugueseColonies)\nThus, FlagOfMacau → PortugueseColonies and FlagOfBrazil→ PortugueseColonies ",
         "explanation": "The Macau flag shows colonial history, and the Brazil flag reflects former Portuguese influence.",
         "hop_count": 2,
         "perception": [
@@ -2003,9 +2003,9 @@
                 "description": "A soccer ball with the World Cup logo, symbolizing international aspirations."
             }
         ],
-        "reasoning": "Awards(GoldenBoot, CristianoRonaldo)\nAims(CristianoRonaldo, WorldCup)\nThus, GoldenBoot → CristianoRonaldo and CristianoRonaldo → WorldCup",
+        "reasoning": "Awards(GoldenBoot, CristianoRonaldo)\nAims(CristianoRonaldo, WorldCup)\nThus, GoldenBoot ∧WorldCup → CristianoRonaldo ",
         "explanation": "The boot represents scoring success, and the ball signifies international goals.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Relational Perception",
@@ -3438,6 +3438,838 @@
         ]
     },
     {
+        "foldername": "21 can be divided by 7 exactly(invisible, number, relation, NA, English)",
+        "relation": "21 can be divided by 7 exactly",
+        "visibility": "invisible",
+        "domain": "number",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Blackjack.jpg",
+                "description": "An image depicting the card game Blackjack."
+            },
+            {
+                "img_id": "2",
+                "filename": "rainbow.png",
+                "description": "An image of a rainbow."
+            }
+        ],
+        "reasoning": "Equals(Blackjack, 21) and DivisibleBy(21, 7) and Has(Rainbow, 7Colors) Thus, Blackjack → 21 → 7 and Rainbow → 7",
+        "explanation": "Blackjack aims for a hand value of 21.  21 is divisible by 7. Rainbows are commonly associated with seven colors. Thus, both images indirectly relate to the number 7, which is a factor of 21.",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation",
+            "Semantic Object"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "A movie clip of Titanic(invisible, movie, relation, USAEnglish, English)",
+        "relation": "A movie clip of Titanic",
+        "visibility": "invisible",
+        "domain": "movie",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "sketch of woman.png",
+                "description": "A sketch of Rose DeWitt Bukater from Titanic."
+            },
+            {
+                "img_id": "2",
+                "filename": "Titanic.png",
+                "description": "An image of the RMS Titanic."
+            }
+        ],
+        "reasoning": "CharacterIn(Rose, Titanic) and Is(Titanic, Ship) Thus, sketch of woman → Rose → Titanic movie →Titanic",
+        "explanation": "Rose is the female protagonist in the movie *Titanic*, and the ship itself is central to the film's plot.  Together, they clearly point to a scene or clip from the movie.",
+        "hop_count": 4,
+        "perception": [
+            "Relational Perception",
+            "Visual Similarity",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "A movie clip of Wolf of Wall street(invisible, movie, relation, USAEnglish, English)",
+        "relation": "A movie clip of Wolf of Wall street",
+        "visibility": "invisible",
+        "domain": "movie",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "pen.png",
+                "description": "An image of a pen."
+            },
+            {
+                "img_id": "2",
+                "filename": "Wolf of wall street.jpg",
+                "description": "An image related to The Wolf of Wall Street (e.g., a poster, a still)."
+            }
+        ],
+        "reasoning": "FeaturedIn(Pen, WolfOfWallStreet) Thus, Pen → A movie clip of Wolf of Wall street → WolfOfWallStreet",
+        "explanation": "The pen is a key prop in a famous scene from *The Wolf of Wall Street*, where Jordan Belfort (Leonardo DiCaprio) uses it as a sales challenge.  This makes the pen instantly recognizable in connection with the film.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Visual Similarity",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "A storyline of Godzilla x Kong The New Empire(visible, movie, relation, USAEnglish culture, English)",
+        "relation": "A storyline of Godzilla x Kong The New Empire",
+        "visibility": "visible",
+        "domain": "movie",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Colosseo.png",
+                "description": "An image of the Colosseum in Rome."
+            },
+            {
+                "img_id": "2",
+                "filename": "Gozilla.png",
+                "description": "An image of Godzilla."
+            }
+        ],
+        "reasoning": "Setting(GodzillaXKongTheNewEmpire, Colosseum) and Character(Godzilla, GodzillaXKongTheNewEmpire) Thus, Colosseum → GodzillaXKongTheNewEmpire and Godzilla → GodzillaXKongTheNewEmpire",
+        "explanation": "The Colosseum suggests a battle setting, and Godzilla is one of the main characters in the movie. Together, they hint at a storyline involving Godzilla fighting in the Colosseum.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Visual Similarity",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "A storyline of Titanic(visible, movie, relation, USAEnglish culture, English)",
+        "relation": "A storyline of Titanic",
+        "visibility": "visible",
+        "domain": "movie",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Spitting.png",
+                "description": "An image depicting someone spitting."
+            },
+            {
+                "img_id": "2",
+                "filename": "Titanic.png",
+                "description": "The title card or a promotional image from the movie Titanic."
+            }
+        ],
+        "reasoning": "Action(Rose, Spitting) and Character(Rose, Titanic) Thus, Spitting → Rose → Titanic ",
+        "explanation": "Rose, a key character in Titanic, has a memorable scene where she spits. This image, combined with the Titanic image, points to that specific storyline.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "A storyline of Transformer movie(invisible, movie, relation, USAEnglish culture, English)",
+        "relation": "A storyline of Transformer movie",
+        "visibility": "invisible",
+        "domain": "movie",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Hong Kong.png",
+                "description": "An image of the Hong Kong skyline."
+            },
+            {
+                "img_id": "2",
+                "filename": "Transformers Age of Extinction.jpg",
+                "description": "A poster or still from the movie Transformers: Age of Extinction."
+            }
+        ],
+        "reasoning": "Setting(TransformersAgeOfExtinction, HongKong) Thus, HongKong → A storyline of Transformer movie  → TransformersAgeOfExtinction",
+        "explanation": "Part of the movie Transformers: Age of Extinction takes place in Hong Kong.  The image of Hong Kong, coupled with the movie poster, suggests this specific storyline.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Benedict Cumberbatch(visible, movie, relation, USAEnglish culture, English)",
+        "relation": "Benedict Cumberbatch",
+        "visibility": "visible",
+        "domain": "movie",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Doctor Strange in Reverger.png",
+                "description": "A poster or still from the movie Doctor Strange."
+            },
+            {
+                "img_id": "2",
+                "filename": "Elementary.png",
+                "description": "A promotional image or title card from the TV series Elementary."
+            }
+        ],
+        "reasoning": "Actor(BenedictCumberbatch, DoctorStrange) and Actor(BenedictCumberbatch, Elementary) Thus, DoctorStrange → BenedictCumberbatch and Elementary → BenedictCumberbatch",
+        "explanation": "Benedict Cumberbatch stars in both Doctor Strange and Elementary. Showing images from both productions points to the common actor.",
+        "hop_count": 2,
+        "perception": [
+            "Social Insight",
+            "Visual Similarity"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Blind(invisible, ability, relation, NA, English)",
+        "relation": "Blind",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Guide dog.jpg",
+                "description": "An image of a guide dog."
+            },
+            {
+                "img_id": "2",
+                "filename": "Sunglass.jpg",
+                "description": "An image of sunglasses, potentially specialized ones for visually impaired individuals."
+            }
+        ],
+        "reasoning": "Assists(GuideDog, BlindPerson) and UsedBy(Sunglasses, VisuallyImpairedPerson) and IsA(BlindPerson, VisuallyImpairedPerson) Thus, GuideDog → BlindPerson → VisuallyImpairedPerson  → Sunglasses ",
+        "explanation": "Guide dogs assist blind people, and specialized sunglasses can be used by visually impaired individuals, which includes those who are blind.  The connection is the shared concept of blindness or visual impairment.",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Bulletin protection(invisible, ability, relation, NA, English)",
+        "relation": "Bulletin protection",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Armadillo.jpg",
+                "description": "An image of an armadillo."
+            },
+            {
+                "img_id": "2",
+                "filename": "Kevlar Fabric.png",
+                "description": "An image of Kevlar fabric."
+            }
+        ],
+        "reasoning": "Has(Armadillo, NaturalArmor) and MadeOf(BulletproofVest, Kevlar) Thus, Armadillo → NaturalArmor → Protection and Kevlar → BulletproofVest → Protection",
+        "explanation": "Armadillos have natural armor for protection, and Kevlar is used in bulletproof vests for protection.  The shared concept is protection.",
+        "hop_count": 4,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "China(visible, country, relation, East Asia, English)",
+        "relation": "China",
+        "visibility": "visible",
+        "domain": "country",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Cock.png",
+                "description": "An image of a rooster."
+            },
+            {
+                "img_id": "2",
+                "filename": "Stone's shpae like Chinese mainland .png",
+                "description": "An image of a stone shaped like the Chinese mainland."
+            }
+        ],
+        "reasoning": "Zodiac(Rooster, China) and Shape(Stone, ChinaMainland) Thus, Rooster → China and ChinaMainland → China",
+        "explanation": "The Rooster is one of the Chinese zodiac animals, and the stone's shape resembles the mainland of China.  Together, they represent China.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Deaf(invisible, ability, relation, NA, English)",
+        "relation": "Deaf",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Beethoven.jpg",
+                "description": "An image of Beethoven."
+            },
+            {
+                "img_id": "2",
+                "filename": "hearing aid.png",
+                "description": "An image of a hearing aid."
+            }
+        ],
+        "reasoning": "Was(Beethoven, Deaf) and UsedBy(HearingAid, DeafPerson) Thus, Beethoven → Deaf and HearingAid → DeafPerson → Deaf",
+        "explanation": "Beethoven was deaf, and hearing aids are used by deaf people.  Both images relate to deafness.",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "December(invisible, time, relation, NA, English)",
+        "relation": "December",
+        "visibility": "invisible",
+        "domain": "time",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Menorah.png",
+                "description": "An image of a Menorah."
+            },
+            {
+                "img_id": "2",
+                "filename": "Taylor Swift.jpg",
+                "description": "An image of Taylor Swift."
+            }
+        ],
+        "reasoning": "Holiday(Hanukkah, December) and AssociatedWith(Menorah, Hanukkah) and BornIn(TaylorSwift, December) Thus, Menorah → Hanukkah → December and TaylorSwift → December",
+        "explanation": "Hanukkah is celebrated in December, and the Menorah is associated with Hanukkah. Taylor Swift's birthday is also in December. Both relate to December.",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Diabetic foot ulcer smell like rotten apple(invisible, smell or taste, relation, NA, English)",
+        "relation": "Diabetic foot ulcer smell like rotten apple",
+        "visibility": "invisible",
+        "domain": "sense",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "diabetic foot ulcer.png",
+                "description": "An image of a diabetic foot ulcer."
+            },
+            {
+                "img_id": "2",
+                "filename": "rotten apple.png",
+                "description": "An image of a rotten apple."
+            }
+        ],
+        "reasoning": "Smell(DiabeticFootUlcer, RottenApple) Thus, DiabeticFootUlcer → RottenApple and RottenApple → DiabeticFootUlcer",
+        "explanation": "Diabetic foot ulcers can sometimes smell like rotten apples.  The images directly connect the smell.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Duck(invisible, food, relation, NA, English)",
+        "relation": "Duck",
+        "visibility": "invisible",
+        "domain": "food",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Chinese Dried Sausage.png",
+                "description": "An image of Chinese Dried Sausage (lap cheong)."
+            },
+            {
+                "img_id": "2",
+                "filename": "掌亦煲.jpeg",
+                "description": "An image of braised duck feet (掌亦煲)."
+            }
+        ],
+        "reasoning": "MadeOf(LapCheong, Duck) and MadeOf(BraisedDuckFeet, Duck)  Thus, LapCheong → Duck and BraisedDuckFeet → Duck",
+        "explanation": "Some types of Chinese Dried Sausage (lap cheong) contain duck, and braised duck feet are made from duck. Both images represent food made with duck.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Eason Chan(visible, music, relation, East Asia, English)",
+        "relation": "Eason Chan",
+        "visibility": "visible",
+        "domain": "music",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Eason Chan.png",
+                "description": "An image of Eason Chan."
+            },
+            {
+                "img_id": "2",
+                "filename": "tourbillon.png",
+                "description": "An image representing the song \"Tourbillon\"."
+            }
+        ],
+        "reasoning": "Sings(EasonChan, Tourbillon) Thus, EasonChan → Tourbillon and Tourbillon → EasonChan",
+        "explanation": "Eason Chan is a singer who sings the song \"Tourbillon\".  The images link the singer and his song.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Visual Similarity",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Easter egg(visible, movie, relation, USAEnglish culture, English)",
+        "relation": "Easter egg",
+        "visibility": "visible",
+        "domain": "movie",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Ready Player One.jpg",
+                "description": "An image related to the movie Ready Player One."
+            },
+            {
+                "img_id": "2",
+                "filename": "The Shining.png",
+                "description": "An image related to the movie The Shining."
+            }
+        ],
+        "reasoning": "Contains(ReadyPlayerOne, EasterEgg) and Reference(ReadyPlayerOne, TheShining) Thus, ReadyPlayerOne → EasterEgg and ReadyPlayerOne → TheShining",
+        "explanation": "Ready Player One is known for its Easter eggs, and it contains a reference to The Shining.  The images suggest the concept of Easter eggs in movies, specifically within Ready Player One.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Eminem(visible, music, relation, USAEnglish culture, English)",
+        "relation": "Eminem",
+        "visibility": "visible",
+        "domain": "music",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bruce Lee.png",
+                "description": "An image of Bruce Lee."
+            },
+            {
+                "img_id": "2",
+                "filename": "Eminem.png",
+                "description": "An image of Eminem."
+            }
+        ],
+        "reasoning": "ReferencedBy(Eminem, BruceLee) Thus, Eminem → BruceLee and BruceLee → Eminem",
+        "explanation": "Eminem references Bruce Lee in his lyrics (specifically in “Without Me”).  The two images together suggest the connection.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Visual Similarity"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "English channel(visible, location, relation, USAEnglish culture, English)",
+        "relation": "English channel",
+        "visibility": "visible",
+        "domain": "location",
+        "type": "relation",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "dunkirk evacuation.jpg",
+                "description": "An image of the Dunkirk evacuation."
+            },
+            {
+                "img_id": "2",
+                "filename": "English channel.jpg",
+                "description": "An image of the English Channel."
+            }
+        ],
+        "reasoning": "Location(DunkirkEvacuation, EnglishChannel) Thus, DunkirkEvacuation → EnglishChannel and EnglishChannel → DunkirkEvacuation",
+        "explanation": "The Dunkirk evacuation took place across the English Channel. The images connect the historical event to its location.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Fermat's last theorm(invisible, STEM, relation, NA, English)",
+        "relation": "Fermat's last theorm",
+        "visibility": "invisible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Andrew Wiles.png",
+                "description": "An image of Andrew Wiles."
+            },
+            {
+                "img_id": "2",
+                "filename": "equation.png",
+                "description": "An image of a mathematical equation (ideally, a^n + b^n = c^n)."
+            }
+        ],
+        "reasoning": "Proved(AndrewWiles, FermatsLastTheorem) and RelatedTo(Equation, FermatsLastTheorem) Thus, AndrewWiles → FermatsLastTheorem and Equation → FermatsLastTheorem",
+        "explanation": "Andrew Wiles proved Fermat's Last Theorem, which is a famous mathematical theorem represented by an equation (a^n + b^n = c^n for n>2).  The images connect the person who proved it to the theorem itself.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Semantic Object",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Gorilla(visible, animal, relation, NA, English)",
+        "relation": "Gorilla",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "King Kong.jpg",
+                "description": "An image of King Kong."
+            },
+            {
+                "img_id": "2",
+                "filename": "Takenori Akagi.jpg",
+                "description": "An image of Takenori Akagi (from Slam Dunk)."
+            }
+        ],
+        "reasoning": "IsA(KingKong, Gorilla) and Nicknamed(TakenoriAkagi, Gorilla) Thus, KingKong → Gorilla and TakenoriAkagi → Gorilla",
+        "explanation": "King Kong is a fictional giant gorilla, and Takenori Akagi (a character from the manga/anime Slam Dunk) is nicknamed “Gorilla.” Both images represent the concept of a gorilla.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Guangzhou(invisible, location, relation, East Asia, English)",
+        "relation": "Guangzhou",
+        "visibility": "invisible",
+        "domain": "location",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Canton Tower.jpg",
+                "description": "An image of the Canton Tower."
+            },
+            {
+                "img_id": "2",
+                "filename": "Goats.png",
+                "description": "An image of goats."
+            }
+        ],
+        "reasoning": "LocatedIn(CantonTower, Guangzhou) and FormerName(Guangzhou, CityOfGoats) Thus, CantonTower → Guangzhou and Goats → CityOfGoats → Guangzhou",
+        "explanation": "The Canton Tower is located in Guangzhou. Guangzhou was formerly known as the “City of Goats.” The images connect a landmark and a historical nickname to represent Guangzhou.",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Heat(visible, STEM, relation, NA, English)",
+        "relation": "Heat",
+        "visibility": "visible",
+        "domain": "STEM",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "burn.jpg",
+                "description": "An image of a burn injury."
+            },
+            {
+                "img_id": "2",
+                "filename": "piston motion.jpg",
+                "description": "An image of a piston in motion."
+            }
+        ],
+        "reasoning": "CausedBy(Burn, Heat) and Generates(PistonMotion, Heat) Thus, Burn → Heat and PistonMotion → Heat",
+        "explanation": "Burns are caused by heat, and the motion of a piston generates heat through friction and combustion.  Both images represent effects or causes of heat.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Ice hockey(visible, sports, relation, NA, English)",
+        "relation": "Ice hockey",
+        "visibility": "visible",
+        "domain": "sports",
+        "type": "relation",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Icon of NHL.png",
+                "description": "An image of the NHL logo."
+            },
+            {
+                "img_id": "2",
+                "filename": "Kimura Takuya.jpeg",
+                "description": "An image of Kimura Takuya."
+            }
+        ],
+        "reasoning": "League(NHL, IceHockey) and Plays(KimuraTakuya, IceHockey) Thus, NHL → IceHockey and KimuraTakuya → IceHockey",
+        "explanation": "The NHL (National Hockey League) is the premier professional ice hockey league, and Kimura Takuya (a Japanese actor) is known to play ice hockey.  Both images connect to the sport of ice hockey.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "In Chinese culture, guardian lions are set in front of the bank entrance, implying the protection of the heritage.(invisible, myth, relation, East Asia, English)",
+        "relation": "In Chinese culture, guardian lions are set in front of the bank entrance, implying the protection of the heritage.",
+        "visibility": "invisible",
+        "domain": "myth",
+        "type": "relation",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "China ICBC Banks.jpg",
+                "description": "An image of ICBC bank(s) in China."
+            },
+            {
+                "img_id": "2",
+                "filename": "Lion Guardian.png",
+                "description": "An image of Chinese guardian lions."
+            }
+        ],
+        "reasoning": "LocatedAt(GuardianLion, BankEntrance) and Symbolize(GuardianLion, Protection) Thus, GuardianLion → BankEntrance and GuardianLion → Protection",
+        "explanation": "In Chinese culture, guardian lion statues are often placed at the entrances of banks, symbolizing protection and good fortune.  The images connect the location and symbolic meaning of the guardian lions.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Visual Similarity",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association",
+            "Cultural Reference"
+        ]
+    },
+    {
+        "foldername": "Black celebrity(visible,people, mutual element, NA, English)",
+        "relation": "Black celebrity",
+        "visibility": "visible",
+        "domain": "people",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Barack_Obama.png",
+                "description": "Former U.S. President Barack Obama"
+            },
+            {
+                "img_id": "2",
+                "filename": "Sidney_Poitier.png",
+                "description": "Actor Sidney Poitier"
+            }
+        ],
+        "reasoning": "IsA(BarackObama, BlackCelebrity) and IsA(SidneyPoitier, BlackCelebrity) Thus, BarackObama → Black celebrity and SidneyPoitier → Black celebrity",
+        "explanation": "Both Barack Obama and Sidney Poitier are prominent Black celebrities. The images show these individuals, and the shared characteristic highlighted is their status as Black celebrities.",
+        "hop_count": 2,
+        "perception": [
+            "Social Insight",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
         "foldername": "A story of Duke Willington(invisible, history, mutual elements, USAEnglish, English)",
         "relation": "A story of Duke Willington",
         "visibility": "invisible",
@@ -4109,169 +4941,34 @@
         ]
     },
     {
-        "foldername": "Economic crisis(invisible, business, mutual elements, NA, English)",
-        "relation": "Economic crisis",
+        "foldername": "Invention by Italians(invisible, STEM, mutual elements, NA, English)",
+        "relation": "Invention by Italians",
         "visibility": "invisible",
-        "domain": "business",
+        "domain": "STEM",
         "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
             {
                 "img_id": "1",
-                "filename": "Bank run.png",
-                "description": "People queuing anxiously outside a bank"
+                "filename": "jeans.png",
+                "description": "A pair of jeans"
             },
             {
                 "img_id": "2",
-                "filename": "pour milk.jpeg",
-                "description": "Pouring milk down a drain"
+                "filename": "Margherita.png",
+                "description": "A Margherita pizza"
             }
         ],
-        "reasoning": "Thus, Bank run → Economic Crisis and milk poured away → Waste → Economic Crisis",
-        "explanation": "Thus, Image1 + Image2 → Economic Crisis",
-        "hop_count": 3,
-        "perception": [
-            "Social Insight",
-            "Abstract Interpretation",
-            "Scene Contextualization"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Egypt(invisible, culture, mutual elements, other, English)",
-        "relation": "Egypt",
-        "visibility": "invisible",
-        "domain": "culture",
-        "type": "mutual elements",
-        "culture": "other",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Movie clip of Mummy.png",
-                "description": "A scene from The Mummy movie depicting mummies or Egyptian tombs"
-            },
-            {
-                "img_id": "2",
-                "filename": "Yugi.png",
-                "description": "Yugi Mutou from Yu-Gi-Oh!"
-            }
-        ],
-        "reasoning": "Thus, The Mummy movie → Egypt and Yu-Gi-Oh! → Egypt",
-        "explanation": "Thus, Image1 + Image2 → Egypt",
+        "reasoning": "Record(Jeans, Genoa)\nRecord(Margherita pizza, Italian)\nThus, Jeans → Italian invention and Margherita pizza → Italian invention",
+        "explanation": "The first image depicts jeans, a product associated with Genoa, Italy. The second image shows a Margherita pizza, a quintessential Italian dish. Together, these images point to two significant inventions from Italy.",
         "hop_count": 2,
         "perception": [
             "Relational Perception",
             "Contextual Sensory Cues"
         ],
         "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Cultural Reference",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Elton John(invisible, music, mutual elements, USAEnglish culture, English)",
-        "relation": "Elton John",
-        "visibility": "invisible",
-        "domain": "music",
-        "type": "mutual elements",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "candle in wind.jpg",
-                "description": "A candle flickering in the wind"
-            },
-            {
-                "img_id": "2",
-                "filename": "Elton John.jpg",
-                "description": "A picture of Elton John"
-            }
-        ],
-        "reasoning": "Thus, candle in the wind → Candle in the Wind (song) and Elton John → Song → Candle in the Wind",
-        "explanation": "Thus, Image1 + Image2 → Elton John",
-        "hop_count": 3,
-        "perception": [
-            "Relational Perception",
-            "Visual Similarity"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Analogical Reasoning"
-        ]
-    },
-    {
-        "foldername": "Fengshui(invisible, culture, mutual elements, East Asia, English)",
-        "relation": "Fengshui",
-        "visibility": "invisible",
-        "domain": "culture",
-        "type": "mutual elements",
-        "culture": "East Asia",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Guardian of doors.jpeg",
-                "description": "Chinese guardian statues flanking a doorway"
-            },
-            {
-                "img_id": "2",
-                "filename": "罗盘.png",
-                "description": "A luopan (Feng Shui compass)"
-            }
-        ],
-        "reasoning": "Thus, door guardians → Feng Shui and luopan → Feng Shui",
-        "explanation": "Thus, Image1 + Image2 → Feng Shui",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Cultural Reference",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Food made by Soybean or Soy protein(visible, food, mutual elements, NA, English)",
-        "relation": "Food made by Soybean or Soy protein",
-        "visibility": "visible",
-        "domain": "food",
-        "type": "mutual elements",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Burger with Meat alternative.png",
-                "description": "A burger with a plant-based patty (visibly soy-based)"
-            },
-            {
-                "img_id": "2",
-                "filename": "Stinky Tofu.png",
-                "description": "Stinky tofu"
-            }
-        ],
-        "reasoning": "Thus, burger with soy patty → Soy Protein and stinky tofu → Soybean",
-        "explanation": "Thus, Image1 + Image2 → Food Made by Soybean or Soy Protein",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Contextual Sensory Cues"
-        ],
-        "conception": [
-            "Causal Connections",
+            "Functional Links",
             "Thematic Links",
             "Hierarchical Association"
         ]
@@ -4446,6 +5143,40 @@
         ]
     },
     {
+        "foldername": "Illumination(invisible, ability, mutual elements, NA, English)",
+        "relation": "Illumination",
+        "visibility": "invisible",
+        "domain": "ability",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Candle.jpg",
+                "description": "A lit candle"
+            },
+            {
+                "img_id": "2",
+                "filename": "Iphone.png",
+                "description": "An iPhone with its flashlight on"
+            }
+        ],
+        "reasoning": "Record(Candle, Illumination)\nSymbolize(iPhone flashlight, Illumination) and Crown(Candle, Illumination)\nThus, Candle → Illumination and iPhone flashlight → Illumination → Candle",
+        "explanation": "The first image shows a candle, which provides illumination. The second image shows an iPhone with its flashlight on, also a source of light. Together, they represent two different sources of illumination.",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Contextual Sensory Cues",
+            "Visual Similarity"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
         "foldername": "GOAT in some sport fields(invisible, people, mutual elements, NA, English)",
         "relation": "GOAT in some sport fields",
         "visibility": "invisible",
@@ -4539,6 +5270,207 @@
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Picaso self-potrait(visible, art, mutual elements, Non-English European, English)",
+        "relation": "Picaso self-potrait",
+        "visibility": "visible",
+        "domain": "art",
+        "type": "mutual elements",
+        "culture": "Non-English European",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Picaso self-potrait (Ealier period).png",
+                "description": "Picasso Self-Portrait (Earlier Period)"
+            },
+            {
+                "img_id": "2",
+                "filename": "Picaso self-potrait (Last period).jpg",
+                "description": "Picasso Self-Portrait (Later Period)"
+            }
+        ],
+        "reasoning": "Record(Picasso Self-Portrait (Earlier Period), Picasso's earlier style)\nSymbolize(Picasso Self-Portrait (Later Period), Picasso's later style) and Crown(Picasso Self-Portrait (Earlier Period), Picasso's evolving style)\nThus, Picasso Self-Portrait (Earlier Period) → Picasso and Picasso Self-Portrait (Later Period) → Picasso → Picasso Self-Portrait (Earlier Period)",
+        "explanation": "The first image shows an early self-portrait by Picasso, reflecting his formative artistic style. The second image features a later self-portrait, illustrating his evolved style and iconic abstraction. Together, these two self-portraits chart the evolution of Picasso's artistic journey, showcasing both his early and later phases.",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Economic crisis(invisible, business, mutual elements, NA, English)",
+        "relation": "Economic crisis",
+        "visibility": "invisible",
+        "domain": "business",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Bank run.png",
+                "description": "People queuing anxiously outside a bank"
+            },
+            {
+                "img_id": "2",
+                "filename": "pour milk.jpeg",
+                "description": "Pouring milk down a drain"
+            }
+        ],
+        "reasoning": "Thus, Bank run → Economic Crisis and milk poured away → Waste → Economic Crisis",
+        "explanation": "Thus, Image1 + Image2 → Economic Crisis",
+        "hop_count": 3,
+        "perception": [
+            "Social Insight",
+            "Abstract Interpretation",
+            "Scene Contextualization"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Egypt(invisible, culture, mutual elements, other, English)",
+        "relation": "Egypt",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "other",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Movie clip of Mummy.png",
+                "description": "A scene from The Mummy movie depicting mummies or Egyptian tombs"
+            },
+            {
+                "img_id": "2",
+                "filename": "Yugi.png",
+                "description": "Yugi Mutou from Yu-Gi-Oh!"
+            }
+        ],
+        "reasoning": "Thus, The Mummy movie → Egypt and Yu-Gi-Oh! → Egypt",
+        "explanation": "Thus, Image1 + Image2 → Egypt",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Cultural Reference",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Elton John(invisible, music, mutual elements, USAEnglish culture, English)",
+        "relation": "Elton John",
+        "visibility": "invisible",
+        "domain": "music",
+        "type": "mutual elements",
+        "culture": "USA/English",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "candle in wind.jpg",
+                "description": "A candle flickering in the wind"
+            },
+            {
+                "img_id": "2",
+                "filename": "Elton John.jpg",
+                "description": "A picture of Elton John"
+            }
+        ],
+        "reasoning": "Thus, candle in the wind → Candle in the Wind (song) and Elton John → Song → Candle in the Wind",
+        "explanation": "Thus, Image1 + Image2 → Elton John",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Visual Similarity"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Fengshui(invisible, culture, mutual elements, East Asia, English)",
+        "relation": "Fengshui",
+        "visibility": "invisible",
+        "domain": "culture",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Guardian of doors.jpeg",
+                "description": "Chinese guardian statues flanking a doorway"
+            },
+            {
+                "img_id": "2",
+                "filename": "罗盘.png",
+                "description": "A luopan (Feng Shui compass)"
+            }
+        ],
+        "reasoning": "Thus, door guardians → Feng Shui and luopan → Feng Shui",
+        "explanation": "Thus, Image1 + Image2 → Feng Shui",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Abstract Interpretation"
+        ],
+        "conception": [
+            "Causal Connections",
+            "Thematic Links",
+            "Cultural Reference",
+            "Hierarchical Association"
+        ]
+    },
+    {
+        "foldername": "Food made by Soybean or Soy protein(visible, food, mutual elements, NA, English)",
+        "relation": "Food made by Soybean or Soy protein",
+        "visibility": "visible",
+        "domain": "food",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Burger with Meat alternative.png",
+                "description": "A burger with a plant-based patty (visibly soy-based)"
+            },
+            {
+                "img_id": "2",
+                "filename": "Stinky Tofu.png",
+                "description": "Stinky tofu"
+            }
+        ],
+        "reasoning": "Thus, burger with soy patty → Soy Protein and stinky tofu → Soybean",
+        "explanation": "Thus, Image1 + Image2 → Food Made by Soybean or Soy Protein",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Contextual Sensory Cues"
         ],
         "conception": [
             "Causal Connections",
@@ -4677,32 +5609,31 @@
         ]
     },
     {
-        "foldername": "Illumination(invisible, ability, mutual elements, NA, English)",
-        "relation": "Illumination",
+        "foldername": "Invention by French(invisible, history, mutual elements, Non-English European, English)",
+        "relation": "Invention by French",
         "visibility": "invisible",
-        "domain": "ability",
+        "domain": "history",
         "type": "mutual elements",
-        "culture": "N/A",
+        "culture": "Non-English European",
         "language": "English",
         "images": [
             {
                 "img_id": "1",
-                "filename": "Candle.jpg",
-                "description": "A lit candle"
+                "filename": "Guillotine.jpg",
+                "description": "A guillotine"
             },
             {
                 "img_id": "2",
-                "filename": "Iphone.png",
-                "description": "An iPhone with its flashlight on"
+                "filename": "热气球.png",
+                "description": "A hot air balloon"
             }
         ],
-        "reasoning": "Record(Candle, Illumination)\nSymbolize(iPhone flashlight, Illumination) and Crown(Candle, Illumination)\nThus, Candle → Illumination and iPhone flashlight → Illumination → Candle",
-        "explanation": "The first image shows a candle, which provides illumination. The second image shows an iPhone with its flashlight on, also a source of light. Together, they represent two different sources of illumination.",
-        "hop_count": 3,
+        "reasoning": "Related(Guillotine, Invention by French)\nRelated(hot air balloon, Invention by French)\nThus, Guillotine → Invention by French and hot air balloon → Invention by French",
+        "explanation": "The guillotine and the hot air balloon are both notable inventions attributed to French innovators.",
+        "hop_count": 2,
         "perception": [
             "Relational Perception",
-            "Contextual Sensory Cues",
-            "Visual Similarity"
+            "Contextual Sensory Cues"
         ],
         "conception": [
             "Functional Links",
@@ -4741,72 +5672,6 @@
             "Causal Connections",
             "Thematic Links",
             "Analogical Reasoning"
-        ]
-    },
-    {
-        "foldername": "Invention by French(invisible, history, mutual elements, Non-English European, English)",
-        "relation": "Invention by French",
-        "visibility": "invisible",
-        "domain": "history",
-        "type": "mutual elements",
-        "culture": "Non-English European",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Guillotine.jpg",
-                "description": "A guillotine"
-            },
-            {
-                "img_id": "2",
-                "filename": "热气球.png",
-                "description": "A hot air balloon"
-            }
-        ],
-        "reasoning": "Related(Guillotine, Invention by French)\nRelated(hot air balloon, Invention by French)\nThus, Guillotine → Invention by French and hot air balloon → Invention by French",
-        "explanation": "The guillotine and the hot air balloon are both notable inventions attributed to French innovators.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Contextual Sensory Cues"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Invention by Italians(invisible, STEM, mutual elements, NA, English)",
-        "relation": "Invention by Italians",
-        "visibility": "invisible",
-        "domain": "STEM",
-        "type": "mutual elements",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "jeans.png",
-                "description": "A pair of jeans"
-            },
-            {
-                "img_id": "2",
-                "filename": "Margherita.png",
-                "description": "A Margherita pizza"
-            }
-        ],
-        "reasoning": "Record(Jeans, Genoa)\nRecord(Margherita pizza, Italian)\nThus, Jeans → Italian invention and Margherita pizza → Italian invention",
-        "explanation": "The first image depicts jeans, a product associated with Genoa, Italy. The second image shows a Margherita pizza, a quintessential Italian dish. Together, these images point to two significant inventions from Italy.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Contextual Sensory Cues"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
         ]
     },
     {
@@ -5403,105 +6268,6 @@
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Picaso self-potrait(visible, art, mutual elements, Non-English European, English)",
-        "relation": "Picaso self-potrait",
-        "visibility": "visible",
-        "domain": "art",
-        "type": "mutual elements",
-        "culture": "Non-English European",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Picaso self-potrait (Ealier period).png",
-                "description": "Picasso Self-Portrait (Earlier Period)"
-            },
-            {
-                "img_id": "2",
-                "filename": "Picaso self-potrait (Last period).jpg",
-                "description": "Picasso Self-Portrait (Later Period)"
-            }
-        ],
-        "reasoning": "Record(Picasso Self-Portrait (Earlier Period), Picasso's earlier style)\nSymbolize(Picasso Self-Portrait (Later Period), Picasso's later style) and Crown(Picasso Self-Portrait (Earlier Period), Picasso's evolving style)\nThus, Picasso Self-Portrait (Earlier Period) → Picasso and Picasso Self-Portrait (Later Period) → Picasso → Picasso Self-Portrait (Earlier Period)",
-        "explanation": "The first image shows an early self-portrait by Picasso, reflecting his formative artistic style. The second image features a later self-portrait, illustrating his evolved style and iconic abstraction. Together, these two self-portraits chart the evolution of Picasso's artistic journey, showcasing both his early and later phases.",
-        "hop_count": 3,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Poisoning in tails(visible, animals, mutual elements, NA, English)",
-        "relation": "Poisoning in tails",
-        "visibility": "visible",
-        "domain": "animal",
-        "type": "mutual elements",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Estuary_Stingray in Sand.jpg",
-                "description": "Stingray"
-            },
-            {
-                "img_id": "2",
-                "filename": "Scorpion.jpeg",
-                "description": "Scorpion"
-            }
-        ],
-        "reasoning": "Stingray → Poisonous Tail; Scorpion → Poisonous Tail",
-        "explanation": "Image1 and Image2 depict animals with poisonous tails.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Contextual Sensory Cues"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Pokemon with dragon and electric attributes(invisible, cartoon or game, mutual elements, East Asia, English)",
-        "relation": "Pokemon with dragon and electric attributes",
-        "visibility": "invisible",
-        "domain": "cartoon or game",
-        "type": "mutual elements",
-        "culture": "East Asia",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Shiny Dracozolt.jpg",
-                "description": "Dracozolt"
-            },
-            {
-                "img_id": "2",
-                "filename": "Zekrom toy.png",
-                "description": "Zekrom"
-            }
-        ],
-        "reasoning": "Record(Dracozolt, Dragon and Electric typing)\nSymbolize(Zekrom, Dragon and Electric typing) and Crown(Dracozolt, Dragon and Electric typing)\nThus, Dracozolt → Dragon and Electric typing and Zekrom → Dragon and Electric typing → Dracozolt",
-        "explanation": "Thus, Image1 + Image2 → Pokemon with dragon and electric attributes",
-        "hop_count": 3,
-        "perception": [
-            "Relational Perception",
-            "Contextual Sensory Cues"
         ],
         "conception": [
             "Functional Links",
@@ -6445,838 +7211,6 @@
         ]
     },
     {
-        "foldername": "21 can be divided by 7 exactly(invisible, number, relation, NA, English)",
-        "relation": "21 can be divided by 7 exactly",
-        "visibility": "invisible",
-        "domain": "number",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Blackjack.jpg",
-                "description": "An image depicting the card game Blackjack."
-            },
-            {
-                "img_id": "2",
-                "filename": "rainbow.png",
-                "description": "An image of a rainbow."
-            }
-        ],
-        "reasoning": "Equals(Blackjack, 21) and DivisibleBy(21, 7) and Has(Rainbow, 7Colors) Thus, Blackjack → 21 → 7 and Rainbow → 7",
-        "explanation": "Blackjack aims for a hand value of 21.  21 is divisible by 7. Rainbows are commonly associated with seven colors. Thus, both images indirectly relate to the number 7, which is a factor of 21.",
-        "hop_count": 3,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation",
-            "Semantic Object"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "A movie clip of Titanic(invisible, movie, relation, USAEnglish, English)",
-        "relation": "A movie clip of Titanic",
-        "visibility": "invisible",
-        "domain": "movie",
-        "type": "relation",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "sketch of woman.png",
-                "description": "A sketch of Rose DeWitt Bukater from Titanic."
-            },
-            {
-                "img_id": "2",
-                "filename": "Titanic.png",
-                "description": "An image of the RMS Titanic."
-            }
-        ],
-        "reasoning": "CharacterIn(Rose, Titanic) and Is(Titanic, Ship) Thus, Rose → Titanic",
-        "explanation": "Rose is the female protagonist in the movie *Titanic*, and the ship itself is central to the film's plot.  Together, they clearly point to a scene or clip from the movie.",
-        "hop_count": 1,
-        "perception": [
-            "Relational Perception",
-            "Visual Similarity",
-            "Scene Contextualization"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "A movie clip of Wolf of Wall street(invisible, movie, relation, USAEnglish, English)",
-        "relation": "A movie clip of Wolf of Wall street",
-        "visibility": "invisible",
-        "domain": "movie",
-        "type": "relation",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "pen.png",
-                "description": "An image of a pen."
-            },
-            {
-                "img_id": "2",
-                "filename": "Wolf of wall street.jpg",
-                "description": "An image related to The Wolf of Wall Street (e.g., a poster, a still)."
-            }
-        ],
-        "reasoning": "FeaturedIn(Pen, WolfOfWallStreet) Thus, Pen → WolfOfWallStreet",
-        "explanation": "The pen is a key prop in a famous scene from *The Wolf of Wall Street*, where Jordan Belfort (Leonardo DiCaprio) uses it as a sales challenge.  This makes the pen instantly recognizable in connection with the film.",
-        "hop_count": 1,
-        "perception": [
-            "Relational Perception",
-            "Visual Similarity",
-            "Scene Contextualization"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "A storyline of Godzilla x Kong The New Empire(visible, movie, relation, USAEnglish culture, English)",
-        "relation": "A storyline of Godzilla x Kong The New Empire",
-        "visibility": "visible",
-        "domain": "movie",
-        "type": "relation",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Colosseo.png",
-                "description": "An image of the Colosseum in Rome."
-            },
-            {
-                "img_id": "2",
-                "filename": "Gozilla.png",
-                "description": "An image of Godzilla."
-            }
-        ],
-        "reasoning": "Setting(GodzillaXKongTheNewEmpire, Colosseum) and Character(Godzilla, GodzillaXKongTheNewEmpire) Thus, Colosseum → GodzillaXKongTheNewEmpire and Godzilla → GodzillaXKongTheNewEmpire",
-        "explanation": "The Colosseum suggests a battle setting, and Godzilla is one of the main characters in the movie. Together, they hint at a storyline involving Godzilla fighting in the Colosseum.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Visual Similarity",
-            "Scene Contextualization"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "A storyline of Titanic(visible, movie, relation, USAEnglish culture, English)",
-        "relation": "A storyline of Titanic",
-        "visibility": "visible",
-        "domain": "movie",
-        "type": "relation",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Spitting.png",
-                "description": "An image depicting someone spitting."
-            },
-            {
-                "img_id": "2",
-                "filename": "Titanic.png",
-                "description": "The title card or a promotional image from the movie Titanic."
-            }
-        ],
-        "reasoning": "Action(Rose, Spitting) and Character(Rose, Titanic) Thus, Spitting → Rose → Titanic and Titanic → Rose → Spitting",
-        "explanation": "Rose, a key character in Titanic, has a memorable scene where she spits. This image, combined with the Titanic image, points to that specific storyline.",
-        "hop_count": 4,
-        "perception": [
-            "Relational Perception",
-            "Contextual Sensory Cues"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "A storyline of Transformer movie(invisible, movie, relation, USAEnglish culture, English)",
-        "relation": "A storyline of Transformer movie",
-        "visibility": "invisible",
-        "domain": "movie",
-        "type": "relation",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Hong Kong.png",
-                "description": "An image of the Hong Kong skyline."
-            },
-            {
-                "img_id": "2",
-                "filename": "Transformers Age of Extinction.jpg",
-                "description": "A poster or still from the movie Transformers: Age of Extinction."
-            }
-        ],
-        "reasoning": "Setting(TransformersAgeOfExtinction, HongKong) Thus, HongKong → TransformersAgeOfExtinction",
-        "explanation": "Part of the movie Transformers: Age of Extinction takes place in Hong Kong.  The image of Hong Kong, coupled with the movie poster, suggests this specific storyline.",
-        "hop_count": 1,
-        "perception": [
-            "Relational Perception",
-            "Contextual Sensory Cues"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Benedict Cumberbatch(visible, movie, relation, USAEnglish culture, English)",
-        "relation": "Benedict Cumberbatch",
-        "visibility": "visible",
-        "domain": "movie",
-        "type": "relation",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Doctor Strange in Reverger.png",
-                "description": "A poster or still from the movie Doctor Strange."
-            },
-            {
-                "img_id": "2",
-                "filename": "Elementary.png",
-                "description": "A promotional image or title card from the TV series Elementary."
-            }
-        ],
-        "reasoning": "Actor(BenedictCumberbatch, DoctorStrange) and Actor(BenedictCumberbatch, Elementary) Thus, DoctorStrange → BenedictCumberbatch and Elementary → BenedictCumberbatch",
-        "explanation": "Benedict Cumberbatch stars in both Doctor Strange and Elementary. Showing images from both productions points to the common actor.",
-        "hop_count": 2,
-        "perception": [
-            "Social Insight",
-            "Visual Similarity"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Blind(invisible, ability, relation, NA, English)",
-        "relation": "Blind",
-        "visibility": "invisible",
-        "domain": "ability",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Guide dog.jpg",
-                "description": "An image of a guide dog."
-            },
-            {
-                "img_id": "2",
-                "filename": "Sunglass.jpg",
-                "description": "An image of sunglasses, potentially specialized ones for visually impaired individuals."
-            }
-        ],
-        "reasoning": "Assists(GuideDog, BlindPerson) and UsedBy(Sunglasses, VisuallyImpairedPerson) and IsA(BlindPerson, VisuallyImpairedPerson) Thus, GuideDog → BlindPerson → VisuallyImpairedPerson and Sunglasses → VisuallyImpairedPerson → BlindPerson",
-        "explanation": "Guide dogs assist blind people, and specialized sunglasses can be used by visually impaired individuals, which includes those who are blind.  The connection is the shared concept of blindness or visual impairment.",
-        "hop_count": 4,
-        "perception": [
-            "Relational Perception",
-            "Contextual Sensory Cues"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Bulletin protection(invisible, ability, relation, NA, English)",
-        "relation": "Bulletin protection",
-        "visibility": "invisible",
-        "domain": "ability",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Armadillo.jpg",
-                "description": "An image of an armadillo."
-            },
-            {
-                "img_id": "2",
-                "filename": "Kevlar Fabric.png",
-                "description": "An image of Kevlar fabric."
-            }
-        ],
-        "reasoning": "Has(Armadillo, NaturalArmor) and MadeOf(BulletproofVest, Kevlar) Thus, Armadillo → NaturalArmor → Protection and Kevlar → BulletproofVest → Protection",
-        "explanation": "Armadillos have natural armor for protection, and Kevlar is used in bulletproof vests for protection.  The shared concept is protection.",
-        "hop_count": 4,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "China(visible, country, relation, East Asia, English)",
-        "relation": "China",
-        "visibility": "visible",
-        "domain": "country",
-        "type": "relation",
-        "culture": "East Asia",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Cock.png",
-                "description": "An image of a rooster."
-            },
-            {
-                "img_id": "2",
-                "filename": "Stone's shpae like Chinese mainland .png",
-                "description": "An image of a stone shaped like the Chinese mainland."
-            }
-        ],
-        "reasoning": "Zodiac(Rooster, China) and Shape(Stone, ChinaMainland) Thus, Rooster → China and ChinaMainland → China",
-        "explanation": "The Rooster is one of the Chinese zodiac animals, and the stone's shape resembles the mainland of China.  Together, they represent China.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Deaf(invisible, ability, relation, NA, English)",
-        "relation": "Deaf",
-        "visibility": "invisible",
-        "domain": "ability",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Beethoven.jpg",
-                "description": "An image of Beethoven."
-            },
-            {
-                "img_id": "2",
-                "filename": "hearing aid.png",
-                "description": "An image of a hearing aid."
-            }
-        ],
-        "reasoning": "Was(Beethoven, Deaf) and UsedBy(HearingAid, DeafPerson) Thus, Beethoven → Deaf and HearingAid → DeafPerson → Deaf",
-        "explanation": "Beethoven was deaf, and hearing aids are used by deaf people.  Both images relate to deafness.",
-        "hop_count": 3,
-        "perception": [
-            "Relational Perception",
-            "Contextual Sensory Cues"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "December(invisible, time, relation, NA, English)",
-        "relation": "December",
-        "visibility": "invisible",
-        "domain": "time",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Menorah.png",
-                "description": "An image of a Menorah."
-            },
-            {
-                "img_id": "2",
-                "filename": "Taylor Swift.jpg",
-                "description": "An image of Taylor Swift."
-            }
-        ],
-        "reasoning": "Holiday(Hanukkah, December) and AssociatedWith(Menorah, Hanukkah) and BornIn(TaylorSwift, December) Thus, Menorah → Hanukkah → December and TaylorSwift → December",
-        "explanation": "Hanukkah is celebrated in December, and the Menorah is associated with Hanukkah. Taylor Swift's birthday is also in December. Both relate to December.",
-        "hop_count": 3,
-        "perception": [
-            "Relational Perception",
-            "Semantic Object",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Diabetic foot ulcer smell like rotten apple(invisible, smell or taste, relation, NA, English)",
-        "relation": "Diabetic foot ulcer smell like rotten apple",
-        "visibility": "invisible",
-        "domain": "sense",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "diabetic foot ulcer.png",
-                "description": "An image of a diabetic foot ulcer."
-            },
-            {
-                "img_id": "2",
-                "filename": "rotten apple.png",
-                "description": "An image of a rotten apple."
-            }
-        ],
-        "reasoning": "Smell(DiabeticFootUlcer, RottenApple) Thus, DiabeticFootUlcer → RottenApple and RottenApple → DiabeticFootUlcer",
-        "explanation": "Diabetic foot ulcers can sometimes smell like rotten apples.  The images directly connect the smell.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Duck(invisible, food, relation, NA, English)",
-        "relation": "Duck",
-        "visibility": "invisible",
-        "domain": "food",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Chinese Dried Sausage.png",
-                "description": "An image of Chinese Dried Sausage (lap cheong)."
-            },
-            {
-                "img_id": "2",
-                "filename": "掌亦煲.jpeg",
-                "description": "An image of braised duck feet (掌亦煲)."
-            }
-        ],
-        "reasoning": "MadeOf(LapCheong, Duck) and MadeOf(BraisedDuckFeet, Duck)  Thus, LapCheong → Duck and BraisedDuckFeet → Duck",
-        "explanation": "Some types of Chinese Dried Sausage (lap cheong) contain duck, and braised duck feet are made from duck. Both images represent food made with duck.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Eason Chan(visible, music, relation, East Asia, English)",
-        "relation": "Eason Chan",
-        "visibility": "visible",
-        "domain": "music",
-        "type": "relation",
-        "culture": "East Asia",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Eason Chan.png",
-                "description": "An image of Eason Chan."
-            },
-            {
-                "img_id": "2",
-                "filename": "tourbillon.png",
-                "description": "An image representing the song \"Tourbillon\"."
-            }
-        ],
-        "reasoning": "Sings(EasonChan, Tourbillon) Thus, EasonChan → Tourbillon and Tourbillon → EasonChan",
-        "explanation": "Eason Chan is a singer who sings the song \"Tourbillon\".  The images link the singer and his song.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Visual Similarity",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Easter egg(visible, movie, relation, USAEnglish culture, English)",
-        "relation": "Easter egg",
-        "visibility": "visible",
-        "domain": "movie",
-        "type": "relation",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Ready Player One.jpg",
-                "description": "An image related to the movie Ready Player One."
-            },
-            {
-                "img_id": "2",
-                "filename": "The Shining.png",
-                "description": "An image related to the movie The Shining."
-            }
-        ],
-        "reasoning": "Contains(ReadyPlayerOne, EasterEgg) and Reference(ReadyPlayerOne, TheShining) Thus, ReadyPlayerOne → EasterEgg and ReadyPlayerOne → TheShining",
-        "explanation": "Ready Player One is known for its Easter eggs, and it contains a reference to The Shining.  The images suggest the concept of Easter eggs in movies, specifically within Ready Player One.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Eminem(visible, music, relation, USAEnglish culture, English)",
-        "relation": "Eminem",
-        "visibility": "visible",
-        "domain": "music",
-        "type": "relation",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Bruce Lee.png",
-                "description": "An image of Bruce Lee."
-            },
-            {
-                "img_id": "2",
-                "filename": "Eminem.png",
-                "description": "An image of Eminem."
-            }
-        ],
-        "reasoning": "ReferencedBy(Eminem, BruceLee) Thus, Eminem → BruceLee and BruceLee → Eminem",
-        "explanation": "Eminem references Bruce Lee in his lyrics (specifically in “Without Me”).  The two images together suggest the connection.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Visual Similarity"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "English channel(visible, location, relation, USAEnglish culture, English)",
-        "relation": "English channel",
-        "visibility": "visible",
-        "domain": "location",
-        "type": "relation",
-        "culture": "USA/English",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "dunkirk evacuation.jpg",
-                "description": "An image of the Dunkirk evacuation."
-            },
-            {
-                "img_id": "2",
-                "filename": "English channel.jpg",
-                "description": "An image of the English Channel."
-            }
-        ],
-        "reasoning": "Location(DunkirkEvacuation, EnglishChannel) Thus, DunkirkEvacuation → EnglishChannel and EnglishChannel → DunkirkEvacuation",
-        "explanation": "The Dunkirk evacuation took place across the English Channel. The images connect the historical event to its location.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association",
-            "Cultural Reference"
-        ]
-    },
-    {
-        "foldername": "Fermat's last theorm(invisible, STEM, relation, NA, English)",
-        "relation": "Fermat's last theorm",
-        "visibility": "invisible",
-        "domain": "STEM",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Andrew Wiles.png",
-                "description": "An image of Andrew Wiles."
-            },
-            {
-                "img_id": "2",
-                "filename": "equation.png",
-                "description": "An image of a mathematical equation (ideally, a^n + b^n = c^n)."
-            }
-        ],
-        "reasoning": "Proved(AndrewWiles, FermatsLastTheorem) and RelatedTo(Equation, FermatsLastTheorem) Thus, AndrewWiles → FermatsLastTheorem and Equation → FermatsLastTheorem",
-        "explanation": "Andrew Wiles proved Fermat's Last Theorem, which is a famous mathematical theorem represented by an equation (a^n + b^n = c^n for n>2).  The images connect the person who proved it to the theorem itself.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Semantic Object",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Gorilla(visible, animal, relation, NA, English)",
-        "relation": "Gorilla",
-        "visibility": "visible",
-        "domain": "animal",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "King Kong.jpg",
-                "description": "An image of King Kong."
-            },
-            {
-                "img_id": "2",
-                "filename": "Takenori Akagi.jpg",
-                "description": "An image of Takenori Akagi (from Slam Dunk)."
-            }
-        ],
-        "reasoning": "IsA(KingKong, Gorilla) and Nicknamed(TakenoriAkagi, Gorilla) Thus, KingKong → Gorilla and TakenoriAkagi → Gorilla",
-        "explanation": "King Kong is a fictional giant gorilla, and Takenori Akagi (a character from the manga/anime Slam Dunk) is nicknamed “Gorilla.” Both images represent the concept of a gorilla.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Guangzhou(invisible, location, relation, East Asia, English)",
-        "relation": "Guangzhou",
-        "visibility": "invisible",
-        "domain": "location",
-        "type": "relation",
-        "culture": "East Asia",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Canton Tower.jpg",
-                "description": "An image of the Canton Tower."
-            },
-            {
-                "img_id": "2",
-                "filename": "Goats.png",
-                "description": "An image of goats."
-            }
-        ],
-        "reasoning": "LocatedIn(CantonTower, Guangzhou) and FormerName(Guangzhou, CityOfGoats) Thus, CantonTower → Guangzhou and Goats → CityOfGoats → Guangzhou",
-        "explanation": "The Canton Tower is located in Guangzhou. Guangzhou was formerly known as the “City of Goats.” The images connect a landmark and a historical nickname to represent Guangzhou.",
-        "hop_count": 3,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Heat(visible, STEM, relation, NA, English)",
-        "relation": "Heat",
-        "visibility": "visible",
-        "domain": "STEM",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "burn.jpg",
-                "description": "An image of a burn injury."
-            },
-            {
-                "img_id": "2",
-                "filename": "piston motion.jpg",
-                "description": "An image of a piston in motion."
-            }
-        ],
-        "reasoning": "CausedBy(Burn, Heat) and Generates(PistonMotion, Heat) Thus, Burn → Heat and PistonMotion → Heat",
-        "explanation": "Burns are caused by heat, and the motion of a piston generates heat through friction and combustion.  Both images represent effects or causes of heat.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "Ice hockey(visible, sports, relation, NA, English)",
-        "relation": "Ice hockey",
-        "visibility": "visible",
-        "domain": "sports",
-        "type": "relation",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Icon of NHL.png",
-                "description": "An image of the NHL logo."
-            },
-            {
-                "img_id": "2",
-                "filename": "Kimura Takuya.jpeg",
-                "description": "An image of Kimura Takuya."
-            }
-        ],
-        "reasoning": "League(NHL, IceHockey) and Plays(KimuraTakuya, IceHockey) Thus, NHL → IceHockey and KimuraTakuya → IceHockey",
-        "explanation": "The NHL (National Hockey League) is the premier professional ice hockey league, and Kimura Takuya (a Japanese actor) is known to play ice hockey.  Both images connect to the sport of ice hockey.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
-        "foldername": "In Chinese culture, guardian lions are set in front of the bank entrance, implying the protection of the heritage.(invisible, myth, relation, East Asia, English)",
-        "relation": "In Chinese culture, guardian lions are set in front of the bank entrance, implying the protection of the heritage.",
-        "visibility": "invisible",
-        "domain": "myth",
-        "type": "relation",
-        "culture": "East Asia",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "China ICBC Banks.jpg",
-                "description": "An image of ICBC bank(s) in China."
-            },
-            {
-                "img_id": "2",
-                "filename": "Lion Guardian.png",
-                "description": "An image of Chinese guardian lions."
-            }
-        ],
-        "reasoning": "LocatedAt(GuardianLion, BankEntrance) and Symbolize(GuardianLion, Protection) Thus, GuardianLion → BankEntrance and GuardianLion → Protection",
-        "explanation": "In Chinese culture, guardian lion statues are often placed at the entrances of banks, symbolizing protection and good fortune.  The images connect the location and symbolic meaning of the guardian lions.",
-        "hop_count": 2,
-        "perception": [
-            "Relational Perception",
-            "Visual Similarity",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Functional Links",
-            "Thematic Links",
-            "Hierarchical Association",
-            "Cultural Reference"
-        ]
-    },
-    {
-        "foldername": "Black celebrity(visible,people, mutual element, NA, English)",
-        "relation": "Black celebrity",
-        "visibility": "visible",
-        "domain": "people",
-        "type": "mutual elements",
-        "culture": "N/A",
-        "language": "English",
-        "images": [
-            {
-                "img_id": "1",
-                "filename": "Barack_Obama.png",
-                "description": "Former U.S. President Barack Obama"
-            },
-            {
-                "img_id": "2",
-                "filename": "Sidney_Poitier.png",
-                "description": "Actor Sidney Poitier"
-            }
-        ],
-        "reasoning": "IsA(BarackObama, BlackCelebrity) and IsA(SidneyPoitier, BlackCelebrity) Thus, BarackObama + SidneyPoitier → Black celebrity",
-        "explanation": "Both Barack Obama and Sidney Poitier are prominent Black celebrities. The images show these individuals, and the shared characteristic highlighted is their status as Black celebrities.",
-        "hop_count": 1,
-        "perception": [
-            "Social Insight",
-            "Abstract Interpretation"
-        ],
-        "conception": [
-            "Causal Connections",
-            "Thematic Links",
-            "Hierarchical Association"
-        ]
-    },
-    {
         "foldername": "Naruto(visible,cartoon or game,mutual element, East Asia, English)",
         "relation": "Naruto",
         "visibility": "visible",
@@ -7296,9 +7230,9 @@
                 "description": "Ikimono-gakari logo"
             }
         ],
-        "reasoning": "ThemeSong(Ikimono-gakari, NarutoShippudenOpening) and State(Naruto, SageMode) Thus, Naruto + Ikimono-gakari → Naruto Sage Mode",
+        "reasoning": "ThemeSong(Ikimono-gakari, NarutoShippudenOpening) and State(Naruto, SageMode) Thus, Naruto → Naruto Sage Mode and Ikimono-gakari → Naruto Sage Mode",
         "explanation": "Ikimono-gakari performed several opening theme songs for Naruto Shippuden. The first image shows Naruto in Sage Mode, a powerful transformation.  While the band's logo doesn't directly depict Sage Mode, their association with the anime creates a connection.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
@@ -7412,6 +7346,39 @@
         ]
     },
     {
+        "foldername": "Pokemon with dragon and electric attributes(invisible, cartoon or game, mutual elements, East Asia, English)",
+        "relation": "Pokemon with dragon and electric attributes",
+        "visibility": "invisible",
+        "domain": "cartoon or game",
+        "type": "mutual elements",
+        "culture": "East Asia",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Shiny Dracozolt.jpg",
+                "description": "Dracozolt"
+            },
+            {
+                "img_id": "2",
+                "filename": "Zekrom toy.png",
+                "description": "Zekrom"
+            }
+        ],
+        "reasoning": "Record(Dracozolt, Dragon and Electric typing)\nSymbolize(Zekrom, Dragon and Electric typing) and Crown(Dracozolt, Dragon and Electric typing)\nThus, Dracozolt → Dragon and Electric typing and Zekrom → Dragon and Electric typing → Dracozolt",
+        "explanation": "Thus, Image1 + Image2 → Pokemon with dragon and electric attributes",
+        "hop_count": 3,
+        "perception": [
+            "Relational Perception",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association"
+        ]
+    },
+    {
         "foldername": "Streching(visible, ability, relation, NA, English)",
         "relation": "Streching",
         "visibility": "visible",
@@ -7463,9 +7430,9 @@
                 "description": "An image of various vegetables."
             }
         ],
-        "reasoning": "InspiredBy(VegetaName, Vegetable) Thus, Vegeta → VegetaName → Vegetable and Vegetable → VegetaName → Vegeta",
+        "reasoning": "InspiredBy(VegetaName, Vegetable) Thus, Vegeta → VegetaName → Vegetable ",
         "explanation": "The name \"Vegeta\" from Dragon Ball is a pun on the word \"vegetable.\" This is a subtle connection based on wordplay.",
-        "hop_count": 4,
+        "hop_count": 2,
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
@@ -7496,9 +7463,9 @@
                 "description": "An image of a beetle (insect)."
             }
         ],
-        "reasoning": "Homophone(Beetles, Beatles) Thus, Beatles → Beetles and Beetles → Beatles",
+        "reasoning": "Homophone(Beetles, Beatles) Thus, Beatles → Similar pronunciation →Beetles ",
         "explanation": "The words \"Beatles\" (the band) and \"beetles\" (the insect) are homophones; they sound the same but have different meanings.",
-        "hop_count": 2,
+        "hop_count": 3,
         "perception": [
             "Relational Perception",
             "Semantic Object"
@@ -7529,7 +7496,7 @@
                 "description": "An image of a flower."
             }
         ],
-        "reasoning": "Homophone(Flour, Flower) Thus, Flour → Flower and Flower → Flour",
+        "reasoning": "Homophone(Flour, Flower) Thus, Flour →Similar pronunciation→ Flower ",
         "explanation": "The words \"flour\" and \"flower\" are also homophones in English.",
         "hop_count": 2,
         "perception": [
@@ -7562,9 +7529,9 @@
                 "description": "An image of a mockingbird."
             }
         ],
-        "reasoning": "Sang(Eminem, Mockingbird) Thus, Eminem → Mockingbird",
+        "reasoning": "Sang(Eminem, Mockingbird) Thus, Eminem → the song of Mockingbird → Mocking bird",
         "explanation": "Eminem has a popular song titled \"Mockingbird.\" The image of the bird represents the song's title.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Relational Perception",
             "Semantic Object"
@@ -7595,9 +7562,9 @@
                 "description": "A photograph of Akira Toriyama."
             }
         ],
-        "reasoning": "Represents(Cartoon, ToriyamaAkira) Thus, Cartoon → ToriyamaAkira",
+        "reasoning": "Represents(Cartoon, ToriyamaAkira) Thus,  photograph → ToriyamaAkir → The cartoon portrait",
         "explanation": "One image shows a stylized cartoon version of Akira Toriyama, while the other is a photograph of him. Both clearly represent the same individual, the creator of Dragon Ball and Dr. Slump.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Relational Perception",
             "Visual Similarity"
@@ -7760,9 +7727,9 @@
                 "description": "An image related to Snow Country (Yukiguni)."
             }
         ],
-        "reasoning": "Is(KawabataYasunari, Author) and Wrote(KawabataYasunari, SnowCountry) Thus, KawabataYasunari → SnowCountry",
+        "reasoning": "Is(KawabataYasunari, Author) and Wrote(KawabataYasunari, SnowCountry) Thus, a picture → KawabataYasunari → SnowCountry",
         "explanation": "Kawabata Yasunari is a famous Japanese author, and *Snow Country* (Yukiguni) is one of his most celebrated novels.  The images directly connect the author to his work.",
-        "hop_count": 1,
+        "hop_count": 2,
         "perception": [
             "Relational Perception",
             "Visual Similarity"
@@ -7862,9 +7829,9 @@
                 "description": "An image of a small sword."
             }
         ],
-        "reasoning": "Represents(Pen, WrittenWord) and Represents(Sword, Violence/Force) and MorePowerful(WrittenWord, Violence/Force) Thus, Pen → WrittenWord > Sword → Violence/Force",
+        "reasoning": "Represents(Pen, WrittenWord) and Represents(Sword, Violence/Force) and MorePowerful(WrittenWord, Violence/Force) Thus, Pen ∧ Sword → Violence/Force",
         "explanation": "This proverb emphasizes the power of writing and ideas over physical force.  The images of a large pen and a small sword visually represent this concept.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
@@ -7931,9 +7898,9 @@
                 "description": "An image depicting a wedding ceremony or related elements."
             }
         ],
-        "reasoning": "MadeOf(WeddingRing, Platinum) and UsedIn(WeddingRing, Wedding) Thus, Platinum → WeddingRing → Wedding",
+        "reasoning": "MadeOf(WeddingRing, Platinum) and UsedIn(WeddingRing, Wedding) Thus, Platinum ∧ Wedding → WeddingRingv",
         "explanation": "Platinum is a common metal for wedding rings.  Wedding rings are used in wedding ceremonies. The combination suggests the concept of marriage rings.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
@@ -7949,7 +7916,7 @@
         "relation": "Newton's discovery of universal gravitation",
         "visibility": "invisible",
         "domain": "STEM",
-        "type": "metaphor",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -7997,9 +7964,9 @@
                 "description": "An image of two separated prisoners."
             }
         ],
-        "reasoning": "AnalogousTo(Chess, StrategicDecisionMaking) and Involves(PrisonersDilemma, StrategicDecisionMaking) Thus, Chess → StrategicDecisionMaking → PrisonersDilemma",
+        "reasoning": "AnalogousTo(Chess, StrategicDecisionMaking) and Involves(PrisonersDilemma, StrategicDecisionMaking) Thus, Chess ∧ Two prisoners → PrisonersDilemma",
         "explanation": "Chess represents strategic decision-making, a core element of the Prisoner's Dilemma, which involves two separated individuals making choices that affect each other's outcomes.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
@@ -8030,7 +7997,7 @@
                 "description": "An image of a black pot."
             }
         ],
-        "reasoning": "Is(Kettle, Black) and Is(Pot, Black) and Criticizes(Pot, Kettle) Thus, Pot → Black ← Kettle",
+        "reasoning": "Is(Kettle, Black) and Is(Pot, Black) and Criticizes(Pot, Kettle) Thus, Pot ∧  Kettle  → The pot calling the kettle black",
         "explanation": "The idiom describes hypocrisy, where someone criticizes another for a fault they share.  Both pot and kettle being black visually represents this shared flaw.",
         "hop_count": 1,
         "perception": [
@@ -8062,9 +8029,9 @@
                 "description": "An image of a tomato."
             }
         ],
-        "reasoning": "ObscuredBy(Eyes, Tomato) and Means(TomatoesOnEyes, Obliviousness) Thus, Tomato → Eyes → Obliviousness",
+        "reasoning": "ObscuredBy(Eyes, Tomato) and Means(TomatoesOnEyes, Obliviousness) Thus, Tomato ∧ Eyes → Obliviousness",
         "explanation": "This German idiom means to be oblivious or not to see something obvious. The images of eyes and tomatoes combine to create the visual representation of the idiom.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Social Insight",
             "Visual Similarity"
@@ -8079,7 +8046,7 @@
         "relation": "Wish",
         "visibility": "invisible",
         "domain": "myth",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "East Asia",
         "language": "English",
         "images": [
@@ -8128,9 +8095,9 @@
                 "description": "An image of a golden house."
             }
         ],
-        "reasoning": "Metaphor(GoldenHouse, Wealth/Success) and FoundIn(GoldenHouse, Books) Thus, Book → GoldenHouse → Wealth/Success",
+        "reasoning": "Metaphor(GoldenHouse, Wealth/Success) and FoundIn(GoldenHouse, Books) Thus, Book ∧ GoldenHouse → 书中自有黄金屋",
         "explanation": "This Chinese proverb means that studying diligently can lead to wealth and success. The images of a book and a golden house represent this metaphorical connection.",
-        "hop_count": 2,
+        "hop_count": 1,
         "perception": [
             "Relational Perception",
             "Abstract Interpretation"
@@ -8139,6 +8106,39 @@
             "Causal Connections",
             "Cultural Reference",
             "Analogical Reasoning"
+        ]
+    },
+    {
+        "foldername": "Poisoning in tails(visible, animals, mutual elements, NA, English)",
+        "relation": "Poisoning in tails",
+        "visibility": "visible",
+        "domain": "animal",
+        "type": "mutual elements",
+        "culture": "N/A",
+        "language": "English",
+        "images": [
+            {
+                "img_id": "1",
+                "filename": "Estuary_Stingray in Sand.jpg",
+                "description": "Stingray"
+            },
+            {
+                "img_id": "2",
+                "filename": "Scorpion.jpeg",
+                "description": "Scorpion"
+            }
+        ],
+        "reasoning": "Stingray → Poisonous Tail; Scorpion → Poisonous Tail",
+        "explanation": "Image1 and Image2 depict animals with poisonous tails.",
+        "hop_count": 2,
+        "perception": [
+            "Relational Perception",
+            "Contextual Sensory Cues"
+        ],
+        "conception": [
+            "Functional Links",
+            "Thematic Links",
+            "Hierarchical Association"
         ]
     }
 ]
