@@ -57,9 +57,9 @@
                 "description": "spell"
             }
         ],
-        "explanation": "Ice and spell connect through the term 'dry spell,' which can also refer to the absence of ice in colder seasons or during droughts.",
-        "reasoning": "Indicates(DrySpell, Ice)\nThus, Ice → Dry and Spell → Dry",
-        "hop_count": 2,
+        "explanation": "'Ice' can refer to dry ice, while 'spell' can refer to a dry spell without moisture. Thus, both terms are associated with the concept of dryness.",
+        "reasoning": "Related(Ice, DryIce) and Is(DryIce, Dry)\nRelated(Spell, DrySpell) and Is(DrySpell, Dry)\nThus, Ice → DryIce → Dry and Spell → DrySpell → Dry",
+        "hop_count": 4,
         "perception": [
             "Abstract Interpretation"
         ],
@@ -363,9 +363,9 @@
                 "description": "potato"
             }
         ],
-        "explanation": "Sweet potatoes are a type of root vegetable, while teeth can refer to the body's ability to consume sweets, linking both terms through food. The connection signifies the relationship between taste and edibility.",
-        "reasoning": "Type(Tooth, ToothSweet)\nType(Potato, SweetPotato)\nThus, Tooth → Sweet and Potato → Sweet",
-        "hop_count": 2,
+        "explanation": "'Sweet tooth' refers to a craving for sweet foods, while 'sweet potato' is a starchy root vegetable that is sweet in flavor. Thus, both terms connect to the concept of sweet.",
+        "reasoning": "Related(Tooth, SweetTooth) and Is(SweetTooth, Sweet)\nRelated(Potato, SweetPotato) and Is(SweetPotato, Sweet)\nThus, Tooth → SweetTooth → Sweet and Potato → SweetPotato → Sweet",
+        "hop_count": 4,
         "perception": [
             "Relational Perception"
         ],
@@ -698,9 +698,9 @@
                 "description": "happy"
             }
         ],
-        "explanation": "Rush and happy relate to the phenomenon of happy hour, where people rush to enjoy discounted drinks and socialization. Happy hour is a time acclaimed for enjoyment, prompting a rush to bars and restaurants.",
-        "reasoning": "Induces(Rush, HappyHour)\nCelebrates(HappyHour, Happy)\nThus, Rush → HappyHour and Happy → HappyHour",
-        "hop_count": 2,
+        "explanation": "'Rush' is often associated with rush hour, a busy time of day, while 'happy' can relate to the happiness that social hours bring. Both terms connect to the concept of hour.",
+        "reasoning": "Related(Rush, RushHour) and Is(RushHour, Hour)\nRelated(Happy, HappyHour) and Connects(HappyHour, Hour)\nThus, Rush → RushHour → Hour and Happy → HappyHour → Hour",
+        "hop_count": 4,
         "perception": [
             "Scene Contextualization"
         ],
@@ -1074,9 +1074,9 @@
                 "description": "master"
             }
         ],
-        "explanation": "Chain and master refer to key developments in understanding. The master of a chain can represent the key player in a sequence of events.",
-        "reasoning": "Context(Chain, Mastery)\nThus, Chain → Master → Key",
-        "hop_count": 2,
+        "explanation": "'Key chain' refers to a ring for holding keys, while 'master key' refers to a key that can unlock multiple locks. Thus, both terms are associated with the concept of key.",
+        "reasoning": "Related(Chain, KeyChain) and Is(KeyChain, Key)\nRelated(Master, MasterKey) and Is(MasterKey, Key)\nThus, Chain → KeyChain → Key and Master → MasterKey → Key",
+        "hop_count": 4,
         "perception": [
             "Abstract Interpretation",
             "Semantic Object"

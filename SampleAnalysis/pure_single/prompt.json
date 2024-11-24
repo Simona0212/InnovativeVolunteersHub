@@ -37,9 +37,9 @@
             "Image 2 Description": "spell"
         },
         "Standard Answer": {
-            "Relation": "These two words both have associations with dry",
-            "Reasoning Path": "Indicates(DrySpell, Ice)\nThus, Ice → Dry and Spell → Dry",
-            "Explanation": "Ice and spell connect through the term 'dry spell,' which can also refer to the absence of ice in colder seasons or during droughts."
+            "relation": "These two words both have associations with dry",
+            "explanation": "'Ice' can refer to dry ice, while 'spell' can refer to a dry spell without moisture. Thus, both terms are associated with the concept of dryness.",
+            "reasoning": "Related(Ice, DryIce) and Is(DryIce, Dry)\nRelated(Spell, DrySpell) and Is(DrySpell, Dry)\nThus, Ice → DryIce → Dry and Spell → DrySpell → Dry"
         },
         "MLLM's Answer": "- First image: Ice cubes\n- Second image: Fantasy game poster\n\n- Relation: Contrast\n\n- Explanation: The first image showcases the clarity and simplicity of ice cubes, evoking a sense of calm and coolness. In contrast, the second image presents a vibrant and complex fantasy game poster with vivid colors and dynamic elements, creating an intense and mystical atmosphere. Together, they highlight the contrast between simplicity and complexity, stillness and action.",
         "Judge": {
@@ -288,8 +288,8 @@
         },
         "Standard Answer": {
             "Relation": "Both of these words are related to the term _sweet_",
-            "Reasoning Path": "Type(Tooth, ToothSweet)\nType(Potato, SweetPotato)\nThus, Tooth → Sweet and Potato → Sweet",
-            "Explanation": "Sweet potatoes are a type of root vegetable, while teeth can refer to the body's ability to consume sweets, linking both terms through food. The connection signifies the relationship between taste and edibility."
+            "explanation": "'Sweet tooth' refers to a craving for sweet foods, while 'sweet potato' is a starchy root vegetable that is sweet in flavor. Thus, both terms connect to the concept of sweet.",
+            "reasoning": "Related(Tooth, SweetTooth) and Is(SweetTooth, Sweet)\nRelated(Potato, SweetPotato) and Is(SweetPotato, Sweet)\nThus, Tooth → SweetTooth → Sweet and Potato → SweetPotato → Sweet"
         },
         "MLLM's Answer": "- First image: Tooth model\n- Second image: Potatoes\n\n- Relation: Texture contrast\n\n- Explanation: The first image is a 3D model of a tooth, characterized by its smooth and shiny surface. In contrast, the second image shows a pile of potatoes, which have a rough and uneven texture. Both images highlight the difference in surface qualities, emphasizing the smoothness of dental enamel versus the natural irregularity of potato skin.",
         "Judge": {
@@ -493,33 +493,33 @@
         }
     },
     {
-"data_uid": "Rugby(visible, sports, relation, other, English)",
-"Question": {
-    "Image 1 Description": "Mud",
-    "Image 2 Description": "Scrum "
-},
-"Standard Answer": {
-    "Relation": "Rugby",
-    "Reasoning Path": "PlayedOn(Rugby, MuddyPitch)\nHas(Rugby, Scrum)\nThus, Mud → MuddyPitch → Rugby and Scrum → Rugby",
-    "Explanation": "Rugby is often played in muddy conditions, and the scrum is a key element of the game. Muddy pitches are a common sight in rugby, especially during the wetter months. The scrum is a distinctive formation in rugby where players pack together to contest the ball."
-},
-"MLLM's Answer": "- First image: Mud-covered boots\n- Second image: American football game\n- Relation: Outdoor activities\n- Explanation: Both images depict activities that take place outdoors. The first image shows boots covered in mud, suggesting an activity in a wet or muddy environment, while the second image shows a football game, which is traditionally played on grass. Both involve environmental conditions impacting the participants.",
-"Judge": {
-    "score_4o": "2",
-    "score_reason": "The response relates to 'outdoor activities,' failing to recognize specific elements such as muddy pitches and scrums in relation to 'rugby,' which are present in the standard answer."
-},
-"Data Labels": {
-    "Type of Relationship": "relation",
-    "Perceptual Association L-3": [
-        "Semantic Object"
-    ],
-    "Conceptual Association L-3": [
-        "Thematic Links"
-    ],
-    "Topic Domain": "sports",
-    "Culture": "other",
-    "Language of Relation Description": "English"
-}
+        "data_uid": "Rugby(visible, sports, relation, other, English)",
+        "Question": {
+            "Image 1 Description": "Mud",
+            "Image 2 Description": "Scrum "
+        },
+        "Standard Answer": {
+            "Relation": "Rugby",
+            "Reasoning Path": "PlayedOn(Rugby, MuddyPitch)\nHas(Rugby, Scrum)\nThus, Mud → MuddyPitch → Rugby and Scrum → Rugby",
+            "Explanation": "Rugby is often played in muddy conditions, and the scrum is a key element of the game. Muddy pitches are a common sight in rugby, especially during the wetter months. The scrum is a distinctive formation in rugby where players pack together to contest the ball."
+        },
+        "MLLM's Answer": "- First image: Mud-covered boots\n- Second image: American football game\n- Relation: Outdoor activities\n- Explanation: Both images depict activities that take place outdoors. The first image shows boots covered in mud, suggesting an activity in a wet or muddy environment, while the second image shows a football game, which is traditionally played on grass. Both involve environmental conditions impacting the participants.",
+        "Judge": {
+            "score_4o": "2",
+            "score_reason": "The response relates to 'outdoor activities,' failing to recognize specific elements such as muddy pitches and scrums in relation to 'rugby,' which are present in the standard answer."
+        },
+        "Data Labels": {
+            "Type of Relationship": "relation",
+            "Perceptual Association L-3": [
+                "Semantic Object"
+            ],
+            "Conceptual Association L-3": [
+                "Thematic Links"
+            ],
+            "Topic Domain": "sports",
+            "Culture": "other",
+            "Language of Relation Description": "English"
+        }
     },
     {
         "data_uid": "Danny Phantom(invisible, cartoon or game, mutual elements, USAEnglish, English)",
@@ -559,8 +559,8 @@
         },
         "Standard Answer": {
             "Relation": "These two words both have associations with hour",
-            "Reasoning Path": "Induces(Rush, HappyHour)\nCelebrates(HappyHour, Happy)\nThus, Rush → HappyHour and Happy → HappyHour",
-            "Explanation": "Rush and happy relate to the phenomenon of happy hour, where people rush to enjoy discounted drinks and socialization. Happy hour is a time acclaimed for enjoyment, prompting a rush to bars and restaurants."
+            "explanation": "'Rush' is often associated with rush hour, a busy time of day, while 'happy' can relate to the happiness that social hours bring. Both terms connect to the concept of hour.",
+            "reasoning": "Related(Rush, RushHour) and Is(RushHour, Hour)\nRelated(Happy, HappyHour) and Connects(HappyHour, Hour)\nThus, Rush → RushHour → Hour and Happy → HappyHour → Hour"
         },
         "MLLM's Answer": "- First image: Three men posing together against a blue background.\n- Second image: Multiple yellow smiley faces clustered together.\n\n- Relation: Mood contrast\n- Explanation: The first image features a group of men with neutral expressions, conveying a serious or contemplative mood. In contrast, the second image is filled with vibrant, happy smiley faces, representing positivity and joy. The juxtaposition highlights the varying emotional tones between both images.",
         "Judge": {
@@ -865,8 +865,8 @@
         },
         "Standard Answer": {
             "Relation": "These two words both have associations with key",
-            "Reasoning Path": "Context(Chain, Mastery)\nThus, Chain → Master → Key",
-            "Explanation": "Chain and master refer to key developments in understanding. The master of a chain can represent the key player in a sequence of events."
+            "explanation": "'Key chain' refers to a ring for holding keys, while 'master key' refers to a key that can unlock multiple locks. Thus, both terms are associated with the concept of key.",
+            "reasoning": "Related(Chain, KeyChain) and Is(KeyChain, Key)\nRelated(Master, MasterKey) and Is(MasterKey, Key)\nThus, Chain → KeyChain → Key and Master → MasterKey → Key"
         },
         "MLLM's Answer": "- First image: Gold chain necklace\n- Second image: Golden crown with a green gemstone\n\n- Relation: Luxurious adornments\n- Explanation: Both images feature items associated with wealth and luxury. The gold chain necklace and the golden crown with a gemstone are symbols of opulence, often used to signify status and prestige.",
         "Judge": {
