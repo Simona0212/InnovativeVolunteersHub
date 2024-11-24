@@ -127,7 +127,7 @@
         "relation": "brightness and power",
         "visibility": "visible",
         "domain": "ability",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -314,7 +314,7 @@
         "relation": "Physical Prowess",
         "visibility": "visible",
         "domain": "ability",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -695,7 +695,7 @@
         "relation": "opportunity and ability",
         "visibility": "invisible",
         "domain": "ability",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -757,7 +757,7 @@
         "relation": "ability to grow",
         "visibility": "invisible",
         "domain": "ability",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -788,7 +788,7 @@
         "relation": "Potential to perform",
         "visibility": "invisible",
         "domain": "ability",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -911,7 +911,7 @@
         "relation": "repeat function",
         "visibility": "invisible",
         "domain": "ability",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1263,7 +1263,7 @@
         "relation": "Lacquer Fan",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "East Asia",
         "language": "English",
         "images": [
@@ -1395,7 +1395,7 @@
         "relation": "Bavarian culture",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "Non-English European",
         "language": "English",
         "images": [
@@ -1461,7 +1461,7 @@
         "relation": "Samba and Carnival",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "Latin American",
         "language": "English",
         "images": [
@@ -1494,7 +1494,7 @@
         "relation": "Mateship",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "other",
         "language": "English",
         "images": [
@@ -1592,7 +1592,7 @@
         "relation": "Zeus",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "Non-English European",
         "language": "English",
         "images": [
@@ -1691,7 +1691,7 @@
         "relation": "Ephemeral thing",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1706,9 +1706,9 @@
                 "description": "Blown out candle"
             }
         ],
-        "explanation": "'Ephemeral',meaning transient or short-lived. A dandelion seedhead disperses quickly in the wind, representing fleeting existence. A blown-out candle signifies the end of something that once burned brightly, also symbolizing a brief duration.",
-        "reasoning": "Symbolizes(DandelionSeedhead, FleetingExistence)\nSymbolizes(BlownOutCandle, EndedLight/BriefDuration).\nThus, DandelionSeedhead → FleetingExistence → Ephemeral and BlownOutCandle → BriefDuration → Ephemeral",
-        "hop_count": 4,
+        "explanation": "'Ephemeral',meaning transient or short-lived. Dandelion seeds can be blown away by the wind, candle flames can be extinguished by the wind, both can be acted upon by the wind",
+        "reasoning": "Extinguished(DandelionSeedhead, Wind)\nExtinguished(CandleFlames, Wind).\nThus, DandelionSeedhead → Wind and BlownOutCandle → Wind",
+        "hop_count": 2,
         "perception": [
             "Visual Similarity",
             "Semantic Object",
@@ -1724,7 +1724,7 @@
         "relation": "symbolize the concept of freedom",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1946,7 +1946,7 @@
         "relation": "mysterious and unknown dark matter",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2010,7 +2010,7 @@
         "relation": "the passage of time",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2122,7 +2122,7 @@
             }
         ],
         "explanation": "The sunrise over a mountain peak symbolizes overcoming challenges and reaching a new height with the promise of a fresh start. The figure emerging from the tunnel represents leaving darkness and hardship behind, entering into the light of a new chapter.",
-        "reasoning": "Symbolizes(SunriseOverMountainPeak, OvercomingChallenges ∧ NewBeginning)\nRepresents(FigureEmergingFromTunnel, LeavingDarkness ∧ EnteringLight ∧ NewBeginning).\nThus, SunriseOverMountainPeak → Hope and NewBeginnings ← FigureEmergingFromTunnel",
+        "reasoning": "Symbolizes(SunriseOverMountainPeak, OvercomingChallenges ∧ NewBeginning)\nRepresents(FigureEmergingFromTunnel, LeavingDarkness ∧ EnteringLight ∧ NewBeginning).\nThus, SunriseOverMountainPeak ∧ FigureEmergingFromTunnel → HopeNew and Beginnings",
         "hop_count": 1,
         "perception": [
             "Visual Similarity",
@@ -2170,7 +2170,7 @@
         "relation": "Supernova",
         "visibility": "visible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2202,7 +2202,7 @@
         "relation": "Ball lightning",
         "visibility": "visible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2266,7 +2266,7 @@
         "relation": "Earthquake",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2299,7 +2299,7 @@
         "relation": "Migration",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2330,7 +2330,7 @@
         "relation": "Light pillar",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2442,7 +2442,7 @@
             }
         ],
         "explanation": "The first image represents the digital aspect of an echo chamber, where individuals are constantly exposed to the same information through personalized feeds and algorithms, reinforcing their existing beliefs. The second image represents the social aspect, where like-minded individuals gather and reinforce each other's opinions without exposure to alternative perspectives. Both images illustrate environments where dissenting opinions are rare and confirmation bias thrives.",
-        "reasoning": "Represent(MultipleScreensSameNews, DigitalEchoChamber) and SubsetOf(DigitalEchoChamber, EchoChamber)\nRepresent(NoddingGroup, SocialEchoChamber) and SubsetOf(SocialEchoChamber, EchoChamber).\nThus, MultipleScreensSameNews → DigitalEchoChamber → EchoChamber and NoddingGroup → SocialEchoChamber → EchoChamber",
+        "reasoning": "Represent(MultipleScreensSameNews, DigitalEchoChamber) and Has(DigitalEchoChamber, LittleDifferenceAndReinforceOpinions)\nRepresent(NoddingGroup, SocialEchoChamber) and Represent(NoddingGroup, Reinforce opinions).\nThus, MultipleScreensSameNews → DigitalEchoChamber → Reinforce opinions and NoddingGroup → SocialEchoChamber → Reinforce opinions",
         "hop_count": 4,
         "perception": [
             "Visual Similarity",
@@ -2458,7 +2458,7 @@
         "relation": "Influencer Marketing",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2489,7 +2489,7 @@
         "relation": "Greenhouse effect",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2602,8 +2602,8 @@
             }
         ],
         "explanation": "'Stille Wasser sind tief' translates to 'Still waters run deep,' indicating that those who appear calm or quiet may possess profound thoughts, emotions, or complexities beneath the surface.",
-        "reasoning": "Represents(CalmLake, SurfaceCalmness)\nSymbolizes(DeepOcean, HiddenDepths)\nThus, CalmLake → SurfaceCalmness and DeepOcean → HiddenDepths → 'Still waters run deep.'",
-        "hop_count": 3,
+        "reasoning": "Represents(CalmLake, SurfaceCalmness)\nSymbolizes(DeepOcean, HiddenDepths)\nThus, CalmLake ∧ DeepOcean → 'Still waters run deep.'",
+        "hop_count": 1,
         "perception": [
             "Visual Similarity",
             "Semantic Object",
@@ -2682,7 +2682,7 @@
         "relation": "Übung macht den Meister.",
         "visibility": "invisible",
         "domain": "ability",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "Non-English European",
         "language": "German",
         "images": [
@@ -2764,8 +2764,8 @@
             }
         ],
         "explanation": "A painter's palette represents creativity and the ability to create one's own vision or reality through colors and art. The globe symbolizes the world itself, representing the vastness and diversity of experiences and perspectives that can be imagined or created.",
-        "reasoning": "Paint(PainterPalette, Creativity)\nRepresents(Globe, World)\nThus, PainterPalette → Creativity → Imagination → Globe",
-        "hop_count": 3,
+        "reasoning": "Paint(PainterPalette, Creativity)\nRepresents(Globe, CreatingDiversity)\nThus, PainterPalette ∧ Globe → Creativity",
+        "hop_count": 1,
         "perception": [
             "Semantic Object",
             "Relational Perception"
@@ -2780,7 +2780,7 @@
         "relation": "Wer nicht wagt, der nicht gewinnt",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "metaphor",
+        "type": "relation",
         "culture": "Non-English European",
         "language": "German",
         "images": [
@@ -2891,8 +2891,8 @@
             }
         ],
         "explanation": "The first image represents the iconic red cloak worn by Little Red Riding Hood, while the second image depicts the wolf, the antagonist in the story. Together, they encapsulate the essence of the fairy tale, highlighting the confrontation between innocence (represented by the cloak) and danger (represented by the wolf).",
-        "reasoning": "Contains(RedCloak, Rotkäppchen)\nLurk(Wolf, Forest) and Oppose(Wolf, Rotkäppchen)\nThus, RedCloak → Rotkäppchen and Wolf → Rotkäppchen → Opponent → Rotkäppchen und der Wolf",
-        "hop_count": 4,
+        "reasoning": "Contains(RedCloak, Rotkäppchen)\nLurk(Wolf, Forest) and Oppose(Wolf, Rotkäppchen)\nThus, RedCloak → Rotkäppchen and Wolf → Rotkäppchen",
+        "hop_count": 2,
         "perception": [
             "Semantic Object",
             "Abstract Interpretation",
@@ -2924,8 +2924,8 @@
             }
         ],
         "explanation": "The first image depicts a person who is missing out on the opportunity to catch fish because they are asleep, while the second image represents a successful fisherman who has taken advantage of the opportunity to catch fish. Together, they illustrate the proverb 'Chi dorme non piglia pesci,' emphasizing that those who are inactive or complacent miss out on opportunities.",
-        "reasoning": "Sleep(Person, FishingBoat) and MissOpportunity(Person, Fish)\nCatch(Fisherman, Fish) and SeizeOpportunity(Fisherman, Fishing)\nThus, Person → Sleep → MissOpportunity and Fisherman → Catch → SeizeOpportunity → Opportunity",
-        "hop_count": 5,
+        "reasoning": "Sleep(Person, FishingBoat) and MissOpportunity(Person, Fish)\nCatch(Fisherman, Fish) and SeizeOpportunity(Fisherman, Fishing)\nThus, Person → Sleep → MissOpportunity → Opportunity and Fisherman → Catch → SeizeOpportunity → Opportunity",
+        "hop_count": 6,
         "perception": [
             "Semantic Object",
             "Abstract Interpretation",
@@ -3018,8 +3018,8 @@
             }
         ],
         "explanation": "The dark, foreboding gate symbolizes the entrance to a place of despair and hopelessness, reflecting the warning found in Dante's Inferno. The flickering candle flame represents fragile hope, which can be easily extinguished in a place filled with despair. Together, these images evoke the theme of hopelessness and the dire warning to those who dare to enter.",
-        "reasoning": "Symbolizes(Gate, Despair)\nRepresents(CandleFlame, FragileHope)\nThus, Gate → Despair and CandleFlame → FragileHope → 'Abandon all hope, ye who enter here.'",
-        "hop_count": 3,
+        "reasoning": "Symbolizes(Gate, Despair)\nRepresents(CandleFlame, FragileHope)\nThus, Gate ∧ CandleFlame → Hopelessness",
+        "hop_count": 1,
         "perception": [
             "Semantic Object"
         ],
@@ -3049,7 +3049,7 @@
             }
         ],
         "explanation": "'L’abito non fa il monaco' translates to 'The habit does not make the monk.' This proverb implies that outward appearances do not determine a person's true character or worth.",
-        "reasoning": "Represent(Suit, OutwardAppearance) ∧ Define(Monk, InnerCharacter) → 'L’abito non fa il monaco'",
+        "reasoning": "Represent(Suit, OutwardAppearance)\nDefine(Monk, InnerCharacter)\nThus, Suit ∧ Monk → 'L’abito non fa il monaco'",
         "hop_count": 1,
         "perception": [
             "Semantic Object"
@@ -3095,7 +3095,7 @@
         "relation": "Non dire gatto se non ce l'hai nel sacco",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "mutual elements",
+        "type": "metaphor",
         "culture": "Non-English European",
         "language": "Italian",
         "images": [
@@ -3111,8 +3111,8 @@
             }
         ],
         "explanation": "The first image illustrates the phrase literally, suggesting that one should not claim to have something (the cat) unless it is indeed in one's possession (the bag). The second image represents the moment of revelation or surprise that often accompanies the realization that someone was making an unfounded claim. Together, they encapsulate the essence of the saying about the importance of proof before making assertions.",
-        "reasoning": "Claim(HoldingBag, Cat) and ShowPossession(Cat, Bag)\nRealization(SurprisePerson, UnexpectedClaim)\nThus, HoldingBag → Cat and SurprisePerson → UnexpectedClaim → se non ce l'hai nel sacco",
-        "hop_count": 3,
+        "reasoning": "Claim(HoldingBag, Cat) and ShowPossession(Cat, Bag)\nRealization(SurprisePerson, UnexpectedClaim)\nThus, HoldingBag ∧ SurprisePerson → se non ce l'hai nel sacco",
+        "hop_count": 1,
         "perception": [
             "Semantic Object",
             "Abstract Interpretation"
