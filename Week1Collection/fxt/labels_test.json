@@ -67,7 +67,7 @@
         "relation": "Newton's Laws of Motion",
         "visibility": "invisible",
         "domain": "STEM",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -225,7 +225,7 @@
         "relation": "Medical Imaging",
         "visibility": "invisible",
         "domain": "STEM",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -241,7 +241,7 @@
             }
         ],
         "explanation": "MRI (Magnetic Resonance Imaging) uses powerful magnetic fields to create images of the body's internal structures, a combined application of physics and medical imaging principles.",
-        "reasoning": "Uses(MRI, MagneticField)\nPrincipleOf(MagneticField, Physics)\nUsedIn(MRI, MedicalImaging)\nThus, MRI → MagneticField → Physics and MRI → MedicalImaging",
+        "reasoning": "Uses(MRI, MagneticField)\nPrincipleOf(MagneticField, Physics)\nUsedIn(MRI, MedicalImaging)\nThus, MRI → MagneticField → MedicalImaging and MRI → MedicalImaging",
         "hop_count": 3,
         "perception": [
             "Contextual Sensory Cues",
@@ -257,7 +257,7 @@
         "relation": "Strategic Decision-Making",
         "visibility": "invisible",
         "domain": "STEM",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -382,7 +382,7 @@
         "relation": "AmericanIdentity",
         "visibility": "visible",
         "domain": "country",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "USA/English",
         "language": "English",
         "images": [
@@ -429,7 +429,7 @@
             }
         ],
         "explanation": "The sound 'Ha' represents laughter, while 'No' can be associated with music, together phonetically resembling 'Hanoi', the capital of Vietnam known for its rich culture and culinary delights. The first image captures an emotion, and the second image symbolizes an art form, both contributing to the understanding of Hanoi's cultural essence.",
-        "reasoning": "SoundsLike(Hanoi, Ha + No)\nIsFamousFor(Hanoi, CultureAndCuisine)\nThus, Ha → Hanoi and No → Hanoi → CultureAndCuisine",
+        "reasoning": "SoundsLike(Hanoi, Ha + No)\nIsFamousFor(Hanoi, CultureAndCuisine)\nThus, Ha → Hanoi → CultureAndCuisine and Hanoi → CultureAndCuisine",
         "hop_count": 3,
         "perception": [
             "Semantic Object"
@@ -475,7 +475,7 @@
         "relation": "TraditionalJapan",
         "visibility": "visible",
         "domain": "country",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "East Asia",
         "language": "English",
         "images": [
@@ -555,8 +555,8 @@
             }
         ],
         "explanation": "K-Pop idols represent the modern, globalized face of Korean entertainment, while kimchi is a staple food deeply rooted in Korean culinary tradition.",
-        "reasoning": "Represents(KPopIdol, ModernKoreanCulture)\nRepresents(Kimchi, TraditionalKoreanFood)\nPartOf(TraditionalKoreanFood, KoreanCulture)\nThus, KPopIdol → ModernKoreanCulture and Kimchi → TraditionalKoreanFood → KoreanCulture",
-        "hop_count": 3,
+        "reasoning": "Represents(KPopIdol, ModernKoreanCulture)\nRepresents(Kimchi, TraditionalKoreanFood)\nPartOf(TraditionalKoreanFood, KoreanCulture)\nThus, KPopIdol → ModernKoreanCulture → KoreanCulture and Kimchi → TraditionalKoreanFood → KoreanCulture",
+        "hop_count": 4,
         "perception": [
             "Contextual Sensory Cues",
             "Scene Contextualization"
@@ -635,7 +635,7 @@
         "relation": "Briefcase and Briefcase",
         "visibility": "invisible",
         "domain": "business",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -669,7 +669,7 @@
         "relation": "Startup",
         "visibility": "invisible",
         "domain": "business",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -963,7 +963,7 @@
         "relation": "Supply and demand",
         "visibility": "invisible",
         "domain": "business",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -996,7 +996,7 @@
         "relation": "Shark Tank",
         "visibility": "invisible",
         "domain": "business",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1012,8 +1012,8 @@
             }
         ],
         "explanation": "Shark fin represents the Sharks (investors) and a pitch deck is what entrepreneurs present on Shark Tank.",
-        "reasoning": "Represent(SharkFin, Shark/Investor)\nUse(Entrepreneur, PitchDeck, on SharkTank)\nThus, SharkFin → SharkTank ← PitchDeck and PitchDeck → SharkTank ← SharkFin",
-        "hop_count": 2,
+        "reasoning": "Represent(SharkFin, Shark/Investor)\nUse(Entrepreneur, PitchDeck, on SharkTank)\nThus, SharkFin → SharkTank → PitchDeck and PitchDeck → SharkTank → SharkFin",
+        "hop_count": 4,
         "perception": [
             "Semantic Object",
             "Abstract Interpretation",
@@ -1029,7 +1029,7 @@
         "relation": "SWOT analysis",
         "visibility": "invisible",
         "domain": "business",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1045,8 +1045,8 @@
             }
         ],
         "explanation": "SWOT stands for Strengths, Weaknesses, Opportunities, and Threats.",
-        "reasoning": "PartOf(Strengths & Weaknesses, SWOT)\nPartOf(Opportunities & Threats, SWOT)\nThus, Strengths&Weaknesses → SWOT ← Opportunities&Threats and Opportunities&Threats → SWOT ← Strengths&Weaknesses",
-        "hop_count": 2,
+        "reasoning": "PartOf(Strengths & Weaknesses, SWOT)\nPartOf(Opportunities & Threats, SWOT)\nThus, Strengths&Weaknesses → SWOT → Opportunities&Threats and Opportunities&Threats → SWOT → Strengths&Weaknesses",
+        "hop_count": 4,
         "perception": [
             "Semantic Object",
             "Relational Perception"
@@ -1076,8 +1076,8 @@
             }
         ],
         "explanation": "Blue chip in poker represents high value, similar to blue-chip stocks which are reliable and financially sound companies.",
-        "reasoning": "Represent(BluePokerChip, HighValue)\nRepresent(BlueChipStock, Reliable&FinanciallySoundCompany)\nAnalogous(HighValue(Poker), HighValue/Reliable(StockMarket))\nThus, BluePokerChip → HighValue → BlueChipStock and BlueChipStock → HighValue → BluePokerChip",
-        "hop_count": 4,
+        "reasoning": "Represent(BluePokerChip, HighValue)\nRepresent(BlueChipStock, Reliable&FinanciallySoundCompany)\nAnalogous(HighValue(Poker), HighValue/Reliable(StockMarket))\nThus, BluePokerChip → HighValue and BlueChipStock → HighValue",
+        "hop_count": 2,
         "perception": [
             "Semantic Object",
             "Relational Perception"
@@ -1107,8 +1107,8 @@
             }
         ],
         "explanation": "An IPO (Initial Public Offering) is when a company first offers shares to the public on a stock exchange.",
-        "reasoning": "Action(IPO, OfferSharesToPublic)\nLocation(StockExchange, IPO)\nThus, CompanySharesBeingOffered → IPO → StockExchange and StockExchange → IPO → CompanySharesBeingOffered",
-        "hop_count": 4,
+        "reasoning": "Action(IPO, OfferSharesToPublic)\nLocation(StockExchange, IPO)\nThus, CompanySharesBeingOffered → IPO and StockExchange → IPO",
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Relational Perception"
@@ -1140,8 +1140,8 @@
             }
         ],
         "explanation": " A merger involves two companies combining into one.",
-        "reasoning": "Symbolize(PuzzlePiecesFitting, Combining)\nRepresent(CombiningCompanyLogos, Merger)\nThus, PuzzlePiecesFitting → Combining → CombiningCompanyLogos and CombiningCompanyLogos → Combining → PuzzlePiecesFitting",
-        "hop_count": 4,
+        "reasoning": "Symbolize(PuzzlePiecesFitting, Combining)\nRepresent(CombiningCompanyLogos, Merger)\nThus, PuzzlePiecesFitting → Combining and CombiningCompanyLogos → Combining",
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Relational Perception"
@@ -1173,7 +1173,7 @@
             }
         ],
         "explanation": "An acquisition is when one company buys another.",
-        "reasoning": "Represent(LargeCompanyEngulfingSmaller, Acquisition)\nImply(PurchasedStamp, Acquisition)\nThus, LargeCompanyEngulfingSmaller → Acquisition ← PurchasedStamp and PurchasedStamp → Acquisition ← LargeCompanyEngulfingSmaller",
+        "reasoning": "Represent(LargeCompanyEngulfingSmaller, Acquisition)\nImply(PurchasedStamp, Acquisition)\nThus, LargeCompanyEngulfingSmaller → Acquisition and PurchasedStamp → Acquisition",
         "hop_count": 2,
         "perception": [
             "Scene Contextualization",
@@ -1206,8 +1206,8 @@
             }
         ],
         "explanation": "Leverage in finance refers to using borrowed capital to increase potential returns, similar to a lever multiplying force. A high debt/equity ratio indicates high leverage.",
-        "reasoning": "Represent(LeverLiftingObject, MultiplyingForce)\nIndicate(HighDebtEquityRatio, HighLeverage)\nAnalogous(MultiplyingForce(Physical), MultiplyingReturns(Financial))\nThus, LeverLiftingObject → MultiplyingForce → HighLeverage ← HighDebtEquityRatio and HighDebtEquityRatio → HighLeverage → MultiplyingForce → LeverLiftingObject",
-        "hop_count": 5,
+        "reasoning": "Represent(LeverLiftingObject, MultiplyingForce)\nIndicate(HighDebtEquityRatio, HighLeverage)\nAnalogous(MultiplyingForce(Physical), MultiplyingReturns(Financial))\nThus, LeverLiftingObject → MultiplyingForce → HighLeverage and HighDebtEquityRatio → HighLeverage",
+        "hop_count": 2,
         "perception": [
             "Semantic Object",
             "Abstract Interpretation",
@@ -1239,8 +1239,8 @@
             }
         ],
         "explanation": "Due diligence is the investigation and analysis performed before a business deal.",
-        "reasoning": "Represent(MagnifyingGlassOverContract, Investigation)\nObject(DueDiligence, FinancialStatements&LegalDocuments)\nThus, MagnifyingGlassOverContract → Investigation → DueDiligence ← FinancialStatements&LegalDocuments and FinancialStatements&LegalDocuments → DueDiligence ← Investigation → MagnifyingGlassOverContract",
-        "hop_count": 4,
+        "reasoning": "Represent(MagnifyingGlassOverContract, Investigation)\nObject(DueDiligence, FinancialStatements&LegalDocuments)\nThus, MagnifyingGlassOverContract → Investigation → DueDiligence and FinancialStatements&LegalDocuments → DueDiligence",
+        "hop_count": 3,
         "perception": [
             "Scene Contextualization",
             "Relational Perception",
@@ -1273,8 +1273,8 @@
             }
         ],
         "explanation": "Kombu seaweed and Dashi are commonly associated with umami, but other ingredients also provide this savory taste. Dried bonito flakes are another key component of dashi, further enhancing its umami. Tomatoes, particularly ripe ones, are known for their naturally high glutamate content, the source of umami flavor.",
-        "reasoning": "UmamiFlavor(Katsuobushi)\nUmamiFlavor(Tomato)\nThus, Katsuobushi → Umami → Tomato and Tomato → Umami → Katsuobushi",
-        "hop_count": 4,
+        "reasoning": "UmamiFlavor(Katsuobushi)\nUmamiFlavor(Tomato)\nThus, Katsuobushi → Umami and Tomato → Umami",
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -1305,8 +1305,8 @@
             }
         ],
         "explanation": "Karashi, referring to mustard, can cause a burning sensation similar to wasabi, leading to watery eyes and a runny nose.",
-        "reasoning": "Spicy(MustardSeeds, Karashi)\nEffectOfSpicy(Tears)\nThus, MustardSeeds → Karashi → Spicy → Tears and Tears → Spicy → Karashi → MustardSeeds",
-        "hop_count": 6,
+        "reasoning": "Spicy(MustardSeeds, Karashi)\nEffectOfSpicy(Tears)\nThus, MustardSeeds → Karashi and Tears → Spicy → Karashi",
+        "hop_count": 3,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -1338,7 +1338,7 @@
             }
         ],
         "explanation": "Iki is a complex aesthetic ideal, but core to it is a natural, effortless grace. A single, perfect bloom represents this natural beauty without ostentation, as does the simple elegance of a bamboo flute. Neither shouts for attention, yet both possess a quiet refinement.",
-        "reasoning": "RepresentsIki(Chrysanthemum, ThroughSimplicityAndElegance)\nRepresentsIki(BambooFlute, ThroughSimplicityAndElegance)\nThus, Chrysanthemum → Iki → BambooFlute and BambooFlute → Iki → Chrysanthemum",
+        "reasoning": "RepresentsIki(Chrysanthemum, ThroughSimplicityAndElegance)\nRepresentsIki(BambooFlute, ThroughSimplicityAndElegance)\nThus, Chrysanthemum → ThroughSimplicityAndElegance → Iki and BambooFlute → ThroughSimplicityAndElegance → Iki",
         "hop_count": 4,
         "perception": [
             "Contextual Sensory Cues",
@@ -1354,7 +1354,7 @@
         "relation": "Wabi-sabi",
         "visibility": "invisible",
         "domain": "sense",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "East Asia",
         "language": "Japanese",
         "images": [
@@ -1387,7 +1387,7 @@
         "relation": "Yugen",
         "visibility": "invisible",
         "domain": "sense",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "East Asia",
         "language": "Japanese",
         "images": [
@@ -1436,8 +1436,8 @@
             }
         ],
         "explanation": "Balsamic glaze is a concentrated sweet-sour flavor paired with the sweetness of strawberries. Candied ginger combines the sweetness of sugar with the pungent, slightly sour ginger.",
-        "reasoning": "AgrodolceFlavor(BalsamicGlazedStrawberries, ThroughSweetAndSourCombination)\nAgrodolceFlavor(CandiedGinger, ThroughSweetAndSpicySourCombination)\nThus, BalsamicGlazedStrawberries → Agrodolce → CandiedGinger and CandiedGinger → Agrodolce → BalsamicGlazedStrawberries",
-        "hop_count": 4,
+        "reasoning": "AgrodolceFlavor(BalsamicGlazedStrawberries, ThroughSweetAndSourCombination)\nAgrodolceFlavor(CandiedGinger, ThroughSweetAndSpicySourCombination)\nThus, BalsamicGlazedStrawberries → Agrodolce and CandiedGinger → Agrodolce",
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -1468,8 +1468,8 @@
             }
         ],
         "explanation": "Parmigiano-Reggiano contributes a salty, sharp, and umami-rich taste, while Funghi Porcini offer a deep, earthy umami flavor. Both ingredients enhance the savory depth of dishes.",
-        "reasoning": "ExemplifiesSapido(ParmigianoReggiano, ThroughSaltinessAndUmami)\nExemplifiesSapido(FunghiPorcini, ThroughEarthyUmami)\nThus, ParmigianoReggiano → Sapido → FunghiPorcini and FunghiPorcini → Sapido → ParmigianoReggiano",
-        "hop_count": 4,
+        "reasoning": "ExemplifiesSapido(ParmigianoReggiano, ThroughSaltinessAndUmami)\nExemplifiesSapido(FunghiPorcini, ThroughEarthyUmami)\nThus, ParmigianoReggiano → Sapido and FunghiPorcini → Sapido",
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -1484,7 +1484,7 @@
         "relation": "Aromatico",
         "visibility": "invisible",
         "domain": "sense",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "Non-English European",
         "language": "Italian",
         "images": [
@@ -1548,7 +1548,7 @@
         "relation": "Piccante",
         "visibility": "invisible",
         "domain": "sense",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "Non-English European",
         "language": "Italian",
         "images": [
@@ -1596,8 +1596,8 @@
             }
         ],
         "explanation": "The conductor's baton represents the orchestrated sounds of the opera, while the blurred Vespa wheel suggests the distinctive buzz of its engine.",
-        "reasoning": "HeardSound(ConductorsBaton, OperaPerformance)\nHeardSound(VespaWheel, VespaEngine)\nThus, ConductorsBaton → Udito → VespaWheel and VespaWheel → Udito → ConductorsBaton",
-        "hop_count": 4,
+        "reasoning": "HeardSound(ConductorsBaton, OperaPerformance)\nHeardSound(VespaWheel, VespaEngine)\nThus, ConductorsBaton → Udito and VespaWheel → Udito",
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Social Insight"
@@ -1629,8 +1629,8 @@
             }
         ],
         "explanation": "Sharing food, especially a warm, comforting dish like jjigae, is a fundamental expression of jeong. The lingering handshake suggests a connection that goes beyond mere formality, hinting at a deeper emotional resonance.",
-        "reasoning": "ExpressesJeong(SharingJjigae, ThroughCommunalMeal)\nExpressesJeong(LingeringHandshake, ThroughIntimacyAndConnection)\nThus, SharingJjigae → Jeong → LingeringHandshake and LingeringHandshake → Jeong → SharingJjigae",
-        "hop_count": 4,
+        "reasoning": "ExpressesJeong(SharingJjigae, ThroughCommunalMeal)\nExpressesJeong(LingeringHandshake, ThroughIntimacyAndConnection)\nThus, SharingJjigae → Jeong and LingeringHandshake → Jeong",
+        "hop_count": 2,
         "perception": [
             "Contextual Sensory Cues",
             "Social Insight"
@@ -1646,7 +1646,7 @@
         "relation": "Tokyo",
         "visibility": "visible",
         "domain": "city",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "East Asia",
         "language": "English",
         "images": [
@@ -1680,7 +1680,7 @@
         "relation": "Venice",
         "visibility": "visible",
         "domain": "city",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1728,8 +1728,8 @@
             }
         ],
         "explanation": "Both the Taj Mahal and auto rickshaws are commonly associated with India, specifically with tourism and travel within the country.",
-        "reasoning": "LocatedIn(TajMahal, India)\nUsedIn(AutoRickshaw, India)\nThus, TajMahal → India → AutoRickshaw and AutoRickshaw → India → TajMahal",
-        "hop_count": 4,
+        "reasoning": "LocatedIn(TajMahal, India)\nUsedIn(AutoRickshaw, India)\nThus, TajMahal → India and AutoRickshaw → India",
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Social Insight",
@@ -1746,7 +1746,7 @@
         "relation": "Rio de Janeiro",
         "visibility": "visible",
         "domain": "city",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1796,8 +1796,8 @@
             }
         ],
         "explanation": "Both the Great Wall and the Forbidden City are historical landmarks located in or near Beijing, China, and are significant symbols of Chinese history and culture.",
-        "reasoning": "LocatedNear(GreatWall, Beijing)\nLocatedIn(ForbiddenCity, Beijing)\nThus, GreatWall → Beijing → ForbiddenCity and ForbiddenCity → Beijing → GreatWall",
-        "hop_count": 4,
+        "reasoning": "LocatedNear(GreatWall, Beijing)\nLocatedIn(ForbiddenCity, Beijing)\nThus, GreatWall → Beijing and ForbiddenCity → Beijing",
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Social Insight",
@@ -1814,7 +1814,7 @@
         "relation": "New York City",
         "visibility": "visible",
         "domain": "city",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1864,8 +1864,8 @@
             }
         ],
         "explanation": "Both the Sydney Opera House and the boomerang are associated with Australia, with the Opera House being a landmark in Sydney specifically, and the boomerang being a well-known symbol of Australian Aboriginal culture.",
-        "reasoning": "LocatedIn(SydneyOperaHouse, Sydney)\nLocatedIn(Sydney, Australia)\nAssociatedWith(Boomerang, Australia)\nThus, SydneyOperaHouse → Sydney → Australia → Boomerang and Boomerang → Australia → Sydney → SydneyOperaHouse",
-        "hop_count": 6,
+        "reasoning": "LocatedIn(SydneyOperaHouse, Sydney)\nLocatedIn(Sydney, Australia)\nAssociatedWith(Boomerang, Australia)\nThus, SydneyOperaHouse → Sydney → Australia and Boomerang → Australia",
+        "hop_count": 3,
         "perception": [
             "Scene Contextualization",
             "Social Insight",
@@ -1882,7 +1882,7 @@
         "relation": "Egypt - Giza",
         "visibility": "visible",
         "domain": "city",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1932,8 +1932,8 @@
             }
         ],
         "explanation": "Both the Colosseum and Vespa scooters are iconic symbols of Rome, Italy. The Colosseum represents ancient Roman history, while the Vespa is a symbol of modern Italian style and culture.",
-        "reasoning": "LocatedIn(Colosseum, Rome)\nAssociatedWith(VespaScooter, Italy)\nLocatedIn(Rome, Italy)\nThus, Colosseum → Rome → Italy → VespaScooter and VespaScooter → Italy → Rome → Colosseum",
-        "hop_count": 6,
+        "reasoning": "LocatedIn(Colosseum, Rome)\nAssociatedWith(VespaScooter, Italy)\nLocatedIn(Rome, Italy)\nThus, Colosseum → Rome → Italy and VespaScooter → Italy",
+        "hop_count": 3,
         "perception": [
             "Scene Contextualization",
             "Social Insight",
@@ -1966,8 +1966,8 @@
             }
         ],
         "explanation": "Both the Hagia Sophia and Turkish Delight are associated with Istanbul, Turkey. The Hagia Sophia is a historical landmark in Istanbul, and Turkish Delight is a popular confectionery treat in Turkey.",
-        "reasoning": "LocatedIn(HagiaSophia, Istanbul)\nLocatedIn(Istanbul, Turkey)\nAssociatedWith(TurkishDelight, Turkey)\nThus, HagiaSophia → Istanbul → Turkey → TurkishDelight and TurkishDelight → Turkey → Istanbul → HagiaSophia",
-        "hop_count": 6,
+        "reasoning": "LocatedIn(HagiaSophia, Istanbul)\nLocatedIn(Istanbul, Turkey)\nAssociatedWith(TurkishDelight, Turkey)\nThus, HagiaSophia → Istanbul → Turkey and TurkishDelight → Turkey",
+        "hop_count": 3,
         "perception": [
             "Scene Contextualization",
             "Social Insight",
@@ -1984,7 +1984,7 @@
         "relation": "Toronto",
         "visibility": "visible",
         "domain": "city",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2018,7 +2018,7 @@
         "relation": "Berlin",
         "visibility": "visible",
         "domain": "city",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2051,7 +2051,7 @@
         "relation": "Dubai",
         "visibility": "visible",
         "domain": "city",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2084,7 +2084,7 @@
         "relation": "San Francisco",
         "visibility": "visible",
         "domain": "city",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2133,8 +2133,8 @@
             }
         ],
         "explanation": "Manneken Pis is a famous statue located in Brussels, Belgium, and Belgian waffles are a popular food associated with Belgium.",
-        "reasoning": "LocatedIn(MannekenPis, Brussels)\nLocatedIn(Brussels, Belgium)\nAssociatedWith(BelgianWaffle, Belgium)\nThus, MannekenPis → Brussels → Belgium → BelgianWaffle and BelgianWaffle → Belgium → Brussels → MannekenPis",
-        "hop_count": 6,
+        "reasoning": "LocatedIn(MannekenPis, Brussels)\nLocatedIn(Brussels, Belgium)\nAssociatedWith(BelgianWaffle, Belgium)\nThus, MannekenPis → Brussels → Belgium and BelgianWaffle → Belgium",
+        "hop_count": 3,
         "perception": [
             "Scene Contextualization",
             "Social Insight"
@@ -2166,8 +2166,8 @@
             }
         ],
         "explanation": "Both Tiger's Nest Monastery and prayer flags are strongly associated with Bhutanese culture and Buddhism. Tiger's Nest is a prominent Buddhist monastery in Bhutan, and prayer flags are a common sight throughout the country, often associated with Buddhist practices.",
-        "reasoning": "LocatedIn(TigersNestMonastery, Bhutan)\nAssociatedWith(TigersNestMonastery, Buddhism)\nAssociatedWith(PrayerFlags, Buddhism)\nLocatedIn(PrayerFlags, Bhutan)\nThus, TigersNestMonastery → Bhutan → PrayerFlags and PrayerFlags → Bhutan → TigersNestMonastery",
-        "hop_count": 4,
+        "reasoning": "LocatedIn(TigersNestMonastery, Bhutan)\nAssociatedWith(TigersNestMonastery, Buddhism)\nAssociatedWith(PrayerFlags, Buddhism)\nLocatedIn(PrayerFlags, Bhutan)\nThus, TigersNestMonastery → Bhutan and PrayerFlags → Bhutan",
+        "hop_count": 2,
         "perception": [
             "Scene Contextualization",
             "Social Insight",
@@ -2184,7 +2184,7 @@
         "relation": "Madagascar",
         "visibility": "visible",
         "domain": "country",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2217,7 +2217,7 @@
         "relation": "Mongolia",
         "visibility": "visible",
         "domain": "country",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2266,8 +2266,8 @@
             }
         ],
         "explanation": "Mount Everest is located in Nepal, and prayer wheels are commonly used in Tibetan Buddhism, which is a prominent religion in Nepal.",
-        "reasoning": "LocatedIn(MountEverest, Nepal)\nAssociatedWith(PrayerWheel, TibetanBuddhism)\nPracticedIn(TibetanBuddhism, Nepal)\nThus, MountEverest → Nepal → TibetanBuddhism → PrayerWheel and PrayerWheel → TibetanBuddhism → Nepal → MountEverest",
-        "hop_count": 6,
+        "reasoning": "LocatedIn(MountEverest, Nepal)\nAssociatedWith(PrayerWheel, TibetanBuddhism)\nPracticedIn(TibetanBuddhism, Nepal)\nThus, MountEverest → Nepal and PrayerWheel → TibetanBuddhism → Nepal",
+        "hop_count": 3,
         "perception": [
             "Scene Contextualization",
             "Social Insight"
@@ -2283,7 +2283,7 @@
         "relation": "Uzbekistan",
         "visibility": "visible",
         "domain": "country",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2317,7 +2317,7 @@
         "relation": "Samoa",
         "visibility": "visible",
         "domain": "country",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2366,8 +2366,8 @@
             }
         ],
         "explanation": "A traditional Japanese tea ceremony and the making of Italian pizza represent distinct cultural customs associated with Japan and Italy, respectively. This exemplifies the proverb 'Every country has its customs.'",
-        "reasoning": "Represents(JapaneseTeaCeremony, JapaneseCulture)\nRepresents(PizzaMaking, ItalianCulture)\nThus, JapaneseTeaCeremony → JapaneseCulture → DifferentCulture → ItalianCulture → PizzaMaking and PizzaMaking → ItalianCulture → DifferentCulture → JapaneseCulture → JapaneseTeaCeremony",
-        "hop_count": 8,
+        "reasoning": "Represents(JapaneseTeaCeremony, JapaneseCulture)\nRepresents(PizzaMaking, ItalianCulture)\nThus, JapaneseTeaCeremony → JapaneseCulture → DifferentCulture and PizzaMaking → ItalianCulture → DifferentCulture",
+        "hop_count": 4,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -2382,7 +2382,7 @@
         "relation": "Roma non fu fatta in un giorno",
         "visibility": "invisible",
         "domain": "country",
-        "type": "mutual elements",
+        "type": "metaphor",
         "culture": "Non-English European",
         "language": "Italian",
         "images": [
@@ -2398,8 +2398,8 @@
             }
         ],
         "explanation": "A single brick represents a small component, while a completed city wall represents a massive structure built from many such components. This illustrates the idea that large projects are completed gradually, brick by brick, over time, reinforcing the proverb 'Rome wasn't built in a day.'",
-        "reasoning": "ComponentOf(Brick, Wall)\nRepresents(Wall, LargeConstruction)\nImplies(LargeConstruction, TimeAndEffort)\nThus, Brick → Wall → LargeConstruction → TimeAndEffort and TimeAndEffort → LargeConstruction → Wall → Brick",
-        "hop_count": 6,
+        "reasoning": "ComponentOf(Brick, Wall)\nRepresents(Wall, LargeConstruction)\nImplies(LargeConstruction, TimeAndEffort)\nThus, Brick ∧ Wall → 'Rome was not built in a day'",
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation"
@@ -2414,7 +2414,7 @@
         "relation": "A goccia a goccia si scava la pietra",
         "visibility": "invisible",
         "domain": "STEM",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "Non-English European",
         "language": "Italian",
         "images": [
@@ -2464,8 +2464,8 @@
             }
         ],
         "explanation": "The complex equation represents the planning and design phase, while the working machine/successful experiment represents the positive outcome achieved through careful preparation and calculation. This extends the 'measure twice, cut once' principle to a more abstract level, showing that planning is crucial for success in any complex endeavor.",
-        "reasoning": "Represents(ComplexEquation, Planning)\nLeadsTo(Planning, SuccessfulOutcome)\nRepresents(WorkingMachine, SuccessfulOutcome)\nThus, ComplexEquation → Planning → SuccessfulOutcome → WorkingMachine and WorkingMachine → SuccessfulOutcome → Planning → ComplexEquation",
-        "hop_count": 6,
+        "reasoning": "Represents(ComplexEquation, Planning)\nLeadsTo(Planning, SuccessfulOutcome)\nRepresents(WorkingMachine, SuccessfulOutcome)\nThus, ComplexEquation → Planning → SuccessfulOutcome and WorkingMachine → SuccessfulOutcome",
+        "hop_count": 3,
         "perception": [
             "Contextual Sensory Cues",
             "Abstract Interpretation",
@@ -2482,7 +2482,7 @@
         "relation": "Occhio non vede, cuore non duole",
         "visibility": "invisible",
         "domain": "sense",
-        "type": "mutual elements",
+        "type": "metaphor",
         "culture": "Non-English European",
         "language": "Italian",
         "images": [
@@ -2498,8 +2498,8 @@
             }
         ],
         "explanation": "The messy room represents a potential source of stress or displeasure. The closed door represents the act of ignoring or hiding the mess, leading to a temporary state of unawareness and thus, a lack of distress. ",
-        "reasoning": "Represents(MessyRoom, Problem)\nHides(ClosedDoor, Problem)\nImplies(Hides, LackOfAwareness)\nThus, MessyRoom → Problem → ClosedDoor → LackOfAwareness and LackOfAwareness → ClosedDoor → Problem → MessyRoom",
-        "hop_count": 6,
+        "reasoning": "Represents(MessyRoom, Problem)\nHides(ClosedDoor, Problem)\nImplies(Hides, LackOfAwareness)\nThus, MessyRoom ∧ ClosedDoor → 'The eyes don't see, the heart doesn't hurt'",
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Scene Contextualization"
@@ -2514,7 +2514,7 @@
         "relation": "A lume di naso",
         "visibility": "invisible",
         "domain": "sense",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "Non-English European",
         "language": "Italian",
         "images": [
@@ -2562,8 +2562,8 @@
             }
         ],
         "explanation": "The spider web represents the intricate connections that are often formed during networking events, where individuals exchange business cards to establish professional relationships.",
-        "reasoning": "Symbolizes(SpiderWeb, Connections)\nFacilitates(BusinessCard, NetworkingEvent)\nThus, SpiderWeb → Connections → NetworkingEvent and BusinessCard → NetworkingEvent → Connections",
-        "hop_count": 4,
+        "reasoning": "Symbolizes(SpiderWeb, Connections)\nFacilitates(BusinessCard, NetworkingEvent)\nThus, SpiderWeb → Connections → NetworkingEvent and BusinessCard → NetworkingEvent",
+        "hop_count": 3,
         "perception": [
             "Scene Contextualization",
             "Relational Perception"
@@ -2579,7 +2579,7 @@
         "relation": "Supply Chain",
         "visibility": "invisible",
         "domain": "business",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -2644,7 +2644,7 @@
         "relation": "work life balance",
         "visibility": "invisible",
         "domain": "business",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
