@@ -5,7 +5,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # get the directory of th
 TOTAL_RIA_PATH = os.path.join(BASE_DIR, "Week1Collection")
 MULTI_PATH = os.path.join(BASE_DIR, "Multi_Images")
 PURE_SINGLE_PATH = os.path.join(BASE_DIR, "Pure_Single_Images")
-names_list = ["hzm", "rat"]
+names_list = ["hzm", "rat", ""]
 print(names_list)
 
 per_set = set(
