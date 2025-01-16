@@ -161,7 +161,7 @@
             {
                 "pair_id": "1",
                 "explanation": "An abandoned factory signifies the decline of industrial activity, often leaving behind rusted machinery as remnants of its past operations.",
-                "path": "IndustrialDecline(Remnants(AbandonedFactory), Remnants(RustedMachinery))\nThus, AbandonedFactory → Industrial Decline and Remnants → RustedMachinery",
+                "path": "IndustrialDecline(Remnants(AbandonedFactory), Remnants(RustedMachinery))\nThus, AbandonedFactory → IndustrialDeclineAndRemnants → RustedMachinery",
                 "perception": [
                     "Visual Similarity",
                     "Contextual Sensory Cues",
@@ -174,8 +174,8 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "an old railway line represents the decline of rail transport, with decaying train cars serving as physical remnants of the once-thriving rail industry.",
-                "path": "IndustrialDecline(Remnants(OldRailwayLine), Remnants(DecayingTrainCar))\nThus, OldRailwayLine → DecayingTrainCar",
+                "explanation": "An old railway line represents the decline of rail transport, with decaying train cars serving as physical remnants of the once-thriving rail industry.",
+                "path": "IndustrialDecline(Remnants(OldRailwayLine), Remnants(DecayingTrainCar))\nThus, OldRailwayLine → IndustrialDeclineAndRemnants → DecayingTrainCar",
                 "perception": [
                     "Visual Similarity",
                     "Contextual Sensory Cues",
@@ -187,7 +187,7 @@
                 ]
             }
         ],
-        "hop_count": 3
+        "hop_count": 2
     },
     {
         "foldername": "Extreme Manifestations of Weather Phenomena(phenomenon, location, metaphor, NA, English)",
@@ -478,8 +478,8 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "myopia glasses and presbyopia glasses are both types of corrective lenses that utilize specific lens properties to address different vision issues. Myopia glasses typically use concave lenses to diverge light for nearsightedness, whereas presbyopia glasses use convex lenses to converge light for farsightedness. ",
-                "path": "Element(MyopiaGlasses, CorrectiveLens)\nElement(PresbyopiaGlasses, CorrectiveLens)\nThus, MyopiaGlasses → Lens Phenomenon and PresbyopiaGlasses → Lens Phenomenon",
+                "explanation": "Myopia glasses and presbyopia glasses are both types of corrective lenses that utilize specific lens properties to address different vision issues. Myopia glasses typically use concave lenses to diverge light for nearsightedness, whereas presbyopia glasses use convex lenses to converge light for farsightedness. ",
+                "path": "Element(MyopiaGlasses, CorrectiveLens)\nElement(PresbyopiaGlasses, CorrectiveLens)\nThus, MyopiaGlasses → Lens Phenomenon",
                 "perception": [
                     "Semantic Object",
                     "Scene Contextualization"
@@ -492,7 +492,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "convex lens and concave lens are fundamental types of optical lenses, each demonstrating the lens phenomenon by either converging or diverging light rays.",
+                "explanation": "Convex lens and concave lens are fundamental types of optical lenses, each demonstrating the lens phenomenon by either converging or diverging light rays.",
                 "path": "Element(ConvexLens, OpticalLens)\nElement(ConcaveLens, OpticalLens)\nThus, ConvexLens → ConcaveLens",
                 "perception": [
                     "Semantic Object",
@@ -505,7 +505,7 @@
                 ]
             }
         ],
-        "hop_count": 3
+        "hop_count": 1
     },
     {
         "foldername": "Exponential Growth Phenomena(phenomenon, phenomenon, mutual elements, NA, English)",
@@ -1048,7 +1048,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "Crop circles are intricate patterns created in fields, often attributed to mysterious origins, including UFO sightings. The first pair illustrates the common belief that UFOs are connected to the formation of crop circles, suggesting extraterrestrial involvement.",
+                "explanation": "Crop circles are intricate patterns created in fields, often attributed to mysterious origins, including UFO sightings. The pair illustrates the common belief that UFOs are connected to the formation of crop circles, suggesting extraterrestrial involvement.",
                 "path": "CropCircles(WheatField) ∧ CropCircles(UFO)\nThus, WheatField ∧ UFO → Cropcircles",
                 "perception": [
                     "Visual Similarity",
@@ -1062,7 +1062,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "the artist represents the human aspect of creativity and interpretation of these phenomena, while the illustration of an alien embodies the speculation about extraterrestrial life and their potential connection to crop circles.",
+                "explanation": "The artist represents the human aspect of creativity and interpretation of these phenomena, while the illustration of an alien embodies the speculation about extraterrestrial life and their potential connection to crop circles.",
                 "path": "CropCircles(Artist) ∧ CropCircles(Alien)\nThus, Artist ∧ Alien → Cropcircles",
                 "perception": [
                     "Visual Similarity",
@@ -1304,7 +1304,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "A sun dog, or parhelion, is an atmospheric phenomenon that appears as a bright spot on either side of the sun, caused by the refraction of sunlight passing through ice crystals in the atmosphere. The first pair illustrates the components of this phenomenon—bright spots and ice crystals. ",
+                "explanation": "A sun dog, or parhelion, is an atmospheric phenomenon that appears as a bright spot on either side of the sun, caused by the refraction of sunlight passing through ice crystals in the atmosphere. The pair illustrates the components of this phenomenon—bright spots and ice crystals. ",
                 "path": "SunDog(BrightSpot) ∧ SunDog(IceCrystals)\nThus, BrightSpot ∧ IceCrystals → sundog",
                 "perception": [
                     "Visual Similarity",
@@ -1317,7 +1317,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "the sun is the central element of the sun dog phenomenon, while the dog, in this context, serves as a playful reference to the term 'sun dog,' emphasizing the name rather than its literal meaning. ",
+                "explanation": "The sun is the central element of the sun dog phenomenon, while the dog, in this context, serves as a playful reference to the term 'sun dog,' emphasizing the name rather than its literal meaning. ",
                 "path": "SunDog(Sun) ∧ SunDog(Dog)\nThus, Sun ∧ Dog → sundog",
                 "perception": [
                     "Semantic Object",
@@ -1366,7 +1366,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The Wenchuan earthquake occurred in 2008 in Sichuan, China, resulting in significant devastation and loss of life. The first pair highlights the year and the location of this catastrophic event. Similarly, the Fukushima disaster in 2011 was triggered by a massive earthquake off the coast of Japan, which also led to a nuclear crisis.  ",
+                "explanation": "The Wenchuan earthquake occurred in 2008 in Sichuan, China, resulting in significant devastation and loss of life. The pair highlights the year and the location of this catastrophic event. ",
                 "path": "Event(Year2008, WenchuanEarthquake)\nThus, Year2008 → Earthquake and Wenchuan → Earthquake",
                 "perception": [
                     "Visual Similarity",
@@ -1380,7 +1380,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "The second pair underscores the year and the consequential disaster associated with the earthquake. Both pairs represent significant earthquakes that had profound impacts on their respective regions. ",
+                "explanation": "The Fukushima disaster in 2011 was triggered by a massive earthquake off the coast of Japan, which also led to a nuclear crisis. The pair underscores the year and the consequential disaster associated with the earthquake.",
                 "path": "Event(Year2011, FukushimaEarthquake)\nThus, Year2011 → Earthquake and Fukushima → Earthquake",
                 "perception": [
                     "Visual Similarity",
@@ -1430,7 +1430,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "Swallows are known for their migratory behavior, flying south to warmer climates during the winter months to escape the cold and find food. The first pair illustrates the connection between the swallow and winter migration. In Pair 2, elephants are known to migrate in search of water and food, especially during drought conditions when resources are scarce. ",
+                "explanation": "Swallows are known for their migratory behavior, flying south to warmer climates during the winter months to escape the cold and find food. The pair illustrates the connection between the swallow and winter migration.",
                 "path": "MigrationPattern(Swallow, WinterLandscape)\nThus, Swallow → Migration → WinterLandscape",
                 "perception": [
                     "Semantic Object",
@@ -1443,7 +1443,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "The second pair highlights the relationship between drought and the migratory patterns of elephants as they seek out more hospitable environments. ",
+                "explanation": " Elephants are known to migrate in search of water and food, especially during drought conditions when resources are scarce. The pair highlights the relationship between drought and the migratory patterns of elephants as they seek out more hospitable environments. ",
                 "path": "MigrationPattern(Elephant, DroughtAffectedLandscape)\nThus, Elephant → Migration → DroughtAffectedLandscape",
                 "perception": [
                     "Semantic Object",
@@ -1492,7 +1492,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "Protests and riots often arise in response to perceived injustices or offensive actions, reflecting the societal pushback associated with cancel culture, where individuals and groups seek to hold others accountable for their words or actions. The first pair illustrates the public demonstrations that can escalate into unrest. ",
+                "explanation": "Protests and riots often arise in response to perceived injustices or offensive actions, reflecting the societal pushback associated with cancel culture, where individuals and groups seek to hold others accountable for their words or actions. The pair illustrates the public demonstrations that can escalate into unrest. ",
                 "path": "DissentExpression(March, Riots)\nThus, March → Cancel culture and Riots → Cancel culture",
                 "perception": [
                     "Semantic Object",
@@ -1505,7 +1505,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "In the second pair, a burning book symbolizes censorship and the rejection of specific ideas or literature, while a boycott sign represents organized efforts to withdraw support from individuals, businesses, or products deemed problematic. ",
+                "explanation": "A burning book symbolizes censorship and the rejection of specific ideas or literature, while a boycott sign represents organized efforts to withdraw support from individuals, businesses, or products deemed problematic. ",
                 "path": "DissentExpression(BurningBook, BoycottSign)\nThus, BurningBook → Cancel culture and BoycottSign → Cancel culture",
                 "perception": [
                     "Semantic Object",
@@ -1554,7 +1554,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "TikTok and Instagram are both social media platforms known for their ability to create and spread viral trends rapidly. The first pair illustrates the platforms that serve as the breeding ground for viral content. ",
+                "explanation": "TikTok and Instagram are both social media platforms known for their ability to create and spread viral trends rapidly. The pair illustrates the platforms that serve as the breeding ground for viral content. ",
                 "path": "ViralTrend(TikTok) ∧ ViralTrend(Instagram)\nThus, TikTok ∧ Instagram → ViralTrend",
                 "perception": [
                     "Semantic Object",
@@ -1567,7 +1567,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "In the second pair, a high number of likes indicates a post that resonates well with viewers, while a high number of shares demonstrates the post's ability to spread beyond its original audience, both of which are key metrics for measuring the virality of content.",
+                "explanation": "A high number of likes indicates a post that resonates well with viewers, while a high number of shares demonstrates the post's ability to spread beyond its original audience, both of which are key metrics for measuring the virality of content.",
                 "path": "ViralTrend(HighLikes) ∧ ViralTrend(HighShares)\nThus, HighLikes ∧ HighShares → ViralTrend",
                 "perception": [
                     "Semantic Object",
@@ -2828,7 +2828,7 @@
             {
                 "pair_id": "2",
                 "explanation": "Reykjavik experiences 'polar night' during the winter months, where the sun does not rise for several weeks, resulting in prolonged darkness.",
-                "path": "KeyElement(Reykjavik, DarkNight)\nThus, Reykjavikpolar night → DarkNight",
+                "path": "KeyElement(Reykjavik, DarkNight)\nThus, Reykjavik → polar night → DarkNight",
                 "perception": [
                     "Visual Similarity",
                     "Contextual Sensory Cues"
@@ -2839,7 +2839,7 @@
                 ]
             }
         ],
-        "hop_count": 3
+        "hop_count": 2
     },
     {
         "foldername": "Cities known for extreme weather conditions(location, location, mutual elements, Arabic-Islamic, English)",
@@ -3523,8 +3523,8 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "the image of a bare tree in winter emphasizes the dormancy of nature, while the image of a leafy tree in spring illustrates the flourishing life and greenery that follows the winter season, highlighting the transition from winter to spring.",
-                "path": "SeasonalTransition(BareTreeWinter, LeafyTreeSpring)\nThus, BareTreeWinter → LeafyTreeSpring",
+                "explanation": "The image of a bare tree in winter emphasizes the dormancy of nature, while the image of a leafy tree in spring illustrates the flourishing life and greenery that follows the winter season, highlighting the transition from winter to spring.",
+                "path": "SeasonalTransition(BareTreeWinter, LeafyTreeSpring)\nThus, BareTreeWinter → Seasonal Transition → LeafyTreeSpring",
                 "perception": [
                     "Visual Similarity",
                     "Contextual Sensory Cues",
@@ -3537,7 +3537,7 @@
                 ]
             }
         ],
-        "hop_count": 3
+        "hop_count": 2
     },
     {
         "foldername": "Founded in the Same Year(time, time, mutual elements, NA, English)",
@@ -3708,7 +3708,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "the timer that measures time to the nearest 0.1 seconds showcases a further improvement in timing precision, while the timer that measures to the nearest 0.0001 seconds demonstrates the latest advancements in precision timing, highlighting the continuous evolution in the accuracy of time measurement.",
+                "explanation": "The timer that measures time to the nearest 0.1 seconds showcases a further improvement in timing precision, while the timer that measures to the nearest 0.0001 seconds demonstrates the latest advancements in precision timing, highlighting the continuous evolution in the accuracy of time measurement.",
                 "path": "TimingPrecision(Timer0.1, Timer0.0001)\nThus, Timer0.1 → Timing Precision → Timer0.0001",
                 "perception": [
                     "Visual Similarity",
@@ -4318,7 +4318,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The first pair illustrates the \"spring forward\" aspect of Daylight Saving Time (DST), where clocks are set forward by one hour, moving from 2:00 AM to 3:00 AM.",
+                "explanation": "The pair illustrates the \"spring forward\" aspect of Daylight Saving Time (DST), where clocks are set forward by one hour, moving from 2:00 AM to 3:00 AM.",
                 "path": "DaylightSavingTime(SpringForward, 2AM, 3AM)\nThus, 2AM → Daylight Saving Time and 3AM → Daylight Saving Time",
                 "perception": [
                     "Semantic Object"
@@ -4330,7 +4330,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "The second pair symbolizes the benefits of DST, where increased sunlight hours in the evening are particularly relevant in Europe, where many countries observe this practice to make better use of natural daylight.",
+                "explanation": "The pair symbolizes the benefits of DST, where increased sunlight hours in the evening are particularly relevant in Europe, where many countries observe this practice to make better use of natural daylight.",
                 "path": "DaylightSavingTime(Sunlight, EuropeMap)\nThus, Sunlight → Daylight Saving Time and EuropeMap → Daylight Saving Time",
                 "perception": [
                     "Semantic Object"
@@ -4391,7 +4391,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "The second pair represents the mathematical rules that determine leap years: a year is a leap year if it is divisible by 4, with the exception that it must also be divisible by 400 to remain a leap year. ",
+                "explanation": "The pair represents the mathematical rules that determine leap years: a year is a leap year if it is divisible by 4, with the exception that it must also be divisible by 400 to remain a leap year. ",
                 "path": "LeapYearRule(DivisibleBy4)\nLeapYearException(DivisibleBy400)\nThus, DivisibleBy4 → Leap Years and DivisibleBy400 → Leap Years",
                 "perception": [
                     "Visual Similarity",
@@ -4440,7 +4440,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The first pair represents how trees show their age through annual rings, with each ring indicating a year of growth.",
+                "explanation": "The pair represents how trees show their age through annual rings, with each ring indicating a year of growth.",
                 "path": "Ageing(GrowthRings, Tree)\nThus, Tree → Ageing → GrowthRings",
                 "perception": [
                     "Visual Similarity",
@@ -4453,7 +4453,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "The second pair shows bamboo, which grows in segments or nodes, with each node representing a stage in its development. ",
+                "explanation": "The pair shows bamboo, which grows in segments or nodes, with each node representing a stage in its development. ",
                 "path": "Ageing(GrowthNodes, Bamboo)\nThus, Bamboo → Ageing → GrowthNodes",
                 "perception": [
                     "Visual Similarity",
@@ -5001,7 +5001,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The first pair relates to the Japanese proverb '猿も木から落ちる' (Saru mo ki kara ochiru), which translates to 'Even monkeys fall from trees,' implying that everyone makes mistakes, regardless of their skill.",
+                "explanation": "The pair relates to the Japanese proverb '猿も木から落ちる' (Saru mo ki kara ochiru), which translates to 'Even monkeys fall from trees,' implying that everyone makes mistakes, regardless of their skill.",
                 "path": "Proverb(Monkey, Tree)\nThus, Monkey → Japanese Proverbs and Tree → Japanese Proverbs",
                 "perception": [
                     "Semantic Object",
@@ -5015,7 +5015,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "The second pair connects to the proverb '出る釘は打たれる' (Deru kugi wa utareru), meaning 'The nail that sticks out gets hammered down,' suggesting that those who stand out may face criticism or backlash. Both pairs illustrate these proverbs through their respective images. ",
+                "explanation": "The pair connects to the proverb '出る釘は打たれる' (Deru kugi wa utareru), meaning 'The nail that sticks out gets hammered down,' suggesting that those who stand out may face criticism or backlash. Both pairs illustrate these proverbs through their respective images. ",
                 "path": "Proverb(ProtrudingNail, Hammer)\nThus, ProtrudingNail → Japanese Proverbs and Hammer → Japanese Proverbs",
                 "perception": [
                     "Semantic Object",
@@ -5197,7 +5197,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The first pair references the famous haiku by Matsuo Bashō: \"柿くへば鐘が鳴るなり法隆寺\" (When I eat a persimmon, the bell rings at Hōryū-ji). This haiku captures the sensory experience of autumn through the imagery of a persimmon and the sound of a temple bell, evoking a peaceful moment in nature. ",
+                "explanation": "The pair references the famous haiku by Matsuo Bashō: \"柿くへば鐘が鳴るなり法隆寺\" (When I eat a persimmon, the bell rings at Hōryū-ji). This haiku captures the sensory experience of autumn through the imagery of a persimmon and the sound of a temple bell, evoking a peaceful moment in nature. ",
                 "path": "FamousHaiku(Persimmon, TempleBell)\nThus, Persimmon → はいく and TempleBell → はいく",
                 "perception": [
                     "Semantic Object"
@@ -5209,7 +5209,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "The second pair refers to another classic haiku by Matsuo Bashō: \"古池や蛙飛び込む水の音\" (An old pond; a frog jumps in—sound of water). This haiku emphasizes the simplicity and beauty of nature, highlighting the serene moment of a frog leaping into a pond. ",
+                "explanation": "The pair refers to another classic haiku by Matsuo Bashō: \"古池や蛙飛び込む水の音\" (An old pond; a frog jumps in—sound of water). This haiku emphasizes the simplicity and beauty of nature, highlighting the serene moment of a frog leaping into a pond. ",
                 "path": "FamousHaiku(Frog, Pond)\nThus, Frog → はいく and Pond → はいく",
                 "perception": [
                     "Semantic Object"
@@ -5257,7 +5257,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The first pair references the theme of the fleeting nature of beauty and life, as encapsulated in the Japanese poem \"花の色は移りにけりな\" (The color of flowers fades away). The vibrant flower symbolizes youth and beauty, while the faded flower represents the passage of time and the inevitable decline of beauty.",
+                "explanation": "The pair references the theme of the fleeting nature of beauty and life, as encapsulated in the Japanese poem \"花の色は移りにけりな\" (The color of flowers fades away). The vibrant flower symbolizes youth and beauty, while the faded flower represents the passage of time and the inevitable decline of beauty.",
                 "path": "Transience(FlowerColors)\nThus, VibrantFlower → Transience and FadedFlower → Transience",
                 "perception": [
                     "Visual Similarity",
@@ -5272,7 +5272,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "Similarly, the second pair reflects the progression of life, where the middle-aged man symbolizes vitality and strength, while the elderly person indicates the wisdom and fragility that comes with age.  ",
+                "explanation": "The pair reflects the progression of life, where the middle-aged man symbolizes vitality and strength, while the elderly person indicates the wisdom and fragility that comes with age.  ",
                 "path": "LifeStages(MiddleAged, Elderly)\nThus, MiddleAged → LifeStages and Elderly → LifeStages",
                 "perception": [
                     "Visual Similarity",
@@ -5323,7 +5323,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The first pair connects through the Japanese pronunciation of \"虫\" (mushi, meaning insect) and \"蒸汽\" (mushī, meaning steam). The similarity in their sounds makes them a notable pair.",
+                "explanation": "The pair connects through the Japanese pronunciation of \"虫\" (mushi, meaning insect) and \"蒸汽\" (mushī, meaning steam). The similarity in their sounds makes them a notable pair.",
                 "path": "SoundSimilarity(Insect, Steam)\nThus, Insect → SoundSimilarity and Steam → SoundSimilarity",
                 "perception": [
                     "Visual Similarity",
@@ -5337,7 +5337,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "The second pair connects through \"拥挤\" (yōngjǐ, meaning crowded) and \"牛肉\" (niúròu, meaning beef), which can be pronounced similarly to \"ぎゅうぎゅう\" (gyūgyū) in Japanese, an onomatopoeic term that describes a tight or crowded situation.",
+                "explanation": "The pair connects through \"拥挤\" (yōngjǐ, meaning crowded) and \"牛肉\" (niúròu, meaning beef), which can be pronounced similarly to \"ぎゅうぎゅう\" (gyūgyū) in Japanese, an onomatopoeic term that describes a tight or crowded situation.",
                 "path": "SoundSimilarity(Crowded, Beef)\nThus, Crowded → SoundSimilarity and Beef → SoundSimilarity",
                 "perception": [
                     "Visual Similarity",
@@ -5831,7 +5831,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "In Korean, '화장실' (hwajangsil) refers to a restroom, while '방' (bang) means 'room' in general. The first pair relates to specific types of rooms",
+                "explanation": "In Korean, '화장실' (hwajangsil) refers to a restroom, while '방' (bang) means 'room' in general. The pair relates to specific types of rooms",
                 "path": "Type(화장실, Restroom)\nType(방, GeneralRoom)\nThus, 화장실 → 방 → 화장실 and 방",
                 "perception": [
                     "Semantic Object"
@@ -5844,7 +5844,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": " the second pair connects 'room' with 'bread', as '방' can also refer to a 'bread room' in a playful or metaphorical sense, illustrating the versatility of the term.",
+                "explanation": "The pair connects 'room' with 'bread', as '방' can also refer to a 'bread room' in a playful or metaphorical sense, illustrating the versatility of the term.",
                 "path": "Type(방, Room)\nType(면빵, Bread)\nThus, 방 → 면빵 → 화장실 and 방",
                 "perception": [
                     "Semantic Object"
@@ -6082,7 +6082,7 @@
             {
                 "pair_id": "1",
                 "explanation": "The curved roof and tiled roof are distinctive architectural features of Hanok, representing the aesthetic and functional aspects of traditional Korean roofing styles. ",
-                "path": "ArchitecturalFeatures(Hanok, CurvedRoof, TiledRoof)\nThus, curved roof → 한옥 and tiled roof → 한옥",
+                "path": "ArchitecturalFeatures(Hanok, CurvedRoof, TiledRoof)\nThus, curved roof ∧ tiled roof → 한옥",
                 "perception": [
                     "Visual Similarity",
                     "Contextual Sensory Cues"
@@ -6108,7 +6108,7 @@
                 ]
             }
         ],
-        "hop_count": 3
+        "hop_count": 1
     },
     {
         "foldername": "traditional Korean temples(art, art, mutual elements, East Asia, Korean)",
@@ -6213,7 +6213,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The first image, depicting a parasite, directly relates to the South Korean film Parasite (기생충), which is renowned for its unique storytelling and critical success.",
+                "explanation": "The image, depicting a parasite, directly relates to the South Korean film Parasite (기생충), which is renowned for its unique storytelling and critical success.",
                 "path": "KeyElement(Parasite, ParasiteFilm)\nThus, Parasite → Korean Movies → ParasiteFilm",
                 "perception": [
                     "Visual Similarity",
@@ -6227,7 +6227,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "the third image, which shows a zombie, relates to the South Korean film Train to Busan (부산행), a highly acclaimed zombie thriller that gained international popularity. ",
+                "explanation": "The image, which shows a zombie, relates to the South Korean film Train to Busan (부산행), a highly acclaimed zombie thriller that gained international popularity. ",
                 "path": "KeyElement(Zombie, TrainToBusanFilm)\nThus, Zombie → Korean Movies → TrainToBusanFilm",
                 "perception": [
                     "Visual Similarity",
@@ -6278,7 +6278,7 @@
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The first image is a memorable scene from My Love from the Star (별에서 온 그대), which features the song 'My Destiny' (내 운명) as its theme, reflecting the drama's romantic essence. ",
+                "explanation": "One image is a memorable scene from My Love from the Star (별에서 온 그대), which features the song 'My Destiny' (내 운명) as its theme, reflecting the drama's romantic essence. ",
                 "path": "KeyElement(DramaScene1, MyLoveFromTheStarThemeSong)\nThus, DramaScene1 → Theme Songs → MyLoveFromTheStarThemeSong",
                 "perception": [
                     "Visual Similarity",
@@ -6291,7 +6291,7 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "the third image is a scene from Descendants of the Sun (태양의 후예), which is associated with the song 'Always,' encapsulating the emotional and heroic themes present in the series.",
+                "explanation": "One image is a scene from Descendants of the Sun (태양의 후예), which is associated with the song 'Always,' encapsulating the emotional and heroic themes present in the series.",
                 "path": "KeyElement(DramaScene2, DescendantsOfTheSunThemeSong)\nThus, DramaScene2 → Theme Songs → DescendantsOfTheSunThemeSong",
                 "perception": [
                     "Visual Similarity",
