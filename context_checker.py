@@ -5,7 +5,17 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # get the directory of th
 INCONTEXT_DIR = os.path.join(
     BASE_DIR, "Incontext_Images"
 )  # get the directory of incontext
-names_list = ["lny"]
+names_list = [
+    "djt",
+    "fxt",
+    "ljf",
+    "lny",
+    "tc",
+    "wjl",
+    "wzd",
+    "zdw",
+    "zhb",
+]
 print(names_list)
 
 per_set = set(
@@ -138,6 +148,55 @@ for name in names_list:
     print("total: ", data_total)
 
     for item in data:
+        if "perception" not in item["reasoning"][0]:
+            print("Error: perception is missing in %s!" % item["foldername"])
+        else:
+            if len(set(item["reasoning"][0]["perception"])) != len(
+                item["reasoning"][0]["perception"]
+            ):
+                print("Error: duplicate per label in %s!" % item["foldername"])
+            for per in item["reasoning"][0]["perception"]:
+                if per not in per_set:
+                    print(
+                        "Error: perception label is wrong in %s!" % item["foldername"]
+                    )
+        if "conception" not in item["reasoning"][0]:
+            print("Error: conception is missing in %s!" % item["foldername"])
+        else:
+            if len(set(item["reasoning"][0]["conception"])) != len(
+                item["reasoning"][0]["conception"]
+            ):
+                print("Error: duplicate con label in %s!" % item["foldername"])
+            for con in item["reasoning"][0]["conception"]:
+                if con not in con_set:
+                    print(
+                        "Error: conception label is wrong in %s!" % item["foldername"]
+                    )
+        if "perception" not in item["reasoning"][1]:
+            print("Error: perception is missing in %s!" % item["foldername"])
+        else:
+            if len(set(item["reasoning"][1]["perception"])) != len(
+                item["reasoning"][1]["perception"]
+            ):
+                print("Error: duplicate per label in %s!" % item["foldername"])
+            for per in item["reasoning"][1]["perception"]:
+                if per not in per_set:
+                    print(
+                        "Error: perception label is wrong in %s!" % item["foldername"]
+                    )
+        if "conception" not in item["reasoning"][1]:
+            print("Error: concept is missing in %s!" % item["foldername"])
+        else:
+            if len(set(item["reasoning"][1]["conception"])) != len(
+                item["reasoning"][1]["conception"]
+            ):
+                print("Error: duplicate con label in %s!" % item["foldername"])
+            for con in item["reasoning"][1]["conception"]:
+                if con not in con_set:
+                    print(
+                        "Error: conception label is wrong in %s!" % item["foldername"]
+                    )
+
         if "type" not in item:
             print("Error: type is missing in %s!" % item["foldername"])
         elif item["type"] not in type_set:
@@ -174,7 +233,8 @@ for name in names_list:
         else:
             if item["hop_count"] != path1.count("→"):
                 item["hop_count"] = path1.count("→")
-                write_json(data_path, data)
+                # write_json(data_path, data)
                 print("Update hop count in %s!" % item["foldername"])
+    print(data_language_set)
 
 print("Done!")
