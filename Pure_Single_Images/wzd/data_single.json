@@ -870,7 +870,7 @@
             }
         ],
         "explanation": "Archimedes' tomb is famously marked with a sphere inscribed within a cylinder, a geometric representation of one of his mathematical achievements involving the calculation of π. The second image, a slice of apple pie, represents a circle (or part of one), and the circumference and area of a circle are calculated using π. Therefore, both images, though seemingly disparate, relate back to the mathematical constant π.",
-        "reasoning": "Relate(SphereCylinder, Pi) and Engrave(ArchimedesTomb, SphereCylinder)\nContain(ApplePie, CircularShape) and Relate(CircularShape, Pi)\nContain(ApplePie, CircularShape) and Relate(CircularShape, Pi)",
+        "reasoning": "Relate(SphereCylinder, Pi) and Engrave(ArchimedesTomb, SphereCylinder)\nContain(ApplePie, CircularShape) and Relate(CircularShape, Pi)\nApplePie → CircularShape → Pi and ArchimedesTomb → SphereCylinder → Pi",
         "perception": [
             "Visual Similarity",
             "Semantic Object",
@@ -881,7 +881,7 @@
             "Thematic Links",
             "Analogical Reasoning"
         ],
-        "hop_count": 0
+        "hop_count": 4
     },
     {
         "foldername": "E=mc^2(visible, STEM, metaphor, NA, English)",

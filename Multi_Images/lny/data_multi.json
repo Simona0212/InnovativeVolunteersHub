@@ -22,8 +22,8 @@
             }
         ],
         "explanation": "The combination of binary code and a light switch symbolizes the concept of binary states in computing, where 0 represents \"off\" and 1 represents \"on.\" The light switch serves as a physical representation of these binary states, illustrating how digital systems operate through simple on/off signals.",
-        "reasoning": "BinaryCode∧LightSwitch=0or1",
-        "hop_count": 0,
+        "reasoning": "BinaryCode∧LightSwitch → 0or1",
+        "hop_count": 1,
         "perception": [
             "Semantic Object",
             "Scene Contextualization"
@@ -189,8 +189,8 @@
             }
         ],
         "explanation": "The series of prime numbers represents the fundamental building blocks of number theory, which are often used in cryptography for secure communications. The security lock symbolizes the concept of security and protection, as many encryption algorithms rely on prime numbers to ensure data integrity and confidentiality.",
-        "reasoning": "PrimeNumbers∧SecurityLock=Cryptography",
-        "hop_count": 0,
+        "reasoning": "PrimeNumbers∧SecurityLock → Cryptography",
+        "hop_count": 1,
         "perception": [
             "Abstract Interpretation"
         ],
@@ -287,8 +287,8 @@
             }
         ],
         "explanation": "\"A basketball team typically consists of 5 players on the court, while a complete team may have 7 players including substitutes.\" The first image represents the concept of a team with 7 pieces on a chessboard, symbolizing strategy and teamwork. The second image depicts a basketball court featuring 5 players, illustrating the number of players actively participating in a game.",
-        "reasoning": "ChessBoard∧BasketBallCourt=7",
-        "hop_count": 0,
+        "reasoning": "ChessBoard∧BasketBallCourt → 7",
+        "hop_count": 1,
         "perception": [
             "Relational Perception"
         ],
@@ -320,8 +320,8 @@
             }
         ],
         "explanation": "The infinity symbol represents the concept of endlessness or an unbounded quantity. The Möbius strip is a mathematical object that illustrates a non-orientable surface with one continuous side, often used to symbolize the idea of infinity and continuity in mathematics and art.",
-        "reasoning": "InfinitySymbol∧MöbiusStrip=Infinity",
-        "hop_count": 0,
+        "reasoning": "InfinitySymbol∧MöbiusStrip → Infinity",
+        "hop_count": 1,
         "perception": [
             "Visual Similarity"
         ],
@@ -450,8 +450,8 @@
             }
         ],
         "explanation": "The phrase \"50-50\" signifies equal odds of two possible outcomes, while the act of flipping a coin represents a practical method of demonstrating those equal probabilities. Together, they convey the concept of chance and uncertainty in decision-making.",
-        "reasoning": "Probability∧CoinFlip=Chance",
-        "hop_count": 0,
+        "reasoning": "Probability∧CoinFlip → Chance",
+        "hop_count": 1,
         "perception": [
             "Semantic Object",
             "Relational Perception"
@@ -483,8 +483,8 @@
             }
         ],
         "explanation": "The number \"1001\" refers to the famous collection of Middle Eastern folk tales known as \"One Thousand and One Nights\" or \"Arabian Nights.\" The storytelling scene represents the narrative tradition of captivating tales that unfold over the course of the nights, where Scheherazade tells stories to delay her fate. Together, they symbolize the rich literary heritage of these tales.",
-        "reasoning": "1001∧StoryTeller=OneThousandAndOneNights",
-        "hop_count": 0,
+        "reasoning": "1001∧StoryTeller → OneThousandAndOneNights",
+        "hop_count": 1,
         "perception": [
             "Semantic Object",
             "Scene Contextualization"
@@ -517,7 +517,7 @@
             }
         ],
         "explanation": "Checkpoint Charlie was a famous crossing point on the Berlin Wall, symbolizing the Cold War tensions. The Bay of Pigs invasion, a failed attempt to overthrow Fidel Castro, heightened Cold War tensions and arguably contributed to the circumstances leading to the Cuban Missile Crisis, which further solidified the divided world exemplified by the Berlin Wall.",
-        "reasoning": "Symbolizes(CheckpointCharlie, ColdWarTension)\nIncreased(BayOfPigs, ColdWarTension)\nThus, CheckpointCharlie → ColdWarTension → BayOfPigs and BayOfPigs → ColdWarTension → CheckpointCharlie",
+        "reasoning": "Symbolizes(CheckpointCharlie, ColdWarTension)\nIncreased(BayOfPigs, ColdWarTension)\nThus, CheckpointCharlie → ColdWar → BayOfPigs and BayOfPigs → ColdWar → CheckpointCharlie",
         "hop_count": 4,
         "perception": [
             "Semantic Object",
@@ -584,8 +584,8 @@
             }
         ],
         "explanation": "Winston Churchill's leadership during WWII. Churchill was often compared to a bulldog for his tenacity and resoluteness. The Blitz represents the darkest hours of WWII for Britain, a period during which Churchill's leadership was crucial.",
-        "reasoning": "Bulldog∧LondonBlitz=WorldWarII",
-        "hop_count": 0,
+        "reasoning": "Bulldog∧LondonBlitz → WorldWarII",
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Scene Contextualization"
@@ -617,8 +617,8 @@
             }
         ],
         "explanation": "The Mona Lisa's fame and ubiquity. The Louvre is where the original Mona Lisa is housed, indicating its high artistic value. The poster represents its mass reproduction and how it has become a commonplace image.",
-        "reasoning": "LouvreMuseum∧MonaLisa=Renaissance",
-        "hop_count": 0,
+        "reasoning": "LouvreMuseum∧MonaLisa → Renaissance",
+        "hop_count": 1,
         "perception": [
             "Scene Contextualization"
         ],
@@ -817,8 +817,8 @@
             }
         ],
         "explanation": "The Silk Road. Camel caravans were the primary mode of transportation along the Silk Road. Silk fabric, along with spices, were key traded goods along this historical network.",
-        "reasoning": "SilkRoadMap∧Spices=TheSilkRoad",
-        "hop_count": 0,
+        "reasoning": "SilkRoadMap∧Spices → TheSilkRoad",
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Scene Contextualization"
@@ -850,8 +850,8 @@
             }
         ],
         "explanation": "The Protestant Reformation. Martin Luther's Ninety-Five Theses, challenging the Catholic Church, sparked the Protestant Reformation. The printing press allowed for the widespread dissemination of the Bible in vernacular languages, which was a key factor in the Reformation's success.",
-        "reasoning": "95Theses∧PrintingPress=Reformation",
-        "hop_count": 0,
+        "reasoning": "95Theses∧PrintingPress → Reformation",
+        "hop_count": 1,
         "perception": [
             "Semantic Object",
             "Relational Perception"
@@ -916,8 +916,8 @@
             }
         ],
         "explanation": "\"The iceberg is famously known for being the cause of the Titanic disaster, while the boarding pass signifies the passengers who embarked on the ill-fated journey.\" The iceberg represents the critical moment of collision, and the boarding pass symbolizes the lives that were forever affected by the tragedy.",
-        "reasoning": "Iceberg∧Vintage=Titanic",
-        "hop_count": 0,
+        "reasoning": "Iceberg∧Vintage → Titanic",
+        "hop_count": 1,
         "perception": [
             "Visual Similarity",
             "Semantic Object",
@@ -984,8 +984,8 @@
             }
         ],
         "explanation": "Carnival. Colorful costumes are a hallmark of Carnival celebrations. Brightly decorated trucks, often carrying musicians and dancers, are a key feature of Carnival parades.",
-        "reasoning": "SambaMusic∧ParadeRoute=Carnival",
-        "hop_count": 0,
+        "reasoning": "SambaMusic∧ParadeRoute → Carnival",
+        "hop_count": 1,
         "perception": [
             "Scene Contextualization"
         ],
@@ -1148,8 +1148,8 @@
             }
         ],
         "explanation": "Representing facets of East Asia animation. Totoro is an iconic character from Studio Ghibli, known for its heartwarming stories and distinctive animation style. Giant robots are a common trope in many anime series, showcasing action and mecha genres",
-        "reasoning": "Totoro∧GiantRobot=JapanseAnimation",
-        "hop_count": 0,
+        "reasoning": "Totoro∧GiantRobot → JapanseAnimation",
+        "hop_count": 1,
         "perception": [
             "Visual Similarity",
             "Semantic Object"
@@ -1181,8 +1181,8 @@
             }
         ],
         "explanation": "Aspects of filmmaking. The red carpet symbolizes the glamour and prestige associated with film festivals like Cannes. A handheld camera is often used in Cinéma vérité filmmaking, a style emphasizing realism and naturalism, often foregoing traditional cinematic techniques.",
-        "reasoning": "RedCarpet∧HandheldCamera=CinemaVerite",
-        "hop_count": 0,
+        "reasoning": "RedCarpet∧HandheldCamera → CinemaVerite",
+        "hop_count": 1,
         "perception": [
             "Semantic Object",
             "Relational Perception"
@@ -1279,8 +1279,8 @@
             }
         ],
         "explanation": "\"Mickey Mouse\". White gloves are a highly distinctive feature of Mickey Mouse's attire. Large circular ears are another instantly recognizable characteristic of Mickey Mouse.",
-        "reasoning": "WhiteGloves∧LargeCircularEars=MickeyMouse",
-        "hop_count": 0,
+        "reasoning": "WhiteGloves∧LargeCircularEars → MickeyMouse",
+        "hop_count": 1,
         "perception": [
             "Semantic Object",
             "Relational Perception"
@@ -1443,8 +1443,8 @@
             }
         ],
         "explanation": "Common visual elements in anime. Large, expressive eyes are a stylistic hallmark of many anime characters. Katanas are frequently featured weapons in various anime genres, from samurai stories to fantasy adventures.",
-        "reasoning": "AnimeEyes∧Katana=Anime\n",
-        "hop_count": 0,
+        "reasoning": "AnimeEyes∧Katana → Anime\n",
+        "hop_count": 1,
         "perception": [
             "Semantic Object"
         ],
@@ -1475,8 +1475,8 @@
             }
         ],
         "explanation": "Input methods on a game controller. A D-pad (directional pad) is a button arrangement allowing for four-directional input. A joystick is an input device allowing for more nuanced, multi-directional control. Both are commonly found on video game controllers.",
-        "reasoning": "DPad∧Joystick=Controller",
-        "hop_count": 0,
+        "reasoning": "DPad∧Joystick → Controller",
+        "hop_count": 1,
         "perception": [
             "Visual Similarity",
             "Semantic Object"
@@ -1543,8 +1543,8 @@
             }
         ],
         "explanation": "Core elements of tabletop RPGs. A twenty-sided die (d20) is frequently used in tabletop RPGs for resolving actions and determining outcomes. A character sheet with stats details a player's character's attributes and abilities, essential for gameplay.",
-        "reasoning": "TwentySidedDie∧CharacterSheet=RPGGame",
-        "hop_count": 0,
+        "reasoning": "TwentySidedDie∧CharacterSheet → RPGGame",
+        "hop_count": 1,
         "perception": [
             "Scene Contextualization",
             "Relational Perception"
@@ -1710,8 +1710,8 @@
             }
         ],
         "explanation": "Key elements of hip hop music creation. Turntables are used for scratching and creating beats, a foundational element of hip hop. Microphones are essential for rapping, the other core component of the genre.",
-        "reasoning": "Turntable∧Microphone=HipHop",
-        "hop_count": 0,
+        "reasoning": "Turntable∧Microphone → HipHop",
+        "hop_count": 1,
         "perception": [
             "Relational Perception"
         ],
@@ -1908,8 +1908,8 @@
             }
         ],
         "explanation": "A red rose symbolizes passion and romance, often associated with Tango. An embracing couple represents the close physical connection inherent in the dance.",
-        "reasoning": "RedRose∧EmbracingCouple=Tango",
-        "hop_count": 0,
+        "reasoning": "RedRose∧EmbracingCouple → Tango",
+        "hop_count": 1,
         "perception": [
             "Contextual Sensory Cues",
             "Scene Contextualization"

@@ -135,7 +135,7 @@
         "relation": "Ball lightning",
         "visibility": "visible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -167,7 +167,7 @@
         "relation": "Bavarian culture",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "Non-English European",
         "language": "English",
         "images": [
@@ -361,7 +361,7 @@
         "relation": "Ephemeral thing",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -376,9 +376,9 @@
                 "description": "Blown out candle"
             }
         ],
-        "explanation": "'Ephemeral',meaning transient or short-lived. A dandelion seedhead disperses quickly in the wind, representing fleeting existence. A blown-out candle signifies the end of something that once burned brightly, also symbolizing a brief duration.",
-        "reasoning": "Symbolizes(DandelionSeedhead, FleetingExistence)\nSymbolizes(BlownOutCandle, EndedLight/BriefDuration).\nThus, DandelionSeedhead → FleetingExistence → Ephemeral and BlownOutCandle → BriefDuration → Ephemeral",
-        "hop_count": 4,
+        "explanation": "'Ephemeral',meaning transient or short-lived. Dandelion seeds can be blown away by the wind, candle flames can be extinguished by the wind, both can be acted upon by the wind",
+        "reasoning": "Extinguished(DandelionSeedhead, Wind)\nExtinguished(CandleFlames, Wind).\nThus, DandelionSeedhead → Wind and BlownOutCandle → Wind",
+        "hop_count": 2,
         "perception": [
             "Visual Similarity",
             "Semantic Object",
@@ -474,7 +474,7 @@
             }
         ],
         "explanation": "The sunrise over a mountain peak symbolizes overcoming challenges and reaching a new height with the promise of a fresh start. The figure emerging from the tunnel represents leaving darkness and hardship behind, entering into the light of a new chapter.",
-        "reasoning": "Symbolizes(SunriseOverMountainPeak, OvercomingChallenges ∧ NewBeginning)\nRepresents(FigureEmergingFromTunnel, LeavingDarkness ∧ EnteringLight ∧ NewBeginning).\nThus, SunriseOverMountainPeak → Hope and NewBeginnings ← FigureEmergingFromTunnel",
+        "reasoning": "Symbolizes(SunriseOverMountainPeak, OvercomingChallenges ∧ NewBeginning)\nRepresents(FigureEmergingFromTunnel, LeavingDarkness ∧ EnteringLight ∧ NewBeginning).\nThus, SunriseOverMountainPeak ∧ FigureEmergingFromTunnel → HopeNew and Beginnings",
         "hop_count": 1,
         "perception": [
             "Visual Similarity",
@@ -620,7 +620,7 @@
         "relation": "Lacquer Fan",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "East Asia",
         "language": "English",
         "images": [
@@ -653,7 +653,7 @@
         "relation": "mysterious and unknown dark matter",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -844,7 +844,7 @@
         "relation": "Samba and Carnival",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "Latin American",
         "language": "English",
         "images": [
@@ -975,7 +975,7 @@
         "relation": "Supernova",
         "visibility": "visible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1007,7 +1007,7 @@
         "relation": "symbolize the concept of freedom",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "metaphor",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1070,7 +1070,7 @@
         "relation": "the passage of time",
         "visibility": "invisible",
         "domain": "phenomenon",
-        "type": "relation",
+        "type": "mutual elements",
         "culture": "N/A",
         "language": "English",
         "images": [
@@ -1167,7 +1167,7 @@
         "relation": "Zeus",
         "visibility": "invisible",
         "domain": "culture",
-        "type": "mutual elements",
+        "type": "relation",
         "culture": "Non-English European",
         "language": "English",
         "images": [
