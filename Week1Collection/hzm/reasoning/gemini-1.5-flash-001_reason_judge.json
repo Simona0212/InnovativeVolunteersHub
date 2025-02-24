@@ -1,0 +1,3541 @@
+{
+    "Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English)": {
+        "path": "Consume(Rabbit, PlantsAndVegetables) and Derive(Chocolate, CocoaBeans) and Suggest(BrokenChocolateBar, FoodSource) Thus, Rabbit → Consumer → PlantsAndVegetables and Chocolate → CocoaBeans",
+        "hop_quality": {
+            "Rabbit → Consumer": [
+                0.8,
+                0.5,
+                1
+            ],
+            "Consumer → PlantsAndVegetables": [
+                0.7,
+                0.3,
+                1
+            ],
+            "Chocolate → CocoaBeans": [
+                1.0,
+                1.0,
+                1
+            ],
+            "BrokenChocolateBar → FoodSource": [
+                0.4,
+                0.2,
+                1
+            ]
+        },
+        "explanation": "The MLLM created an indirect connection between the rabbit and chocolate through the concept of food consumption and sourcing. However, the logical link is irrelevant to the specific cultural context of Easter. The relationship between the rabbit and consumer is reasonable but lacks inferred specificity regarding chocolate relevance within that consumption context."
+    },
+    "Elvis Presley(invisible, music, mutual elements, USAEnglish, English)": {
+        "path": "Represent(BlueSuedeShoes, ClassicLook) and Symbolize(MicrophoneWithCrown, ModernPower) Thus, BlueSuedeShoes → ClassicLook → TraditionalPower and MicrophoneWithCrown → ModernPower → Influence",
+        "hop_quality": {
+            "BlueSuedeShoes → ClassicLook": [
+                0.6,
+                0.3,
+                0
+            ],
+            "ClassicLook → TraditionalPower": [
+                0.5,
+                0.2,
+                0
+            ],
+            "MicrophoneWithCrown → ModernPower": [
+                0.7,
+                0.4,
+                0
+            ],
+            "ModernPower → Influence": [
+                0.6,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM focused on abstract concepts of power and influence neglecting a direct cultural reference to Elvis Presley, which was central to the original task. The primary connections were too broad and general, missing the opportunity to highlight Elvis's historical impact and influence directly."
+    },
+    "Forrest Gump's box of chocolates(visible, movie, relation, USAEnglish, English)": {
+        "path": "Represent(ChocolateBox, Comfort) and Suggest(ChocolateBoxNextToMan, ComfortSymbol) Thus, Chocolate → Comfort → ComfortSymbol and ManWithChocolateBox → ComfortSymbol → Solace",
+        "hop_quality": {
+            "Chocolate → Comfort": [
+                0.85,
+                0.5,
+                1
+            ],
+            "Comfort → ComfortSymbol": [
+                0.8,
+                0.4,
+                0
+            ],
+            "ManWithChocolateBox → ComfortSymbol": [
+                0.7,
+                0.5,
+                1
+            ],
+            "ComfortSymbol → Solace": [
+                0.75,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM's explanation revolved around comfort tied to chocolates and happiness, providing a thoughtful but superficial perspective compared to the more profound cultural reference to the iconic Forrest Gump quote. While the idea of comfort is logical, the specificity and deep cultural understanding are lacking."
+    },
+    "sun(visible, STEM, mutual elements, NA, English)": {
+        "path": "Harness(SolarPanel, SolarEnergy) and Utilize(Sunflower, SunlightForGrowth) Thus, SolarPanel → SolarEnergy → Sun'sEnergy and Sunflower → Sunlight → Sun'sEnergy",
+        "hop_quality": {
+            "SolarPanel → SolarEnergy": [
+                1.0,
+                1.0,
+                1
+            ],
+            "SolarEnergy → Sun'sEnergy": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Sunflower → Sunlight": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Sunlight → Sun'sEnergy": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM correctly identified and constructed a well-reasoned path involving harnessing and utilizing solar energy. The reference to the sun's pivotal role is logically sound and precise, reflecting knowledgeable consideration similar to the reference answer."
+    },
+    "Halloween(invisible, culture, mutual elements, USAEnglish, English)": {
+        "path": "Symbolize(Pumpkin, Halloween) and Depict(TrickOrTreat, HalloweenActivity) Thus, Pumpkin → HalloweenSymbol → Halloween and TrickOrTreat → HalloweenActivity → Halloween",
+        "hop_quality": {
+            "Pumpkin → HalloweenSymbol": [
+                1.0,
+                1.0,
+                1
+            ],
+            "HalloweenSymbol → Halloween": [
+                1.0,
+                1.0,
+                1
+            ],
+            "TrickOrTreat → HalloweenActivity": [
+                1.0,
+                1.0,
+                1
+            ],
+            "HalloweenActivity → Halloween": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM output effectively mirrored the cultural symbolism and associations of Halloween through pumpkins and trick-or-treating. The clear depiction and symbolism depicted align perfectly with domain understanding, displaying uniform excellence similar to the reference."
+    },
+    "Leonardo da Vinci(invisible, people, mutual elements, Non-English European, English)": {
+        "path": "Depict(AnatomicalIllustration, HumanForm) and Highlight(MonaLisaPortrait, HumanForm)",
+        "hop_quality": {
+            "AnatomicalIllustration → HumanForm": [
+                1.0,
+                0.9,
+                1
+            ],
+            "MonaLisaPortrait → HumanForm": [
+                1.0,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the artistic depiction of the human form rather than Leonardo da Vinci's broader contributions. Each hop logically connects the images to the concept of the human form but fails to attribute these works directly to Leonardo da Vinci. The quality scores remain high due to accurate depiction and logical representation of the human form."
+    },
+    "西游记(visible, art, mutual elements, East Asia, Chinese)": {
+        "path": "Contrast(SurprisedMonkey, CalmMonk)",
+        "hop_quality": {
+            "SurprisedMonkey → CalmMonk": [
+                0.55,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructs a path based on contrasting states of mind: the impulsive monkey versus the calm monk. While this is a plausible interpretation, it lacks the specificity and literary context required to recognize 'Journey to the West'. Thus, the path's observation is conceptually interesting but insufficiently precise and knowledgeable."
+    },
+    "To Kill a Mockingbird(visible, art, relation, USAEnglish, English)": {
+        "path": "Inspiration(HarperLee, Symbol) and Symbol(RepresentationOfMockingbird, AmericanLiterature)",
+        "hop_quality": {
+            "HarperLee → Symbol": [
+                1.0,
+                0.85,
+                1
+            ],
+            "Symbol → RepresentationOfMockingbird": [
+                1.0,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM identifies 'literary inspiration' linking Harper Lee and the mockingbird symbol, focusing on American Literature's usage rather than direct title connection. Both steps are logically sound, well-defined, and demonstrate deep literary understanding, though they lack the explicitness of the novel's precise identity."
+    },
+    "The Beatles(invisible, music, mutual elements, USAEnglish, English)": {
+        "path": "Contrast(StagBeetle, UrbanCrosswalk)",
+        "hop_quality": {
+            "StagBeetle → UrbanCrosswalk": [
+                0.6,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM finds a contrast between nature and urban life. While this is a coherent juxtaposition, it bypasses the cultural reference to The Beatles entirely. The path's reasoning holds a moderate level of reasonableness but lacks the precise cultural acknowledgment, affecting its overall accuracy and knowledge depth."
+    },
+    "书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese)": {
+        "path": "Symbolize(Books, Knowledge) and Represent(JadeSculpture, Innocence)",
+        "hop_quality": {
+            "Books → Knowledge": [
+                0.95,
+                0.9,
+                1
+            ],
+            "JadeSculpture → Innocence": [
+                0.9,
+                0.8,
+                0
+            ]
+        },
+        "explanation": "The MLLM expresses a philosophical correlation of knowledge and innocence, focusing on nurturing young minds. Although the thematic connection is reasonable and well articulated, it diverges from the intended cultural proverb '书中自有颜如玉', resulting in some loss of cultural depth and specificity."
+    },
+    "St. Patrick's Day(invisible, culture, mutual elements, USAEnglish, English)": {
+        "path": "Symbol(Shamrock, IrishCulture) and Symbol(Leprechaun, IrishFolklore) and AssociatedWithColor(IrishFolklore, Green) and AssociatedWithColor(Shamrock, Green)",
+        "hop_quality": {
+            "Shamrock → IrishCulture": [
+                0.9,
+                0.92,
+                1
+            ],
+            "Leprechaun → IrishFolklore": [
+                0.85,
+                0.8,
+                1
+            ],
+            "IrishFolklore → Green": [
+                0.75,
+                0.75,
+                0
+            ],
+            "Shamrock → Green": [
+                0.8,
+                0.7,
+                0
+            ]
+        },
+        "explanation": "The MLLM took a broader cultural path, emphasizing Irish culture associations rather than homing in on the specific occasion of St. Patrick's Day. Overall it demonstrated reasonable logical associations but fell short of specific cultural references."
+    },
+    "Guns N' Roses(invisible, music, mutual elements, USAEnglish, English)": {
+        "path": "Represent(Gun, Violence) and Represent(Rose, Beauty) and Juxtaposition(Violence, Beauty)",
+        "hop_quality": {
+            "Gun → Violence": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Rose → Beauty": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Violence ∧ Beauty → Juxtaposition": [
+                1.0,
+                0.85,
+                0
+            ]
+        },
+        "explanation": "The MLLM provided a juxtaposition concept, focusing on the contrasting imagery of violence and beauty. While respectable in logic and specificity, it diverges in addressing the iconic band name 'Guns N' Roses' which holds a solid cultural reference."
+    },
+    "Chicago(invisible, city, mutual elements, USAEnglish, English)": {
+        "path": "Showcase(Cityscape, ModernCity) and Feature(Skyscrapers, City'sSkyline) and Highlight(Sculpture, ArtisticCharacter) and Form(ModernCity, UrbanExperience) and Contribute(ArtAndArchitecture, UrbanExperience)",
+        "hop_quality": {
+            "Cityscape → ModernCity": [
+                0.88,
+                0.85,
+                1
+            ],
+            "Skyscrapers → City'sSkyline": [
+                0.9,
+                0.88,
+                1
+            ],
+            "Sculpture → ArtisticCharacter": [
+                0.92,
+                0.87,
+                1
+            ],
+            "ModernCity → UrbanExperience": [
+                0.8,
+                0.78,
+                0
+            ],
+            "ArtAndArchitecture → UrbanExperience": [
+                0.82,
+                0.8,
+                0
+            ]
+        },
+        "explanation": "The MLLM focused on broader urban landscape themes covering modern cities, showing a commendable logical trajectory. It provided high specificity of architectural aspects but eluded mentioning the salient connection to Chicago."
+    },
+    "1729(invisible, number, relation, NA, English)": {
+        "path": "Depict(Photograph, Person) and Illustrate(GeometricShapes, Cubes)",
+        "hop_quality": {
+            "Photograph → Person": [
+                1.0,
+                1.0,
+                1
+            ],
+            "GeometricShapes → Cubes": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM could not locate any relevant conceptual or mathematical connection. While logical, the description lacked domain insight and precision in recognizing Ramanujan or the number 1729's mathematical significance."
+    },
+    "23(invisible, number, mutual elements, NA, English)": {
+        "path": "Embody(Jordan, AthleticProwess) and Compare(CompetitiveSpirit, Eris) and Mirror(JordanWithBasketball → Eris)",
+        "hop_quality": {
+            "Jordan → AthleticProwess": [
+                0.85,
+                0.75,
+                1
+            ],
+            "CompetitiveSpirit → Eris": [
+                0.85,
+                0.73,
+                1
+            ],
+            "JordanWithBasketball → Eris": [
+                0.7,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM drew mythological parallels by comparing Jordan's competitive spirit to the mythical figure of Eris, introducing a novel metaphorical angle. While interesting, it did not address the direct link to the number 23, reducing precision and alignment."
+    },
+    "0(invisible, number, mutual elements, NA, English)": {
+        "path": "Represents(EmptySet, Absence) and Represents(TemperatureScale, Absence)",
+        "hop_quality": {
+            "EmptySet → Absence": [
+                1.0,
+                0.65,
+                1
+            ],
+            "TemperatureScale → Absence": [
+                0.5,
+                0.25,
+                0
+            ]
+        },
+        "explanation": "The MLLM connects both images to the concept of 'absence'. While it accurately understands the empty set's representation of an absence of elements, it misconstrues the thermometer scales' relation, which does not inherently represent absence. The explanation does not reach the precision of representing 0, lacking a direct conceptual link to absolute zero."
+    },
+    "101010(invisible, number, relation, NA, English)": {
+        "path": "Represent(BinaryCode, RepeatedPattern) and Represent(TextAndNumbers, RepeatedPattern)",
+        "hop_quality": {
+            "BinaryCode → RepeatedPattern": [
+                0.5,
+                0.3,
+                0
+            ],
+            "TextAndNumbers → RepeatedPattern": [
+                0.4,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM focuses on the repetition aspect without engaging with the numeric-conceptual connection to 101010 found in the reference. It misses identifying the color coding and numerical equivalent relations, settling on vague repetition which neither precisely identifies binaries' display in colors nor numbers."
+    },
+    "Confucius has 72 disciples(invisible, history, relation, East Asia, English)": {
+        "path": "NoRelation(A, B)",
+        "hop_quality": {
+            "Analects → NoConnection": [
+                0,
+                0,
+                0
+            ],
+            "72 → NoConnection": [
+                0,
+                0,
+                0
+            ]
+        },
+        "explanation": "The MLLM states the images are unrelated, missing the profound historical connection of Confucius' disciples captured in the Analects with the number 72. This assessment shows a fundamental lapse in domain knowledge."
+    },
+    "Silk Road(invisible, history, mutual elements, East Asia, English)": {
+        "path": "Symbolize(Caravan, Journey) and Symbolize(SilkFabric, Transformation)",
+        "hop_quality": {
+            "Caravan → Journey": [
+                0.5,
+                0.3,
+                0
+            ],
+            "SilkFabric → Transformation": [
+                0.5,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "MLLM interprets the images metaphorically, linking them to journey and transformation, falling short of recognizing the strategic historical notion of the Silk Road related to trade and cultural exchange, with little shared specificity or depth."
+    },
+    "The Cold War(invisible, history, metaphor, USAEnglish, English)": {
+        "path": "Symbol(BerlinWall, TheColdWar) and Represents(ShiveringMan, TheColdWar)",
+        "hop_quality": {
+            "BerlinWall → TheColdWar": [
+                1.0,
+                0.95,
+                1
+            ],
+            "ShiveringMan → TheColdWar": [
+                1.0,
+                0.95,
+                0
+            ]
+        },
+        "explanation": "The MLLM effectively captures the symbolic essence of the Cold War, as represented by both images. The explanation successfully merges tangible representations but misses nuanced elements of conceptual coldness represented by shivering in a wider context."
+    },
+    "D-Day(invisible, history, mutual elements, USAEnglish, English)": {
+        "path": "Depict(LandingCraft, DDay) and HistoricalEvent(Soldiers, DDay) and Symbol(LetterD, DDay)",
+        "hop_quality": {
+            "LandingCraft, DDay": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Soldiers, DDay": [
+                1.0,
+                1.0,
+                1
+            ],
+            "LetterD → DDay": [
+                0.94,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "MLLM constructs a convergent path by directly referencing elements of the D-Day landing (soldiers disembarking) as a depiction of the historical moment, while interpreting the camouflaged letter 'D' as a symbol of the event. Each association hop is logically sound, precise, and knowledgeable, demonstrating a strong historical understanding."
+    },
+    "4'33(invisible, music, relation, NA, English)": {
+        "path": "Representation(Clock, 715) and (Clock → Time) and Representation(Pianist, Music) and (Music → TimeFramework)",
+        "hop_quality": {
+            "Clock → Time": [
+                0.94,
+                0.8,
+                1
+            ],
+            "715 → TimeFramework": [
+                0.6,
+                0.4,
+                1
+            ],
+            "Pianist → Music": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Music → TimeFramework": [
+                0.9,
+                0.75,
+                1
+            ]
+        },
+        "explanation": "Although wrong associations were made due to incorrect interpretation, the MLLM's argument is internally consistent. It connects the elements of music and time logically, pertaining to general understanding but fails to capture the specific reference to Cage's '4'33'. This results in lower scores in specificity, even though the logical reasoning remains fairly sound."
+    },
+    "快板(visible, music, mutual elements, East Asia, Chinese)": {
+        "path": "Function(Clappers, ProvideRhythm) and Notation(MusicSheet, GuidePerformance)",
+        "hop_quality": {
+            "Clappers → ProvideRhythm": [
+                1.0,
+                1.0,
+                1
+            ],
+            "MusicSheet → GuidePerformance": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path lacks a direct association to the explicit cultural reference '快板' and 'Allegro'. The explanation is precise and knowledgeable in general terms but does not meet the specificity required by the original reference. This omission does not affect the association strength but does impact the model's ability to make connections to deeper cultural contexts."
+    },
+    "moonlight(invisible, music, relation, NA, English)": {
+        "path": "Evokes(Moon, Inspiration) and Inspire(Art, Beethoven)",
+        "hop_quality": {
+            "Moon → Inspiration": [
+                0.85,
+                0.73,
+                1
+            ],
+            "Inspiration → Beethoven": [
+                0.87,
+                0.6,
+                1
+            ]
+        },
+        "explanation": "Though not aligning with the direct iconography of the 'Moonlight Sonata,' the MLLM bridges inspired associations correctly by capturing artistic elements that influence such creative processes. This contextually makes sense but loses precision due to missing a direct link to the 'Moonlight Sonata', reducing accurate specificity."
+    },
+    "E pluribus unum(invisible, culture, metaphor, USAEnglish, Latin)": {
+        "path": "Unity(BundleOfSticks, UnifiedForce) and Power(BaldEagle, UnifiedNation)",
+        "hop_quality": {
+            "BundleOfSticks → UnifiedForce": [
+                0.9,
+                0.7,
+                1
+            ],
+            "BaldEagle → UnifiedNation": [
+                0.9,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM captures the essence of unity and strength by associating the separate images on a conceptual basis, but it misses the specific phrase 'E Pluribus Unum', affecting precision. The logical reasoning and knowledgeable references remain strong, indicating an understanding of symbolism."
+    },
+    "Spinach power-up(invisible, cartoon or game, relation, USAEnglish, English)": {
+        "path": "ProvideNutrients(Spinach, BicepMuscle) and Contribute(BicepMuscle, MuscleMass) Thus, Spinach → BicepMuscle → FlexedBicep",
+        "hop_quality": {
+            "Spinach → BicepMuscle": [
+                0.9,
+                0.9,
+                1
+            ],
+            "BicepMuscle → FlexedBicep": [
+                0.8,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a logical path related to the idea of food as fuel. The path shows high reasonableness and knowledge but slightly lower precision because it doesn't tap into the cultural reference of Popeye's usage of spinach for gaining strength."
+    },
+    "All that glitters is not gold.(invisible, culture, metaphor, USAEnglish, English)": {
+        "path": "Represent(Glitter, PerceivedValue) and Associate(Gold, PerceivedValue) Thus, Glitter ∧ Gold → PerceivedValue",
+        "hop_quality": {
+            "Glitter ∧ Gold → PerceivedValue": [
+                0.7,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM's connection through the subjective notion of value is valid but obscures the iconic proverb context. Despite reasonable generalization, this lacks the precise identification of 'All that glitters is not gold.'"
+    },
+    "Animal Farm(invisible, art, relation, USAEnglish, English)": {
+        "path": "Explore(GeorgeOrwell, ContrastingRealities) and Depict(Farm, UtopianIdeal) Thus, GeorgeOrwell → ContrastingRealities and Farm → UtopianIdeal → ContrastingRealities",
+        "hop_quality": {
+            "GeorgeOrwell → ContrastingRealities": [
+                0.85,
+                0.75,
+                1
+            ],
+            "Farm → UtopianIdeal": [
+                0.6,
+                0.5,
+                0
+            ],
+            "UtopianIdeal → ContrastingRealities": [
+                0.7,
+                0.75,
+                0
+            ]
+        },
+        "explanation": "The contrasting theme is well-reasoned but lacks direct reference to Animal Farm. While Orwell's themes are mentioned, the MLLM doesn't adequately connect to the specific work 'Animal Farm.'"
+    },
+    "野草(invisible, art, relation, East Asia, Chinese)": {
+        "path": "Symbolize(LuXun, PotentialForChange) and Represent(PlantBud, Growth) Thus, LuXun → PotentialForChange and Bud → Growth → PotentialForChange",
+        "hop_quality": {
+            "LuXun → PotentialForChange": [
+                0.75,
+                0.7,
+                1
+            ],
+            "Bud → Growth": [
+                0.6,
+                0.65,
+                0
+            ],
+            "Growth → PotentialForChange": [
+                0.7,
+                0.8,
+                0
+            ]
+        },
+        "explanation": "The symbolism path misses the specific literary connection to 'Wild Grass' by Lu Xun, rather opting for a general symbolism interpretation. The MLLM's path resonates well with the symbolic growth but lacks the specificity of the actual stories it represents."
+    },
+    "The Pit and the Pendulum(invisible, art, metaphor, USAEnglish, English)": {
+        "path": "ResultFrom(Hole, Change) and Indicate(Pendulum, ContinuousChange) Thus, Hole → Change and Pendulum → ContinuousChange",
+        "hop_quality": {
+            "Hole → Change": [
+                0.5,
+                0.55,
+                0
+            ],
+            "Pendulum → ContinuousChange": [
+                0.7,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "Although the path highlights movement and change, it completely misses the literary depth and symbolism relevant to 'The Pit and the Pendulum.' The MLLM's broad conceptual link does not capture the psychological and narrative significance typical of Poe's story."
+    },
+    "Siempre imaginé que el Paraíso sería algún tipo de biblioteca(invisible, art, metaphor, USAEnglish, Spanish)": {
+        "path": "Depict(Heaven, Enlightenment) and Represent(Library, Knowledge)\nThus, Paradise → Enlightenment and Library → Knowledge",
+        "hop_quality": {
+            "Paradise → Enlightenment": [
+                0.85,
+                0.7,
+                1
+            ],
+            "Library → Knowledge": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a metaphorical association between the imagery of paradise and enlightenment and the library as a symbol of knowledge. While not as specific as the Borges quote, the explanation remains logically sound, using a metaphorical journey towards understanding and achieving life goals. The explanation maintains high reasonability and knowledgeable depth, but the MLLM's path lacks precision in directly tying the elements to Borges. The representation of libraries as a knowledge repository was executed with logical clarity."
+    },
+    "3D glasses(visible, stuff, mutual elements, NA, English)": {
+        "path": "Symbolize(MovieTheater, CollectiveExperience) and Represent(RedBlueColors, DifferentPerspectives)\nThus, MovieTheater → CollectiveExperience and RedBlueColors → DifferentPerspectives",
+        "hop_quality": {
+            "MovieTheater → CollectiveExperience": [
+                0.6,
+                0.4,
+                0
+            ],
+            "RedBlueColors → DifferentPerspectives": [
+                0.52,
+                0.29,
+                0
+            ]
+        },
+        "explanation": "The MLLM made an abstract connection between collective experience in a movie theater and the different perspectives suggested by contrasting colors. It overlooks the specific technological relevance of 3D glasses, focusing instead on emotional or experiential interpretations. Although demonstrating logical descriptiveness, this depiction lacks both specificity and factual knowledge regarding the role of colors in 3D technology, hence scoring lower on precision and domain expertise."
+    },
+    "clapper board(invisible, stuff, mutual elements, NA, English)": {
+        "path": "Represent(ActionTarget, GoalAchievement) and Recognize(AudienceApplauding, Success)\nThus, ActionTarget → GoalAchievement and AudienceApplauding → Success",
+        "hop_quality": {
+            "ActionTarget → GoalAchievement": [
+                0.95,
+                0.6,
+                0
+            ],
+            "AudienceApplauding → Success": [
+                0.9,
+                0.55,
+                0
+            ]
+        },
+        "explanation": "The MLLM's connection to achieving goals cleverly leveraged the notions of actions leading to success and applause both being symbols of acknowledgment. However, the connection steers away from the film production-specific item of a clapperboard, replacing it with a more general concept of success recognition. The logical flow of reaching objectives is apparent but lacks industry-specific knowledge, thereby reducing its overall precise depiction related to the answer key."
+    },
+    "popcorn(visible, food, mutual elements, NA, English)": {
+        "path": "Transform(Corn, Popcorn) and Consume(Popcorn, MovieTheater)\nThus, Corn → Popcorn and MovieTheaterSeats → Popcorn",
+        "hop_quality": {
+            "Corn → Popcorn": [
+                1.0,
+                1.0,
+                1
+            ],
+            "MovieTheaterSeats → Popcorn": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM skillfully captured both the transformation of corn into popcorn and its consumption in a theater setting. By connecting transformation with the snack experience, the association is holistic, aligning closely with the reference answer through a different angle. It achieves full marks in all hops due to its accurate representation of the transformation process and consumption location that precisely lines up with real-world knowledge."
+    },
+    "Harry Potter(invisible, art, relation, USAEnglish, English)": {
+        "path": "Reference(MagicWand, HarryPotter) and Create(JKRowling, HarryPotter)\nThus, MagicWand → HarryPotter and JKRowling → HarryPotter",
+        "hop_quality": {
+            "MagicWand → HarryPotter": [
+                1.0,
+                1.0,
+                1
+            ],
+            "JKRowling → HarryPotter": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM output drew a strong connection between the symbolic magic wand and J.K. Rowling's creation of the Harry Potter universe. By portraying the magic wand as a central feature of the series and acknowledging Rowling's authorship, the explanation is both logically sound and specific. Due to its direct correlation with the characters and settings of Harry Potter, both the metaphorical and factual relevance is exhibited fully, ensuring complete alignment with the reference answer."
+    },
+    "Starry Night(invisible, art, mutual elements, Non-English European, English)": {
+        "path": "Sing(DonMcLean, Vincent) and About(Vincent, StarryNight) Located(StarryNight, MoMA) Thus, DonMcLean → Vincent → StarryNight and MoMA → StarryNight",
+        "hop_quality": {
+            "DonMcLean → Vincent": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Vincent → StarryNight": [
+                1.0,
+                1.0,
+                1
+            ],
+            "StarryNight → MoMA": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path lacks specific identification of 'Vincent' as a mediator, instead incorrectly categorizing both images under the broad theme of 'Artistic Expression'. The reference answer provides a detailed explanation and logical constructs, significantly different from MLLM’s broad and less informative connection."
+    },
+    "How Time flies(invisible, culture, metaphor, USAEnglish, English)": {
+        "path": "Time ∧ Flies → TimeFliesIdiom",
+        "hop_quality": {
+            "Time ∧ Flies → TimeFliesIdiom": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "MLLM successfully captured the idiom 'Time Flies' both logically and precisely with correct conceptual mapping and depth."
+    },
+    "Break a leg(invisible, culture, relation, USAEnglish, English)": {
+        "path": "Represents(BrokenLeg, Support) Represents(GroupOnStage, Support) Thus, BrokenLeg → Support and GroupOnStage → Support",
+        "hop_quality": {
+            "BrokenLeg → Support": [
+                0.5,
+                0.5,
+                0
+            ],
+            "GroupOnStage → Support": [
+                0.5,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM focuses on the concept of 'support', which diverges completely from the idiomatic interpretation 'break a leg', making its evaluation less precise, general, and lacking in idiomatic knowledge."
+    },
+    "Spill the tea(invisible, culture, metaphor, USAEnglish, English)": {
+        "path": "Symbolize(CoffeeStain, UnintendedConsequences) and Symbolize(Whisper, ShareGossip) Thus, CoffeeStain → UnintendedConsequences and Whisper → ShareGossip",
+        "hop_quality": {
+            "CoffeeStain → UnintendedConsequences": [
+                0.2,
+                0.5,
+                0
+            ],
+            "Whisper → ShareGossip": [
+                0.6,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "MLLM draws a thematic link instead of cultural one, 'justifying esoteric link of gossip'. It captures some level of association with consequences of gossip like coffee stains but overall lacks precision and depth of the cultural reference 'Spill the tea'."
+    },
+    "March(invisible, time, metaphor, USAEnglish, English)": {
+        "path": "Represent(Lion, Predator) and Represent(Lamb, Prey) Thus, Lion → Predator and Lamb → Prey",
+        "hop_quality": {
+            "Lion → Predator": [
+                1.0,
+                0.6,
+                1
+            ],
+            "Lamb → Prey": [
+                1.0,
+                0.6,
+                1
+            ]
+        },
+        "explanation": "MLLM did not make the connection to the idiom 'in like a lion, out like a lamb', its path is an accurate representation of predation in reality. However, it lacks the idiomatic depth and specificity concerning the month of March."
+    },
+    "Pi Day(invisible, time, metaphor, NA, English)": {
+        "path": "Symbolize(Clock, TimeManagement) and Represent(PieChart, TimeManagement)",
+        "hop_quality": {
+            "Clock → TimeManagement": [
+                0.85,
+                0.4,
+                1
+            ],
+            "PieChart → TimeManagement": [
+                0.87,
+                0.5,
+                1
+            ]
+        },
+        "explanation": "The MLLM associated the concept of time management with the clock and pie chart, forming a coherent theme. However, it missed the nuanced connection to 'Pi Day,' resulting in a less precise and slightly generalized interpretation. The path remains reasonable but lacks the specific cultural reference."
+    },
+    "Spring(invisible, music, mutual elements, Non-English European, English)": {
+        "path": "Celebrate(Chinese New Year, CulturalEvent) and Musician(Vivaldi, CulturalExpression)",
+        "hop_quality": {
+            "Chinese New Year → CulturalEvent": [
+                0.97,
+                0.25,
+                1
+            ],
+            "Vivaldi → CulturalExpression": [
+                0.92,
+                0.25,
+                1
+            ]
+        },
+        "explanation": "The MLLM highlighted the cultural angle of both images, aligning them under a broad category. While a logical link to cultural expression is observed, it bypasses the direct association with the spring season and Vivaldi’s composition of 'Spring,' therefore reducing specificity."
+    },
+    "42 is divided by 7(invisible, number, relation, NA, English)": {
+        "path": "Represent(DaysOfWeek, TimeCyclus) and Ask(Question, PhilosophicalMeaning)",
+        "hop_quality": {
+            "DaysOfWeek → TimeCyclus": [
+                0.95,
+                0.4,
+                1
+            ],
+            "Question → PhilosophicalMeaning": [
+                0.98,
+                0.38,
+                1
+            ]
+        },
+        "explanation": "The MLLM provided a broad yet plausible framework connecting time with existential questions. Although conceptually it holds up, the essence of the 'Hitchhiker’s Guide' reference to 42 is absent, leading to an oversight of precision on a well-known literary theme."
+    },
+    "Euler-Mascheroni constant(invisible, STEM, relation, NA, English)": {
+        "path": "Demonstrate(GeometricSeriesDiagram, SeriesConcept) and Represent(Portrait, MathematicianLambert)",
+        "hop_quality": {
+            "GeometricSeriesDiagram → SeriesConcept": [
+                0.85,
+                0.34,
+                0
+            ],
+            "Portrait → MathematicianLambert": [
+                0.87,
+                0.28,
+                0
+            ]
+        },
+        "explanation": "The MLLM diverged significantly by associating with geometric series, unrelated to the Euler-Mascheroni constant or Lorenzo Mascheroni. The interpretation lacks mathematical knowledge specificity, incorrectly identifying the secondary image as Lambert rather than Mascheroni."
+    },
+    "Golden Ratio(invisible, STEM, relation, NA, English)": {
+        "path": "Inspire(NautilusShell, ArchitecturalDesign) and Represent(Parthenon, ClassicalArchitecture)",
+        "hop_quality": {
+            "NautilusShell → ArchitecturalDesign": [
+                0.96,
+                0.32,
+                1
+            ],
+            "Parthenon → ClassicalArchitecture": [
+                0.98,
+                0.4,
+                1
+            ]
+        },
+        "explanation": "The MLLM correctly highlights architectural inspiration derived from natural forms and history, though not explicitly identifying the Golden Ratio. While the overall thematic connection is robust, it oversimplifies a mathematical concept crucial to the reference answer's association."
+    },
+    "666(invisible, number, mutual elements, NA, English)": {
+        "path": "HumorousContrast(Beast, Appearance) and Convey(Emoji, PlayfulCoolness)",
+        "hop_quality": {
+            "Beast → Appearance": [
+                0.85,
+                0.74,
+                0
+            ],
+            "Emoji → PlayfulCoolness": [
+                0.77,
+                0.68,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a path based on emotional and expression contrasts, omitting the cultural reference to the 'Number of the Beast'. The association lacks specifics and depth regarding the 666 symbolism, relying on perceived humor instead of the notable 'Number of the Beast' connection."
+    },
+    "137(invisible, number, mutual elements, NA, English)": {
+        "path": "Govern(FineStructureConstant, ElectromagneticInteractions) and ThinkAbout(Scientist, PhysicsConcepts)",
+        "hop_quality": {
+            "FineStructureConstant → ElectromagneticInteractions": [
+                0.9,
+                0.85,
+                1
+            ],
+            "Scientist → PhysicsConcepts": [
+                0.75,
+                0.55,
+                0
+            ]
+        },
+        "explanation": "The MLLM's understanding leans toward general physics without the specific numerical link to 137. It holds logical validity concerning physics concepts, yet lacks the precision of the intended association between the constant and Rick White's album."
+    },
+    "First Sino-Japanese War(invisible, history, relation, East Asia, English)": {
+        "path": "Construct(Hizen, NavalEngineering) and Lead(EnomotoTakeaki, NavalModernization)",
+        "hop_quality": {
+            "Hizen → NavalEngineering": [
+                0.85,
+                0.88,
+                1
+            ],
+            "EnomotoTakeaki → NavalModernization": [
+                0.78,
+                0.65,
+                1
+            ]
+        },
+        "explanation": "MLLM emphasizes naval engineering advancements without historical conflict context, diverging from the First Sino-Japanese War. The path is valid internally for naval expansion but deviates conceptually from the expected specific war association."
+    },
+    "Sun Yat-sen(invisible, history, relation, East Asia, English)": {
+        "path": "Display(Architecture, ChineseCulturalHeritage) and Represent(TangSuit, ChineseCulture)",
+        "hop_quality": {
+            "Architecture → ChineseCulturalHeritage": [
+                0.83,
+                0.71,
+                0
+            ],
+            "TangSuit → ChineseCulture": [
+                0.77,
+                0.68,
+                0
+            ]
+        },
+        "explanation": "The MLLM output focuses on general cultural heritage with Chinese elements, lacking direct ties to Sun Yat-sen. The reasoning captures broad cultural representation, missing the precise reference to an influential figure and symbolic apparel."
+    },
+    "洛阳纸贵(invisible, history, metaphor, East Asia, Chinese)": {
+        "path": "Symbolize(WhitePaper, RawMaterial) and Represent(GoldCoins, EconomicValue)",
+        "hop_quality": {
+            "WhitePaper → RawMaterial": [
+                0.8,
+                0.72,
+                0
+            ],
+            "GoldCoins → EconomicValue": [
+                0.84,
+                0.76,
+                0
+            ]
+        },
+        "explanation": "The MLLM connects paper and gold to economic concepts rather than the historical context of 'Luoyang paper is valuable'. While symbolically sound, it fails to capture the cultural idiom's essence, opting for a broader economic interpretation."
+    },
+    "I Have a Dream(invisible, history, metaphor, USAEnglish, English)": {
+        "path": "Represent(LincolnMemorial, NationalUnity) and Symbolize(NationalUnity, DreamsOfGreatness)\nRepresent(SleepingMan, Dreams) and Represent(Dreams, DreamsOfGreatness)\nThus, LincolnMemorial → NationalUnity → DreamsOfGreatness and SleepingMan → Dreams → DreamsOfGreatness",
+        "hop_quality": {
+            "LincolnMemorial → NationalUnity": [
+                0.85,
+                0.25,
+                1
+            ],
+            "NationalUnity → DreamsOfGreatness": [
+                0.7,
+                0.2,
+                0
+            ],
+            "SleepingMan → Dreams": [
+                0.75,
+                0.35,
+                0
+            ],
+            "Dreams → DreamsOfGreatness": [
+                0.7,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path taps into national unity and personal aspirations, standing conceptually adjacent to the reference path of a specific historical event. It signifies sound logical connections yet without depth or specificity of Martin Luther King Jr.'s speech. Thus, it receives moderate scores for reasonableness, lacking in precision and specific knowledge reflection."
+    },
+    "Give me liberty or give me death(invisible, history, metaphor, USAEnglish, English)": {
+        "path": "Represent(BrokenChain, EndOfConnection) and Signify(EndOfConnection, EndOfLife)\nSymbolize(RIPCandle, EndOfLife)\nThus, BrokenChain → EndOfConnection → EndOfLife and RIPCandle → EndOfLife",
+        "hop_quality": {
+            "BrokenChain → EndOfConnection": [
+                0.65,
+                0.25,
+                0
+            ],
+            "EndOfConnection → EndOfLife": [
+                0.6,
+                0.2,
+                0
+            ],
+            "RIPCandle → EndOfLife": [
+                0.8,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM frames an 'end' narrative in gloom, counter to the spirited historical context. It forms a reasonable but unspecific association path around closure, overshadowing the concept of liberty and sacrifice. Hence, it garners low marks in precision and knowledge depth."
+    },
+    "Gold Rush(invisible, history, mutual elements, USAEnglish, English)": {
+        "path": "FoundedIn(California, Origin)\nShowcase(Sacramento, California) and Showcase(Origin, California)\n\nThus, LeviStraussJeans → Origin and Sacramento → California → Origin",
+        "hop_quality": {
+            "LeviStraussJeans → Origin": [
+                0.6,
+                0.15,
+                0
+            ],
+            "Sacramento → California": [
+                0.8,
+                0.55,
+                1
+            ],
+            "California → Origin": [
+                0.4,
+                0.1,
+                0
+            ]
+        },
+        "explanation": "The MLLM concentrated on 'origin' in geographic terms without tethering to the Gold Rush. The association path stands logically moderate but lacks specificity and regional significance. Therefore, it scores lower compared to precise economic-historical connections."
+    },
+    "Tchaikovsky(invisible, music, mutual elements, NA, English)": {
+        "path": "Represent(Ballet, ArtisticExpression)\nDepict(SheetMusic, ArtisticExpression)\n\nThus, Ballet → ArtisticExpression and SheetMusic → ArtisticExpression",
+        "hop_quality": {
+            "Ballet → ArtisticExpression": [
+                0.7,
+                0.2,
+                0
+            ],
+            "SheetMusic → ArtisticExpression": [
+                0.7,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path revolves around a general artistic theme, overshadowing the unifying compositional figure of Tchaikovsky. While artistically sensible, the path is broad and lacks precision, barely touching the bond of shared authorship. Hence, it garners moderate marks in reasonableness and lower in both specificity and knowledge depth."
+    },
+    "Barcarolle(invisible, music, relation, NA, English)": {
+        "path": "Recreate(VenetianCanal, ImitationOfVenice) and AimToReproduce(ImitationOfVenice, ImitationAndRecreation)\nRecreate(SimpleMusicalRhythm, MusicalPattern) and AimToReproduce(MusicalPattern, ImitationAndRecreation)\n\nThus, VenetianCanal → ImitationOfVenice → ImitationAndRecreation and SimpleMusicalRhythm → MusicalPattern → ImitationAndRecreation",
+        "hop_quality": {
+            "VenetianCanal → ImitationOfVenice": [
+                0.65,
+                0.4,
+                0
+            ],
+            "ImitationOfVenice → ImitationAndRecreation": [
+                0.5,
+                0.15,
+                0
+            ],
+            "SimpleMusicalRhythm → MusicalPattern": [
+                0.35,
+                0.25,
+                0
+            ],
+            "MusicalPattern → ImitationAndRecreation": [
+                0.45,
+                0.1,
+                0
+            ]
+        },
+        "explanation": "The MLLM envisions 'imitation' rather than the traditional musicological alignment of a Barcarolle. While the basic sense is reasonable, it remains too broad and vague for the specific cultural-musical link via traditional genre cues. Hence, it results in low precision and knowledge reflection."
+    },
+    "The Waltzing Cat(invisible, music, metaphor, NA, English)": {
+        "path": "Depicts(Cat, Relaxation) and Symbolizes(Relaxation, CalamityAndTranquility) Contrasts(WaltzDancers, EnergeticExpression) and Symbolizes(EnergeticExpression, CalamityAndTranquility) Thus, Cat → Relaxation → CalamityAndTranquility and WaltzDancers → EnergeticExpression → CalamityAndTranquility",
+        "hop_quality": {
+            "Cat → Relaxation": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Relaxation → CalamityAndTranquility": [
+                0.75,
+                0.5,
+                0
+            ],
+            "WaltzDancers → EnergeticExpression": [
+                1.0,
+                1.0,
+                1
+            ],
+            "EnergeticExpression → CalamityAndTranquility": [
+                0.75,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM's analysis derived contrasting energy levels between a relaxed cat and energetic dancers, likening it to varying life stages or moods. Although logically reasonable and specific in defining relaxation and energetic expression, it lacks depth of knowledge concerning 'The Waltzing Cat', reducing the quality of relational reasoning."
+    },
+    "Wunderkind(visible, people, mutual elements, NA, English)": {
+        "path": "Represents(Mozart, LegacyOfThePast) and Influences(LegacyOfThePast, Legacy) Represents(YoungSheldon, ContinuationOfLegacy) and Participates(ContinuationOfLegacy, Legacy) Thus, Mozart → LegacyOfThePast → Legacy and YoungSheldon → ContinuationOfLegacy → Legacy",
+        "hop_quality": {
+            "Mozart → LegacyOfThePast": [
+                0.95,
+                0.85,
+                1
+            ],
+            "LegacyOfThePast → Legacy": [
+                0.85,
+                0.72,
+                0
+            ],
+            "YoungSheldon → ContinuationOfLegacy": [
+                0.95,
+                0.75,
+                0
+            ],
+            "ContinuationOfLegacy → Legacy": [
+                0.85,
+                0.72,
+                0
+            ]
+        },
+        "explanation": "The MLLM equated images with legacy symbolism, noting the historical-modern transition. It maintained logical accuracy with strong reasoning for Mozart and Young Sheldon's legacy representation, yet lacked precision associating them with the Wunderkind concept, limiting depth through general legacy context, not specific prodigiousness."
+    },
+    "Roaring Twenties(invisible, culture, metaphor, USAEnglish, English)": {
+        "path": "Symbolizes(RoaringLion, PrimalForceAndDominance) Represents(MusicBand, EmotionalExpression) and Evoke(EmotionalExpression, UniversalExpression) Thus, RoaringLion → PrimalForceAndDominance → UniversalExpression and MusicBand → EmotionalExpression → UniversalExpression",
+        "hop_quality": {
+            "RoaringLion → PrimalForceAndDominance": [
+                0.95,
+                1.0,
+                1
+            ],
+            "PrimalForceAndDominance → UniversalExpression": [
+                0.65,
+                0.45,
+                0
+            ],
+            "MusicBand → EmotionalExpression": [
+                0.95,
+                0.78,
+                0
+            ],
+            "EmotionalExpression → UniversalExpression": [
+                0.8,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "MLLM reasoned using notions of expression, tying roaring lions with primal dominance and musical bands with emotional conveyance. It logically highlighted universal communication yet lacked nuance, failing to capture 'Roaring Twenties' cultural pertinence beyond broad artistic expression contexts, thereby reducing specificity and knowledge depth."
+    },
+    "The Magic Flute(invisible, music, mutual elements, Non-English European, English)": {
+        "path": "AssociatedWith(Panpipe, MusicAndNature) and Represents(MusicAndNature, Freedom) Symbolizes(OpenBirdcage, Confinement) and Transition(OpenBirdcage, Freedom) Thus, Panpipe → MusicAndNature → Freedom and OpenBirdcage → Confinement → Freedom",
+        "hop_quality": {
+            "Panpipe → MusicAndNature": [
+                0.9,
+                0.8,
+                1
+            ],
+            "MusicAndNature → Freedom": [
+                0.6,
+                0.4,
+                0
+            ],
+            "OpenBirdcage → Confinement": [
+                0.8,
+                0.7,
+                1
+            ],
+            "Confinement → Freedom": [
+                0.7,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "MLLM's path explored freedom dynamics, comparing the music of panpipes with nature to the symbolic open birdcage. While logically tying sound and space for freedom themes, it lacked the detailed grasp and specificity for 'The Magic Flute' opera narrative, reducing precision and depth."
+    },
+    "Minuet(invisible, music, mutual elements, Non-English European, English)": {
+        "path": "Represents(DancingShoes, 18thCentury) Symbolizes(18thCentury, DanceAndMusic) Feature(TimeSignature3/4, MusicalRhythmicStructure) and Supports(MusicalRhythmicStructure, DanceAndMusic) Thus, DancingShoes → 18thCentury → DanceAndMusic and TimeSignature3/4 → MusicalRhythmicStructure → DanceAndMusic",
+        "hop_quality": {
+            "DancingShoes → 18thCentury": [
+                0.95,
+                1.0,
+                1
+            ],
+            "18thCentury → DanceAndMusic": [
+                0.85,
+                0.7,
+                0
+            ],
+            "TimeSignature3/4 → MusicalRhythmicStructure": [
+                0.95,
+                0.95,
+                1
+            ],
+            "MusicalRhythmicStructure → DanceAndMusic": [
+                0.85,
+                0.7,
+                0
+            ]
+        },
+        "explanation": "MLLM mapped dance and musical expression connections, understanding historical shoes and 3/4 time signatures. Good reasoning about rhythmic structure and period-specific dance missing direct minuet references limited path specificity, although it displayed broad cultural understanding with reasonable abstraction but lacked conceptual minuet precision."
+    },
+    "St. Matthew Passion(invisible, music, mutual elements, Non-English European, English)": {
+        "path": "Symbolize(CrownOfThorns, PassionOfChrist) and Depict(PassionOfChrist, StMatthewPassion) Compose(Bach, StMatthewPassion) Thus, CrownOfThorns → PassionOfChrist → StMatthewPassion and Bach → StMatthewPassion",
+        "hop_quality": {
+            "CrownOfThorns → PassionOfChrist": [
+                1.0,
+                1.0,
+                1
+            ],
+            "PassionOfChrist → StMatthewPassion": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Bach → StMatthewPassion": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's conceptual path accurately captures the significant relationship between the crown of thorns, passion of Christ, and Bach's St. Matthew Passion, demonstrating excellent logical reasoning, precision, and knowledge depth."
+    },
+    "Water Music(invisible, music, relation, Non-English European, English)": {
+        "path": "Perform(Boat, RoyalAquaticEvent) and Symbolize(MagnaCarta, HistoricSignificance) Movement(AllaHornpipe, WaterMusic) and Relation(AllaHornpipe, RoyalAquaticEvent) Thus, Boat → RoyalAquaticEvent and AllaHornpipe → WaterMusic",
+        "hop_quality": {
+            "Boat → RoyalAquaticEvent": [
+                0.8,
+                0.5,
+                1
+            ],
+            "AllaHornpipe → WaterMusic": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM recognizes the 'Alla Hornpipe' connection to Water Music, but its symbolic use of the boat 'Magna Carta' relies on a broader, less direct historical association. While reasonable, its precise link to Handel's music on the Thames could be stronger."
+    },
+    "The Phantom Of the Opera(invisible, music, relation, USAEnglish, English)": {
+        "path": "Symbolize(WhiteMask, Anonymity) and ContrastWith(Chandelier, TransparencyInOpulence) Thus, WhiteMask → Anonymity and Chandelier → ContrastWith",
+        "hop_quality": {
+            "WhiteMask → Anonymity": [
+                0.7,
+                0.5,
+                0
+            ],
+            "Chandelier → ContrastWith": [
+                0.7,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "While the explanation provides an interpretation in contrasting symbols, it misses the direct cultural reference to 'The Phantom of The Opera'. The logical reasoning is general and lacks the precise opera-specific context needed to reflect the true relation."
+    },
+    "Queen of the night aria(invisible, music, mutual elements, Non-English European, English)": {
+        "path": "Represent(ChessQueen, Strategy) and Symbolize(HellFlames, Destruction) Thus, ChessQueen → Strategy and HellFlames → Destruction",
+        "hop_quality": {
+            "ChessQueen → Strategy": [
+                0.6,
+                0.4,
+                0
+            ],
+            "HellFlames → Destruction": [
+                0.6,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The path taken by the MLLM focuses on general symbolism rather than the specific references to Mozart's 'The Magic Flute.' It highlights contrasting forces of control vs chaos but lacks precision and domain depth, failing to capture the opera-specific nature."
+    },
+    "Acme Corporation(invisible, cartoon or game, relation, USAEnglish, English)": {
+        "path": "Symbolize(Anvil, Craftsmanship) and Represent(RoadRunner, Speed) Thus, Anvil → Craftsmanship and RoadRunner → Speed",
+        "hop_quality": {
+            "Anvil → Craftsmanship": [
+                0.5,
+                0.4,
+                0
+            ],
+            "RoadRunner → Speed": [
+                0.5,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM output focuses on metaphorical associations rather than the direct connection to the Acme Corporation in 'Looney Tunes.' It captures general traits of the objects but lacks logical specificity and depth essential for realizing the reference to animated sequences."
+    },
+    "My Little Pony(invisible, cartoon or game, relation, USAEnglish, English)": {
+        "path": "",
+        "hop_quality": {},
+        "explanation": "The MLLM failed to connect the images through the association with 'My Little Pony'. It labeled them as 'Unrelated', which indicates an absence of effort to find any meaningful connection. This signifies a fundamental failure in identifying symbolic or thematic elements that link the two images under the context of 'My Little Pony'."
+    },
+    "Peppa Pig(invisible, cartoon or game, mutual elements, USAEnglish, English)": {
+        "path": "Depict(MuddyPuddle, Nature) and Highlight(Nature, Contrast) Depict(RedDress, Fashion) and Highlight(Fashion, Contrast) Thus, MuddyPuddle → Nature → Contrast and RedDress → Fashion → Contrast",
+        "hop_quality": {
+            "MuddyPuddle → Nature": [
+                0.9,
+                0.8,
+                1
+            ],
+            "Nature → Contrast": [
+                0.75,
+                0.5,
+                0
+            ],
+            "RedDress → Fashion": [
+                0.8,
+                0.7,
+                1
+            ],
+            "Fashion → Contrast": [
+                0.75,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a path based on a contrast between nature and fashion, which logically makes sense but is superficial compared to the pop culture connection with 'Peppa Pig'. The path's first and third hops score high for reason and precision but lack depth. The second and fourth hops introduce a contrast theme that doesn't capture the specific cultural knowledge of Peppa Pig."
+    },
+    "Rick and Morty's portal gun(invisible, cartoon or game, relation, USAEnglish, English)": {
+        "path": "Represent(SwirlingGreenPortals, DimensionalTravel) and Depict(DimensionalTravel, Danger) Depict(PinkCartoonBomb, DestructivePotential) and Suggest(DestructivePotential, Danger) Thus, SwirlingGreenPortals → DimensionalTravel → Danger and PinkCartoonBomb → DestructivePotential → Danger",
+        "hop_quality": {
+            "SwirlingGreenPortals → DimensionalTravel": [
+                0.9,
+                0.75,
+                1
+            ],
+            "DimensionalTravel → Danger": [
+                0.8,
+                0.7,
+                0
+            ],
+            "PinkCartoonBomb → DestructivePotential": [
+                0.95,
+                0.8,
+                1
+            ],
+            "DestructivePotential → Danger": [
+                0.85,
+                0.65,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a metaphorical path using a 'Portal to destruction' theme. While the elements of metaphorical interpretation provide logical association, they fall short in precision and knowledge compared to the specific context of 'Rick and Morty' elements - demonstrating portals and Plumbus' utility within the show. The MLLM's association with danger is conceptually reasonable but lacks specificity."
+    },
+    "Yahtzee(invisible, cartoon or game, relation, USAEnglish, English)": {
+        "path": "UsedIn(Game, Dice) and PlayedWith(Game, Scoreboard) Thus, Game → Dice and Game → Scoreboard",
+        "hop_quality": {
+            "Game → Dice": [
+                0.95,
+                0.9,
+                1
+            ],
+            "Game → Scoreboard": [
+                0.9,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM related the two images confidently under the context of generic games, which is reasonable and specific but lacks the more precise reference to a specific game like 'Yahtzee'. The use of general terms such as 'game' shows an understanding of the broad category but doesn't capture the specific combination of dice and scorecards employed in the game of Yahtzee."
+    },
+    "Go territory(invisible, cartoon or game, relation, NA, English)": {
+        "path": "Represent(BlackAndWhiteStones, Chaos) and Suggest(Chaos, Pattern) Represent(Grid, Order) and Suggest(Order, Pattern) Thus, BlackAndWhiteStones → Chaos → Pattern and Grid → Order → Pattern",
+        "hop_quality": {
+            "BlackAndWhiteStones → Chaos": [
+                0.78,
+                0.6,
+                1
+            ],
+            "Chaos → Pattern": [
+                0.6,
+                0.5,
+                0
+            ],
+            "Grid → Order": [
+                0.85,
+                0.7,
+                1
+            ],
+            "Order → Pattern": [
+                0.6,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "MLLM presented a logical metaphorical contrast ('Order vs. Chaos') but failed to identify the specific Go reference involving territory and game strategy. While generally sound, it lacks the specific recognition of Go's cultural and strategic symbolism. It associates visual elements to abstract concepts but does not delve into the informed cultural knowledge of Go."
+    },
+    "Rock-paper-scissors(invisible, cartoon or game, mutual elements, NA, English)": {
+        "path": "Represent(ClosedFist, Force) and Convey(Force, Destruction) Symbolize(PaperCutting, Creation) and Convey(Creation, Artistry) Thus, ClosedFist → Force → Destruction and PaperCutting → Creation → Artistry",
+        "hop_quality": {
+            "ClosedFist → Force": [
+                0.85,
+                0.92,
+                0
+            ],
+            "Force → Destruction": [
+                0.9,
+                0.95,
+                0
+            ],
+            "PaperCutting → Creation": [
+                0.9,
+                0.9,
+                0
+            ],
+            "Creation → Artistry": [
+                0.9,
+                0.9,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path prioritizes a philosophical interpretation over recognizing the playful hand game 'Rock-paper-scissors'. While each hop is reasonably sound, focusing on general thematic elements, it lacks specificity and knowledge depth relevant to the cultural context of the game."
+    },
+    "The Birth of Venus(invisible, art, relation, Non-English European, English)": {
+        "path": "Symbolize(Seashell, Venus) and Reference(Venus, BirthOfVenus) Depict(Artist, Botticelli) and Influence(Botticelli, Symbolism) Thus, Seashell → Venus → BirthOfVenus and Botticelli → Symbolism",
+        "hop_quality": {
+            "Seashell → Venus": [
+                0.9,
+                0.9,
+                1
+            ],
+            "Venus → BirthOfVenus": [
+                0.9,
+                0.85,
+                0
+            ],
+            "Botticelli → Symbolism": [
+                0.85,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM effectively connects both images using artistic symbolism, identifying Botticelli's influence and the seashell as Venus' symbol. However, it falls short by not directly referencing the painting 'The Birth of Venus', yet still demonstrates a sound grasp of the topic."
+    },
+    "The Night Watch(invisible, art, relation, Non-English European, English)": {
+        "path": "Portray(Rembrandt, ReflectionOfLife) and Emphasize(ReflectionOfLife, CycleOfLife) symbolize(DeadChicken, EndOfLife) and Emphasize(EndOfLife, CycleOfLife) Thus, Rembrandt → ReflectionOfLife → CycleOfLife and DeadChicken → EndOfLife → CycleOfLife",
+        "hop_quality": {
+            "Rembrandt → ReflectionOfLife": [
+                0.8,
+                0.7,
+                0
+            ],
+            "ReflectionOfLife → CycleOfLife": [
+                0.7,
+                0.6,
+                0
+            ],
+            "DeadChicken → EndOfLife": [
+                0.8,
+                0.7,
+                0
+            ],
+            "EndOfLife → CycleOfLife": [
+                0.7,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "The MLLM selects an existential angle, contemplating life and death, bypassing the specific connection to 'The Night Watch'. The path is coherent in a philosophical sense but lacks relevance to well-acknowledged art historic elements, showing reduced precision and knowledge depth."
+    },
+    "The Last Supper(invisible, art, mutual elements, Non-English European, English)": {
+        "path": "Represent(BreadAndWine, Eucharist) and Symbolize(Eucharist, Christian) Number(12, ApostlesOfJesus) and Related(ApostlesOfJesus, Christian) Thus, BreadAndWine → Eucharist → Christian and 12 → ApostlesOfJesus → Christian",
+        "hop_quality": {
+            "BreadAndWine → Eucharist": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Eucharist → Christian": [
+                1.0,
+                1.0,
+                1
+            ],
+            "12 → ApostlesOfJesus": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ApostlesOfJesus → Christian": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through Christian symbolism. Both paths (BreadAndWine→Eucharist→Christian and 12→ApostlesOfJesus→Christian) demonstrate perfect scores across all dimensions, showing deep theological understanding and precise use of religious concepts."
+    },
+    "Sistine Chapel ceiling(invisible, art, relation, Non-English European, English)": {
+        "path": "Represent(Michelangelo, ArtisticInfluence) Evoke(Ceiling, MichelangeloArtwork) and Suggest(MichelangeloArtwork, ArtisticInfluence) Thus, Michelangelo → ArtisticInfluence and Ceiling → MichelangeloArtwork → ArtisticInfluence",
+        "hop_quality": {
+            "Michelangelo → ArtisticInfluence": [
+                0.95,
+                0.18,
+                1
+            ],
+            "Ceiling → MichelangeloArtwork": [
+                0.07,
+                0.34,
+                1
+            ],
+            "MichelangeloArtwork → ArtisticInfluence": [
+                0.96,
+                0.16,
+                0
+            ]
+        },
+        "explanation": "While logically sound, the MLLM's path relies on general artistic influence rather than identifying the iconic Sistine Chapel connection. The first hop maintains high reasonableness but lacks specificity, while subsequent hops show diminishing quality due to vague artistic associations."
+    },
+    "Socrates(invisible, people, mutual elements, Non-English European, English)": {
+        "path": "TransitionFromDarknessToLight(Cave, PerspectiveChange) and Transition(Birth, NewBeginning) Thus, Cave → PerspectiveChange and Birth → NewBeginning",
+        "hop_quality": {
+            "Cave → PerspectiveChange": [
+                0.8,
+                0.6,
+                0
+            ],
+            "Birth → NewBeginning": [
+                0.85,
+                0.7,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a plausible symbolic path based on transitions rather than the specific philosophical references to Socrates. While reasonable and somewhat specific, it lacks the philosophical depth and recognition of historical reference present in the ideal answer."
+    },
+    "亡羊补牢(invisible, culture, metaphor, East Asia, Chinese)": {
+        "path": "Represent(Sheep, Conformity) and Symbolize(Repairman, Individuality) Thus, Sheep → Conformity and Repairman → Individuality",
+        "hop_quality": {
+            "Sheep → Conformity": [
+                0.5,
+                0.2,
+                0
+            ],
+            "Repairman → Individuality": [
+                0.5,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM created a contrast between conformity and individuality but missed the cultural idiom associated with the sheep and repairman. The contrasts are apt but lack the significant cultural context of '亡羊补牢'."
+    },
+    "Girl with a Pearl Earring(invisible, art, relation, Non-English European, English)": {
+        "path": "Adorn(ManPortrait, StylishHatCollar) and Adorn(Woman, PearlEarrings) Thus, ManPortrait → StylishHatCollar and Woman → PearlEarrings",
+        "hop_quality": {
+            "ManPortrait → StylishHatCollar": [
+                0.3,
+                0.2,
+                0
+            ],
+            "Woman → PearlEarrings": [
+                0.7,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM focused on adornment rather than the historical and artistic connection to Vermeer and the specific painting 'Girl with a Pearl Earring'. While providing some reasonable associations, it misses the deeper contextual understanding and named references."
+    },
+    "Pythagoras(invisible, people, relation, Non-English European, English)": {
+        "path": "Represent(PythagoreanTheorem, MathematicalConcept) and Represent(Blacksmith, Craftsmanship) Thus, PythagoreanTheorem → MathematicalConcept and Blacksmith → Craftsmanship",
+        "hop_quality": {
+            "PythagoreanTheorem → MathematicalConcept": [
+                0.9,
+                0.7,
+                1
+            ],
+            "Blacksmith → Craftsmanship": [
+                0.9,
+                0.7,
+                0
+            ]
+        },
+        "explanation": "The MLLM emphasized measurement and craftsmanship but lacks the direct connection to Pythagoras himself or his contributions. These paths are logically sound in their own right but don't capture the historical link between Pythagoras and blacksmithing."
+    },
+    "the creation of the lyre is attributed to Hermes in Greek mythology(invisible, music, relation, Non-English European, English)": {
+        "path": "Associates(Lyre, Apollo) and Symbolizes(Apollo, Music) Thus, Lyre → Apollo → Music",
+        "hop_quality": {
+            "Lyre → Apollo": [
+                0.8,
+                0.6,
+                0
+            ],
+            "Apollo → Music": [
+                0.9,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM offered Aphrodite's connection to music through her representation with the lyre. Although it provides a logical connection to music through Apollo, it omits Hermes's creation of the lyre, which is a critical mythological detail in the ideal answer."
+    },
+    "7(invisible, number, mutual elements, NA, English)": {
+        "path": "Symbolize(Lyre, TimeAndMusic) and Represent(CalendarIcons, Time) and Related(Time, TimeAndMusic)",
+        "hop_quality": {
+            "Lyre → TimeAndMusic": [
+                0.8,
+                0.5,
+                0
+            ],
+            "CalendarIcons → Time": [
+                0.9,
+                0.8,
+                0
+            ],
+            "Time → TimeAndMusic": [
+                0.6,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a path focusing on a general connection between music and time rather than the specific numeric link of '7'. While reasonable given the context, the path lacked precision by not associating specific properties (like '7 strings') to the numeric concept."
+    },
+    "13(visible, number, mutual elements, NA, English)": {
+        "path": "Depict(FridayThe13th, HorrorMovie) and Represent(BohrModel, Aluminum) and Unrelated(HorrorMovie, Aluminum)",
+        "hop_quality": {
+            "FridayThe13th → HorrorMovie": [
+                0.7,
+                0.4,
+                0
+            ],
+            "BohrModel → Aluminum": [
+                0.85,
+                0.5,
+                1
+            ],
+            "HorrorMovie → Aluminum": [
+                0.0,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM output did not recognize the numeric relevance ('13') and defaulted to imagery related to the content of the photos, describing them as unrelated rather than identifying the numerical connection."
+    },
+    "Also sprach Zarathustra(invisible, music, mutual elements, NA, English)": {
+        "path": "Depict(2001ASpaceOdyssey, NaturalProgression) and Represent(Barbie, ArtificialIdeal) and Contrast(NaturalProgression, ArtificialIdeal)",
+        "hop_quality": {
+            "2001ASpaceOdyssey → NaturalProgression": [
+                0.65,
+                0.75,
+                0
+            ],
+            "Barbie → ArtificialIdeal": [
+                0.8,
+                0.7,
+                0
+            ],
+            "NaturalProgression → ArtificialIdeal": [
+                0.5,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM focused on thematic juxtaposition (natural vs. artificial) rather than identifying the shared musical motif of 'Also sprach Zarathustra'. The reasoning is imaginative but diverges from the cultural and artistic references highlighted in the reference answer."
+    },
+    "Father and Son with same occupation(invisible, people, mutual elements, NA, English)": {
+        "path": "Depict(YoungMan, Youth) and Depict(OlderMan, Age) and IllustrateProgression(Youth, Age)",
+        "hop_quality": {
+            "YoungMan → Youth": [
+                0.85,
+                0.7,
+                0
+            ],
+            "OlderMan → Age": [
+                0.9,
+                0.75,
+                0
+            ],
+            "Youth → Age": [
+                0.7,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "MLLM focused on temporal progression using visual attributes rather than the shared occupational inheritance of father-to-son pairs in the arts. The constructed path reveals generic temporal insights without engaging domain-specific knowledge about familial relations."
+    },
+    "The Moon and Sixpence(visible, art, mutual elements, USAEnglish, English)": {
+        "path": "Illustrate(Moon, TimeCycle) and Showcase(SilverCoins, TimeValue) and Contrast(TimeCycle, TimeValue)",
+        "hop_quality": {
+            "Moon → TimeCycle": [
+                0.9,
+                0.8,
+                0
+            ],
+            "SilverCoins → TimeValue": [
+                0.85,
+                0.7,
+                0
+            ],
+            "TimeCycle → TimeValue": [
+                0.5,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a notion of time's passage and impact using the imagery provided, thus missing the literary reference to 'The Moon and Sixpence'. While reasonable, it avoided the specific narrative nuances vital for capturing the essence of the target concept."
+    },
+    "木石前盟(visible, art, metaphor, East Asia, Chinese)": {
+        "path": "Material(Wood, Nature) and ResourceUse(Wood, Culture) and Material(Jade, Culture) and Inspiration(Nature, Culture) Thus, Wood → Nature → Culture and Jade → Culture",
+        "hop_quality": {
+            "Wood → Nature": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Nature → Culture": [
+                0.5,
+                0.5,
+                0
+            ],
+            "Jade → Culture": [
+                0.5,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM relates wood and jade through the broad concepts of nature and culture, missing the specific cultural reference to the idiom '木石前盟'. While the associations are logically reasonable for nature and culture, they lack the precision and depth required to capture the idiom's specific literary connotation."
+    },
+    "春望(visible, art, mutual elements, East Asia, Chinese)": {
+        "path": "Depict(Beacon, Ritual) and Record(Document, Ritual) Thus, Beacon → Ritual and Document → Ritual",
+        "hop_quality": {
+            "Beacon → Ritual": [
+                0.8,
+                0.2,
+                0
+            ],
+            "Document → Ritual": [
+                0.8,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM interprets the images as relating to rituals, rather than the intended literary and historical references in Du Fu's poem 'Spring Prospect'. The connections are logically constructed but diverge significantly from the specific cultural and historical contexts required by the reference answer."
+    },
+    "Women in Revenge Works(visible, art, mutual elements, Non-English European, English)": {
+        "path": "Depict(Ophelia, Death) and Symbolize(Haidee, Privilege) Thus, Ophelia → Death and Haidee → Privilege",
+        "hop_quality": {
+            "Ophelia → Death": [
+                1.0,
+                0.8,
+                1
+            ],
+            "Haidee → Privilege": [
+                0.75,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM focuses on contrasting fates, capturing Ophelia's association with death accurately, but missing Haidee’s thematic contribution to revenge. The first hop is precise and knowledgeable, whereas the second hop lacks necessary context and thematic relevance to revenge narratives."
+    },
+    "Character played by Viggo Peter Mortensen Jr(visible, movie, mutual elements, NA, English)": {
+        "path": "Depict(TonyLip, ViggoPeterMortensenJr) and Depict(Aragorn, ViggoPeterMortensenJr) Thus, TonyLip → ViggoPeterMortensenJr and Aragorn → ViggoPeterMortensenJr",
+        "hop_quality": {
+            "TonyLip → ViggoPeterMortensenJr": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Aragorn → ViggoPeterMortensenJr": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM successfully identifies both images as characters portrayed by Viggo Mortensen, mirroring the reference reasoning. The complete accuracy and specificity in both hops indicate a strong understanding of the actor's roles."
+    },
+    "Same Name Emma(visible, people, mutual elements, NA, English)": {
+        "path": "Success(EmmaMackey, Achievement) and Success(EmmaMckeon, Achievement) Thus, EmmaMackey → Achievement and EmmaMckeon → Achievement",
+        "hop_quality": {
+            "EmmaMackey → Achievement": [
+                0.8,
+                0.5,
+                0
+            ],
+            "EmmaMckeon → Achievement": [
+                0.8,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "While the MLLM correctly portrays individual success, it sidesteps the shared name connection of 'Emma' that ties the two subjects together. The reasoning is reasonable in terms of portraying achievement, yet it lacks precision regarding the name-based relationship, demonstrating a gap in specificity."
+    },
+    "The Million Pound Bank Note(invisible, art, relation, USAEnglish, English)": {
+        "path": "Represent(MillionPoundBanknote, TheMillionPoundBankNote) and Theme(TheMillionPoundBankNote, AmericanDream) ExpressBy(MarkTwain, AmericanDream)",
+        "hop_quality": {
+            "MillionPoundBanknote → TheMillionPoundBankNote": [
+                1.0,
+                0.75,
+                1
+            ],
+            "TheMillionPoundBankNote → AmericanDream": [
+                0.5,
+                0.4,
+                0
+            ],
+            "MarkTwain → AmericanDream": [
+                0.7,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed an associative path based on the broader theme of the American Dream. The connection from the Million Pound Banknote to The Million Pound Bank Note is reasonable due to the direct reference, but the leap to the American Dream lacks specificity. While Mark Twain's expressive potential indirectly aligns with the concept, the contextual precision is limited."
+    },
+    "Pedophilia Story(invisible, art, mutual elements, NA, English)": {
+        "path": "AuthoredBy(LinYiHan, FangSiChiFirstLoveParadise) and Paint(VladimirNabokov, Portrait)",
+        "hop_quality": {
+            "LinYiHan → FangSiChiFirstLoveParadise": [
+                0.95,
+                0.85,
+                1
+            ],
+            "VladimirNabokov → Portrait": [
+                0.1,
+                0.15,
+                0
+            ]
+        },
+        "explanation": "The MLLM focuses on the straightforward author-work relationship for Lin Yi-Han without addressing the thematic connection to Nabokov's 'Lolita.' Consequently, the second hop lacks logical depth and relevance, resulting in low scores for reasonability and specificity."
+    },
+    "The Bluest Eye(invisible, art, relation, USAEnglish, English)": {
+        "path": "AuthoredBy(ToniMorrison, TheBluestEye) and MetaphoricallyRepresents(BlueEye, Perception)",
+        "hop_quality": {
+            "ToniMorrison → TheBluestEye": [
+                1.0,
+                1.0,
+                1
+            ],
+            "BlueEye → Perception": [
+                0.8,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM captures the author's relationship with her work well but chooses a metaphorical interpretation focusing on perception, which diverges from the specific narrative themes. The first hop is precise, but the metaphorical extension, while logically sound, deviates from thematic specifics of Morrison's work."
+    },
+    "Richard Wright's novel(invisible, art, relation, USAEnglish, English)": {
+        "path": "DepictedBy(JamesBaldwin, AfricanAmericanStruggle) and RelatedTo(AfricanBoy, SharedIdentity)",
+        "hop_quality": {
+            "JamesBaldwin → AfricanAmericanStruggle": [
+                1.0,
+                0.8,
+                1
+            ],
+            "AfricanBoy → SharedIdentity": [
+                0.7,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM connects through broader cultural and racial identity themes, focusing on shared experiences rather than directly linking it to Richard Wright's 'Black Boy'. The identity and struggle aspects offer logical context, but lack precision with the specific literary reference."
+    },
+    "Adeline Virginia Woolf(invisible, art, mutual elements, USAEnglish, English)": {
+        "path": "Represent(Lighthouse, Guidance) and Symbolizes(SnailOnTheWall, Perseverance)",
+        "hop_quality": {
+            "Lighthouse → Guidance": [
+                1.0,
+                0.95,
+                1
+            ],
+            "SnailOnTheWall → Perseverance": [
+                0.9,
+                0.8,
+                0
+            ]
+        },
+        "explanation": "The MLLM illustrates the symbolic values of guidance and perseverance effectively, but the thematic execution diverges from Woolf's literary links. The first part stands strong in its symbolic fidelity whereas the snail portrayal in literary terms receives moderate specificity."
+    },
+    "Edgar Allan Poe(invisible, art, mutual elements, USAEnglish, English)": {
+        "path": "Depict(BlackCrow, Contrast) and Feature(GoldenBeetle, Contrast) Thus, Raven → BlackCrow → Contrast and GoldBug → GoldenBeetle → Contrast",
+        "hop_quality": {
+            "Raven → BlackCrow": [
+                0.9,
+                0.65,
+                0
+            ],
+            "BlackCrow → Contrast": [
+                0.8,
+                0.3,
+                0
+            ],
+            "GoldBug → GoldenBeetle": [
+                0.9,
+                0.65,
+                0
+            ],
+            "GoldenBeetle → Contrast": [
+                0.8,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM identifies a visual contrast between the images due to color differences. This path is logically reasonable and precise in terms of the observation of contrast, but it lacks the domain knowledge to connect these images through Edgar Allan Poe's works."
+    },
+    "Jorge Luis Borges(invisible, people, mutual elements, USAEnglish, English)": {
+        "path": "Symbolize(Library, Knowledge) and Represent(BlindPerson, AccessibilityBarrier) Thus, Library → Knowledge → AccessibilityBarrier and Blind → AccessibilityBarrier",
+        "hop_quality": {
+            "Library → Knowledge": [
+                0.8,
+                0.7,
+                0
+            ],
+            "Knowledge → AccessibilityBarrier": [
+                0.7,
+                0.5,
+                0
+            ],
+            "Blind → AccessibilityBarrier": [
+                0.7,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM's reasoning path focuses on accessibility, drawing a parallel between the library's knowledge and the barriers faced by a blind person. While the path shows some logical coherence, it misses the specific literary reference to Jorge Luis Borges, where the real connection resides."
+    },
+    "The Library of Babel(invisible, art, relation, USAEnglish, English)": {
+        "path": "Depict(Library, ArchitecturalGrandeur) and Showcase(Tower, ArchitecturalGrandeur) Thus, Library → ArchitecturalGrandeur and Babel → ArchitecturalGrandeur",
+        "hop_quality": {
+            "Library → ArchitecturalGrandeur": [
+                0.65,
+                0.5,
+                0
+            ],
+            "Babel → ArchitecturalGrandeur": [
+                0.65,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a path focused on the architectural grandeur depicted in both images. While aesthetically sound, the reasoning fails to capture the deeper literary connection to 'The Library of Babel', a crucial aspect of the reference answer."
+    },
+    "The Aleph(invisible, art, relation, USAEnglish, English)": {
+        "path": "Depict(Man, Image) and Present(Logo, Image) Thus, Borges → Image and Aleph → Image",
+        "hop_quality": {
+            "Borges → Image": [
+                0.5,
+                0.2,
+                0
+            ],
+            "Aleph → Image": [
+                0.5,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM articulates a superficial lack of relation besides the fact that both images are distinct. It fails to identify any substantive connection, particularly missing the relevance of Borges' literary work 'The Aleph'. The path lacks logical soundness, precision, and domain knowledge."
+    },
+    "The Book of Sand(invisible, art, metaphor, USAEnglish, English)": {
+        "path": "Visualize(SandDunes, Image) and Depict(RedBook, Image) Thus, Sand → Image and Book → Image",
+        "hop_quality": {
+            "Sand → Image": [
+                0.3,
+                0.2,
+                0
+            ],
+            "Book → Image": [
+                0.3,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM finds no connection between the two images, assigning an unrelated status. This lack of a conceptual link misses the rich thematic layer provided by the title 'The Book of Sand', resulting in a superficial interpretation devoid of literary depth."
+    },
+    "the origin of the Guinness World Records(invisible, history, relation, USAEnglish, English)": {
+        "path": "Depict(SirHughBeaver, ManInFormalSetting) and Show(GoldenPlover, BirdInHabitat)",
+        "hop_quality": {
+            "Depict(SirHughBeaver, ManInFormalSetting)": [
+                0.6,
+                0.2,
+                0
+            ],
+            "Show(GoldenPlover, BirdInHabitat)": [
+                0.6,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM did not identify the historical connection between Sir Hugh Beaver and the golden plover through the inception of the Guinness World Records. Instead, it constructed a lack of relation between two unrelated visual descriptions, providing a superficial depiction without historical context or depth."
+    },
+    "Guinness brand(visible, history, mutual elements, USAEnglish, English)": {
+        "path": "Show(GuinnessBreweries, GuinnessLogo) and Feature(GuinnessBookOfRecords, GuinnessBrand)",
+        "hop_quality": {
+            "Show(GuinnessBreweries, GuinnessLogo)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Feature(GuinnessBookOfRecords, GuinnessBrand)": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM correctly captured the brand association between the Guinness Breweries and the Guinness Book of Records, recognizing their shared branding under the Guinness umbrella. The association is specific and knowledgeable about the connection, demonstrating high quality in depicting the relationship."
+    },
+    "novels about women with extramarital affair(visible, art, mutual elements, USAEnglish, English)": {
+        "path": "Depict(MadameBovary, NovelProtagonist) and Feature(AnnaKarenina, MovieProtagonist) and Explore(Theme, EmotionalComplexity)",
+        "hop_quality": {
+            "Depict(MadameBovary, NovelProtagonist)": [
+                1.0,
+                0.7,
+                1
+            ],
+            "Feature(AnnaKarenina, MovieProtagonist)": [
+                1.0,
+                0.7,
+                1
+            ],
+            "Explore(Theme, EmotionalComplexity)": [
+                0.8,
+                0.6,
+                1
+            ]
+        },
+        "explanation": "The MLLM identified the common literary theme between Madame Bovary and Anna Karenina but focused on the adaptation aspect (literature vs. movie) rather than the novels' thematic linkage through affairs, leading to an association built on theme rather than narrative specifics."
+    },
+    "Jay Chou(invisible, music, mutual elements, East Asia, English)": {
+        "path": "Symbolize(WhiteFlowers, NaturalBeauty) and Depict(YoungWoman, HumanVitality)",
+        "hop_quality": {
+            "Symbolize(WhiteFlowers, NaturalBeauty)": [
+                0.65,
+                0.3,
+                0
+            ],
+            "Depict(YoungWoman, HumanVitality)": [
+                0.65,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM failed to recognize the personal connection between Jay Chou and Hannah Quinlivan via the song 'Common Jasmine Orange'. It instead created a metaphorical link between nature and humanity—missing the intended relational path entirely, lacking depth and specificity."
+    },
+    "三毛(invisible, art, relation, East Asia, Chinese)": {
+        "path": "Depict(SaharaMap, LocationSetting) and Illustrate(ThreeHairTravels, SaharaSetting)",
+        "hop_quality": {
+            "Depict(SaharaMap, LocationSetting)": [
+                0.5,
+                0.4,
+                0
+            ],
+            "Illustrate(ThreeHairTravels, SaharaSetting)": [
+                0.5,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM highlighted a fictional narrative association through geography but did not make the critical connection via Sanmao's works and the homologous names. The attempt focused on superficial geographic alignment with a fabricated story setting, missing deeper literary and cultural significance."
+    },
+    "Lao She's works(invisible, art, mutual elements, East Asia, English)": {
+        "path": "Represent(Rickshaw, Tradition) and Represent(Teahouse, Tradition) Thus, Rickshaw → Tradition and Teahouse → Tradition",
+        "hop_quality": {
+            "Rickshaw → Tradition": [
+                0.8,
+                0.2,
+                0
+            ],
+            "Teahouse → Tradition": [
+                0.8,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM focuses on the theme of Chinese traditions, which is reasonable but lacks specific literary recognition for Lao She's works. The explanation fails in knowledge depth, omitting the connection to the author Lao She, maintaining moderate reasonableness given the cultural aspect."
+    },
+    "playing basketball(invisible, sports, mutual elements, NA, English)": {
+        "path": "RelatedTo(Court, Basketball) and DesignedFor(Sneakers, Basketball) Thus, Court → Basketball and Sneakers → Basketball",
+        "hop_quality": {
+            "Court → Basketball": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Sneakers → Basketball": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM efficiently connects both images with the concept of basketball, aligning well with the reference association. The logical connections are specific, clear, and exhibit proficient knowledge, corresponding directly to the context of the sport."
+    },
+    "football field has grass(visible, sports, relation, NA, English)": {
+        "path": "ComposedOf(Grass, Field) and Illustrate(MacroMicro, FieldAndGrass) Thus, Grass → MacroMicro → FieldAndGrass",
+        "hop_quality": {
+            "Grass → MacroMicro": [
+                0.9,
+                0.4,
+                0
+            ],
+            "MacroMicro → FieldAndGrass": [
+                0.7,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM's explanation frames a macro versus micro perspective, which makes sense conceptually but diverges from the straightforward relation between football fields and grass. Despite a reasonable association, the specificity lacks depth, neglecting the essential covering aspect."
+    },
+    "playing baseball needs gloves(invisible, sports, relation, NA, English)": {
+        "path": "ServeAs(Protection, Baseball) and ServeAs(Protection, LeatherGloves) Thus, Protection → Baseball and Protection → LeatherGloves",
+        "hop_quality": {
+            "Protection → Baseball": [
+                0.8,
+                0.3,
+                0
+            ],
+            "Protection → LeatherGloves": [
+                0.7,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM illustrates a connection of protective utility, connecting through gloves and the field's protective function, however, fails to establish a direct relationship to playing baseball with relevant equipment. The path diverts from specific items used in the game."
+    },
+    "badminton court has net(invisible, sports, relation, NA, English)": {
+        "path": "EssentialFor(Shuttlecock, Badminton) and Divide(BadmintonCourt, Net) Thus, Shuttlecock → Badminton → Net",
+        "hop_quality": {
+            "Shuttlecock → Badminton": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Badminton → Net": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM provides a straightforward correlation, recognizing the essential components and their relationship in badminton. The understanding is comprehensive with direct reference to equipment, aligning well with the specified structure of the game."
+    },
+    "ping-pong table has net(visible, sports, relation, NA, English)": {
+        "path": "Feature(PingPongGame, Net) and FocusesOn(Net, NetStructure) Thus, PingPongGame → Net and NetStructure → Net",
+        "hop_quality": {
+            "PingPongGame → Net": [
+                1.0,
+                0.8,
+                1
+            ],
+            "NetStructure → Net": [
+                0.6,
+                0.6,
+                1
+            ]
+        },
+        "explanation": "The MLLM accurately identifies the net as a common element in both images, although it emphasizes its use in different contexts. The relation is generally sound, capturing the essence of the connection but somewhat diverging from the precise focus on table tennis."
+    },
+    "Ping Pong Concerto(visible, music, mutual elements, NA, English)": {
+        "path": "Coordinate(TableTennis, GroupActivity) Represent(Orchestra, CollaborativeMusic) Thus, TableTennis → GroupActivity and CollaborativeMusic → GroupActivity",
+        "hop_quality": {
+            "TableTennis → GroupActivity": [
+                1.0,
+                0.5,
+                1
+            ],
+            "CollaborativeMusic → GroupActivity": [
+                0.9,
+                0.4,
+                1
+            ]
+        },
+        "explanation": "MLLM focuses on the collaborative aspect of both activities, thus missing the direct reference to 'Ping Pong Concerto.' The constructed path logically relates to shared group effort, but lacks specificity to the unique artistic blend described in the reference."
+    },
+    "feather(visible, stuff, mutual elements, NA, English)": {
+        "path": "Unrelated(Badminton, Ducks) and Unrelated(Shuttlecock, Geese) Thus, Badminton → Unrelated → Ducks and Shuttlecock → Unrelated → Geese",
+        "hop_quality": {
+            "Badminton → Unrelated → Ducks": [
+                0.0,
+                0.0,
+                0
+            ],
+            "Shuttlecock → Unrelated → Geese": [
+                0.0,
+                0.0,
+                0
+            ]
+        },
+        "explanation": "The MLLM fails to recognize the shared element of 'feathers' which is a critical connection between the images or entities. Recognizing 'feathers' would provide a direct and knowledge-based link between the badminton shuttlecock and the birds."
+    },
+    "football(visible, sports, mutual elements, NA, English)": {
+        "path": "Depict(DetectiveConanCharacter, Entertaining) and Represent(WorldCup, SportingEvent) Thus, DetectiveConanCharacter → Entertaining and WorldCup → SportingEvent",
+        "hop_quality": {
+            "DetectiveConanCharacter → Entertaining": [
+                1.0,
+                0.5,
+                1
+            ],
+            "WorldCup → SportingEvent": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "Despite representing completely different genres, the MLLM establishes the general categories of entertainment and sport, respectively. However, it misses the specific connection of football that links Shinichi Kudo's character to the World Cup in terms of the game's relevance."
+    },
+    "tennis court has net(visible, sports, relation, NA, English)": {
+        "path": "Divide(TennisGame, Net) and Feature(Net, NetConstruction) Thus, TennisGame → Net and NetConstruction → Net",
+        "hop_quality": {
+            "TennisGame → Net": [
+                1.0,
+                1.0,
+                1
+            ],
+            "NetConstruction → Net": [
+                0.7,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM captures the net's role as a key element in tennis, precisely aligning with the reference. Despite being accurate, the focus on net structure slightly diverges from the primary intended connection of simply associating the net to a tennis court."
+    },
+    "golf tee(visible, sports, relation, NA, English)": {
+        "path": "Depict(Golfer, Golf) and Represent(GolfTee, GolfEquipment)",
+        "hop_quality": {
+            "Golfer → Golf": [
+                0.95,
+                0.8,
+                1
+            ],
+            "GolfTee → GolfEquipment": [
+                0.95,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM focuses on a broader category of 'golf equipment' rather than directly linking the images through function, like 'Golfers use tees'. The path is logically reasonable with good specificity, yet doesn't capture the targeted association of tee usage directly, highlighting a minor gap in precise identification."
+    },
+    "box(visible, sports, relation, NA, English)": {
+        "path": "Symbolize(Boxers, LifeChallenges) and Metaphor(TapeSealingBox, OvercomingChallenges) and Represent(Box, BoxedIn)",
+        "hop_quality": {
+            "Boxers → LifeChallenges": [
+                0.3,
+                0.15,
+                0
+            ],
+            "TapeSealingBox → OvercomingChallenges": [
+                0.2,
+                0.1,
+                0
+            ],
+            "Box → BoxedIn": [
+                0.25,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM interprets the images as a metaphorical reflection on life struggles, rather than a straightforward conceptual link through 'box'. Each hop lacks logical strength and specificity, veering towards an abstract interpretation that diminishes knowledge depth, failing to demonstrate a clear associative link present in the reference answer."
+    },
+    "ice hockey(visible, sports, relation, NA, English)": {
+        "path": "Depict(HockeyPlayers, DynamicState) and Show(Ice, FrozenState)",
+        "hop_quality": {
+            "HockeyPlayers → DynamicState": [
+                0.6,
+                0.5,
+                0
+            ],
+            "Ice → FrozenState": [
+                0.6,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path creates an alternate thematic contrast focusing on states of motion and rest, which are logically reasonable but deviate from the innate link: ice hockey. Specificity is reduced due to the genericness of 'states of matter,' reflecting a conceptual leap away from the traditional associations of the sport, lacking depth in domain knowledge."
+    },
+    "آنکھوں کا تارا(invisible, art, relation, South Asia and South-East Asia, Urdu)": {
+        "path": "VisualRepresentation(Urdu, LanguageBeauty) and Portray(EyesWithStars, VisualBeauty)",
+        "hop_quality": {
+            "Urdu → LanguageBeauty": [
+                0.7,
+                0.55,
+                0
+            ],
+            "EyesWithStars → VisualBeauty": [
+                0.8,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "The MLLM opts for an aesthetic analogy emphasizing visual appeal. The path diverges significantly from the intended metaphorical expression in Urdu. High clarity contrasts with a low connection to the metaphor, resulting in a path lacking specificity and cultural knowledge depth."
+    },
+    "بندر کیا جانے ادرک کا سواد(invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
+        "path": "Represent(GingerRoot, SpicyTaste) and Indicate(MonkeyStickingTongueOut, TastingBehavior)",
+        "hop_quality": {
+            "GingerRoot → SpicyTaste": [
+                0.9,
+                0.8,
+                1
+            ],
+            "MonkeyStickingTongueOut → TastingBehavior": [
+                0.9,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM correctly interprets the sensory connection of taste through ginger and the monkey but misses the cultural metaphor that encapsulates mindful appreciation. The path achieves high logical and specific representation but lacks the idiomatic understanding embedded in the reference answer's metaphor."
+    },
+    "کھودا پہاڑ نکلی چوہیا(invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
+        "path": "Exploitation(NaturalResources, Mining) and Affect(Mining, Environment) Impact(Human, Environment) and Disrupt(HumanActions, Wildlife)",
+        "hop_quality": {
+            "NaturalResources → Mining": [
+                0.9,
+                0.75,
+                1
+            ],
+            "Mining → Environment": [
+                0.82,
+                0.68,
+                1
+            ],
+            "Human → Environment": [
+                0.85,
+                0.7,
+                1
+            ],
+            "HumanActions → Wildlife": [
+                0.88,
+                0.72,
+                1
+            ]
+        },
+        "explanation": "The MLLM developed an environmentally focused path that emphasizes human exploitation and its impact. However, it entirely overlooked the metaphorical Urdu expression, thus missing the intended cultural reference. The reasoning holds logical merit and moderate specificity, but it lacks the essence of knowledge about the expression 'کھودا پہاڑ نکلی چوہیا'."
+    },
+    "دودھ کا جلا چھاچھ بھی پھونک پھونک کر پیتا ہے(invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
+        "path": "DrinkingTea ∧ BoilingWater → Preparation",
+        "hop_quality": {
+            "DrinkingTea ∧ BoilingWater → Preparation": [
+                0.65,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path constructs a connection based on the process of preparation, aligning the actions of drinking tea and boiling water. This overlooks the intended metaphorical expression about caution after a bad experience. While the link between the sequence of actions (boiling and drinking) is reasonable, it lacks the precision and cultural knowledge required to recognize the deeper metaphor."
+    },
+    "دال میں کچھ کالا ہے(invisible, art, relation, South Asia and South-East Asia, Urdu)": {
+        "path": "RawLentils ∧ CookedDish → Transformation",
+        "hop_quality": {
+            "RawLentils ∧ CookedDish → Transformation": [
+                0.8,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the culinary transformation of lentils rather than recognizing the metaphorical expression 'دال میں کچھ کالا ہے'. While the observation around lentils transforming into a meal is reasonable, it lacks the necessary precision and knowledge about the cultural and linguistic context of the phrase."
+    },
+    "The same prounciation between vin and vingt(invisible, sense, relation, Non-English European, French)": {
+        "path": "WineBeingPoured ∧ LegalDrinkingAge → Adulthood",
+        "hop_quality": {
+            "WineBeingPoured ∧ LegalDrinkingAge → Adulthood": [
+                0.65,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM focuses on the common theme of legal drinking age and adulthood, bypassing the play on words ('vin' and 'vingt'). Although it presents a logical connection, it lacks the specificity of the linguistic pun and demonstrates limited depth in associating the French language concept."
+    },
+    "The same prounciation between La rousse and Larousse(invisible, sense, relation, Non-English European, French)": {
+        "path": "Contrast(VisualRepresentation, OutwardAppearance) and Juxtapose(VisualAndIntellectualElements, DisconnectBetweenAppearanceAndIntellect) and Represent(Dictionary, IntellectualPursuit) and Emphasize(VisualRepresentation, OutwardAppearance)",
+        "hop_quality": {
+            "VisualRepresentation → OutwardAppearance": [
+                0.8,
+                0.5,
+                1
+            ],
+            "VisualAndIntellectualElements → DisconnectBetweenAppearanceAndIntellect": [
+                0.77,
+                0.4,
+                0
+            ],
+            "Dictionary → IntellectualPursuit": [
+                0.9,
+                0.6,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path relies on visual-intellectual juxtaposition rather than the homophonic relationship between 'La rousse' and 'Larousse'. The logical association of visual and intellectual contrast achieves average reasonableness and some specificity but deviates significantly from the homophonic reference, lacking depth in cultural context."
+    },
+    "The same prounciation between Porsche and porche(invisible, sense, relation, Non-English European, French)": {
+        "path": "Represent(Porsche, SpeedAndLuxury) and Contrast(SpeedAndLuxury, Domesticity) and Represent(Porch, Domesticity)",
+        "hop_quality": {
+            "Porsche → SpeedAndLuxury": [
+                1.0,
+                1.0,
+                1
+            ],
+            "SpeedAndLuxury → Domesticity": [
+                0.6,
+                0.6,
+                0
+            ],
+            "Domesticity → Porch": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM focused on the thematic contrast between speed/luxury and domestic/tranquil life, rather than the phonetic similarity. The associations for Porsche and porch themselves are specific and logical, but the connection is not precise given the reference path based on pronunciation."
+    },
+    "一朝被蛇咬，十年怕井绳(invisible, art, metaphor, East Asia, Chinese)": {
+        "path": "Represent(Snake, Danger) and Symbolize(Rope, Resources) and Contrast(Danger, Resources)",
+        "hop_quality": {
+            "Snake → Danger": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Rope → Resources": [
+                1.0,
+                0.8,
+                1
+            ],
+            "Danger → Resources": [
+                0.7,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM presented a contrasting symbolism between danger and resources, diverging from the proverb's interpretation. While logical, the approach lacks the precision of metaphor inherent in the proverb. The connection reflects a practical rationale without capturing the cultural significance."
+    },
+    "一箭双雕(invisible, art, metaphor, East Asia, Chinese)": {
+        "path": "Symbolize(Arrow, DirectAttack) and Symbolize(Eagle, PowerAndFreedom)",
+        "hop_quality": {
+            "Arrow → DirectAttack": [
+                1.0,
+                0.8,
+                1
+            ],
+            "Eagle → PowerAndFreedom": [
+                1.0,
+                0.75,
+                1
+            ]
+        },
+        "explanation": "The MLLM aligned two symbolic interpretations without recognizing the proverb's metaphorical importance. The explanation missed the intended theme capturing dual achievement with a singular act. It demonstrated logical symbolism yet deviated from cultural depth."
+    },
+    "avec des si on mettrait Paris en bouteille(invisible, art, metaphor, Non-English European, French)": {
+        "path": "Depict(Paris, Landmark) and Present(Bottle, EverydayObject)",
+        "hop_quality": {
+            "Paris → Landmark": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Bottle → EverydayObject": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "This explanation misses the cultural idiom, focusing instead on the physical representations of Paris and bottles without finding a deeper proverbial or metaphorical link. The path maintains precision but reflects a detachment from the thematic essence and idiomatic recognition."
+    },
+    "si les chiens avaient des scies, il n’y aurait plus de poteaux(invisible, art, metaphor, Non-English European, French)": {
+        "path": "Contrast(Nature, HumanIntervention)",
+        "hop_quality": {
+            "Nature → HumanIntervention": [
+                0.8,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "The interpretation focused on thematic contrasts between natural states and artificial constructs, misconstruing the proverb's humorous intent. Although aligning somewhat logically, the insight is lacking the precise understanding and cultural grasp of the idiomatic message."
+    },
+    "Donner sa langue au chat(invisible, art, metaphor, Non-English European, French)": {
+        "path": "Display(HumanTongue, Expression) and Display(CatMouth, Expression)\nThus, HumanTongue → Expression and CatMouth → Expression",
+        "hop_quality": {
+            "HumanTongue → Expression": [
+                0.73,
+                0.45,
+                0
+            ],
+            "CatMouth → Expression": [
+                0.73,
+                0.45,
+                0
+            ]
+        },
+        "explanation": "The MLLM identified a common physical expression (tongues out) and interpreted it as a playful or silly likeness rather than the idiom 'Donner sa langue au chat'. Although highlighting a similar gesture, it lacked the specificity of the well-known French expression and thus scored lower on reasonableness and precision."
+    },
+    "Couper les cheveux en quatre(invisible, art, metaphor, Non-English European, French)": {
+        "path": "Divide(CutHair, Sections) and Represent(PieChart, Sections)\nThus, CutHair → Sections and PieChart → Sections",
+        "hop_quality": {
+            "CutHair → Sections": [
+                0.84,
+                0.56,
+                0
+            ],
+            "PieChart → Sections": [
+                0.84,
+                0.56,
+                0
+            ]
+        },
+        "explanation": "The MLLM interpreted both images as visual manifestations of division into parts, a reasonable association. While this nods towards precision ('cutting hairs and pies into sections'), it misses the metaphorical inflection point 'Couper les cheveux en quatre'. This interpretation shows logical support yet no recognition of the precise idiom, leading to moderate scores."
+    },
+    "Vouloir le beurre et l'argent du beurre(invisible, art, metaphor, Non-English European, French)": {
+        "path": "Represent(Butter, PerceivedValue) and Represent(Money, PerceivedValue)\nThus, Butter → PerceivedValue and Money → PerceivedValue",
+        "hop_quality": {
+            "Butter → PerceivedValue": [
+                0.68,
+                0.32,
+                0
+            ],
+            "Money → PerceivedValue": [
+                0.68,
+                0.32,
+                0
+            ]
+        },
+        "explanation": "The MLLM finds commonality in the idea of 'value' but falls short of the idiom 'Vouloir le beurre et l'argent du beurre'. The association made was more generic, linking entities through economic representation without recognizing the idiomatic meaning, affecting both reasonableness and precision scores."
+    },
+    "Tomber dans les pommes(visible, art, relation, Non-English European, French)": {
+        "path": "Illustrate(FallOnApples, HumorousFall) and Indicate(FallWithUnconsciousPerson, SeriousFall)\nThus, FallOnApples → HumorousFall and FallWithUnconsciousPerson → SeriousFall",
+        "hop_quality": {
+            "FallOnApples → HumorousFall": [
+                0.82,
+                0.42,
+                0
+            ],
+            "FallWithUnconsciousPerson → SeriousFall": [
+                0.82,
+                0.42,
+                0
+            ]
+        },
+        "explanation": "The MLLM chose to concentrate on the varying nature of 'falls' instead of the idiomatic 'Tomber dans les pommes'. While the reasoning was logically tight involving the concept of falling, it sidestepped the specific idiomatic link, leading to medium-low marks in both precision and knowledgeable understanding."
+    },
+    "Avoir un poil dans la main(visible, art, relation, Non-English European, French)": {
+        "path": "Suggest(OpenHand, Action) and Depict(ManOnCouch, Inactivity)\nThus, OpenHand → Action and ManOnCouch → Inactivity",
+        "hop_quality": {
+            "OpenHand → Action": [
+                0.72,
+                0.3,
+                0
+            ],
+            "ManOnCouch → Inactivity": [
+                0.8,
+                0.46,
+                0
+            ]
+        },
+        "explanation": "While the reasoning presented a contrast between engagement and passivity, it did not align with the idiomatic expression 'Avoir un poil dans la main', which involves laziness. The constructed path lacked nuance in idiomatic interpretation, limiting its precision and reasonable depth."
+    },
+    "Buttered cat paradox(visible, STEM, metaphor, Non-English European, English)": {
+        "path": "SimpleAction(BreadWithButter) and DynamicAction(Cat) → ContrastingActions",
+        "hop_quality": {
+            "SimpleAction(BreadWithButter) and DynamicAction(Cat) → ContrastingActions": [
+                0.76,
+                0.26,
+                0
+            ]
+        },
+        "explanation": "The MLLM has derived a path focusing on contrasting actions, missing the 'Buttered Cat Paradox'. The reasonableness scores are moderately high due to a plausible narrative, but specificity and domain knowledge lack depth as it diverges from the humorous reference."
+    },
+    "Raven paradox(visible, STEM, metaphor, NA, English)": {
+        "path": "Symbolize(GreenApples, Nature) and Symbolize(Raven, Darkness) → Contrast",
+        "hop_quality": {
+            "Symbolize(GreenApples, Nature) and Symbolize(Raven, Darkness) → Contrast": [
+                0.84,
+                0.22,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path reflects a straightforward symbolic contrast, overlooking the 'Raven Paradox'. Reasonableness is strong, but precision and knowledge are weaker due to failure to connect with the paradoxical theory."
+    },
+    "Temperature paradox(visible, STEM, metaphor, NA, English)": {
+        "path": "Illustrate(HighTemperature, ClimateChange) and Demonstrate(TemperatureRise, ClimateChange) → ClimateChangeImpact",
+        "hop_quality": {
+            "Illustrate(HighTemperature, ClimateChange) and Demonstrate(TemperatureRise, ClimateChange) → ClimateChangeImpact": [
+                0.91,
+                0.28,
+                0
+            ]
+        },
+        "explanation": "The MLLM interpreted a path through a climate change lens, rather than addressing the 'Temperature Paradox'. While logically sound within this context, the path shows low precision and no specific knowledge of the probability paradox."
+    },
+    "Infinite(visible, STEM, metaphor, NA, English)": {
+        "path": "Depict(InfiniteHotel, Infinite) and Represent(MobiusStrip, Infinite) → InfiniteConcept",
+        "hop_quality": {
+            "Depict(InfiniteHotel, Infinite) and Represent(MobiusStrip, Infinite) → InfiniteConcept": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM accurately captured the concept of infinity through both thought experiments. Each step is logically robust, clear, and informed, perfectly aligning with the concept of infinity."
+    },
+    "اُونٹ کے مُنہ میں زیرہ (invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
+        "path": "Associate(CuminSeeds, MiddleEasternCuisine) and Associate(Camel, MiddleEasternCulture) → CulturalAssociation",
+        "hop_quality": {
+            "Associate(CuminSeeds, MiddleEasternCuisine) and Associate(Camel, MiddleEasternCulture) → CulturalAssociation": [
+                0.65,
+                0.23,
+                0
+            ]
+        },
+        "explanation": "The MLLM provides a cultural association path, omitting the Urdu metaphor 'اُونٹ کے مُنہ میں زیرہ'. The path has moderately high reasonableness but suffers in precision and knowledge specificity since it didn't address the metaphorical expression."
+    },
+    "ناک کاٹنا(invisible, art, metaphor, South Asia and South-East Asia, Urdu)": {
+        "path": "Satirize(CutNose, Criticism) and Depict(Judgment, SocialImpact)\nThus, CutNose → Criticism and Disgrace → Criticism",
+        "hop_quality": {
+            "CutNose → Criticism": [
+                0.6,
+                0.5,
+                0
+            ],
+            "Disgrace → Criticism": [
+                0.5,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "MLLM's interpretation misses the specific cultural metaphor of ناک کاٹنا. It constructs a path centered on social criticism but lacks the metaphorical and linguistic depth. The reasoning is moderately reasonable but not precise or knowledgeable about the cultural idiom."
+    },
+    "Zwei Fliegen mit einer Klappe schlagen(invisible, art, metaphor, Non-English European, German)": {
+        "path": "CauseAndEffect(UseSwatter, DeadFlies)\nThus, FlySwatter → DeadFlies",
+        "hop_quality": {
+            "FlySwatter → DeadFlies": [
+                0.6,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM focused on a direct cause and effect relationship rather than capturing the German idiomatic expression. The reasoning is plain and lacks the metaphorical layer of killing two birds with one stone. It omits depth in ideological understanding."
+    },
+    "cricket(visible, sports, relation, NA, English)": {
+        "path": "ShareName(CricketInsect, CricketSport)\nThus, CricketInsect → CricketSport",
+        "hop_quality": {
+            "CricketInsect → CricketSport": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM comprehensively addressed the shared etymology between the insect and the sport. It identifies the key connection accurately across all metrics."
+    },
+    "volleyball(invisible, sports, mutual elements, NA, English)": {
+        "path": "Represent(VolleyballCourt, Recreation)\nSymbolize(JumpingSilhouette, PhysicalActivity)\nThus, VolleyballCourt → Recreation and JumpingSilhouette → Recreation",
+        "hop_quality": {
+            "VolleyballCourt → Recreation": [
+                0.8,
+                0.6,
+                0
+            ],
+            "JumpingSilhouette → Recreation": [
+                0.7,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "MLLM provided a broad recreational context missing the specific detail of volleyball. The reasoning captures a theme but misses the precision and sport-specific association."
+    },
+    "water polo(invisible, sports, relation, NA, English)": {
+        "path": "Represent(HorsePolo, Recreation) and Symbolize(BeachBall, Recreation)\nThus, HorsePolo → Recreation and BeachBall → Recreation",
+        "hop_quality": {
+            "HorsePolo → Recreation": [
+                0.7,
+                0.6,
+                0
+            ],
+            "BeachBall → Recreation": [
+                0.5,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "MLLM missed the word play between horse polo and water polo. It associated both images with recreation but overlooked the sports category connection and wordplay, resulting in moderate score acknowledgment."
+    },
+    "hourglass(visible, stuff, mutual elements, NA, English)": {
+        "path": "Represent(Corset, Constriction) and Symbolize(Constriction, TimeConstraint) Represent(Stopwatch, Time) and Emphasize(Time, TimeConstraint) Thus, Corset → Constriction → TimeConstraint and Stopwatch → Time → TimeConstraint",
+        "hop_quality": {
+            "Corset → Constriction": [
+                0.9,
+                0.85,
+                0
+            ],
+            "Constriction → TimeConstraint": [
+                0.88,
+                0.8,
+                0
+            ],
+            "Stopwatch → Time": [
+                0.95,
+                0.95,
+                1
+            ],
+            "Time → TimeConstraint": [
+                0.8,
+                0.7,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path involves a metaphorical representation that centers on the idea of the corset being constrictive and the stopwatch symbolizing time pressure. The connection to an hourglass is missed, and the reasoning is more abstract, focusing on societal perception rather than shape association, leading to lower precision and knowledge scores."
+    },
+    "Symposium(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Represent(Angel, DeityRepresentation) and Show(Hermaphrodite, DeityRepresentation) Thus, Angel → DeityRepresentation and Hermaphrodite → DeityRepresentation",
+        "hop_quality": {
+            "Angel → DeityRepresentation": [
+                0.6,
+                0.6,
+                0
+            ],
+            "Hermaphrodite → DeityRepresentation": [
+                0.5,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM deviates from the Symposium context and reframes the connection as a thematic one about deity representation. While logical, it lacks precise reference and cultural depth, especially as the statues have different cultural origins, reducing the precision and domain knowledge quality."
+    },
+    "unpleasant smell(invisible, sense, mutual elements, NA, English)": {
+        "path": "KnownFor(StinkyTofu, UnpleasantSmell) KnownFor(Skunk, UnpleasantSmell) Thus, StinkyTofu → UnpleasantSmell and Skunk → UnpleasantSmell",
+        "hop_quality": {
+            "StinkyTofu → UnpleasantSmell": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Skunk → UnpleasantSmell": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM directly aligns with the reference path, focusing on the shared sensory experience of an unpleasant smell. The analysis is precise and highly knowledgeable, effectively linking cultural and biological examples with near-perfect quality in all respects."
+    },
+    "Box(invisible, sense, mutual elements, NA, English)": {
+        "path": "Contain(PandoraBox, PotentialConsequence) Involve(SchrodingersCat, PotentialConsequence) Thus, Pandora → PotentialConsequence and Schrödinger'sCat → PotentialConsequence",
+        "hop_quality": {
+            "Pandora → PotentialConsequence": [
+                0.8,
+                0.5,
+                0
+            ],
+            "Schrödinger'sCat → PotentialConsequence": [
+                0.8,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM approaches the images through abstract theming, focusing on metaphors of uncertainty. It fails to capture the specific cultural and scientific references to 'Box'. The path lacks precision due to broad metaphorical interpretations and shows limited depth in recognizing the original mythological and quantum contexts."
+    },
+    "superman(invisible, art, relation, Non-English European, English)": {
+        "path": "Represent(Zarathustra, HumanPotential) and Incorporate(HumanPotential, SuperhumanAspiration) Represent(Superman, SuperhumanAspiration) Thus, Zarathustra → HumanPotential → SuperhumanAspiration and Superman → SuperhumanAspiration",
+        "hop_quality": {
+            "Zarathustra → HumanPotential": [
+                0.85,
+                0.72,
+                0
+            ],
+            "HumanPotential → SuperhumanAspiration": [
+                0.8,
+                0.6,
+                0
+            ],
+            "Superman → SuperhumanAspiration": [
+                0.8,
+                0.65,
+                1
+            ]
+        },
+        "explanation": "The MLLM considers the philosophical themes of transcendence rather than linking Zarathustra directly to the concept of Übermensch. While conceptually viable, the reasoning lacks the precision to directly associate Nietzsche's philosophy with the superhero, impacting the path's specificity and knowledge logic."
+    },
+    "Pandora(invisible, myth, relation, NA, English)": {
+        "path": "ShareAesthetic(PandoraJewelry, PromotionalMaterials) and ShareAesthetic(MagicCube, PromotionalMaterials) Thus, PandoraJewelry → PromotionalMaterials and MagicCube → PromotionalMaterials",
+        "hop_quality": {
+            "PandoraJewelry → PromotionalMaterials": [
+                0.3,
+                0.2,
+                0
+            ],
+            "MagicCube → PromotionalMaterials": [
+                0.3,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a superficial connection based on similar promotional aesthetics, such as the use of backgrounds and lighting, which is logically weak and unrelated to the cultural context of Pandora's mythology. The reasoning is inadequate in specificity and knowledge depth, missing the historical and mythological associations."
+    },
+    "Name Pandora(invisible, cartoon or game, relation, NA, English)": {
+        "path": "Expresses(PersonalityStyle, PandoraBracelet) and Represents(Power, PandoraCharacter) and Both(PersonalityStyle, Expression) and Both(Power, Expression) Thus, PandoraBracelet → Expression and PandoraCharacter → Expression",
+        "hop_quality": {
+            "PandoraBracelet → Expression": [
+                0.5,
+                0.4,
+                0
+            ],
+            "PandoraCharacter → Expression": [
+                0.5,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM perceives the images as representations of personal expression, focusing on contrast rather than shared heritage or direct naming connection. While this provides aesthetic commentary, it lacks logical strength and relevance to the mythological origin of 'Pandora' across different contexts."
+    },
+    "Name Apollo(invisible, myth, mutual elements, USAEnglish, English)": {
+        "path": "Represent(ArtisticAchievement, GreekGodApollo) and Symbolize(ModernAchievement, Apollo11) and Both(ArtisticAchievement, Ambition) and Both(ModernAchievement, Ambition) Thus, GreekGodApollo → AmbitionProgress and Apollo11 → AmbitionProgress",
+        "hop_quality": {
+            "GreekGodApollo → AmbitionProgress": [
+                0.7,
+                0.3,
+                0
+            ],
+            "Apollo11 → AmbitionProgress": [
+                0.7,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM connects both images through general themes of ambition and progress, lacking the direct nametag significance. This abstraction exceeds the necessary specifics, missing the acknowledgement of the iconic 'Apollo' program title. The generic theme mapping is reasonable but insufficiently precise and informed."
+    },
+    "moon(invisible, myth, mutual elements, East Asia, English)": {
+        "path": "ExistsOn(Earth, Rabbit) and FunctionsOn(Moon, LunarRover) and Contrast(Earth, AlienEnviroment) Thus, Rabbit → Earth and LunarRover → AlienEnvironment",
+        "hop_quality": {
+            "Rabbit → Earth": [
+                0.2,
+                0.3,
+                0
+            ],
+            "LunarRover → AlienEnvironment": [
+                0.65,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM identifies an environmental contrast rather than the mythological celestial link. It interprets the contrast as illustrating diverse environments in a broad sense but neglects the cultural and astronomical context of Chinese lunar mythology and the explicit link to the moon for both subjects."
+    },
+    "玉兔(invisible, myth, metaphor, East Asia, Chinese)": {
+        "path": "Evokes(SymbolNewLife, EasterBunny) and Symbolize(SpiritualDivinity, JadeSculpture) and Represents(SymbolNewLife, Creation) and Represents(SpiritualDivinity, Creation) Thus, EasterBunny → Creation and JadeSculpture → Creation",
+        "hop_quality": {
+            "EasterBunny → Creation": [
+                0.4,
+                0.3,
+                0
+            ],
+            "JadeSculpture → Creation": [
+                0.5,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM draws upon generalized mythical imagery, mistaking Western motifs for Eastern mythology. The connection it forms centers on symbolic and spiritual creation themes but is divergent from the accurate cultural symbol of the 'Jade Rabbit’. This pathway is vague and misinterprets the elements involved."
+    },
+    "玉兔捣药(invisible, myth, relation, East Asia, Chinese)": {
+        "path": "Represent(ChineseMedicine, AncientPractice) and Symbolize(Moon, Spirituality) Thus, ChineseMedicine → AncientPractice and Moon → Spirituality",
+        "hop_quality": {
+            "ChineseMedicine → AncientPractice": [
+                0.8,
+                0.8,
+                1
+            ],
+            "Moon → Spirituality": [
+                0.7,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "The MLLM utilized a thematic interpretation referring to ancient wisdom and spirituality as a path, which diverges from the specific '玉兔捣药' myth. Concepts of ancient practice and spirituality are reasonable, but not very precise or knowledgeable regarding the cultural reference."
+    },
+    "toad living on the moon(invisible, myth, relation, East Asia, Chinese)": {
+        "path": "Show(Toad, EarthlyCreature) and Compare(Moon, CelestialBody) Thus, Toad → EarthlyCreature and Moon → CelestialBody",
+        "hop_quality": {
+            "Toad → EarthlyCreature": [
+                0.95,
+                0.86,
+                1
+            ],
+            "Moon → CelestialBody": [
+                1.0,
+                0.95,
+                1
+            ]
+        },
+        "explanation": "The MLLM focused on contrasting scales between earthly and celestial entities. It presented a logical contrast, which sidesteps the specific cultural myth of the toad on the moon."
+    },
+    "Legend of the White Snake(invisible, myth, relation, East Asia, Chinese)": {
+        "path": "Represent(Cobra, Danger) and Embody(Pagoda, Enlightenment) Thus, Cobra → Danger and Pagoda → Enlightenment",
+        "hop_quality": {
+            "Cobra → Danger": [
+                1.0,
+                0.9,
+                1
+            ],
+            "Pagoda → Enlightenment": [
+                0.95,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM went with a symbolic dichotomy between the cobra and pagoda as opposing forces. While spiritually meaningful, it lacks the nuanced reference to the 'Legend of the White Snake'."
+    },
+    "8(invisible, number, mutual elements, NA, English)": {
+        "path": "Depict(Figures, Afterlife) and Portray(Women, SpiritRealm) Thus, Figures → Afterlife and Women → SpiritRealm",
+        "hop_quality": {
+            "Figures → Afterlife": [
+                0.85,
+                0.8,
+                0
+            ],
+            "Women → SpiritRealm": [
+                0.8,
+                0.75,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a contrasting cultural view on the afterlife, which diverges from the simple numerical association that was expected. While the path provides a basis for thematic comparison, it misses the focus required on the commonality of '8'."
+    },
+    "Stories about Prison Break(invisible, art, mutual elements, USAEnglish, English)": {
+        "path": "Isolate(MonteCristo, Freedom) and Symbolize(ShawshankRedemption, Hope) Thus, MonteCristo → Freedom and ShawshankRedemption → Hope",
+        "hop_quality": {
+            "MonteCristo → Freedom": [
+                0.75,
+                0.7,
+                0
+            ],
+            "ShawshankRedemption → Hope": [
+                0.8,
+                0.75,
+                0
+            ]
+        },
+        "explanation": "The MLLM identifies themes of hope and freedom shared between the images rather than the narrative link of prison breaks. This thematic approach lacks precision but provides some reasonable context, although it misses the focused reference to respective stories."
+    },
+    "similar shape '$'(invisible, myth, mutual elements, USAEnglish, English)": {
+        "path": "Juxtapose(Caduceus, DollarBills) and Represent(Caduceus, Medicine) and Represent(DollarBills, Money)\nThus, Caduceus → Medicine and DollarBills → Money",
+        "hop_quality": {
+            "Caduceus → Medicine": [
+                0.85,
+                0.95,
+                1
+            ],
+            "DollarBills → Money": [
+                0.9,
+                0.94,
+                1
+            ]
+        },
+        "explanation": "The MLLM misidentifies the image as a Caduceus instead of the 'Rod of Asclepius', leading to an incorrect association. However, within its explanation, it logically relates the concept of healthcare cost albeit through a different path: the financial burden of healthcare. Although reasonable and knowledgeable, it doesn't address the specific visual similarity mentioned in the reference."
+    },
+    "toxicity(invisible, STEM, mutual elements, NA, English)": {
+        "path": "Depict(Flower, Beauty) and PotentiallyContain(Flower, ArsenicTrioxide) and Represent(ArsenicTrioxide, Poison)\nThus, Flower → ArsenicTrioxide → Poison",
+        "hop_quality": {
+            "Flower → ArsenicTrioxide": [
+                0.82,
+                0.88,
+                0
+            ],
+            "ArsenicTrioxide → Poison": [
+                1.0,
+                0.92,
+                1
+            ]
+        },
+        "explanation": "The MLLM elucidates the mutual characteristic of poison between both Gelsemium elegans and arsenic trioxide through potential arsenic content in plants. The argument leverages a more implicit linkage through the dual nature of plants and toxins, maintaining reasonable logic but lacks direct knowledge about Gelsemium elegans as per original reference."
+    },
+    "heartbreak(invisible, STEM, relation, NA, English)": {
+        "path": "Represent(VineWithYellowFlowers, Life) and Symbolize(BrokenHeart, Fragility)\nThus, VineWithYellowFlowers → Life and BrokenHeart → Fragility",
+        "hop_quality": {
+            "VineWithYellowFlowers → Life": [
+                0.8,
+                0.75,
+                0
+            ],
+            "BrokenHeart → Fragility": [
+                0.85,
+                0.88,
+                0
+            ]
+        },
+        "explanation": "The MLLM's explanation addresses the inherent fragility contained within the symbols of flowers and a broken heart. However, it misses the specific name link between Gelsemium elegans and heartbreak, resulting in limited precision and a lack of deep domain knowledge concerning Gelsemium elegans' common name."
+    },
+    "Fire(invisible, myth, mutual elements, East Asia, English)": {
+        "path": "Symbolize(TorchHoldingFigure, Enlightenment) and Represent(BuildingOnMountain, PlaceOfWorship)\nThus, TorchHoldingFigure → Enlightenment and BuildingOnMountain → PlaceOfWorship",
+        "hop_quality": {
+            "TorchHoldingFigure → Enlightenment": [
+                0.75,
+                0.85,
+                0
+            ],
+            "BuildingOnMountain → PlaceOfWorship": [
+                0.76,
+                0.86,
+                0
+            ]
+        },
+        "explanation": "The MLLM diverges entirely from the initial association with fire and mythological figures relating to fire deities, instead focusing on a more general association through symbolic meanings related to enlightenment and worship. This deviation results in low knowledge depth and specificity relative to the mythology about fire."
+    },
+    "God of Fire(invisible, myth, mutual elements, East Asia, English)": {
+        "path": "Represent(TyphonFigure, MythicalExploration) and Perform(MarsRover, SpaceExploration)\nThus, TyphonFigure → MythicalExploration and MarsRover → SpaceExploration",
+        "hop_quality": {
+            "TyphonFigure → MythicalExploration": [
+                0.6,
+                0.5,
+                0
+            ],
+            "MarsRover → SpaceExploration": [
+                0.9,
+                0.94,
+                1
+            ]
+        },
+        "explanation": "MLLM interprets a scene from Greek mythology showcasing Typhon (mistaking it for Prometheus), positioning it with a theme of mythical and spatial exploration. The focus on exploration diverts away from the fire association, leading to diminished logical soundness and a lack of specific domain knowledge on Prometheus being connected to fire."
+    },
+    "Fires in 2019(invisible, history, mutual elements, NA, English)": {
+        "path": "Highlight(NotreDame, HistoricalSignificance) and Illustrate(Building, Vulnerability) and Highlight(NotreDame, HistoricalSignificance) and Engulf(Building, Flames) and Illustrate(Building, Vulnerability) and Production(HistoricalContext, PreservationEfforts) and Highlight(NotreDame, HistoricalSignificance) and Production(HistoricalContext, PreservationEfforts) and Engulf(Building, Flames) DestructionOfHistoricalLandmarks) Thus, NotreDame → DestructionOfHistoricalLandmarks and Building → DestructionOfHistoricalLandmarks",
+        "hop_quality": {
+            "NotreDame → DestructionOfHistoricalLandmarks": [
+                0.9,
+                0.6,
+                1
+            ],
+            "Building → DestructionOfHistoricalLandmarks": [
+                0.7,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM presents a path related to historical landmark destruction instead of the focus on 2019 fires. The connection of NotreDame to destruction is logical; however, it lacks the specificity linking it to the fire. Similarly, the 'Building' hop covers a broader interpretation, missing precise historic or 2019 association."
+    },
+    "flood(invisible, myth, mutual elements, East Asia, English)": {
+        "path": "Depict(NoahArk, Leadership) and Symbolize(YuTheGreat, Authority) and Evoke(NoahArk, Salvation) and Evoke(YuTheGreat, Prosperity) and Illustrate(NoahArk, DivineLeadership) and Illustrate(YuTheGreat, EarthlyLeadership) and Suggest(NoahArk, PotentialSalvation) and Suggest(YuTheGreat, Leadership) Thus, NoahArk → Leadership and YuTheGreat → Leadership",
+        "hop_quality": {
+            "NoahArk → Leadership": [
+                0.8,
+                0.4,
+                1
+            ],
+            "YuTheGreat → Leadership": [
+                0.7,
+                0.3,
+                1
+            ]
+        },
+        "explanation": "The MLLM focuses on leadership and salvation themes, showing logical but generalized thematic overlaps, missing the direct flood connection. There is knowledge depth, particularly in contrasting divine and earthly leadership, but lacks precise flood-related specificity."
+    },
+    "Filling the Sea(invisible, myth, mutual elements, East Asia, English)": {
+        "path": "Feature(Jingwei, HumanNatureInteraction) and Illustrate(SeaReclamation, HumanAlteration) and Contrast(Jingwei, HarmonicInteraction) and Highlight(SeaReclamation, DirectAlteration) and Feature(Jingwei, HumanNatureInteraction) and Contrast(Jingwei, HarmonicInteraction) and Highlight(SeaReclamation, DirectAlteration) and Illustrate(SeaReclamation, HumanAlteration) HumanInteractionWithNature) Thus, Jingwei → HumanInteractionWithNature and SeaReclamation → HumanInteractionWithNature",
+        "hop_quality": {
+            "Jingwei → HumanInteractionWithNature": [
+                0.5,
+                0.2,
+                0
+            ],
+            "SeaReclamation → HumanInteractionWithNature": [
+                0.4,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM took an abstract approach towards human interaction with nature, missing the solid conceptual link with 'Filling the Sea'. While reasonableness is moderate, the approach remains vague without showcasing either precise mythological or technical reclamation reference."
+    },
+    "9(invisible, number, mutual elements, East Asia, English)": {
+        "path": "Symbolize(Kitsune, Cunning) and Evoke(NineOfHearts, Luck) and Suggest(Kitsune, AbstractConnection) and Illustrate(NineOfHearts, ConceptOfLuck) and Symbolize(Kitsune, Cunning) and Suggest(Kitsune, AbstractConnection) and Illustrate(NineOfHearts, ConceptOfLuck) Evoke(AbstractConnection) Thus, Kitsune → AbstractConnection and NineOfHearts → AbstractConnection",
+        "hop_quality": {
+            "Kitsune → AbstractConnection": [
+                0.4,
+                0.3,
+                0
+            ],
+            "NineOfHearts → AbstractConnection": [
+                0.2,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM forms weak abstractions of red color connectivity, omitting the direct numerical link (9 tails for Kitsune), resulting in low specificity in both conceptual and cultural references."
+    },
+    "Ra(invisible, myth, mutual elements, Arabic-Islamic, English)": {
+        "path": "Symbolize(Radium, Ra) and DeriveName(Radium, Ra) and DeriveName(Radium, Ra) and Reflect(AweAndWonder, Properties) Illustrate(RadiumDiscovery, ScientificBreakthrough) and Depict(Ra, CelestialInfluence) Thus, Radium → Ra",
+        "hop_quality": {
+            "Radium → Ra": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM demonstrates strong reasoning to fit the etymological relation between Radium and Ra. The single-hop path is accurately precise with high coherence, matching the reference path excellently."
+    },
+    "Thor(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Represent(ConstructionWorker, HardWork) and Symbolize(Calendar, PassageOfTime) and Highlight(Interplay, CreationAndDestruction) Thus, WorkerWithHammer → Construction → Interplay and Thursday → Calendar → Interplay",
+        "hop_quality": {
+            "WorkerWithHammer → Construction": [
+                0.5,
+                0.25,
+                0
+            ],
+            "Construction → Interplay": [
+                0.3,
+                0.2,
+                0
+            ],
+            "Thursday → Calendar": [
+                1.0,
+                0.5,
+                0
+            ],
+            "Calendar → Interplay": [
+                0.3,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on a generic thematic interpretation of labor and time, entirely missing the mythological connection to Thor. The connections made are generally reasonable regarding work and time but lack specificity and knowledge depth expected in the ideal path."
+    },
+    "Norse god Thor(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Evoke(PeopleAtLake, Adventure) and Suggest(DomesticScene, InnerPeace) Thus, PeopleByLake → Adventure and Thursday → DomesticScene",
+        "hop_quality": {
+            "PeopleByLake → Adventure": [
+                0.4,
+                0.2,
+                0
+            ],
+            "Thursday → DomesticScene": [
+                0.6,
+                0.25,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a vague contrast between adventure and domestics without any reference to the mythological aspect of Thor and instead focusing on setting and tone. The proposed associations have limited logical and knowledge-based connections."
+    },
+    "Odin(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Depict(AncientFigure, Religiosity) and Represent(Wednesday, DayOfWeek) Thus, FigureInRobe → Religiosity and Wednesday → Unrelated",
+        "hop_quality": {
+            "FigureInRobe → Religiosity": [
+                0.25,
+                0.1,
+                0
+            ],
+            "Wednesday → Unrelated": [
+                0.1,
+                0.05,
+                0
+            ]
+        },
+        "explanation": "The MLLM failed to identify any meaningful connection and marked the images as unrelated. This misses both the cultural and mythological link to Odin. The reasoning provided lacks both precision and domain knowledge."
+    },
+    "Týr(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Gesture(RightHand, Anticipation) and Represent(CalendarIcon, PassageOfTime) Thus, RightHand → Anticipation and Tuesday → CalendarIcon",
+        "hop_quality": {
+            "RightHand → Anticipation": [
+                0.6,
+                0.2,
+                0
+            ],
+            "Tuesday → CalendarIcon": [
+                1.0,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM's reasoning highlights a superficial time-based association, entirely overlooking the mythological context of Týr and the symbolic sacrifice of the right hand. The output shows a lack of domain knowledge and specificity."
+    },
+    "Moon(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Originate(Word, OldEnglish) and Association(Selene, Moon) Thus, Athena → GreekMythology and Monday → OldEnglish",
+        "hop_quality": {
+            "Athena → GreekMythology": [
+                0.7,
+                0.1,
+                0
+            ],
+            "Monday → OldEnglish": [
+                0.9,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "The MLLM explored an etymology path that loosely connects to Greek mythology. However, it failed to trace the link between Leto, Artemis, and the Moon. The content offers a broad but unfocused account lacking precise mythological connections."
+    },
+    "Frigg(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Depict(Odin, Solemnity) and Represent(Friday, Cheerfulness) Therefore, Odin → Solemnity and Friday → Cheerfulness",
+        "hop_quality": {
+            "Odin → Solemnity": [
+                0.8,
+                0.3,
+                0
+            ],
+            "Friday → Cheerfulness": [
+                0.95,
+                0.25,
+                0
+            ]
+        },
+        "explanation": "The MLLM focused on a thematic contrast between solemnity and cheerfulness, deviating from the mythologically inspired connection to Frigg. While the reasoning was moderately logical for evoking moods, it didn't provide precision or domain-specific knowledge by overlooking the Norse mythology context."
+    },
+    "토요일(invisible, culture, mutual elements, East Asia, Korean)": {
+        "path": "Associate(Gardening, Soil) and Indicate(Weekend, Saturday) Therefore, Soil → Gardening and Saturday → Weekend",
+        "hop_quality": {
+            "Soil → Gardening": [
+                0.95,
+                0.8,
+                1
+            ],
+            "Saturday → Weekend": [
+                1.0,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM opted for a common association between gardening and weekends, diverging from the symbolic etymology relating to 'soil'. The hops are logically reasonable, specific, and backed by common knowledge, although they don’t engage with the linguistic origin of the name 'Saturday'."
+    },
+    "Dimanches d'août(invisible, art, relation, Non-English European, French)": {
+        "path": "Depict(BookCover, Solitude) and Evoke(Word, Relaxation) Therefore, RueDesBoutiquesObscures → Solitude and Sunday → Relaxation",
+        "hop_quality": {
+            "RueDesBoutiquesObscures → Solitude": [
+                0.7,
+                0.2,
+                0
+            ],
+            "Sunday → Relaxation": [
+                0.85,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM identified thematic differences in mood between the book imagery and the word 'Sunday'. The absence of any literary connection meant missing an important essence of the cultural context. The associations, while somewhat reasonable, lack specificity and depth that would acknowledge Patrick Modiano's work or literary references."
+    },
+    "couch potato(invisible, culture, metaphor, Non-English European, French)": {
+        "path": "Depict(TV, Entertainment) and Represent(Potato, Sustenance) Therefore, TV → Entertainment and Potato → Sustenance",
+        "hop_quality": {
+            "TV → Entertainment": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Potato → Sustenance": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM approached from a practicality perspective, missing the metaphorical cultural reference to 'couch potato'. The hops achieved perfect logic, precision, and knowledge of general context in entertainment and sustenance, despite not arriving at the metaphor."
+    },
+    "similar shape between earphone and peashooter(visible, stuff, mutual elements, NA, English)": {
+        "path": "ProvideAudio(Earphone, Sound) and Characterize(Peashooter, Action) Therefore, Earphone → Sound and Peashooter → Action",
+        "hop_quality": {
+            "Earphone → Sound": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Peashooter → Action": [
+                1.0,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM highlighted the function of sensory input instead of focusing on the visual resemblance between earphones and peashooter. Though the sensory function approach was perfectly reasoned, it omitted the assessment of the form similarity that directly bridges the concepts."
+    },
+    "famous plot in The Little Prince(visible, art, metaphor, Non-English European, English)": {
+        "path": "Symbolize(CowboyHat, Adventure) and Evoke(Elephant, Adventure) and Represent(Elephant, Wilderness)",
+        "hop_quality": {
+            "CowboyHat → Adventure": [
+                0.85,
+                0.75,
+                0
+            ],
+            "Elephant → Adventure": [
+                0.7,
+                0.6,
+                0
+            ],
+            "Elephant → Wilderness": [
+                0.65,
+                0.7,
+                0
+            ]
+        },
+        "explanation": "The MLLM takes a broad symbolic path connecting a cowboy hat and an elephant through a theme of adventure rather than focusing on 'The Little Prince' reference. The reasoning centers on symbolic associations of freedom and exploration, but lacks the precision and knowledge depth of directly linking to the story's specific plot."
+    },
+    "drawing in The Little Prince(visible, art, metaphor, Non-English European, English)": {
+        "path": "Represent(StrawHat, Leisure) and Compare(BoaConstrictor, PredatoryNature)",
+        "hop_quality": {
+            "StrawHat → Leisure": [
+                0.8,
+                0.85,
+                0
+            ],
+            "BoaConstrictor → PredatoryNature": [
+                0.85,
+                0.8,
+                0
+            ]
+        },
+        "explanation": "The MLLM interprets the images as a contrast rather than exploring the story context of 'The Little Prince'. The application of reasoning emphasizes unexpected juxtaposition, which shows logical reasonableness and precision, but the knowledge depth is lacking since it misses the narrative reference."
+    },
+    "cool(invisible, sense, mutual elements, NA, English)": {
+        "path": "Protect(Sunglasses, Eyes) and Insulate(WinterClothing, Cold) and Demonstrate(Bundling, ProtectionFromElements)",
+        "hop_quality": {
+            "Sunglasses → Eyes": [
+                0.9,
+                0.85,
+                1
+            ],
+            "WinterClothing → Cold": [
+                0.8,
+                0.75,
+                0
+            ],
+            "Bundling → ProtectionFromElements": [
+                0.7,
+                0.65,
+                0
+            ]
+        },
+        "explanation": "The MLLM connects the images via a protection theme against natural elements rather than the 'cool' association. While this showcases reasonable logic, it diverges from the common 'cool' metaphor and lacks the domain-specific didacticism of associating sunglasses with the feeling of being 'cool'."
+    },
+    "hot(invisible, sense, mutual elements, NA, English)": {
+        "path": "Display(Sun, Fiery) and Highlight(ChiliPepper, BrightRed)",
+        "hop_quality": {
+            "Sun → Fiery": [
+                0.8,
+                0.75,
+                0
+            ],
+            "ChiliPepper → BrightRed": [
+                0.75,
+                0.7,
+                0
+            ]
+        },
+        "explanation": "The MLLM path associates the images with visual and color characteristics rather than addressing the underlying 'hot' temperature congruence. The constructed path is reasonable but lacks domain-specific depth by focusing on color similarity without an explicit 'heat' relation."
+    },
+    "Jupiter(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Represent(Eagle, Power) and Contrast(OrdinaryNote, Routine) and Suggest(Routine, Surprise)",
+        "hop_quality": {
+            "Eagle → Power": [
+                0.9,
+                0.8,
+                1
+            ],
+            "OrdinaryNote → Routine": [
+                0.8,
+                0.85,
+                0
+            ],
+            "Routine → Surprise": [
+                0.7,
+                0.65,
+                0
+            ]
+        },
+        "explanation": "The MLLM path highlights a thematic contrast between power and routine, overlooking Jupiter-related narratives. While the analysis captures plausible interpretation, it lacks precise connection to 'Jupiter', an association missed in knowledge depth."
+    },
+    "Jupiter's sacred thing(visible, myth, mutual elements, Non-English European, English)": {
+        "path": "Represent(Eagle, Strength) and Symbolize(Flying, Challenges) Symbolize(Oak, Resilience) and Embody(Oak, Wisdom) Thus, Eagle → Strength → Challenges and Oak → Resilience → Wisdom",
+        "hop_quality": {
+            "Eagle → Strength": [
+                0.9,
+                1.0,
+                1
+            ],
+            "Strength → Challenges": [
+                0.85,
+                0.6,
+                1
+            ],
+            "Oak → Resilience": [
+                0.95,
+                1.0,
+                1
+            ],
+            "Resilience → Wisdom": [
+                0.7,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM identified general qualities of strength and resilience associated with eagles and oak trees, but missed the specific mythological association with Jupiter. The initial hops maintain reasonable scores due to valid symbolic meanings, but lack specificity and fail to recognize the explicit mythological connections."
+    },
+    "Leo is opposite to Aquarius(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Symbol(Lion, Power) and Mark(Calendar, TimePassing) Thus, Lion → Power and Calendar → TimePassing",
+        "hop_quality": {
+            "Lion → Power": [
+                0.95,
+                1.0,
+                1
+            ],
+            "Calendar → TimePassing": [
+                0.8,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM has identified a poetic perspective linking lions to power and calendars to the passage of time. However, it failed to capture the astrological connection required by the reference answer, resulting in a generally reasonable interpretation but lacking specific alignment with the zodiac context."
+    },
+    "Cancer is opposite to Capricorn(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Symbolize(Crab, Transition) AssociatedWith(Calendar, Transition) Thus, Crab → Transition and Calendar → Transition",
+        "hop_quality": {
+            "Crab → Transition": [
+                0.8,
+                0.7,
+                1
+            ],
+            "Calendar → Transition": [
+                0.8,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a broad thematic path focusing on the concept of transition and change. The path demonstrates reasonable soundness and acknowledges a symbolic transformation theme. However, the explanation lacks direct astrological relevance, particularly missing the zodiac signs' implications."
+    },
+    "Gemini the model(invisible, STEM, mutual elements, Non-English European, English)": {
+        "path": "Depict(TwinGirls, Portrait) LocateIn(GoogleBranding, DigitalSpace) Thus, TwinGirls → Portrait and GoogleBranding → DigitalSpace",
+        "hop_quality": {
+            "TwinGirls → Portrait": [
+                0.95,
+                1.0,
+                1
+            ],
+            "GoogleBranding → DigitalSpace": [
+                0.9,
+                0.75,
+                1
+            ]
+        },
+        "explanation": "The MLLM identified distinct categorical depictions. Although visual and thematic connections seem unrelated, they expressed correct and precise descriptions within their domains. However, they missed identifying Gemini's association with each image for an exact match."
+    },
+    "Gemini the astrological sign(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Highlight(Months, MayJune) Depict(GoogleLogo, CorporateIdentity) Thus, Months → MayJune and GoogleLogo → CorporateIdentity",
+        "hop_quality": {
+            "Months → MayJune": [
+                0.95,
+                1.0,
+                1
+            ],
+            "GoogleLogo → CorporateIdentity": [
+                0.95,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM correctly identified periods and company branding without bridging them through a zodiac exploration. The path's precision and knowledge evaluations are high regarding individual image interpretation, yet missed integrating a key connection through the shared concept of Gemini."
+    },
+    "Aquarius is opposite to Leo(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Symbol(WaterBearer, Aquarius) and Opposite(Aquarius, Leo) and Period(Leo, JulyAugust) Thus, WaterBearer → Aquarius → Leo → JulyAugust",
+        "hop_quality": {
+            "Symbol(WaterBearer, Aquarius)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Opposite(Aquarius, Leo)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Period(Leo, JulyAugust)": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM failed to identify the astrological relations between the images and instead focused on incorrect seasonal connections. It incorrectly associated Aquarius with summer in the Southern Hemisphere, lacking the accurate identification of opposite zodiac signs (Leo and Aquarius) in relation to their periods."
+    },
+    "Libra is opposite to Aries(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Symbol(Scales, Libra) and Opposite(Libra, Aries) and Period(Aries, MarApr) Thus, Scales → Libra → Aries → MarApr",
+        "hop_quality": {
+            "Symbol(Scales, Libra)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Opposite(Libra, Aries)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Period(Aries, MarApr)": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM output focused on a loose concept of symbolic juxtaposition rather than astrological facts. The reasoning path lacked the essential connection between Libra (Scales) and Aries (their opposite relationship), missing the association with MarApr as Aries' period."
+    },
+    "Scorpio is opposite to Taurus(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Symbol(Scorpion, Scorpio) and Opposite(Scorpio, Taurus) and Period(Taurus, AprMay) Thus, Scorpion → Scorpio → Taurus → AprMay",
+        "hop_quality": {
+            "Symbol(Scorpion, Scorpio)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Opposite(Scorpio, Taurus)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Period(Taurus, AprMay)": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a narrative of contrast between danger and elegance, converting the zodiac connection with a personal interpretation. It overlooked the astrological link between Scorpio (Scorpion) and Taurus (Apr-Mai), therefore missing the direct cultural reference."
+    },
+    "Pisces is opposite to Virgo(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Symbol(TwoFish, Pisces) and Opposite(Pisces, Virgo) and Period(Virgo, AugSep) Thus, TwoFish → Pisces → Virgo → AugSep",
+        "hop_quality": {
+            "Symbol(TwoFish, Pisces)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Opposite(Pisces, Virgo)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Period(Virgo, AugSep)": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM failed to detect the obvious astrological connection, thus scoring zero as it declared the images unconnected without reasoning through the recognized zodiac symbolism with TwoFish for Pisces and its period's opposite in a Western zodiac cycle."
+    },
+    "Orion(invisible, myth, relation, Non-English European, English)": {
+        "path": "Occupation(Orion, Hunter) and KilledBy(Orion, Scorpion) Thus, Hunter → Orion → Scorpion",
+        "hop_quality": {
+            "Occupation(Orion, Hunter)": [
+                1.0,
+                1.0,
+                1
+            ],
+            "KilledBy(Orion, Scorpion)": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM produced an alternate relationship of hunter-prey, missing the direct mythological link between Orion and the Scorpion. The reference answer highlights Orion's narrative and symbolic history, which the output didn't recognize due to its surface-level predation correlation."
+    },
+    "Sagittarius is opposite to Gemini(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Depict(Centaur, MythicalCreature) and Unrelated(MythicalCreature, Calendar)",
+        "hop_quality": {
+            "Centaur → MythicalCreature": [
+                0.95,
+                1.0,
+                0
+            ],
+            "MythicalCreature → Calendar": [
+                0.1,
+                0.05,
+                0
+            ]
+        },
+        "explanation": "MLLM failed to recognize the astrological connection between a centaur (symbol of Sagittarius) and dates (indicative of calendar periods associated with zodiac signs). The explanation focused on the literal and physical aspects of the images, leading to no recognized association."
+    },
+    "Gemini is opposite to Sagittarius(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Suggest(Warrior, Anticipation) and Plan(Calendar, Months)",
+        "hop_quality": {
+            "Warrior → Anticipation": [
+                0.6,
+                0.12,
+                0
+            ],
+            "Calendar → Months": [
+                0.15,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM incorrectly derived a vague concept of 'Anticipation' from an archer and a calendar. Though the notion of anticipation might hint at preparation (like the archer), the reasoning lacks depth and specific astrological knowledge linking symbols and months."
+    },
+    "Aries is opposite to Libra(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Showcase(BighornSheep, Nature) and Presents(Calendar, Time)",
+        "hop_quality": {
+            "BighornSheep → Nature": [
+                0.5,
+                0.6,
+                0
+            ],
+            "Calendar → Time": [
+                0.3,
+                0.25,
+                0
+            ]
+        },
+        "explanation": "MLLM resorted to unrelated interpretations without recognizing the ram's astrological symbolism (Aries) and associated times. The constructed path missed the crucial astrological aspect that ties the images together by focusing on broad, superficial themes."
+    },
+    "Taurus is opposite to Scorpio(invisible, myth, relation, Non-English European, English)": {
+        "path": "Depict(Bull, Animal) and Unrelated(Calendar, Period)",
+        "hop_quality": {
+            "Bull → Animal": [
+                1.0,
+                1.0,
+                0
+            ],
+            "Calendar → Period": [
+                0.1,
+                0.05,
+                0
+            ]
+        },
+        "explanation": "MLLM failed to connect the bull to its symbolic representation of Taurus and its opposite astrological connection to the calendar period. The approach pointed out the obvious but missed the nuanced astrological linkages entailing those entities."
+    },
+    "10th zodiac(invisible, myth, mutual elements, Non-English European, English)": {
+        "path": "Symbol(SeaGoat, Capricorn) and Represent(Rooster, ChineseCulture) and Unrelated(Capricorn, Rooster)",
+        "hop_quality": {
+            "SeaGoat → Capricorn": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Rooster → ChineseCulture": [
+                0.9,
+                1.0,
+                1
+            ],
+            "Capricorn → Rooster": [
+                0.1,
+                0.05,
+                0
+            ]
+        },
+        "explanation": "Though MLLM correctly identified symbolic representations of the Sea Goat and Rooster, it failed to recognize their parallel cultural significance in zodiac systems. The mistake lies in overlooking the dual astrological references despite acknowledging their separate cultural symbolism."
+    }
+}
