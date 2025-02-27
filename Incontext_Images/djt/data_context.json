@@ -2349,29 +2349,29 @@
             {
                 "img_id": "1",
                 "filename": "batle.jpg",
-                "description": "A bald eagle."
+                "description": "A bald eagle"
             },
             {
                 "img_id": "2",
                 "filename": "baske.jpg",
-                "description": "A basketball game scene."
+                "description": "Basketball game"
             },
             {
                 "img_id": "3",
                 "filename": "lions.jpg",
-                "description": " A lion."
+                "description": " A lion"
             },
             {
                 "img_id": "4",
                 "filename": "soccer.jpg",
-                "description": "A soccer game scene."
+                "description": "Football game"
             }
         ],
         "reasoning": [
             {
                 "pair_id": "1",
-                "explanation": "The bald eagle is the national bird and a prominent symbol on the Great Seal of the United States, representing freedom and strength. The connection to a basketball game scene highlights the sport's origins in the U.S.",
-                "path": "BaldEagle → রাষ্ট্র চিহ্নের প্রাণী → UnitedStates → BasketballOrigins",
+                "explanation": "The bald eagle is the symbol on the national emblem of the United States, where the basketball originated.",
+                "path": "NationalEmblem(BaldEagle, US) and Origin(US, Basketball)\nThus, BaldEagle → US → Basketball",
                 "perception": [
                     "Scene Contextualization",
                     "Semantic Object",
@@ -2384,8 +2384,8 @@
             },
             {
                 "pair_id": "2",
-                "explanation": "The lion is a symbol found on the coat of arms of England, representing bravery and nobility. This relates to a soccer game scene, as soccer (or football) originated in England, making the lion a fitting representation of the sport's cultural heritage.",
-                "path": "Lion → রাষ্ট্র চিহ্নের প্রাণী → UnitedKingdom → FootballOrigins",
+                "explanation": "The lion is the symbol on the national emblem of England, where the football originated.",
+                "path": "NationalEmblem(Lion, England) and Origin(England, Football)\nThus, Lion → England → Football",
                 "perception": [
                     "Relational Perception",
                     "Scene Contextualization",
@@ -2397,7 +2397,7 @@
                 ]
             }
         ],
-        "hop_count": 3
+        "hop_count": 2
     },
     {
         "foldername": "रूपांतरण(food, STEM, metaphor, NA, Hindi)",
