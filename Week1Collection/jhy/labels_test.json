@@ -3725,7 +3725,7 @@
                 "description": "Kevlar fabric."
             }
         ],
-        "reasoning": "Has(Armadillo, NaturalArmor) and Purpose(NaturalArmor, Protection)\nMadeOf(BulletproofVest, Kevlar) and Purpose(Kevlar, Protection)\nThus, Armadillo → NaturalArmor → Protection and Kevlar → BulletproofVest → Protection",
+        "reasoning": "Possess(Armadillo, NaturalArmor) and Purpose(NaturalArmor, Protection)\nUsedIn(Kevlar, BulletproofVest) and Purpose(BulletproofVest, Protection)\nThus, Armadillo → NaturalArmor → Protection and Kevlar → BulletproofVest → Protection",
         "explanation": "Armadillos possess natural armor for protection, while Kevlar is used in bulletproof vests for the same purpose. The common concept between them is protection.",
         "hop_count": 4,
         "perception": [
