@@ -1,0 +1,582 @@
+[
+    {
+        "Tea Ceremony(culture, relation, East Asia, English)": {
+            "specificity_level_4": {
+                "relation": "Tea Ceremony",
+                "explanation": "Matcha is a key ingredient in the Japanese tea ceremony, and cherry blossoms are often associated with the ceremony's aesthetic.",
+                "reasoning": "Ingredient(Matcha, TeaCeremony) ∧ AssociatedWith(CherryBlossoms, TeaCeremony) → TeaCeremony"
+            },
+            "specificity_level_3": {
+                "relation": "Cultural Ritual",
+                "explanation": "The tea ceremony involves specific elements like matcha and cherry blossoms, which are culturally significant.",
+                "reasoning": "UsedFor(Matcha, Ritual) ∧ Symbolize(CherryBlossoms, Aesthetics) → CulturalRitual"
+            },
+            "specificity_level_2": {
+                "relation": "Traditional Practice",
+                "explanation": "The tea ceremony is a traditional practice involving certain ingredients and symbols.",
+                "reasoning": "HasElement(Matcha) ∧ HasElement(CherryBlossoms) → TraditionalPractice"
+            },
+            "specificity_level_1": {
+                "relation": "Cultural Event",
+                "explanation": "The tea ceremony is an event that includes matcha and cherry blossoms.",
+                "reasoning": "Involves(Matcha) ∧ Involves(CherryBlossoms) → CulturalEvent"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Elements",
+                "explanation": "Matcha is a drink, and cherry blossoms are flowers; they have no connection to the tea ceremony.",
+                "reasoning": "UsedFor(Matcha, Beverage) ∧ UsedFor(CherryBlossoms, Decoration) → NoRelation"
+            }
+        }
+    },
+    {
+        "Wedding Traditions(culture, mutual elements, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Wedding Traditions",
+                "explanation": "Wedding rings and bouquets are traditional elements in Western wedding ceremonies.",
+                "reasoning": "Tradition(WeddingRing, WeddingCeremony) ∧ Tradition(Bouquet, WeddingCeremony) → WeddingTraditions"
+            },
+            "specificity_level_3": {
+                "relation": "Ceremonial Symbols",
+                "explanation": "Wedding rings and bouquets are symbols used in wedding ceremonies.",
+                "reasoning": "Symbolize(WeddingRing, Commitment) ∧ Symbolize(Bouquet, Beauty) → CeremonialSymbols"
+            },
+            "specificity_level_2": {
+                "relation": "Ritual Elements",
+                "explanation": "Wedding rings and bouquets are elements commonly found in wedding rituals.",
+                "reasoning": "HasElement(WeddingRing) ∧ HasElement(Bouquet) → RitualElements"
+            },
+            "specificity_level_1": {
+                "relation": "Cultural Items",
+                "explanation": "Wedding rings and bouquets are items used in cultural ceremonies.",
+                "reasoning": "UsedIn(WeddingRing, Ceremony) ∧ UsedIn(Bouquet, Ceremony) → CulturalItems"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Objects",
+                "explanation": "Wedding rings are jewelry, and bouquets are flowers; they have no connection to weddings.",
+                "reasoning": "UsedFor(WeddingRing, Decoration) ∧ UsedFor(Bouquet, Gardening) → NoRelation"
+            }
+        }
+    },
+    {
+        "Funeral Rites(culture, mutual elements, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Funeral Rites",
+                "explanation": "Coffins and black clothing are traditional elements in Western funeral rites.",
+                "reasoning": "Tradition(Coffin, FuneralRites) ∧ Tradition(BlackClothing, FuneralRites) → FuneralRites"
+            },
+            "specificity_level_3": {
+                "relation": "Mourning Practices",
+                "explanation": "Coffins and black clothing are used in mourning practices during funerals.",
+                "reasoning": "UsedFor(Coffin, Burial) ∧ UsedFor(BlackClothing, Mourning) → MourningPractices"
+            },
+            "specificity_level_2": {
+                "relation": "Funeral Elements",
+                "explanation": "Coffins and black clothing are elements commonly associated with funerals.",
+                "reasoning": "HasElement(Coffin) ∧ HasElement(BlackClothing) → FuneralElements"
+            },
+            "specificity_level_1": {
+                "relation": "Cultural Rituals",
+                "explanation": "Coffins and black clothing are part of cultural rituals related to death.",
+                "reasoning": "UsedIn(Coffin, Ritual) ∧ UsedIn(BlackClothing, Ritual) → CulturalRituals"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Items",
+                "explanation": "Coffins are for burial, and black clothing is for fashion; they have no connection to funerals.",
+                "reasoning": "UsedFor(Coffin, Storage) ∧ UsedFor(BlackClothing, Apparel) → NoRelation"
+            }
+        }
+    },
+    {
+        "Coming-of-Age Rituals(culture, relation, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Coming-of-Age Rituals",
+                "explanation": "Graduation caps symbolize academic coming-of-age, while Quinceañera dresses are associated with a traditional Latin American coming-of-age ceremony.",
+                "reasoning": "Symbolize(GraduationCap, AcademicComingOfAge) ∧ AssociatedWith(QuinceaneraDress, Quinceanera) → ComingOfAgeRituals"
+            },
+            "specificity_level_3": {
+                "relation": "Cultural Milestones",
+                "explanation": "Graduation caps and Quinceañera dresses represent significant cultural milestones.",
+                "reasoning": "Represent(GraduationCap, Achievement) ∧ Represent(QuinceaneraDress, Transition) → CulturalMilestones"
+            },
+            "specificity_level_2": {
+                "relation": "Ritual Symbols",
+                "explanation": "Graduation caps and Quinceañera dresses are symbols used in various coming-of-age rituals.",
+                "reasoning": "HasElement(GraduationCap) ∧ HasElement(QuinceaneraDress) → RitualSymbols"
+            },
+            "specificity_level_1": {
+                "relation": "Cultural Events",
+                "explanation": "Graduation caps and Quinceañera dresses are associated with cultural events marking maturity.",
+                "reasoning": "UsedIn(GraduationCap, Event) ∧ UsedIn(QuinceaneraDress, Event) → CulturalEvents"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Attire",
+                "explanation": "Graduation caps are for school, and Quinceañera dresses are for parties; they have no connection to coming-of-age.",
+                "reasoning": "UsedFor(GraduationCap, Academic) ∧ UsedFor(QuinceaneraDress, Celebration) → NoRelation"
+            }
+        }
+    },
+    {
+        "Harvest Festivals(culture, mutual elements, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Harvest Festivals",
+                "explanation": "Cornucopias and pumpkins are traditional symbols associated with harvest festivals.",
+                "reasoning": "Symbol(Cornucopia, HarvestFestival) ∧ Symbol(Pumpkin, HarvestFestival) → HarvestFestivals"
+            },
+            "specificity_level_3": {
+                "relation": "Seasonal Symbols",
+                "explanation": "Cornucopias and pumpkins are symbols representing abundance and the harvest season.",
+                "reasoning": "Represent(Cornucopia, Abundance) ∧ Represent(Pumpkin, Harvest) → SeasonalSymbols"
+            },
+            "specificity_level_2": {
+                "relation": "Festival Elements",
+                "explanation": "Cornucopias and pumpkins are elements commonly found in harvest festivals.",
+                "reasoning": "HasElement(Cornucopia) ∧ HasElement(Pumpkin) → FestivalElements"
+            },
+            "specificity_level_1": {
+                "relation": "Cultural Symbols",
+                "explanation": "Cornucopias and pumpkins are symbols used in cultural celebrations of harvest.",
+                "reasoning": "UsedIn(Cornucopia, Celebration) ∧ UsedIn(Pumpkin, Celebration) → CulturalSymbols"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Objects",
+                "explanation": "Cornucopias are decorative items, and pumpkins are vegetables; they have no connection to harvest festivals.",
+                "reasoning": "UsedFor(Cornucopia, Decoration) ∧ UsedFor(Pumpkin, Food) → NoRelation"
+            }
+        }
+    },
+    {
+        "Traditional Music(culture, mutual elements, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Traditional Music",
+                "explanation": "Violins and bagpipes are traditional instruments in Western music, representing cultural heritage.",
+                "reasoning": "Instrument(Violin, TraditionalMusic) ∧ Instrument(Bagpipes, TraditionalMusic) → TraditionalMusic"
+            },
+            "specificity_level_3": {
+                "relation": "Musical Instruments",
+                "explanation": "Violins and bagpipes are instruments used in traditional music.",
+                "reasoning": "Instrument(Violin, Music) ∧ Instrument(Bagpipes, Music) → TraditionalMusic"
+            },
+            "specificity_level_2": {
+                "relation": "Cultural Elements",
+                "explanation": "Violins and bagpipes are associated with culture.",
+                "reasoning": "AssociatedWith(Violin, Culture) ∧ AssociatedWith(Bagpipes, Culture) → CulturalElements"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Cultural Association",
+                "explanation": "Violins and bagpipes might be related to culture.",
+                "reasoning": "PossibleConnection(Culture)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Objects",
+                "explanation": "Violins are for classical music, bagpipes are for parades.",
+                "reasoning": "UsedFor(Violin, ClassicalMusic) ∧ UsedFor(Bagpipes, Parades) → NoRelation"
+            }
+        }
+    },
+    {
+        "Folk Dance(culture, relation, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Folk Dance",
+                "explanation": "Clogs are traditional footwear for certain folk dances, and polka is a well-known folk dance, reflecting cultural practices.",
+                "reasoning": "Footwear(Clogs, FolkDance) ∧ Dance(Polka, FolkDance) → FolkDance"
+            },
+            "specificity_level_3": {
+                "relation": "Dance Traditions",
+                "explanation": "Clogs and polka are associated with traditional dance.",
+                "reasoning": "AssociatedWith(Clogs, Dance) ∧ AssociatedWith(Polka, Dance) → DanceTraditions"
+            },
+            "specificity_level_2": {
+                "relation": "Cultural Practices",
+                "explanation": "Clogs and polka are part of cultural activities.",
+                "reasoning": "PartOf(Clogs, Culture) ∧ PartOf(Polka, Culture) → CulturalPractices"
+            },
+            "specificity_level_1": {
+                "relation": "Possible Cultural Association",
+                "explanation": "Clogs and polka might be related to culture.",
+                "reasoning": "PossibleConnection(Culture)"
+            },
+            "specificity_level_0": {
+                "relation": "Incorrect Association",
+                "explanation": "Clogs are shoes, polka is a dance—no direct connection.",
+                "reasoning": "IsA(Clogs, Footwear) ∧ IsA(Polka, Dance) → NoRelation"
+            }
+        }
+    },
+    {
+        "National Dress(culture, relation, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "National Dress",
+                "explanation": "Kilts are traditional Scottish national dress, and dirndls are traditional German national dress, symbolizing cultural identity.",
+                "reasoning": "Dress(Kilt, ScottishNationalDress) ∧ Dress(Dirndl, GermanNationalDress) → NationalDress"
+            },
+            "specificity_level_3": {
+                "relation": "Cultural Attire",
+                "explanation": "Kilts and dirndls are traditional clothing representing specific cultures.",
+                "reasoning": "Clothing(Kilt, ScottishCulture) ∧ Clothing(Dirndl, GermanCulture) → CulturalAttire"
+            },
+            "specificity_level_2": {
+                "relation": "Traditional Clothing",
+                "explanation": "Kilts and dirndls are examples of traditional garments.",
+                "reasoning": "IsA(Kilt, TraditionalClothing) ∧ IsA(Dirndl, TraditionalClothing) → TraditionalClothing"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Cultural Association",
+                "explanation": "Kilts and dirndls might be related to culture.",
+                "reasoning": "PossibleConnection(Culture)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Garments",
+                "explanation": "Kilts are for men, dirndls are for women—no direct connection.",
+                "reasoning": "WornBy(Kilt, Men) ∧ WornBy(Dirndl, Women) → NoRelation"
+            }
+        }
+    },
+    {
+        "Cultural Etiquette(culture, relation, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Cultural Etiquette",
+                "explanation": "Handshakes are a common form of greeting in Western culture, while bows are a traditional form of greeting in many East Asian cultures, reflecting cultural norms.",
+                "reasoning": "Greeting(Handshake, WesternCulture) ∧ Greeting(Bow, EastAsianCulture) → CulturalEtiquette"
+            },
+            "specificity_level_3": {
+                "relation": "Greeting Customs",
+                "explanation": "Handshakes and bows are traditional forms of greeting in different cultures.",
+                "reasoning": "Custom(Handshake, Western) ∧ Custom(Bow, EastAsian) → GreetingCustoms"
+            },
+            "specificity_level_2": {
+                "relation": "Cultural Practices",
+                "explanation": "Handshakes and bows are part of cultural behavior.",
+                "reasoning": "PartOf(Handshake, Culture) ∧ PartOf(Bow, Culture) → CulturalPractices"
+            },
+            "specificity_level_1": {
+                "relation": "Possible Cultural Association",
+                "explanation": "Handshakes and bows might be related to culture.",
+                "reasoning": "PossibleConnection(Culture)"
+            },
+            "specificity_level_0": {
+                "relation": "Incorrect Association",
+                "explanation": "Handshakes are for meetings, bows are for respect—no direct connection.",
+                "reasoning": "UsedFor(Handshake, Meetings) ∧ UsedFor(Bow, Respect) → NoRelation"
+            }
+        }
+    },
+    {
+        "Taboo Subjects(culture, relation, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Taboo Subjects",
+                "explanation": "Censored speech bubbles symbolize subjects that are considered taboo to discuss, while broken mirrors are often associated with bad luck and are considered taboo in many cultures, reflecting cultural sensitivities.",
+                "reasoning": "Symbolize(CensoredSpeechBubble, TabooSubjects) ∧ AssociatedWith(BrokenMirror, TabooSubjects) → TabooSubjects"
+            },
+            "specificity_level_3": {
+                "relation": "Cultural Taboos",
+                "explanation": "Censored speech bubbles and broken mirrors are associated with taboo subjects in various cultures.",
+                "reasoning": "AssociatedWith(CensoredSpeechBubble, Taboo) ∧ AssociatedWith(BrokenMirror, Taboo) → CulturalTaboos"
+            },
+            "specificity_level_2": {
+                "relation": "Cultural Symbols",
+                "explanation": "Censored speech bubbles and broken mirrors are symbols in cultural contexts.",
+                "reasoning": "Symbolize(CensoredSpeechBubble, Culture) ∧ Symbolize(BrokenMirror, Culture) → CulturalSymbols"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Cultural Association",
+                "explanation": "Censored speech bubbles and broken mirrors might be related to culture.",
+                "reasoning": "PossibleConnection(Culture)"
+            },
+            "specificity_level_0": {
+                "relation": "Incorrect Association",
+                "explanation": "Censored speech bubbles are for comics, broken mirrors are for superstitions—no direct connection.",
+                "reasoning": "UsedFor(CensoredSpeechBubble, Comics) ∧ UsedFor(BrokenMirror, Superstition) → NoRelation"
+            }
+        }
+    },
+    {
+        "Body Language(culture, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Body Language",
+                "explanation": "Crossed arms often indicate defensiveness or discomfort, while a thumbs up gesture is a universal sign of approval or agreement.",
+                "reasoning": "Indicate(CrossedArms, Defensiveness) ∧ Indicate(ThumbsUp, Approval) → BodyLanguage"
+            },
+            "specificity_level_3": {
+                "relation": "Nonverbal Communication",
+                "explanation": "Crossed arms and thumbs up are examples of nonverbal cues that convey specific messages.",
+                "reasoning": "Indicate(CrossedArms, Message) ∧ Indicate(ThumbsUp, Message) → NonverbalCommunication"
+            },
+            "specificity_level_2": {
+                "relation": "Physical Gestures",
+                "explanation": "Crossed arms and thumbs up are physical gestures that people use.",
+                "reasoning": "IsA(CrossedArms, Gesture) ∧ IsA(ThumbsUp, Gesture) → PhysicalGestures"
+            },
+            "specificity_level_1": {
+                "relation": "Possible Gestures",
+                "explanation": "These might be gestures people use to communicate.",
+                "reasoning": "PossibleConnection(Gesture)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Movements",
+                "explanation": "Crossed arms are for warmth, and thumbs up is for hitchhiking.",
+                "reasoning": "UsedFor(CrossedArms, Warmth) ∧ UsedFor(ThumbsUp, Hitchhiking) → ¬BodyLanguage"
+            }
+        }
+    },
+    {
+        "Oktoberfest(culture, mutual elements, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Oktoberfest",
+                "explanation": "Beer steins are traditional drinking vessels used during Oktoberfest, and dirndl dresses are traditional attire worn by women during the festival.",
+                "reasoning": "Tradition(BeerStein, Oktoberfest) ∧ Tradition(DirndlDress, Oktoberfest) → Oktoberfest"
+            },
+            "specificity_level_3": {
+                "relation": "Cultural Elements",
+                "explanation": "Beer steins and dirndl dresses are cultural elements associated with Oktoberfest.",
+                "reasoning": "IsA(BeerStein, CulturalElement) ∧ IsA(DirndlDress, CulturalElement) → CulturalElements"
+            },
+            "specificity_level_2": {
+                "relation": "Festival Items",
+                "explanation": "Beer steins and dirndl dresses are items used during a festival.",
+                "reasoning": "UsedDuring(BeerStein, Festival) ∧ UsedDuring(DirndlDress, Festival) → FestivalItems"
+            },
+            "specificity_level_1": {
+                "relation": "Possible Festival Items",
+                "explanation": "These might be items used during a festival.",
+                "reasoning": "PossibleConnection(Festival)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Objects",
+                "explanation": "Beer steins are for drinking, and dirndl dresses are for fashion.",
+                "reasoning": "UsedFor(BeerStein, Drinking) ∧ UsedFor(DirndlDress, Fashion) → ¬Oktoberfest"
+            }
+        }
+    },
+    {
+        "Hollywood  Walk of Fame star(culture, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Entertainment Industry",
+                "explanation": "The Hollywood sign is an iconic symbol of the entertainment industry, and Walk of Fame stars are awarded to celebrities as a recognition of their contributions to the entertainment industry.",
+                "reasoning": "Symbol(HollywoodSign, EntertainmentIndustry) ∧ Recognition(WalkOfFameStar, Celebrities) ∧ Contribution(Celebrities, EntertainmentIndustry) → EntertainmentIndustry"
+            },
+            "specificity_level_3": {
+                "relation": "Celebrity Recognition",
+                "explanation": "The Hollywood sign represents the entertainment industry, and Walk of Fame stars honor celebrities.",
+                "reasoning": "Symbol(HollywoodSign, Entertainment) ∧ Recognition(WalkOfFameStar, Celebrities) → CelebrityRecognition"
+            },
+            "specificity_level_2": {
+                "relation": "Cultural Symbols",
+                "explanation": "The Hollywood sign and Walk of Fame stars are cultural symbols.",
+                "reasoning": "IsA(HollywoodSign, Symbol) ∧ IsA(WalkOfFameStar, Symbol) → CulturalSymbols"
+            },
+            "specificity_level_1": {
+                "relation": "Possible Symbols",
+                "explanation": "These might be symbols related to entertainment or culture.",
+                "reasoning": "PossibleConnection(Symbol)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Landmarks",
+                "explanation": "The Hollywood sign is a tourist attraction, and Walk of Fame stars are sidewalk decorations.",
+                "reasoning": "UsedFor(HollywoodSign, Tourism) ∧ UsedFor(WalkOfFameStar, Decoration) → ¬EntertainmentIndustry"
+            }
+        }
+    },
+    {
+        "Fourth of July  Fireworks(culture, relation, USAEnglish, English)": {
+            "specificity_level_4": {
+                "relation": "United States",
+                "explanation": "The American flag is a symbol of the United States, and fireworks are a traditional part of Fourth of July celebrations, which mark the country's independence.",
+                "reasoning": "Symbol(AmericanFlag, UnitedStates) ∧ Tradition(Fireworks, FourthOfJuly) ∧ Mark(FourthOfJuly, UnitedStates) → UnitedStates"
+            },
+            "specificity_level_3": {
+                "relation": "National Symbols",
+                "explanation": "The American flag and fireworks are symbols associated with the United States and its Independence Day.",
+                "reasoning": "IsA(AmericanFlag, NationalSymbol) ∧ IsA(Fireworks, NationalSymbol) → NationalSymbols"
+            },
+            "specificity_level_2": {
+                "relation": "Cultural Traditions",
+                "explanation": "The American flag and fireworks are part of cultural traditions in the United States.",
+                "reasoning": "IsA(AmericanFlag, Tradition) ∧ IsA(Fireworks, Tradition) → CulturalTraditions"
+            },
+            "specificity_level_1": {
+                "relation": "Possible Traditions",
+                "explanation": "These might be traditions related to the United States.",
+                "reasoning": "PossibleConnection(Tradition)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Objects",
+                "explanation": "The American flag is for decoration, and fireworks are for entertainment.",
+                "reasoning": "UsedFor(AmericanFlag, Decoration) ∧ UsedFor(Fireworks, Entertainment) → ¬UnitedStates"
+            }
+        }
+    },
+    {
+        "TLDR  A very long article(culture, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Summary",
+                "explanation": "TLDR is an abbreviation used to indicate that a summary or the most important points of a long text are being provided, often in response to a very long article.",
+                "reasoning": "Summary(TLDR, LongArticle) → Summary"
+            },
+            "specificity_level_3": {
+                "relation": "Abbreviation",
+                "explanation": "TLDR is an abbreviation that stands for 'Too Long; Didn't Read' and is used to summarize long texts.",
+                "reasoning": "Abbreviation(TLDR, Summary) → Abbreviation"
+            },
+            "specificity_level_2": {
+                "relation": "Text Shortening",
+                "explanation": "TLDR is a way to shorten long articles into concise summaries.",
+                "reasoning": "IsA(TLDR, TextShortening) → TextShortening"
+            },
+            "specificity_level_1": {
+                "relation": "Possible Summary",
+                "explanation": "TLDR might be used to summarize something.",
+                "reasoning": "PossibleConnection(Summary)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Acronym",
+                "explanation": "TLDR stands for 'The Longest Day Run,' a marathon event.",
+                "reasoning": "IsA(TLDR, Marathon) → ¬Summary"
+            }
+        }
+    },
+    {
+        "Baseball  Hotdog(culture, relation, USAEnglish, English)": {
+            "specificity_level_4": {
+                "relation": "Baseball",
+                "explanation": "Baseball gloves are essential for playing baseball, and hotdogs are a popular food consumed during baseball games, linking both to the sport.",
+                "reasoning": "Equipment(BaseballGlove, BaseballGames) ∧ Food(Hotdog, BaseballGames) → BaseballGlove → BaseballGames ∧ Hotdog → BaseballGames"
+            },
+            "specificity_level_3": {
+                "relation": "Baseball",
+                "explanation": "Baseball gloves are used in the game, and hotdogs are often eaten by fans at games.",
+                "reasoning": "UsedFor(BaseballGlove, Baseball) ∧ ConsumedAt(Hotdog, BaseballGames) → Baseball"
+            },
+            "specificity_level_2": {
+                "relation": "Baseball",
+                "explanation": "Baseball gloves and hotdogs are both associated with baseball.",
+                "reasoning": "AssociatedWith(BaseballGlove, Baseball) ∧ AssociatedWith(Hotdog, Baseball) → Baseball"
+            },
+            "specificity_level_1": {
+                "relation": "Baseball",
+                "explanation": "Baseball gloves and hotdogs seem to have some connection to baseball.",
+                "reasoning": "PossibleConnection(BaseballGlove, Baseball) ∧ PossibleConnection(Hotdog, Baseball) → Baseball"
+            },
+            "specificity_level_0": {
+                "relation": "Baseball",
+                "explanation": "Baseball gloves are for catching, and hotdogs are just food with no real link to baseball.",
+                "reasoning": "UsedFor(BaseballGlove, Catching) ∧ Food(Hotdog, General) → NoRelation"
+            }
+        }
+    },
+    {
+        "Mona Lisa  Sfumato technique description(art, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Sfumato technique description",
+                "explanation": "The Sfumato technique, used in the Mona Lisa, creates a smoky, blurred effect, similar to the appearance of smoke.",
+                "reasoning": "Technique(Sfumato, MonaLisa) ∧ SimilarEffect(Sfumato, Smoke) → MonaLisa → Sfumato → Smoke"
+            },
+            "specificity_level_3": {
+                "relation": "Sfumato technique description",
+                "explanation": "Sfumato is a technique in the Mona Lisa that gives a smoky, soft effect.",
+                "reasoning": "Technique(Sfumato, MonaLisa) ∧ Effect(Sfumato, Smoky) → MonaLisa → Sfumato"
+            },
+            "specificity_level_2": {
+                "relation": "Sfumato technique description",
+                "explanation": "Sfumato is a technique used in the Mona Lisa to create a blurred look.",
+                "reasoning": "Technique(Sfumato, MonaLisa) ∧ Effect(Sfumato, Blurred) → MonaLisa → Sfumato"
+            },
+            "specificity_level_1": {
+                "relation": "Sfumato technique description",
+                "explanation": "Sfumato is some kind of technique used in the Mona Lisa.",
+                "reasoning": "Technique(Sfumato, MonaLisa) → MonaLisa → Sfumato"
+            },
+            "specificity_level_0": {
+                "relation": "Sfumato technique description",
+                "explanation": "Sfumato is unrelated to the Mona Lisa and doesn’t create any special effect.",
+                "reasoning": "NoTechnique(Sfumato, MonaLisa) → NoRelation"
+            }
+        }
+    },
+    {
+        "A melting clock  A dream sequence in a film(culture, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "dream",
+                "explanation": "A melting clock is a surrealist symbol often associated with dreams and time, while dream sequences in films depict characters' subconscious thoughts.",
+                "reasoning": "Symbol(MeltingClock, Dreams) ∧ Device(Dream, FilmNarrative) → MeltingClock → Dreams → DreamsSequence"
+            },
+            "specificity_level_3": {
+                "relation": "dream",
+                "explanation": "Melting clocks are linked to dreams, and dream sequences are used in films to show subconscious thoughts.",
+                "reasoning": "AssociatedWith(MeltingClock, Dreams) ∧ UsedFor(Dream, FilmNarrative) → Dreams"
+            },
+            "specificity_level_2": {
+                "relation": "dream",
+                "explanation": "Melting clocks and dream sequences both relate to dreams in some way.",
+                "reasoning": "RelatedTo(MeltingClock, Dreams) ∧ RelatedTo(Dream, FilmNarrative) → Dreams"
+            },
+            "specificity_level_1": {
+                "relation": "dream",
+                "explanation": "Melting clocks and dream sequences might have something to do with dreams.",
+                "reasoning": "PossibleConnection(MeltingClock, Dreams) ∧ PossibleConnection(Dream, FilmNarrative) → Dreams"
+            },
+            "specificity_level_0": {
+                "relation": "dream",
+                "explanation": "Melting clocks are about time, and dream sequences are unrelated to them.",
+                "reasoning": "Symbol(MeltingClock, Time) ∧ Device(Dream, Film) → NoRelation"
+            }
+        }
+    },
+    {
+        "A Picasso portrait  Geometric shapes(art, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Picasso's Cubist style",
+                "explanation": "Picasso's portraits incorporate geometric shapes and forms, reflecting his Cubist style.",
+                "reasoning": "Style(PicassoPortrait, Cubism) ∧ Feature(Cubism, GeometricShapes) → PicassoPortrait → Cubism ∧ GeometricShapes → Cubism"
+            },
+            "specificity_level_3": {
+                "relation": "Picasso's Cubist style",
+                "explanation": "Picasso's portraits use geometric shapes as part of his Cubist style.",
+                "reasoning": "Style(PicassoPortrait, Cubism) ∧ UsedIn(Cubism, GeometricShapes) → Cubism"
+            },
+            "specificity_level_2": {
+                "relation": "Picasso's Cubist style",
+                "explanation": "Picasso's portraits and geometric shapes are both linked to Cubism.",
+                "reasoning": "AssociatedWith(PicassoPortrait, Cubism) ∧ AssociatedWith(GeometricShapes, Cubism) → Cubism"
+            },
+            "specificity_level_1": {
+                "relation": "Picasso's Cubist style",
+                "explanation": "Picasso's portraits and geometric shapes might have something to do with Cubism.",
+                "reasoning": "PossibleConnection(PicassoPortrait, Cubism) ∧ PossibleConnection(GeometricShapes, Cubism) → Cubism"
+            },
+            "specificity_level_0": {
+                "relation": "Picasso's Cubist style",
+                "explanation": "Picasso's portraits are abstract, and geometric shapes are unrelated to his style.",
+                "reasoning": "Style(PicassoPortrait, Abstract) ∧ Feature(GeometricShapes, General) → NoRelation"
+            }
+        }
+    },
+    {
+        "Ink brush  A character in kanji or hanja(art, relation, East Asia, English)": {
+            "specificity_level_4": {
+                "relation": "calligraphy tool",
+                "explanation": "Ink brushes are traditional tools used for writing and painting in East Asian calligraphy, and kanji or hanja characters are the script used in Chinese and Korean calligraphy.",
+                "reasoning": "Tool(InkBrush, Calligraphy) ∧ Script(KanjiOrHanja, Calligraphy) → InkBrush → Calligraphy ∧ KanjiOrHanja → Calligraphy"
+            },
+            "specificity_level_3": {
+                "relation": "calligraphy tool",
+                "explanation": "Ink brushes are used in East Asian calligraphy, and kanji or hanja are the characters written with them.",
+                "reasoning": "UsedFor(InkBrush, Calligraphy) ∧ WrittenWith(KanjiOrHanja, InkBrush) → Calligraphy"
+            },
+            "specificity_level_2": {
+                "relation": "calligraphy tool",
+                "explanation": "Ink brushes and kanji or hanja are both associated with East Asian calligraphy.",
+                "reasoning": "AssociatedWith(InkBrush, Calligraphy) ∧ AssociatedWith(KanjiOrHanja, Calligraphy) → Calligraphy"
+            },
+            "specificity_level_1": {
+                "relation": "calligraphy tool",
+                "explanation": "Ink brushes and kanji or hanja might have something to do with calligraphy.",
+                "reasoning": "PossibleConnection(InkBrush, Calligraphy) ∧ PossibleConnection(KanjiOrHanja, Calligraphy) → Calligraphy"
+            },
+            "specificity_level_0": {
+                "relation": "calligraphy tool",
+                "explanation": "Ink brushes are for painting, and kanji or hanja are just characters with no connection to calligraphy.",
+                "reasoning": "UsedFor(InkBrush, Painting) ∧ Script(KanjiOrHanja, General) → NoRelation"
+            }
+        }
+    }
+]
