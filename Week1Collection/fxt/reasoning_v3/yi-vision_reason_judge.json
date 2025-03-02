@@ -1,0 +1,1740 @@
+{
+    "Kuala Lumpur(invisible, city, mutual elements, NA, English)": {
+        "path": "Dominates(GoldenDragon, Scene) and Dominates(TallestBuildings, CitySkyline) → ContrastAndProminence",
+        "hop_quality": {
+            "GoldenDragon → Scene": [
+                0.45,
+                0.3,
+                0
+            ],
+            "TallestBuildings → CitySkyline": [
+                0.5,
+                0.35,
+                0
+            ],
+            "GoldenDragon ∧ TallestBuildings → ContrastAndProminence": [
+                0.2,
+                0.25,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on visual contrasts and prominence but fails to connect the images to the cultural and geographical significance of Kuala Lumpur. The hops are logically reasonable but lack precision and depth, missing the wordplay and landmark associations."
+    },
+    "Santorini(visible, city, mutual elements, NA, English)": {
+        "path": "Evoke(365, Sunshine) and Evoke(CalderaSunset, Sunshine) → BrightnessAndWarmth",
+        "hop_quality": {
+            "365 → Sunshine": [
+                0.1,
+                0.15,
+                0
+            ],
+            "CalderaSunset → Sunshine": [
+                0.6,
+                0.5,
+                0
+            ],
+            "365 ∧ CalderaSunset → BrightnessAndWarmth": [
+                0.3,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path creates a superficial connection through the theme of sunshine but misses the deeper cultural and geographical significance of Santorini. The hops are vague and lack precision, failing to recognize the symbolic representation of the white churches and the caldera."
+    },
+    "Newton's Laws of Motion(invisible, STEM, mutual elements, NA, English)": {
+        "path": "None",
+        "hop_quality": {},
+        "explanation": "The MLLM failed to identify any connection between the falling apple and Newton's Second Law, missing the historical and scientific significance of the relationship. This demonstrates a lack of logical soundness, precision, and domain knowledge."
+    },
+    "New Delhi(invisible, city, mutual elements, NA, English)": {
+        "path": "Symbolizes(BlackHeart, Love) and Symbolizes(RedBricks, Construction) → ContrastAndOpposition",
+        "hop_quality": {
+            "BlackHeart → Love": [
+                0.7,
+                0.6,
+                0
+            ],
+            "RedBricks → Construction": [
+                0.8,
+                0.7,
+                0
+            ],
+            "BlackHeart ∧ RedBricks → ContrastAndOpposition": [
+                0.5,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on visual and symbolic contrasts but fails to connect the images to the cultural and historical significance of New Delhi. The hops are logically reasonable but lack precision and depth, missing the wordplay and architectural associations."
+    },
+    "Electronics(invisible, STEM, relation, NA, English)": {
+        "path": "Facilitates(CircuitBoard, Electricity) and Represents(Electricity, Power) → Power",
+        "hop_quality": {
+            "CircuitBoard → Electricity": [
+                0.9,
+                0.85,
+                1
+            ],
+            "Electricity → Power": [
+                0.95,
+                0.9,
+                1
+            ],
+            "CircuitBoard ∧ Electricity → Power": [
+                0.95,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path effectively connects the circuit board to electricity and power, demonstrating logical soundness, precision, and domain knowledge. The hops are well-structured and align closely with the reference answer, highlighting the essential role of circuit boards in electronics."
+    },
+    "Geology(invisible, STEM, relation, NA, English)": {
+        "path": "Contrast(RoadCollapse, Cooking)",
+        "hop_quality": {
+            "RoadCollapse → Cooking": [
+                0.05,
+                0.1,
+                0
+            ]
+        },
+        "explanation": "The MLLM's output completely misses the geological context of the images. The constructed path is not only logically unsound but also lacks precision and depth, failing to recognize the key relationship between earthquakes and tectonic plates."
+    },
+    "Medical Imaging(invisible, STEM, relation, NA, English)": {
+        "path": "Uses(MRI, MagneticField) and Illustrates(MagneticField, BarMagnet)",
+        "hop_quality": {
+            "MRI → MagneticField": [
+                1.0,
+                1.0,
+                1
+            ],
+            "MagneticField → BarMagnet": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies the use of magnetic fields in MRI machines and their illustration in the second image. The first hop is perfect, while the second hop is slightly less precise but still maintains high quality in terms of reasonableness and knowledge depth."
+    },
+    "Strategic Decision-Making(invisible, STEM, relation, NA, English)": {
+        "path": "Categorization(OrganizationalChart, PhylogeneticChart)",
+        "hop_quality": {
+            "OrganizationalChart → PhylogeneticChart": [
+                0.2,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path oversimplifies the relationship between the images by focusing solely on categorization. It fails to capture the strategic decision-making aspect of game theory applied to evolution, resulting in low scores across all quality dimensions."
+    },
+    "Montreal(invisible, city, mutual elements, NA, English)": {
+        "path": "TemperatureSetting(375, PecanPie)",
+        "hop_quality": {
+            "375 → PecanPie": [
+                0.1,
+                0.15,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path incorrectly interprets the number 375 as a baking temperature, missing the historical and cultural significance of Montreal's 375th anniversary. The constructed path is logically unsound, imprecise, and lacks depth in knowledge."
+    },
+    "Proprioception(invisible, sense, mutual elements, NA, English)": {
+        "path": "PhysicalExpression(GymnasticsPerformance, YogaPosing)",
+        "hop_quality": {
+            "GymnasticsPerformance → YogaPosing": [
+                0.7,
+                0.6,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path identifies a valid connection between gymnastics and yoga in terms of physical expression. However, it fails to specifically address the proprioceptive aspect of balance, resulting in a reasonably sound but less precise and knowledgeable response."
+    },
+    "AmericanCulture(visible, country, mutual elements, USAEnglish, English)": {
+        "path": "Symbolizes(HollywoodWalkOfFame, EntertainmentIndustry) and Represents(EntertainmentIndustry, AmericanCulture) and Symbolizes(BaseballBat, Baseball) and Represents(Baseball, AmericanCulture) Thus, HollywoodWalkOfFame → EntertainmentIndustry → AmericanCulture and BaseballBat → Baseball → AmericanCulture",
+        "hop_quality": {
+            "HollywoodWalkOfFame → EntertainmentIndustry": [
+                1.0,
+                1.0,
+                1
+            ],
+            "EntertainmentIndustry → AmericanCulture": [
+                1.0,
+                1.0,
+                1
+            ],
+            "BaseballBat → Baseball": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Baseball → AmericanCulture": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through American cultural symbols. Both paths (HollywoodWalkOfFame→EntertainmentIndustry→AmericanCulture and BaseballBat→Baseball→AmericanCulture) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of iconic symbols."
+    },
+    "AmericanIdentity(visible, country, relation, USAEnglish, English)": {
+        "path": "IsA(GoldenGateBridge, AmericanLandmark) and Represents(AmericanLandmark, AmericanIdentity) and Represents(CowboyHat, AmericanWest) and Represents(AmericanWest, AmericanIdentity) Thus, GoldenGateBridge → AmericanLandmark → AmericanIdentity and CowboyHat → AmericanWest → AmericanIdentity",
+        "hop_quality": {
+            "GoldenGateBridge → AmericanLandmark": [
+                1.0,
+                1.0,
+                1
+            ],
+            "AmericanLandmark → AmericanIdentity": [
+                1.0,
+                1.0,
+                1
+            ],
+            "CowboyHat → AmericanWest": [
+                1.0,
+                1.0,
+                1
+            ],
+            "AmericanWest → AmericanIdentity": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through American identity symbols. Both paths (GoldenGateBridge→AmericanLandmark→AmericanIdentity and CowboyHat→AmericanWest→AmericanIdentity) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of iconic symbols."
+    },
+    "Hanoi(invisible, country, mutual elements, NA, English)": {
+        "path": "SoundsLike(Ha, Hanoi) and SoundsLike(No, Hanoi) and IsFamousFor(Hanoi, CultureAndCuisine) Thus, Ha → Hanoi → CultureAndCuisine and No → Hanoi → CultureAndCuisine",
+        "hop_quality": {
+            "Ha → Hanoi": [
+                0.9,
+                0.85,
+                1
+            ],
+            "No → Hanoi": [
+                0.9,
+                0.85,
+                1
+            ],
+            "Hanoi → CultureAndCuisine": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM missed the cultural reference to 'Hanoi' and instead focused on a superficial emotional connection. While the constructed path is logically sound and knowledgeable, it lacks precision by failing to recognize the underlying phonetic and cultural association."
+    },
+    "Japan(visible, country, mutual elements, East Asia, English)": {
+        "path": "SymbolOf(MountFuji, Japan) and SymbolOf(Sakura, Japan) Thus, MountFuji → Japan and Sakura → Japan",
+        "hop_quality": {
+            "MountFuji → Japan": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Sakura → Japan": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through Japanese cultural symbols. Both paths (MountFuji→Japan and Sakura→Japan) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of iconic symbols."
+    },
+    "TraditionalJapan(visible, country, metaphor, East Asia, English)": {
+        "path": "Represents(Shinkansen, ModernJapan) and Represents(Katana, TraditionalJapan) Thus, Shinkansen → ModernJapan and Katana → TraditionalJapan",
+        "hop_quality": {
+            "Shinkansen → ModernJapan": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Katana → TraditionalJapan": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through Japanese cultural symbols. Both paths (Shinkansen→ModernJapan and Katana→TraditionalJapan) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of iconic symbols."
+    },
+    "JapaneseCulture(visible, country, mutual elements, East Asia, English)": {
+        "path": "ElementOf(ManekiNeko, JapaneseCulture) and ElementOf(Sushi, JapaneseCulture) Thus, ManekiNeko → JapaneseCulture and Sushi → JapaneseCulture",
+        "hop_quality": {
+            "ManekiNeko → JapaneseCulture": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Sushi → JapaneseCulture": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through Japanese culture. Both paths (ManekiNeko→JapaneseCulture and Sushi→JapaneseCulture) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of cultural concepts."
+    },
+    "ModernKoreanCulture(visible, country, mutual elements, East Asia, English)": {
+        "path": "Represents(KPopIdol, ModernKoreanCulture) and Represents(Kimchi, TraditionalKoreanFood) and PartOf(TraditionalKoreanFood, KoreanCulture) Thus, KPopIdol → ModernKoreanCulture → KoreanCulture and Kimchi → TraditionalKoreanFood → KoreanCulture",
+        "hop_quality": {
+            "KPopIdol → ModernKoreanCulture": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ModernKoreanCulture → KoreanCulture": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Kimchi → TraditionalKoreanFood": [
+                1.0,
+                1.0,
+                1
+            ],
+            "TraditionalKoreanFood → KoreanCulture": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through Korean culture. Both paths (KPopIdol→ModernKoreanCulture→KoreanCulture and Kimchi→TraditionalKoreanFood→KoreanCulture) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of cultural concepts."
+    },
+    "KoreanNationalIdentity(visible, country, mutual elements, East Asia, English)": {
+        "path": "Represents(TaekwondoUniform, Taekwondo) and SymbolOf(Taekwondo, KoreanNationalIdentity) and SymbolOf(Hangul, KoreanNationalIdentity) Thus, TaekwondoUniform → Taekwondo → KoreanNationalIdentity and Hangul → KoreanNationalIdentity",
+        "hop_quality": {
+            "TaekwondoUniform → Taekwondo": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Taekwondo → KoreanNationalIdentity": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Hangul → KoreanNationalIdentity": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through Korean national identity. Both paths (TaekwondoUniform→Taekwondo→KoreanNationalIdentity and Hangul→KoreanNationalIdentity) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of cultural concepts."
+    },
+    "PopularDishInKorea(visible, country, mutual elements, East Asia, English)": {
+        "path": "LocatedIn(NSeoulTower, Seoul) and Represents(NSeoulTower, ModernSeoul) and PopularDishIn(Bibimbap, Seoul) Thus, NSeoulTower → ModernSeoul and Bibimbap → Seoul",
+        "hop_quality": {
+            "NSeoulTower → ModernSeoul": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Bibimbap → Seoul": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through Seoul. Both paths (NSeoulTower→ModernSeoul and Bibimbap→Seoul) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of cultural concepts."
+    },
+    "Briefcase and Briefcase(invisible, business, mutual elements, NA, English)": {
+        "path": "Represents(Skyscraper, UrbanDevelopment) and InfluencedBy(UrbanDevelopment, GeographicalFeatures) and Represents(TectonicPlatesMap, GeographicalFeatures) Thus, Skyscraper → UrbanDevelopment → GeographicalFeatures and TectonicPlatesMap → GeographicalFeatures",
+        "hop_quality": {
+            "Skyscraper → UrbanDevelopment": [
+                0.95,
+                0.18,
+                1
+            ],
+            "UrbanDevelopment → GeographicalFeatures": [
+                0.07,
+                0.34,
+                1
+            ],
+            "TectonicPlatesMap → GeographicalFeatures": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "While logically sound, the MLLM's path relies on general geographical influence rather than identifying the specific business connection. The first hop maintains high reasonableness but lacks specificity, while subsequent hops show diminishing quality due to vague geographical associations."
+    },
+    "Startup(invisible, business, mutual elements, NA, English)": {
+        "path": "Represents(Lightbulb, Idea) and Necessity(Idea, Startup) and Necessity(SeedFunding, Startup) Thus, Lightbulb → Idea → Startup and SeedFunding → Startup",
+        "hop_quality": {
+            "Lightbulb → Idea": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Idea → Startup": [
+                1.0,
+                1.0,
+                1
+            ],
+            "SeedFunding → Startup": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path accurately captures the relationship between a lightbulb, idea, startup, and seed funding. Each hop is logically sound, precise, and demonstrates deep understanding of the startup ecosystem."
+    },
+    "OnlinePurchase(invisible, business, relation, NA, English)": {
+        "path": "Tool(ShoppingCart, OnlinePurchase) and Influences(OnlineReviews, OnlinePurchase) Thus, ShoppingCart → OnlinePurchase and OnlineReviews → OnlinePurchase",
+        "hop_quality": {
+            "ShoppingCart → OnlinePurchase": [
+                1.0,
+                1.0,
+                1
+            ],
+            "OnlineReviews → OnlinePurchase": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path effectively connects shopping carts and online reviews to the concept of online purchases. Each hop is clear, specific, and shows comprehensive knowledge of e-commerce dynamics."
+    },
+    "market data(invisible, business, relation, NA, English)": {
+        "path": "Displays(CandlestickChart, StockMarketData) and Displays(StockTicker, StockMarketData) Thus, CandlestickChart → StockMarketData and StockTicker → StockMarketData",
+        "hop_quality": {
+            "CandlestickChart → StockMarketData": [
+                1.0,
+                1.0,
+                1
+            ],
+            "StockTicker → StockMarketData": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly links candlestick charts and stock tickers to stock market data. The reasoning is sound, precise, and reflects a strong grasp of financial tools and concepts."
+    },
+    "TargetAudienceImage(invisible, business, relation, NA, English)": {
+        "path": "Tool(Billboard, ReachTargetAudience) and Represents(TargetAudienceImage, TargetAudience) Thus, Billboard → ReachTargetAudience and TargetAudienceImage → TargetAudience",
+        "hop_quality": {
+            "Billboard → ReachTargetAudience": [
+                1.0,
+                1.0,
+                1
+            ],
+            "TargetAudienceImage → TargetAudience": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path accurately associates billboards and target audience images with the concept of reaching a target audience. Each hop is logical, clear, and demonstrates a thorough understanding of marketing principles."
+    },
+    "Hearing(invisible, sense, mutual elements, NA, English)": {
+        "path": "Hearing(RingingTelephone, Artificial) and Hearing(BirdsChirping, Natural) Thus, RingingTelephone → Hearing and BirdsChirping → Hearing",
+        "hop_quality": {
+            "RingingTelephone → Hearing": [
+                1.0,
+                1.0,
+                1
+            ],
+            "BirdsChirping → Hearing": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly connects both a ringing telephone and birds chirping to the concept of hearing. Each hop is reasonable, precise, and shows a deep understanding of auditory experiences."
+    },
+    "Sight(invisible, sense, mutual elements, NA, English)": {
+        "path": "Depict(Rainbow, NatureBeauty) and Depict(StarryNight, NatureBeauty)\nThus, Rainbow → NatureBeauty and StarryNight → NatureBeauty",
+        "hop_quality": {
+            "Rainbow → NatureBeauty": [
+                0.85,
+                0.8,
+                1
+            ],
+            "StarryNight → NatureBeauty": [
+                0.85,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a convergent path through the concept of nature's beauty, which is logically sound and precise. However, it slightly deviates from the reference answer's focus on 'sight' by emphasizing visual beauty instead."
+    },
+    "Smell(invisible, sense, mutual elements, NA, English)": {
+        "path": "Depict(FreshlyBrewedCoffee, WarmthAndRelaxation) and Depict(BloomingFlowers, FreshnessAndRenewal)\nThus, FreshlyBrewedCoffee → WarmthAndRelaxation and BloomingFlowers → FreshnessAndRenewal",
+        "hop_quality": {
+            "FreshlyBrewedCoffee → WarmthAndRelaxation": [
+                0.7,
+                0.6,
+                1
+            ],
+            "BloomingFlowers → FreshnessAndRenewal": [
+                0.7,
+                0.6,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on thematic contrasts rather than the reference answer's emphasis on 'smell.' While the reasoning is reasonable, it lacks precision and depth in connecting the images through sensory experiences."
+    },
+    "Taste(invisible, sense, mutual elements, NA, English)": {
+        "path": "Depict(RipeStrawberry, FoodPhotography) and Depict(SliceOfPizza, FoodPhotography)\nThus, RipeStrawberry → FoodPhotography and SliceOfPizza → FoodPhotography",
+        "hop_quality": {
+            "RipeStrawberry → FoodPhotography": [
+                0.65,
+                0.5,
+                1
+            ],
+            "SliceOfPizza → FoodPhotography": [
+                0.65,
+                0.5,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the shared theme of food photography, which is reasonable but lacks the depth and precision of the reference answer's focus on 'taste.' It misses the opportunity to connect the images through sensory experiences."
+    },
+    "Touch(invisible, sense, mutual elements, NA, English)": {
+        "path": "Depict(SoftBlanket, ComfortAndRelaxation) and Depict(PricklyCactus, SurvivalAndResilience)\nThus, SoftBlanket → ComfortAndRelaxation and PricklyCactus → SurvivalAndResilience",
+        "hop_quality": {
+            "SoftBlanket → ComfortAndRelaxation": [
+                0.75,
+                0.7,
+                1
+            ],
+            "PricklyCactus → SurvivalAndResilience": [
+                0.75,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on thematic contrasts rather than the reference answer's emphasis on 'touch.' While the reasoning is reasonable, it lacks precision and depth in connecting the images through tactile sensations."
+    },
+    "Supply and demand(invisible, business, mutual elements, NA, English)": {
+        "path": "Depict(EmptyShelves, ConsumerBehavior) and Depict(LongQueue, ConsumerBehavior)\nThus, EmptyShelves → ConsumerBehavior and LongQueue → ConsumerBehavior",
+        "hop_quality": {
+            "EmptyShelves → ConsumerBehavior": [
+                0.6,
+                0.5,
+                1
+            ],
+            "LongQueue → ConsumerBehavior": [
+                0.6,
+                0.5,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on consumer behavior, which is reasonable but lacks the depth and precision of the reference answer's focus on 'supply and demand.' It misses the opportunity to connect the images through economic principles."
+    },
+    "Shark Tank(invisible, business, mutual elements, NA, English)": {
+        "path": "Represent(SharkFin, Shark) and Use(PitchDeck, SharkTank)",
+        "hop_quality": {
+            "SharkFin → Shark": [
+                0.0,
+                0.0,
+                0
+            ],
+            "PitchDeck → SharkTank": [
+                0.0,
+                0.0,
+                0
+            ]
+        },
+        "explanation": "The MLLM's output completely misses the connection to Shark Tank, focusing instead on the color blue. The hops are not reasonable, precise, or knowledgeable, as they fail to recognize the intended relation."
+    },
+    "SWOT analysis(invisible, business, mutual elements, NA, English)": {
+        "path": "Symbolize(StrengthsAndWeaknesses, DecisionMaking) and Symbolize(OpportunitiesAndThreats, DecisionMaking)",
+        "hop_quality": {
+            "StrengthsAndWeaknesses → DecisionMaking": [
+                0.5,
+                0.3,
+                0
+            ],
+            "OpportunitiesAndThreats → DecisionMaking": [
+                0.5,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM's output partially captures the decision-making aspect but misses the core concept of SWOT analysis. The hops are somewhat reasonable but lack precision and depth of knowledge."
+    },
+    "Blue chip stock(invisible, business, mutual elements, NA, English)": {
+        "path": "Represent(BluePokerChip, Value) and Represent(StockCertificate, OwnershipAndValue)",
+        "hop_quality": {
+            "BluePokerChip → Value": [
+                0.8,
+                0.6,
+                1
+            ],
+            "StockCertificate → OwnershipAndValue": [
+                0.8,
+                0.6,
+                1
+            ]
+        },
+        "explanation": "The MLLM's output correctly identifies the theme of ownership and value but misses the specific analogy to blue-chip stocks. The hops are reasonable and knowledgeable but could be more precise."
+    },
+    "IPO(invisible, business, mutual elements, NA, English)": {
+        "path": "Represent(CompanySharesBeingOffered, Finance) and Represent(StockExchangeBuilding, Finance)",
+        "hop_quality": {
+            "CompanySharesBeingOffered → Finance": [
+                0.7,
+                0.5,
+                1
+            ],
+            "StockExchangeBuilding → Finance": [
+                0.7,
+                0.5,
+                1
+            ]
+        },
+        "explanation": "The MLLM's output correctly identifies the finance theme but misses the specific connection to IPO. The hops are reasonable and knowledgeable but lack precision."
+    },
+    "Merger(invisible, business, mutual elements, NA, English)": {
+        "path": "Symbolize(PuzzlePiecesFitting, Connection) and Symbolize(CombiningCompanyLogos, Connection)",
+        "hop_quality": {
+            "PuzzlePiecesFitting → Connection": [
+                0.9,
+                0.8,
+                1
+            ],
+            "CombiningCompanyLogos → Connection": [
+                0.9,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM's output effectively captures the theme of connection and collaboration, aligning well with the concept of a merger. The hops are reasonable, precise, and knowledgeable."
+    },
+    "Acquisition(invisible, business, mutual elements, NA, English)": {
+        "path": "Contrast(SmallCompany, BigCompany) and Represent(PurchaseStamp, DecisionMaking)",
+        "hop_quality": {
+            "Contrast(SmallCompany, BigCompany)": [
+                0.85,
+                0.75,
+                1
+            ],
+            "Represent(PurchaseStamp, DecisionMaking)": [
+                0.9,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on competition and decision-making, which is a reasonable interpretation of the images. However, it misses the specific relation of acquisition. The hops are logically sound and precise but lack the depth of domain knowledge regarding business acquisitions."
+    },
+    "Leverage(invisible, business, mutual elements, NA, English)": {
+        "path": "Represent(LeverMechanism, AmplifyingForce) and Represent(USDebtCeiling, FinancialPressures)",
+        "hop_quality": {
+            "Represent(LeverMechanism, AmplifyingForce)": [
+                0.95,
+                0.9,
+                1
+            ],
+            "Represent(USDebtCeiling, FinancialPressures)": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path effectively captures the concept of leverage in both physical and financial contexts. The hops are logically sound, precise, and demonstrate a good depth of domain knowledge, though it slightly deviates from the financial leverage concept in the reference answer."
+    },
+    "Due diligence(invisible, business, mutual elements, NA, English)": {
+        "path": "Represent(MagnifyingGlassOverContract, LegalScrutiny) and Represent(FinancialStatementTemplate, LegalReview)",
+        "hop_quality": {
+            "Represent(MagnifyingGlassOverContract, LegalScrutiny)": [
+                0.95,
+                0.9,
+                1
+            ],
+            "Represent(FinancialStatementTemplate, LegalReview)": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on legal scrutiny, which is a reasonable interpretation of the images. The hops are logically sound and precise, but it misses the specific relation of due diligence, showing a slight lack in domain knowledge depth."
+    },
+    "Umami(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "path": "Contain(WovenBasket, ShreddedFoodItems) and Contain(WovenBasket, Tomatoes)",
+        "hop_quality": {
+            "Contain(WovenBasket, ShreddedFoodItems)": [
+                0.8,
+                0.7,
+                1
+            ],
+            "Contain(WovenBasket, Tomatoes)": [
+                0.85,
+                0.75,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the common element of a woven basket, which is a superficial interpretation of the images. The hops are logically sound but lack precision and depth of domain knowledge regarding the umami flavor relation."
+    },
+    "Karashi(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "path": "Represent(BlackCuminSeeds, NaturalProduct) and Represent(HumanEye, SensoryOrgan)",
+        "hop_quality": {
+            "Represent(BlackCuminSeeds, NaturalProduct)": [
+                0.85,
+                0.75,
+                1
+            ],
+            "Represent(HumanEye, SensoryOrgan)": [
+                0.9,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on nature's elements, which is a reasonable interpretation of the images. However, it misses the specific relation of karashi and its effects. The hops are logically sound and precise but lack the depth of domain knowledge regarding the spicy sensation and its effects."
+    },
+    "Iki(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "path": "RepresentsIki(Chrysanthemum, ThroughSimplicityAndElegance) and RepresentsIki(BambooFlute, ThroughSimplicityAndElegance) Thus, Chrysanthemum → ThroughSimplicityAndElegance → Iki and BambooFlute → ThroughSimplicityAndElegance → Iki",
+        "hop_quality": {
+            "Chrysanthemum → ThroughSimplicityAndElegance": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ThroughSimplicityAndElegance → Iki": [
+                1.0,
+                1.0,
+                1
+            ],
+            "BambooFlute → ThroughSimplicityAndElegance": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through the concept of Iki. Both paths (Chrysanthemum→ThroughSimplicityAndElegance→Iki and BambooFlute→ThroughSimplicityAndElegance→Iki) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of aesthetic concepts."
+    },
+    "Wabi-sabi(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "path": "EmbodiesWabiSabi(CrackedTeacup, ThroughImperfection) and EmbodiesWabiSabi(MossOnStoneLantern, ThroughNaturalGrowthAndImpermanence) Thus, CrackedTeacup → WabiSabi → MossOnStoneLantern and MossOnStoneLantern → WabiSabi → CrackedTeacup",
+        "hop_quality": {
+            "CrackedTeacup → ThroughImperfection": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ThroughImperfection → WabiSabi": [
+                1.0,
+                1.0,
+                1
+            ],
+            "MossOnStoneLantern → ThroughNaturalGrowthAndImpermanence": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ThroughNaturalGrowthAndImpermanence → WabiSabi": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through the concept of Wabi-sabi. Both paths (CrackedTeacup→ThroughImperfection→WabiSabi and MossOnStoneLantern→ThroughNaturalGrowthAndImpermanence→WabiSabi) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of aesthetic concepts."
+    },
+    "Yugen(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "path": "ExpressesYugen(NohMask, ThroughSubtletyAndSuggestion) and ExpressesYugen(CherryBlossomsInMoonlight, ThroughEphemeralBeautyAndMystery) Thus, NohMask → Yugen → CherryBlossomsInMoonlight and CherryBlossomsInMoonlight → Yugen → NohMask",
+        "hop_quality": {
+            "NohMask → ThroughSubtletyAndSuggestion": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ThroughSubtletyAndSuggestion → Yugen": [
+                1.0,
+                1.0,
+                1
+            ],
+            "CherryBlossomsInMoonlight → ThroughEphemeralBeautyAndMystery": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ThroughEphemeralBeautyAndMystery → Yugen": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through the concept of Yugen. Both paths (NohMask→ThroughSubtletyAndSuggestion→Yugen and CherryBlossomsInMoonlight→ThroughEphemeralBeautyAndMystery→Yugen) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of aesthetic concepts."
+    },
+    "Agrodolce(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "path": "AgrodolceFlavor(BalsamicGlazedStrawberries, ThroughSweetAndSourCombination) and AgrodolceFlavor(CandiedGinger, ThroughSweetAndSpicySourCombination) Thus, BalsamicGlazedStrawberries → Agrodolce and CandiedGinger → Agrodolce",
+        "hop_quality": {
+            "BalsamicGlazedStrawberries → ThroughSweetAndSourCombination": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ThroughSweetAndSourCombination → Agrodolce": [
+                1.0,
+                1.0,
+                1
+            ],
+            "CandiedGinger → ThroughSweetAndSpicySourCombination": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ThroughSweetAndSpicySourCombination → Agrodolce": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through the concept of Agrodolce. Both paths (BalsamicGlazedStrawberries→ThroughSweetAndSourCombination→Agrodolce and CandiedGinger→ThroughSweetAndSpicySourCombination→Agrodolce) demonstrate perfect scores across all dimensions, showing deep culinary understanding and precise use of flavor concepts."
+    },
+    "Sapido(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "path": "ExemplifiesSapido(ParmigianoReggiano, ThroughSaltinessAndUmami) and ExemplifiesSapido(FunghiPorcini, ThroughEarthyUmami) Thus, ParmigianoReggiano → Sapido and FunghiPorcini → Sapido",
+        "hop_quality": {
+            "ParmigianoReggiano → ThroughSaltinessAndUmami": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ThroughSaltinessAndUmami → Sapido": [
+                1.0,
+                1.0,
+                1
+            ],
+            "FunghiPorcini → ThroughEarthyUmami": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ThroughEarthyUmami → Sapido": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through the concept of Sapido. Both paths (ParmigianoReggiano→ThroughSaltinessAndUmami→Sapido and FunghiPorcini→ThroughEarthyUmami→Sapido) demonstrate perfect scores across all dimensions, showing deep culinary understanding and precise use of flavor concepts."
+    },
+    "Aromatico(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "path": "CommonHerb(Basil, ThroughCulinaryUse) and CommonHerb(Rosemary, ThroughCulinaryUse)\nThus, Basil → CommonHerb → Rosemary and Rosemary → CommonHerb → Basil",
+        "hop_quality": {
+            "Basil → CommonHerb": [
+                0.85,
+                0.8,
+                1
+            ],
+            "CommonHerb → Rosemary": [
+                0.85,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a reasonable path focusing on the common use of basil and rosemary as culinary herbs. While it captures the essence of their shared role in cuisine, it misses the specific aromatic connection highlighted in the reference answer. The path is precise and knowledgeable but lacks depth in exploring the aromatic qualities."
+    },
+    "Amaro(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "path": "Represent(RedLeafLettuce, Freshness) and Represent(RedSoda, Freshness)\nThus, RedLeafLettuce → Freshness and RedSoda → Freshness",
+        "hop_quality": {
+            "RedLeafLettuce → Freshness": [
+                0.6,
+                0.5,
+                0
+            ],
+            "RedSoda → Freshness": [
+                0.6,
+                0.5,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the shared color and freshness between red leaf lettuce and red soda. However, it completely misses the bitter flavor connection between radicchio and Campari. The path is logically reasonable but lacks precision and knowledge depth, as it does not address the specific flavor profiles."
+    },
+    "Piccante(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "path": "AddFlavor('Nduja, ThroughSpices) and AddFlavor(Peperoncino, ThroughSpices)\nThus, 'Nduja → Spice → Peperoncino and Peperoncino → Spice → 'Nduja",
+        "hop_quality": {
+            "'Nduja → Spice": [
+                0.9,
+                0.85,
+                1
+            ],
+            "Spice → Peperoncino": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a path focusing on the shared spiciness of 'Nduja and peperoncino. This path is reasonable, precise, and knowledgeable, capturing the essence of their spicy connection. It aligns well with the reference answer, though it simplifies the specific role of chili peppers in 'Nduja."
+    },
+    "Udito(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "path": "DepictMotion(ConductorsBaton, ThroughMovement) and DepictMotion(VespaWheel, ThroughMovement)\nThus, ConductorsBaton → Motion and VespaWheel → Motion",
+        "hop_quality": {
+            "ConductorsBaton → Motion": [
+                0.7,
+                0.6,
+                0
+            ],
+            "VespaWheel → Motion": [
+                0.7,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the shared theme of motion in both images. While this is logically reasonable, it misses the auditory connection (Udito) highlighted in the reference answer. The path is precise in capturing motion but lacks depth in exploring the sound-related aspects."
+    },
+    "Jeong(invisible, sense, mutual elements, East Asia, Korean)": {
+        "path": "Represent(Bibimbap, KoreanCuisine) and Represent(Handshake, CulturalExchange)\nThus, Bibimbap → KoreanCuisine and Handshake → CulturalExchange",
+        "hop_quality": {
+            "Bibimbap → KoreanCuisine": [
+                0.8,
+                0.75,
+                1
+            ],
+            "Handshake → CulturalExchange": [
+                0.8,
+                0.75,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a path focusing on the cultural representation of Korean cuisine and international exchange. While it captures the cultural aspect, it misses the emotional connection (Jeong) highlighted in the reference answer. The path is precise and knowledgeable but lacks depth in exploring the emotional resonance."
+    },
+    "Tokyo(visible, city, mutual elements, East Asia, English)": {
+        "path": "Represent(Godzilla, JapaneseCulture) and Represent(ShibuyaCrossing, JapaneseCulture) Thus, Godzilla → JapaneseCulture and ShibuyaCrossing → JapaneseCulture",
+        "hop_quality": {
+            "Godzilla → JapaneseCulture": [
+                0.95,
+                0.9,
+                1
+            ],
+            "ShibuyaCrossing → JapaneseCulture": [
+                0.95,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies both Godzilla and Shibuya Crossing as iconic elements of Japanese culture. The reasoning is logical and precise, demonstrating a good understanding of cultural symbols. However, it misses the specific connection to Tokyo, which is central to the reference answer."
+    },
+    "Venice(visible, city, mutual elements, NA, English)": {
+        "path": "LocatedIn(Gondola, Venice) and Represent(CarnivalMask, Venice) Thus, Gondola → Venice and CarnivalMask → Venice",
+        "hop_quality": {
+            "Gondola → Venice": [
+                1.0,
+                1.0,
+                1
+            ],
+            "CarnivalMask → Venice": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path accurately connects both the Gondola and the Carnival Mask to Venice, aligning well with the reference answer. The reasoning is both logical and precise, showing a clear understanding of Venetian culture and landmarks."
+    },
+    "India(visible, city, mutual elements, NA, English)": {
+        "path": "Represent(TajMahal, Tourism) and Represent(Rickshaws, Tourism) Thus, TajMahal → Tourism and Rickshaws → Tourism",
+        "hop_quality": {
+            "TajMahal → Tourism": [
+                0.95,
+                0.85,
+                1
+            ],
+            "Rickshaws → Tourism": [
+                0.9,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies both the Taj Mahal and rickshaws as elements related to tourism in India. The reasoning is logical and demonstrates a good understanding of their roles in the tourism industry. However, it misses the broader connection to India as a country."
+    },
+    "Rio de Janeiro(visible, city, mutual elements, NA, English)": {
+        "path": "LocatedIn(ChristTheRedeemer, RioDeJaneiro) and LocatedIn(SugarloafMountain, RioDeJaneiro) Thus, ChristTheRedeemer → RioDeJaneiro and SugarloafMountain → RioDeJaneiro",
+        "hop_quality": {
+            "ChristTheRedeemer → RioDeJaneiro": [
+                1.0,
+                1.0,
+                1
+            ],
+            "SugarloafMountain → RioDeJaneiro": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path accurately connects both Christ the Redeemer and Sugarloaf Mountain to Rio de Janeiro, aligning perfectly with the reference answer. The reasoning is both logical and precise, showing a clear understanding of Rio's iconic landmarks."
+    },
+    "Beijing(visible, city, mutual elements, NA, English)": {
+        "path": "Represent(GreatWall, HistoricalSignificance) and Represent(ForbiddenCity, HistoricalSignificance) Thus, GreatWall → HistoricalSignificance and ForbiddenCity → HistoricalSignificance",
+        "hop_quality": {
+            "GreatWall → HistoricalSignificance": [
+                0.95,
+                0.9,
+                1
+            ],
+            "ForbiddenCity → HistoricalSignificance": [
+                0.95,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies both the Great Wall and the Forbidden City as historically significant landmarks in China. The reasoning is logical and precise, demonstrating a good understanding of their cultural importance. However, it misses the specific connection to Beijing, which is central to the reference answer."
+    },
+    "New York City(visible, city, mutual elements, NA, English)": {
+        "path": "LocatedIn(StatueOfLiberty, NewYorkCity) and LocatedIn(YellowCab, NewYorkCity) Thus, StatueOfLiberty → NewYorkCity and YellowCab → NewYorkCity",
+        "hop_quality": {
+            "StatueOfLiberty → NewYorkCity": [
+                1.0,
+                1.0,
+                1
+            ],
+            "YellowCab → NewYorkCity": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path is identical to the reference answer, demonstrating perfect logical soundness, precision, and depth of knowledge in associating both the Statue of Liberty and yellow cabs with New York City."
+    },
+    "Sydney(visible, city, mutual elements, NA, English)": {
+        "path": "Feature(SydneyOperaHouse, CurvedShape) and Feature(Boomerang, CurvedShape) Thus, SydneyOperaHouse → CurvedShape and Boomerang → CurvedShape",
+        "hop_quality": {
+            "SydneyOperaHouse → CurvedShape": [
+                0.6,
+                0.2,
+                0
+            ],
+            "Boomerang → CurvedShape": [
+                0.6,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the superficial similarity of curved shapes, missing the deeper cultural and geographical connections to Sydney and Australia. The reasoning is logically sound but lacks precision and knowledge depth."
+    },
+    "Egypt - Giza(visible, city, mutual elements, NA, English)": {
+        "path": "LocatedIn(PyramidsOfGiza, DesertEnvironment) and LocatedIn(Camel, DesertEnvironment) Thus, PyramidsOfGiza → DesertEnvironment and Camel → DesertEnvironment",
+        "hop_quality": {
+            "PyramidsOfGiza → DesertEnvironment": [
+                0.9,
+                0.7,
+                1
+            ],
+            "Camel → DesertEnvironment": [
+                0.9,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies the desert environment as a common theme but misses the specific association with Egypt and Giza. The reasoning is reasonable and knowledgeable but lacks precision in geographical context."
+    },
+    "Rome(visible, city, mutual elements, NA, English)": {
+        "path": "Represent(Colosseum, Engineering) and Represent(VespaScooter, Engineering) Thus, Colosseum → Engineering and VespaScooter → Engineering",
+        "hop_quality": {
+            "Colosseum → Engineering": [
+                0.8,
+                0.5,
+                1
+            ],
+            "VespaScooter → Engineering": [
+                0.8,
+                0.5,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path highlights the engineering aspect of both the Colosseum and Vespa scooter, which is logically sound and knowledgeable. However, it misses the specific cultural and geographical connection to Rome and Italy, reducing precision."
+    },
+    "Istanbul(visible, city, mutual elements, NA, English)": {
+        "path": "Represent(HagiaSophia, CulturalHeritage) and Represent(TurkishDelight, CulinaryTradition) Thus, HagiaSophia → CulturalHeritage and TurkishDelight → CulinaryTradition",
+        "hop_quality": {
+            "HagiaSophia → CulturalHeritage": [
+                1.0,
+                0.9,
+                1
+            ],
+            "TurkishDelight → CulinaryTradition": [
+                1.0,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path effectively captures the cultural significance of both the Hagia Sophia and Turkish Delight, demonstrating high reasonableness, precision, and knowledge depth. However, it does not explicitly link them to Istanbul, slightly reducing geographical precision."
+    },
+    "Toronto(visible, city, mutual elements, NA, English)": {
+        "path": "Feature(Skyscraper, BlueSky) and Feature(AutumnLeaves, VibrantRedsAndOranges) → Contrast(ManMadeStructure, NaturalElements)",
+        "hop_quality": {
+            "Skyscraper → BlueSky": [
+                0.1,
+                0.2,
+                0
+            ],
+            "AutumnLeaves → VibrantRedsAndOranges": [
+                0.1,
+                0.2,
+                0
+            ],
+            "ManMadeStructure ∧ NaturalElements → Contrast": [
+                0.2,
+                0.3,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on color contrast, missing the geographical and cultural connections between the CN Tower and the Maple Leaf. The hops are superficial and lack logical soundness and precision."
+    },
+    "Berlin(visible, city, mutual elements, NA, English)": {
+        "path": "Represent(BrandenburgGate, Berlin) and Represent(Currywurst, Berlin) → Connect(Landmark, StreetFood)",
+        "hop_quality": {
+            "BrandenburgGate → Berlin": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Currywurst → Berlin": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Landmark ∧ StreetFood → Connect": [
+                0.9,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies Berlin as the connection but adds an unnecessary layer of 'travel and exploration'. The hops are logical and precise, though the final connection could be more direct."
+    },
+    "Dubai(visible, city, mutual elements, NA, English)": {
+        "path": "Feature(BurjKhalifa, Dubai) and Feature(Falcon, UAE) → Contrast(UrbanEnvironment, NaturalEnvironment)",
+        "hop_quality": {
+            "BurjKhalifa → Dubai": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Falcon → UAE": [
+                1.0,
+                1.0,
+                1
+            ],
+            "UrbanEnvironment ∧ NaturalEnvironment → Contrast": [
+                0.5,
+                0.4,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies Dubai and the UAE but deviates into a contrast between urban and natural environments. The first two hops are precise and knowledgeable, but the final contrast is less relevant."
+    },
+    "San Francisco(visible, city, mutual elements, NA, English)": {
+        "path": "LocatedIn(GoldenGateBridge, SanFrancisco) and LocatedIn(CableCar, SanFrancisco) → Connect(Landmarks, SanFrancisco)",
+        "hop_quality": {
+            "GoldenGateBridge → SanFrancisco": [
+                1.0,
+                1.0,
+                1
+            ],
+            "CableCar → SanFrancisco": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Landmarks ∧ SanFrancisco → Connect": [
+                1.0,
+                1.0,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path accurately connects both landmarks to San Francisco, demonstrating logical soundness, precision, and depth of knowledge. The explanation is clear and relevant."
+    },
+    "Brussels(visible, city, mutual elements, NA, English)": {
+        "path": "Represent(MannekenPis, Brussels) and Represent(BelgianWaffle, Belgium) → Connect(CherubSymbolism, FoodPresentation)",
+        "hop_quality": {
+            "MannekenPis → Brussels": [
+                1.0,
+                1.0,
+                1
+            ],
+            "BelgianWaffle → Belgium": [
+                1.0,
+                1.0,
+                1
+            ],
+            "CherubSymbolism ∧ FoodPresentation → Connect": [
+                0.3,
+                0.2,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies Brussels and Belgium but strays into an abstract connection between cherub symbolism and food presentation. The first two hops are precise and knowledgeable, but the final connection is vague and less relevant."
+    },
+    "Bhutan(visible, country, mutual elements, NA, English)": {
+        "path": "Represent(MonasteryOnCliff, BuddhistCulture) and Symbolize(PrayerFlags, BuddhistCulture) Thus, MonasteryOnCliff → BuddhistCulture and PrayerFlags → BuddhistCulture",
+        "hop_quality": {
+            "MonasteryOnCliff → BuddhistCulture": [
+                1.0,
+                0.95,
+                1
+            ],
+            "PrayerFlags → BuddhistCulture": [
+                1.0,
+                0.95,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through Buddhist culture. Both paths (MonasteryOnCliff→BuddhistCulture and PrayerFlags→BuddhistCulture) demonstrate high scores across all dimensions, showing deep cultural understanding and precise use of Buddhist concepts, though it missed the specific association with Bhutan."
+    },
+    "Madagascar(visible, country, mutual elements, NA, English)": {
+        "path": "LocatedIn(BaobabTree, NaturalHabitat) and LocatedIn(Lemur, NaturalHabitat) Thus, BaobabTree → NaturalHabitat and Lemur → NaturalHabitat",
+        "hop_quality": {
+            "BaobabTree → NaturalHabitat": [
+                0.95,
+                0.9,
+                1
+            ],
+            "Lemur → NaturalHabitat": [
+                0.95,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a logical path through the shared natural habitat, demonstrating a good understanding of ecological associations. However, it missed the specific association with Madagascar, which is a significant omission in terms of precision and knowledge depth."
+    },
+    "Mongolia(visible, country, mutual elements, NA, English)": {
+        "path": "Represent(Ger, MongolianCulture) and Represent(HorseRiding, MongolianCulture) Thus, Ger → MongolianCulture and HorseRiding → MongolianCulture",
+        "hop_quality": {
+            "Ger → MongolianCulture": [
+                1.0,
+                0.95,
+                1
+            ],
+            "HorseRiding → MongolianCulture": [
+                1.0,
+                0.95,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a well-structured convergent path through Mongolian culture. Both paths (Ger→MongolianCulture and HorseRiding→MongolianCulture) demonstrate high scores across all dimensions, showing deep cultural understanding and precise use of Mongolian concepts, though it missed the specific association with nomadic culture."
+    },
+    "Nepal(visible, country, mutual elements, NA, English)": {
+        "path": "Represent(MountEverest, SacredLandscape) and Symbolize(PrayerWheel, Spirituality) Thus, MountEverest → SacredLandscape and PrayerWheel → Spirituality",
+        "hop_quality": {
+            "MountEverest → SacredLandscape": [
+                0.95,
+                0.9,
+                1
+            ],
+            "PrayerWheel → Spirituality": [
+                0.95,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a logical path through spirituality and sacred landscapes, demonstrating a good understanding of cultural associations. However, it missed the specific association with Nepal and Tibetan Buddhism, which is a significant omission in terms of precision and knowledge depth."
+    },
+    "Uzbekistan(visible, country, mutual elements, NA, English)": {
+        "path": "Represent(RegistanSquare, HistoricalArchitecture) and Represent(SilkRoad, Exploration) Thus, RegistanSquare → HistoricalArchitecture and SilkRoad → Exploration",
+        "hop_quality": {
+            "RegistanSquare → HistoricalArchitecture": [
+                0.9,
+                0.85,
+                1
+            ],
+            "SilkRoad → Exploration": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a logical path through historical architecture and exploration, demonstrating a good understanding of cultural and historical associations. However, it missed the specific association with Uzbekistan and the Silk Road's role in the region's development, which is a significant omission in terms of precision and knowledge depth."
+    },
+    "Samoa(visible, country, mutual elements, NA, English)": {
+        "path": "Depict(TropicalBeachScene, TropicalTheme) and Depict(ShoulderTattoo, TropicalTheme) Thus, TropicalBeachScene → TropicalTheme and ShoulderTattoo → TropicalTheme",
+        "hop_quality": {
+            "TropicalBeachScene → TropicalTheme": [
+                0.85,
+                0.7,
+                0
+            ],
+            "ShoulderTattoo → TropicalTheme": [
+                0.8,
+                0.75,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a path based on a tropical theme, which is reasonable but lacks depth and precision. It missed the cultural significance of both beach fales and tatau in Samoan culture, focusing instead on superficial tropical elements."
+    },
+    "Ogni paese ha l'usanza sua(invisible, country, mutual elements, Non-English European, Italian)": {
+        "path": "Represents(TeaCeremony, CulturalTradition) and Represents(Pizza, CulturalTradition) Thus, TeaCeremony → CulturalTradition and Pizza → CulturalTradition",
+        "hop_quality": {
+            "TeaCeremony → CulturalTradition": [
+                0.9,
+                0.8,
+                1
+            ],
+            "Pizza → CulturalTradition": [
+                0.85,
+                0.75,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies both images as representations of cultural traditions. However, it misses the specific cultural contexts of Japan and Italy, which are crucial to understanding the proverb 'Every country has its customs.'"
+    },
+    "Roma non fu fatta in un giorno(invisible, country, mutual elements, Non-English European, Italian)": {
+        "path": "ComponentOf(RedBrick, GreatWallOfChina) and Represents(GreatWallOfChina, Construction) Thus, RedBrick → GreatWallOfChina → Construction",
+        "hop_quality": {
+            "RedBrick → GreatWallOfChina": [
+                0.95,
+                0.9,
+                1
+            ],
+            "GreatWallOfChina → Construction": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a logical path connecting a single brick to the Great Wall of China through the theme of construction. While accurate, it missed the broader philosophical meaning of the proverb 'Rome wasn't built in a day,' which emphasizes gradual progress over time."
+    },
+    "A goccia a goccia si scava la pietra(invisible, STEM, mutual elements, Non-English European, Italian)": {
+        "path": "Depict(WaterDropletEffect, WaterInMotion) and Depict(MeanderingRiver, WaterInMotion) Thus, WaterDropletEffect → WaterInMotion and MeanderingRiver → WaterInMotion",
+        "hop_quality": {
+            "WaterDropletEffect → WaterInMotion": [
+                0.8,
+                0.7,
+                0
+            ],
+            "MeanderingRiver → WaterInMotion": [
+                0.85,
+                0.75,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the theme of water in motion, which is reasonable but lacks depth. It misses the underlying principle of cumulative small actions leading to significant results, as illustrated by the proverb 'A goccia a goccia si scava la pietra.'"
+    },
+    "Misura due volte, taglia una(invisible, STEM, mutual elements, Non-English European, Italian)": {
+        "path": "Represents(ComplexEquation, ScienceAndTechnology) and Represents(CNCMachining, ScienceAndTechnology) Thus, ComplexEquation → ScienceAndTechnology and CNCMachining → ScienceAndTechnology",
+        "hop_quality": {
+            "ComplexEquation → ScienceAndTechnology": [
+                0.95,
+                0.9,
+                1
+            ],
+            "CNCMachining → ScienceAndTechnology": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path accurately connects complex equations and CNC machining through the theme of science and technology. However, it misses the broader principle of careful planning and preparation, which is central to the proverb 'Measure twice, cut once.'"
+    },
+    "Occhio non vede, cuore non duole(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "path": "Represents(MessyRoom, Chaos) and Symbolizes(ClosedDoor, Barrier) → BothImagesConveyClosure",
+        "hop_quality": {
+            "MessyRoom → Chaos": [
+                0.85,
+                0.75,
+                1
+            ],
+            "ClosedDoor → Barrier": [
+                0.9,
+                0.8,
+                1
+            ],
+            "Chaos ∧ Barrier → BothImagesConveyClosure": [
+                0.7,
+                0.6,
+                0
+            ]
+        },
+        "explanation": "The MLLM constructed a path focusing on the concept of closure, which is reasonable but lacks the depth and cultural context of the reference answer. The hops are logically sound but less precise and knowledgeable compared to the reference."
+    },
+    "A lume di naso(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "path": "Engages(Dog, PlayfulActivity) and Depicts(DugUpBones, PlayfulActivity) → BothImagesConveyPlayfulness",
+        "hop_quality": {
+            "Dog → PlayfulActivity": [
+                0.65,
+                0.5,
+                0
+            ],
+            "DugUpBones → PlayfulActivity": [
+                0.6,
+                0.45,
+                0
+            ],
+            "PlayfulActivity ∧ PlayfulActivity → BothImagesConveyPlayfulness": [
+                0.7,
+                0.55,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on playfulness, which is a superficial interpretation missing the deeper connection to instinct and the proverb 'a lume di naso'. The hops are reasonable but lack precision and domain knowledge."
+    },
+    "Networking Event(visible, business, mutual elements, NA, English)": {
+        "path": "Symbolizes(SpiderWeb, Web) and Represents(BusinessCard, ProfessionalWeb) → BothImagesConveyWeb",
+        "hop_quality": {
+            "SpiderWeb → Web": [
+                0.9,
+                0.85,
+                1
+            ],
+            "BusinessCard → ProfessionalWeb": [
+                0.85,
+                0.8,
+                1
+            ],
+            "Web ∧ ProfessionalWeb → BothImagesConveyWeb": [
+                0.95,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path effectively captures the metaphorical connection between the spider web and the professional network, aligning well with the reference answer. The hops are reasonable, precise, and knowledgeable."
+    },
+    "Supply Chain(invisible, business, relation, NA, English)": {
+        "path": "Produces(Factory, Goods) and Transports(DeliveryTruck, Goods) → BothImagesConveyLogistics",
+        "hop_quality": {
+            "Factory → Goods": [
+                0.95,
+                0.9,
+                1
+            ],
+            "DeliveryTruck → Goods": [
+                0.9,
+                0.85,
+                1
+            ],
+            "Goods ∧ Goods → BothImagesConveyLogistics": [
+                0.95,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path accurately reflects the supply chain process, matching the reference answer. The hops are reasonable, precise, and demonstrate deep domain knowledge."
+    },
+    "まだな(invisible, country, relation, East Asia, Japanese)": {
+        "path": "Represents(Bananas, Ripeness) and Symbolizes(Hourglass, Time) → BothImagesConveyTime",
+        "hop_quality": {
+            "Bananas → Ripeness": [
+                0.8,
+                0.7,
+                1
+            ],
+            "Hourglass → Time": [
+                0.9,
+                0.85,
+                1
+            ],
+            "Ripeness ∧ Time → BothImagesConveyTime": [
+                0.75,
+                0.65,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the concept of time and ripeness, which is reasonable but misses the playful and cultural reference of 'まだな'. The hops are logical but lack the precision and depth of the reference answer."
+    },
+    "work life(invisible, business, relation, NA, English)": {
+        "path": "Represents(ScaleOfJustice, Balance) and Represents(FamilyPhoto, Harmony) Thus, ScaleOfJustice → Balance and FamilyPhoto → Harmony",
+        "hop_quality": {
+            "ScaleOfJustice → Balance": [
+                0.95,
+                0.9,
+                1
+            ],
+            "FamilyPhoto → Harmony": [
+                0.95,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path effectively captures the symbolic meanings of balance and harmony in the images. The hops are logically sound and precise, though they slightly deviate from the reference answer's focus on work-life balance."
+    },
+    "Longevity(invisible, country, relation, East Asia, Japanese)": {
+        "path": "Be(Sushi, JapaneseCuisine) and Symbolize(Crane, Longevity) Thus, Sushi → JapaneseCuisine and Crane → Longevity",
+        "hop_quality": {
+            "Sushi → JapaneseCuisine": [
+                0.9,
+                0.85,
+                1
+            ],
+            "Crane → Longevity": [
+                0.95,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies the cultural and symbolic elements but misses the direct connection between sushi and longevity. The hops are reasonable and knowledgeable but lack the specificity of the reference answer."
+    },
+    "rabbit by the sea(invisible, country, relation, East Asia, Japanese)": {
+        "path": "Be(Beach, Nature) and Be(Rabbit, Animal) Thus, Beach → Nature and Rabbit → Animal",
+        "hop_quality": {
+            "Beach → Nature": [
+                0.9,
+                0.85,
+                1
+            ],
+            "Rabbit → Animal": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies the natural elements but misses the playful linguistic connection in the reference answer. The hops are reasonable and knowledgeable but lack the whimsical specificity of the reference answer."
+    },
+    "as tight as beef(invisible, country, metaphor, East Asia, Japanese)": {
+        "path": "Be(GrilledBeef, Food) and Be(PackedSubway, Crowded) Thus, GrilledBeef → Food and PackedSubway → Crowded",
+        "hop_quality": {
+            "GrilledBeef → Food": [
+                0.9,
+                0.85,
+                1
+            ],
+            "PackedSubway → Crowded": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies the elements of food and crowdedness but misses the humorous linguistic connection in the reference answer. The hops are reasonable and knowledgeable but lack the playful specificity of the reference answer."
+    },
+    "the cat is evidence(invisible, country, relation, East Asia, Japanese)": {
+        "path": "Be(Cat, Animal) and Be(Evidence, Investigation) Thus, Cat → Animal and Evidence → Investigation",
+        "hop_quality": {
+            "Cat → Animal": [
+                0.9,
+                0.85,
+                1
+            ],
+            "Evidence → Investigation": [
+                0.9,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path correctly identifies the elements of animal and investigation but misses the humorous linguistic connection in the reference answer. The hops are reasonable and knowledgeable but lack the playful specificity of the reference answer."
+    },
+    "work is killing me(invisible, country, relation, East Asia, Japanese)": {
+        "path": "Symbolize(ClutteredDesk, BusyLife) and Represent(Gravestone, EndOfLife) → MortalityAndWorkLife",
+        "hop_quality": {
+            "ClutteredDesk → BusyLife": [
+                0.85,
+                0.75,
+                1
+            ],
+            "Gravestone → EndOfLife": [
+                0.95,
+                0.9,
+                1
+            ],
+            "BusyLife ∧ EndOfLife → MortalityAndWorkLife": [
+                0.8,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path captures the themes of busy life and end of life effectively but misses the linguistic humor and cultural reference in the reference answer. The hops are reasonable and precise but lack the depth of knowledge regarding the Japanese phonetic play."
+    },
+    "Vorrei del pane, ma non del pene(invisible, country, relation, Non-English European, Italian)": {
+        "path": "Represent(ArtisanBread, CulinaryCreativity) and Represent(CartoonCharacter, ArtisticCreativity) → Creativity",
+        "hop_quality": {
+            "ArtisanBread → CulinaryCreativity": [
+                0.9,
+                0.8,
+                1
+            ],
+            "CartoonCharacter → ArtisticCreativity": [
+                0.85,
+                0.75,
+                1
+            ],
+            "CulinaryCreativity ∧ ArtisticCreativity → Creativity": [
+                0.8,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on creativity but entirely misses the Italian linguistic humor involving 'pane' and 'pene'. The hops are reasonable and precise but lack the cultural and linguistic depth of the reference answer."
+    },
+    "Need some salve(invisible, country, metaphor, Non-English European, Italian)": {
+        "path": "Represent(Greeting, NaturalColors) and Represent(HerbalSalve, NaturalIngredients) → NaturalElements",
+        "hop_quality": {
+            "Greeting → NaturalColors": [
+                0.7,
+                0.6,
+                1
+            ],
+            "HerbalSalve → NaturalIngredients": [
+                0.8,
+                0.75,
+                1
+            ],
+            "NaturalColors ∧ NaturalIngredients → NaturalElements": [
+                0.75,
+                0.65,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path connects the images through natural elements but misses the Italian linguistic play on 'salve'. The hops are reasonable but lack precision and depth in capturing the dual meaning of 'salve'."
+    },
+    "My dog is more like a stick(invisible, country, metaphor, Non-English European, Italian)": {
+        "path": "Represent(RestingPug, Dependence) and Represent(WalkingCane, Independence) → Independence",
+        "hop_quality": {
+            "RestingPug → Dependence": [
+                0.85,
+                0.75,
+                1
+            ],
+            "WalkingCane → Independence": [
+                0.9,
+                0.8,
+                1
+            ],
+            "Dependence ∧ Independence → Independence": [
+                0.8,
+                0.7,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path focuses on independence but misses the Italian linguistic humor involving 'cane'. The hops are reasonable and precise but lack the cultural and linguistic depth of the reference answer."
+    },
+    "Can't find the needle(invisible, country, relation, Non-English European, Italian)": {
+        "path": "Represent(Lake, Reflection) and Represent(SewingNeedles, Reflection) → Reflection",
+        "hop_quality": {
+            "Lake → Reflection": [
+                0.85,
+                0.75,
+                1
+            ],
+            "SewingNeedles → Reflection": [
+                0.8,
+                0.7,
+                1
+            ],
+            "Reflection ∧ Reflection → Reflection": [
+                0.75,
+                0.65,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path connects the images through the theme of reflection but misses the Italian linguistic humor involving 'lago' and 'l'ago'. The hops are reasonable but lack precision and depth in capturing the phonetic play."
+    },
+    "Ho visto del vino e ho bevuto(invisible, country, metaphor, Non-English European, Italian)": {
+        "path": "Be(Vino, Beverage) ∧ Be(Vino, Perception) → 'I saw wine and drank!'",
+        "hop_quality": {
+            "Vino ∧ Vino → 'I saw wine and drank!'": [
+                0.85,
+                0.9,
+                1
+            ]
+        },
+        "explanation": "The MLLM constructed a metaphorical path that captures the dual meaning of 'vino' in Italian, linking it to both beverage and perception. The path is logically sound and precise, demonstrating a deep understanding of the linguistic play involved."
+    },
+    "Sole(invisible, country, relation, Non-English European, Italian)": {
+        "path": "Be(Sole, CelestialBody) ∧ Be(Sole, Exclusivity) → 'Sun of my life' → Sole",
+        "hop_quality": {
+            "Sole ∧ Sole → 'Sun of my life'": [
+                0.8,
+                0.85,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path effectively captures the dual meaning of 'sole' in Italian, linking it to both the sun and exclusivity. The path is reasonable and precise, showing a good grasp of the linguistic nuances."
+    },
+    "Filo(invisible, country, metaphor, Non-English European, Italian)": {
+        "path": "Be(Filo, Textile) ∧ Be(Filo, Electrical) → 'Is it thread or wire?'",
+        "hop_quality": {
+            "Filo ∧ Filo → 'Is it thread or wire?'": [
+                0.9,
+                0.95,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path accurately captures the dual meaning of 'filo' in Italian, linking it to both textile and electrical contexts. The path is highly reasonable and precise, demonstrating a strong understanding of the linguistic play."
+    },
+    "Cough after eating(invisible, country, relation, East Asia, Korean)": {
+        "path": "Be(김치, Food) ∧ Be(기침, Symptom) → 'Cough after eating' → 기침",
+        "hop_quality": {
+            "김치 ∧ 기침 → 'Cough after eating'": [
+                0.75,
+                0.8,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path captures the humorous link between eating spicy kimchi and coughing. The path is logically sound and precise, showing a good understanding of the cultural context."
+    },
+    "apple and accident(invisible, country, relation, East Asia, Korean)": {
+        "path": "Be(사과, Fruit) ∧ Be(사고, Incident) → 'Eating an apple' → 사고",
+        "hop_quality": {
+            "사과 ∧ 사고 → 'Eating an apple'": [
+                0.7,
+                0.75,
+                1
+            ]
+        },
+        "explanation": "The MLLM's path captures the playful link between eating an apple and having an accident. The path is reasonable and precise, demonstrating a good understanding of the linguistic play involved."
+    },
+    "stomach and boat(invisible, country, metaphor, East Asia, Korean)": {
+        "path": "Be(RedDress, Color) and Be(RedBoat, Color) → CommonalityInColor",
+        "hop_quality": {
+            "RedDress → Color": [
+                0.95,
+                0.9,
+                1
+            ],
+            "RedBoat → Color": [
+                0.95,
+                0.9,
+                1
+            ],
+            "Color → CommonalityInColor": [
+                0.85,
+                0.8,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path focuses on the commonality of the color red in both images, which is logically sound and precise. However, it misses the deeper cultural and linguistic connection between 'stomach' and 'boat' in Korean, which the reference answer highlights. The path is knowledgeable about color symbolism but lacks depth in cultural context."
+    },
+    "Looking for grass to solve(invisible, country, relation, East Asia, Korean)": {
+        "path": "Be(GreenMeadow, Nature) and Be(ProblemSolving, Action) → ApplicationInNature",
+        "hop_quality": {
+            "GreenMeadow → Nature": [
+                1.0,
+                1.0,
+                1
+            ],
+            "ProblemSolving → Action": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Action → ApplicationInNature": [
+                0.75,
+                0.7,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path logically connects the green meadow to nature and problem-solving to action, demonstrating clarity and specificity. However, it fails to capture the linguistic play on the word '풀' (grass/solve) in Korean, which the reference answer humorously explores. The path is reasonable and precise but lacks cultural and linguistic depth."
+    },
+    "Because this is the world(invisible, country, relation, East Asia, Korean)": {
+        "path": "Be(Earth, Planet) and Be(AlarmClock, Time) → TimeInTransportation",
+        "hop_quality": {
+            "Earth → Planet": [
+                1.0,
+                1.0,
+                1
+            ],
+            "AlarmClock → Time": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Time → TimeInTransportation": [
+                0.8,
+                0.75,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path logically connects Earth to the concept of a planet and an alarm clock to time, showing clarity and specificity. However, it misses the linguistic dual meaning of '세상' (world/age) in Korean, which the reference answer cleverly explores. The path is reasonable and precise but lacks cultural and linguistic depth."
+    },
+    "snow and eyes(invisible, country, relation, East Asia, Korean)": {
+        "path": "Be(HumanEye, Detail) and Be(WinterLandscape, Serenity) → ThemeOfSerenityAndDetail",
+        "hop_quality": {
+            "HumanEye → Detail": [
+                1.0,
+                1.0,
+                1
+            ],
+            "WinterLandscape → Serenity": [
+                1.0,
+                1.0,
+                1
+            ],
+            "Serenity → ThemeOfSerenityAndDetail": [
+                0.85,
+                0.8,
+                0
+            ]
+        },
+        "explanation": "The MLLM's path logically connects the human eye to detail and the winter landscape to serenity, demonstrating clarity and specificity. However, it misses the linguistic play on the word '눈' (eye/snow) in Korean, which the reference answer humorously explores. The path is reasonable and precise but lacks cultural and linguistic depth."
+    }
+}

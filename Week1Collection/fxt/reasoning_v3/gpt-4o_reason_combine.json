@@ -1,0 +1,2607 @@
+{
+    "Kuala Lumpur(invisible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Fierce dragon illustration\n- Second image: City skyline silhouette at sunset\n\n- Relation: Dramatic imagery\n\n- Explanation: Both images are rich in contrast and dramatic visuals, using bold lines and intense colors. The dragon is depicted in a dynamic pose with vivid colors and sharp details, while the city skyline is silhouetted against a vibrant sunset, creating a striking and eye-catching contrast. Both evoke a sense of power and intensity.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the critical connection to Kuala Lumpur. It focuses on 'dramatic imagery' rather than the specific relationship to the city and its landmarks."
+        },
+        "reason_judge": {
+            "path": "Illustrates(FierceDragon, DramaticImagery) and Depicts(CitySkyline, DramaticImagery) Thus, FierceDragon → DramaticImagery and CitySkyline → DramaticImagery",
+            "hop_quality": {
+                "FierceDragon → DramaticImagery": [
+                    0.85,
+                    0.6,
+                    0
+                ],
+                "CitySkyline → DramaticImagery": [
+                    0.9,
+                    0.7,
+                    0
+                ]
+            },
+            "explanation": "The MLLM constructed a path focusing on dramatic imagery, missing the cultural and linguistic connection to Kuala Lumpur. While the observations are reasonable and somewhat precise, they lack depth in domain knowledge by not recognizing the reference to the city."
+        }
+    },
+    "Santorini(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: The number \"365\" on a vibrant yellow background.\n- Second image: A sunset view over a coastal town with white buildings and the sea.\n\n- Relation: Time\n\n- Explanation: The number \"365\" typically represents the number of days in a year, symbolizing the passage of time. The sunset in the second image is a daily event that signifies the end of a day. Together, they reflect the concept of time, with the first image emphasizing its annual cycle and the second illustrating a daily occurrence.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is overly broad and misses the critical connection to Santorini. It focuses on 'time' rather than the specific relationship to the island's churches and sunset views."
+        },
+        "reason_judge": {
+            "path": "Represents(365, DaysInYear) and Depicts(CoastalSunset, EndOfDay) Thus, 365 → DaysInYear and CoastalSunset → EndOfDay",
+            "hop_quality": {
+                "365 → DaysInYear": [
+                    0.95,
+                    0.8,
+                    1
+                ],
+                "CoastalSunset → EndOfDay": [
+                    0.9,
+                    0.75,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is logically sound and precise, focusing on the concept of time. However, it misses the specific cultural reference to Santorini and its iconic churches, showing a lack of depth in domain knowledge."
+        }
+    },
+    "Newton's Laws of Motion(invisible, STEM, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Apples falling from trees\n- Second image: Newton's second law of motion formula (ΣF = ma)\n- Relation: Gravity\n- Explanation: The first image shows apples falling from trees, a classic representation of gravitational force. The second image displays Newton's second law, which relates force to mass and acceleration. Together, they illustrate fundamental principles of physics, specifically how gravity affects motion.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately captures the relationship between the falling apples and Newton's second law of motion, consistent with the standard answer. It effectively explains the connection to gravity and physics."
+        },
+        "reason_judge": {
+            "path": "Illustrates(FallingApple, Gravity) and Explains(NewtonsSecondLaw, Gravity) Thus, FallingApple → Gravity and NewtonsSecondLaw → Gravity",
+            "hop_quality": {
+                "FallingApple → Gravity": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "NewtonsSecondLaw → Gravity": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured path that accurately connects the falling apple and Newton's second law to gravity. The hops are reasonable, precise, and demonstrate deep knowledge of physics."
+        }
+    },
+    "New Delhi(invisible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Heart-shaped symbol\n- Second image: Sandstone blocks in a quarry\n- Relation: Nature and material\n- Explanation: The heart symbol often represents emotion or life, while sandstone is a natural material. Both images connect through themes of nature, where the heart can symbolize life and sandstone represents the Earth’s raw materials. They both highlight different aspects of the natural world, one through symbolism and emotion, and the other through physical material.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the critical connection to New Delhi. It focuses on 'nature and material' rather than the specific relationship to the city and its landmarks."
+        },
+        "reason_judge": {
+            "path": "Symbolizes(Heart, Life) and Represents(Sandstone, EarthMaterial) Thus, Heart → Life and Sandstone → EarthMaterial",
+            "hop_quality": {
+                "Heart → Life": [
+                    0.8,
+                    0.5,
+                    0
+                ],
+                "Sandstone → EarthMaterial": [
+                    0.85,
+                    0.6,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's path focuses on nature and material, missing the cultural and linguistic connection to New Delhi. While the observations are reasonable, they lack precision and depth in domain knowledge by not recognizing the reference to the city."
+        }
+    },
+    "Berlinanother(invisible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Music album cover with the title \"1989 Taylor's Version\"\n- Second image: Colorful mural art featuring the word \"Houston\"\n\n- Relation: Artistic expression\n\n- Explanation: Both images use vibrant colors and artistic design to convey their messages. The first image is an album cover, which uses a photograph and stylized text to present a music release. The second image, a mural, also employs vibrant colors and urban art style to celebrate a city. Each serves as a form of expression through different mediums.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is overly broad and misses the critical connection to Berlin. It focuses on 'artistic expression' rather than the specific relationship to the historical event and street art culture."
+        },
+        "reason_judge": {
+            "path": "Represents(1989, MusicAlbum) and Depicts(MuralArt, UrbanCelebration) Thus, 1989 → MusicAlbum and MuralArt → UrbanCelebration",
+            "hop_quality": {
+                "1989 → MusicAlbum": [
+                    0.7,
+                    0.4,
+                    0
+                ],
+                "MuralArt → UrbanCelebration": [
+                    0.75,
+                    0.5,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's path focuses on artistic expression, missing the historical and cultural connection to Berlin. While the observations are somewhat reasonable, they lack precision and depth in domain knowledge by not recognizing the reference to the Berlin Wall."
+        }
+    },
+    "Electronics(invisible, STEM, relation, NA, English)": {
+        "MLLM_answer": "- First image: A person wearing gloves holding a circuit board.\n- Second image: Illustration of electrical sparks between separated wire ends.\n- Relation: Electronics and electricity\n- Explanation: Both images are related to the field of electronics. The first image shows a circuit board, crucial for functioning electronic devices. The second image illustrates electricity flow, which powers electronic components. Together, they highlight electrical engineering basics.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately describes the relationship between the images, focusing on electronics and electricity, which aligns well with the standard answer's focus on electronics."
+        },
+        "reason_judge": {
+            "path": "Conducts(CircuitBoard, Electricity) and BasisOf(Electricity, Electronics) Thus, CircuitBoard → Electricity → Electronics",
+            "hop_quality": {
+                "CircuitBoard → Electricity": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Electricity → Electronics": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a sequential path that aligns well with the reference answer. Both hops are logically sound, precise, and demonstrate deep domain knowledge in electronics and electricity."
+        }
+    },
+    "Medical Imaging(invisible, STEM, relation, NA, English)": {
+        "MLLM_answer": "- First image: MRI machine\n- Second image: Diagram of magnetic field lines\n- Relation: Magnetism\n- Explanation: The first image shows an MRI machine, which utilizes strong magnetic fields to produce detailed images of the body's internal structures. The second image depicts a diagram of magnetic field lines, illustrating the concept of magnetism. Both images are connected through the principle of magnetism, which is central to the operation of MRI technology.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the principle of magnetism but does not fully capture the broader concept of medical imaging as emphasized in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Uses(MRI, MagneticField) and PrincipleOf(MagneticField, Physics) and UsedIn(MRI, MedicalImaging) Thus, MRI → MagneticField → MedicalImaging and MRI → MedicalImaging",
+            "hop_quality": {
+                "MRI → MagneticField": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "MagneticField → MedicalImaging": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "MRI → MedicalImaging": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured path that aligns closely with the reference answer. All hops are logically sound, precise, and demonstrate deep domain knowledge in medical imaging and magnetism."
+        }
+    },
+    "Strategic Decision-Making(invisible, STEM, relation, NA, English)": {
+        "MLLM_answer": "- First image: Decision-making matrix.\n- Second image: Evolutionary tree diagram.\n\n- Relation: Classification\n\n- Explanation: The first image categorizes tasks or projects based on their impact and feasibility, distinguishing between quick wins, potential projects, minor improvements, and those to discard. The second image classifies different species based on evolutionary traits such as jaws, legs, and feathers. Both images involve organizing elements—tasks or species—according to specific criteria to enhance understanding and guide decisions.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output discusses classification but does not address the strategic decision-making aspect, which is the core of the standard answer."
+        },
+        "reason_judge": {
+            "path": "Categorizes(PayoffMatrix, Tasks) and Classifies(EvolutionaryTree, Species) Thus, PayoffMatrix → Tasks and EvolutionaryTree → Species",
+            "hop_quality": {
+                "PayoffMatrix → Tasks": [
+                    0.2,
+                    0.2,
+                    0
+                ],
+                "EvolutionaryTree → Species": [
+                    0.9,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path focuses on classification rather than strategic decision-making. The hop involving the evolutionary tree is reasonable and precise, but the hop involving the payoff matrix lacks relevance and specificity to game theory and evolution."
+        }
+    },
+    "Montreal(invisible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Number \"375\"\n- Second image: Pecan dessert on a plate\n- Relation: Baking\n- Explanation: The number \"375\" could represent an oven temperature in Fahrenheit, often used for baking various desserts. The presence of a pecan dessert in the second image suggests a connection to baking, where setting the oven to 375°F might be a step in its preparation.",
+        "ordinary_judge": {
+            "score_4o": "0",
+            "score_reason": "The MLLM's output contains factual inaccuracies, incorrectly linking the number '375' to baking rather than Montreal's 375th anniversary, which undermines its reasoning."
+        },
+        "reason_judge": {
+            "path": "Represents(375, OvenTemperature) and RelatedTo(PecanDessert, Baking) Thus, 375 → OvenTemperature and PecanDessert → Baking",
+            "hop_quality": {
+                "375 → OvenTemperature": [
+                    0.8,
+                    0.8,
+                    1
+                ],
+                "PecanDessert → Baking": [
+                    0.9,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a path that focuses on baking rather than Montreal. While the hops are logically sound and precise, they lack the cultural and historical depth required to connect the images to Montreal's heritage."
+        }
+    },
+    "AmericanIdentity(visible, country, relation, USAEnglish, English)": {
+        "MLLM_answer": "- First image: Red suspension bridge at sunset\n- Second image: Brown cowboy hat\n- Relation: Western iconography\n- Explanation: The first image depicts an iconic suspension bridge, known for its striking design and location in the American West. The second image is a cowboy hat, a classic symbol of Western style and culture. Both images represent aspects of the American West, albeit from different perspectives—architectural and cultural.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies elements of Western iconography but does not explicitly mention 'American Identity' as the standard answer does, though it aligns with the broader concept."
+        },
+        "reason_judge": {
+            "path": "Represents(GoldenGateBridge, WesternIconography) and Represents(CowboyHat, WesternIconography) Thus, GoldenGateBridge → WesternIconography and CowboyHat → WesternIconography",
+            "hop_quality": {
+                "GoldenGateBridge → WesternIconography": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "CowboyHat → WesternIconography": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is reasonable and precise, focusing on the theme of Western iconography. However, it misses the broader concept of American identity, which is a more encompassing and knowledgeable aspect of the relation."
+        }
+    },
+    "Hanoi(invisible, country, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Laughing woman in a blue shirt\n- Second image: Comic-style \"NO!\" text\n\n- Relation: Contrast\n\n- Explanation: The first image shows a woman laughing, representing joy or amusement, while the second image contains a bold comic-style \"NO!\" which can imply rejection, negation, or humor. The combination highlights contrasting emotional expressions—one positive and joyful, the other possibly negative or humorous.",
+        "ordinary_judge": {
+            "score_4o": "1",
+            "score_reason": "The MLLM's output expresses a contrast but completely misses the intended relation 'Hanoi' and its cultural significance as per the standard answer."
+        },
+        "reason_judge": {
+            "path": "Represents(LaughingFace, Joy) and Represents(NoText, Negation) Thus, LaughingFace → Joy and NoText → Negation",
+            "hop_quality": {
+                "LaughingFace → Joy": [
+                    0.7,
+                    0.6,
+                    0
+                ],
+                "NoText → Negation": [
+                    0.7,
+                    0.6,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's path is reasonable but lacks precision and depth. It focuses on contrasting emotions but misses the phonetic and cultural connection to Hanoi, which is a more knowledgeable and specific aspect of the relation."
+        }
+    },
+    "Japan(visible, country, mutual elements, East Asia, English)": {
+        "MLLM_answer": "- First image: Snow-capped mountain with a lake\n- Second image: Cherry blossom trees along a path\n- Relation: Japan\n- Explanation: The first image depicts a majestic snow-capped mountain next to a serene lake, reminiscent of Mount Fuji in Japan. The second image features cherry blossom trees, which are iconic to Japanese culture, lining a pathway. Both images capture elements strongly associated with the natural beauty of Japan in different seasons.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately captures the elements associated with Japan, consistent with the standard answer, although it does not explicitly mention 'Mount Fuji' and 'Sakura' by name."
+        },
+        "reason_judge": {
+            "path": "SymbolOf(MountFuji, Japan) and SymbolOf(Sakura, Japan) Thus, MountFuji → Japan and Sakura → Japan",
+            "hop_quality": {
+                "MountFuji → Japan": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Sakura → Japan": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is perfectly aligned with the reference answer, demonstrating logical soundness, precision, and deep knowledge of the cultural symbols associated with Japan."
+        }
+    },
+    "TraditionalJapan(visible, country, metaphor, East Asia, English)": {
+        "MLLM_answer": "- First image: Bullet train at a station\n- Second image: Japanese katana swords\n\n- Relation: Japanese innovation \n- Explanation: The bullet train represents modern technological advancements in transportation within Japan, known for its speed and efficiency. The katana symbolizes the traditional craftsmanship and cultural heritage of Japan, noted for its precision and historical significance. Both images highlight Japan's influence and excellence in merging tradition with innovation.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately captures the relationship between the bullet train and katana as symbols of Japanese innovation and tradition, aligning well with the standard answer's focus on ModernJapan and TraditionalJapan."
+        },
+        "reason_judge": {
+            "path": "Represents(Shinkansen, ModernJapan) and Represents(Katana, TraditionalJapan) Thus, Shinkansen → ModernJapan and Katana → TraditionalJapan",
+            "hop_quality": {
+                "Shinkansen → ModernJapan": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Katana → TraditionalJapan": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is identical to the reference answer, demonstrating perfect scores across all dimensions. It accurately captures the representation of both the Shinkansen and katana in the context of Japan's modernity and tradition."
+        }
+    },
+    "JapaneseCulture(visible, country, mutual elements, East Asia, English)": {
+        "MLLM_answer": "- First image: Maneki-neko (lucky cat) figurines\n- Second image: Sushi with chopsticks and soy sauce\n- Relation: Japanese culture\n- Explanation: The first image shows various Maneki-neko figurines, which are traditional Japanese symbols believed to bring good fortune. The second image features sushi, a well-known Japanese cuisine. Both images represent elements of Japanese culture, showcasing its traditional beliefs and culinary art.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output effectively identifies the Maneki-neko and sushi as elements of Japanese culture, consistent with the standard answer's emphasis on JapaneseCulture."
+        },
+        "reason_judge": {
+            "path": "ElementOf(ManekiNeko, JapaneseCulture) and ElementOf(Sushi, JapaneseCulture) Thus, ManekiNeko → JapaneseCulture and Sushi → JapaneseCulture",
+            "hop_quality": {
+                "ManekiNeko → JapaneseCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Sushi → JapaneseCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path aligns perfectly with the reference answer, showing high reasonableness, precision, and knowledge depth. Both the Maneki-neko and sushi are accurately identified as elements of Japanese culture."
+        }
+    },
+    "ModernKoreanCulture(visible, country, mutual elements, East Asia, English)": {
+        "MLLM_answer": "- First image: Performer on stage\n- Second image: Kimchi\n\n- Relation: Korean culture\n\n- Explanation: The first image shows a performer, likely a K-pop artist, on stage, which represents the vibrant music scene in Korea. The second image depicts kimchi, a staple in Korean cuisine. Both images highlight significant aspects of Korean culture, showcasing both its entertainment and culinary traditions.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the performer and kimchi as aspects of Korean culture but lacks the nuanced distinction between ModernKoreanCulture and TraditionalKoreanFood present in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Represents(KPopIdol, ModernKoreanCulture) and Represents(Kimchi, TraditionalKoreanFood) and PartOf(TraditionalKoreanFood, KoreanCulture) Thus, KPopIdol → ModernKoreanCulture → KoreanCulture and Kimchi → TraditionalKoreanFood → KoreanCulture",
+            "hop_quality": {
+                "KPopIdol → ModernKoreanCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "ModernKoreanCulture → KoreanCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Kimchi → TraditionalKoreanFood": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "TraditionalKoreanFood → KoreanCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is equivalent to the reference answer, demonstrating perfect scores across all dimensions. It accurately captures the representation of K-Pop idols and kimchi in the context of modern and traditional Korean culture."
+        }
+    },
+    "KoreanNationalIdentity(visible, country, mutual elements, East Asia, English)": {
+        "MLLM_answer": "- First image: Taekwondo practitioner in uniform\n- Second image: Korean alphabet chart (Hangul)\n- Relation: Korean culture\n- Explanation: The first image shows a person practicing Taekwondo, a martial art originating from Korea. The second image displays the Korean alphabet, Hangul. Both images are connected through Korean cultural heritage; Taekwondo is a significant part of Korean sports and cultural identity, and Hangul is the writing system used for the Korean language.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately connects Taekwondo and Hangul to Korean cultural heritage, aligning well with the standard answer's focus on KoreanNationalIdentity."
+        },
+        "reason_judge": {
+            "path": "Represents(TaekwondoUniform, Taekwondo) and SymbolOf(Taekwondo, KoreanNationalIdentity) and SymbolOf(Hangul, KoreanNationalIdentity) Thus, TaekwondoUniform → Taekwondo → KoreanNationalIdentity and Hangul → KoreanNationalIdentity",
+            "hop_quality": {
+                "TaekwondoUniform → Taekwondo": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Taekwondo → KoreanNationalIdentity": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Hangul → KoreanNationalIdentity": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is identical to the reference answer, showing perfect scores across all dimensions. It accurately captures the symbolic representation of Taekwondo and Hangul in the context of Korean national identity."
+        }
+    },
+    "PopularDishInKorea(visible, country, mutual elements, East Asia, English)": {
+        "MLLM_answer": "- First image: Tower with observation deck\n- Second image: Korean dish bibimbap\n\n- Relation: South Korea\n\n- Explanation: The first image features a tower that resembles the Namsan Seoul Tower, a famous landmark in South Korea known for its panoramic views of Seoul. The second image displays bibimbap, a traditional Korean dish. Both represent iconic elements of South Korean culture—one in terms of architecture and the other through its cuisine.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies Namsan Seoul Tower and bibimbap as iconic elements of South Korean culture but misses the specific focus on PopularDishInKorea and ModernSeoul in the standard answer."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(NSeoulTower, Seoul) and Represents(NSeoulTower, ModernSeoul) and PopularDishIn(Bibimbap, Seoul) Thus, NSeoulTower → ModernSeoul and Bibimbap → Seoul",
+            "hop_quality": {
+                "NSeoulTower → ModernSeoul": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Bibimbap → Seoul": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path aligns with the reference answer, demonstrating perfect scores across all dimensions. It accurately captures the representation of N Seoul Tower and bibimbap in the context of modern Seoul and its culinary scene."
+        }
+    },
+    "Briefcase and Briefcase(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Modern skyscraper in an urban environment\n- Second image: Tectonic plates map\n\n- Relation: Earth's structure\n\n- Explanation: The skyscraper represents human engineering and its interaction with the Earth's surface, while the map illustrates the natural movements and boundaries of tectonic plates beneath the Earth's crust. Both images highlight different aspects of human-environment interaction and the importance of understanding Earth's geological structures in urban planning and construction.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses critical elements needed for a coherent explanation. It does not address or align with the intended standard reasoning at all."
+        },
+        "reason_judge": {
+            "path": "Represents(Skyscraper, HumanEngineering) and Interaction(HumanEngineering, EarthSurface) and Displays(TectonicPlatesMap, TectonicPlates) and Interaction(TectonicPlates, EarthStructure) and Related(EarthSurface, EarthStructure) Thus, Skyscraper → HumanEngineering → EarthSurface → EarthStructure and TectonicPlatesMap → TectonicPlates → EarthStructure",
+            "hop_quality": {
+                "Skyscraper → HumanEngineering": [
+                    0.85,
+                    0.7,
+                    1
+                ],
+                "HumanEngineering → EarthSurface": [
+                    0.75,
+                    0.65,
+                    1
+                ],
+                "TectonicPlatesMap → TectonicPlates": [
+                    0.9,
+                    0.8,
+                    1
+                ],
+                "TectonicPlates → EarthStructure": [
+                    0.8,
+                    0.75,
+                    1
+                ],
+                "EarthSurface → EarthStructure": [
+                    0.7,
+                    0.6,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path focuses on human-environment interaction, which is reasonable but deviates from the business-related context in the reference answer. The hops are logically sound and precise but lack the specific corporate and professional associations."
+        }
+    },
+    "Startup(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Light bulb symbolizing an idea.\n- Second image: Seed funding concept with business-related items.\n\n- Relation: Innovation and entrepreneurship\n\n- Explanation: The light bulb represents a new idea or innovation, which is fundamental in the world of entrepreneurship. The second image depicts seed funding, which is essential for transforming these ideas into viable business ventures. Together, they illustrate the process of nurturing and growing new concepts into successful enterprises.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows reasonable understanding but is incomplete. It mentions key facts like 'light bulb' and 'seed funding' but fails to effectively summarize the relationship as precisely as the standard answer."
+        },
+        "reason_judge": {
+            "path": "Represents(Lightbulb, Idea) and Necessity(Idea, Innovation) and Necessity(SeedFunding, Entrepreneurship) and Related(Innovation, Entrepreneurship) Thus, Lightbulb → Idea → Innovation → Entrepreneurship and SeedFunding → Entrepreneurship → Innovation → Idea → Lightbulb",
+            "hop_quality": {
+                "Lightbulb → Idea": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Idea → Innovation": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "SeedFunding → Entrepreneurship": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Innovation → Entrepreneurship": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path aligns well with the reference answer, focusing on the connection between ideas, innovation, and entrepreneurship. The hops are reasonable, precise, and knowledgeable, demonstrating a clear understanding of the startup ecosystem."
+        }
+    },
+    "OnlinePurchase(invisible, business, relation, NA, English)": {
+        "MLLM_answer": "- First image: Shopping cart filled with groceries\n- Second image: Person giving online reviews on a laptop\n- Relation: Consumer experience\n- Explanation: The shopping cart represents the physical act of purchasing products, while the online review reflects the post-purchase evaluation of those products or the shopping experience. Together, they illustrate the modern consumer journey, from acquiring goods to sharing feedback or opinions online.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows reasonable understanding but is incomplete. It mentions key facts like 'shopping cart' and 'online reviews' but fails to effectively summarize the relationship as precisely as the standard answer."
+        },
+        "reason_judge": {
+            "path": "Tool(ShoppingCart, ConsumerExperience) and Represents(OnlineReviews, ConsumerFeedback) and Related(ConsumerExperience, ConsumerFeedback) Thus, ShoppingCart → ConsumerExperience → ConsumerFeedback → OnlineReviews and OnlineReviews → ConsumerFeedback → ConsumerExperience → ShoppingCart",
+            "hop_quality": {
+                "ShoppingCart → ConsumerExperience": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "OnlineReviews → ConsumerFeedback": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "ConsumerExperience → ConsumerFeedback": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path focuses on the consumer journey, which is a valid interpretation but slightly broader than the specific online purchase context in the reference answer. The hops are reasonable and precise but lack the direct e-commerce connection."
+        }
+    },
+    "market data(invisible, business, relation, NA, English)": {
+        "MLLM_answer": "- First image: Stock market candlestick chart with trading strategy elements\n- Second image: Digital stock market ticker display with price changes\n\n- Relation: Stock trading\n\n- Explanation: The first image illustrates a candlestick chart, commonly used in technical analysis to make trading decisions, highlighting concepts like buying, selling, profit, resistance, and support. The second image shows a typical stock market ticker displaying real-time stock prices and percentage changes, which are part of the trading environment. Both images depict components essential to understanding and participating in stock trading.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output captures the essence of both images as components essential to understanding and participating in stock trading, consistent with the standard answer."
+        },
+        "reason_judge": {
+            "path": "Displays(CandlestickChart, StockTrading) and Displays(StockTicker, StockTrading) Thus, CandlestickChart → StockTrading → StockTicker and StockTicker → StockTrading → CandlestickChart",
+            "hop_quality": {
+                "CandlestickChart → StockTrading": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "StockTicker → StockTrading": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path perfectly aligns with the reference answer, focusing on the display of stock market data through candlestick charts and stock tickers. The hops are highly reasonable, precise, and knowledgeable."
+        }
+    },
+    "TargetAudienceImage(invisible, business, relation, NA, English)": {
+        "MLLM_answer": "- First image: Billboard mockup in an urban setting\n- Second image: Illustration of target audience concept\n\n- Relation: Marketing strategy\n\n- Explanation: The first image showcases a billboard, a traditional form of advertising in public spaces. The second image illustrates the concept of identifying a target audience, which is crucial in marketing. Both images are related as they represent elements of a marketing strategy, focusing on where and how to reach potential customers effectively.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows reasonable understanding but is incomplete. It mentions key facts like 'billboard' and 'target audience' but fails to effectively summarize the relationship as precisely as the standard answer."
+        },
+        "reason_judge": {
+            "path": "Tool(Billboard, MarketingStrategy) and Represents(TargetAudienceImage, TargetAudience) and Related(MarketingStrategy, TargetAudience) Thus, Billboard → MarketingStrategy → TargetAudience → TargetAudienceImage and TargetAudienceImage → TargetAudience → MarketingStrategy → Billboard",
+            "hop_quality": {
+                "Billboard → MarketingStrategy": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "TargetAudienceImage → TargetAudience": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "MarketingStrategy → TargetAudience": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path aligns well with the reference answer, focusing on the connection between billboards, marketing strategy, and target audiences. The hops are reasonable, precise, and knowledgeable, demonstrating a clear understanding of marketing concepts."
+        }
+    },
+    "Hearing(invisible, sense, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Vintage telephone ringing\n- Second image: Bird singing on a branch\n- Relation: Sounds\n- Explanation: Both images involve the concept of sound. The first image depicts a telephone making a ringing noise, while the second image shows a bird singing. Both illustrate different sources of audible alerts, one technological and the other natural.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output captures the concept of sound but lacks the specific focus on 'Hearing' as in the standard answer. It mentions different sources of sound but does not explicitly connect them to the sense of hearing."
+        },
+        "reason_judge": {
+            "path": "Sound(Artificial, RingingTelephone) and Sound(Natural, BirdsChirping) Thus, RingingTelephone → Sound and BirdsChirping → Sound",
+            "hop_quality": {
+                "RingingTelephone → Sound": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "BirdsChirping → Sound": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through the concept of sound. Both paths (RingingTelephone→Sound and BirdsChirping→Sound) demonstrate perfect scores across all dimensions, showing clear and precise use of the sound concept."
+        }
+    },
+    "Sight(invisible, sense, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Double rainbow over a field with trees.\n- Second image: Starry night sky with silhouetted trees.\n\n- Relation: Natural beauty\n\n- Explanation: Both images capture awe-inspiring natural phenomena. The first image showcases a double rainbow, representing beauty after a storm, while the second captures the vastness and wonder of a starry night. Both evoke a sense of tranquility and appreciation for nature's splendor.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output describes natural beauty and awe-inspiring phenomena but misses the specific focus on 'Sight' as in the standard answer. It captures the visual aspects but does not explicitly connect them to the sense of sight."
+        },
+        "reason_judge": {
+            "path": "Beauty(Natural, Rainbow) and Beauty(Natural, StarryNight) Thus, Rainbow → Beauty and StarryNight → Beauty",
+            "hop_quality": {
+                "Rainbow → Beauty": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "StarryNight → Beauty": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through the concept of natural beauty. Both paths (Rainbow→Beauty and StarryNight→Beauty) demonstrate perfect scores across all dimensions, showing clear and precise use of the beauty concept."
+        }
+    },
+    "Smell(invisible, sense, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Steaming cup of cappuccino on a saucer.\n- Second image: Purple crocus flowers in bloom.\n- Relation: Comfort\n- Explanation: The cappuccino represents warmth and relaxation, often associated with leisure or comfort. Similarly, the blooming crocus flowers symbolize the beauty of nature and a sense of tranquility. Both images evoke feelings of comfort and peace, one through a warm beverage and the other through vibrant natural beauty.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output focuses on comfort and tranquility but misses the specific focus on 'Smell' as in the standard answer. It describes the emotional aspects but does not explicitly connect them to the sense of smell."
+        },
+        "reason_judge": {
+            "path": "Comfort(Warm, FreshlyBrewedCoffee) and Comfort(Tranquil, BloomingFlowers) Thus, FreshlyBrewedCoffee → Comfort and BloomingFlowers → Comfort",
+            "hop_quality": {
+                "FreshlyBrewedCoffee → Comfort": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "BloomingFlowers → Comfort": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through the concept of comfort. Both paths (FreshlyBrewedCoffee→Comfort and BloomingFlowers→Comfort) demonstrate high scores across all dimensions, showing clear and precise use of the comfort concept, though slightly less precise than the smell concept in the reference answer."
+        }
+    },
+    "Taste(invisible, sense, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Strawberry\n- Second image: Pizza slice\n- Relation: Food\n- Explanation: Both images depict food items, with the first showing a fresh strawberry and the second a slice of pizza. They represent different categories in cuisine, with strawberries being a fruit often eaten raw and pizzas being a savory dish typically baked and enjoyed in slices.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies both items as food but lacks the specific focus on 'Taste' as in the standard answer. It describes different categories of cuisine but does not explicitly connect them to the sense of taste."
+        },
+        "reason_judge": {
+            "path": "Food(Fruit, RipeStrawberry) and Food(Savory, SliceOfPizza) Thus, RipeStrawberry → Food and SliceOfPizza → Food",
+            "hop_quality": {
+                "RipeStrawberry → Food": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "SliceOfPizza → Food": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through the concept of food. Both paths (RipeStrawberry→Food and SliceOfPizza→Food) demonstrate perfect scores across all dimensions, showing clear and precise use of the food concept."
+        }
+    },
+    "Touch(invisible, sense, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Lavender fluffy blanket on a chair\n- Second image: Close-up of prickly cactus pads\n- Relation: Textures\n- Explanation: The first image features a soft, fluffy blanket, while the second one shows the rough and spiky texture of a cactus. These contrasting textures highlight the softness and warmth of one and the rugged, protective surface of the other.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output describes contrasting textures but misses the specific focus on 'Touch' as in the standard answer. It highlights the physical characteristics but does not explicitly connect them to the sense of touch."
+        },
+        "reason_judge": {
+            "path": "Texture(Soft, SoftBlanket) and Texture(Prickly, PricklyCactus) Thus, SoftBlanket → Texture and PricklyCactus → Texture",
+            "hop_quality": {
+                "SoftBlanket → Texture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "PricklyCactus → Texture": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through the concept of texture. Both paths (SoftBlanket→Texture and PricklyCactus→Texture) demonstrate perfect scores across all dimensions, showing clear and precise use of the texture concept."
+        }
+    },
+    "Supply and demand(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Shopper in a supermarket with empty shelves.\n- Second image: Crowd entering a Gucci store.\n\n- Relation: Consumer behavior\n\n- Explanation: The first image shows a supermarket setting characterized by empty shelves, possibly indicating panic buying or stock shortages. The second image depicts a crowd at a luxury store, highlighting demand for high-end goods. Both images reflect consumer urgency and priorities, revealing different aspects of purchasing behavior under specific circumstances.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output captures the essence of consumer behavior and urgency but misses the specific relation of 'Supply and demand' as per the standard answer. It provides a reasonable understanding but lacks the key insight of the interplay between supply and demand."
+        },
+        "reason_judge": {
+            "path": "Imply(EmptyShelves, PanicBuyingOrStockShortages) and Imply(CrowdAtLuxuryStore, DemandForHighEndGoods) → ConsumerBehavior",
+            "hop_quality": {
+                "EmptyShelves → PanicBuyingOrStockShortages": [
+                    0.85,
+                    0.75,
+                    1
+                ],
+                "CrowdAtLuxuryStore → DemandForHighEndGoods": [
+                    0.9,
+                    0.8,
+                    1
+                ],
+                "PanicBuyingOrStockShortages ∧ DemandForHighEndGoods → ConsumerBehavior": [
+                    0.88,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a path focusing on consumer behavior, which is logically sound and relevant. However, it misses the direct supply and demand relationship highlighted in the reference answer. The hops are reasonable and precise but lack the depth of economic theory."
+        }
+    },
+    "Shark Tank(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Shark fin in water\n- Second image: Marketing team presentation\n\n- Relation: Strategy\n\n- Explanation: The first image of a shark fin suggests stealth and precision, often associated with strategy and planning in its natural habitat. The second image is a presentation from a marketing team, emphasizing strategic planning and results, which mirrors the strategic connotations of the shark fin. Both images capture themes of strategic thinking and effectiveness in their respective contexts.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but overly broad. It discusses strategy in a general sense but fails to connect the images to the specific relation 'Shark Tank' as in the standard answer, missing critical elements needed for a coherent explanation."
+        },
+        "reason_judge": {
+            "path": "Suggest(SharkFin, StealthAndPrecision) and Suggest(MarketingPresentation, StrategicPlanning) → Strategy",
+            "hop_quality": {
+                "SharkFin → StealthAndPrecision": [
+                    0.8,
+                    0.7,
+                    1
+                ],
+                "MarketingPresentation → StrategicPlanning": [
+                    0.85,
+                    0.75,
+                    1
+                ],
+                "StealthAndPrecision ∧ StrategicPlanning → Strategy": [
+                    0.82,
+                    0.65,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path focuses on strategy, which is a valid interpretation but diverges from the reference answer's connection to Shark Tank. The hops are reasonable and precise but lack the specific cultural reference to Shark Tank."
+        }
+    },
+    "SWOT analysis(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Signpost with \"Weakness\" and \"Strength\"\n- Second image: Person facing buttons labeled \"Threats\" and \"Opportunities\"\n\n- Relation: SWOT analysis\n\n- Explanation: Both images represent components of SWOT analysis, a strategic planning tool used to identify and evaluate Strengths, Weaknesses, Opportunities, and Threats. The first image shows a conceptual choice between weakness and strength, while the second presents a figurative decision between threats and opportunities. Together, these elements aid individuals or organizations in assessing their internal and external environments for better decision-making.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately and logically captures the components of SWOT analysis, aligning well with the standard answer. It conveys the same level of thoughtfulness and insight, effectively summarizing the relationship between the images."
+        },
+        "reason_judge": {
+            "path": "PartOf(Strengths&Weaknesses, SWOT) and PartOf(Opportunities&Threats, SWOT) → SWOTAnalysis",
+            "hop_quality": {
+                "Strengths&Weaknesses → SWOT": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Opportunities&Threats → SWOT": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "SWOT ∧ SWOT → SWOTAnalysis": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path perfectly aligns with the reference answer, demonstrating a clear and precise understanding of SWOT analysis. All hops are reasonable, precise, and knowledgeable."
+        }
+    },
+    "Blue chip stock(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Poker chip\n- Second image: Stock certificate\n- Relation: Value representation\n- Explanation: Both images represent ways to signify value or investment. The poker chip is typically used in gambling to denote a certain amount of money, while the stock certificate indicates ownership of shares in a company. Both involve risk and the potential for financial gain.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows reasonable understanding by discussing value representation but misses the specific connection to 'Blue chip stock' as in the standard answer. It mentions key facts but fails to effectively summarize the relationship."
+        },
+        "reason_judge": {
+            "path": "Represent(PokerChip, Value) and Represent(StockCertificate, Ownership) → ValueRepresentation",
+            "hop_quality": {
+                "PokerChip → Value": [
+                    0.9,
+                    0.8,
+                    1
+                ],
+                "StockCertificate → Ownership": [
+                    0.85,
+                    0.75,
+                    1
+                ],
+                "Value ∧ Ownership → ValueRepresentation": [
+                    0.88,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path focuses on value representation, which is logically sound but misses the specific analogy to blue-chip stocks. The hops are reasonable and precise but lack the depth of financial terminology."
+        }
+    },
+    "IPO(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Presentation on company shares\n- Second image: New York Stock Exchange building\n- Relation: Stock market\n- Explanation: The first image is about understanding company shares, which are units of ownership in a company often traded on stock exchanges. The second image depicts the New York Stock Exchange, a major venue where such shares are traded. Both images relate to the theme of the stock market and the buying and selling of company shares.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth. It discusses the stock market in a general sense but misses the specific relation 'IPO' as per the standard answer, failing to address the intended standard reasoning."
+        },
+        "reason_judge": {
+            "path": "RelatedTo(CompanyShares, StockMarket) and RelatedTo(StockExchange, StockMarket) → StockMarket",
+            "hop_quality": {
+                "CompanyShares → StockMarket": [
+                    0.95,
+                    0.85,
+                    1
+                ],
+                "StockExchange → StockMarket": [
+                    1.0,
+                    0.9,
+                    1
+                ],
+                "StockMarket ∧ StockMarket → StockMarket": [
+                    0.98,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path focuses on the stock market, which is relevant but misses the specific connection to IPO. The hops are reasonable and precise but lack the specific context of an initial public offering."
+        }
+    },
+    "Merger(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Two hands holding interlocking puzzle pieces.\n- Second image: Overlapping logos of Nike and Apple.\n\n- Relation: Connectivity\n\n- Explanation: Both images highlight themes of connection and integration. The first image shows two puzzle pieces being connected, symbolizing fitting parts together. The second image features the intersection of two major brand logos, suggesting a collaboration or merging of ideas. Both convey a sense of combining elements for a greater purpose.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output captures the theme of connection and integration, consistent with the standard answer's focus on merger. However, it lacks the precision of explicitly stating 'merger,' which is a key element in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Symbolize(PuzzlePiecesFitting, Combining) and Represent(CombiningCompanyLogos, Connectivity) Thus, PuzzlePiecesFitting → Combining and CombiningCompanyLogos → Connectivity",
+            "hop_quality": {
+                "PuzzlePiecesFitting → Combining": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "CombiningCompanyLogos → Connectivity": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is logically sound and precise, but it slightly misses the specific relation of 'Merger' by generalizing it to 'Connectivity'. The hops are knowledgeable and well-reasoned, though the final connection could be more specific."
+        }
+    },
+    "Acquisition(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Comparison of big and small companies.\n- Second image: Stamp with the word \"PURCHASE.\"\n\n- Relation: Business and acquisition.\n\n- Explanation: The first image compares big and small companies, hinting at differences or dynamics in business operations or opportunities. The second image focuses on the concept of purchase, suggesting transactions or acquisitions which are common themes in business contexts, potentially involving big companies buying smaller startups.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the theme of business and acquisition, aligning with the standard answer. However, it does not explicitly use the term 'acquisition,' which is a key fact in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Represent(LargeCompanyEngulfingSmaller, BusinessDynamics) and Imply(PurchasedStamp, Acquisition) Thus, LargeCompanyEngulfingSmaller → BusinessDynamics and PurchasedStamp → Acquisition",
+            "hop_quality": {
+                "LargeCompanyEngulfingSmaller → BusinessDynamics": [
+                    0.8,
+                    0.75,
+                    1
+                ],
+                "PurchasedStamp → Acquisition": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is reasonable and knowledgeable, but the first hop is less precise by framing the relation as 'BusinessDynamics' rather than directly as 'Acquisition'. The second hop is accurate and well-explained."
+        }
+    },
+    "Due diligence(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: A magnifying glass highlighting the word \"CONTRACT\" on a document.\n- Second image: A financial statement form with sections for income, expenses, and other financial details.\n\n- Relation: Legal and financial documentation\n\n- Explanation: Both images involve official documents that are crucial for legal and financial matters. The first image represents a contract that likely involves terms and agreements, while the second image is a financial statement used in legal settings, specifically in family law. These documents are important for establishing legally binding agreements and detailing financial obligations or status.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output touches on legal and financial documentation, which is somewhat relevant but misses the specific concept of 'due diligence' as highlighted in the standard answer. It does not align with the intended reasoning."
+        },
+        "reason_judge": {
+            "path": "Represent(MagnifyingGlassOverContract, LegalDocumentation) and Object(FinancialStatement, LegalDocumentation) Thus, MagnifyingGlassOverContract → LegalDocumentation and FinancialStatement → LegalDocumentation",
+            "hop_quality": {
+                "MagnifyingGlassOverContract → LegalDocumentation": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "FinancialStatement → LegalDocumentation": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is logically sound and knowledgeable, but it generalizes the relation to 'LegalDocumentation' rather than specifying 'Due Diligence'. The hops are precise and well-reasoned, though the final connection could be more specific."
+        }
+    },
+    "Umami(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: Dried bonito flakes in a basket\n- Second image: Fresh tomatoes in a basket\n- Relation: Ingredients\n- Explanation: Both images show food items in baskets. The first image features dried bonito flakes, commonly used in Japanese cuisine, while the second image displays fresh tomatoes. These items might be components in different recipes, highlighting the diversity of ingredients used in culinary arts.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the items as ingredients, consistent with the standard answer. However, it does not mention the key fact of 'umami,' which is central to the standard answer's explanation."
+        },
+        "reason_judge": {
+            "path": "Represent(Katsuobushi, Ingredient) and Represent(Tomato, Ingredient) Thus, Katsuobushi → Ingredient and Tomato → Ingredient",
+            "hop_quality": {
+                "Katsuobushi → Ingredient": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "Tomato → Ingredient": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is reasonable and knowledgeable but misses the specific relation of 'Umami' by generalizing it to 'Ingredients'. The hops are precise and well-reasoned, though the final connection could be more specific to the concept of umami."
+        }
+    },
+    "Karashi(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: Black mustard seeds\n- Second image: Teardrop on a human eye\n- Relation: Sensation\n- Explanation: Mustard seeds, especially when used in cooking, can release pungent oils that cause irritation and stimulate tear production. This sensory reaction is similar to the one caused by cutting onions or exposure to strong aromas. Both images could be connected to stimuli that provoke a physical response.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output captures the sensory reaction caused by mustard seeds, which is consistent with the standard answer. However, it does not explicitly mention 'Karashi,' a key term in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Spicy(MustardSeeds, Karashi) and EffectOfSpicy(Tears)",
+            "hop_quality": {
+                "MustardSeeds → Karashi": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Tears → Spicy → Karashi": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path aligns closely with the reference, accurately capturing the relationship between mustard seeds and the sensation they cause, leading to tears. Both hops are logical, precise, and demonstrate deep knowledge of the subject."
+        }
+    },
+    "Iki(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: Pink flower\n- Second image: Wooden flute\n- Relation: Nature and art\n- Explanation: The first image shows a beautiful pink flower symbolizing nature's beauty and organic life. The second image depicts a wooden flute, representing art and creativity. Both images have elements related to nature, whether it's the natural growth of the flower or the wood of the flute's material, showcasing a harmonious blend of nature and artistic expression.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and precision. It mentions nature and art but does not address the concept of 'Iki,' which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "RepresentsIki(Chrysanthemum, ThroughSimplicityAndElegance) and RepresentsIki(BambooFlute, ThroughSimplicityAndElegance)",
+            "hop_quality": {
+                "Chrysanthemum → ThroughSimplicityAndElegance → Iki": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "BambooFlute → ThroughSimplicityAndElegance → Iki": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively captures the essence of Iki through the simplicity and elegance of both the chrysanthemum and the bamboo flute. The hops are logical and knowledgeable, though slightly less precise than the reference."
+        }
+    },
+    "Wabi-sabi(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: Broken teacup with floral design\n- Second image: Moss-covered rocks\n\n- Relation: Renewal\n\n- Explanation: The broken teacup suggests the idea of damage and decay but also the possibility of repair and renewal, as seen in practices like kintsugi. The moss on the rocks represents nature's way of renewal, thriving even in rough conditions and transforming barren landscapes into lush scenery. Both images together convey themes of resilience and the beauty of transformation.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows a reasonable understanding of the themes of renewal and resilience, which are related to 'Wabi-sabi.' However, it does not explicitly mention 'Wabi-sabi,' a key concept in the standard answer."
+        },
+        "reason_judge": {
+            "path": "EmbodiesWabiSabi(CrackedTeacup, ThroughImperfection) and EmbodiesWabiSabi(MossOnStoneLantern, ThroughNaturalGrowthAndImpermanence)",
+            "hop_quality": {
+                "CrackedTeacup → WabiSabi → MossOnStoneLantern": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "MossOnStoneLantern → WabiSabi → CrackedTeacup": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path adeptly illustrates the concept of Wabi-sabi through the imperfection of the cracked teacup and the natural growth of moss. The hops are highly reasonable, precise, and knowledgeable."
+        }
+    },
+    "Yugen(invisible, sense, mutual elements, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: Traditional Noh performer in costume\n- Second image: Cherry blossoms under a full moon\n\n- Relation: Japanese culture\n\n- Explanation: The first image depicts a Noh performer in a traditional Japanese theater setting, showcasing intricate costumes and masks. The second image is an artistic portrayal of cherry blossoms beneath a full moon, which are significant symbols in Japanese culture. Both images reflect the aesthetic and artistic expressions central to Japan, one through performing arts and the other through seasonal beauty in nature.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies elements of Japanese culture, which is consistent with the standard answer. However, it does not explicitly mention 'Yugen,' a key aesthetic concept in the standard answer."
+        },
+        "reason_judge": {
+            "path": "ExpressesYugen(NohMask, ThroughSubtletyAndSuggestion) and ExpressesYugen(CherryBlossomsInMoonlight, ThroughEphemeralBeautyAndMystery)",
+            "hop_quality": {
+                "NohMask → Yugen → CherryBlossomsInMoonlight": [
+                    0.92,
+                    0.88,
+                    1
+                ],
+                "CherryBlossomsInMoonlight → Yugen → NohMask": [
+                    0.92,
+                    0.88,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively captures the essence of Yugen through the subtlety of the Noh mask and the ephemeral beauty of cherry blossoms. The hops are logical, precise, and demonstrate deep cultural knowledge."
+        }
+    },
+    "Agrodolce(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Strawberry and spinach salad with balsamic glaze.\n- Second image: Fresh ginger root and candied ginger pieces.\n\n- Relation: Flavorful ingredients\n- Explanation: Both images feature ingredients known for their distinctive flavors that can enhance a variety of dishes. The strawberry and spinach salad is elevated by the addition of a sweet and tangy balsamic glaze, while ginger adds a spicy warmth whether fresh or candied. These ingredients are often used to introduce bold and contrasting flavors in culinary creations.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output captures the idea of flavorful ingredients, which is consistent with the standard answer. However, it does not explicitly mention 'Agrodolce,' a key term in the standard answer."
+        },
+        "reason_judge": {
+            "path": "AgrodolceFlavor(BalsamicGlazedStrawberries, ThroughSweetAndSourCombination) and AgrodolceFlavor(CandiedGinger, ThroughSweetAndSpicySourCombination)",
+            "hop_quality": {
+                "BalsamicGlazedStrawberries → Agrodolce": [
+                    0.94,
+                    0.89,
+                    1
+                ],
+                "CandiedGinger → Agrodolce": [
+                    0.94,
+                    0.89,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path accurately captures the Agrodolce flavor profile through the sweet and sour combination of balsamic glazed strawberries and the sweet and spicy sour combination of candied ginger. The hops are logical, precise, and knowledgeable."
+        }
+    },
+    "Sapido(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Aged cheese\n- Second image: Fresh mushrooms\n\n- Relation: Culinary ingredients\n\n- Explanation: Both images feature high-quality ingredients commonly used in cooking. The aged cheese, possibly Parmesan, is known for its rich flavor, and the fresh mushrooms, likely porcini, are prized for their earthy taste. Together, they can create a deeply savory dish, often found in Italian cuisine.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the ingredients and their culinary uses, but it misses the specific relation 'Sapido' and the deeper reasoning about umami flavors as highlighted in the standard answer."
+        },
+        "reason_judge": {
+            "path": "ExemplifiesSapido(ParmigianoReggiano, ThroughRichFlavor) and ExemplifiesSapido(FunghiPorcini, ThroughEarthyTaste) Thus, ParmigianoReggiano → Sapido and FunghiPorcini → Sapido",
+            "hop_quality": {
+                "ParmigianoReggiano → Sapido": [
+                    0.95,
+                    0.85,
+                    1
+                ],
+                "FunghiPorcini → Sapido": [
+                    0.95,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path aligns well with the reference answer, emphasizing the savory qualities of both ingredients. The reasoning is logical and precise, demonstrating a good understanding of culinary flavors."
+        }
+    },
+    "Aromatico(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Basil leaves\n- Second image: Rosemary sprigs\n\n- Relation: Culinary herbs\n- Explanation: Both images depict fresh herbs commonly used in cooking. Basil, known for its sweet, aromatic leaves, and rosemary, with its needle-like leaves and strong fragrance, are both popular in various cuisines for adding flavor and aroma to dishes.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output accurately describes the herbs and their culinary roles, but it does not capture the specific relation 'Aromatico' and the detailed reasoning about their aromas as in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Aromatico(Basil, ThroughSweetAroma) and Aromatico(Rosemary, ThroughPineyAroma) Thus, Basil → Aromatico and Rosemary → Aromatico",
+            "hop_quality": {
+                "Basil → Aromatico": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "Rosemary → Aromatico": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively captures the aromatic qualities of both herbs. The reasoning is sound and specific, reflecting a deep understanding of the culinary use of these herbs."
+        }
+    },
+    "Amaro(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Radicchio\n- Second image: Negroni cocktail\n- Relation: Bitter flavor\n- Explanation: Both images feature items known for their bitter taste. Radicchio is a leafy vegetable with a distinctive bitter flavor, often used in salads. The Negroni is a cocktail made with Campari, which contributes bitterness, balanced with gin and vermouth, often garnished with an orange slice.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output effectively captures the bitter flavor theme and the relationship between radicchio and the Negroni cocktail, aligning well with the standard answer's focus on 'Amaro' and the reasoning about bitterness."
+        },
+        "reason_judge": {
+            "path": "AmaroFlavor(Radicchio, ThroughBitterness) and AmaroFlavor(Campari, ThroughBitternessAndHerbalNotes) Thus, Radicchio → Amaro and Campari → Amaro",
+            "hop_quality": {
+                "Radicchio → Amaro": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "Campari → Amaro": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path accurately identifies the bitter flavor profile of both radicchio and Campari. The reasoning is clear and precise, showing a good grasp of the flavor characteristics."
+        }
+    },
+    "Piccante(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Spicy sausage spread on bread\n- Second image: Red chili peppers and flakes\n\n- Relation: Spiciness\n\n- Explanation: The first image shows a spread made from a spicy sausage, likely using ingredients that include chili peppers or similar spices. The second image depicts red chili peppers and chili flakes, which are common sources of spiciness used in various foods. Both images emphasize the theme of spicy flavors, which are often applied in foods for added heat and taste.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the spiciness theme and the connection between the sausage and chili peppers, but it does not specify the relation 'Piccante' or the detailed reasoning about the sources of spiciness as in the standard answer."
+        },
+        "reason_judge": {
+            "path": "PiccanteFlavor('Nduja, ThroughChiliPeppers) and PiccanteFlavor(Peperoncino, AsChiliPeppers) Thus, 'Nduja → Piccante and Peperoncino → Piccante",
+            "hop_quality": {
+                "'Nduja → Piccante": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "Peperoncino → Piccante": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path correctly highlights the spiciness of both 'Nduja and peperoncino. The reasoning is logical and specific, indicating a solid understanding of the ingredients' flavor profiles."
+        }
+    },
+    "Udito(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Woman conducting music.\n- Second image: Couple riding a scooter on a country road.\n- Relation: Movement\n- Explanation: The first image depicts a woman conducting music, suggesting controlled, rhythmic movement. The second image shows a couple enjoying a ride on a scooter, representing freedom and motion. Both images capture the essence of movement, whether in orchestrating a symphony or traveling through scenic landscapes.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output broadly addresses the concept of movement but fails to capture the specific relation 'Udito' and the reasoning about the sounds associated with the conductor's baton and the Vespa wheel as in the standard answer."
+        },
+        "reason_judge": {
+            "path": "HeardSound(ConductorsBaton, OperaPerformance) and HeardSound(VespaWheel, VespaEngine) Thus, ConductorsBaton → Udito and VespaWheel → Udito",
+            "hop_quality": {
+                "ConductorsBaton → Udito": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "VespaWheel → Udito": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively captures the auditory aspects of both the conductor's baton and the Vespa wheel. The reasoning is sound and specific, reflecting a good understanding of the sounds associated with these objects."
+        }
+    },
+    "Tokyo(visible, city, mutual elements, East Asia, English)": {
+        "MLLM_answer": "- First image: Godzilla figure\n- Second image: Busy Tokyo city intersection\n- Relation: Japanese pop culture\n- Explanation: The first image features a figure of Godzilla, an iconic monster from Japanese cinema, known for its appearances in films where it often battles other monsters and sometimes attacks cities. The second image depicts Shibuya Crossing in Tokyo, one of the most famous and busiest intersections in the world. Both images relate to Japanese culture: Godzilla as a cultural icon and Tokyo as a symbol of modern Japan.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM correctly identifies both images as related to Japanese culture and Tokyo but does not explicitly mention the specific relationship of Godzilla being associated with destroying Tokyo, which is a key aspect of the standard answer."
+        },
+        "reason_judge": {
+            "path": "Represents(Godzilla, JapaneseCinema) and Represents(ShibuyaCrossing, ModernJapan) and Symbolizes(JapaneseCinema, JapanesePopCulture) and Symbolizes(ModernJapan, JapanesePopCulture) Thus, Godzilla → JapaneseCinema → JapanesePopCulture and ShibuyaCrossing → ModernJapan → JapanesePopCulture",
+            "hop_quality": {
+                "Godzilla → JapaneseCinema": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "JapaneseCinema → JapanesePopCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "ShibuyaCrossing → ModernJapan": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "ModernJapan → JapanesePopCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through Japanese pop culture. Both paths (Godzilla→JapaneseCinema→JapanesePopCulture and ShibuyaCrossing→ModernJapan→JapanesePopCulture) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of concepts."
+        }
+    },
+    "Venice(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Venetian canal with gondola\n- Second image: Ornate Venetian mask with feathers\n- Relation: Venice\n- Explanation: Both images represent iconic elements of Venice, Italy. The first image highlights the city's famous canals and gondolas, symbolizing its unique waterways. The second image features a Venetian mask, often associated with the Carnival of Venice, showcasing the city's rich tradition in arts and festivities. Together, they capture the cultural and historical essence of Venice.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM accurately captures the essence of Venice through its iconic elements, aligning well with the standard answer. It effectively summarizes the cultural and historical significance of the gondola and Venetian mask in Venice."
+        },
+        "reason_judge": {
+            "path": "Represents(VenetianCanalWithGondola, Venice) and Represents(OrnateVenetianMask, VeniceCarnival) and LocatedIn(VeniceCarnival, Venice) Thus, VenetianCanalWithGondola → Venice and OrnateVenetianMask → VeniceCarnival → Venice",
+            "hop_quality": {
+                "VenetianCanalWithGondola → Venice": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "OrnateVenetianMask → VeniceCarnival": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "VeniceCarnival → Venice": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through Venice. Both paths (VenetianCanalWithGondola→Venice and OrnateVenetianMask→VeniceCarnival→Venice) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of concepts."
+        }
+    },
+    "India(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: The Taj Mahal\n- Second image: Auto rickshaws\n\n- Relation: India\n\n- Explanation: The first image shows the iconic Taj Mahal in India, a symbol of the country's rich architectural heritage. The second image features auto rickshaws, a popular mode of transportation in Indian cities, highlighting everyday life in the country. Both images represent different facets of Indian culture and daily life.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM correctly identifies both the Taj Mahal and auto rickshaws as symbols of India, aligning with the standard answer. It effectively captures the cultural and everyday aspects of Indian life."
+        },
+        "reason_judge": {
+            "path": "Represents(TajMahal, IndianArchitecture) and Represents(AutoRickshaws, IndianTransportation) and Symbolizes(IndianArchitecture, India) and Symbolizes(IndianTransportation, India) Thus, TajMahal → IndianArchitecture → India and AutoRickshaws → IndianTransportation → India",
+            "hop_quality": {
+                "TajMahal → IndianArchitecture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "IndianArchitecture → India": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "AutoRickshaws → IndianTransportation": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "IndianTransportation → India": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through India. Both paths (TajMahal→IndianArchitecture→India and AutoRickshaws→IndianTransportation→India) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of concepts."
+        }
+    },
+    "Rio de Janeiro(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Christ the Redeemer statue in Rio de Janeiro.\n- Second image: Sugarloaf Mountain with a cable car in Rio de Janeiro.\n- Relation: Iconic landmarks\n- Explanation: Both images feature famous landmarks in Rio de Janeiro, Brazil. The Christ the Redeemer statue is a prominent symbol of Christianity and a widely recognized monument, while Sugarloaf Mountain is famous for its panoramic views accessed by cable car. Together, they represent the cultural and natural beauty of the city.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM accurately identifies both landmarks as iconic to Rio de Janeiro, aligning with the standard answer. It effectively captures the cultural and natural beauty of the city through these landmarks."
+        },
+        "reason_judge": {
+            "path": "Represents(ChristTheRedeemerStatue, RioDeJaneiro) and Represents(SugarloafMountainWithCableCar, RioDeJaneiro) and Symbolizes(ChristTheRedeemerStatue, IconicLandmarks) and Symbolizes(SugarloafMountainWithCableCar, IconicLandmarks) Thus, ChristTheRedeemerStatue → RioDeJaneiro → IconicLandmarks and SugarloafMountainWithCableCar → RioDeJaneiro → IconicLandmarks",
+            "hop_quality": {
+                "ChristTheRedeemerStatue → RioDeJaneiro": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "RioDeJaneiro → IconicLandmarks": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "SugarloafMountainWithCableCar → RioDeJaneiro": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through iconic landmarks in Rio de Janeiro. Both paths (ChristTheRedeemerStatue→RioDeJaneiro→IconicLandmarks and SugarloafMountainWithCableCar→RioDeJaneiro→IconicLandmarks) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of concepts."
+        }
+    },
+    "Beijing(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: The Great Wall of China traversing a mountainous landscape.\n- Second image: The Forbidden City in Beijing, featuring traditional Chinese architecture.\n- Relation: Chinese historical landmarks\n- Explanation: Both images depict significant historical sites in China. The Great Wall of China represents ancient military fortifications, while the Forbidden City was the imperial palace during the Ming and Qing dynasties. Each site symbolizes Chinese culture, history, and architectural achievement.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately identifies both the Great Wall of China and the Forbidden City as significant historical landmarks in China, consistent with the standard answer's focus on their connection to Beijing. The explanation is thorough and aligns well with the standard reasoning."
+        },
+        "reason_judge": {
+            "path": "Symbolize(GreatWall, ChineseHistory) and LocatedNear(GreatWall, Beijing) Symbolize(ForbiddenCity, ChineseHistory) and LocatedIn(ForbiddenCity, Beijing) Thus, GreatWall → ChineseHistory → Beijing and ForbiddenCity → ChineseHistory → Beijing",
+            "hop_quality": {
+                "GreatWall → ChineseHistory": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "ChineseHistory → Beijing": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "ForbiddenCity → ChineseHistory": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through Chinese historical symbolism. Both paths (GreatWall→ChineseHistory→Beijing and ForbiddenCity→ChineseHistory→Beijing) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of historical concepts."
+        }
+    },
+    "New York City(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Statue of Liberty\n- Second image: Yellow taxis on a city street\n\n- Relation: New York City\n- Explanation: The Statue of Liberty and yellow taxis are iconic symbols of New York City. The statue represents freedom and is a well-known landmark located in New York Harbor. Yellow taxis are a common sight on the streets of New York, representing the city's bustling urban life and transportation system.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output correctly identifies the Statue of Liberty and yellow taxis as iconic symbols of New York City, matching the standard answer. The explanation is detailed and aligns with the standard reasoning."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(StatueOfLiberty, NewYorkCity) and LocatedIn(YellowCab, NewYorkCity) Thus, StatueOfLiberty → NewYorkCity and YellowCab → NewYorkCity",
+            "hop_quality": {
+                "StatueOfLiberty → NewYorkCity": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "YellowCab → NewYorkCity": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM accurately identified the iconic symbols of New York City and correctly associated both the Statue of Liberty and yellow cabs with the city. The path is logically sound, precise, and demonstrates knowledgeable use of cultural symbols."
+        }
+    },
+    "Sydney(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Sydney Opera House\n- Second image: Decorated boomerang\n\n- Relation: Australian culture\n\n- Explanation: The first image is of the Sydney Opera House, a renowned architectural landmark in Australia, symbolizing modern Australian culture and global heritage. The second image shows a boomerang, a traditional tool with roots deeply embedded in Aboriginal Australian culture, known for its unique design and functionality. Both represent significant aspects of Australian identity and heritage.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly associates the Sydney Opera House and the boomerang with Australian culture, but it misses the specific connection to Sydney, which is a key element in the standard answer. The explanation is otherwise thorough."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(SydneyOperaHouse, Sydney) and LocatedIn(Sydney, Australia) AssociatedWith(Boomerang, Australia) Thus, SydneyOperaHouse → Sydney → Australia and Boomerang → Australia",
+            "hop_quality": {
+                "SydneyOperaHouse → Sydney": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Sydney → Australia": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Boomerang → Australia": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured path through Australian cultural symbolism. Both paths (SydneyOperaHouse→Sydney→Australia and Boomerang→Australia) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of cultural concepts."
+        }
+    },
+    "Egypt - Giza(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Pyramids in the desert\n- Second image: Camel caravan in the desert\n\n- Relation: Desert travel\n\n- Explanation: Both images depict scenes set in desert environments. The first image shows the iconic pyramids of Egypt with a person on a camel, highlighting historical landmarks. The second image features a caravan of camels traversing sand dunes, representing traditional desert travel. Both emphasize the connection between landscape and mode of transportation in desert regions.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the connection between the pyramids and camels in the desert, but it misses the specific reference to Egypt and Giza, which are key elements in the standard answer. The explanation is otherwise detailed."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(PyramidsOfGiza, Giza) and LocatedIn(Giza, Egypt) AssociatedWith(Camel, Egypt) Thus, PyramidsOfGiza → Giza → Egypt and Camel → Egypt",
+            "hop_quality": {
+                "PyramidsOfGiza → Giza": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Giza → Egypt": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Camel → Egypt": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM accurately identified the strong associations between the Pyramids of Giza, camels, and Egypt. The path is logically sound, precise, and demonstrates knowledgeable use of cultural and geographical symbols."
+        }
+    },
+    "Rome(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: The Colosseum in Rome\n- Second image: A modern Vespa scooter\n\n- Relation: Italian culture\n\n- Explanation: Both images are iconic representations of Italian culture and heritage. The first image features the Colosseum, a symbol of ancient Rome and its architectural prowess. The second image shows a Vespa scooter, synonymous with modern Italian design and lifestyle. Both elements highlight significant aspects of Italy's rich cultural history, from its ancient past to contemporary influences.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately identifies the Colosseum and Vespa scooter as iconic representations of Italian culture, consistent with the standard answer's focus on their connection to Rome. The explanation is thorough and aligns well with the standard reasoning."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(Colosseum, Rome) and LocatedIn(Rome, Italy) AssociatedWith(VespaScooter, Italy) Thus, Colosseum → Rome → Italy and VespaScooter → Italy",
+            "hop_quality": {
+                "Colosseum → Rome": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Rome → Italy": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "VespaScooter → Italy": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured path through Italian cultural symbolism. Both paths (Colosseum→Rome→Italy and VespaScooter→Italy) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of cultural concepts."
+        }
+    },
+    "Istanbul(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Historic architectural landmark\n- Second image: Traditional Turkish delight\n\n- Relation: Turkish culture\n\n- Explanation: The first image depicts a well-known architectural monument, likely the Hagia Sophia in Istanbul, which is a symbol of Turkish history and culture. The second image shows a bowl of Turkish delight, a popular confectionery associated with Turkish culinary traditions. Both images highlight different aspects of Turkish culture, one through historical architecture and the other through traditional cuisine.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately identifies the Hagia Sophia and Turkish Delight as elements of Turkish culture, aligning with the standard answer's focus on Istanbul. The explanation is detailed and logically consistent."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(HagiaSophia, Istanbul) and LocatedIn(Istanbul, Turkey) and AssociatedWith(TurkishDelight, Turkey)\nThus, HagiaSophia → Istanbul → Turkey and TurkishDelight → Turkey",
+            "hop_quality": {
+                "HagiaSophia → Istanbul": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Istanbul → Turkey": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "TurkishDelight → Turkey": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through Turkish culture. Both paths (HagiaSophia→Istanbul→Turkey and TurkishDelight→Turkey) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of geographical and cultural concepts."
+        }
+    },
+    "Toronto(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Urban skyline with CN Tower\n- Second image: Vibrant red autumn leaves\n- Relation: Canada\n- Explanation: The first image features the CN Tower, a landmark in Toronto, Canada. The second image shows red autumn leaves, symbolizing the natural beauty associated with Canadian forests, especially given the national symbolic connection of the maple leaf. Both images reflect iconic elements associated with Canada.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM correctly identifies the CN Tower and maple leaves as symbols of Canada, but it broadens the relation to 'Canada' instead of the more specific 'Toronto' as in the standard answer. The explanation is reasonable but lacks precision."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(CNTower, Toronto) and LocatedIn(Toronto, Canada) and SymbolOf(MapleLeaf, Canada)\nThus, CNTower → Toronto → Canada and MapleLeaf → Canada",
+            "hop_quality": {
+                "CNTower → Toronto": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Toronto → Canada": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "MapleLeaf → Canada": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through Canadian symbolism. Both paths (CNTower→Toronto→Canada and MapleLeaf→Canada) demonstrate perfect scores across all dimensions, showing deep national understanding and precise use of geographical and symbolic concepts."
+        }
+    },
+    "Berlin(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Brandenburg Gate\n- Second image: Currywurst with fries\n\n- Relation: Berlin\n\n- Explanation: The first image shows the Brandenburg Gate, a famous landmark in Berlin, Germany. The second image features currywurst, a popular street food associated with Berlin. Both images highlight cultural elements iconic to the city.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately identifies the Brandenburg Gate and Currywurst as iconic elements of Berlin, aligning perfectly with the standard answer. The explanation is clear and logically consistent."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(BrandenburgGate, Berlin) and AssociatedWith(Currywurst, Berlin)\nThus, BrandenburgGate → Berlin and Currywurst → Berlin",
+            "hop_quality": {
+                "BrandenburgGate → Berlin": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Currywurst → Berlin": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through Berlin's cultural elements. Both paths (BrandenburgGate→Berlin and Currywurst→Berlin) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of geographical and culinary concepts."
+        }
+    },
+    "Dubai(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Tall skyscraper in a cityscape\n- Second image: Peregrine falcon on a log\n- Relation: Symbol of the UAE\n- Explanation: The skyscraper is likely the Burj Khalifa, a famous building in Dubai, UAE. The peregrine falcon is a national symbol of the UAE, representing strength and heritage. Both images relate to the culture and identity of the United Arab Emirates.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM correctly identifies the Burj Khalifa and the falcon as symbols of the UAE, but it broadens the relation to 'Symbol of the UAE' instead of the more specific 'Dubai' as in the standard answer. The explanation is reasonable but lacks precision."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(BurjKhalifa, Dubai) and LocatedIn(Dubai, UAE) and NationalSymbolOf(Falcon, UAE)\nThus, BurjKhalifa → Dubai → UAE and Falcon → UAE",
+            "hop_quality": {
+                "BurjKhalifa → Dubai": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Dubai → UAE": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Falcon → UAE": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through UAE's cultural and national symbols. Both paths (BurjKhalifa→Dubai→UAE and Falcon→UAE) demonstrate perfect scores across all dimensions, showing deep national understanding and precise use of geographical and symbolic concepts."
+        }
+    },
+    "San Francisco(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Golden Gate Bridge in San Francisco\n- Second image: San Francisco cable cars with Alcatraz Island in the background\n- Relation: San Francisco landmarks\n- Explanation: Both images depict iconic elements of San Francisco, California. The Golden Gate Bridge is a world-famous suspension bridge, while the cable cars and Alcatraz Island are significant attractions in the city. These images encapsulate the unique culture and history of San Francisco.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately identifies the Golden Gate Bridge and cable cars as iconic elements of San Francisco, aligning perfectly with the standard answer. The explanation is detailed and logically consistent."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(GoldenGateBridge, SanFrancisco) and LocatedIn(CableCar, SanFrancisco)\nThus, GoldenGateBridge → SanFrancisco and CableCar → SanFrancisco",
+            "hop_quality": {
+                "GoldenGateBridge → SanFrancisco": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "CableCar → SanFrancisco": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through San Francisco's landmarks. Both paths (GoldenGateBridge→SanFrancisco and CableCar→SanFrancisco) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of geographical and landmark concepts."
+        }
+    },
+    "Brussels(visible, city, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Bronze statue of a boy\n- Second image: Waffles with fruit and whipped cream\n\n- Relation: Belgium\n\n- Explanation: The first image is of a famous statue known as \"Manneken Pis\" located in Brussels, Belgium. The second image features waffles, which are a well-known delicacy from Belgium. Both images highlight cultural symbols associated with Belgium.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately identifies the relationship as 'Belgium' and provides a coherent explanation, consistent with the standard answer."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(MannekenPis, Brussels) and LocatedIn(Brussels, Belgium) and AssociatedWith(BelgianWaffle, Belgium) Thus, MannekenPis → Brussels → Belgium and BelgianWaffle → Belgium",
+            "hop_quality": {
+                "MannekenPis → Brussels": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Brussels → Belgium": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "BelgianWaffle → Belgium": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a precise and logical path, accurately associating both the Manneken Pis statue and Belgian waffles with Belgium through Brussels. Each hop demonstrates high reasonableness, precision, and knowledge depth."
+        }
+    },
+    "Bhutan(visible, country, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Monastery built on a cliffside\n- Second image: Colorful prayer flags hanging outdoors\n- Relation: Buddhism\n- Explanation: The first image depicts a monastery, likely the Tiger's Nest in Bhutan, which is an important site in Buddhism. The second image shows prayer flags that are commonly used in Buddhist practices. Both images highlight the cultural and spiritual aspects of Buddhism, emphasizing its architectural beauty and symbolic traditions.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the relationship as 'Buddhism' and mentions key elements like the Tiger's Nest Monastery and prayer flags. However, it misses the specific association with Bhutan, which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(TigersNestMonastery, Bhutan) and AssociatedWith(TigersNestMonastery, Buddhism) and AssociatedWith(PrayerFlags, Buddhism) and LocatedIn(PrayerFlags, Bhutan) Thus, TigersNestMonastery → Bhutan and PrayerFlags → Bhutan",
+            "hop_quality": {
+                "TigersNestMonastery → Bhutan": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "TigersNestMonastery → Buddhism": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "PrayerFlags → Buddhism": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "PrayerFlags → Bhutan": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is well-structured and logically sound, accurately linking both Tiger's Nest Monastery and prayer flags to Bhutan and Buddhism. Each hop shows high precision and depth of cultural knowledge."
+        }
+    },
+    "Madagascar(visible, country, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Baobab tree in a natural environment\n- Second image: Ring-tailed lemur on a log\n\n- Relation: Madagascar\n\n- Explanation: Both the baobab tree and the ring-tailed lemur are iconic symbols of Madagascar. The baobab tree is known for its distinctive shape and is a notable feature of the Madagascan landscape. The ring-tailed lemur, with its recognizable striped tail, is native to Madagascar and one of the island's most famous lemur species.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately identifies the relationship as 'Madagascar' and provides a coherent explanation, consistent with the standard answer."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(BaobabTree, Madagascar) and LocatedIn(Lemur, Madagascar) Thus, BaobabTree → Madagascar and Lemur → Madagascar",
+            "hop_quality": {
+                "BaobabTree → Madagascar": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Lemur → Madagascar": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is concise and accurate, directly associating both the baobab tree and lemur with Madagascar. Each hop demonstrates perfect scores across all dimensions, reflecting precise and knowledgeable reasoning."
+        }
+    },
+    "Mongolia(visible, country, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Traditional yurts in a grassy landscape.\n- Second image: Children riding horses across a plain.\n\n- Relation: Nomadic lifestyle\n\n- Explanation: Both images depict aspects of a traditional nomadic lifestyle. The first image shows yurts, which are portable, round tents used by nomads in Central Asia. The second image features children riding horses, highlighting the reliance on horses for transportation and mobility in nomadic cultures. Both scenes reflect a way of life closely connected to the land and nature.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the relationship as 'Nomadic lifestyle' and mentions key elements like yurts and horse riding. However, it misses the specific association with Mongolia, which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "AssociatedWith(Ger, MongolianNomadicCulture) and AssociatedWith(HorseRiding, MongolianNomadicCulture) Thus, Ger → MongolianNomadicCulture and HorseRiding → MongolianNomadicCulture",
+            "hop_quality": {
+                "Ger → MongolianNomadicCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "HorseRiding → MongolianNomadicCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is precise and logical, accurately linking both gers and horse riding to Mongolian nomadic culture. Each hop shows high reasonableness, precision, and depth of cultural knowledge."
+        }
+    },
+    "Nepal(visible, country, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Snow-covered mountain peaks\n- Second image: Tibetan prayer wheels\n\n- Relation: Himalayan region\n\n- Explanation: The first image shows snow-covered peaks characteristic of the Himalayan mountain range, likely including Mount Everest. The second image features prayer wheels commonly found in Tibetan Buddhist culture, prevalent in the same region. Both images connect through their geographical and cultural significance to the Himalayas.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies the relationship as 'Himalayan region' and mentions key elements like snow-covered peaks and prayer wheels. However, it misses the specific association with Nepal, which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(MountEverest, Nepal) and AssociatedWith(PrayerWheel, TibetanBuddhism) and PracticedIn(TibetanBuddhism, Nepal) Thus, MountEverest → Nepal and PrayerWheel → TibetanBuddhism → Nepal",
+            "hop_quality": {
+                "MountEverest → Nepal": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "PrayerWheel → TibetanBuddhism": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "TibetanBuddhism → Nepal": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is well-structured and logically sound, accurately linking Mount Everest and prayer wheels to Nepal through Tibetan Buddhism. Each hop demonstrates high precision and depth of cultural and geographical knowledge."
+        }
+    },
+    "Uzbekistan(visible, country, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Historical architecture with large gateways and domes\n- Second image: Illustration of a caravan on a map\n\n- Relation: Silk Road\n\n- Explanation: The first image shows architectural styles associated with Central Asia, likely a location such as Samarkand, which was a significant city on the Silk Road. The second image depicts a caravan, a common means of trade and transportation on the Silk Road. Both images are connected through their association with the ancient trade route that linked the East and West culturally and economically.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM correctly identifies the connection to the Silk Road and provides a reasonable explanation, but it misses the specific relation to Uzbekistan, which is a key element in the standard answer."
+        },
+        "reason_judge": {
+            "path": "LocatedIn(RegistanSquare, Samarkand) and LocatedIn(Samarkand, Uzbekistan) and PassedThrough(SilkRoad, Uzbekistan) Thus, RegistanSquare → Samarkand → Uzbekistan → SilkRoad and SilkRoad → Uzbekistan → Samarkand → RegistanSquare",
+            "hop_quality": {
+                "RegistanSquare → Samarkand": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Samarkand → Uzbekistan": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Uzbekistan → SilkRoad": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "SilkRoad → Uzbekistan": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Uzbekistan → Samarkand": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Samarkand → RegistanSquare": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured path connecting Registan Square and the Silk Road through Samarkand and Uzbekistan. Each hop demonstrates high logical soundness, specificity, and deep knowledge of the geographical and historical context."
+        }
+    },
+    "Samoa(visible, country, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Beach huts and palm trees by the sea\n- Second image: Polynesian-themed floral tattoo\n\n- Relation: Polynesian culture\n\n- Explanation: The first image captures a tropical beach setting with traditional huts and palm trees, typical of Pacific Island locations. The second image features a tattoo with Polynesian motifs, including flowers and tribal patterns, commonly associated with the art and culture of the same region. Both images evoke themes connected to the Polynesian lifestyle and aesthetic.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM accurately connects the images to Polynesian culture and provides a coherent explanation. However, it does not specifically mention Samoa, which is a key element in the standard answer."
+        },
+        "reason_judge": {
+            "path": "AssociatedWith(BeachFale, PolynesianCulture) and AssociatedWith(Tatau, PolynesianCulture) Thus, BeachFale → PolynesianCulture → Tatau and Tatau → PolynesianCulture → BeachFale",
+            "hop_quality": {
+                "BeachFale → PolynesianCulture": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "PolynesianCulture → Tatau": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "Tatau → PolynesianCulture": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "PolynesianCulture → BeachFale": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a reasonable path connecting Beach Fale and Tatau through Polynesian culture. While the connection is logical and knowledgeable, it slightly lacks specificity by not explicitly mentioning Samoan culture."
+        }
+    },
+    "Ogni paese ha l'usanza sua(invisible, country, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Traditional tea ceremony\n- Second image: Neapolitan pizza\n- Relation: Cultural cuisine\n- Explanation: The first image depicts a traditional tea ceremony, showcasing the cultural practice of preparing and enjoying tea with ritualistic significance. The second image displays a Neapolitan pizza, a staple of Italian cuisine known for its simple and fresh ingredients. Both images highlight important aspects of their respective cultures through their unique culinary traditions.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's explanation is relevant but lacks depth and does not address the intended standard reasoning about cultural customs and the proverb 'Ogni paese ha l'usanza sua.'"
+        },
+        "reason_judge": {
+            "path": "Represents(JapaneseTeaCeremony, JapaneseCulture) and Represents(NeapolitanPizza, ItalianCulture) Thus, JapaneseTeaCeremony → JapaneseCulture → DifferentCulture and NeapolitanPizza → ItalianCulture → DifferentCulture",
+            "hop_quality": {
+                "JapaneseTeaCeremony → JapaneseCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "JapaneseCulture → DifferentCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "NeapolitanPizza → ItalianCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "ItalianCulture → DifferentCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a precise and knowledgeable path connecting the Japanese Tea Ceremony and Neapolitan Pizza through their respective cultures. Each hop demonstrates high logical soundness, specificity, and deep cultural understanding."
+        }
+    },
+    "Roma non fu fatta in un giorno(invisible, country, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Single brick\n- Second image: Ancient brick wall or fortification\n- Relation: Construction material\n- Explanation: The first image shows a single, isolated brick, a fundamental unit used in construction. The second image depicts a large wall or fortification made from similar bricks. Both images are related by the use of bricks as a basic building material, showcasing how individual bricks are combined to create substantial and enduring structures.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's explanation is somewhat relevant but misses the critical element of the proverb 'Roma non fu fatta in un giorno,' which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "ComponentOf(Brick, Wall) and Represents(Wall, LargeConstruction) and Implies(LargeConstruction, TimeAndEffort) Thus, Brick ∧ Wall → 'Rome was not built in a day'",
+            "hop_quality": {
+                "Brick → Wall": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Wall → LargeConstruction": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "LargeConstruction → TimeAndEffort": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured path connecting a single brick to a completed city wall, illustrating the proverb 'Rome wasn't built in a day.' Each hop demonstrates high logical soundness, specificity, and deep understanding of the concept."
+        }
+    },
+    "A goccia a goccia si scava la pietra(invisible, STEM, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Water droplet on smooth stones\n- Second image: River flowing through a canyon\n- Relation: Water and erosion\n- Explanation: The first image highlights a single droplet of water creating ripples on smooth stones, exemplifying water's ability to shape its environment through small, incremental changes. The second image of a river flowing through a canyon demonstrates this on a much larger scale, showing how water can carve through rock over time, forming expansive landscapes. Both images depict nature's transformative power through water's interaction with rock and earth.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's explanation captures the essence of water's transformative power and erosion, aligning with the standard answer. However, it does not explicitly mention the proverb 'A goccia a goccia si scava la pietra,' which is a key element in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Causes(WaterDroplet, Erosion) and Creates(Erosion, Canyon) Thus, WaterDroplet → Erosion → Canyon and Canyon → Erosion → WaterDroplet",
+            "hop_quality": {
+                "WaterDroplet → Erosion": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Erosion → Canyon": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Canyon → Erosion": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Erosion → WaterDroplet": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a precise and knowledgeable path connecting a water droplet to a canyon through erosion. Each hop demonstrates high logical soundness, specificity, and deep understanding of geological processes."
+        }
+    },
+    "Misura due volte, taglia una(invisible, STEM, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Complex mathematical equations\n- Second image: Industrial machinery operation\n- Relation: Engineering\n- Explanation: The first image shows mathematical equations, which are essential in engineering for solving complex problems, designing systems, and optimizing processes. The second image depicts a piece of industrial machinery potentially used in manufacturing. Both images highlight aspects of engineering, where theory and application come together to create and refine technology and processes.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the critical element of the 'measure twice, cut once' principle, which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "Represents(ComplexEquation, Engineering) and Facilitates(Engineering, IndustrialMachineryOperation)\nThus, ComplexEquation → Engineering → IndustrialMachineryOperation",
+            "hop_quality": {
+                "ComplexEquation → Engineering": [
+                    0.85,
+                    0.75,
+                    1
+                ],
+                "Engineering → IndustrialMachineryOperation": [
+                    0.9,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a sequential path linking the complex equation to engineering and then to industrial machinery operation. The hops are logically sound and demonstrate a good understanding of the relationship between theory and application in engineering. However, the path lacks the specific planning-successful outcome relationship highlighted in the reference answer."
+        }
+    },
+    "Occhio non vede, cuore non duole(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Messy room\n- Second image: Closed door\n\n- Relation: Containment\n- Explanation: The first image depicts a cluttered room with toys and clothes scattered around, suggesting chaos and disorder. The second image shows a closed door, which can symbolize separation or containment. Together, these images might suggest the idea of keeping the mess hidden or contained within a room by closing the door.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but overly broad and misses the critical element of the proverb 'Occhio non vede, cuore non duole,' which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "Represents(MessyRoom, Chaos) and Symbolizes(ClosedDoor, Containment)\nThus, MessyRoom → Chaos and ClosedDoor → Containment",
+            "hop_quality": {
+                "MessyRoom → Chaos": [
+                    0.95,
+                    0.85,
+                    1
+                ],
+                "ClosedDoor → Containment": [
+                    0.9,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively captures the idea of containment and chaos, linking the messy room to chaos and the closed door to containment. The hops are reasonable and precise, though the path misses the specific proverb 'The eyes don't see, the heart doesn't hurt' from the reference answer."
+        }
+    },
+    "A lume di naso(invisible, sense, mutual elements, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Dog sniffing the ground in a field.\n- Second image: Dog sitting next to a dug-up hole filled with bones.\n\n- Relation: Dogs' natural behaviors\n- Explanation: Both images depict common behaviors in dogs—using their keen sense of smell to explore their environment and digging. The first dog is engaged in scent-tracking in a field, while the second dog has uncovered a stash of bones, exemplifying the typical digging activity often associated with hiding or finding items.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows reasonable understanding of the dogs' natural behaviors but lacks the key insight of the proverb 'A lume di naso,' which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "Represents(DogSniffingGround, ScentTracking) and Represents(DugUpHole, DiggingBehavior)\nThus, DogSniffingGround → ScentTracking and DugUpHole → DiggingBehavior",
+            "hop_quality": {
+                "DogSniffingGround → ScentTracking": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "DugUpHole → DiggingBehavior": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path accurately describes the natural behaviors of dogs, linking sniffing the ground to scent tracking and the dug-up hole to digging behavior. The hops are highly reasonable and precise, though the path does not explicitly connect these behaviors to the proverb 'a lume di naso' as in the reference answer."
+        }
+    },
+    "Networking Event(visible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Spider web\n- Second image: Business card\n- Relation: Network\n- Explanation: The spider web represents a natural network structure with interconnected threads, symbolizing connectivity and complexity. Similarly, a business card serves as a tool for networking in the professional world, linking individuals and building relationships. Both images emphasize the importance of connections, whether in nature or business.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows reasonable understanding of the concept of networks but lacks the key insight of the 'Networking Event' relation, which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "Symbolizes(SpiderWeb, NetworkStructure) and Represents(BusinessCard, ProfessionalNetworking)\nThus, SpiderWeb → NetworkStructure and BusinessCard → ProfessionalNetworking",
+            "hop_quality": {
+                "SpiderWeb → NetworkStructure": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "BusinessCard → ProfessionalNetworking": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively captures the symbolism of the spider web as a network structure and the business card as a tool for professional networking. The hops are logically sound and precise, demonstrating a clear understanding of the relationship between natural and professional networks."
+        }
+    },
+    "Supply Chain(invisible, business, relation, NA, English)": {
+        "MLLM_answer": "- First image: Factory workshop with workers\n- Second image: Delivery truck on the road\n- Relation: Manufacturing and logistics\n- Explanation: The first image depicts a busy factory environment, where workers are actively engaged in various assembly or manufacturing tasks. The second image shows a delivery truck in motion, likely transporting goods. Both images illustrate essential stages in the production and distribution process, highlighting the connection between manufacturing and logistics.",
+        "ordinary_judge": {
+            "score_4o": "4",
+            "score_reason": "The MLLM's output accurately and logically captures the essence of the 'Supply Chain' relation, consistent with the standard answer, although it uses slightly different phrasing."
+        },
+        "reason_judge": {
+            "path": "Represents(Factory, Manufacturing) and Represents(DeliveryTruck, Logistics)\nThus, Factory → Manufacturing and DeliveryTruck → Logistics",
+            "hop_quality": {
+                "Factory → Manufacturing": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "DeliveryTruck → Logistics": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path accurately links the factory to manufacturing and the delivery truck to logistics, illustrating the connection between production and distribution. The hops are highly reasonable and precise, though the path does not explicitly connect these stages to the broader concept of the supply chain as in the reference answer."
+        }
+    },
+    "Can't find the needle(invisible, country, relation, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Calm lake with forest reflection\n- Second image: Sewing needles arranged diagonally\n\n- Relation: Reflection and alignment\n- Explanation: The calm lake surface in the first image creates a mirror-like reflection of the surrounding forest, emphasizing symmetry and tranquility. In the second image, the sewing needles are aligned in an orderly fashion, exhibiting precision and organization. Both images convey a sense of reflection and orderliness in different contexts.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but misses the intended pun and humor in the standard answer, focusing instead on a broad concept of 'reflection and alignment' rather than the specific linguistic play on 'lago' and 'l'ago.'"
+        },
+        "reason_judge": {
+            "path": "Be(CalmLake, Reflection) and Be(SewingNeedles, Alignment) → ReflectionAndAlignment",
+            "hop_quality": {
+                "CalmLake → Reflection": [
+                    0.8,
+                    0.6,
+                    1
+                ],
+                "SewingNeedles → Alignment": [
+                    0.85,
+                    0.7,
+                    1
+                ],
+                "Reflection ∧ Alignment → ReflectionAndAlignment": [
+                    0.75,
+                    0.5,
+                    0
+                ]
+            },
+            "explanation": "The MLLM constructed a path focusing on reflection and alignment, which is logically sound but misses the cultural and linguistic humor of the reference answer. The hops are reasonable and precise but lack the depth of knowledge regarding the Italian wordplay."
+        }
+    },
+    "Ho visto del vino e ho bevuto(invisible, country, metaphor, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Pouring wine into a glass.\n- Second image: Cartoon eyes emoji.\n\n- Relation: Observation\n\n- Explanation: The first image depicts the act of pouring wine into a glass, possibly during a gathering or dinner, suggesting an event worth noting. The second image shows a pair of cartoon eyes, commonly associated with watching or observing. Together, they emphasize paying attention or witnessing something, possibly the enjoyment of wine.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is relevant but overly broad, focusing on 'observation' rather than the specific linguistic pun on 'vino' meaning both 'wine' and 'I saw.' It does not capture the intended humor or wordplay in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Be(PouringWine, Event) and Be(CartoonEyes, Observation) → Observation",
+            "hop_quality": {
+                "PouringWine → Event": [
+                    0.9,
+                    0.8,
+                    1
+                ],
+                "CartoonEyes → Observation": [
+                    0.85,
+                    0.75,
+                    1
+                ],
+                "Event ∧ Observation → Observation": [
+                    0.8,
+                    0.7,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's path emphasizes observation, which is reasonable and precise but overlooks the dual meaning of 'vino' in Italian. The hops are well-constructed but lack the cultural and linguistic depth of the reference answer."
+        }
+    },
+    "Sole(invisible, country, relation, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Bright sun in a blue sky with scattered clouds.\n- Second image: A couple kissing outdoors with the words \"Only You.\"\n\n- Relation: Affectionate atmosphere\n\n- Explanation: Both images evoke a sense of warmth and positivity. The sunlit sky suggests a bright, pleasant day, which complements the romantic and affectionate interaction of the couple, conveying a sense of happiness and love.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is relevant but lacks depth and misses the intended linguistic pun on 'sole' meaning both 'sun' and 'only.' It focuses on a general 'affectionate atmosphere' rather than the specific wordplay in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Be(BrightSun, Warmth) and Be(CoupleKissing, Affection) → AffectionateAtmosphere",
+            "hop_quality": {
+                "BrightSun → Warmth": [
+                    0.9,
+                    0.8,
+                    1
+                ],
+                "CoupleKissing → Affection": [
+                    0.85,
+                    0.75,
+                    1
+                ],
+                "Warmth ∧ Affection → AffectionateAtmosphere": [
+                    0.8,
+                    0.7,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's path focuses on warmth and affection, which is reasonable and precise but misses the dual meaning of 'sole' in Italian. The hops are well-constructed but lack the cultural and linguistic depth of the reference answer."
+        }
+    },
+    "Filo(invisible, country, metaphor, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Spool of golden thread with a needle.\n- Second image: Hand holding a bunch of colorful electrical wires.\n- Relation: Connectivity\n- Explanation: Both images portray materials used to create connections. The golden thread with a needle is used in sewing to join fabric pieces, while the colorful wires serve to connect electrical components. Both involve the concept of linking or binding through their respective mediums.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but misses the intended linguistic pun on 'filo' meaning both 'thread' and 'wire.' It focuses on a general concept of 'connectivity' rather than the specific wordplay in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Be(GoldenThread, Sewing) and Be(ElectricalWires, ElectricalConnection) → Connectivity",
+            "hop_quality": {
+                "GoldenThread → Sewing": [
+                    0.9,
+                    0.8,
+                    1
+                ],
+                "ElectricalWires → ElectricalConnection": [
+                    0.85,
+                    0.75,
+                    1
+                ],
+                "Sewing ∧ ElectricalConnection → Connectivity": [
+                    0.8,
+                    0.7,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's path emphasizes connectivity, which is reasonable and precise but overlooks the dual meaning of 'filo' in Italian. The hops are well-constructed but lack the cultural and linguistic depth of the reference answer."
+        }
+    },
+    "Cough after eating(invisible, country, relation, East Asia, Korean)": {
+        "MLLM_answer": "- First image: Kimchi in a glass container\n- Second image: Man coughing\n\n- Relation: Spiciness reaction\n\n- Explanation: The first image shows kimchi, a spicy fermented cabbage dish, which is known for its strong, spicy flavor. The second image depicts a man coughing, which can be a common reaction to eating spicy foods. The connection between these images highlights a typical response to consuming spicy dishes.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows reasonable understanding by linking kimchi's spiciness to coughing, which aligns with the standard answer. However, it misses the specific linguistic play on '김치' and '기침' that adds humor to the standard explanation."
+        },
+        "reason_judge": {
+            "path": "Be(Kimchi, SpicyFood) and Be(Coughing, Reaction) → SpicinessReaction",
+            "hop_quality": {
+                "Kimchi → SpicyFood": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "Coughing → Reaction": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "SpicyFood ∧ Reaction → SpicinessReaction": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path accurately captures the reaction to spicy food, which is reasonable, precise, and knowledgeable. It aligns well with the reference answer, demonstrating a good understanding of the connection between kimchi and coughing."
+        }
+    },
+    "apple and accident(invisible, country, relation, East Asia, Korean)": {
+        "MLLM_answer": "- First image: Red apples with a slice\n- Second image: Car crash scene with damaged vehicles\n- Relation: Contrast\n- Explanation: The first image depicts vibrant and fresh apples, symbolizing health and vitality, while the second image shows the aftermath of a car crash, representing damage and chaos. The images present a stark contrast between natural beauty and human-made destruction.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output presents a contrast between the images but misses the key linguistic play involving the Korean words for 'apple' and 'accident,' which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "Be(사과, Fruit) and Be(사고, Incident) Thus, 사과 → 'Eating an apple' → 사고",
+            "hop_quality": {
+                "사과 → 'Eating an apple'": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "'Eating an apple' → 사고": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output misses the cultural and linguistic connection between '사과' (apple) and '사고' (accident) in Korean. The constructed path is logically sound but lacks the depth and precision of the reference answer, which humorously ties the two concepts together."
+        }
+    },
+    "stomach and boat(invisible, country, metaphor, East Asia, Korean)": {
+        "MLLM_answer": "- First image: Illustration of a woman with a stomach ache.\n- Second image: Red and white boat on the water.\n\n- Relation: Color similarity\n\n- Explanation: The common element between the two images is the prominent use of red; the woman’s red shirt and the red color of the boat. While the content of the images is different, the visual similarity in color creates a connection between them.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM identifies a color similarity but fails to address the linguistic connection in Korean between 'stomach' and 'boat,' which is the main focus of the standard answer."
+        },
+        "reason_judge": {
+            "path": "Be(배, BodyPart) ∧ Be(배, Vessel) Thus, 배 ∧ 배 → 'When hungry, take a boat!'",
+            "hop_quality": {
+                "배 ∧ 배 → 'When hungry, take a boat!'": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on a superficial color similarity, missing the linguistic play on the word '배' (stomach/boat) in Korean. The reference answer's path is more precise and knowledgeable, capturing the humorous dual meaning effectively."
+        }
+    },
+    "Looking for grass to solve(invisible, country, relation, East Asia, Korean)": {
+        "MLLM_answer": "- First image: A vibrant green field of grass.\n- Second image: Diagram showing a problem with three possible solutions.\n\n- Relation: Problem-solving\n\n- Explanation: The lush green field in the first image suggests growth and potential. In problem-solving, the goal is often to find a solution that nurtures and fosters growth, much like maintaining a healthy field. The second image directly depicts finding solutions to a problem, illustrating the idea of exploring various options to achieve a desired outcome.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM discusses problem-solving and growth but does not mention the linguistic play in Korean involving the word '풀' (grass/solve), which is the core of the standard answer."
+        },
+        "reason_judge": {
+            "path": "Be(풀, Plant) and Be(풀, Action) Thus, 풀 → 'Looking for grass to solve' → 풀",
+            "hop_quality": {
+                "풀 → 'Looking for grass to solve'": [
+                    0.88,
+                    0.82,
+                    1
+                ],
+                "'Looking for grass to solve' → 풀": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output generalizes the concept of problem-solving and growth, missing the specific linguistic play on '풀' (grass/solve) in Korean. The reference answer's path is more precise and humorous, connecting the two meanings in a lighthearted way."
+        }
+    },
+    "Because this is the world(invisible, country, relation, East Asia, Korean)": {
+        "MLLM_answer": "- First image: Earth with urban elements\n- Second image: Hand holding a dissolving clock\n- Relation: Time and transformation\n- Explanation: The first image shows Earth with cities and transportation, representing human progress and urbanization. The second image, with a clock dissolving in a hand, symbolizes the passage of time and possibly the ephemeral nature of human achievements. Together, they evoke themes of transformation, progression, and the fleeting nature of time in human civilization.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's explanation focuses on time and transformation but overlooks the linguistic connection in Korean between '세상' (world/age), which is central to the standard answer."
+        },
+        "reason_judge": {
+            "path": "Be(세상, Planet) ∧ Be(세상, TimePeriod) Thus, 세상 → 'This is the world!' → 세상",
+            "hop_quality": {
+                "세상 → 'This is the world!'": [
+                    0.92,
+                    0.88,
+                    1
+                ],
+                "'This is the world!' → 세상": [
+                    0.94,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the broader themes of time and transformation, missing the specific linguistic play on '세상' (world/age) in Korean. The reference answer's path is more precise and humorous, capturing the dual meaning effectively."
+        }
+    },
+    "snow and eyes(invisible, country, relation, East Asia, Korean)": {
+        "MLLM_answer": "- First image: Close-up of a blue eye.\n- Second image: Snow-covered landscape with trees.\n\n- Relation: Winter aesthetics\n\n- Explanation: The close-up of the blue eye in the first image shares a similar color palette with the snow-covered landscape in the second image. The light blues and whites in both images evoke a sense of calm and cold, reminiscent of wintery themes.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM identifies a winter aesthetic but misses the linguistic play in Korean involving the word '눈' (eye/snow), which is the key element in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Be(눈, BodyPart) and Be(눈, Weather) Thus, 눈 → 'When it snows' → 눈",
+            "hop_quality": {
+                "눈 → 'When it snows'": [
+                    0.89,
+                    0.84,
+                    1
+                ],
+                "'When it snows' → 눈": [
+                    0.91,
+                    0.86,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on a superficial color similarity, missing the linguistic play on the word '눈' (eye/snow) in Korean. The reference answer's path is more precise and humorous, connecting the two meanings in a lighthearted way."
+        }
+    },
+    "Geology(invisible, STEM, relation, NA, English)": {
+        "MLLM_answer": "- First image: Earthquake damaged road\n- Second image: Korean hot pot dish\n- Relation: Korea\n- Explanation: The first image shows a road damaged by an earthquake, a common natural disaster in regions of East Asia, including Korea. The second image features budae jjigae, a well-known Korean hot pot dish. While the two images represent entirely different contexts—one, a natural disaster and the other, culinary culture—they both connect to aspects commonly associated with Korea.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output attempts to connect the images through Korea, which is somewhat relevant but lacks depth and misses the critical element of geology, which is the focus of the standard answer."
+        },
+        "reason_judge": {
+            "path": "DamagedBy(Earthquake, Road) and RelatedTo(Road, Korea) and Represents(BudaeJjigae, Korea) Thus, Earthquake → Road → Korea and BudaeJjigae → Korea",
+            "hop_quality": {
+                "Earthquake → Road": [
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "Road → Korea": [
+                    0.1,
+                    0.1,
+                    1
+                ],
+                "BudaeJjigae → Korea": [
+                    0.9,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path deviates significantly from the reference answer, focusing on Korea rather than geology. While the hop involving BudaeJjigae is reasonable and precise, the other hops are less relevant and lack specificity in connecting the images to geology."
+        }
+    },
+    "Proprioception(invisible, sense, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Gymnast performing a handstand on a balance beam.\n- Second image: Person practicing yoga in tree pose.\n\n- Relation: Balance and concentration\n\n- Explanation: Both images depict individuals engaged in activities that require significant balance and concentration. The gymnast is executing a handstand on a narrow beam, highlighting strength and precision, while the person in the second image is performing the tree pose in yoga, which focuses on grounding and stability. Both demonstrate the importance of mental and physical discipline.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows a reasonable understanding of the activities requiring balance and concentration but misses the specific term 'proprioception' which is key in the standard answer."
+        },
+        "reason_judge": {
+            "path": "Requires(HandBalancing, BalanceAndConcentration) and Requires(StandingOnOneLeg, BalanceAndConcentration) Thus, HandBalancing → BalanceAndConcentration and StandingOnOneLeg → BalanceAndConcentration",
+            "hop_quality": {
+                "HandBalancing → BalanceAndConcentration": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "StandingOnOneLeg → BalanceAndConcentration": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is logically sound and precise, focusing on the common theme of balance and concentration. However, it misses the specific scientific concept of proprioception, which is a deeper and more specific aspect of the relation."
+        }
+    },
+    "AmericanCulture(visible, country, mutual elements, USAEnglish, English)": {
+        "MLLM_answer": "- First image: Hollywood Walk of Fame\n- Second image: Baseball bat\n\n- Relation: Fame and success\n\n- Explanation: The Hollywood Walk of Fame symbolizes fame and success in the entertainment industry, showcasing stars who have made significant contributions. A baseball bat, often associated with sports like baseball, represents achievement and success in athletics. Both images relate to the theme of recognition and accomplishment in their respective fields.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output captures the themes of fame and success but does not explicitly mention 'American Culture' as the standard answer does, though it aligns with the broader concept."
+        },
+        "reason_judge": {
+            "path": "Symbolizes(HollywoodWalkOfFame, FameAndSuccess) and Symbolizes(BaseballBat, FameAndSuccess) Thus, HollywoodWalkOfFame → FameAndSuccess and BaseballBat → FameAndSuccess",
+            "hop_quality": {
+                "HollywoodWalkOfFame → FameAndSuccess": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "BaseballBat → FameAndSuccess": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path is reasonable and precise, focusing on the theme of fame and success. However, it lacks the broader cultural context of American culture, which is a more encompassing and knowledgeable aspect of the relation."
+        }
+    },
+    "Leverage(invisible, business, mutual elements, NA, English)": {
+        "MLLM_answer": "- First image: Diagram of a lever explaining its parts.\n- Second image: Infographic on the rise of the American debt ceiling.\n- Relation: Concepts of balance and limits.\n- Explanation: The lever diagram illustrates the physical principle of balance involving effort and resistance through a fulcrum. The debt ceiling infographic addresses economic balance, focusing on national debt limits and their consequences. Both images highlight the importance of maintaining equilibrium, whether in mechanics or economics, to ensure stability.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output discusses balance and limits, which is somewhat relevant but lacks the depth and specific financial context of 'leverage' as presented in the standard answer. It does not effectively summarize the relationship in the intended manner."
+        },
+        "reason_judge": {
+            "path": "Represent(LeverDiagram, Balance) and Indicate(DebtCeilingInfographic, EconomicBalance) Thus, LeverDiagram → Balance and DebtCeilingInfographic → EconomicBalance",
+            "hop_quality": {
+                "LeverDiagram → Balance": [
+                    0.7,
+                    0.65,
+                    1
+                ],
+                "DebtCeilingInfographic → EconomicBalance": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path focuses on the concept of balance, which is reasonable but misses the specific financial concept of 'Leverage'. The hops are knowledgeable but lack precision and depth in connecting the physical lever to financial leverage."
+        }
+    },
+    "Jeong(invisible, sense, mutual elements, East Asia, Korean)": {
+        "MLLM_answer": "- First image: Korean hot pot dish\n- Second image: Handshake with South Korean flag\n- Relation: Korean culture\n- Explanation: The first image features a Korean hot pot dish, which is a popular aspect of Korean cuisine. The second image shows a handshake in front of the South Korean flag, symbolizing diplomacy or agreement. Both images emphasize elements of Korean culture, focusing on traditional food and national identity.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM correctly identifies elements of Korean culture but misses the deeper concept of 'Jeong' as expressed in the standard answer. It mentions key aspects of Korean culture but lacks the specific insight into the emotional connection represented by 'Jeong.'"
+        },
+        "reason_judge": {
+            "path": "Represents(KoreanHotPotDish, KoreanCuisine) and Represents(HandshakeWithSouthKoreanFlag, NationalIdentity) and Symbolizes(KoreanCuisine, KoreanCulture) and Symbolizes(NationalIdentity, KoreanCulture) Thus, KoreanHotPotDish → KoreanCuisine → KoreanCulture and HandshakeWithSouthKoreanFlag → NationalIdentity → KoreanCulture",
+            "hop_quality": {
+                "KoreanHotPotDish → KoreanCuisine": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "KoreanCuisine → KoreanCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "HandshakeWithSouthKoreanFlag → NationalIdentity": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "NationalIdentity → KoreanCulture": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a well-structured convergent path through Korean culture. Both paths (KoreanHotPotDish→KoreanCuisine→KoreanCulture and HandshakeWithSouthKoreanFlag→NationalIdentity→KoreanCulture) demonstrate perfect scores across all dimensions, showing deep cultural understanding and precise use of concepts."
+        }
+    },
+    "まだな(invisible, country, relation, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: A bunch of bananas.\n- Second image: An hourglass against a blue sky.\n- Relation: Time\n- Explanation: The bananas represent a perishable item, whose quality diminishes over time, symbolizing the passage of time. The hourglass is a direct representation of time itself, measuring its flow. Both images together emphasize the concept of time, especially in relation to change and decay.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the key insight of 'not yet' (まだな) which is central to the standard answer. It focuses on the concept of time but does not align with the intended reasoning."
+        },
+        "reason_judge": {
+            "path": "Be(Banana, PerishableItem) and Symbolize(PerishableItem, PassageOfTime) and Be(Hourglass, TimeIndicator)",
+            "hop_quality": {
+                "Banana → PerishableItem": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "PerishableItem → PassageOfTime": [
+                    0.8,
+                    0.75,
+                    1
+                ],
+                "Hourglass → TimeIndicator": [
+                    1.0,
+                    1.0,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path focuses on the concept of time and its relation to perishable items, which is logically sound and precise. However, it misses the cultural and linguistic nuance of 'まだな' (not yet) and its playful association with bananas, which affects the depth of knowledge and specificity."
+        }
+    },
+    "work life(invisible, business, relation, NA, English)": {
+        "MLLM_answer": "- First image: Unbalanced scales\n- Second image: Family portrait outdoors\n- Relation: Balance\n- Explanation: The unbalanced scales symbolize the concept of imbalance, which can pertain to various aspects of life. This idea might connect with the family in the second image as they strive for a balanced life, juggling responsibilities, relationships, and personal time while maintaining harmony.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output shows reasonable understanding by connecting the unbalanced scales to the concept of balance in life, which is related to the standard answer's focus on 'work-life balance.' However, it lacks the specific context of professional responsibilities and personal life."
+        },
+        "reason_judge": {
+            "path": "Symbolize(UnbalancedScales, Imbalance) and Be(FamilyPortrait, PersonalLife) and Suggest(Imbalance, Balance)",
+            "hop_quality": {
+                "UnbalancedScales → Imbalance": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "FamilyPortrait → PersonalLife": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Imbalance → Balance": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path addresses the concept of balance and imbalance, which is reasonable and knowledgeable. However, it lacks the direct connection to 'work life balance' and the specific representation of work responsibilities, reducing its precision and depth."
+        }
+    },
+    "Longevity(invisible, country, relation, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: Assorted sushi rolls\n- Second image: Illustration of cranes in flight with Mount Fuji in the background\n- Relation: Japanese culture\n- Explanation: The sushi rolls and crane illustration both represent elements of Japanese culture. Sushi is a well-known Japanese culinary dish, while cranes and Mount Fuji are iconic symbols often seen in Japanese art and nature. Together, these images highlight the rich cultural traditions of Japan.",
+        "ordinary_judge": {
+            "score_4o": "3",
+            "score_reason": "The MLLM's output correctly identifies elements of Japanese culture but misses the key insight of 'longevity' which is central to the standard answer. It mentions sushi and cranes but does not effectively summarize their relationship in terms of longevity."
+        },
+        "reason_judge": {
+            "path": "Be(Sushi, JapaneseCuisine) and Be(Crane, JapaneseSymbol) and Represent(JapaneseCuisine ∧ JapaneseSymbol, JapaneseCulture)",
+            "hop_quality": {
+                "Sushi → JapaneseCuisine": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Crane → JapaneseSymbol": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "JapaneseCuisine ∧ JapaneseSymbol → JapaneseCulture": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively highlights elements of Japanese culture, demonstrating logical soundness and knowledge depth. However, it misses the specific association of sushi and the crane with the concept of longevity, which affects its precision and cultural specificity."
+        }
+    },
+    "rabbit by the sea(invisible, country, relation, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: Tropical beach scene\n- Second image: White rabbit on grass\n- Relation: Nature\n- Explanation: Both images capture elements of the natural world. The first image depicts a serene beach setting with palm trees and an ocean view, evoking a sense of tranquility. The second image features a cute white rabbit nestled in grass, highlighting wildlife in a calm, green environment. Both scenes offer a peaceful and refreshing representation of nature's beauty.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the key insight of 'rabbit by the sea' which is central to the standard answer. It focuses on nature but does not align with the intended reasoning."
+        },
+        "reason_judge": {
+            "path": "Be(TropicalBeach, Nature) and Be(WhiteRabbit, Wildlife) and Represent(Nature ∧ Wildlife, Nature'sBeauty)",
+            "hop_quality": {
+                "TropicalBeach → Nature": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "WhiteRabbit → Wildlife": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Nature ∧ Wildlife → Nature'sBeauty": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path captures the natural elements of both images, showing logical soundness and knowledge depth. However, it overlooks the playful linguistic connection between 'umi' (sea) and 'u' (rabbit), which reduces its cultural precision and specificity."
+        }
+    },
+    "as tight as beef(invisible, country, metaphor, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: Sliced roast beef on a cutting board\n- Second image: Crowded subway train scene\n\n- Relation: Juxtaposition\n\n- Explanation: The first image shows neatly arranged slices of roast beef, possibly representing order and culinary art. The second image captures the chaos of a crowded subway train, highlighting the rush and density of urban life. The juxtaposition lies in the contrast between the calm, controlled environment of food preparation and the hectic, compact nature of public transportation.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the key insight of 'as tight as beef' which is central to the standard answer. It focuses on juxtaposition but does not align with the intended reasoning."
+        },
+        "reason_judge": {
+            "path": "Be(RoastBeef, Food) and Be(CrowdedSubway, UrbanLife) and Suggest(Food ∧ UrbanLife, Juxtaposition)",
+            "hop_quality": {
+                "RoastBeef → Food": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "CrowdedSubway → UrbanLife": [
+                    1.0,
+                    1.0,
+                    1
+                ],
+                "Food ∧ UrbanLife → Juxtaposition": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively contrasts the calm of food preparation with the chaos of urban life, demonstrating logical soundness and knowledge depth. However, it misses the humorous linguistic connection between 'gyūniku' (beef) and 'gyūgyū' (crowded), which affects its cultural precision and specificity."
+        }
+    },
+    "the cat is evidence(invisible, country, relation, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: A small kitten on grass.\n- Second image: Evidence folder with magnifying glass and tape.\n\n- Relation: Investigation\n- Explanation: The images bring together themes of innocence and investigation. The kitten represents purity and curiosity, while the evidence folder and magnifying glass suggest a serious inquiry or search for truth. They juxtapose the light-hearted nature of a kitten with the seriousness of gathering and examining evidence.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the key linguistic connection between 'Neko' and 'Nenkyo' as explained in the standard answer. The explanation provided by the MLLM does not align with the intended standard reasoning."
+        },
+        "reason_judge": {
+            "path": "Represent(Kitten, Curiosity) and Represent(EvidenceFolder, Investigation) and Juxtapose(Curiosity, Investigation)",
+            "hop_quality": {
+                "Kitten → Curiosity": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "EvidenceFolder → Investigation": [
+                    0.98,
+                    0.95,
+                    1
+                ],
+                "Curiosity → Juxtapose(Curiosity, Investigation)": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM constructed a path that juxtaposes curiosity and investigation, which is logically sound and precise. However, it misses the cultural and linguistic nuance of the Japanese wordplay in the reference answer."
+        }
+    },
+    "work is killing me(invisible, country, relation, East Asia, Japanese)": {
+        "MLLM_answer": "- First image: Overwhelmed office worker with paperwork\n- Second image: Gravestone with \"R.I.P.\" inscribed\n- Relation: Stress and mortality\n- Explanation: The two images together may symbolize the concept of work-related stress leading to significant health consequences. The cluttered, chaotic office environment represents overwhelming work pressure, while the gravestone suggests ultimate mortality, potentially hinting at the dangers of neglecting work-life balance.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is overly broad and misses the key linguistic connection between 'Shigoto' and 'Shikyo' as explained in the standard answer. The explanation provided by the MLLM does not address or align with the intended standard reasoning."
+        },
+        "reason_judge": {
+            "path": "Represent(ClutteredDesk, WorkPressure) and Represent(Gravestone, Mortality) and Suggest(WorkPressure, Mortality)",
+            "hop_quality": {
+                "ClutteredDesk → WorkPressure": [
+                    0.97,
+                    0.95,
+                    1
+                ],
+                "Gravestone → Mortality": [
+                    0.99,
+                    0.98,
+                    1
+                ],
+                "WorkPressure → Suggest(WorkPressure, Mortality)": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively links work pressure to mortality, which is reasonable and precise. However, it lacks the linguistic playfulness of the reference answer, which uses Japanese phonetics to create a humorous expression."
+        }
+    },
+    "Vorrei del pane, ma non del pene(invisible, country, relation, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Sliced loaf of bread\n- Second image: Cartoon ghost\n\n- Relation: Lighthearted\n\n- Explanation: The first image shows a loaf of bread with slices, which often evokes a sense of comfort and homey warmth. The second image is a playful cartoon ghost that adds a whimsical and fun element. Both images convey a lighthearted and approachable feel, with the ghost potentially suggesting a playful twist on the use of bread, such as making a themed snack or sandwich.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the key linguistic connection between 'Pane' and 'Pene' as explained in the standard answer. The explanation provided by the MLLM does not align with the intended standard reasoning."
+        },
+        "reason_judge": {
+            "path": "Represent(SlicedBread, Comfort) and Represent(CartoonGhost, Whimsical) and Convey(Comfort, Lighthearted)",
+            "hop_quality": {
+                "SlicedBread → Comfort": [
+                    0.96,
+                    0.92,
+                    1
+                ],
+                "CartoonGhost → Whimsical": [
+                    0.94,
+                    0.9,
+                    1
+                ],
+                "Comfort → Convey(Comfort, Lighthearted)": [
+                    0.88,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path conveys a lighthearted and whimsical theme, which is reasonable and precise. However, it completely misses the Italian wordplay and humorous context of the reference answer."
+        }
+    },
+    "Need some salve(invisible, country, metaphor, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Cartoon children greeting\n- Second image: Herbal salve containers\n\n- Relation: Everyday care\n\n- Explanation: The first image depicts a cheerful interaction between children, emphasizing communication and social connections. The second image shows herbal salve, which is used for skin care and healing. Both images convey elements of daily life, focusing on interpersonal care and physical well-being.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the key linguistic connection between 'Salve' as a greeting and 'Salve' as an ointment as explained in the standard answer. The explanation provided by the MLLM does not align with the intended standard reasoning."
+        },
+        "reason_judge": {
+            "path": "Represent(CartoonChildren, Communication) and Represent(HerbalSalve, Healing) and Illustrate(Communication, EverydayCare)",
+            "hop_quality": {
+                "CartoonChildren → Communication": [
+                    0.95,
+                    0.93,
+                    1
+                ],
+                "HerbalSalve → Healing": [
+                    0.97,
+                    0.95,
+                    1
+                ],
+                "Communication → Illustrate(Communication, EverydayCare)": [
+                    0.9,
+                    0.88,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path effectively illustrates the concept of everyday care, which is reasonable and precise. However, it does not capture the dual meaning and humorous play on words in the reference answer."
+        }
+    },
+    "My dog is more like a stick(invisible, country, metaphor, Non-English European, Italian)": {
+        "MLLM_answer": "- First image: Sleeping pug\n- Second image: Walking cane\n- Relation: Rest and support\n- Explanation: The sleeping pug represents rest and relaxation, while the walking cane signifies support and aid in mobility. Together, they illustrate the concept of comfort and assistance, whether through sleep or physical support.",
+        "ordinary_judge": {
+            "score_4o": "2",
+            "score_reason": "The MLLM's output is somewhat relevant but lacks depth and misses the key linguistic connection between 'Cane' as a dog and 'Cane' as a stick as explained in the standard answer. The explanation provided by the MLLM does not align with the intended standard reasoning."
+        },
+        "reason_judge": {
+            "path": "Represent(SleepingPug, Rest) and Represent(WalkingCane, Support) and Convey(Rest, Comfort)",
+            "hop_quality": {
+                "SleepingPug → Rest": [
+                    0.96,
+                    0.94,
+                    1
+                ],
+                "WalkingCane → Support": [
+                    0.98,
+                    0.96,
+                    1
+                ],
+                "Rest → Convey(Rest, Comfort)": [
+                    0.92,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's path conveys the concept of comfort and support, which is reasonable and precise. However, it misses the Italian wordplay and humorous comparison in the reference answer."
+        }
+    }
+}
