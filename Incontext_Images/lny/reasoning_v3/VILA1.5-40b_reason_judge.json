@@ -1,0 +1,3653 @@
+{
+    "Symbols of Nurturing and Combativeness(myth, myth, relation, other, English)": [
+        {
+            "path1": "SheafOfWheat → Harvest → BouquetOfFlowers",
+            "path2": "Cornucopia → Harvest → BouquetOfFlowers",
+            "hop_quality_path1": {
+                "SheafOfWheat → Harvest": [
+                    0.45,
+                    0.35,
+                    0
+                ],
+                "Harvest → BouquetOfFlowers": [
+                    0.25,
+                    0.2,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "Cornucopia → Harvest": [
+                    0.5,
+                    0.4,
+                    0
+                ],
+                "Harvest → BouquetOfFlowers": [
+                    0.25,
+                    0.2,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's output deviates significantly from the reference answer, focusing on 'Harvest' rather than 'Nurturing and Combativeness.' The hops are logically weak and lack precision, resulting in low scores."
+        },
+        {
+            "path1": "Sword → Weaponry → Shield",
+            "path2": "SheafOfWheat → Agriculture → SheafOfWheat",
+            "hop_quality_path1": {
+                "Sword → Weaponry": [
+                    0.6,
+                    0.5,
+                    0
+                ],
+                "Weaponry → Shield": [
+                    0.7,
+                    0.6,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "SheafOfWheat → Agriculture": [
+                    0.55,
+                    0.45,
+                    0
+                ],
+                "Agriculture → SheafOfWheat": [
+                    0.3,
+                    0.25,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's output focuses on 'Weaponry and agriculture' rather than 'Nurturing and Combativeness.' The first path shows moderate logical soundness, but the second path is redundant and lacks depth, resulting in low scores."
+        },
+        {
+            "path1": "Cornucopia → Abundance → BouquetOfFlowers",
+            "path2": "SheafOfWheat → Harvest → BouquetOfFlowers",
+            "hop_quality_path1": {
+                "Cornucopia → Abundance": [
+                    0.6,
+                    0.5,
+                    0
+                ],
+                "Abundance → BouquetOfFlowers": [
+                    0.3,
+                    0.25,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "SheafOfWheat → Harvest": [
+                    0.45,
+                    0.35,
+                    0
+                ],
+                "Harvest → BouquetOfFlowers": [
+                    0.25,
+                    0.2,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's output focuses on 'Harvest and Abundance' rather than 'Nurturing and Combativeness.' The hops are logically weak and lack precision, resulting in low scores."
+        },
+        {
+            "path1": "Shield → HistoricalSignificance → KitchenKnife",
+            "path2": "Cornucopia → CulturalSignificance → KitchenKnife",
+            "hop_quality_path1": {
+                "Shield → HistoricalSignificance": [
+                    0.55,
+                    0.45,
+                    0
+                ],
+                "HistoricalSignificance → KitchenKnife": [
+                    0.2,
+                    0.15,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "Cornucopia → CulturalSignificance": [
+                    0.5,
+                    0.4,
+                    0
+                ],
+                "CulturalSignificance → KitchenKnife": [
+                    0.2,
+                    0.15,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's output focuses on 'Historical and cultural significance' rather than 'Nurturing and Combativeness.' The hops are logically weak and lack precision, resulting in low scores."
+        }
+    ],
+    "Themes of unyielding(myth, myth, mutual elements, East Asia, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output significantly deviates from the intended theme of unyielding, focusing instead on the theme of light. This results in irrelevant and incorrect associations, leading to low scores for each hop."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output focuses on the connection to nature and the elements, which is not aligned with the intended theme of unyielding. This results in irrelevant and incorrect associations, leading to low scores for each hop."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output centers on the connection between nature and magic, which is not aligned with the intended theme of unyielding. This results in irrelevant and incorrect associations, leading to low scores for each hop."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output focuses on the connection to nature and the supernatural, which is not aligned with the intended theme of unyielding. This results in irrelevant and incorrect associations, leading to low scores for each hop."
+        }
+    ],
+    "Elements of Indian Culture(culture, culture, mutual elements, South Asia and South-East Asia, English)": [
+        {
+            "path1": "Sari → CulturalElement → Ramayana",
+            "path2": "Biryani → CulinaryElement → Lagaan",
+            "hop_quality_path1": {
+                "Sari → CulturalElement": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "CulturalElement → Ramayana": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Biryani → CulinaryElement": [
+                    0.88,
+                    0.82,
+                    1
+                ],
+                "CulinaryElement → Lagaan": [
+                    0.87,
+                    0.84,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, maintaining high hop quality scores (0.8-0.9) for both paths. The reasoning is logical, precise, and demonstrates deep domain knowledge of Indian culture."
+        },
+        {
+            "path1": "Sari → CulturalElement → Ramayana",
+            "path2": "Biryani → CulinaryElement → Lagaan",
+            "hop_quality_path1": {
+                "Sari → CulturalElement": [
+                    0.86,
+                    0.81,
+                    1
+                ],
+                "CulturalElement → Ramayana": [
+                    0.91,
+                    0.86,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Biryani → CulinaryElement": [
+                    0.89,
+                    0.83,
+                    1
+                ],
+                "CulinaryElement → Lagaan": [
+                    0.88,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output closely matches the reference answer, with high hop quality scores (0.81-0.91) for both paths. The reasoning is sound, specific, and knowledgeable about Indian cultural elements."
+        },
+        {
+            "path1": "Biryani → CulinaryElement → Lagaan",
+            "path2": "Sari → CulturalElement → Ramayana",
+            "hop_quality_path1": {
+                "Biryani → CulinaryElement": [
+                    0.87,
+                    0.82,
+                    1
+                ],
+                "CulinaryElement → Lagaan": [
+                    0.86,
+                    0.84,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Sari → CulturalElement": [
+                    0.84,
+                    0.79,
+                    1
+                ],
+                "CulturalElement → Ramayana": [
+                    0.89,
+                    0.84,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output is consistent with the reference answer, achieving high hop quality scores (0.79-0.89) for both paths. The reasoning is logical, precise, and reflects deep understanding of Indian culture."
+        },
+        {
+            "path1": "Biryani → CulinaryElement → Lagaan",
+            "path2": "Sari → CulturalElement → Ramayana",
+            "hop_quality_path1": {
+                "Biryani → CulinaryElement": [
+                    0.88,
+                    0.83,
+                    1
+                ],
+                "CulinaryElement → Lagaan": [
+                    0.87,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Sari → CulturalElement": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "CulturalElement → Ramayana": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, maintaining high hop quality scores (0.8-0.9) for both paths. The reasoning is logical, precise, and demonstrates deep domain knowledge of Indian culture."
+        }
+    ],
+    "Innovative architectural designs that integrate natural forms(location, location, relation, NA, English)": [
+        {
+            "path1": "SagradaFamilia → NaturalElements → Mosaic",
+            "path2": "SydneyOperaHouse → NaturalForms → LotusTemple",
+            "hop_quality_path1": {
+                "SagradaFamilia → NaturalElements": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "NaturalElements → Mosaic": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "SydneyOperaHouse → NaturalForms": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "NaturalForms → LotusTemple": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output deviates significantly from the reference answer by focusing on architectural innovation rather than the integration of natural forms. The paths and explanations provided by the MLLM do not align with the intended relation, resulting in low relevance and precision scores."
+        },
+        {
+            "path1": "SagradaFamilia → NaturalElements → Mosaic",
+            "path2": "SydneyOperaHouse → NaturalForms → LotusTemple",
+            "hop_quality_path1": {
+                "SagradaFamilia → NaturalElements": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "NaturalElements → Mosaic": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "SydneyOperaHouse → NaturalForms": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "NaturalForms → LotusTemple": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output again focuses on architectural innovation rather than the integration of natural forms. The paths and explanations provided by the MLLM do not align with the intended relation, resulting in low relevance and precision scores."
+        },
+        {
+            "path1": "SydneyOperaHouse → NaturalForms → LotusTemple",
+            "path2": "SagradaFamilia → NaturalElements → Mosaic",
+            "hop_quality_path1": {
+                "SydneyOperaHouse → NaturalForms": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "NaturalForms → LotusTemple": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "SagradaFamilia → NaturalElements": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "NaturalElements → Mosaic": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output significantly deviates from the reference answer by focusing on architectural style and pointed roofs rather than the integration of natural forms. The paths and explanations provided by the MLLM do not align with the intended relation, resulting in low relevance and precision scores."
+        },
+        {
+            "path1": "SydneyOperaHouse → NaturalForms → LotusTemple",
+            "path2": "SagradaFamilia → NaturalElements → Mosaic",
+            "hop_quality_path1": {
+                "SydneyOperaHouse → NaturalForms": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "NaturalForms → LotusTemple": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "SagradaFamilia → NaturalElements": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "NaturalElements → Mosaic": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on architectural design rather than the integration of natural forms. The paths and explanations provided by the MLLM do not align with the intended relation, resulting in low relevance and precision scores."
+        }
+    ],
+    "German expressions for skipping responsibilities(culture, culture, relation, Non-English European, German)": [
+        {
+            "path1": "BlueSky → Relaxation → BeachRelaxation",
+            "path2": "SleepingStudent → Relaxation → ParkReading",
+            "hop_quality_path1": {
+                "BlueSky → Relaxation": [
+                    0.8,
+                    0.7,
+                    1
+                ],
+                "Relaxation → BeachRelaxation": [
+                    0.7,
+                    0.6,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "SleepingStudent → Relaxation": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "Relaxation → ParkReading": [
+                    0.7,
+                    0.6,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on the theme of relaxation, which is a reasonable but less precise connection compared to the reference answer's focus on skipping responsibilities. The hops are logically sound but lack the specificity and depth of the intended relation."
+        },
+        {
+            "path1": "BeachRelaxation → Relaxation → BlueSky",
+            "path2": "EmptyClassroom → Education → GroupStudents",
+            "hop_quality_path1": {
+                "BeachRelaxation → Relaxation": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "Relaxation → BlueSky": [
+                    0.8,
+                    0.7,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "EmptyClassroom → Education": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "Education → GroupStudents": [
+                    0.7,
+                    0.6,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output contrasts relaxation and education, which is a valid but less precise connection compared to the reference answer's focus on skipping responsibilities. The hops are logically sound but lack the specificity and depth of the intended relation."
+        },
+        {
+            "path1": "SleepingStudent → Education → EmptyClassroom",
+            "path2": "BlueSky → Outdoors → ClassroomView",
+            "hop_quality_path1": {
+                "SleepingStudent → Education": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "Education → EmptyClassroom": [
+                    0.7,
+                    0.6,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "BlueSky → Outdoors": [
+                    0.8,
+                    0.7,
+                    1
+                ],
+                "Outdoors → ClassroomView": [
+                    0.7,
+                    0.6,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on education and the outdoors, which is a reasonable but less precise connection compared to the reference answer's focus on skipping responsibilities. The hops are logically sound but lack the specificity and depth of the intended relation."
+        },
+        {
+            "path1": "EmptyClassroom → Rest → SleepingStudent",
+            "path2": "BeachRelaxation → Relaxation → ParkReading",
+            "hop_quality_path1": {
+                "EmptyClassroom → Rest": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "Rest → SleepingStudent": [
+                    0.8,
+                    0.7,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "BeachRelaxation → Relaxation": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "Relaxation → ParkReading": [
+                    0.8,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on rest and relaxation, which is a reasonable but less precise connection compared to the reference answer's focus on skipping responsibilities. The hops are logically sound but lack the specificity and depth of the intended relation."
+        }
+    ],
+    "German expressions for being oblivious(culture, culture, relation, Non-English European, German)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the intended relation of German expressions for being oblivious. The provided images and explanations focus on loss and sight, which is unrelated to the reference answer. Therefore, no feasible paths are generated, and the scores are low."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the intended relation of German expressions for being oblivious. The provided images and explanations focus on missing and questioning, which is unrelated to the reference answer. Therefore, no feasible paths are generated, and the scores are low."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the intended relation of German expressions for being oblivious. The provided images and explanations focus on blindness and questioning, which is unrelated to the reference answer. Therefore, no feasible paths are generated, and the scores are low."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the intended relation of German expressions for being oblivious. The provided images and explanations focus on missing information or identity, which is unrelated to the reference answer. Therefore, no feasible paths are generated, and the scores are low."
+        }
+    ],
+    "Challenge of Knowledge and Discovery(myth, myth, mutual elements, Non-English European, English)": [
+        {
+            "path1": "Is(Sphinx, Challenge) and Is(QuestionMark, Challenge) Sphinx → Challenge and QuestionMark → Challenge",
+            "path2": "Is(Labyrinth, Challenge) and Is(LightBulb, Challenge) Labyrinth → Challenge and LightBulb → Challenge",
+            "hop_quality_path1": {
+                "Sphinx → Challenge": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "QuestionMark → Challenge": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Labyrinth → Challenge": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "LightBulb → Challenge": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output captures the theme of puzzles and problem-solving but misses the specific challenge of knowledge and discovery. The paths are logically sound but less precise in connecting the elements to the intended relation."
+        },
+        {
+            "path1": "Is(Sphinx, Challenge) and Is(QuestionMark, Challenge) Sphinx → Challenge and QuestionMark → Challenge",
+            "path2": "Is(Labyrinth, Challenge) and Is(LightBulb, Challenge) Labyrinth → Challenge and LightBulb → Challenge",
+            "hop_quality_path1": {
+                "Sphinx → Challenge": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "QuestionMark → Challenge": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Labyrinth → Challenge": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "LightBulb → Challenge": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on discovery and illumination but does not fully capture the challenge of knowledge and discovery. The paths are logically sound but less precise in connecting the elements to the intended relation."
+        },
+        {
+            "path1": "Is(Labyrinth, Challenge) and Is(LightBulb, Challenge) Labyrinth → Challenge and LightBulb → Challenge",
+            "path2": "Is(Sphinx, Challenge) and Is(QuestionMark, Challenge) Sphinx → Challenge and QuestionMark → Challenge",
+            "hop_quality_path1": {
+                "Labyrinth → Challenge": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "LightBulb → Challenge": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Sphinx → Challenge": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "QuestionMark → Challenge": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output emphasizes the contrast between ancient and modern elements but misses the challenge of knowledge and discovery. The paths are logically sound but less precise in connecting the elements to the intended relation."
+        },
+        {
+            "path1": "Is(Labyrinth, Challenge) and Is(LightBulb, Challenge) Labyrinth → Challenge and LightBulb → Challenge",
+            "path2": "Is(Sphinx, Challenge) and Is(QuestionMark, Challenge) Sphinx → Challenge and QuestionMark → Challenge",
+            "hop_quality_path1": {
+                "Labyrinth → Challenge": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "LightBulb → Challenge": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Sphinx → Challenge": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "QuestionMark → Challenge": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on puzzles and solutions but does not fully capture the challenge of knowledge and discovery. The paths are logically sound but less precise in connecting the elements to the intended relation."
+        }
+    ],
+    "Mountain ranges and their associated lakes that enhance the natural beauty of the landscape(location, location, relation, NA, English)": [
+        {
+            "path1": "MountainRange(SierraNevada, AssociatedLake) and AssociatedLake(SierraNevada, LakeTahoe)\nSierraNevada → MountainRange → AssociatedLake → LakeTahoe",
+            "path2": "MountainRange(RockyMountains, AssociatedLake) and AssociatedLake(RockyMountains, LakeLouise)\nRockyMountains → MountainRange → AssociatedLake → LakeLouise",
+            "hop_quality_path1": {
+                "SierraNevada → MountainRange": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "MountainRange → AssociatedLake": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "AssociatedLake → LakeTahoe": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "RockyMountains → MountainRange": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "MountainRange → AssociatedLake": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "AssociatedLake → LakeLouise": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output significantly deviates from the intended relationship, focusing on a beach rather than a lake associated with the Rocky Mountains. This results in low scores for both paths, as the reasoning does not align with the reference answer."
+        },
+        {
+            "path1": "MountainRange(SierraNevada, AssociatedLake) and AssociatedLake(SierraNevada, LakeTahoe)\nSierraNevada → MountainRange → AssociatedLake → LakeTahoe",
+            "path2": "MountainRange(RockyMountains, AssociatedLake) and AssociatedLake(RockyMountains, LakeLouise)\nRockyMountains → MountainRange → AssociatedLake → LakeLouise",
+            "hop_quality_path1": {
+                "SierraNevada → MountainRange": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "MountainRange → AssociatedLake": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "AssociatedLake → LakeTahoe": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "RockyMountains → MountainRange": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "MountainRange → AssociatedLake": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "AssociatedLake → LakeLouise": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output does not align with the reference answer, as it introduces a forest and waterfall instead of focusing on the Rocky Mountains. This results in low scores for both paths, as the reasoning is irrelevant to the intended relationship."
+        },
+        {
+            "path1": "MountainRange(RockyMountains, AssociatedLake) and AssociatedLake(RockyMountains, LakeLouise)\nRockyMountains → MountainRange → AssociatedLake → LakeLouise",
+            "path2": "MountainRange(SierraNevada, AssociatedLake) and AssociatedLake(SierraNevada, LakeTahoe)\nSierraNevada → MountainRange → AssociatedLake → LakeTahoe",
+            "hop_quality_path1": {
+                "RockyMountains → MountainRange": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "MountainRange → AssociatedLake": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "AssociatedLake → LakeLouise": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "SierraNevada → MountainRange": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "MountainRange → AssociatedLake": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "AssociatedLake → LakeTahoe": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output introduces a valley and river instead of focusing on Lake Tahoe, which significantly deviates from the reference answer. This results in low scores for both paths, as the reasoning is not aligned with the intended relationship."
+        },
+        {
+            "path1": "MountainRange(RockyMountains, AssociatedLake) and AssociatedLake(RockyMountains, LakeLouise)\nRockyMountains → MountainRange → AssociatedLake → LakeLouise",
+            "path2": "MountainRange(SierraNevada, AssociatedLake) and AssociatedLake(SierraNevada, LakeTahoe)\nSierraNevada → MountainRange → AssociatedLake → LakeTahoe",
+            "hop_quality_path1": {
+                "RockyMountains → MountainRange": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "MountainRange → AssociatedLake": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "AssociatedLake → LakeLouise": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "SierraNevada → MountainRange": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "MountainRange → AssociatedLake": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "AssociatedLake → LakeTahoe": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output introduces a waterfall instead of focusing on the Sierra Nevada mountain range, which significantly deviates from the reference answer. This results in low scores for both paths, as the reasoning is not aligned with the intended relationship."
+        }
+    ],
+    "German expressions for deceptive storytelling(culture, culture, relation, Non-English European, German)": [
+        {
+            "path1": "Is(ManInSuit, Restrained) and Is(GroupAroundCampfire, Restrained) \nManInSuit → Restrained and GroupAroundCampfire → Restrained",
+            "path2": "Is(Magician, Restrained) and Is(ManWithRabbit, Restrained) \nMagician → Restrained and ManWithRabbit → Restrained",
+            "hop_quality_path1": {
+                "ManInSuit → Restrained": [
+                    0.85,
+                    0.9,
+                    1
+                ],
+                "GroupAroundCampfire → Restrained": [
+                    0.3,
+                    0.4,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "Magician → Restrained": [
+                    0.4,
+                    0.5,
+                    0
+                ],
+                "ManWithRabbit → Restrained": [
+                    0.6,
+                    0.7,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of restraint, which is partially relevant but deviates from the intended deceptive storytelling theme. The first path shows higher scores for the man in the suit being restrained, while the group around the campfire receives lower scores as their restraint is not clearly depicted. The second path shows moderate scores for the magician and the man with the rabbit, as the concept of restraint is less directly applicable to them."
+        },
+        {
+            "path1": "Is(GroupAroundCampfire, Communication) and Is(ManBound, Communication) \nGroupAroundCampfire → Communication and ManBound → Communication",
+            "path2": "Is(WomanSurprised, Communication) and Is(PersonWithQuestionMark, Communication) \nWomanSurprised → Communication and PersonWithQuestionMark → Communication",
+            "hop_quality_path1": {
+                "GroupAroundCampfire → Communication": [
+                    0.8,
+                    0.85,
+                    1
+                ],
+                "ManBound → Communication": [
+                    0.6,
+                    0.7,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "WomanSurprised → Communication": [
+                    0.7,
+                    0.75,
+                    1
+                ],
+                "PersonWithQuestionMark → Communication": [
+                    0.9,
+                    0.95,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of communication, which is partially relevant but deviates from the intended deceptive storytelling theme. The first path shows high scores for the group around the campfire, while the man bound receives lower scores as his communication is restricted rather than actively communicated. The second path shows high scores for the woman surprised and the person with the question mark, as both clearly relate to communication."
+        },
+        {
+            "path1": "Is(Magician, Surprise) and Is(WomanSurprised, Surprise) \nMagician → Surprise and WomanSurprised → Surprise",
+            "path2": "Is(ManTiedUp, Surprise) and Is(WomanWithFlowers, Surprise) \nManTiedUp → Surprise and WomanWithFlowers → Surprise",
+            "hop_quality_path1": {
+                "Magician → Surprise": [
+                    0.9,
+                    0.95,
+                    1
+                ],
+                "WomanSurprised → Surprise": [
+                    0.95,
+                    0.98,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "ManTiedUp → Surprise": [
+                    0.7,
+                    0.75,
+                    1
+                ],
+                "WomanWithFlowers → Surprise": [
+                    0.8,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of surprise, which is partially relevant but deviates from the intended deceptive storytelling theme. The first path shows high scores for the magician and the woman surprised, as both clearly depict surprise. The second path shows moderate to high scores for the man tied up and the woman with flowers, as their surprise is less directly applicable but still somewhat relevant."
+        },
+        {
+            "path1": "Is(WomanSurprised, Surprise) and Is(Magician, Magic) \nWomanSurprised → Surprise and Magician → Magic",
+            "path2": "Is(GroupAroundCampfire, Magic) and Is(WomanWithWine, Magic) \nGroupAroundCampfire → Magic and WomanWithWine → Magic",
+            "hop_quality_path1": {
+                "WomanSurprised → Surprise": [
+                    0.95,
+                    0.98,
+                    1
+                ],
+                "Magician → Magic": [
+                    0.9,
+                    0.95,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "GroupAroundCampfire → Magic": [
+                    0.5,
+                    0.6,
+                    0
+                ],
+                "WomanWithWine → Magic": [
+                    0.6,
+                    0.7,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the themes of surprise and magic, which are partially relevant but deviate from the intended deceptive storytelling theme. The first path shows high scores for the woman surprised and the magician, as both clearly depict surprise and magic. The second path shows lower scores for the group around the campfire and the woman with wine, as their connection to magic is less direct."
+        }
+    ],
+    "Mythical Creature Components(myth, myth, mutual elements, East Asia, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output significantly deviates from the intended relation of 'Mythical Creature Components,' focusing instead on the theme of predators. This results in an incorrect association, making it impossible to standardize a meaningful path."
+        },
+        {
+            "path1": "LionHead → HeadOfMythicalCreature and Serpent → HeadOfMythicalCreature",
+            "path2": "Dragon → MythicalCreature and Phoenix → MythicalCreature",
+            "hop_quality_path1": {
+                "LionHead → HeadOfMythicalCreature": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Serpent → HeadOfMythicalCreature": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Dragon → MythicalCreature": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "Phoenix → MythicalCreature": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, correctly identifying the relation as 'Mythical creatures.' The paths and hop quality scores are high, demonstrating logical soundness, precision, and deep domain knowledge."
+        },
+        {
+            "path1": "Dragon → MythicalCreature and Phoenix → MythicalCreature",
+            "path2": "LionHead → HeadOfMythicalCreature and Griffin → HeadOfMythicalCreature",
+            "hop_quality_path1": {
+                "Dragon → MythicalCreature": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "Phoenix → MythicalCreature": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "LionHead → HeadOfMythicalCreature": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Griffin → HeadOfMythicalCreature": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the relation as 'Mythical creatures,' but the choice of a griffin for Image 4 slightly deviates from the reference answer's serpent. The hop quality scores remain high, reflecting logical soundness and domain knowledge, though the precision is slightly lower for the second path."
+        },
+        {
+            "path1": "Dragon → MythicalCreature and Phoenix → MythicalCreature",
+            "path2": "Serpent → HeadOfMythicalCreature and Scorpion → HeadOfMythicalCreature",
+            "hop_quality_path1": {
+                "Dragon → MythicalCreature": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "Phoenix → MythicalCreature": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Serpent → HeadOfMythicalCreature": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Scorpion → HeadOfMythicalCreature": [
+                    0.7,
+                    0.65,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the relation as 'Mythical creatures,' but the choice of a scorpion for Image 4 deviates from the reference answer's lion's head. The first path maintains high hop quality scores, while the second path shows lower precision due to the less accurate association."
+        }
+    ],
+    "Cultural symbols representing strength and protection(location, myth, relation, NA, English)": [
+        {
+            "path1": "GreatWall → CulturalSymbol → Armor",
+            "path2": "Dragon → CulturalSymbol → LionDance",
+            "hop_quality_path1": {
+                "GreatWall → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → Armor": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Dragon → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → LionDance": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, maintaining high hop quality scores for both paths. The associations are logical, precise, and demonstrate deep domain knowledge of Chinese cultural symbols."
+        },
+        {
+            "path1": "GreatWall → CulturalSymbol → Armor",
+            "path2": "Dragon → CulturalSymbol → LionDance",
+            "hop_quality_path1": {
+                "GreatWall → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → Armor": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Dragon → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → LionDance": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, maintaining high hop quality scores for both paths. The associations are logical, precise, and demonstrate deep domain knowledge of Chinese cultural symbols."
+        },
+        {
+            "path1": "Dragon → CulturalSymbol → LionDance",
+            "path2": "GreatWall → CulturalSymbol → Armor",
+            "hop_quality_path1": {
+                "Dragon → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → LionDance": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "GreatWall → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → Armor": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, maintaining high hop quality scores for both paths. The associations are logical, precise, and demonstrate deep domain knowledge of Chinese cultural symbols."
+        },
+        {
+            "path1": "Dragon → CulturalSymbol → LionDance",
+            "path2": "GreatWall → CulturalSymbol → Armor",
+            "hop_quality_path1": {
+                "Dragon → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → LionDance": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "GreatWall → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → Armor": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, maintaining high hop quality scores for both paths. The associations are logical, precise, and demonstrate deep domain knowledge of Chinese cultural symbols."
+        }
+    ],
+    "Ancient Russian poets(culture, culture, metaphor, Non-English European, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer's theme of ancient Russian poets. Instead, it focuses on nostalgia and coziness, which is irrelevant to the intended relationship. Therefore, the paths are empty, and the hop quality scores are not applicable."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output deviates from the reference answer's theme of ancient Russian poets, instead focusing on nature and human interaction. This is unrelated to the intended relationship, so the paths are empty, and the hop quality scores are not applicable."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not address the reference answer's theme of ancient Russian poets. Instead, it emphasizes warmth and comfort, which is irrelevant to the intended relationship. Thus, the paths are empty, and the hop quality scores are not applicable."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer's theme of ancient Russian poets. Instead, it focuses on warmth and connection, which is unrelated to the intended relationship. Therefore, the paths are empty, and the hop quality scores are not applicable."
+        }
+    ],
+    "Customs in Northern Shaanxi, China(food, culture, relation, East Asia, English)": [
+        {
+            "path1": "ClayOven → Cooking → Eating",
+            "path2": "Mask → CulturalElement → Eating",
+            "hop_quality_path1": {
+                "ClayOven → Cooking": [
+                    0.75,
+                    0.65,
+                    1
+                ],
+                "Cooking → Eating": [
+                    0.8,
+                    0.7,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Mask → CulturalElement": [
+                    0.4,
+                    0.3,
+                    0
+                ],
+                "CulturalElement → Eating": [
+                    0.35,
+                    0.25,
+                    0
+                ]
+            },
+            "explanation": "The first path shows reasonable and precise connections between the clay oven, cooking, and eating, reflecting a logical culinary process. However, the second path is less coherent, as the introduction of a mask as a cultural element and its connection to eating lacks clarity and relevance to the context of Northern Shaanxi customs."
+        },
+        {
+            "path1": "YangrouPaomo → Food → Celebration",
+            "path2": "LanternFestival → Celebration → Fireworks",
+            "hop_quality_path1": {
+                "YangrouPaomo → Food": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "Food → Celebration": [
+                    0.7,
+                    0.65,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "LanternFestival → Celebration": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Celebration → Fireworks": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "explanation": "Both paths demonstrate logical and precise connections, with the first path linking food to celebration and the second path connecting the lantern festival to fireworks. The MLLM's interpretation aligns well with the theme of celebration, though it slightly deviates from the reference answer's focus on customs in Northern Shaanxi."
+        },
+        {
+            "path1": "QinOpera → Mask → ClayOven",
+            "path2": "LanternFestival → Mask → ClayOven",
+            "hop_quality_path1": {
+                "QinOpera → Mask": [
+                    0.3,
+                    0.2,
+                    0
+                ],
+                "Mask → ClayOven": [
+                    0.25,
+                    0.15,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "LanternFestival → Mask": [
+                    0.35,
+                    0.25,
+                    0
+                ],
+                "Mask → ClayOven": [
+                    0.2,
+                    0.1,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's output is largely irrelevant to the reference answer, as the introduction of masks and their connection to the clay oven lacks logical coherence and cultural relevance. The paths demonstrate low scores in reasonable, precise, and knowledgeable aspects."
+        },
+        {
+            "path1": "LanternFestival → CulturalTradition → Meal",
+            "path2": "QinOpera → CulturalTradition → Meal",
+            "hop_quality_path1": {
+                "LanternFestival → CulturalTradition": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalTradition → Meal": [
+                    0.7,
+                    0.65,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "QinOpera → CulturalTradition": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "CulturalTradition → Meal": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the theme of cultural tradition, connecting the lantern festival and Qin Opera to shared meals. The paths are reasonable and precise, though they slightly deviate from the reference answer's focus on specific customs in Northern Shaanxi."
+        }
+    ],
+    "The storyline of Les Miserables(stuff, stuff, relation, Non-English European, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer, as it fails to recognize the thematic connection to Les Miserables. The proposed relation and explanation are irrelevant to the storyline, resulting in empty paths and low scores."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not capture the thematic connection to Les Miserables. The proposed relation and explanation focus on law enforcement and childhood, which are unrelated to the reference answer, resulting in empty paths and low scores."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer, as it fails to recognize the thematic connection to Les Miserables. The proposed relation and explanation focus on objects of play or use, which are irrelevant to the storyline, resulting in empty paths and low scores."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not capture the thematic connection to Les Miserables. The proposed relation and explanation focus on possession, which is unrelated to the reference answer, resulting in empty paths and low scores."
+        }
+    ],
+    "Symbols of Chaos and Order(myth, myth, relation, Non-English European, English)": [
+        {
+            "path1": "Storm → NaturalPower → HumanTool → Hammer",
+            "path2": "Wave → NaturalPower → HumanTool → Surfboard",
+            "hop_quality_path1": {
+                "Storm → NaturalPower": [
+                    0.8,
+                    0.7,
+                    1
+                ],
+                "NaturalPower → HumanTool": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "HumanTool → Hammer": [
+                    0.7,
+                    0.6,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Wave → NaturalPower": [
+                    0.8,
+                    0.7,
+                    1
+                ],
+                "NaturalPower → HumanTool": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "HumanTool → Surfboard": [
+                    0.7,
+                    0.6,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on the theme of natural power and human tools, which is reasonable but deviates from the intended chaos and order symbolism. The hops are logically sound but lack precision and depth in connecting to the reference theme."
+        },
+        {
+            "path1": "Hammer → RedColor → Storm",
+            "path2": "Lighthouse → RedAndWhiteColor → Pole",
+            "hop_quality_path1": {
+                "Hammer → RedColor": [
+                    0.3,
+                    0.2,
+                    0
+                ],
+                "RedColor → Storm": [
+                    0.2,
+                    0.1,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "Lighthouse → RedAndWhiteColor": [
+                    0.4,
+                    0.3,
+                    0
+                ],
+                "RedAndWhiteColor → Pole": [
+                    0.3,
+                    0.2,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's response is irrelevant to the intended chaos and order theme, focusing instead on color connections. The hops are not logically sound, precise, or knowledgeable regarding the reference theme."
+        },
+        {
+            "path1": "Wave → NaturalStructure → ManMadeStructure → Lighthouse",
+            "path2": "Storm → NaturalStructure → ManMadeStructure → Tower",
+            "hop_quality_path1": {
+                "Wave → NaturalStructure": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "NaturalStructure → ManMadeStructure": [
+                    0.5,
+                    0.4,
+                    1
+                ],
+                "ManMadeStructure → Lighthouse": [
+                    0.6,
+                    0.5,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Storm → NaturalStructure": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "NaturalStructure → ManMadeStructure": [
+                    0.5,
+                    0.4,
+                    1
+                ],
+                "ManMadeStructure → Tower": [
+                    0.6,
+                    0.5,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's response emphasizes the contrast between natural and man-made structures, which is reasonable but diverges from the intended chaos and order theme. The hops are logically sound but lack precision and depth in connecting to the reference theme."
+        },
+        {
+            "path1": "Lighthouse → NaturePower → HumanTool → Hammer",
+            "path2": "Wave → NaturePower → HumanTool → Mallet",
+            "hop_quality_path1": {
+                "Lighthouse → NaturePower": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "NaturePower → HumanTool": [
+                    0.5,
+                    0.4,
+                    1
+                ],
+                "HumanTool → Hammer": [
+                    0.6,
+                    0.5,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Wave → NaturePower": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "NaturePower → HumanTool": [
+                    0.5,
+                    0.4,
+                    1
+                ],
+                "HumanTool → Mallet": [
+                    0.6,
+                    0.5,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's response focuses on the theme of nature's power and human tools, which is reasonable but deviates from the intended chaos and order symbolism. The hops are logically sound but lack precision and depth in connecting to the reference theme."
+        }
+    ],
+    "Cultural Artifacts Representing National Identity(culture, culture, mutual elements, Non-English European, English)": [
+        {
+            "path1": "Is(ChateaudeFrance, Wine) and Is(CuckooClock, Time) → WineAndTime",
+            "path2": "Is(Paella, Dish) and Is(RiojaWine, Wine) → WineAndTime",
+            "hop_quality_path1": {
+                "Is(ChateaudeFrance, Wine) → WineAndTime": [
+                    0.85,
+                    0.75,
+                    1
+                ],
+                "Is(CuckooClock, Time) → WineAndTime": [
+                    0.65,
+                    0.6,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Is(Paella, Dish) → WineAndTime": [
+                    0.55,
+                    0.5,
+                    1
+                ],
+                "Is(RiojaWine, Wine) → WineAndTime": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of wine and time, which is a creative interpretation but deviates from the cultural artifact theme in the reference answer. The first path shows reasonable scores for the wine aspect but lower scores for the time aspect. The second path has lower scores for the dish aspect but maintains high scores for the wine aspect."
+        },
+        {
+            "path1": "Is(ChateaudYquem, Wine) and Is(CuckooClock, Time) → CastleAndYear2001",
+            "path2": "Is(Beret, FrenchCulture) and Is(WoodenBarrel, WineProduction) → CastleAndYear2001",
+            "hop_quality_path1": {
+                "Is(ChateaudYquem, Wine) → CastleAndYear2001": [
+                    0.7,
+                    0.65,
+                    1
+                ],
+                "Is(CuckooClock, Time) → CastleAndYear2001": [
+                    0.5,
+                    0.45,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Is(Beret, FrenchCulture) → CastleAndYear2001": [
+                    0.6,
+                    0.55,
+                    1
+                ],
+                "Is(WoodenBarrel, WineProduction) → CastleAndYear2001": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output introduces a theme of castle and year 2001, which is not aligned with the cultural artifact theme in the reference answer. The first path shows moderate scores for the wine aspect but lower scores for the time aspect. The second path has moderate scores for the French culture aspect and higher scores for the wine production aspect."
+        },
+        {
+            "path1": "Is(Paella, FrenchCuisine) and Is(Beret, FrenchCulture) → FrenchCuisine",
+            "path2": "Is(ChateaudeFrance, Wine) and Is(FrenchOnionSoup, FrenchCuisine) → FrenchCuisine",
+            "hop_quality_path1": {
+                "Is(Paella, FrenchCuisine) → FrenchCuisine": [
+                    0.55,
+                    0.5,
+                    1
+                ],
+                "Is(Beret, FrenchCulture) → FrenchCuisine": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Is(ChateaudeFrance, Wine) → FrenchCuisine": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "Is(FrenchOnionSoup, FrenchCuisine) → FrenchCuisine": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of French cuisine, which is a different interpretation from the cultural artifact theme in the reference answer. The first path shows lower scores for the paella aspect but higher scores for the beret aspect. The second path maintains high scores for both the wine and French onion soup aspects."
+        },
+        {
+            "path1": "Is(Beret, FrenchCulture) and Is(Paella, FrenchCuisine) → FoodAndCulture",
+            "path2": "Is(CuckooClock, GermanCulture) and Is(Sushi, JapaneseCuisine) → FoodAndCulture",
+            "hop_quality_path1": {
+                "Is(Beret, FrenchCulture) → FoodAndCulture": [
+                    0.75,
+                    0.7,
+                    1
+                ],
+                "Is(Paella, FrenchCuisine) → FoodAndCulture": [
+                    0.6,
+                    0.55,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Is(CuckooClock, GermanCulture) → FoodAndCulture": [
+                    0.65,
+                    0.6,
+                    1
+                ],
+                "Is(Sushi, JapaneseCuisine) → FoodAndCulture": [
+                    0.7,
+                    0.65,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of food and culture, which is a creative interpretation but deviates from the cultural artifact theme in the reference answer. The first path shows higher scores for the beret aspect but lower scores for the paella aspect. The second path maintains moderate scores for both the cuckoo clock and sushi aspects."
+        }
+    ],
+    "Chinese mythological Figures and Their Elemental Associations(myth, myth, mutual elements, East Asia, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer's focus on Chinese mythological figures and their elemental associations. Instead, it emphasizes cultural heritage and modern adaptation, which significantly deviates from the intended theme, resulting in low scores."
+        },
+        {
+            "path1": "YaoShun → MythologicalFigure → GreatFlood",
+            "path2": "DragonKing → MythologicalFigure → EightImmortals",
+            "hop_quality_path1": {
+                "YaoShun → MythologicalFigure": [
+                    0.85,
+                    0.9,
+                    1
+                ],
+                "MythologicalFigure → GreatFlood": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "DragonKing → MythologicalFigure": [
+                    0.88,
+                    0.87,
+                    1
+                ],
+                "MythologicalFigure → EightImmortals": [
+                    0.87,
+                    0.86,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output partially captures the essence of the reference answer by focusing on Chinese mythology. However, it misrepresents the relationship between the Dragon King and the Eight Immortals, and the creation of Image 4 does not accurately mirror the intended thematic connection."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output fails to address the reference answer's focus on Chinese mythological figures and their elemental associations. Instead, it emphasizes general elements of Chinese culture, resulting in a significant deviation from the intended theme and low scores."
+        },
+        {
+            "path1": "EightImmortals → MythologicalFigure → DragonKing",
+            "path2": "GreatFlood → MythologicalFigure → YaoShun",
+            "hop_quality_path1": {
+                "EightImmortals → MythologicalFigure": [
+                    0.9,
+                    0.88,
+                    1
+                ],
+                "MythologicalFigure → DragonKing": [
+                    0.88,
+                    0.89,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "GreatFlood → MythologicalFigure": [
+                    0.87,
+                    0.86,
+                    1
+                ],
+                "MythologicalFigure → YaoShun": [
+                    0.85,
+                    0.87,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output partially aligns with the reference answer by focusing on Chinese mythology and the interactions between mythical creatures and human societies. However, it misrepresents the relationship between the Great Flood and Yao Shun, and the creation of Image 4 does not accurately mirror the intended thematic connection."
+        }
+    ],
+    "Spanish expressions for being distracted or absent-minded(culture, culture, relation, Non-English European, Spanish)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not address the intended relation of Spanish expressions for being distracted or absent-minded. Instead, it focuses on a theme of looking at screens or windows, which is irrelevant to the reference answer. Therefore, the paths are empty and the hop quality scores are not applicable."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output significantly deviates from the intended relation of Spanish expressions for being distracted or absent-minded. It introduces a theme of technology and social interaction, which is unrelated to the reference answer. Thus, the paths are empty and the hop quality scores are not applicable."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the intended relation of Spanish expressions for being distracted or absent-minded. Instead, it focuses on moments of connection and shared experiences, which is irrelevant to the reference answer. Therefore, the paths are empty and the hop quality scores are not applicable."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not address the intended relation of Spanish expressions for being distracted or absent-minded. It introduces a theme of contemplation and waiting, which is unrelated to the reference answer. Thus, the paths are empty and the hop quality scores are not applicable."
+        }
+    ],
+    "French ancient poets(culture, culture, metaphor, Non-English European, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output is irrelevant to the reference answer, focusing on contrast rather than the intended theme of French ancient poets. Therefore, no valid paths are provided, and the hop quality scores are low."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output diverges from the reference answer, emphasizing nature and beauty instead of the theme of French ancient poets. As a result, no valid paths are provided, and the hop quality scores are low."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output is incorrect, focusing on contrast rather than the intended theme of French ancient poets. No valid paths are provided, and the hop quality scores are low."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output is irrelevant, emphasizing fantasy instead of the intended theme of French ancient poets. Therefore, no valid paths are provided, and the hop quality scores are low."
+        }
+    ],
+    "Contrasting environments that highlight the coexistence of harsh conditions and life-giving locations(location, location, relation, NA, English)": [
+        {
+            "path1": "SaharaDesert → HarshEnvironment → LifeSustainingSpot → Oasis",
+            "path2": "AtacamaDesert → HarshEnvironment → LifeSustainingSpot → LagoonOasis",
+            "hop_quality_path1": {
+                "SaharaDesert → HarshEnvironment": [
+                    0.95,
+                    0.92,
+                    1
+                ],
+                "HarshEnvironment → LifeSustainingSpot": [
+                    0.93,
+                    0.91,
+                    1
+                ],
+                "LifeSustainingSpot → Oasis": [
+                    0.94,
+                    0.93,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "AtacamaDesert → HarshEnvironment": [
+                    0.96,
+                    0.94,
+                    1
+                ],
+                "HarshEnvironment → LifeSustainingSpot": [
+                    0.93,
+                    0.91,
+                    1
+                ],
+                "LifeSustainingSpot → LagoonOasis": [
+                    0.95,
+                    0.93,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output demonstrates high hop quality scores across both paths, indicating logical soundness, precision, and deep domain knowledge. The paths effectively capture the contrast between harsh desert environments and life-sustaining oases."
+        },
+        {
+            "path1": "SaharaDesert → HarshEnvironment → LifeSustainingSpot → Oasis",
+            "path2": "AtacamaDesert → HarshEnvironment → LifeSustainingSpot → LagoonOasis",
+            "hop_quality_path1": {
+                "SaharaDesert → HarshEnvironment": [
+                    0.95,
+                    0.92,
+                    1
+                ],
+                "HarshEnvironment → LifeSustainingSpot": [
+                    0.93,
+                    0.91,
+                    1
+                ],
+                "LifeSustainingSpot → Oasis": [
+                    0.94,
+                    0.93,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "AtacamaDesert → HarshEnvironment": [
+                    0.96,
+                    0.94,
+                    1
+                ],
+                "HarshEnvironment → LifeSustainingSpot": [
+                    0.93,
+                    0.91,
+                    1
+                ],
+                "LifeSustainingSpot → LagoonOasis": [
+                    0.95,
+                    0.93,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output again shows high hop quality scores, maintaining logical soundness, precision, and deep domain knowledge. The paths effectively illustrate the coexistence of harsh conditions and life-giving locations in both the Sahara and Atacama Deserts."
+        },
+        {
+            "path1": "AtacamaDesert → HarshEnvironment → LifeSustainingSpot → LagoonOasis",
+            "path2": "SaharaDesert → HarshEnvironment → LifeSustainingSpot → Oasis",
+            "hop_quality_path1": {
+                "AtacamaDesert → HarshEnvironment": [
+                    0.96,
+                    0.94,
+                    1
+                ],
+                "HarshEnvironment → LifeSustainingSpot": [
+                    0.93,
+                    0.91,
+                    1
+                ],
+                "LifeSustainingSpot → LagoonOasis": [
+                    0.95,
+                    0.93,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "SaharaDesert → HarshEnvironment": [
+                    0.95,
+                    0.92,
+                    1
+                ],
+                "HarshEnvironment → LifeSustainingSpot": [
+                    0.93,
+                    0.91,
+                    1
+                ],
+                "LifeSustainingSpot → Oasis": [
+                    0.94,
+                    0.93,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output continues to show high hop quality scores, indicating logical soundness, precision, and deep domain knowledge. The paths effectively capture the contrast between harsh desert environments and life-sustaining oases in both the Atacama and Sahara Deserts."
+        },
+        {
+            "path1": "AtacamaDesert → HarshEnvironment → LifeSustainingSpot → LagoonOasis",
+            "path2": "SaharaDesert → HarshEnvironment → LifeSustainingSpot → Oasis",
+            "hop_quality_path1": {
+                "AtacamaDesert → HarshEnvironment": [
+                    0.96,
+                    0.94,
+                    1
+                ],
+                "HarshEnvironment → LifeSustainingSpot": [
+                    0.93,
+                    0.91,
+                    1
+                ],
+                "LifeSustainingSpot → LagoonOasis": [
+                    0.95,
+                    0.93,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "SaharaDesert → HarshEnvironment": [
+                    0.95,
+                    0.92,
+                    1
+                ],
+                "HarshEnvironment → LifeSustainingSpot": [
+                    0.93,
+                    0.91,
+                    1
+                ],
+                "LifeSustainingSpot → Oasis": [
+                    0.94,
+                    0.93,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output maintains high hop quality scores, demonstrating logical soundness, precision, and deep domain knowledge. The paths effectively illustrate the coexistence of harsh conditions and life-giving locations in both the Atacama and Sahara Deserts."
+        }
+    ],
+    "Spanish expressions for being crazy or eccentric(culture, culture, relation, Non-English European, Spanish)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not address the intended relationship of Spanish expressions for being crazy or eccentric. Instead, it focuses on social interaction and glasses, which is irrelevant to the reference answer. Therefore, no feasible paths are provided."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not address the intended relationship of Spanish expressions for being crazy or eccentric. Instead, it focuses on social interaction, which is irrelevant to the reference answer. Therefore, no feasible paths are provided."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not address the intended relationship of Spanish expressions for being crazy or eccentric. Instead, it focuses on glasses and surprise/laughter, which is irrelevant to the reference answer. Therefore, no feasible paths are provided."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not address the intended relationship of Spanish expressions for being crazy or eccentric. Instead, it focuses on surprise, which is irrelevant to the reference answer. Therefore, no feasible paths are provided."
+        }
+    ],
+    "Exploration of the Unknown(myth, myth, mutual elements, South Asia and South-East Asia, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer's theme of 'Exploration of the Unknown'. Instead, it introduces a concept of 'Transformation' which is irrelevant to the given images and their intended relationship, resulting in empty paths and low scores."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output introduces a 'Contrast between natural and intense atmospheres' which is not related to the reference answer's theme of 'Exploration of the Unknown'. The provided paths and explanations are irrelevant, leading to empty paths and low scores."
+        },
+        {
+            "path1": "Exploration(DiverExploringShipwreck, Unknown) → Mysterious(FoggyForest, Unknown)",
+            "path2": "Exploration(YetiInMountains, Unknown) → Mysterious(IcyLandscape, Unknown)",
+            "hop_quality_path1": {
+                "Exploration(DiverExploringShipwreck, Unknown) → Mysterious(FoggyForest, Unknown)": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Exploration(YetiInMountains, Unknown) → Mysterious(IcyLandscape, Unknown)": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output closely aligns with the reference answer's theme of 'Exploration of the Unknown'. Both paths demonstrate logical soundness, specificity, and depth of domain knowledge, resulting in high scores for each hop."
+        },
+        {
+            "path1": "Exploration(DiverExploringShipwreck, Unknown) → Mysterious(FoggyForest, Unknown)",
+            "path2": "Exploration(YetiInMountains, Unknown) → Mysterious(IcyLandscape, Unknown)",
+            "hop_quality_path1": {
+                "Exploration(DiverExploringShipwreck, Unknown) → Mysterious(FoggyForest, Unknown)": [
+                    0.88,
+                    0.82,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Exploration(YetiInMountains, Unknown) → Mysterious(IcyLandscape, Unknown)": [
+                    0.92,
+                    0.87,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output effectively captures the reference answer's theme of 'Exploration of the Unknown'. The paths are logically sound, precise, and demonstrate a deep understanding of the domain, leading to high scores for each hop."
+        }
+    ],
+    "German expressions for speaking indirectly(culture, culture, relation, Non-English European, German)": [
+        {
+            "path1": "FlowerBouquet → Nature → HumanInteraction",
+            "path2": "MountainLandscape → Nature → HumanInteraction",
+            "hop_quality_path1": {
+                "FlowerBouquet → Nature": [
+                    0.2,
+                    0.15,
+                    0
+                ],
+                "Nature → HumanInteraction": [
+                    0.1,
+                    0.1,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "MountainLandscape → Nature": [
+                    0.2,
+                    0.15,
+                    0
+                ],
+                "Nature → HumanInteraction": [
+                    0.1,
+                    0.1,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation significantly deviates from the intended German expression for speaking indirectly. The paths focus on nature and human interaction, which is unrelated to the reference answer, resulting in low scores."
+        },
+        {
+            "path1": "RingFinger → Marriage → Bouquet",
+            "path2": "Sunset → Marriage → BouquetInVase",
+            "hop_quality_path1": {
+                "RingFinger → Marriage": [
+                    0.3,
+                    0.25,
+                    0
+                ],
+                "Marriage → Bouquet": [
+                    0.2,
+                    0.2,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "Sunset → Marriage": [
+                    0.2,
+                    0.15,
+                    0
+                ],
+                "Marriage → BouquetInVase": [
+                    0.2,
+                    0.2,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on the theme of marriage, which is unrelated to the intended German expression for speaking indirectly. The paths are logically inconsistent with the reference answer, resulting in low scores."
+        },
+        {
+            "path1": "MountainLandscape → Nature → HumanConnection",
+            "path2": "Bouquet → Nature → HumanConnection",
+            "hop_quality_path1": {
+                "MountainLandscape → Nature": [
+                    0.2,
+                    0.15,
+                    0
+                ],
+                "Nature → HumanConnection": [
+                    0.1,
+                    0.1,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "Bouquet → Nature": [
+                    0.2,
+                    0.15,
+                    0
+                ],
+                "Nature → HumanConnection": [
+                    0.1,
+                    0.1,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on the theme of nature and human connection, which is unrelated to the intended German expression for speaking indirectly. The paths are logically inconsistent with the reference answer, resulting in low scores."
+        },
+        {
+            "path1": "Cliff → Nature → HumanInteraction",
+            "path2": "PeaceSign → HumanInteraction → Mural",
+            "hop_quality_path1": {
+                "Cliff → Nature": [
+                    0.2,
+                    0.15,
+                    0
+                ],
+                "Nature → HumanInteraction": [
+                    0.1,
+                    0.1,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "PeaceSign → HumanInteraction": [
+                    0.2,
+                    0.15,
+                    0
+                ],
+                "HumanInteraction → Mural": [
+                    0.1,
+                    0.1,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on the theme of nature and human interaction, which is unrelated to the intended German expression for speaking indirectly. The paths are logically inconsistent with the reference answer, resulting in low scores."
+        }
+    ],
+    "European Culture During the Enlightenment(culture, culture, mutual elements, Non-English European, English)": [
+        {
+            "path1": "QuillPen → Communication and Salon → Communication",
+            "path2": "Globe → Communication and Smartphone → Communication",
+            "hop_quality_path1": {
+                "QuillPen → Communication": [
+                    0.75,
+                    0.7,
+                    1
+                ],
+                "Salon → Communication": [
+                    0.65,
+                    0.6,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Globe → Communication": [
+                    0.55,
+                    0.5,
+                    1
+                ],
+                "Smartphone → Communication": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of communication, which is a reasonable interpretation but deviates from the intended Enlightenment context. The first path shows moderate scores for connecting traditional writing tools and social gatherings to communication. The second path has higher scores for modern communication devices but lower scores for connecting the globe to communication."
+        },
+        {
+            "path1": "Salon → HistoricalAndEducational and QuillPen → HistoricalAndEducational",
+            "path2": "Telescope → HistoricalAndEducational and Typewriter → HistoricalAndEducational",
+            "hop_quality_path1": {
+                "Salon → HistoricalAndEducational": [
+                    0.7,
+                    0.65,
+                    1
+                ],
+                "QuillPen → HistoricalAndEducational": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Telescope → HistoricalAndEducational": [
+                    0.6,
+                    0.55,
+                    1
+                ],
+                "Typewriter → HistoricalAndEducational": [
+                    0.7,
+                    0.65,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output emphasizes historical and educational themes, which is a valid interpretation but again deviates from the Enlightenment focus. The first path shows moderate scores for connecting salons and writing tools to historical education. The second path has similar scores for linking telescopes and typewriters to education, though the connection is less precise."
+        },
+        {
+            "path1": "Globe → ExplorationAndDiscovery and Telescope → ExplorationAndDiscovery",
+            "path2": "QuillPen → ExplorationAndDiscovery and Book → ExplorationAndDiscovery",
+            "hop_quality_path1": {
+                "Globe → ExplorationAndDiscovery": [
+                    0.8,
+                    0.75,
+                    1
+                ],
+                "Telescope → ExplorationAndDiscovery": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "QuillPen → ExplorationAndDiscovery": [
+                    0.6,
+                    0.55,
+                    1
+                ],
+                "Book → ExplorationAndDiscovery": [
+                    0.7,
+                    0.65,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on exploration and discovery, which is a reasonable but incomplete interpretation of the Enlightenment theme. The first path shows high scores for connecting the globe and telescope to exploration. The second path has lower scores for linking writing tools and books to discovery, as the connection is less direct."
+        },
+        {
+            "path1": "Telescope → Exploration and Globe → Exploration",
+            "path2": "Salon → Exploration and Telescope → Exploration",
+            "hop_quality_path1": {
+                "Telescope → Exploration": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "Globe → Exploration": [
+                    0.8,
+                    0.75,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Salon → Exploration": [
+                    0.6,
+                    0.55,
+                    1
+                ],
+                "Telescope → Exploration": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output emphasizes exploration, which is a valid but incomplete interpretation of the Enlightenment theme. The first path shows high scores for connecting the telescope and globe to exploration. The second path has lower scores for linking salons to exploration, as the connection is less precise."
+        }
+    ],
+    "Phenomena Related to Time and Light at the Poles.(phenomenon, phenomenon, mutual elements, NA, English)": [
+        {
+            "path1": "CompassRose → Navigation → PolarNight",
+            "path2": "Sundial → Timekeeping → MidnightSun",
+            "hop_quality_path1": {
+                "CompassRose → Navigation": [
+                    0.8,
+                    0.75,
+                    1
+                ],
+                "Navigation → PolarNight": [
+                    0.7,
+                    0.65,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Sundial → Timekeeping": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "Timekeeping → MidnightSun": [
+                    0.75,
+                    0.7,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output partially captures the intended relationship by focusing on navigation and timekeeping. However, it misses the specific light phenomena at the poles, resulting in lower precision scores."
+        },
+        {
+            "path1": "CompassRose → Navigation → PolarNight",
+            "path2": "Sundial → Timekeeping → MidnightSun",
+            "hop_quality_path1": {
+                "CompassRose → Navigation": [
+                    0.6,
+                    0.55,
+                    1
+                ],
+                "Navigation → PolarNight": [
+                    0.5,
+                    0.45,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Sundial → Timekeeping": [
+                    0.65,
+                    0.6,
+                    1
+                ],
+                "Timekeeping → MidnightSun": [
+                    0.55,
+                    0.5,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output significantly deviates from the reference answer by focusing on illumination rather than the specific light phenomena at the poles, resulting in low scores for both paths."
+        },
+        {
+            "path1": "Sundial → Timekeeping → MidnightSun",
+            "path2": "CompassRose → Navigation → PolarNight",
+            "hop_quality_path1": {
+                "Sundial → Timekeeping": [
+                    0.75,
+                    0.7,
+                    1
+                ],
+                "Timekeeping → MidnightSun": [
+                    0.65,
+                    0.6,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "CompassRose → Navigation": [
+                    0.7,
+                    0.65,
+                    1
+                ],
+                "Navigation → PolarNight": [
+                    0.6,
+                    0.55,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output partially captures the intended relationship by focusing on timekeeping and navigation. However, it introduces unrelated elements like the syringe, which lowers the precision and reasonableness scores."
+        },
+        {
+            "path1": "Sundial → Timekeeping → MidnightSun",
+            "path2": "CompassRose → Navigation → PolarNight",
+            "hop_quality_path1": {
+                "Sundial → Timekeeping": [
+                    0.6,
+                    0.55,
+                    1
+                ],
+                "Timekeeping → MidnightSun": [
+                    0.5,
+                    0.45,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "CompassRose → Navigation": [
+                    0.55,
+                    0.5,
+                    1
+                ],
+                "Navigation → PolarNight": [
+                    0.45,
+                    0.4,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output significantly deviates from the reference answer by focusing on illumination and unrelated elements like the syringe, resulting in low scores for both paths."
+        }
+    ],
+    "Chile culture and its influence(culture, culture, relation, Latin American, English)": [
+        {
+            "path1": "Is(ChileanPottery, ArtisticRepresentation) and Is(PicassoPainting, ArtisticRepresentation) and ChileanPottery → ArtisticRepresentation and PicassoPainting → ArtisticRepresentation",
+            "path2": "Is(TraditionalChileanDance, ArtisticRepresentation) and Is(DirtyDancing, ArtisticRepresentation) and TraditionalChileanDance → ArtisticRepresentation and DirtyDancing → ArtisticRepresentation",
+            "hop_quality_path1": {
+                "ChileanPottery → ArtisticRepresentation": [
+                    0.35,
+                    0.25,
+                    0
+                ],
+                "PicassoPainting → ArtisticRepresentation": [
+                    0.35,
+                    0.25,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "TraditionalChileanDance → ArtisticRepresentation": [
+                    0.35,
+                    0.25,
+                    0
+                ],
+                "DirtyDancing → ArtisticRepresentation": [
+                    0.35,
+                    0.25,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation deviates significantly from the intended cultural influence relationship in the reference answer. The paths focus on a superficial artistic representation theme, resulting in low scores for each hop."
+        },
+        {
+            "path1": "Is(PicassoPainting, ArtisticExpression) and Is(ChileanPottery, ArtisticExpression) and PicassoPainting → ArtisticExpression and ChileanPottery → ArtisticExpression",
+            "path2": "Is(DirtyDancing, ArtisticExpression) and Is(TraditionalChileanDance, ArtisticExpression) and DirtyDancing → ArtisticExpression and TraditionalChileanDance → ArtisticExpression",
+            "hop_quality_path1": {
+                "PicassoPainting → ArtisticExpression": [
+                    0.35,
+                    0.25,
+                    0
+                ],
+                "ChileanPottery → ArtisticExpression": [
+                    0.35,
+                    0.25,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "DirtyDancing → ArtisticExpression": [
+                    0.35,
+                    0.25,
+                    0
+                ],
+                "TraditionalChileanDance → ArtisticExpression": [
+                    0.35,
+                    0.25,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on a general artistic expression theme, which does not align with the intended cultural influence relationship in the reference answer. This results in low scores for each hop."
+        },
+        {
+            "path1": "Is(TraditionalChileanDance, Dance) and Is(DirtyDancing, Dance) and TraditionalChileanDance → Dance and DirtyDancing → Dance",
+            "path2": "Is(ChileanPottery, Dance) and Is(PicassoPainting, Dance) and ChileanPottery → Dance and PicassoPainting → Dance",
+            "hop_quality_path1": {
+                "TraditionalChileanDance → Dance": [
+                    0.35,
+                    0.25,
+                    0
+                ],
+                "DirtyDancing → Dance": [
+                    0.35,
+                    0.25,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "ChileanPottery → Dance": [
+                    0.35,
+                    0.25,
+                    0
+                ],
+                "PicassoPainting → Dance": [
+                    0.35,
+                    0.25,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on a dance theme, which does not align with the intended cultural influence relationship in the reference answer. This results in low scores for each hop."
+        },
+        {
+            "path1": "Is(DirtyDancing, Dance) and Is(TraditionalChileanDance, Dance) and DirtyDancing → Dance and TraditionalChileanDance → Dance",
+            "path2": "Is(PicassoPainting, Dance) and Is(ChileanPottery, Dance) and PicassoPainting → Dance and ChileanPottery → Dance",
+            "hop_quality_path1": {
+                "DirtyDancing → Dance": [
+                    0.35,
+                    0.25,
+                    0
+                ],
+                "TraditionalChileanDance → Dance": [
+                    0.35,
+                    0.25,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "PicassoPainting → Dance": [
+                    0.35,
+                    0.25,
+                    0
+                ],
+                "ChileanPottery → Dance": [
+                    0.35,
+                    0.25,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on a dance theme, which does not align with the intended cultural influence relationship in the reference answer. This results in low scores for each hop."
+        }
+    ],
+    "Symbols of Fate and Defiance(myth, myth, relation, Non-English European, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output focuses on the color red as the relation, which is irrelevant to the reference answer's theme of symbols of fate and defiance. Therefore, no feasible paths are provided, and the scores are low."
+        },
+        {
+            "path1": "Fire → Destruction and Scissors → Destruction",
+            "path2": "BrokenChain → Destruction and BittenApple → Destruction",
+            "hop_quality_path1": {
+                "Fire → Destruction": [
+                    0.1,
+                    0.05,
+                    0
+                ],
+                "Scissors → Destruction": [
+                    0.1,
+                    0.05,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "BrokenChain → Destruction": [
+                    0.1,
+                    0.05,
+                    0
+                ],
+                "BittenApple → Destruction": [
+                    0.1,
+                    0.05,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on the theme of destruction, which significantly deviates from the reference answer's theme of symbols of fate and defiance. The paths provided are not logically sound or precise, resulting in low scores."
+        },
+        {
+            "path1": "Clock → Breaking and BrokenChain → Breaking",
+            "path2": "Scissors → Breaking and BrokenBlade → Breaking",
+            "hop_quality_path1": {
+                "Clock → Breaking": [
+                    0.1,
+                    0.05,
+                    0
+                ],
+                "BrokenChain → Breaking": [
+                    0.1,
+                    0.05,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "Scissors → Breaking": [
+                    0.1,
+                    0.05,
+                    0
+                ],
+                "BrokenBlade → Breaking": [
+                    0.1,
+                    0.05,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's output centers around the concept of breaking, which is unrelated to the reference answer's theme of symbols of fate and defiance. The paths are not logically sound or precise, leading to low scores."
+        },
+        {
+            "path1": "BrokenChain → Breaking and BrokenSecondHand → Breaking",
+            "path2": "Fire → Breaking and BrokenGlassWindow → Breaking",
+            "hop_quality_path1": {
+                "BrokenChain → Breaking": [
+                    0.1,
+                    0.05,
+                    0
+                ],
+                "BrokenSecondHand → Breaking": [
+                    0.1,
+                    0.05,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "Fire → Breaking": [
+                    0.1,
+                    0.05,
+                    0
+                ],
+                "BrokenGlassWindow → Breaking": [
+                    0.1,
+                    0.05,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation focuses on the theme of breaking, which is irrelevant to the reference answer's theme of symbols of fate and defiance. The paths provided are not logically sound or precise, resulting in low scores."
+        }
+    ],
+    "Ancient Architectural and Sculptural Heritage(stuff, culture, relation, Non-English European, English)": [
+        {
+            "path1": "GreekTemple → Heritage → GreekSculpture",
+            "path2": "RomanAmphitheater → Heritage → RomanSculpture",
+            "hop_quality_path1": {
+                "GreekTemple → Heritage": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Heritage → GreekSculpture": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "RomanAmphitheater → Heritage": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Heritage → RomanSculpture": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, demonstrating a clear understanding of the relationship between ancient Greek and Roman architectural and sculptural heritage. The paths are logically sound and precise, with high scores in both Reasonable and Precise categories, and demonstrate deep domain knowledge."
+        },
+        {
+            "path1": "GreekTemple → Heritage → GreekSculpture",
+            "path2": "RomanAmphitheater → Heritage → RomanSculpture",
+            "hop_quality_path1": {
+                "GreekTemple → Heritage": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Heritage → GreekSculpture": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "RomanAmphitheater → Heritage": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Heritage → RomanSculpture": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output is consistent with the reference answer, accurately capturing the relationship between ancient Greek and Roman architectural and sculptural heritage. The paths are logically sound and precise, with high scores in both Reasonable and Precise categories, and demonstrate deep domain knowledge."
+        },
+        {
+            "path1": "RomanAmphitheater → Heritage → RomanSculpture",
+            "path2": "GreekTemple → Heritage → GreekSculpture",
+            "hop_quality_path1": {
+                "RomanAmphitheater → Heritage": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Heritage → RomanSculpture": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "GreekTemple → Heritage": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Heritage → GreekSculpture": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, demonstrating a clear understanding of the relationship between ancient Roman and Greek architectural and sculptural heritage. The paths are logically sound and precise, with high scores in both Reasonable and Precise categories, and demonstrate deep domain knowledge."
+        },
+        {
+            "path1": "RomanAmphitheater → Heritage → RomanSculpture",
+            "path2": "GreekTemple → Heritage → GreekSculpture",
+            "hop_quality_path1": {
+                "RomanAmphitheater → Heritage": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Heritage → RomanSculpture": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "GreekTemple → Heritage": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "Heritage → GreekSculpture": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output is consistent with the reference answer, accurately capturing the relationship between ancient Roman and Greek architectural and sculptural heritage. The paths are logically sound and precise, with high scores in both Reasonable and Precise categories, and demonstrate deep domain knowledge."
+        }
+    ],
+    "Mythical Creatures and Their Symbolic Associations with Power and Transformation(myth, myth, mutual elements, East Asia, English)": [
+        {
+            "path1": "Is(ChineseDragon, MythicalCreature) and Is(DragonGate, MythicalSymbol) \nChineseDragon → MythicalCreature → DragonGate",
+            "path2": "Is(Fenghuang, MythicalCreature) and Is(RoyalCeremony, MythicalSymbol) \nFenghuang → MythicalCreature → RoyalCeremony",
+            "hop_quality_path1": {
+                "ChineseDragon → MythicalCreature": [
+                    0.85,
+                    0.8,
+                    1
+                ],
+                "MythicalCreature → DragonGate": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Fenghuang → MythicalCreature": [
+                    0.88,
+                    0.82,
+                    1
+                ],
+                "MythicalCreature → RoyalCeremony": [
+                    0.92,
+                    0.88,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output aligns well with the reference answer, maintaining high hop quality scores for both paths. The first path connects the Chinese dragon to the Dragon Gate through the concept of mythical creatures, while the second path links the Fenghuang to the royal ceremony, emphasizing their symbolic associations with power and transformation."
+        },
+        {
+            "path1": "Is(ChineseDragon, MythicalCreature) and Is(DragonGate, MythicalSymbol) \nChineseDragon → MythicalCreature → DragonGate",
+            "path2": "Is(Fenghuang, MythicalCreature) and Is(RoyalCeremony, MythicalSymbol) \nFenghuang → MythicalCreature → RoyalCeremony",
+            "hop_quality_path1": {
+                "ChineseDragon → MythicalCreature": [
+                    0.84,
+                    0.79,
+                    1
+                ],
+                "MythicalCreature → DragonGate": [
+                    0.89,
+                    0.84,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Fenghuang → MythicalCreature": [
+                    0.87,
+                    0.81,
+                    1
+                ],
+                "MythicalCreature → RoyalCeremony": [
+                    0.91,
+                    0.87,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output is consistent with the reference answer, showing high hop quality scores for both paths. The first path connects the Chinese dragon to the Dragon Gate through the concept of mythical creatures, while the second path links the Fenghuang to the royal ceremony, emphasizing their symbolic associations with power and transformation."
+        },
+        {
+            "path1": "Is(Fenghuang, MythicalCreature) and Is(RoyalCeremony, MythicalSymbol) \nFenghuang → MythicalCreature → RoyalCeremony",
+            "path2": "Is(ChineseDragon, MythicalCreature) and Is(DragonGate, MythicalSymbol) \nChineseDragon → MythicalCreature → DragonGate",
+            "hop_quality_path1": {
+                "Fenghuang → MythicalCreature": [
+                    0.86,
+                    0.8,
+                    1
+                ],
+                "MythicalCreature → RoyalCeremony": [
+                    0.9,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "ChineseDragon → MythicalCreature": [
+                    0.83,
+                    0.78,
+                    1
+                ],
+                "MythicalCreature → DragonGate": [
+                    0.88,
+                    0.83,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output is consistent with the reference answer, showing high hop quality scores for both paths. The first path connects the Fenghuang to the royal ceremony through the concept of mythical creatures, while the second path links the Chinese dragon to the Dragon Gate, emphasizing their symbolic associations with power and transformation."
+        },
+        {
+            "path1": "Is(Fenghuang, MythicalCreature) and Is(RoyalCeremony, MythicalSymbol) \nFenghuang → MythicalCreature → RoyalCeremony",
+            "path2": "Is(ChineseDragon, MythicalCreature) and Is(DragonGate, MythicalSymbol) \nChineseDragon → MythicalCreature → DragonGate",
+            "hop_quality_path1": {
+                "Fenghuang → MythicalCreature": [
+                    0.85,
+                    0.79,
+                    1
+                ],
+                "MythicalCreature → RoyalCeremony": [
+                    0.89,
+                    0.84,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "ChineseDragon → MythicalCreature": [
+                    0.82,
+                    0.77,
+                    1
+                ],
+                "MythicalCreature → DragonGate": [
+                    0.87,
+                    0.82,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output is consistent with the reference answer, showing high hop quality scores for both paths. The first path connects the Fenghuang to the royal ceremony through the concept of mythical creatures, while the second path links the Chinese dragon to the Dragon Gate, emphasizing their symbolic associations with power and transformation."
+        }
+    ],
+    "Ecological Systems and Their Endemic Flora(location, location, relation, NA, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer's ecological systems and endemic flora relation. Instead, it focuses on geographical locations and river systems, resulting in no valid paths for evaluation."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output deviates significantly from the reference answer by focusing on food and geography rather than ecological systems and endemic flora. This results in no valid paths for evaluation."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not match the reference answer's ecological systems and endemic flora relation. Instead, it emphasizes geographical locations and natural resources, leading to no valid paths for evaluation."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output focuses on fruits and nuts rather than the ecological systems and endemic flora relation in the reference answer. This results in no valid paths for evaluation."
+        }
+    ],
+    "Architectural marvels and culinary delights of Turkey(location, food, mutual elements, NA, English)": [
+        {
+            "path1": "HagiaSophia → CulturalSymbol → InteriorMosaics",
+            "path2": "Baklava → CulinaryTradition → TeaSet",
+            "hop_quality_path1": {
+                "HagiaSophia → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → InteriorMosaics": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Baklava → CulinaryTradition": [
+                    0.9,
+                    0.88,
+                    1
+                ],
+                "CulinaryTradition → TeaSet": [
+                    0.88,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output does not align with the reference answer, as it focuses on historical significance rather than the architectural and culinary themes. However, the paths provided in the reference answer are logical and well-supported."
+        },
+        {
+            "path1": "HagiaSophia → CulturalSymbol → InteriorMosaics",
+            "path2": "Baklava → CulinaryTradition → TeaSet",
+            "hop_quality_path1": {
+                "HagiaSophia → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → InteriorMosaics": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "Baklava → CulinaryTradition": [
+                    0.9,
+                    0.88,
+                    1
+                ],
+                "CulinaryTradition → TeaSet": [
+                    0.88,
+                    0.85,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output partially aligns with the reference answer by recognizing the cultural significance of the images. However, it fails to clearly connect the architectural and culinary themes as specified in the reference answer."
+        },
+        {
+            "path1": "Baklava → CulinaryTradition → TeaSet",
+            "path2": "HagiaSophia → CulturalSymbol → InteriorMosaics",
+            "hop_quality_path1": {
+                "Baklava → CulinaryTradition": [
+                    0.9,
+                    0.88,
+                    1
+                ],
+                "CulinaryTradition → TeaSet": [
+                    0.88,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "HagiaSophia → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → InteriorMosaics": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the cultural and historical significance of the images but misinterprets the relationship between the architectural and culinary themes. The reference answer provides a more accurate and detailed connection."
+        },
+        {
+            "path1": "Baklava → CulinaryTradition → TeaSet",
+            "path2": "HagiaSophia → CulturalSymbol → InteriorMosaics",
+            "hop_quality_path1": {
+                "Baklava → CulinaryTradition": [
+                    0.9,
+                    0.88,
+                    1
+                ],
+                "CulinaryTradition → TeaSet": [
+                    0.88,
+                    0.85,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "HagiaSophia → CulturalSymbol": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "CulturalSymbol → InteriorMosaics": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the cultural significance of the images but fails to clearly articulate the relationship between the architectural and culinary themes as specified in the reference answer. The reference answer provides a more precise and logical connection."
+        }
+    ],
+    "The intersection of high-altitude adventure and the essential equipment required to conquer challenging peaks(location, location, relation, NA, English)": [
+        {
+            "path1": "MountEverest → HighAltitudeChallenge → EssentialEquipment → ClimbingGear",
+            "path2": "K2 → HighAltitudeChallenge → EssentialEquipment → MountaineeringEquipment",
+            "hop_quality_path1": {
+                "MountEverest → HighAltitudeChallenge": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "HighAltitudeChallenge → EssentialEquipment": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "EssentialEquipment → ClimbingGear": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "K2 → HighAltitudeChallenge": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "HighAltitudeChallenge → EssentialEquipment": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "EssentialEquipment → MountaineeringEquipment": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output does not align with the reference answer. The paths provided in the reference answer are logical and precise, focusing on the relationship between high-altitude challenges and essential equipment. The MLLM's output, however, shifts the focus to mountain sports, which is not relevant to the intended relationship."
+        },
+        {
+            "path1": "MountEverest → HighAltitudeChallenge → EssentialEquipment → ClimbingGear",
+            "path2": "K2 → HighAltitudeChallenge → EssentialEquipment → MountaineeringEquipment",
+            "hop_quality_path1": {
+                "MountEverest → HighAltitudeChallenge": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "HighAltitudeChallenge → EssentialEquipment": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "EssentialEquipment → ClimbingGear": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "K2 → HighAltitudeChallenge": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "HighAltitudeChallenge → EssentialEquipment": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "EssentialEquipment → MountaineeringEquipment": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output significantly deviates from the reference answer. The reference answer focuses on the relationship between high-altitude challenges and essential equipment, while the MLLM's output shifts the focus to outdoor adventure and physical fitness, which is not relevant to the intended relationship."
+        },
+        {
+            "path1": "K2 → HighAltitudeChallenge → EssentialEquipment → MountaineeringEquipment",
+            "path2": "MountEverest → HighAltitudeChallenge → EssentialEquipment → ClimbingGear",
+            "hop_quality_path1": {
+                "K2 → HighAltitudeChallenge": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "HighAltitudeChallenge → EssentialEquipment": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "EssentialEquipment → MountaineeringEquipment": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "MountEverest → HighAltitudeChallenge": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "HighAltitudeChallenge → EssentialEquipment": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "EssentialEquipment → ClimbingGear": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output does not align with the reference answer. The reference answer focuses on the relationship between high-altitude challenges and essential equipment, while the MLLM's output shifts the focus to physical challenge, which is not relevant to the intended relationship."
+        },
+        {
+            "path1": "K2 → HighAltitudeChallenge → EssentialEquipment → MountaineeringEquipment",
+            "path2": "MountEverest → HighAltitudeChallenge → EssentialEquipment → ClimbingGear",
+            "hop_quality_path1": {
+                "K2 → HighAltitudeChallenge": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "HighAltitudeChallenge → EssentialEquipment": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "EssentialEquipment → MountaineeringEquipment": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "MountEverest → HighAltitudeChallenge": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "HighAltitudeChallenge → EssentialEquipment": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "EssentialEquipment → ClimbingGear": [
+                    0.95,
+                    0.9,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output does not align with the reference answer. The reference answer focuses on the relationship between high-altitude challenges and essential equipment, while the MLLM's output shifts the focus to mountain sports, which is not relevant to the intended relationship."
+        }
+    ],
+    "Spanish expressions for being absently dreamy or scatterbrained(culture, culture, relation, Non-English European, Spanish)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer's focus on Spanish expressions for being absently dreamy or scatterbrained. Instead, it introduces a theme of flight, which is irrelevant to the intended relationship. As a result, no feasible paths are provided, and the hop quality scores are low."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output introduces a theme of imagination and reality, which is unrelated to the reference answer's focus on Spanish expressions for being absently dreamy or scatterbrained. The output does not provide feasible paths, and the hop quality scores are low due to the irrelevant theme."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output focuses on social interaction, which is unrelated to the reference answer's theme of Spanish expressions for being absently dreamy or scatterbrained. The output does not provide feasible paths, and the hop quality scores are low due to the irrelevant theme."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output introduces a theme of joy and imagination, which is unrelated to the reference answer's focus on Spanish expressions for being absently dreamy or scatterbrained. The output does not provide feasible paths, and the hop quality scores are low due to the irrelevant theme."
+        }
+    ],
+    "Mountain Ranges and Their Paleontological Significance(location, location, relation, NA, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not provide a feasible response to the problem, as it incorrectly identifies the images and their relationships, focusing on geological processes rather than the paleontological significance of mountain ranges."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer, as it incorrectly identifies the images and their relationships, focusing on geological history rather than the paleontological significance of mountain ranges."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not provide a feasible response to the problem, as it incorrectly identifies the images and their relationships, focusing on fossilized life forms and geological layers rather than the paleontological significance of mountain ranges."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the reference answer, as it incorrectly identifies the images and their relationships, focusing on fossilization rather than the paleontological significance of mountain ranges."
+        }
+    ],
+    "German expressions for wishing good luck(culture, culture, relation, Non-English European, German)": [
+        {
+            "path1": "ThumbsPressed → WishingGoodLuck → NervousWatcher",
+            "path2": "CheerfulFriends → WishingGoodLuck → CloseScore",
+            "hop_quality_path1": {
+                "ThumbsPressed → WishingGoodLuck": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "WishingGoodLuck → NervousWatcher": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "CheerfulFriends → WishingGoodLuck": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "WishingGoodLuck → CloseScore": [
+                    0.88,
+                    0.82,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the relation of German expressions for wishing good luck, with high scores for logical soundness, specificity, and domain knowledge depth. The paths align well with the reference answer, demonstrating equivalent quality of reasoning."
+        },
+        {
+            "path1": "ThumbsPressed → WishingGoodLuck → NervousWatcher",
+            "path2": "CheerfulFriends → WishingGoodLuck → CloseScore",
+            "hop_quality_path1": {
+                "ThumbsPressed → WishingGoodLuck": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "WishingGoodLuck → NervousWatcher": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "CheerfulFriends → WishingGoodLuck": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "WishingGoodLuck → CloseScore": [
+                    0.88,
+                    0.82,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the relation of German expressions for wishing good luck, with high scores for logical soundness, specificity, and domain knowledge depth. The paths align well with the reference answer, demonstrating equivalent quality of reasoning."
+        },
+        {
+            "path1": "CheerfulFriends → WishingGoodLuck → CloseScore",
+            "path2": "ThumbsPressed → WishingGoodLuck → NervousWatcher",
+            "hop_quality_path1": {
+                "CheerfulFriends → WishingGoodLuck": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "WishingGoodLuck → CloseScore": [
+                    0.88,
+                    0.82,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "ThumbsPressed → WishingGoodLuck": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "WishingGoodLuck → NervousWatcher": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the relation of German expressions for wishing good luck, with high scores for logical soundness, specificity, and domain knowledge depth. The paths align well with the reference answer, demonstrating equivalent quality of reasoning."
+        },
+        {
+            "path1": "CheerfulFriends → WishingGoodLuck → CloseScore",
+            "path2": "ThumbsPressed → WishingGoodLuck → NervousWatcher",
+            "hop_quality_path1": {
+                "CheerfulFriends → WishingGoodLuck": [
+                    0.9,
+                    0.85,
+                    1
+                ],
+                "WishingGoodLuck → CloseScore": [
+                    0.88,
+                    0.82,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "ThumbsPressed → WishingGoodLuck": [
+                    0.95,
+                    0.9,
+                    1
+                ],
+                "WishingGoodLuck → NervousWatcher": [
+                    0.85,
+                    0.8,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the relation of German expressions for wishing good luck, with high scores for logical soundness, specificity, and domain knowledge depth. The paths align well with the reference answer, demonstrating equivalent quality of reasoning."
+        }
+    ],
+    "Significant Geological Sites and Their Paleontological Discoveries(stuff, stuff, relation, NA, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not provide a feasible response to the problem, as it focuses on wireframe models and geological features rather than the intended relationship between geological sites and paleontological discoveries. Therefore, both paths are empty, and no hop quality scores are assigned."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output significantly deviates from the intended relationship, focusing on texture and surface patterns rather than the interplay between geology and paleontology. As a result, both paths are empty, and no hop quality scores are assigned."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not address the intended relationship between geological sites and paleontological discoveries, instead focusing on geological processes and landscape features. Therefore, both paths are empty, and no hop quality scores are assigned."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output fails to capture the intended relationship, focusing instead on geometric lines and shapes rather than the connection between geological sites and paleontological discoveries. As a result, both paths are empty, and no hop quality scores are assigned."
+        }
+    ],
+    "American food with a regional twist(culture, culture, mutual elements, USAEnglish, English)": [
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output does not align with the intended regional food theme, focusing instead on a generic 'food' relation. The proposed Image 4 (a burger) is incorrect, and the paths are not provided, resulting in low scores."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output incorrectly identifies a 'creamy sauce' as the relation, deviating from the regional food theme. The proposed Image 4 (a pasta dish) is incorrect, and the paths are not provided, resulting in low scores."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output fails to capture the regional food theme, focusing instead on a generic 'food' relation. The proposed Image 4 (a plate of sliced meat with shrimp and grits) is incorrect, and the paths are not provided, resulting in low scores."
+        },
+        {
+            "path1": "",
+            "path2": "",
+            "hop_quality_path1": {},
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output incorrectly identifies 'hearty and flavorful' as the relation, deviating from the regional food theme. The proposed Image 4 (a plate of lasagna) is incorrect, and the paths are not provided, resulting in low scores."
+        }
+    ],
+    "German expressions for luck(culture, culture, relation, Non-English European, German)": [
+        {
+            "path1": "PigsInBarn → SymbolOfLuck → FourLeafClover",
+            "path2": "ManWithMoney → SymbolOfLuck → GoldCoinWithFace",
+            "hop_quality_path1": {
+                "PigsInBarn → SymbolOfLuck": [
+                    0.6,
+                    0.5,
+                    0.7
+                ],
+                "SymbolOfLuck → FourLeafClover": [
+                    0.8,
+                    0.7,
+                    0.9
+                ]
+            },
+            "hop_quality_path2": {
+                "ManWithMoney → SymbolOfLuck": [
+                    0.5,
+                    0.4,
+                    0.6
+                ],
+                "SymbolOfLuck → GoldCoinWithFace": [
+                    0.7,
+                    0.6,
+                    0.8
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the theme of luck but deviates from the German expressions for luck in the reference answer. The first path shows moderate scores for the association between pigs and luck, while the second path has lower scores due to the less direct association between a man with money and a gold coin with a face."
+        },
+        {
+            "path1": "FourLeafClover → SymbolOfLuck → PigsInBarn",
+            "path2": "SmileyFaceEmoji → SymbolOfLuck → PigWithCloverMarking",
+            "hop_quality_path1": {
+                "FourLeafClover → SymbolOfLuck": [
+                    0.9,
+                    0.8,
+                    0.9
+                ],
+                "SymbolOfLuck → PigsInBarn": [
+                    0.6,
+                    0.5,
+                    0.7
+                ]
+            },
+            "hop_quality_path2": {
+                "SmileyFaceEmoji → SymbolOfLuck": [
+                    0.7,
+                    0.6,
+                    0.8
+                ],
+                "SymbolOfLuck → PigWithCloverMarking": [
+                    0.8,
+                    0.7,
+                    0.9
+                ]
+            },
+            "explanation": "The MLLM's output maintains the theme of luck but incorrectly associates a smiley face emoji with a pig having a clover marking. The first path shows high scores for the four-leaf clover as a symbol of luck, but lower scores for the association with pigs. The second path has moderate scores due to the less direct association between a smiley face and a pig with a clover marking."
+        },
+        {
+            "path1": "ManWithFlyingMoney → SymbolOfHappiness → SmileyFaceEmoji",
+            "path2": "PigsInPen → SymbolOfHappiness → PigWithSmileyFace",
+            "hop_quality_path1": {
+                "ManWithFlyingMoney → SymbolOfHappiness": [
+                    0.8,
+                    0.7,
+                    0.9
+                ],
+                "SymbolOfHappiness → SmileyFaceEmoji": [
+                    0.9,
+                    0.8,
+                    0.9
+                ]
+            },
+            "hop_quality_path2": {
+                "PigsInPen → SymbolOfHappiness": [
+                    0.5,
+                    0.4,
+                    0.6
+                ],
+                "SymbolOfHappiness → PigWithSmileyFace": [
+                    0.7,
+                    0.6,
+                    0.8
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of happiness rather than luck, which deviates from the reference answer. The first path shows high scores for the association between a man with flying money and a smiley face emoji. The second path has lower scores due to the less direct association between pigs in a pen and a pig with a smiley face."
+        },
+        {
+            "path1": "SmileyFaceEmoji → SymbolOfHappiness → ManWithMoney",
+            "path2": "FourLeafClover → SymbolOfLuck → PotOfGold",
+            "hop_quality_path1": {
+                "SmileyFaceEmoji → SymbolOfHappiness": [
+                    0.9,
+                    0.8,
+                    0.9
+                ],
+                "SymbolOfHappiness → ManWithMoney": [
+                    0.7,
+                    0.6,
+                    0.8
+                ]
+            },
+            "hop_quality_path2": {
+                "FourLeafClover → SymbolOfLuck": [
+                    0.9,
+                    0.8,
+                    0.9
+                ],
+                "SymbolOfLuck → PotOfGold": [
+                    0.8,
+                    0.7,
+                    0.9
+                ]
+            },
+            "explanation": "The MLLM's output correctly identifies the themes of happiness and luck but does not align with the German expressions for luck in the reference answer. The first path shows high scores for the association between a smiley face emoji and a man with money. The second path also shows high scores for the association between a four-leaf clover and a pot of gold."
+        }
+    ],
+    "Mythological Figures and Their Elemental Associations(myth, myth, mutual elements, East Asia, English)": [
+        {
+            "path1": "HistoricalFigures → NavigatingThroughChallenges → StormySeas",
+            "path2": "MythicalCreatures → NavigatingThroughChallenges → StormySeas",
+            "hop_quality_path1": {
+                "HistoricalFigures → NavigatingThroughChallenges": [
+                    0.2,
+                    0.15,
+                    0
+                ],
+                "NavigatingThroughChallenges → StormySeas": [
+                    0.1,
+                    0.1,
+                    0
+                ]
+            },
+            "hop_quality_path2": {
+                "MythicalCreatures → NavigatingThroughChallenges": [
+                    0.15,
+                    0.1,
+                    0
+                ],
+                "NavigatingThroughChallenges → StormySeas": [
+                    0.1,
+                    0.1,
+                    0
+                ]
+            },
+            "explanation": "The MLLM's interpretation significantly deviates from the intended mythological and elemental associations in the reference answer, focusing instead on a theme of navigating through challenges, which is not relevant to the original context."
+        },
+        {
+            "path1": "Dragon → MythicalCreatures → Phoenix",
+            "path2": "",
+            "hop_quality_path1": {
+                "Dragon → MythicalCreatures": [
+                    0.8,
+                    0.7,
+                    1
+                ],
+                "MythicalCreatures → Phoenix": [
+                    0.7,
+                    0.6,
+                    1
+                ]
+            },
+            "hop_quality_path2": {},
+            "explanation": "The MLLM's output correctly identifies the theme of mythical creatures but misses the deeper mythological and elemental associations present in the reference answer. The path is logically sound but lacks the specificity of the intended relationship."
+        },
+        {
+            "path1": "DragonLikeCreature → MythicalCreatures → DragonLikeCreature",
+            "path2": "ChineseEmperors → ChineseCulture → DragonLikeCreature",
+            "hop_quality_path1": {
+                "DragonLikeCreature → MythicalCreatures": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "MythicalCreatures → DragonLikeCreature": [
+                    0.5,
+                    0.4,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "ChineseEmperors → ChineseCulture": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "ChineseCulture → DragonLikeCreature": [
+                    0.5,
+                    0.4,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of mythical creatures and Chinese culture but does not capture the mythological and elemental associations as described in the reference answer. The paths are somewhat relevant but lack the depth and specificity of the intended relationships."
+        },
+        {
+            "path1": "Dragon → DragonsAndTheSea → StormySeas",
+            "path2": "BoatWithDragonHead → DragonsAndTheSea → StormySeas",
+            "hop_quality_path1": {
+                "Dragon → DragonsAndTheSea": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "DragonsAndTheSea → StormySeas": [
+                    0.6,
+                    0.5,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "BoatWithDragonHead → DragonsAndTheSea": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "DragonsAndTheSea → StormySeas": [
+                    0.5,
+                    0.4,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output identifies a connection between dragons and the sea, which is somewhat relevant but misses the deeper mythological and elemental associations present in the reference answer. The paths are logically sound but lack the specificity and depth of the intended relationships."
+        }
+    ],
+    "Symbols of freedom and classic American landmarks(location, food, mutual elements, NA, English)": [
+        {
+            "path1": "StatueOfLiberty → TouristAttraction → AirportSecurityCheckpoint",
+            "path2": "PieWithSliceMissing → TravelerMeal → GroupGatheredAroundPie",
+            "hop_quality_path1": {
+                "StatueOfLiberty → TouristAttraction": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "TouristAttraction → AirportSecurityCheckpoint": [
+                    0.5,
+                    0.4,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "PieWithSliceMissing → TravelerMeal": [
+                    0.4,
+                    0.3,
+                    1
+                ],
+                "TravelerMeal → GroupGatheredAroundPie": [
+                    0.5,
+                    0.4,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on the theme of travel, which is not the intended relation of American traditions and symbols. The hops are logically sound but lack precision and specificity in aligning with the reference answer."
+        },
+        {
+            "path1": "AirportCheckIn → BeginningOfJourney → StatueOfLiberty",
+            "path2": "GroupGatheredAroundTable → EnjoymentOfDestination → FamousLandmark",
+            "hop_quality_path1": {
+                "AirportCheckIn → BeginningOfJourney": [
+                    0.6,
+                    0.5,
+                    1
+                ],
+                "BeginningOfJourney → StatueOfLiberty": [
+                    0.5,
+                    0.4,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "GroupGatheredAroundTable → EnjoymentOfDestination": [
+                    0.5,
+                    0.4,
+                    1
+                ],
+                "EnjoymentOfDestination → FamousLandmark": [
+                    0.4,
+                    0.3,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output again focuses on travel, missing the intended theme of American traditions and symbols. The hops are somewhat logical but lack precision and specificity in aligning with the reference answer."
+        },
+        {
+            "path1": "FreshlyBakedPie → SharedMeal → GroupGatheredAroundTable",
+            "path2": "StatueOfLiberty → NationalLandmark → GroupGatheredAroundPie",
+            "hop_quality_path1": {
+                "FreshlyBakedPie → SharedMeal": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "SharedMeal → GroupGatheredAroundTable": [
+                    0.6,
+                    0.5,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "StatueOfLiberty → NationalLandmark": [
+                    0.8,
+                    0.7,
+                    1
+                ],
+                "NationalLandmark → GroupGatheredAroundPie": [
+                    0.5,
+                    0.4,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on sharing, which is partially relevant but still misses the intended theme of American traditions and symbols. The hops are logical but lack precision and specificity in aligning with the reference answer."
+        },
+        {
+            "path1": "GroupGatheredAroundTable → SharingFood → PieWithSliceMissing",
+            "path2": "GroupWaitingInLine → WaitingForFlight → BoardingPass",
+            "hop_quality_path1": {
+                "GroupGatheredAroundTable → SharingFood": [
+                    0.7,
+                    0.6,
+                    1
+                ],
+                "SharingFood → PieWithSliceMissing": [
+                    0.6,
+                    0.5,
+                    1
+                ]
+            },
+            "hop_quality_path2": {
+                "GroupWaitingInLine → WaitingForFlight": [
+                    0.5,
+                    0.4,
+                    1
+                ],
+                "WaitingForFlight → BoardingPass": [
+                    0.4,
+                    0.3,
+                    1
+                ]
+            },
+            "explanation": "The MLLM's output focuses on sharing and waiting, which is not the intended relation of American traditions and symbols. The hops are logically sound but lack precision and specificity in aligning with the reference answer."
+        }
+    ]
+}
