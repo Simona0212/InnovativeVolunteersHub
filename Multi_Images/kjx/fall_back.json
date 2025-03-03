@@ -1,0 +1,2931 @@
+[
+    {
+        "talking ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "talking ability",
+                "explanation": "Both the tongue and microphone are integral to the process of speech. The tongue is essential for articulating words, while the microphone amplifies and transmits speech, making it crucial for public communication.",
+                "reasoning": "UsedFor(Tongue, Speech) ∧ UsedFor(Microphone, Speech) ∧ IsA(Speech, TalkingAbility) → Tongue → Speech → TalkingAbility and Microphone → Speech → TalkingAbility"
+            },
+            "specificity_level_3": {
+                "relation": "speech facilitation",
+                "explanation": "The tongue produces speech, and the microphone enhances it, both contributing to effective communication.",
+                "reasoning": "UsedFor(Tongue, Sound) ∧ UsedFor(Microphone, Amplification) → Speech"
+            },
+            "specificity_level_2": {
+                "relation": "sound manipulation",
+                "explanation": "Both the tongue and microphone are involved in handling sound, though in different ways.",
+                "reasoning": "UsedFor(Tongue, OralSound) ∧ UsedFor(Microphone, Volume) → Sound"
+            },
+            "specificity_level_1": {
+                "relation": "vague auditory association",
+                "explanation": "They might be related to sound or talking, but the connection is unclear.",
+                "reasoning": "PossibleConnection(Sound)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated mechanisms",
+                "explanation": "The tongue is for tasting, and the microphone is for audio amplification, with no direct link.",
+                "reasoning": "UsedFor(Tongue, Gustation) ∧ UsedFor(Microphone, Audio) → no relation"
+            }
+        }
+    },
+    {
+        "running ability(visible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "running ability",
+                "explanation": "Both a cheetah and Usain Bolt are renowned for their exceptional running speed, which directly translates to their running ability.",
+                "reasoning": "KnownFor(Cheetah, FastRunning) ∧ KnownFor(UsainBolt, FastRunning) ∧ Implies(FastRunning, RunningAbility) → Cheetah → FastRunning → RunningAbility and UsainBolt → FastRunning → RunningAbility"
+            },
+            "specificity_level_3": {
+                "relation": "speed and running",
+                "explanation": "A cheetah is the fastest land animal, and Usain Bolt is the fastest human, both exemplifying running ability.",
+                "reasoning": "KnownFor(Cheetah, Speed) ∧ KnownFor(UsainBolt, Speed) → Running"
+            },
+            "specificity_level_2": {
+                "relation": "fast movement",
+                "explanation": "Both are known for moving quickly, though the context of running is implied.",
+                "reasoning": "KnownFor(Cheetah, Movement) ∧ KnownFor(UsainBolt, Movement) → Speed"
+            },
+            "specificity_level_1": {
+                "relation": "possibly related to running",
+                "explanation": "They seem to be associated with running, but the connection is not fully clear.",
+                "reasoning": "PossibleConnection(Running)"
+            },
+            "specificity_level_0": {
+                "relation": "incorrect analogy",
+                "explanation": "Cheetahs are animals, and Usain Bolt is a human, making the comparison invalid.",
+                "reasoning": "IsA(Cheetah, Animal) ∧ IsA(UsainBolt, Human) → ¬SameFunction"
+            }
+        }
+    },
+    {
+        "jumping ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "jumping ability",
+                "explanation": "Michael Jordan is famous for his high jumps in basketball, and fleas are known for their powerful jumps relative to their size, both exemplifying jumping ability.",
+                "reasoning": "KnownFor(MichaelJordan, HighJump) ∧ KnownFor(Flea, HighJumpRelativeSize) ∧ Implies(HighJump, JumpAbility) ∧ Implies(HighJumpRelativeSize, JumpAbility) → MichaelJordan → HighJump → JumpAbility and Flea → HighJumpRelativeSize → JumpAbility"
+            },
+            "specificity_level_3": {
+                "relation": "leaping capability",
+                "explanation": "Michael Jordan’s basketball jumps and fleas’ tiny but powerful jumps both demonstrate leaping ability.",
+                "reasoning": "KnownFor(MichaelJordan, Leap) ∧ KnownFor(Flea, Leap) → Jumping"
+            },
+            "specificity_level_2": {
+                "relation": "vertical movement",
+                "explanation": "Both are associated with moving vertically, though the context of jumping is implied.",
+                "reasoning": "KnownFor(MichaelJordan, VerticalMovement) ∧ KnownFor(Flea, VerticalMovement) → Leap"
+            },
+            "specificity_level_1": {
+                "relation": "possibly related to jumping",
+                "explanation": "They seem to be associated with jumping, but the connection is not fully clear.",
+                "reasoning": "PossibleConnection(Jumping)"
+            },
+            "specificity_level_0": {
+                "relation": "incorrect analogy",
+                "explanation": "Michael Jordan is a human, and fleas are insects, making the comparison invalid.",
+                "reasoning": "IsA(MichaelJordan, Human) ∧ IsA(Flea, Insect) → ¬SameFunction"
+            }
+        }
+    },
+    {
+        "Painting ability(invisible, ability, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "painting ability",
+                "explanation": "The hand’s control and precision in using a paintbrush are essential for painting ability, as both the hand and paintbrush are required for the act of painting.",
+                "reasoning": "Requires(PaintingAbility, Paintbrush) ∧ Requires(PaintingAbility, Hand) ∧ Uses(Hand, Paintbrush) → Paintbrush → Hand → PaintingAbility and Hand → Paintbrush → PaintingAbility"
+            },
+            "specificity_level_3": {
+                "relation": "artistic skill",
+                "explanation": "The hand’s ability to manipulate a paintbrush is crucial for creating art, highlighting the importance of both elements in painting.",
+                "reasoning": "Requires(Art, Paintbrush) ∧ Requires(Art, Hand) → Painting"
+            },
+            "specificity_level_2": {
+                "relation": "tool and body part",
+                "explanation": "The hand uses the paintbrush as a tool, suggesting a connection to painting.",
+                "reasoning": "Uses(Hand, Tool) ∧ IsA(Paintbrush, Tool) → Painting"
+            },
+            "specificity_level_1": {
+                "relation": "possibly related to painting",
+                "explanation": "The hand and paintbrush seem to be associated with painting, but the connection is not fully clear.",
+                "reasoning": "PossibleConnection(Painting)"
+            },
+            "specificity_level_0": {
+                "relation": "incorrect analogy",
+                "explanation": "The hand is a body part, and the paintbrush is a tool, with no direct link to painting.",
+                "reasoning": "IsA(Hand, BodyPart) ∧ IsA(Paintbrush, Tool) → ¬SameFunction"
+            }
+        }
+    },
+    {
+        "brightness and power(visible, ability, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "brightness and power",
+                "explanation": "A single light bulb represents a small unit of computing power, while a stadium full of light bulbs symbolizes massive computing power, illustrating the relationship between brightness and power.",
+                "reasoning": "Represents(LightBulb, SmallComputingPower) ∧ Represents(StadiumOfLightBulbs, LargeComputingPower) ∧ Implies(SmallComputingPower, ComputingPower) ∧ Implies(LargeComputingPower, ComputingPower) → LightBulb → ComputingPower and StadiumOfLightBulbs → ComputingPower"
+            },
+            "specificity_level_3": {
+                "relation": "scale of power",
+                "explanation": "A single bulb signifies minimal power, while a stadium of bulbs represents vast power, showing the connection between brightness and computing power.",
+                "reasoning": "Represents(LightBulb, MinimalPower) ∧ Represents(StadiumOfLightBulbs, VastPower) → Power"
+            },
+            "specificity_level_2": {
+                "relation": "light and computing",
+                "explanation": "Light bulbs are used as a metaphor for computing power, suggesting a relationship between brightness and processing capability.",
+                "reasoning": "Represents(LightBulb, Computing) ∧ Represents(StadiumOfLightBulbs, Computing) → ComputingPower"
+            },
+            "specificity_level_1": {
+                "relation": "possibly related to power",
+                "explanation": "Light bulbs seem to be associated with power, but the connection is not fully clear.",
+                "reasoning": "PossibleConnection(Power)"
+            },
+            "specificity_level_0": {
+                "relation": "incorrect analogy",
+                "explanation": "Light bulbs are for illumination, and computing power is unrelated to brightness.",
+                "reasoning": "UsedFor(LightBulb, Light) ∧ UsedFor(ComputingPower, Processing) → ¬SameFunction"
+            }
+        }
+    },
+    {
+        "swimming ability(visible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "swimming ability",
+                "explanation": "Dolphins and fish exhibit excellent swimming ability due to their physical adaptations, including streamlined bodies (dolphin) and efficient oxygen uptake (fish gills).",
+                "reasoning": "Attribute(StreamlinedBody, SwimmingAbility) ∧ Has(Dolphin, StreamlinedBody) ∧ Attribute(EfficientOxygenUptake, SwimmingAbility) ∧ Has(Fish, Gills) ∧ Enable(Gills, EfficientOxygenUptake). Thus, Dolphin → StreamlinedBody → SwimmingAbility and Fish → Gills → EfficientOxygenUptake → SwimmingAbility"
+            },
+            "specificity_level_3": {
+                "relation": "swimming ability",
+                "explanation": "Dolphins and fish are adapted for swimming through physical traits like streamlined bodies and gills.",
+                "reasoning": "Has(Dolphin, StreamlinedBody) ∧ Has(Fish, Gills) → SwimmingAbility"
+            },
+            "specificity_level_2": {
+                "relation": "swimming ability",
+                "explanation": "Dolphins and fish are good swimmers because of their bodies.",
+                "reasoning": "PhysicalTraits(Dolphin, Fish) → SwimmingAbility"
+            },
+            "specificity_level_1": {
+                "relation": "swimming ability",
+                "explanation": "Dolphins and fish can swim well.",
+                "reasoning": "Swimming(Dolphin, Fish) → Ability"
+            },
+            "specificity_level_0": {
+                "relation": "swimming ability",
+                "explanation": "Dolphins and fish are unrelated to swimming.",
+                "reasoning": "NoConnection(Dolphin, Fish, Swimming)"
+            }
+        }
+    },
+    {
+        "cooking ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "cooking ability",
+                "explanation": "The first image represents excellent cooking skills, demonstrated by the perfectly seared steak – achieving a good sear requires precise timing and temperature control. The second image represents poor cooking ability, evident in the burnt and unrecognizable contents of the pot. Together, these images encompass the spectrum of cooking ability, from mastery to disaster.",
+                "reasoning": "Indicate(SearedSteak, HighCookingAbility) ∧ Indicate(BurntPot, LowCookingAbility) ∧ Encompass(HighCookingAbility and LowCookingAbility, CookingAbility). Thus, SearedSteak → HighCookingAbility → CookingAbility and BurntPot → LowCookingAbility → CookingAbility"
+            },
+            "specificity_level_3": {
+                "relation": "cooking ability",
+                "explanation": "A seared steak shows high cooking skill, while a burnt pot indicates low skill.",
+                "reasoning": "SearedSteak → HighSkill ∧ BurntPot → LowSkill → CookingAbility"
+            },
+            "specificity_level_2": {
+                "relation": "cooking ability",
+                "explanation": "Cooking ability ranges from good (seared steak) to bad (burnt pot).",
+                "reasoning": "GoodCooking(SearedSteak) ∧ BadCooking(BurntPot) → CookingAbility"
+            },
+            "specificity_level_1": {
+                "relation": "cooking ability",
+                "explanation": "Cooking can be done well or poorly.",
+                "reasoning": "Cooking(SkillRange) → Ability"
+            },
+            "specificity_level_0": {
+                "relation": "cooking ability",
+                "explanation": "Cooking ability is unrelated to seared steak or burnt pot.",
+                "reasoning": "NoConnection(SearedSteak, BurntPot, Cooking)"
+            }
+        }
+    },
+    {
+        "smelling ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "smelling ability",
+                "explanation": "The bloodhound is renowned for its exceptional sense of smell, often used for tracking. The molecule diagram represents the chemical basis of smell, the odorants that interact with olfactory receptors. Together, they represent the process of smelling, from the macroscopic action of a creature using its nose to the microscopic level of chemical interaction.",
+                "reasoning": "Use(Bloodhound, Smell, Tracking) ∧ Cause(OdorCompound, Smell). Thus, Bloodhound → Smell and OdorCompound → Smell"
+            },
+            "specificity_level_3": {
+                "relation": "smelling ability",
+                "explanation": "Bloodhounds use their sense of smell for tracking, and odor compounds cause smells.",
+                "reasoning": "Bloodhound → Smell ∧ OdorCompound → Smell"
+            },
+            "specificity_level_2": {
+                "relation": "smelling ability",
+                "explanation": "Smelling involves bloodhounds and odor compounds.",
+                "reasoning": "Bloodhound ∧ OdorCompound → Smell"
+            },
+            "specificity_level_1": {
+                "relation": "smelling ability",
+                "explanation": "Smelling is related to bloodhounds and chemicals.",
+                "reasoning": "Bloodhound ∧ Chemicals → Smell"
+            },
+            "specificity_level_0": {
+                "relation": "smelling ability",
+                "explanation": "Smelling has nothing to do with bloodhounds or odor compounds.",
+                "reasoning": "NoConnection(Bloodhound, OdorCompound, Smell)"
+            }
+        }
+    },
+    {
+        "writing ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "writing ability",
+                "explanation": "The first image represents traditional tools used for writing, symbolizing the craft and skill involved. The second image represents modern writing, specifically a tweet filled with typos, which suggests a lack of writing ability or carelessness in its application. The juxtaposition of these images highlights the spectrum of writing ability, from careful craftsmanship to hasty, error-prone communication.",
+                "reasoning": "ToolFor(QuillAndInkwell, Writing) ∧ Require(Writing, WritingAbility) ∧ ExampleOf(TypoRiddenTweet, ModernWriting) ∧ Indicate(TypoRiddenTweet, LackOfWritingAbility) ∨ Indicate(TypoRiddenTweet, CarelessWriting) ∧ SubsetOf(CarelessWriting, WritingAbility). Thus, QuillAndInkwell → Writing → WritingAbility and TypoRiddenTweet → ModernWriting → (LackOf/Careless)Writing → WritingAbility"
+            },
+            "specificity_level_3": {
+                "relation": "writing ability",
+                "explanation": "Traditional writing tools symbolize skill, while a typo-ridden tweet indicates poor writing ability.",
+                "reasoning": "QuillAndInkwell → Skill ∧ TypoRiddenTweet → PoorSkill → WritingAbility"
+            },
+            "specificity_level_2": {
+                "relation": "writing ability",
+                "explanation": "Writing ability ranges from skilled (traditional tools) to careless (typo-filled tweet).",
+                "reasoning": "SkilledWriting(QuillAndInkwell) ∧ CarelessWriting(TypoRiddenTweet) → WritingAbility"
+            },
+            "specificity_level_1": {
+                "relation": "writing ability",
+                "explanation": "Writing can be done skillfully or carelessly.",
+                "reasoning": "Writing(SkillRange) → Ability"
+            },
+            "specificity_level_0": {
+                "relation": "writing ability",
+                "explanation": "Writing ability is unrelated to traditional tools or tweets.",
+                "reasoning": "NoConnection(QuillAndInkwell, TypoRiddenTweet, Writing)"
+            }
+        }
+    },
+    {
+        "vision(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "vision",
+                "explanation": "The first image represents exploring the vastness of space, requiring vision, albeit aided by technology, to observe distant celestial objects. The second image represents the lack of physical sight, symbolized by the white cane used by visually impaired individuals. Together, they explore the concept of 'vision' in both its presence (enhanced by technology) and its absence, highlighting the different ways we perceive and interact with the world.",
+                "reasoning": "Enable(Telescope, EnhancedVision) ∧ Relate(EnhancedVision, Vision) ∧ Compensate(WhiteCane, LackOfVision) ∧ Relate(LackOfVision, Vision). Thus, Telescope → EnhancedVision → Vision and WhiteCane → LackOfVision → Vision"
+            },
+            "specificity_level_3": {
+                "relation": "vision",
+                "explanation": "A telescope enhances vision for space exploration, while a white cane compensates for lack of vision.",
+                "reasoning": "Telescope → EnhancedVision ∧ WhiteCane → LackOfVision → Vision"
+            },
+            "specificity_level_2": {
+                "relation": "vision",
+                "explanation": "Vision includes enhanced (telescope) and absent (white cane) forms.",
+                "reasoning": "EnhancedVision(Telescope) ∧ LackOfVision(WhiteCane) → Vision"
+            },
+            "specificity_level_1": {
+                "relation": "vision",
+                "explanation": "Vision can be present or absent.",
+                "reasoning": "Vision(PresenceOrAbsence) → Concept"
+            },
+            "specificity_level_0": {
+                "relation": "vision",
+                "explanation": "Vision is unrelated to telescopes or white canes.",
+                "reasoning": "NoConnection(Telescope, WhiteCane, Vision)"
+            }
+        }
+    },
+    {
+        "Physical Prowess(visible, ability, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Physical Prowess",
+                "explanation": "Simone Biles' gymnastics skills and the structure of muscle fibers both represent the macroscopic and microscopic aspects of physical prowess, showcasing human feats and the biological mechanisms enabling them.",
+                "reasoning": "Exhibit(SimoneBiles, GymnasticsSkill) ∧ Require(GymnasticsSkill, PhysicalProwess) ∧ Compose(MuscleFibers, Muscles) ∧ Enable(Muscles, PhysicalProwess) → PhysicalProwess"
+            },
+            "specificity_level_3": {
+                "relation": "Physical Ability",
+                "explanation": "Simone Biles demonstrates physical ability through gymnastics, while muscle fibers provide the biological basis for such abilities.",
+                "reasoning": "Exhibit(SimoneBiles, PhysicalSkill) ∧ Enable(MuscleFibers, PhysicalSkill) → PhysicalAbility"
+            },
+            "specificity_level_2": {
+                "relation": "Human Strength",
+                "explanation": "Simone Biles shows strength in gymnastics, and muscle fibers are related to physical strength.",
+                "reasoning": "Exhibit(SimoneBiles, Strength) ∧ Enable(MuscleFibers, Strength) → HumanStrength"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Physical Connection",
+                "explanation": "Both images seem related to physical capabilities, but the connection is unclear.",
+                "reasoning": "PossibleConnection(PhysicalCapability)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Concepts",
+                "explanation": "Simone Biles is an athlete, while muscle fibers are biological; they have no direct connection.",
+                "reasoning": "IsA(SimoneBiles, Athlete) ∧ IsA(MuscleFibers, Biology) → ¬Related"
+            }
+        }
+    },
+    {
+        "Mental Acuity(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Mental Acuity",
+                "explanation": "A Rubik's cube and a chess endgame both require cognitive skills like spatial reasoning and strategic thinking, which are components of mental acuity.",
+                "reasoning": "Require(RubiksCube, SpatialReasoning) ∧ ComponentOf(SpatialReasoning, MentalAcuity) ∧ Require(ChessEndgame, StrategicThinking) ∧ ComponentOf(StrategicThinking, MentalAcuity) → MentalAcuity"
+            },
+            "specificity_level_3": {
+                "relation": "Cognitive Skills",
+                "explanation": "Solving a Rubik's cube and playing chess both involve cognitive abilities like reasoning and strategy.",
+                "reasoning": "Require(RubiksCube, Reasoning) ∧ Require(ChessEndgame, Strategy) → CognitiveSkills"
+            },
+            "specificity_level_2": {
+                "relation": "Problem-Solving",
+                "explanation": "Both activities involve solving problems, but the specifics are unclear.",
+                "reasoning": "Require(RubiksCube, ProblemSolving) ∧ Require(ChessEndgame, ProblemSolving) → ProblemSolving"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Mental Connection",
+                "explanation": "Both seem related to thinking, but the exact connection is unclear.",
+                "reasoning": "PossibleConnection(Thinking)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Activities",
+                "explanation": "A Rubik's cube is a puzzle, and chess is a game; they have no direct connection.",
+                "reasoning": "IsA(RubiksCube, Puzzle) ∧ IsA(ChessEndgame, Game) → ¬Related"
+            }
+        }
+    },
+    {
+        "Leadership(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Leadership",
+                "explanation": "A lone wolf leading its pack and a conductor leading an orchestra represent different styles of leadership, emphasizing strength and coordination, respectively.",
+                "reasoning": "Symbolize(LoneWolf, PackLeader) ∧ Imply(PackLeader, Leadership) ∧ Perform(Conductor, OrchestralConducting) ∧ Require(OrchestralConducting, Leadership) → Leadership"
+            },
+            "specificity_level_3": {
+                "relation": "Guidance",
+                "explanation": "Both the lone wolf and the conductor guide others, though in different contexts.",
+                "reasoning": "Symbolize(LoneWolf, Guidance) ∧ Perform(Conductor, Guidance) → Guidance"
+            },
+            "specificity_level_2": {
+                "relation": "Influence",
+                "explanation": "Both images show individuals influencing others, but the specifics are unclear.",
+                "reasoning": "Symbolize(LoneWolf, Influence) ∧ Perform(Conductor, Influence) → Influence"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Leadership Connection",
+                "explanation": "Both seem related to leading, but the exact connection is unclear.",
+                "reasoning": "PossibleConnection(Leading)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Roles",
+                "explanation": "A lone wolf is an animal, and a conductor is a musician; they have no direct connection.",
+                "reasoning": "IsA(LoneWolf, Animal) ∧ IsA(Conductor, Musician) → ¬Related"
+            }
+        }
+    },
+    {
+        "physical prowess and control(visible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "physical prowess and control",
+                "explanation": "Stephen Hawking overcame physical limitations with intellectual ability, while a ballerina demonstrates physical prowess and control through dance. Both represent different forms of human ability.",
+                "reasoning": "Possess(StephenHawking, IntellectualAbility) ∧ Overcome(StephenHawking, PhysicalLimitation) ∧ Demonstrate(BallerinaEnPointe, PhysicalAbility) → Ability"
+            },
+            "specificity_level_3": {
+                "relation": "Human Ability",
+                "explanation": "Stephen Hawking and the ballerina both showcase human ability, one intellectual and the other physical.",
+                "reasoning": "Possess(StephenHawking, IntellectualSkill) ∧ Demonstrate(BallerinaEnPointe, PhysicalSkill) → HumanAbility"
+            },
+            "specificity_level_2": {
+                "relation": "Skill Demonstration",
+                "explanation": "Both individuals demonstrate skills, but the specifics are unclear.",
+                "reasoning": "Exhibit(StephenHawking, Skill) ∧ Exhibit(BallerinaEnPointe, Skill) → SkillDemonstration"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Ability Connection",
+                "explanation": "Both seem related to ability, but the exact connection is unclear.",
+                "reasoning": "PossibleConnection(Ability)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Abilities",
+                "explanation": "Stephen Hawking was a scientist, and the ballerina is a dancer; they have no direct connection.",
+                "reasoning": "IsA(StephenHawking, Scientist) ∧ IsA(BallerinaEnPointe, Dancer) → ¬Related"
+            }
+        }
+    },
+    {
+        "balance ability(visible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "balance ability",
+                "explanation": "A gymnast on a balance beam and a tightrope walker both demonstrate balance ability, with the gymnast focusing on precision and the tightrope walker on courage and adaptability.",
+                "reasoning": "Require(GymnastOnBeam, BalanceAbility) ∧ Exhibit(GymnastOnBeam, Precision) ∧ Require(TightropeWalker, BalanceAbility) ∧ Exhibit(TightropeWalker, Courage) → BalanceAbility"
+            },
+            "specificity_level_3": {
+                "relation": "Physical Balance",
+                "explanation": "Both the gymnast and the tightrope walker showcase physical balance, though in different contexts.",
+                "reasoning": "Exhibit(GymnastOnBeam, Balance) ∧ Exhibit(TightropeWalker, Balance) → PhysicalBalance"
+            },
+            "specificity_level_2": {
+                "relation": "Stability",
+                "explanation": "Both images show individuals maintaining stability, but the specifics are unclear.",
+                "reasoning": "Exhibit(GymnastOnBeam, Stability) ∧ Exhibit(TightropeWalker, Stability) → Stability"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Balance Connection",
+                "explanation": "Both seem related to balance, but the exact connection is unclear.",
+                "reasoning": "PossibleConnection(Balance)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Activities",
+                "explanation": "A gymnast performs on a beam, and a tightrope walker walks on a rope; they have no direct connection.",
+                "reasoning": "IsA(GymnastOnBeam, Gymnastics) ∧ IsA(TightropeWalker, Performance) → ¬Related"
+            }
+        }
+    },
+    {
+        "growth ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "growth ability",
+                "explanation": "A seedling sprouting represents the early stages of growth, while a child's growth chart documents physical development. Both illustrate different aspects of growth.",
+                "reasoning": "Represent(SeedlingSprouting, EarlyGrowth) and IsA(EarlyGrowth, Growth). Record(GrowthChart, PhysicalGrowth) and IsA(PhysicalGrowth, Growth). Thus, SeedlingSprouting → EarlyGrowth → Growth and GrowthChart → PhysicalGrowth → Growth."
+            },
+            "specificity_level_3": {
+                "relation": "growth representation",
+                "explanation": "A seedling and a growth chart both depict growth, one as a process and the other as a record.",
+                "reasoning": "Represent(SeedlingSprouting, Growth) and Record(GrowthChart, Growth). Thus, both depict growth."
+            },
+            "specificity_level_2": {
+                "relation": "growth-related concepts",
+                "explanation": "A seedling and a growth chart are both related to growth in some way.",
+                "reasoning": "PossibleConnection(Growth)."
+            },
+            "specificity_level_1": {
+                "relation": "vague growth association",
+                "explanation": "A seedling and a growth chart might be related to growth.",
+                "reasoning": "UnclearConnection(Growth)."
+            },
+            "specificity_level_0": {
+                "relation": "unrelated concepts",
+                "explanation": "A seedling is a plant, and a growth chart is a document; they have no connection.",
+                "reasoning": "IsA(SeedlingSprouting, Plant) and IsA(GrowthChart, Document) → no relation."
+            }
+        }
+    },
+    {
+        "management ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "management ability",
+                "explanation": "A calendar represents time management, while a flowchart symbolizes work arrangement management. Both are essential components of effective management.",
+                "reasoning": "Tool(Calendar, TimeManagement) and AspectOf(TimeManagement, Time_and_Work_Arrangement_Management). Tool(Flowchart, WorkArrangement) and AspectOf(WorkArrangement, Time_and_Work_Arrangement_Management). Thus, Calendar → TimeManagement → Time_and_Work_Arrangement_Management and Flowchart → WorkArrangement → Time_and_Work_Arrangement_Management."
+            },
+            "specificity_level_3": {
+                "relation": "management tools",
+                "explanation": "A calendar and a flowchart are tools used for managing time and work arrangements.",
+                "reasoning": "Tool(Calendar, Management) and Tool(Flowchart, Management)."
+            },
+            "specificity_level_2": {
+                "relation": "organizational tools",
+                "explanation": "A calendar and a flowchart help organize tasks and processes.",
+                "reasoning": "UsedFor(Calendar, Organization) and UsedFor(Flowchart, Organization)."
+            },
+            "specificity_level_1": {
+                "relation": "vague management association",
+                "explanation": "A calendar and a flowchart might be related to management.",
+                "reasoning": "PossibleConnection(Management)."
+            },
+            "specificity_level_0": {
+                "relation": "unrelated tools",
+                "explanation": "A calendar is for dates, and a flowchart is for diagrams; they have no connection.",
+                "reasoning": "UsedFor(Calendar, Scheduling) and UsedFor(Flowchart, Diagramming) → no relation."
+            }
+        }
+    },
+    {
+        "Communication Skills(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "communication skills",
+                "explanation": "Public speaking and active listening are key components of effective communication, demonstrated in a TED Talk and a therapy session, respectively.",
+                "reasoning": "Require(TED_Talk, Public_Speaking) and PartOf(Public_Speaking, Communication_Skills). Require(Therapy_Session, Active_Listening) and PartOf(Active_Listening, Communication_Skills). Thus, TED_Talk → Public_Speaking → Communication_Skills and Therapy_Session → Active_Listening → Communication_Skills."
+            },
+            "specificity_level_3": {
+                "relation": "communication facets",
+                "explanation": "Public speaking and active listening are different aspects of communication.",
+                "reasoning": "PartOf(Public_Speaking, Communication_Skills) and PartOf(Active_Listening, Communication_Skills)."
+            },
+            "specificity_level_2": {
+                "relation": "communication-related skills",
+                "explanation": "Public speaking and active listening are both related to communication.",
+                "reasoning": "PossibleConnection(Communication_Skills)."
+            },
+            "specificity_level_1": {
+                "relation": "vague communication association",
+                "explanation": "Public speaking and active listening might be related to communication.",
+                "reasoning": "UnclearConnection(Communication_Skills)."
+            },
+            "specificity_level_0": {
+                "relation": "unrelated skills",
+                "explanation": "Public speaking is about talking, and active listening is about hearing; they have no connection.",
+                "reasoning": "UsedFor(Public_Speaking, Talking) and UsedFor(Active_Listening, Hearing) → no relation."
+            }
+        }
+    },
+    {
+        "decision-making ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "decision-making ability",
+                "explanation": "Chess and surgery both require complex decision-making, involving risk assessment and strategic planning.",
+                "reasoning": "Require(Chess, Decision-Making Ability) and Require(Surgery, Decision-Making Ability). Thus, Chess → Decision-Making Ability and Surgery → Decision-Making Ability."
+            },
+            "specificity_level_3": {
+                "relation": "decision-making scenarios",
+                "explanation": "Chess and surgery are contexts where decision-making is critical.",
+                "reasoning": "Context(Chess, Decision-Making) and Context(Surgery, Decision-Making)."
+            },
+            "specificity_level_2": {
+                "relation": "decision-related activities",
+                "explanation": "Chess and surgery both involve making decisions.",
+                "reasoning": "PossibleConnection(Decision-Making)."
+            },
+            "specificity_level_1": {
+                "relation": "vague decision-making association",
+                "explanation": "Chess and surgery might involve decision-making.",
+                "reasoning": "UnclearConnection(Decision-Making)."
+            },
+            "specificity_level_0": {
+                "relation": "unrelated activities",
+                "explanation": "Chess is a game, and surgery is a medical procedure; they have no connection.",
+                "reasoning": "IsA(Chess, Game) and IsA(Surgery, Procedure) → no relation."
+            }
+        }
+    },
+    {
+        "teamwork ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "teamwork ability",
+                "explanation": "A rowing team and ants both demonstrate teamwork, requiring coordination and collaboration to achieve a common goal.",
+                "reasoning": "Require(Rowing, Teamwork Ability) and Exhibit(Ants, Teamwork Ability). Thus, Rowing → Teamwork Ability and Ants → Teamwork Ability."
+            },
+            "specificity_level_3": {
+                "relation": "teamwork examples",
+                "explanation": "Rowing and ants are examples of teamwork in action.",
+                "reasoning": "Example(Rowing, Teamwork) and Example(Ants, Teamwork)."
+            },
+            "specificity_level_2": {
+                "relation": "teamwork-related behaviors",
+                "explanation": "Rowing and ants both involve working together.",
+                "reasoning": "PossibleConnection(Teamwork)."
+            },
+            "specificity_level_1": {
+                "relation": "vague teamwork association",
+                "explanation": "Rowing and ants might involve teamwork.",
+                "reasoning": "UnclearConnection(Teamwork)."
+            },
+            "specificity_level_0": {
+                "relation": "unrelated behaviors",
+                "explanation": "Rowing is a sport, and ants are insects; they have no connection.",
+                "reasoning": "IsA(Rowing, Sport) and IsA(Ants, Insect) → no relation."
+            }
+        }
+    },
+    {
+        "executive force(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "executive force",
+                "explanation": "The US presidency symbolizes the highest level of executive power, while a SWAT team represents the direct application of force authorized by the executive branch. Both illustrate the concept of 'executive force'.",
+                "reasoning": "HeadOf(US_President, ExecutiveBranch) and Possess(ExecutiveBranch, ExecutiveForce). Enforce(SWAT, Law) and Authorize(ExecutiveBranch, LawEnforcement). Thus, PresidentialSeal → US_President → ExecutiveBranch → ExecutiveForce and SWAT → LawEnforcement → ExecutiveBranch → ExecutiveForce"
+            },
+            "specificity_level_3": {
+                "relation": "executive power",
+                "explanation": "The US presidency and SWAT team both fall under the executive branch, with one symbolizing authority and the other representing its enforcement.",
+                "reasoning": "HeadOf(US_President, ExecutiveBranch) and Enforce(SWAT, Law). Thus, both relate to executive power."
+            },
+            "specificity_level_2": {
+                "relation": "authority and enforcement",
+                "explanation": "The US presidency and SWAT team are both connected to authority and the application of force.",
+                "reasoning": "HeadOf(US_President, ExecutiveBranch) and Enforce(SWAT, Law). Both involve authority."
+            },
+            "specificity_level_1": {
+                "relation": "vague connection to authority",
+                "explanation": "The US presidency and SWAT team might both have something to do with authority or force.",
+                "reasoning": "PossibleConnection(Authority)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated concepts",
+                "explanation": "The US presidency is about governance, while SWAT teams are about law enforcement.",
+                "reasoning": "Governance(US_President) ∧ LawEnforcement(SWAT) → no relation"
+            }
+        }
+    },
+    {
+        "eyesight(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "eyesight",
+                "explanation": "A Snellen chart measures visual acuity, representing the clinical assessment of eyesight, while a hawk's exceptional eyesight showcases its evolutionary advantage for survival. Together, they encapsulate the concept of 'eyesight'.",
+                "reasoning": "Measure(SnellenChart, VisualAcuity) and Synonym(VisualAcuity, Eyesight). Possess(Hawk, ExceptionalEyesight) and Synonym(ExceptionalEyesight, Eyesight). Thus, SnellenChart → VisualAcuity → Eyesight and Hawk → ExceptionalEyesight → Eyesight"
+            },
+            "specificity_level_3": {
+                "relation": "vision",
+                "explanation": "A Snellen chart measures vision, and a hawk's eyesight is a natural example of exceptional vision.",
+                "reasoning": "Measure(SnellenChart, Vision) and Possess(Hawk, ExceptionalVision). Both relate to vision."
+            },
+            "specificity_level_2": {
+                "relation": "visual ability",
+                "explanation": "Both the Snellen chart and the hawk are connected to the ability to see.",
+                "reasoning": "Measure(SnellenChart, VisualAbility) and Possess(Hawk, VisualAbility). Both involve seeing."
+            },
+            "specificity_level_1": {
+                "relation": "possibly about seeing",
+                "explanation": "The Snellen chart and hawk might both have something to do with seeing or vision.",
+                "reasoning": "PossibleConnection(Vision)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated ideas",
+                "explanation": "A Snellen chart is a medical tool, while a hawk is an animal.",
+                "reasoning": "MedicalTool(SnellenChart) ∧ Animal(Hawk) → no relation"
+            }
+        }
+    },
+    {
+        "opportunity and ability(invisible, ability, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "opportunity and ability",
+                "explanation": "An open door represents opportunity, while a key symbolizes the skill or ability needed to access it. Together, they illustrate the concept of 'opportunity and ability'.",
+                "reasoning": "Represents(OpenDoor, Opportunity). Represents(Key, Skill). Thus, OpenDoor → Opportunity → Ability and Key → Skill → Ability"
+            },
+            "specificity_level_3": {
+                "relation": "possibility and skill",
+                "explanation": "An open door signifies possibility, and a key represents the skill required to unlock it.",
+                "reasoning": "Represents(OpenDoor, Possibility). Represents(Key, Skill). Both relate to opportunity and ability."
+            },
+            "specificity_level_2": {
+                "relation": "access and means",
+                "explanation": "An open door and a key are both about gaining access or having the means to do something.",
+                "reasoning": "Represents(OpenDoor, Access). Represents(Key, Means). Both involve access."
+            },
+            "specificity_level_1": {
+                "relation": "vague connection to access",
+                "explanation": "An open door and a key might both have something to do with access or opportunity.",
+                "reasoning": "PossibleConnection(Access)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated symbols",
+                "explanation": "An open door is about entry, while a key is about unlocking.",
+                "reasoning": "Entry(OpenDoor) ∧ Unlock(Key) → no relation"
+            }
+        }
+    },
+    {
+        "Curiosity(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Curiosity",
+                "explanation": "Cats are known for their inquisitive nature, often exploring their surroundings, while a magnifying glass is a tool used for close examination, driven by curiosity. Both represent the concept of 'Curiosity'.",
+                "reasoning": "KnownFor(Cat, Inquisitiveness). UsedFor(MagnifyingGlass, Examination) and DrivenBy(Examination, Curiosity). Thus, Cat → Inquisitiveness → Curiosity and MagnifyingGlass → Examination → Curiosity"
+            },
+            "specificity_level_3": {
+                "relation": "inquisitiveness",
+                "explanation": "Cats are naturally curious, and a magnifying glass is used for detailed examination, both driven by curiosity.",
+                "reasoning": "KnownFor(Cat, Curiosity). UsedFor(MagnifyingGlass, Examination). Both relate to curiosity."
+            },
+            "specificity_level_2": {
+                "relation": "exploration",
+                "explanation": "Cats explore their surroundings, and a magnifying glass is used to examine things closely.",
+                "reasoning": "Explores(Cat, Surroundings). Examines(MagnifyingGlass, Objects). Both involve exploration."
+            },
+            "specificity_level_1": {
+                "relation": "possibly about investigation",
+                "explanation": "Cats and magnifying glasses might both have something to do with investigation or curiosity.",
+                "reasoning": "PossibleConnection(Investigation)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated concepts",
+                "explanation": "Cats are animals, while magnifying glasses are tools.",
+                "reasoning": "Animal(Cat) ∧ Tool(MagnifyingGlass) → no relation"
+            }
+        }
+    },
+    {
+        "ability to grow(invisible, ability, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "ability to grow",
+                "explanation": "A seed contains the inherent potential to grow, while a sprout demonstrates the realized ability to grow. Together, they illustrate the concept of 'ability to grow'.",
+                "reasoning": "Represents(Seed, Potential). Demonstrates(Sprout, Growth) and Implies(Growth, Ability). Thus, Seed → Potential → Ability and Sprout → Growth → Ability"
+            },
+            "specificity_level_3": {
+                "relation": "growth potential",
+                "explanation": "A seed represents potential for growth, and a sprout shows the actual growth process.",
+                "reasoning": "Represents(Seed, Potential). Demonstrates(Sprout, Growth). Both relate to growth ability."
+            },
+            "specificity_level_2": {
+                "relation": "development",
+                "explanation": "A seed and a sprout are both connected to the process of development or growth.",
+                "reasoning": "Represents(Seed, Development). Demonstrates(Sprout, Development). Both involve growth."
+            },
+            "specificity_level_1": {
+                "relation": "possibly about growth",
+                "explanation": "A seed and a sprout might both have something to do with growth or development.",
+                "reasoning": "PossibleConnection(Growth)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated stages",
+                "explanation": "A seed is a dormant stage, while a sprout is an active stage.",
+                "reasoning": "Dormant(Seed) ∧ Active(Sprout) → no relation"
+            }
+        }
+    },
+    {
+        "Potential to perform(invisible, ability, metaphor, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Potential to perform",
+                "explanation": "An empty stage symbolizes the opportunity to perform, while a spotlight highlights talent, both suggesting the ability or potential to perform.",
+                "reasoning": "Represents(EmptyStage, OpportunityToPerform) ∧ Highlights(Spotlight, Talent) ∧ Implies(Talent, AbilityToPerform) → PotentialToPerform"
+            },
+            "specificity_level_3": {
+                "relation": "Opportunity and talent",
+                "explanation": "An empty stage represents a chance to perform, and a spotlight emphasizes skill, both linked to performance.",
+                "reasoning": "Represents(EmptyStage, Opportunity) ∧ Highlights(Spotlight, Skill) → Performance"
+            },
+            "specificity_level_2": {
+                "relation": "Performance indicators",
+                "explanation": "An empty stage and a spotlight are associated with performing in some way.",
+                "reasoning": "RelatedTo(EmptyStage, Performance) ∧ RelatedTo(Spotlight, Performance) → Performance"
+            },
+            "specificity_level_1": {
+                "relation": "Vague performance connection",
+                "explanation": "Both seem related to performing, but the connection is unclear.",
+                "reasoning": "PossibleConnection(Performance)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated concepts",
+                "explanation": "An empty stage is just a space, and a spotlight is a light source, with no link to performance.",
+                "reasoning": "IsA(EmptyStage, Space) ∧ IsA(Spotlight, Light) → NoRelation"
+            }
+        }
+    },
+    {
+        "message passing(visible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Message passing",
+                "explanation": "A telegraph key transmits Morse code, and dots and dashes compose Morse code, both representing message passing.",
+                "reasoning": "Transmit(TelegraphKey, MorseCode) ∧ Compose(DotsAndDashes, MorseCode) → MessagePassing"
+            },
+            "specificity_level_3": {
+                "relation": "Communication tools",
+                "explanation": "A telegraph key sends messages, and dots and dashes represent Morse code, a form of communication.",
+                "reasoning": "Transmit(TelegraphKey, Message) ∧ Represent(DotsAndDashes, Code) → Communication"
+            },
+            "specificity_level_2": {
+                "relation": "Symbolic communication",
+                "explanation": "A telegraph key and dots and dashes are associated with sending and representing messages.",
+                "reasoning": "RelatedTo(TelegraphKey, Message) ∧ RelatedTo(DotsAndDashes, Code) → Communication"
+            },
+            "specificity_level_1": {
+                "relation": "Vague communication link",
+                "explanation": "Both seem related to communication, but the connection is unclear.",
+                "reasoning": "PossibleConnection(Communication)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated mechanisms",
+                "explanation": "A telegraph key is a device, and dots and dashes are symbols, with no link to communication.",
+                "reasoning": "IsA(TelegraphKey, Device) ∧ IsA(DotsAndDashes, Symbol) → NoRelation"
+            }
+        }
+    },
+    {
+        "Cryptography(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Cryptography",
+                "explanation": "A locked diary with a cipher symbolizes cryptography, and Alan Turing's breaking of the Enigma code is a key historical event in cryptography.",
+                "reasoning": "Symbolize(LockedDiaryWithCipher, Cryptography) ∧ Break(AlanTuring, EnigmaCode) ∧ BelongTo(EnigmaCode, Cryptography) → Cryptography"
+            },
+            "specificity_level_3": {
+                "relation": "Code and code-breaking",
+                "explanation": "A locked diary with a cipher represents encryption, and Alan Turing's work on the Enigma code highlights code-breaking in cryptography.",
+                "reasoning": "Represent(LockedDiaryWithCipher, Encryption) ∧ Break(AlanTuring, Code) → Cryptography"
+            },
+            "specificity_level_2": {
+                "relation": "Security and decryption",
+                "explanation": "A locked diary with a cipher is associated with security, and Alan Turing is linked to decryption.",
+                "reasoning": "RelatedTo(LockedDiaryWithCipher, Security) ∧ RelatedTo(AlanTuring, Decryption) → Cryptography"
+            },
+            "specificity_level_1": {
+                "relation": "Vague cryptography link",
+                "explanation": "Both seem related to cryptography, but the connection is unclear.",
+                "reasoning": "PossibleConnection(Cryptography)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated concepts",
+                "explanation": "A locked diary is for privacy, and Alan Turing is a historical figure, with no link to cryptography.",
+                "reasoning": "IsA(LockedDiary, PrivacyTool) ∧ IsA(AlanTuring, Person) → NoRelation"
+            }
+        }
+    },
+    {
+        "Artificial Intelligence(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Artificial Intelligence",
+                "explanation": "A neural network diagram represents the foundational structure of AI, and a robotic hand playing chess demonstrates AI's practical application in strategic decision-making.",
+                "reasoning": "Underlie(NeuralNetwork, ArtificialIntelligence) ∧ ExampleOf(ChessPlayingRobot, ArtificialIntelligence) → ArtificialIntelligence"
+            },
+            "specificity_level_3": {
+                "relation": "AI structure and application",
+                "explanation": "A neural network diagram shows the architecture of AI, and a robotic hand playing chess exemplifies AI's capabilities.",
+                "reasoning": "Represent(NeuralNetwork, AIArchitecture) ∧ Demonstrate(ChessPlayingRobot, AICapabilities) → ArtificialIntelligence"
+            },
+            "specificity_level_2": {
+                "relation": "AI components",
+                "explanation": "A neural network and a robotic hand are both associated with artificial intelligence.",
+                "reasoning": "RelatedTo(NeuralNetwork, AI) ∧ RelatedTo(ChessPlayingRobot, AI) → ArtificialIntelligence"
+            },
+            "specificity_level_1": {
+                "relation": "Vague AI connection",
+                "explanation": "Both seem related to artificial intelligence, but the connection is unclear.",
+                "reasoning": "PossibleConnection(AI)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated technologies",
+                "explanation": "A neural network is a computational model, and a robotic hand is a mechanical device, with no link to AI.",
+                "reasoning": "IsA(NeuralNetwork, Model) ∧ IsA(ChessPlayingRobot, Device) → NoRelation"
+            }
+        }
+    },
+    {
+        "repeat function(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Repeat function",
+                "explanation": "A repeat button allows replaying content, and a record player, especially older models, often includes a repeat function, both enabling the experience of something 'once again'.",
+                "reasoning": "Function(RepeatButton, Replay) ∧ Capability(RecordPlayer, Replay) → RepeatFunction"
+            },
+            "specificity_level_3": {
+                "relation": "Replay capability",
+                "explanation": "A repeat button and a record player both provide the ability to replay audio content.",
+                "reasoning": "Enable(RepeatButton, Replay) ∧ Enable(RecordPlayer, Replay) → Replay"
+            },
+            "specificity_level_2": {
+                "relation": "Audio replay",
+                "explanation": "A repeat button and a record player are associated with replaying audio.",
+                "reasoning": "RelatedTo(RepeatButton, AudioReplay) ∧ RelatedTo(RecordPlayer, AudioReplay) → Replay"
+            },
+            "specificity_level_1": {
+                "relation": "Vague replay connection",
+                "explanation": "Both seem related to replaying something, but the connection is unclear.",
+                "reasoning": "PossibleConnection(Replay)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated functions",
+                "explanation": "A repeat button is for media control, and a record player is an audio device, with no link to replay.",
+                "reasoning": "IsA(RepeatButton, Control) ∧ IsA(RecordPlayer, Device) → NoRelation"
+            }
+        }
+    },
+    {
+        "the range of capacity(visible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "the range of capacity",
+                "explanation": "The first image shows a stadium filled to its maximum capacity with people, while the second image shows a teacup, currently empty but implying a potential capacity to be filled. Both images represent the concept of capacity, one full and one empty, highlighting the range of the concept.",
+                "reasoning": "Full(Stadium, People) and Represent(Stadium, MaximumCapacity); Potential(Teacup, Filled) and Represent(Teacup, PotentialCapacity). Thus, Stadium → MaximumCapacity → Capacity and Teacup → PotentialCapacity → Capacity"
+            },
+            "specificity_level_3": {
+                "relation": "capacity representation",
+                "explanation": "A stadium filled with people represents maximum capacity, while an empty teacup represents potential capacity.",
+                "reasoning": "Full(Stadium, People) → MaximumCapacity; Potential(Teacup, Filled) → PotentialCapacity"
+            },
+            "specificity_level_2": {
+                "relation": "capacity concept",
+                "explanation": "The stadium and teacup both relate to the idea of capacity, one being full and the other empty.",
+                "reasoning": "Stadium → Capacity; Teacup → Capacity"
+            },
+            "specificity_level_1": {
+                "relation": "vague capacity idea",
+                "explanation": "The images seem to have something to do with capacity, but it's unclear how.",
+                "reasoning": "PossibleConnection(Capacity)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated concepts",
+                "explanation": "A stadium is for sports, and a teacup is for drinking; they have no connection to capacity.",
+                "reasoning": "UsedFor(Stadium, Sports) ∧ UsedFor(Teacup, Drinking) → ¬Capacity"
+            }
+        }
+    },
+    {
+        "EasilyBroken(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "EasilyBroken",
+                "explanation": "Soap bubbles are known for their delicate and easily broken nature, while thin ice is similarly precarious and prone to cracking under pressure. Both represent the concept of fragility.",
+                "reasoning": "Represents(SoapBubble, DelicateEasilyBroken); Represents(ThinIce, PrecariousEasilyBroken). Thus, SoapBubble → DelicateEasilyBroken → Fragile and ThinIce → PrecariousEasilyBroken → Fragile"
+            },
+            "specificity_level_3": {
+                "relation": "fragility",
+                "explanation": "Soap bubbles and thin ice are both examples of things that are easily broken or fragile.",
+                "reasoning": "SoapBubble → Fragile; ThinIce → Fragile"
+            },
+            "specificity_level_2": {
+                "relation": "delicate nature",
+                "explanation": "Both soap bubbles and thin ice are delicate and can break easily.",
+                "reasoning": "SoapBubble → Delicate; ThinIce → Delicate"
+            },
+            "specificity_level_1": {
+                "relation": "possibly fragile",
+                "explanation": "Soap bubbles and thin ice might be related to fragility, but it's not clear.",
+                "reasoning": "PossibleConnection(Fragile)"
+            },
+            "specificity_level_0": {
+                "relation": "incorrect analogy",
+                "explanation": "Soap bubbles are for play, and thin ice is for skating; they have no connection to fragility.",
+                "reasoning": "UsedFor(SoapBubble, Play) ∧ UsedFor(ThinIce, Skating) → ¬Fragile"
+            }
+        }
+    },
+    {
+        "the spectrum of walking ability(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "the spectrum of walking ability",
+                "explanation": "Footprints symbolize the act of walking, particularly unimpeded walking, while crutches represent an aid for walking, suggesting difficulty or impairment in one's walking ability. The juxtaposition highlights the spectrum of walking ability.",
+                "reasoning": "Symbolize(Footprints, UnimpededWalking); Represent(Crutches, AidedWalking). Thus, Footprints → WalkingAbility and Crutches → WalkingAbility"
+            },
+            "specificity_level_3": {
+                "relation": "walking ability",
+                "explanation": "Footprints represent unimpeded walking, while crutches represent aided walking, showing different levels of walking ability.",
+                "reasoning": "Footprints → UnimpededWalking; Crutches → AidedWalking"
+            },
+            "specificity_level_2": {
+                "relation": "walking concept",
+                "explanation": "Footprints and crutches both relate to the idea of walking, but in different ways.",
+                "reasoning": "Footprints → Walking; Crutches → Walking"
+            },
+            "specificity_level_1": {
+                "relation": "vague walking idea",
+                "explanation": "The images seem to have something to do with walking, but it's unclear how.",
+                "reasoning": "PossibleConnection(Walking)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated concepts",
+                "explanation": "Footprints are from shoes, and crutches are for support; they have no connection to walking.",
+                "reasoning": "UsedFor(Footprints, ShoeTracks) ∧ UsedFor(Crutches, Support) → ¬Walking"
+            }
+        }
+    },
+    {
+        "different aspect of seeing(invisible, ability, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "different aspect of seeing",
+                "explanation": "Wide open eyes represent the typical way humans see, while Braille represents an alternative way for visually impaired individuals to access information, highlighting a different aspect of 'seeing' - perceiving and understanding the world.",
+                "reasoning": "Represent(OpenEyes, TypicalSeeing); Represent(Braille, AlternativeSeeing). Thus, OpenEyes → TypicalSeeing → Seeing and Braille → AlternativeSeeing → Seeing"
+            },
+            "specificity_level_3": {
+                "relation": "seeing methods",
+                "explanation": "Open eyes represent typical seeing, while Braille represents an alternative method for perceiving information.",
+                "reasoning": "OpenEyes → TypicalSeeing; Braille → AlternativeSeeing"
+            },
+            "specificity_level_2": {
+                "relation": "seeing concept",
+                "explanation": "Open eyes and Braille both relate to the idea of seeing or perceiving information.",
+                "reasoning": "OpenEyes → Seeing; Braille → Seeing"
+            },
+            "specificity_level_1": {
+                "relation": "vague seeing idea",
+                "explanation": "The images seem to have something to do with seeing, but it's unclear how.",
+                "reasoning": "PossibleConnection(Seeing)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated concepts",
+                "explanation": "Open eyes are for looking, and Braille is for reading; they have no connection to seeing.",
+                "reasoning": "UsedFor(OpenEyes, Looking) ∧ UsedFor(Braille, Reading) → ¬Seeing"
+            }
+        }
+    },
+    {
+        "Chinese Culture(invisible, culture, mutual elements, East Asia, English)": {
+            "specificity_level_4": {
+                "relation": "Chinese Culture",
+                "explanation": "The Great Wall is a significant historical landmark of China, while red envelopes are traditionally given during Chinese New Year and other special occasions. Both represent aspects of Chinese culture.",
+                "reasoning": "Represents(GreatWall, ChineseHistory) and PartOf(ChineseHistory, ChineseCulture); Represents(RedEnvelope, ChineseTradition) and PartOf(ChineseTradition, ChineseCulture). Thus, GreatWall → ChineseHistory → ChineseCulture and RedEnvelope → ChineseTradition → ChineseCulture"
+            },
+            "specificity_level_3": {
+                "relation": "Chinese cultural elements",
+                "explanation": "The Great Wall represents Chinese history, while red envelopes represent Chinese traditions, both being part of Chinese culture.",
+                "reasoning": "GreatWall → ChineseHistory; RedEnvelope → ChineseTradition"
+            },
+            "specificity_level_2": {
+                "relation": "Chinese culture",
+                "explanation": "The Great Wall and red envelopes both relate to Chinese culture in some way.",
+                "reasoning": "GreatWall → ChineseCulture; RedEnvelope → ChineseCulture"
+            },
+            "specificity_level_1": {
+                "relation": "vague Chinese culture idea",
+                "explanation": "The images seem to have something to do with Chinese culture, but it's unclear how.",
+                "reasoning": "PossibleConnection(ChineseCulture)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated concepts",
+                "explanation": "The Great Wall is a tourist attraction, and red envelopes are for gifts; they have no connection to Chinese culture.",
+                "reasoning": "UsedFor(GreatWall, Tourism) ∧ UsedFor(RedEnvelope, Gifts) → ¬ChineseCulture"
+            }
+        }
+    },
+    {
+        "Chinese Art(invisible, culture, mutual elements, East Asia, English)": {
+            "specificity_level_4": {
+                "relation": "Chinese Art",
+                "explanation": "The Terracotta Army exemplifies ancient Chinese sculptural art, while silk painting represents traditional Chinese painting techniques, both integral to Chinese art.",
+                "reasoning": "ExampleOf(TerracottaArmy, ChineseSculpture) and CategoryOf(ChineseSculpture, ChineseArt); ExampleOf(SilkPainting, ChinesePainting) and CategoryOf(ChinesePainting, ChineseArt). Thus, TerracottaArmy → ChineseSculpture → ChineseArt and SilkPainting → ChinesePainting → ChineseArt"
+            },
+            "specificity_level_3": {
+                "relation": "Chinese Art",
+                "explanation": "The Terracotta Army and silk painting are examples of Chinese art, showcasing its diversity.",
+                "reasoning": "ExampleOf(TerracottaArmy, ChineseSculpture); ExampleOf(SilkPainting, ChinesePainting). Both are part of Chinese art."
+            },
+            "specificity_level_2": {
+                "relation": "Chinese Art",
+                "explanation": "The Terracotta Army and silk painting are related to Chinese art.",
+                "reasoning": "Both are examples of Chinese art forms."
+            },
+            "specificity_level_1": {
+                "relation": "Chinese Art",
+                "explanation": "The Terracotta Army and silk painting might be part of Chinese art.",
+                "reasoning": "PossibleConnection(ChineseArt)"
+            },
+            "specificity_level_0": {
+                "relation": "Chinese Art",
+                "explanation": "The Terracotta Army is a military artifact, and silk painting is unrelated to Chinese art.",
+                "reasoning": "ExampleOf(TerracottaArmy, Military) and ExampleOf(SilkPainting, Fabric) → ¬ChineseArt"
+            }
+        }
+    },
+    {
+        "Thanksgiving(invisible, culture, mutual elements, USAEnglish, English)": {
+            "specificity_level_4": {
+                "relation": "Thanksgiving",
+                "explanation": "The wishbone tradition symbolizes good luck, and the Mayflower Compact led to the first Thanksgiving, both deeply tied to the holiday's cultural and historical significance.",
+                "reasoning": "Tradition(Thanksgiving, Wishbone); LeadTo(MayflowerCompact, FirstThanksgiving) and InstanceOf(FirstThanksgiving, Thanksgiving). Thus, Wishbone → Thanksgiving and MayflowerCompact → FirstThanksgiving → Thanksgiving"
+            },
+            "specificity_level_3": {
+                "relation": "Thanksgiving",
+                "explanation": "The wishbone is a Thanksgiving tradition, and the Mayflower Compact is linked to the holiday's origins.",
+                "reasoning": "Tradition(Thanksgiving, Wishbone); LeadTo(MayflowerCompact, FirstThanksgiving). Both relate to Thanksgiving."
+            },
+            "specificity_level_2": {
+                "relation": "Thanksgiving",
+                "explanation": "The wishbone and Mayflower Compact are associated with Thanksgiving.",
+                "reasoning": "Both have connections to Thanksgiving."
+            },
+            "specificity_level_1": {
+                "relation": "Thanksgiving",
+                "explanation": "The wishbone and Mayflower Compact might be related to Thanksgiving.",
+                "reasoning": "PossibleConnection(Thanksgiving)"
+            },
+            "specificity_level_0": {
+                "relation": "Thanksgiving",
+                "explanation": "The wishbone is a bird bone, and the Mayflower Compact is a legal document, unrelated to Thanksgiving.",
+                "reasoning": "IsA(Wishbone, Bone) and IsA(MayflowerCompact, Document) → ¬Thanksgiving"
+            }
+        }
+    },
+    {
+        "apple(invisible, culture, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "apple",
+                "explanation": "The falling apple story inspired Newton's theory of gravity, and the Apple Inc. logo represents the technology company, both culturally significant in their respective contexts.",
+                "reasoning": "FallOn(Apple, Newton); Logo(AppleInc, BittenApple). Thus, Newton → Apple and BittenApple → AppleInc → Apple"
+            },
+            "specificity_level_3": {
+                "relation": "apple",
+                "explanation": "The falling apple is linked to Newton's discovery, and the Apple Inc. logo is a modern representation of the fruit.",
+                "reasoning": "FallOn(Apple, Newton); Logo(AppleInc, BittenApple). Both involve apples."
+            },
+            "specificity_level_2": {
+                "relation": "apple",
+                "explanation": "The falling apple and the Apple Inc. logo are related to apples.",
+                "reasoning": "Both depict apples in different contexts."
+            },
+            "specificity_level_1": {
+                "relation": "apple",
+                "explanation": "The falling apple and the Apple Inc. logo might be connected to apples.",
+                "reasoning": "PossibleConnection(Apple)"
+            },
+            "specificity_level_0": {
+                "relation": "apple",
+                "explanation": "The falling apple is a fruit, and the Apple Inc. logo is a tech brand, unrelated to each other.",
+                "reasoning": "IsA(Apple, Fruit) and IsA(AppleInc, Company) → ¬SameContext"
+            }
+        }
+    },
+    {
+        "Internet Culture(visible, culture, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Internet Culture",
+                "explanation": "Cat memes and rage comics are iconic elements of internet culture, representing humor and communication in online communities.",
+                "reasoning": "Represent(CatMeme, InternetHumor) and PartOf(InternetHumor, InternetCulture); Represent(RageComic, InternetCommunication) and PartOf(InternetCommunication, InternetCulture). Thus, CatMeme → InternetHumor → InternetCulture and RageComic → InternetCommunication → InternetCulture"
+            },
+            "specificity_level_3": {
+                "relation": "Internet Culture",
+                "explanation": "Cat memes and rage comics are significant parts of internet culture, showcasing its humor and communication styles.",
+                "reasoning": "Represent(CatMeme, InternetHumor); Represent(RageComic, InternetCommunication). Both are part of internet culture."
+            },
+            "specificity_level_2": {
+                "relation": "Internet Culture",
+                "explanation": "Cat memes and rage comics are related to internet culture.",
+                "reasoning": "Both are examples of internet culture."
+            },
+            "specificity_level_1": {
+                "relation": "Internet Culture",
+                "explanation": "Cat memes and rage comics might be part of internet culture.",
+                "reasoning": "PossibleConnection(InternetCulture)"
+            },
+            "specificity_level_0": {
+                "relation": "Internet Culture",
+                "explanation": "Cat memes are about animals, and rage comics are unrelated to internet culture.",
+                "reasoning": "IsA(CatMeme, Animal) and IsA(RageComic, Comic) → ¬InternetCulture"
+            }
+        }
+    },
+    {
+        "Japanese Tradition(invisible, culture, mutual elements, East Asia, English)": {
+            "specificity_level_4": {
+                "relation": "Japanese Tradition",
+                "explanation": "The tea ceremony and samurai sword are integral to Japanese tradition, representing its cultural rituals and warrior heritage.",
+                "reasoning": "IsA(TeaCeremony, JapaneseTradition); IsA(SamuraiSword, JapaneseTradition). Thus, TeaCeremony → JapaneseTradition and SamuraiSword → JapaneseTradition"
+            },
+            "specificity_level_3": {
+                "relation": "Japanese Tradition",
+                "explanation": "The tea ceremony and samurai sword are key examples of Japanese tradition.",
+                "reasoning": "IsA(TeaCeremony, JapaneseTradition); IsA(SamuraiSword, JapaneseTradition). Both are part of Japanese tradition."
+            },
+            "specificity_level_2": {
+                "relation": "Japanese Tradition",
+                "explanation": "The tea ceremony and samurai sword are related to Japanese tradition.",
+                "reasoning": "Both are examples of Japanese tradition."
+            },
+            "specificity_level_1": {
+                "relation": "Japanese Tradition",
+                "explanation": "The tea ceremony and samurai sword might be part of Japanese tradition.",
+                "reasoning": "PossibleConnection(JapaneseTradition)"
+            },
+            "specificity_level_0": {
+                "relation": "Japanese Tradition",
+                "explanation": "The tea ceremony is a beverage ritual, and the samurai sword is a weapon, unrelated to Japanese tradition.",
+                "reasoning": "IsA(TeaCeremony, Beverage) and IsA(SamuraiSword, Weapon) → ¬JapaneseTradition"
+            }
+        }
+    },
+    {
+        "Lacquer Fan(invisible, culture, relation, East Asia, English)": {
+            "specificity_level_4": {
+                "relation": "Lacquer Fan",
+                "explanation": "Lacquer, derived from the lacquer tree, is used as a finish for various crafts, including folding fans. A lacquer fan is a specific object made using lacquer, combining the properties of lacquer and the functionality of a folding fan.",
+                "reasoning": "Produces(LacquerTree, Lacquer) ∧ UsedIn(Lacquer, LacquerFan) ∧ IsA(FoldingFan, Fan) ∧ CanBeMadeOf(Fan, Lacquer) → LacquerTree → Lacquer → LacquerFan ∧ FoldingFan → Fan → LacquerFan"
+            },
+            "specificity_level_3": {
+                "relation": "Lacquer Fan",
+                "explanation": "Lacquer is applied to folding fans to create lacquer fans, which are decorative and functional objects.",
+                "reasoning": "UsedIn(Lacquer, LacquerFan) ∧ IsA(FoldingFan, Fan) → LacquerFan"
+            },
+            "specificity_level_2": {
+                "relation": "Lacquer Fan",
+                "explanation": "Lacquer is used to finish folding fans, resulting in lacquer fans.",
+                "reasoning": "UsedIn(Lacquer, LacquerFan) → LacquerFan"
+            },
+            "specificity_level_1": {
+                "relation": "Lacquer Fan",
+                "explanation": "Lacquer and folding fans are somehow related to create lacquer fans.",
+                "reasoning": "PossibleConnection(Lacquer, FoldingFan)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Objects",
+                "explanation": "Lacquer is a finish, and folding fans are just fans; they have no connection.",
+                "reasoning": "NoRelation(Lacquer, FoldingFan)"
+            }
+        }
+    },
+    {
+        "African Culture(invisible, culture, mutual elements, other, English)": {
+            "specificity_level_4": {
+                "relation": "African Culture",
+                "explanation": "The Djembe drum represents West African music, and Kente cloth symbolizes Ghanaian tradition. Together, they exemplify the rich and diverse artistic expressions within African culture.",
+                "reasoning": "Represents(DjembeDrum, WestAfricanMusic) ∧ IsPartOf(WestAfricanMusic, AfricanCulture) ∧ Represents(KenteCloth, GhanaianTradition) ∧ IsPartOf(GhanaianTradition, AfricanCulture) → DjembeDrum → WestAfricanMusic → AfricanCulture ∧ KenteCloth → GhanaianTradition → AfricanCulture"
+            },
+            "specificity_level_3": {
+                "relation": "African Culture",
+                "explanation": "The Djembe drum and Kente cloth are cultural symbols that reflect African traditions and artistry.",
+                "reasoning": "Represents(DjembeDrum, WestAfricanMusic) ∧ Represents(KenteCloth, GhanaianTradition) → AfricanCulture"
+            },
+            "specificity_level_2": {
+                "relation": "African Culture",
+                "explanation": "The Djembe drum and Kente cloth are associated with African cultural practices.",
+                "reasoning": "AssociatedWith(DjembeDrum, Africa) ∧ AssociatedWith(KenteCloth, Africa)"
+            },
+            "specificity_level_1": {
+                "relation": "African Culture",
+                "explanation": "The Djembe drum and Kente cloth might be related to African culture.",
+                "reasoning": "PossibleConnection(DjembeDrum, KenteCloth, Africa)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Symbols",
+                "explanation": "The Djembe drum is just a drum, and Kente cloth is just fabric; they have no cultural significance.",
+                "reasoning": "NoCulturalConnection(DjembeDrum, KenteCloth)"
+            }
+        }
+    },
+    {
+        "African musical culture(invisible, culture, mutual elements, other, English)": {
+            "specificity_level_4": {
+                "relation": "African musical culture",
+                "explanation": "The Griot, a West African storyteller and musician, represents the oral tradition, while the Kora is a key instrument in this tradition. Afrobeat, a modern musical genre, demonstrates the evolution and continuation of African musical culture.",
+                "reasoning": "Play(Griot, Kora) ∧ Represent(Griot, OralTradition) ∧ PartOf(OralTradition, AfricaCulture) ∧ Genre(Afrobeat, Music) ∧ Origin(Afrobeat, WestAfrica) ∧ PartOf(WestAfrica, Africa) ∧ Has(Africa, AfricaCulture) → Griot → OralTradition → AfricaCulture ∧ Afrobeat → WestAfrica → Africa → AfricaCulture"
+            },
+            "specificity_level_3": {
+                "relation": "African musical culture",
+                "explanation": "The Griot and Kora represent traditional African music, while Afrobeat reflects its modern evolution.",
+                "reasoning": "Play(Griot, Kora) ∧ Genre(Afrobeat, Music) → AfricaCulture"
+            },
+            "specificity_level_2": {
+                "relation": "African musical culture",
+                "explanation": "The Griot, Kora, and Afrobeat are all connected to African music.",
+                "reasoning": "AssociatedWith(Griot, Kora, Afrobeat, Africa)"
+            },
+            "specificity_level_1": {
+                "relation": "African musical culture",
+                "explanation": "The Griot, Kora, and Afrobeat might be related to African music.",
+                "reasoning": "PossibleConnection(Griot, Kora, Afrobeat, Africa)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Elements",
+                "explanation": "The Griot is just a storyteller, the Kora is just an instrument, and Afrobeat is just music; they have no cultural connection.",
+                "reasoning": "NoCulturalConnection(Griot, Kora, Afrobeat)"
+            }
+        }
+    },
+    {
+        "Oktoberfest(invisible, culture, mutual elements, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Oktoberfest",
+                "explanation": "A giant pretzel is a common food enjoyed at Oktoberfest, and the Bavarian Dirndl is traditional attire worn during the festival. Together, they strongly suggest the cultural context of Oktoberfest.",
+                "reasoning": "Eat(People, GiantPretzel, Oktoberfest) ∧ Wear(People, BavarianDirndl, Oktoberfest) → GiantPretzel → Oktoberfest ∧ BavarianDirndl → Oktoberfest"
+            },
+            "specificity_level_3": {
+                "relation": "Oktoberfest",
+                "explanation": "Giant pretzels and Bavarian Dirndls are iconic elements of Oktoberfest celebrations.",
+                "reasoning": "AssociatedWith(GiantPretzel, Oktoberfest) ∧ AssociatedWith(BavarianDirndl, Oktoberfest)"
+            },
+            "specificity_level_2": {
+                "relation": "Oktoberfest",
+                "explanation": "Giant pretzels and Bavarian Dirndls are linked to Oktoberfest.",
+                "reasoning": "LinkedTo(GiantPretzel, Oktoberfest) ∧ LinkedTo(BavarianDirndl, Oktoberfest)"
+            },
+            "specificity_level_1": {
+                "relation": "Oktoberfest",
+                "explanation": "Giant pretzels and Bavarian Dirndls might be related to Oktoberfest.",
+                "reasoning": "PossibleConnection(GiantPretzel, BavarianDirndl, Oktoberfest)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Items",
+                "explanation": "Giant pretzels are just food, and Bavarian Dirndls are just clothing; they have no connection to Oktoberfest.",
+                "reasoning": "NoConnection(GiantPretzel, BavarianDirndl, Oktoberfest)"
+            }
+        }
+    },
+    {
+        "Bavarian culture(invisible, culture, relation, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Bavarian culture",
+                "explanation": "Lederhosen are traditionally worn in the Alps region, particularly in Bavaria, and beer steins are associated with Bavarian beer gardens. Together, they represent Bavarian culture.",
+                "reasoning": "Wear(People, Lederhosen, Alps) ∧ Drink(People, Beer, BeerStein) ∧ Wear(People, Lederhosen, BeerGarden) ∧ Located(BeerGarden, Alps) → Alps → Lederhosen ∧ BeerStein → BeerGarden → Lederhosen"
+            },
+            "specificity_level_3": {
+                "relation": "Bavarian culture",
+                "explanation": "Lederhosen and beer steins are iconic symbols of Bavarian traditions.",
+                "reasoning": "AssociatedWith(Lederhosen, Bavaria) ∧ AssociatedWith(BeerStein, Bavaria)"
+            },
+            "specificity_level_2": {
+                "relation": "Bavarian culture",
+                "explanation": "Lederhosen and beer steins are linked to Bavarian culture.",
+                "reasoning": "LinkedTo(Lederhosen, Bavaria) ∧ LinkedTo(BeerStein, Bavaria)"
+            },
+            "specificity_level_1": {
+                "relation": "Bavarian culture",
+                "explanation": "Lederhosen and beer steins might be related to Bavarian culture.",
+                "reasoning": "PossibleConnection(Lederhosen, BeerStein, Bavaria)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Items",
+                "explanation": "Lederhosen are just clothing, and beer steins are just drinking vessels; they have no cultural significance.",
+                "reasoning": "NoCulturalConnection(Lederhosen, BeerStein)"
+            }
+        }
+    },
+    {
+        "Festival of Holi(invisible, culture, mutual elements, South Asia and South-East Asia, English)": {
+            "specificity_level_4": {
+                "relation": "Festival of Holi",
+                "explanation": "The Festival of Holi is celebrated with colored powders (Gulal) and is deeply rooted in the mythological stories of Krishna, particularly his playful interactions with Radha and the gopis, symbolizing the festival's spirit.",
+                "reasoning": "Use(Holi, Gulal) ∧ Associate(Krishna, Holi) → Gulal → Holi and Krishna → Holi"
+            },
+            "specificity_level_3": {
+                "relation": "Festival of Holi",
+                "explanation": "Holi involves the use of colored powders and is associated with Krishna's playful stories, which are central to the festival.",
+                "reasoning": "Use(Holi, Gulal) ∧ Associate(Krishna, Holi) → Holi"
+            },
+            "specificity_level_2": {
+                "relation": "Festival of Holi",
+                "explanation": "Holi is a festival that includes colored powders and has connections to Krishna.",
+                "reasoning": "Use(Holi, Gulal) ∧ Associate(Krishna, Holi) → Holi"
+            },
+            "specificity_level_1": {
+                "relation": "Festival of Holi",
+                "explanation": "Holi is a festival with some connection to colors and Krishna.",
+                "reasoning": "PossibleConnection(Holi)"
+            },
+            "specificity_level_0": {
+                "relation": "Festival of Holi",
+                "explanation": "Holi is unrelated to colors or Krishna, focusing instead on other aspects.",
+                "reasoning": "¬Use(Holi, Gulal) ∧ ¬Associate(Krishna, Holi) → Holi"
+            }
+        }
+    },
+    {
+        "Samba and Carnival(invisible, culture, mutual elements, Latin American, English)": {
+            "specificity_level_4": {
+                "relation": "Samba and Carnival",
+                "explanation": "Sequins and feathers are integral to Samba costumes worn during Carnival, and drums are central to Samba music, which is a key element of Carnival celebrations.",
+                "reasoning": "PartOf(SequinsAndFeathers, SambaCostume) ∧ Carnival(SambaCostume, SambaMusic) ∧ PartOf(SambaMusic, Carnival) ∧ Instrument(Drum, SambaMusic) → SequinsAndFeathers → SambaCostume → Carnival → SambaMusic → Drum and Drum → SambaMusic → Carnival → SambaCostume → SequinsAndFeathers"
+            },
+            "specificity_level_3": {
+                "relation": "Samba and Carnival",
+                "explanation": "Samba costumes feature sequins and feathers, and Samba music relies on drums, both of which are essential to Carnival.",
+                "reasoning": "PartOf(SequinsAndFeathers, SambaCostume) ∧ PartOf(SambaMusic, Carnival) ∧ Instrument(Drum, SambaMusic) → Samba and Carnival"
+            },
+            "specificity_level_2": {
+                "relation": "Samba and Carnival",
+                "explanation": "Samba involves costumes with sequins and feathers, and music with drums, which are part of Carnival.",
+                "reasoning": "PartOf(SequinsAndFeathers, SambaCostume) ∧ PartOf(SambaMusic, Carnival) → Samba and Carnival"
+            },
+            "specificity_level_1": {
+                "relation": "Samba and Carnival",
+                "explanation": "Samba and Carnival seem to involve costumes and music, but the connection is unclear.",
+                "reasoning": "PossibleConnection(Samba, Carnival)"
+            },
+            "specificity_level_0": {
+                "relation": "Samba and Carnival",
+                "explanation": "Samba and Carnival are unrelated, with no shared elements.",
+                "reasoning": "¬PartOf(SequinsAndFeathers, SambaCostume) ∧ ¬PartOf(SambaMusic, Carnival) → Samba and Carnival"
+            }
+        }
+    },
+    {
+        "Mateship(invisible, culture, metaphor, other, English)": {
+            "specificity_level_4": {
+                "relation": "Mateship",
+                "explanation": "Akubra hats symbolize Australian culture, particularly in rural areas where mateship is highly valued, and a helping hand represents the core values of mateship: loyalty, support, and camaraderie.",
+                "reasoning": "Symbolizes(Akubra, AustralianCulture) ∧ Values(AustralianCulture, Mateship) ∧ Represents(HelpingHand, Support) ∧ CoreValue(Support, Mateship) → Akubra → AustralianCulture → Mateship and HelpingHand → Support → Mateship"
+            },
+            "specificity_level_3": {
+                "relation": "Mateship",
+                "explanation": "Akubra hats are a symbol of Australian culture, and a helping hand represents the values of mateship.",
+                "reasoning": "Symbolizes(Akubra, AustralianCulture) ∧ Represents(HelpingHand, Support) → Mateship"
+            },
+            "specificity_level_2": {
+                "relation": "Mateship",
+                "explanation": "Akubra hats and helping hands are associated with Australian culture and values.",
+                "reasoning": "Symbolizes(Akubra, AustralianCulture) ∧ Represents(HelpingHand, Support) → Mateship"
+            },
+            "specificity_level_1": {
+                "relation": "Mateship",
+                "explanation": "Akubra hats and helping hands might have something to do with Australian culture.",
+                "reasoning": "PossibleConnection(Mateship)"
+            },
+            "specificity_level_0": {
+                "relation": "Mateship",
+                "explanation": "Akubra hats and helping hands are unrelated to Australian culture or mateship.",
+                "reasoning": "¬Symbolizes(Akubra, AustralianCulture) ∧ ¬Represents(HelpingHand, Support) → Mateship"
+            }
+        }
+    },
+    {
+        "Italian Food and Family Traditions(invisible, culture, relation, Latin American, English)": {
+            "specificity_level_4": {
+                "relation": "Italian Food and Family Traditions",
+                "explanation": "Large family gatherings are central to Italian culture, often revolving around meals, and pasta is a staple of Italian cuisine, representing shared meals and inherited recipes.",
+                "reasoning": "CentralTo(LargeFamilyGathering, ItalianCulture) ∧ FocusOf(ItalianCulture, FoodAndFamily) ∧ StapleOf(Pasta, ItalianCuisine) ∧ Represents(ItalianCuisine, SharedMealsAndTraditions) → LargeFamilyGathering → ItalianCulture → FoodAndFamily and Pasta → ItalianCuisine → SharedMealsAndTraditions"
+            },
+            "specificity_level_3": {
+                "relation": "Italian Food and Family Traditions",
+                "explanation": "Italian culture emphasizes large family gatherings and pasta as a staple of shared meals and traditions.",
+                "reasoning": "CentralTo(LargeFamilyGathering, ItalianCulture) ∧ StapleOf(Pasta, ItalianCuisine) → Italian Food and Family Traditions"
+            },
+            "specificity_level_2": {
+                "relation": "Italian Food and Family Traditions",
+                "explanation": "Italian culture involves family gatherings and pasta as part of their cuisine.",
+                "reasoning": "CentralTo(LargeFamilyGathering, ItalianCulture) ∧ StapleOf(Pasta, ItalianCuisine) → Italian Food and Family Traditions"
+            },
+            "specificity_level_1": {
+                "relation": "Italian Food and Family Traditions",
+                "explanation": "Italian culture might involve family and food in some way.",
+                "reasoning": "PossibleConnection(Italian Food and Family Traditions)"
+            },
+            "specificity_level_0": {
+                "relation": "Italian Food and Family Traditions",
+                "explanation": "Italian culture is unrelated to family gatherings or pasta.",
+                "reasoning": "¬CentralTo(LargeFamilyGathering, ItalianCulture) ∧ ¬StapleOf(Pasta, ItalianCuisine) → Italian Food and Family Traditions"
+            }
+        }
+    },
+    {
+        "Shakespeare's Globe Theatre(invisible, culture, relation, USAEnglish, English)": {
+            "specificity_level_4": {
+                "relation": "Shakespeare's Globe Theatre",
+                "explanation": "Shakespeare's Globe Theatre was a circular ('O' shaped) open-air playhouse where many of his plays, including Hamlet (famous for the skull scene 'Alas, poor Yorick! I knew him, Horatio'), were performed.",
+                "reasoning": "ShapeOf(Shakespeare'sGlobeTheatre, O) ∧ PerformedAt(Hamlet, Shakespeare'sGlobeTheatre) ∧ Contains(Hamlet, Yorick'sSkull) → O → Shakespeare'sGlobeTheatre → Hamlet → Yorick'sSkull and Yorick'sSkull → Hamlet → Shakespeare'sGlobeTheatre → O"
+            },
+            "specificity_level_3": {
+                "relation": "Shakespeare's Globe Theatre",
+                "explanation": "The Globe Theatre was circular and hosted plays like Hamlet, which includes the famous Yorick's skull scene.",
+                "reasoning": "ShapeOf(Shakespeare'sGlobeTheatre, O) ∧ PerformedAt(Hamlet, Shakespeare'sGlobeTheatre) → Shakespeare's Globe Theatre"
+            },
+            "specificity_level_2": {
+                "relation": "Shakespeare's Globe Theatre",
+                "explanation": "The Globe Theatre was circular and was the venue for Hamlet.",
+                "reasoning": "ShapeOf(Shakespeare'sGlobeTheatre, O) ∧ PerformedAt(Hamlet, Shakespeare'sGlobeTheatre) → Shakespeare's Globe Theatre"
+            },
+            "specificity_level_1": {
+                "relation": "Shakespeare's Globe Theatre",
+                "explanation": "The Globe Theatre might have been circular and hosted Hamlet.",
+                "reasoning": "PossibleConnection(Shakespeare's Globe Theatre)"
+            },
+            "specificity_level_0": {
+                "relation": "Shakespeare's Globe Theatre",
+                "explanation": "The Globe Theatre was not circular and did not host Hamlet.",
+                "reasoning": "¬ShapeOf(Shakespeare'sGlobeTheatre, O) ∧ ¬PerformedAt(Hamlet, Shakespeare'sGlobeTheatre) → Shakespeare's Globe Theatre"
+            }
+        }
+    },
+    {
+        "Zeus(invisible, culture, mutual elements, other, English)": {
+            "specificity_level_4": {
+                "relation": "Zeus",
+                "explanation": "Zeus, the king of the gods in Greek mythology, is associated with lightning bolts as his weapon and resides on Mount Olympus.",
+                "reasoning": "Wields(Zeus, LightningBolt) ∧ HomeOf(Zeus, MountOlympus) → LightningBolt → Zeus → MountOlympus and MountOlympus → Zeus → LightningBolt"
+            },
+            "specificity_level_3": {
+                "relation": "Zeus",
+                "explanation": "Zeus is a central figure in Greek mythology, known for his control over lightning and his home on Mount Olympus.",
+                "reasoning": "Wields(Zeus, LightningBolt) ∧ HomeOf(Zeus, MountOlympus) → Zeus's attributes"
+            },
+            "specificity_level_2": {
+                "relation": "Zeus",
+                "explanation": "Zeus is a mythological figure associated with lightning and a mountain.",
+                "reasoning": "Wields(Zeus, LightningBolt) ∧ HomeOf(Zeus, MountOlympus) → Zeus's characteristics"
+            },
+            "specificity_level_1": {
+                "relation": "Zeus",
+                "explanation": "Zeus is a god from Greek mythology.",
+                "reasoning": "IsA(Zeus, God) → Zeus's identity"
+            },
+            "specificity_level_0": {
+                "relation": "Zeus",
+                "explanation": "Zeus is a Roman god of war.",
+                "reasoning": "IsA(Zeus, RomanGod) ∧ Domain(Zeus, War) → Incorrect information"
+            }
+        }
+    },
+    {
+        "Renaissance(invisible, culture, mutual elements, Non-English European, English)": {
+            "specificity_level_4": {
+                "relation": "Renaissance",
+                "explanation": "The Renaissance is characterized by humanistic art and architectural achievements, exemplified by Michelangelo's work on the Sistine Chapel.",
+                "reasoning": "Represents(HumanFigure, RenaissanceArt) ∧ CreatedBy(Michelangelo, SistineChapel) ∧ Represents(SistineChapel, Renaissance) → HumanFigure → RenaissanceArt → Renaissance and SistineChapel → Renaissance"
+            },
+            "specificity_level_3": {
+                "relation": "Renaissance",
+                "explanation": "The Renaissance was a period of cultural flourishing, marked by advancements in art and architecture.",
+                "reasoning": "Represents(HumanFigure, RenaissanceArt) ∧ Represents(SistineChapel, Renaissance) → Renaissance's cultural impact"
+            },
+            "specificity_level_2": {
+                "relation": "Renaissance",
+                "explanation": "The Renaissance was a time of artistic and architectural innovation.",
+                "reasoning": "Represents(HumanFigure, Art) ∧ Represents(SistineChapel, Architecture) → Renaissance's contributions"
+            },
+            "specificity_level_1": {
+                "relation": "Renaissance",
+                "explanation": "The Renaissance was a historical period with significant cultural developments.",
+                "reasoning": "IsA(Renaissance, HistoricalPeriod) → Renaissance's general significance"
+            },
+            "specificity_level_0": {
+                "relation": "Renaissance",
+                "explanation": "The Renaissance was a period of technological innovation.",
+                "reasoning": "IsA(Renaissance, TechnologicalPeriod) → Incorrect focus"
+            }
+        }
+    },
+    {
+        "Industrial Revolution(invisible, culture, mutual elements, USAEnglish, English)": {
+            "specificity_level_4": {
+                "relation": "Industrial Revolution",
+                "explanation": "The Industrial Revolution was marked by technological advancements like the steam engine and the rise of factories, leading to mass production and urbanization.",
+                "reasoning": "Symbolizes(SteamEngine, TechnologicalAdvancement) ∧ Represents(SteamEngine, IndustrialRevolution) ∧ Represents(Factory, MassProduction) ∧ Represents(Factory, IndustrialRevolution) → SteamEngine → TechnologicalAdvancement → IndustrialRevolution and Factory → MassProduction → IndustrialRevolution"
+            },
+            "specificity_level_3": {
+                "relation": "Industrial Revolution",
+                "explanation": "The Industrial Revolution transformed industry and society through innovations like the steam engine and factories.",
+                "reasoning": "Symbolizes(SteamEngine, Innovation) ∧ Represents(Factory, Industrialization) → Industrial Revolution's impact"
+            },
+            "specificity_level_2": {
+                "relation": "Industrial Revolution",
+                "explanation": "The Industrial Revolution introduced new technologies and factory systems.",
+                "reasoning": "Symbolizes(SteamEngine, Technology) ∧ Represents(Factory, Production) → Industrial Revolution's changes"
+            },
+            "specificity_level_1": {
+                "relation": "Industrial Revolution",
+                "explanation": "The Industrial Revolution was a period of industrial and societal change.",
+                "reasoning": "IsA(IndustrialRevolution, HistoricalPeriod) → Industrial Revolution's general significance"
+            },
+            "specificity_level_0": {
+                "relation": "Industrial Revolution",
+                "explanation": "The Industrial Revolution was a period of agricultural advancements.",
+                "reasoning": "IsA(IndustrialRevolution, AgriculturalPeriod) → Incorrect focus"
+            }
+        }
+    },
+    {
+        "Ephemeral thing(invisible, phenomenon, metaphor, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Ephemeral thing",
+                "explanation": "'Ephemeral' refers to things that are transient or short-lived, such as dandelion seeds and candle flames, both of which can be acted upon by the wind.",
+                "reasoning": "Extinguished(DandelionSeedhead, Wind) ∧ Extinguished(CandleFlames, Wind) → DandelionSeedhead → Wind and BlownOutCandle → Wind"
+            },
+            "specificity_level_3": {
+                "relation": "Ephemeral thing",
+                "explanation": "Ephemeral things are short-lived, like dandelion seeds and candle flames, which can be affected by the wind.",
+                "reasoning": "Extinguished(DandelionSeedhead, Wind) ∧ Extinguished(CandleFlames, Wind) → Ephemeral nature"
+            },
+            "specificity_level_2": {
+                "relation": "Ephemeral thing",
+                "explanation": "Ephemeral things are temporary, such as dandelion seeds and candle flames.",
+                "reasoning": "Extinguished(DandelionSeedhead, Wind) ∧ Extinguished(CandleFlames, Wind) → Temporary nature"
+            },
+            "specificity_level_1": {
+                "relation": "Ephemeral thing",
+                "explanation": "Ephemeral things are short-lived.",
+                "reasoning": "IsA(Ephemeral, ShortLived) → Ephemeral's general nature"
+            },
+            "specificity_level_0": {
+                "relation": "Ephemeral thing",
+                "explanation": "Ephemeral things are permanent and unchanging.",
+                "reasoning": "IsA(Ephemeral, Permanent) → Incorrect understanding"
+            }
+        }
+    },
+    {
+        "symbolize the concept of freedom(invisible, phenomenon, metaphor, NA, English)": {
+            "specificity_level_4": {
+                "relation": "symbolize the concept of freedom",
+                "explanation": "An uncaged bird represents liberation from confinement, and the open sky represents limitless possibilities, together symbolizing the concept of freedom.",
+                "reasoning": "Represents(UncagedBird, Liberation) ∧ Represents(OpenSky, LimitlessPossibilities) → UncagedBird → Liberation → Freedom and OpenSky → LimitlessPossibilities → Freedom"
+            },
+            "specificity_level_3": {
+                "relation": "symbolize the concept of freedom",
+                "explanation": "An uncaged bird and the open sky represent liberation and limitless possibilities, respectively, symbolizing freedom.",
+                "reasoning": "Represents(UncagedBird, Liberation) ∧ Represents(OpenSky, LimitlessPossibilities) → Freedom's symbolism"
+            },
+            "specificity_level_2": {
+                "relation": "symbolize the concept of freedom",
+                "explanation": "An uncaged bird and the open sky are associated with freedom.",
+                "reasoning": "Represents(UncagedBird, Freedom) ∧ Represents(OpenSky, Freedom) → Freedom's representation"
+            },
+            "specificity_level_1": {
+                "relation": "symbolize the concept of freedom",
+                "explanation": "An uncaged bird and the open sky are symbols of freedom.",
+                "reasoning": "IsA(UncagedBird, Symbol) ∧ IsA(OpenSky, Symbol) → Freedom's symbols"
+            },
+            "specificity_level_0": {
+                "relation": "symbolize the concept of freedom",
+                "explanation": "An uncaged bird and the open sky represent confinement and limitation.",
+                "reasoning": "Represents(UncagedBird, Confinement) ∧ Represents(OpenSky, Limitation) → Incorrect symbolism"
+            }
+        }
+    },
+    {
+        "Sodium Metal(visible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Sodium Metal",
+                "explanation": "Burning sodium metal produces a characteristic bright yellow flame, a classic demonstration of a flame reaction. Table salt (sodium chloride) contains sodium metal, albeit in a chemically bound form. The salt shaker represents a common source of this compound.",
+                "reasoning": "Produce(SodiumMetal, YellowFlame) and Indicate(YellowFlame, Sodium) Contain(TableSalt, Sodium) and Contain(SaltShaker, TableSalt). Thus, SodiumMetal → YellowFlame → Sodium and SaltShaker → TableSalt → Sodium"
+            },
+            "specificity_level_3": {
+                "relation": "Sodium Metal",
+                "explanation": "Sodium metal burns with a yellow flame, and table salt contains sodium.",
+                "reasoning": "Produce(SodiumMetal, YellowFlame) and Contain(TableSalt, Sodium). Thus, SodiumMetal → YellowFlame and TableSalt → Sodium"
+            },
+            "specificity_level_2": {
+                "relation": "Sodium Metal",
+                "explanation": "Sodium metal is related to yellow flames and table salt.",
+                "reasoning": "Produce(SodiumMetal, YellowFlame) and Contain(TableSalt, Sodium)"
+            },
+            "specificity_level_1": {
+                "relation": "Sodium Metal",
+                "explanation": "Sodium metal is somehow connected to flames and salt.",
+                "reasoning": "PossibleConnection(SodiumMetal, YellowFlame, TableSalt)"
+            },
+            "specificity_level_0": {
+                "relation": "Sodium Metal",
+                "explanation": "Sodium metal is unrelated to flames or table salt.",
+                "reasoning": "NoRelation(SodiumMetal, YellowFlame, TableSalt)"
+            }
+        }
+    },
+    {
+        "Tyndall Effect(invisible, phenomenon, mutual elements, East Asia, English)": {
+            "specificity_level_4": {
+                "relation": "Tyndall Effect",
+                "explanation": "The first image depicts a beam of sunlight piercing through a forest canopy, a natural example of the Tyndall Effect. The second image shows a Guanyin Bodhisattva statue bathed in golden light, symbolizing divinity and enlightenment, evoking the Tyndall Effect. Both images converge on the shared concept of light scattering.",
+                "reasoning": "Exhibit(SunlightThroughForest, TyndallEffect) Symbolize(GoldenLightOnStatue, Divinity) and Evoke(GoldenLightOnStatue, TyndallEffect). Thus, SunlightThroughForest → TyndallEffect and GoldenLightOnStatue → TyndallEffect"
+            },
+            "specificity_level_3": {
+                "relation": "Tyndall Effect",
+                "explanation": "Sunlight through a forest and golden light on a statue both demonstrate the Tyndall Effect.",
+                "reasoning": "Exhibit(SunlightThroughForest, TyndallEffect) and Evoke(GoldenLightOnStatue, TyndallEffect)"
+            },
+            "specificity_level_2": {
+                "relation": "Tyndall Effect",
+                "explanation": "Light scattering is seen in both natural and artistic contexts.",
+                "reasoning": "Exhibit(SunlightThroughForest, LightScattering) and Evoke(GoldenLightOnStatue, LightScattering)"
+            },
+            "specificity_level_1": {
+                "relation": "Tyndall Effect",
+                "explanation": "Both images involve light in some way.",
+                "reasoning": "PossibleConnection(Light)"
+            },
+            "specificity_level_0": {
+                "relation": "Tyndall Effect",
+                "explanation": "The Tyndall Effect is unrelated to light scattering in these images.",
+                "reasoning": "NoRelation(TyndallEffect, LightScattering)"
+            }
+        }
+    },
+    {
+        "nostalgia(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "nostalgia",
+                "explanation": "The dusty photo album evokes memories of past events and people. A faded, well-worn t-shirt can similarly trigger memories, perhaps of a specific time period, event, or person associated with it. Both objects act as physical anchors to past experiences.",
+                "reasoning": "Evoke(DustyPhotoAlbum, Memories) Evoke(FadedTShirt, Memories). Thus, DustyPhotoAlbum → Memories and FadedTShirt → Memories"
+            },
+            "specificity_level_3": {
+                "relation": "nostalgia",
+                "explanation": "A dusty photo album and a faded t-shirt both trigger memories of the past.",
+                "reasoning": "Evoke(DustyPhotoAlbum, Memories) and Evoke(FadedTShirt, Memories)"
+            },
+            "specificity_level_2": {
+                "relation": "nostalgia",
+                "explanation": "Old objects like photo albums and t-shirts can bring back memories.",
+                "reasoning": "Evoke(OldObjects, Memories)"
+            },
+            "specificity_level_1": {
+                "relation": "nostalgia",
+                "explanation": "These items might remind someone of the past.",
+                "reasoning": "PossibleConnection(Memories)"
+            },
+            "specificity_level_0": {
+                "relation": "nostalgia",
+                "explanation": "Dusty photo albums and t-shirts are unrelated to memories.",
+                "reasoning": "NoRelation(DustyPhotoAlbum, FadedTShirt, Memories)"
+            }
+        }
+    },
+    {
+        "Deception(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Deception",
+                "explanation": "The magician's trick is a deliberate act of deception, creating an illusion for entertainment. The chameleon's camouflage is a form of deception used for survival, hiding it from predators and prey.",
+                "reasoning": "Perform(Magician, MagicTrick) and Involve(MagicTrick, Deception) Use(Chameleon, Camouflage) and IsA(Camouflage, Deception). Thus, Magician → MagicTrick → Deception and Chameleon → Camouflage → Deception"
+            },
+            "specificity_level_3": {
+                "relation": "Deception",
+                "explanation": "Magicians use tricks to deceive, and chameleons use camouflage to hide.",
+                "reasoning": "Perform(Magician, MagicTrick) and Use(Chameleon, Camouflage)"
+            },
+            "specificity_level_2": {
+                "relation": "Deception",
+                "explanation": "Both magicians and chameleons use deception in different ways.",
+                "reasoning": "Involve(MagicTrick, Deception) and IsA(Camouflage, Deception)"
+            },
+            "specificity_level_1": {
+                "relation": "Deception",
+                "explanation": "Magicians and chameleons might involve deception.",
+                "reasoning": "PossibleConnection(Deception)"
+            },
+            "specificity_level_0": {
+                "relation": "Deception",
+                "explanation": "Magicians and chameleons are unrelated to deception.",
+                "reasoning": "NoRelation(Magician, Chameleon, Deception)"
+            }
+        }
+    },
+    {
+        "short-lived phenomena(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "short-lived phenomena",
+                "explanation": "A soap bubble is beautiful but fragile, existing only for a brief moment before popping. A shooting star, while a dramatic celestial event, is also fleeting, visible for only a short time as it streaks across the sky. Both represent the beauty and transience of short-lived phenomena.",
+                "reasoning": "IsA(SoapBubble, TransientObject) and Characterize(TransientObject, Ephemeral) IsA(ShootingStar, TransientPhenomenon) and Characterize(TransientPhenomenon, Ephemeral). Thus, SoapBubble → TransientObject → Ephemeral and ShootingStar → TransientPhenomenon → Ephemeral"
+            },
+            "specificity_level_3": {
+                "relation": "short-lived phenomena",
+                "explanation": "Soap bubbles and shooting stars are both fleeting and beautiful.",
+                "reasoning": "IsA(SoapBubble, TransientObject) and IsA(ShootingStar, TransientPhenomenon)"
+            },
+            "specificity_level_2": {
+                "relation": "short-lived phenomena",
+                "explanation": "Soap bubbles and shooting stars are examples of short-lived events.",
+                "reasoning": "Characterize(SoapBubble, Ephemeral) and Characterize(ShootingStar, Ephemeral)"
+            },
+            "specificity_level_1": {
+                "relation": "short-lived phenomena",
+                "explanation": "Soap bubbles and shooting stars might be related to short-lived events.",
+                "reasoning": "PossibleConnection(Ephemeral)"
+            },
+            "specificity_level_0": {
+                "relation": "short-lived phenomena",
+                "explanation": "Soap bubbles and shooting stars are unrelated to short-lived phenomena.",
+                "reasoning": "NoRelation(SoapBubble, ShootingStar, Ephemeral)"
+            }
+        }
+    },
+    {
+        "Placebo effect(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Placebo effect",
+                "explanation": "A sugar pill is used as a placebo in medical trials, and a doctor's authority and trust contribute to the placebo effect. The belief in the doctor's ability to heal, combined with taking a 'medicine' (even if it's just a sugar pill), can trigger the placebo effect.",
+                "reasoning": "UseAs(SugarPill, Placebo) and PartOf(Placebo, PlaceboEffect). Administer(Doctor, Treatment) and Influence(Treatment, PlaceboEffect). Thus, SugarPill → Placebo → PlaceboEffect and Doctor → Treatment → PlaceboEffect"
+            },
+            "specificity_level_3": {
+                "relation": "Placebo effect",
+                "explanation": "A sugar pill is a placebo, and a doctor's role in administering treatment can influence the placebo effect.",
+                "reasoning": "UseAs(SugarPill, Placebo) and Administer(Doctor, Treatment) → PlaceboEffect"
+            },
+            "specificity_level_2": {
+                "relation": "Placebo effect",
+                "explanation": "A sugar pill and a doctor are both related to the placebo effect.",
+                "reasoning": "SugarPill and Doctor → PlaceboEffect"
+            },
+            "specificity_level_1": {
+                "relation": "Placebo effect",
+                "explanation": "A sugar pill and a doctor might have something to do with the placebo effect.",
+                "reasoning": "PossibleConnection(SugarPill, Doctor, PlaceboEffect)"
+            },
+            "specificity_level_0": {
+                "relation": "Placebo effect",
+                "explanation": "A sugar pill is for eating, and a doctor is for medical care, unrelated to the placebo effect.",
+                "reasoning": "UseAs(SugarPill, Food) and RoleOf(Doctor, MedicalCare) → NoRelation"
+            }
+        }
+    },
+    {
+        "mysterious and unknown dark matter(invisible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "mysterious and unknown dark matter",
+                "explanation": "Gravitational lensing, influenced by dark matter, bends light around galaxies, suggesting the presence of unseen matter. Empty space with question marks represents the unknown nature of dark matter, which cannot be directly observed.",
+                "reasoning": "Influence(DarkMatter, GravitationalLensing). Represent(EmptySpaceWithQuestionMarks, UnknownNatureOfDarkMatter) and Is(DarkMatter, UnknownNatureOfDarkMatter). Thus, GravitationalLensing → DarkMatter and EmptySpaceWithQuestionMarks → UnknownNatureOfDarkMatter → DarkMatter"
+            },
+            "specificity_level_3": {
+                "relation": "mysterious and unknown dark matter",
+                "explanation": "Gravitational lensing indicates dark matter, and empty space with question marks symbolizes its unknown nature.",
+                "reasoning": "Influence(DarkMatter, GravitationalLensing) and Represent(EmptySpaceWithQuestionMarks, UnknownNatureOfDarkMatter) → DarkMatter"
+            },
+            "specificity_level_2": {
+                "relation": "mysterious and unknown dark matter",
+                "explanation": "Gravitational lensing and empty space with question marks are related to dark matter.",
+                "reasoning": "GravitationalLensing and EmptySpaceWithQuestionMarks → DarkMatter"
+            },
+            "specificity_level_1": {
+                "relation": "mysterious and unknown dark matter",
+                "explanation": "Gravitational lensing and empty space with question marks might have something to do with dark matter.",
+                "reasoning": "PossibleConnection(GravitationalLensing, EmptySpaceWithQuestionMarks, DarkMatter)"
+            },
+            "specificity_level_0": {
+                "relation": "mysterious and unknown dark matter",
+                "explanation": "Gravitational lensing is about light bending, and empty space with question marks is just a representation, unrelated to dark matter.",
+                "reasoning": "Phenomenon(GravitationalLensing, LightBending) and Symbol(EmptySpaceWithQuestionMarks, Unknown) → NoRelation"
+            }
+        }
+    },
+    {
+        "Crop Circles(visible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Crop Circles",
+                "explanation": "Crop circles are often associated with UFO landings or activity. While there are many theories about their creation, they are popularly linked to extraterrestrial visitors and their spacecraft.",
+                "reasoning": "Location(CropCircles, WheatField). Create(CropCircles, UFO). Thus, WheatField → CropCircles → UFO and UFO → CropCircles → WheatField"
+            },
+            "specificity_level_3": {
+                "relation": "Crop Circles",
+                "explanation": "Crop circles are linked to UFO activity and are often found in wheat fields.",
+                "reasoning": "Location(CropCircles, WheatField) and Create(CropCircles, UFO) → CropCircles"
+            },
+            "specificity_level_2": {
+                "relation": "Crop Circles",
+                "explanation": "Crop circles are associated with UFOs and wheat fields.",
+                "reasoning": "CropCircles → UFO and WheatField"
+            },
+            "specificity_level_1": {
+                "relation": "Crop Circles",
+                "explanation": "Crop circles might have something to do with UFOs and wheat fields.",
+                "reasoning": "PossibleConnection(CropCircles, UFO, WheatField)"
+            },
+            "specificity_level_0": {
+                "relation": "Crop Circles",
+                "explanation": "Crop circles are just patterns in fields, unrelated to UFOs.",
+                "reasoning": "Pattern(CropCircles, WheatField) and ¬Related(CropCircles, UFO)"
+            }
+        }
+    },
+    {
+        "the passage of time(invisible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "the passage of time",
+                "explanation": "An hourglass directly measures the passage of time, while decaying fruit visually represents the effect of time on organic matter.",
+                "reasoning": "Measure(Hourglass, Time). Cause(Time, Decay) and Show(DecayingFruit, Decay). Thus, Hourglass → Time and DecayingFruit → Decay → Time"
+            },
+            "specificity_level_3": {
+                "relation": "the passage of time",
+                "explanation": "An hourglass measures time, and decaying fruit shows the effects of time.",
+                "reasoning": "Measure(Hourglass, Time) and Show(DecayingFruit, Decay) → Time"
+            },
+            "specificity_level_2": {
+                "relation": "the passage of time",
+                "explanation": "An hourglass and decaying fruit are related to time.",
+                "reasoning": "Hourglass and DecayingFruit → Time"
+            },
+            "specificity_level_1": {
+                "relation": "the passage of time",
+                "explanation": "An hourglass and decaying fruit might have something to do with time.",
+                "reasoning": "PossibleConnection(Hourglass, DecayingFruit, Time)"
+            },
+            "specificity_level_0": {
+                "relation": "the passage of time",
+                "explanation": "An hourglass is a decoration, and decaying fruit is just waste, unrelated to time.",
+                "reasoning": "Decorative(Hourglass) and Waste(DecayingFruit) → NoRelation"
+            }
+        }
+    },
+    {
+        "Gravity(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Gravity",
+                "explanation": "The anecdotal story of Newton and the falling apple inspired his theory of gravity. A black hole represents an extreme manifestation of gravity.",
+                "reasoning": "Inspire(FallingApple, Newton, Gravity) and Depict(NewtonUnderTree, FallingApple). Exhibit(BlackHole, ExtremeGravity) and TypeOf(ExtremeGravity, Gravity). Thus, NewtonUnderTree → FallingApple → Gravity and BlackHole → ExtremeGravity → Gravity"
+            },
+            "specificity_level_3": {
+                "relation": "Gravity",
+                "explanation": "Newton's observation of a falling apple led to the theory of gravity, and black holes exhibit extreme gravity.",
+                "reasoning": "Inspire(FallingApple, Newton, Gravity) and Exhibit(BlackHole, ExtremeGravity) → Gravity"
+            },
+            "specificity_level_2": {
+                "relation": "Gravity",
+                "explanation": "A falling apple and a black hole are related to gravity.",
+                "reasoning": "FallingApple and BlackHole → Gravity"
+            },
+            "specificity_level_1": {
+                "relation": "Gravity",
+                "explanation": "A falling apple and a black hole might have something to do with gravity.",
+                "reasoning": "PossibleConnection(FallingApple, BlackHole, Gravity)"
+            },
+            "specificity_level_0": {
+                "relation": "Gravity",
+                "explanation": "A falling apple is just fruit, and a black hole is a space object, unrelated to gravity.",
+                "reasoning": "Fruit(FallingApple) and SpaceObject(BlackHole) → NoRelation"
+            }
+        }
+    },
+    {
+        "Perseverance(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Perseverance",
+                "explanation": "Sisyphus pushing a boulder uphill eternally and a plant sprouting in cracked concrete both symbolize persistence despite adversity, representing the essence of perseverance.",
+                "reasoning": "Symbolizes(Sisyphus, EndlessEffortDespiteFutility) and Represents(PlantInCrackedConcrete, OvercomingObstacles) both imply Perseverance."
+            },
+            "specificity_level_3": {
+                "relation": "Perseverance",
+                "explanation": "Sisyphus and the plant both demonstrate persistence in the face of difficulty, though the contexts differ.",
+                "reasoning": "Both Sisyphus and the plant show effort despite challenges, linking to perseverance."
+            },
+            "specificity_level_2": {
+                "relation": "Perseverance",
+                "explanation": "Both Sisyphus and the plant involve continuing effort, suggesting perseverance.",
+                "reasoning": "EffortDespiteChallenges → Perseverance."
+            },
+            "specificity_level_1": {
+                "relation": "Perseverance",
+                "explanation": "Both Sisyphus and the plant seem to represent some form of persistence.",
+                "reasoning": "PossibleConnection(Persistence)."
+            },
+            "specificity_level_0": {
+                "relation": "Perseverance",
+                "explanation": "Sisyphus is a myth, and plants grow naturally; they have no relation to perseverance.",
+                "reasoning": "NoConnection(Sisyphus, PlantInCrackedConcrete)."
+            }
+        }
+    },
+    {
+        "Hope and new beginnings(invisible, phenomenon, metaphor, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Hope and new beginnings",
+                "explanation": "A sunrise over a mountain peak and a figure emerging from a tunnel both symbolize overcoming challenges and entering a new phase, representing hope and new beginnings.",
+                "reasoning": "Symbolizes(SunriseOverMountainPeak, OvercomingChallenges ∧ NewBeginning) and Represents(FigureEmergingFromTunnel, LeavingDarkness ∧ EnteringLight ∧ NewBeginning)."
+            },
+            "specificity_level_3": {
+                "relation": "Hope and new beginnings",
+                "explanation": "The sunrise and the figure emerging from the tunnel both signify a fresh start after difficulty.",
+                "reasoning": "OvercomingChallenges → NewBeginning."
+            },
+            "specificity_level_2": {
+                "relation": "Hope and new beginnings",
+                "explanation": "Both the sunrise and the figure suggest a transition to something new.",
+                "reasoning": "Transition → NewBeginning."
+            },
+            "specificity_level_1": {
+                "relation": "Hope and new beginnings",
+                "explanation": "The sunrise and the figure might represent something hopeful or new.",
+                "reasoning": "PossibleConnection(NewBeginning)."
+            },
+            "specificity_level_0": {
+                "relation": "Hope and new beginnings",
+                "explanation": "Sunrises are natural, and tunnels are man-made; they have no connection to hope.",
+                "reasoning": "NoConnection(Sunrise, Tunnel)."
+            }
+        }
+    },
+    {
+        "3D(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "3D",
+                "explanation": "A solar eclipse involves the moon blocking the sun, creating a 3D alignment of celestial bodies, with the sun's corona becoming visible.",
+                "reasoning": "Blocks(MoonSilhouette, Sun) and VisibleDuring(SunsCorona, SolarEclipse) → 3DAlignment."
+            },
+            "specificity_level_3": {
+                "relation": "3D",
+                "explanation": "During a solar eclipse, the moon, sun, and Earth align in three-dimensional space.",
+                "reasoning": "Alignment(Moon, Sun, Earth) → 3D."
+            },
+            "specificity_level_2": {
+                "relation": "3D",
+                "explanation": "A solar eclipse involves the moon and sun in a spatial relationship.",
+                "reasoning": "SpatialRelationship(Moon, Sun) → 3D."
+            },
+            "specificity_level_1": {
+                "relation": "3D",
+                "explanation": "A solar eclipse might involve some form of spatial interaction.",
+                "reasoning": "PossibleConnection(SpatialInteraction)."
+            },
+            "specificity_level_0": {
+                "relation": "3D",
+                "explanation": "A solar eclipse is just a shadow; it has nothing to do with 3D.",
+                "reasoning": "NoConnection(SolarEclipse, 3D)."
+            }
+        }
+    },
+    {
+        "Supernova(visible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Supernova",
+                "explanation": "A supernova is the explosion of a star, releasing heavy elements into the universe, representing a dramatic and significant astronomical event.",
+                "reasoning": "IsA(Supernova, ExplodingStar) and Creates(Supernova, HeavyElements)."
+            },
+            "specificity_level_3": {
+                "relation": "Supernova",
+                "explanation": "A supernova is a star explosion that distributes heavy elements, marking a significant cosmic event.",
+                "reasoning": "ExplodingStar → Supernova."
+            },
+            "specificity_level_2": {
+                "relation": "Supernova",
+                "explanation": "A supernova involves a star exploding and creating heavy elements.",
+                "reasoning": "StarExplosion → Supernova."
+            },
+            "specificity_level_1": {
+                "relation": "Supernova",
+                "explanation": "A supernova is related to stars and explosions.",
+                "reasoning": "PossibleConnection(StarExplosion)."
+            },
+            "specificity_level_0": {
+                "relation": "Supernova",
+                "explanation": "A supernova is just a bright light; it doesn’t involve explosions or heavy elements.",
+                "reasoning": "NoConnection(Supernova, Explosion)."
+            }
+        }
+    },
+    {
+        "Ball lightning(visible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Ball lightning",
+                "explanation": "Ball lightning is a rare atmospheric phenomenon appearing as a luminous sphere during thunderstorms, representing a mysterious electrical event.",
+                "reasoning": "AppearsAs(BallLightning, LuminousSphere) and OccursDuring(BallLightning, Thunderstorm)."
+            },
+            "specificity_level_3": {
+                "relation": "Ball lightning",
+                "explanation": "Ball lightning is a glowing sphere that occurs during thunderstorms, indicating an electrical phenomenon.",
+                "reasoning": "LuminousSphere → BallLightning."
+            },
+            "specificity_level_2": {
+                "relation": "Ball lightning",
+                "explanation": "Ball lightning is a glowing sphere associated with thunderstorms.",
+                "reasoning": "GlowingSphere → BallLightning."
+            },
+            "specificity_level_1": {
+                "relation": "Ball lightning",
+                "explanation": "Ball lightning is a glowing light seen during storms.",
+                "reasoning": "PossibleConnection(GlowingLight)."
+            },
+            "specificity_level_0": {
+                "relation": "Ball lightning",
+                "explanation": "Ball lightning is just a myth; it doesn’t exist.",
+                "reasoning": "NoConnection(BallLightning, Reality)."
+            }
+        }
+    },
+    {
+        "Sun dog(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Sun dog",
+                "explanation": "Sun dogs are bright spots of light that appear on either side of the sun, caused by the refraction of sunlight through ice crystals in the atmosphere.",
+                "reasoning": "AppearsAs(Sundog, BrightSpotOfLight) ∧ Causes(Refraction(Sunlight, IceCrystals), Sundog) → BrightSpotOfLight → Sundog and IceCrystals → Sundog"
+            },
+            "specificity_level_3": {
+                "relation": "Sun dog",
+                "explanation": "Sun dogs are optical phenomena appearing as bright spots near the sun, resulting from sunlight refracting through atmospheric ice crystals.",
+                "reasoning": "Causes(Refraction(Sunlight, IceCrystals), Sundog) → Sundog"
+            },
+            "specificity_level_2": {
+                "relation": "Sun dog",
+                "explanation": "Sun dogs are bright spots near the sun caused by ice crystals in the air.",
+                "reasoning": "IceCrystals → Sundog"
+            },
+            "specificity_level_1": {
+                "relation": "Sun dog",
+                "explanation": "Sun dogs are something related to light and the sun.",
+                "reasoning": "PossibleConnection(Light)"
+            },
+            "specificity_level_0": {
+                "relation": "Sun dog",
+                "explanation": "Sun dogs are a type of dog that barks at the sun.",
+                "reasoning": "IsA(Sundog, Animal) → Incorrect"
+            }
+        }
+    },
+    {
+        "Earthquake(invisible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Earthquake",
+                "explanation": "Earthquakes are caused by the movement of tectonic plates along fault lines, generating seismic waves that cause the ground to shake.",
+                "reasoning": "OccursAt(Earthquake, FaultLine) ∧ Produces(Earthquake, SeismicWaves) → FaultLine → Earthquake and SeismicWaves → Earthquake"
+            },
+            "specificity_level_3": {
+                "relation": "Earthquake",
+                "explanation": "Earthquakes occur when tectonic plates shift, creating seismic waves that shake the ground.",
+                "reasoning": "Produces(Earthquake, SeismicWaves) → Earthquake"
+            },
+            "specificity_level_2": {
+                "relation": "Earthquake",
+                "explanation": "Earthquakes happen when the ground shakes due to plate movements.",
+                "reasoning": "PlateMovement → Earthquake"
+            },
+            "specificity_level_1": {
+                "relation": "Earthquake",
+                "explanation": "Earthquakes are related to the ground shaking.",
+                "reasoning": "PossibleConnection(GroundShaking)"
+            },
+            "specificity_level_0": {
+                "relation": "Earthquake",
+                "explanation": "Earthquakes are caused by loud noises underground.",
+                "reasoning": "Causes(LoudNoises, Earthquake) → Incorrect"
+            }
+        }
+    },
+    {
+        "Migration(invisible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Migration",
+                "explanation": "Birds often migrate in flocks during changing seasons to find more favorable breeding or feeding grounds.",
+                "reasoning": "Perform(FlockOfBirds, Migration) ∧ Triggers(ChangingSeasons, Migration) → FlockOfBirds → Migration and ChangingSeasons → Migration"
+            },
+            "specificity_level_3": {
+                "relation": "Migration",
+                "explanation": "Birds migrate in groups when seasons change to seek better resources.",
+                "reasoning": "Triggers(ChangingSeasons, Migration) → Migration"
+            },
+            "specificity_level_2": {
+                "relation": "Migration",
+                "explanation": "Birds move in flocks during seasonal changes.",
+                "reasoning": "ChangingSeasons → Migration"
+            },
+            "specificity_level_1": {
+                "relation": "Migration",
+                "explanation": "Migration is related to birds moving.",
+                "reasoning": "PossibleConnection(BirdsMoving)"
+            },
+            "specificity_level_0": {
+                "relation": "Migration",
+                "explanation": "Migration is when birds fly to the moon.",
+                "reasoning": "Destination(Migration, Moon) → Incorrect"
+            }
+        }
+    },
+    {
+        "Light pillar(invisible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Light pillar",
+                "explanation": "Light pillars are vertical beams of light caused by the reflection of light off ice crystals suspended in the atmosphere.",
+                "reasoning": "AppearsAs(LightPillar, VerticalBeamOfLight) ∧ Causes(Reflection(Light, IceCrystalsInTheAir), LightPillar) → VerticalBeamOfLight → LightPillar and IceCrystalsInTheAir → LightPillar"
+            },
+            "specificity_level_3": {
+                "relation": "Light pillar",
+                "explanation": "Light pillars are vertical light beams resulting from light reflecting off atmospheric ice crystals.",
+                "reasoning": "Causes(Reflection(Light, IceCrystalsInTheAir), LightPillar) → LightPillar"
+            },
+            "specificity_level_2": {
+                "relation": "Light pillar",
+                "explanation": "Light pillars are vertical lights caused by ice crystals.",
+                "reasoning": "IceCrystalsInTheAir → LightPillar"
+            },
+            "specificity_level_1": {
+                "relation": "Light pillar",
+                "explanation": "Light pillars are related to light in the sky.",
+                "reasoning": "PossibleConnection(LightInSky)"
+            },
+            "specificity_level_0": {
+                "relation": "Light pillar",
+                "explanation": "Light pillars are structures built to hold up lights.",
+                "reasoning": "IsA(LightPillar, Structure) → Incorrect"
+            }
+        }
+    },
+    {
+        "Cancel Culture(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Cancel Culture",
+                "explanation": "The person being erased symbolizes the silencing and deplatforming of individuals. The burning books symbolize the destruction or suppression of ideas and works associated with the canceled person.",
+                "reasoning": "Symbolizes(ErasedPerson, SilencingAndDeplatforming) ∧ Symbolizes(BurningBooks, DestructionOfIdeas) → ErasedPerson → SilencingAndDeplatforming → CancelCulture and BurningBooks → DestructionOfIdeas → CancelCulture"
+            },
+            "specificity_level_3": {
+                "relation": "Cancel Culture",
+                "explanation": "Cancel culture involves silencing individuals and destroying their associated ideas, symbolized by erased persons and burning books.",
+                "reasoning": "Symbolizes(BurningBooks, DestructionOfIdeas) → CancelCulture"
+            },
+            "specificity_level_2": {
+                "relation": "Cancel Culture",
+                "explanation": "Cancel culture is about silencing people and destroying ideas.",
+                "reasoning": "SilencingAndDeplatforming → CancelCulture"
+            },
+            "specificity_level_1": {
+                "relation": "Cancel Culture",
+                "explanation": "Cancel culture is related to people and ideas being suppressed.",
+                "reasoning": "PossibleConnection(Suppression)"
+            },
+            "specificity_level_0": {
+                "relation": "Cancel Culture",
+                "explanation": "Cancel culture is about canceling subscriptions to services.",
+                "reasoning": "IsA(CancelCulture, SubscriptionCancellation) → Incorrect"
+            }
+        }
+    },
+    {
+        "Viral Trend(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Viral Trend",
+                "explanation": "The Ice Bucket Challenge and TikTok dance crazes exemplify viral trends, spreading rapidly through social media and capturing widespread attention.",
+                "reasoning": "ExampleOf(IceBucketChallenge, ViralTrend) ∧ ExampleOf(TikTokDanceCraze, ViralTrend) → ViralTrend"
+            },
+            "specificity_level_3": {
+                "relation": "Social Media Phenomenon",
+                "explanation": "Both the Ice Bucket Challenge and TikTok dance crazes gained popularity through social media platforms.",
+                "reasoning": "SpreadThrough(IceBucketChallenge, SocialMedia) ∧ SpreadThrough(TikTokDanceCraze, SocialMedia) → SocialMediaPhenomenon"
+            },
+            "specificity_level_2": {
+                "relation": "Popular Online Activities",
+                "explanation": "These activities became widely known and participated in online.",
+                "reasoning": "GainedPopularity(IceBucketChallenge, Online) ∧ GainedPopularity(TikTokDanceCraze, Online) → PopularOnlineActivities"
+            },
+            "specificity_level_1": {
+                "relation": "Internet Trends",
+                "explanation": "Both are trends that became popular on the internet.",
+                "reasoning": "BecamePopular(IceBucketChallenge, Internet) ∧ BecamePopular(TikTokDanceCraze, Internet) → InternetTrends"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Events",
+                "explanation": "The Ice Bucket Challenge is about charity, while TikTok dance crazes are for entertainment.",
+                "reasoning": "Purpose(IceBucketChallenge, Charity) ∧ Purpose(TikTokDanceCraze, Entertainment) → UnrelatedEvents"
+            }
+        }
+    },
+    {
+        "reinforce opinions(invisible, phenomenon, mutual elements, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Reinforce Opinions",
+                "explanation": "Digital and social echo chambers reinforce existing beliefs by limiting exposure to differing perspectives.",
+                "reasoning": "Represent(MultipleScreensSameNews, DigitalEchoChamber) ∧ Represent(NoddingGroup, SocialEchoChamber) → ReinforceOpinions"
+            },
+            "specificity_level_3": {
+                "relation": "Confirmation Bias",
+                "explanation": "Both digital and social environments encourage confirmation bias by filtering out opposing views.",
+                "reasoning": "Encourage(MultipleScreensSameNews, ConfirmationBias) ∧ Encourage(NoddingGroup, ConfirmationBias) → ConfirmationBias"
+            },
+            "specificity_level_2": {
+                "relation": "Like-Minded Groups",
+                "explanation": "Both images depict groups or environments where similar opinions are shared.",
+                "reasoning": "Show(MultipleScreensSameNews, SimilarOpinions) ∧ Show(NoddingGroup, SimilarOpinions) → LikeMindedGroups"
+            },
+            "specificity_level_1": {
+                "relation": "Possible Bias",
+                "explanation": "These settings might lead to biased opinions.",
+                "reasoning": "PossibleConnection(Bias)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Scenarios",
+                "explanation": "One is about news consumption, and the other is about social gatherings.",
+                "reasoning": "IsA(MultipleScreensSameNews, News) ∧ IsA(NoddingGroup, Social) → UnrelatedScenarios"
+            }
+        }
+    },
+    {
+        "Influencer Marketing(invisible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Influencer Marketing",
+                "explanation": "Product selfies and sales spikes are tactics and outcomes of influencer marketing campaigns.",
+                "reasoning": "Tactic(ProductSelfie, InfluencerMarketing) ∧ Result(SalesSpike, InfluencerMarketing) → InfluencerMarketing"
+            },
+            "specificity_level_3": {
+                "relation": "Marketing Strategy",
+                "explanation": "Using influencers to promote products is a common marketing strategy.",
+                "reasoning": "Strategy(Influencer, ProductPromotion) → MarketingStrategy"
+            },
+            "specificity_level_2": {
+                "relation": "Social Media Promotion",
+                "explanation": "Influencers use social media to promote products.",
+                "reasoning": "Promote(Influencer, SocialMedia) → SocialMediaPromotion"
+            },
+            "specificity_level_1": {
+                "relation": "Advertising",
+                "explanation": "Influencers advertise products to their followers.",
+                "reasoning": "PossibleConnection(Advertising)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Concepts",
+                "explanation": "Selfies are personal photos, and sales graphs are business metrics.",
+                "reasoning": "IsA(ProductSelfie, Personal) ∧ IsA(SalesSpike, Business) → UnrelatedConcepts"
+            }
+        }
+    },
+    {
+        "Greenhouse effect(invisible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Greenhouse Effect",
+                "explanation": "Car exhaust fumes emit greenhouse gases, contributing to the greenhouse effect, which leads to global warming and glacier melting.",
+                "reasoning": "Emit(CarExhaust, GreenhouseGases) ∧ Cause(GreenhouseEffect, GlobalWarming) ∧ Cause(GlobalWarming, GlacierMelting) → GreenhouseEffect"
+            },
+            "specificity_level_3": {
+                "relation": "Climate Change",
+                "explanation": "Greenhouse gases from car exhaust contribute to climate change, evidenced by melting glaciers.",
+                "reasoning": "Contribute(CarExhaust, ClimateChange) ∧ Evidence(GlacierMelting, ClimateChange) → ClimateChange"
+            },
+            "specificity_level_2": {
+                "relation": "Environmental Impact",
+                "explanation": "Car emissions and glacier melting are environmental issues.",
+                "reasoning": "IsA(CarExhaust, EnvironmentalIssue) ∧ IsA(GlacierMelting, EnvironmentalIssue) → EnvironmentalImpact"
+            },
+            "specificity_level_1": {
+                "relation": "Pollution",
+                "explanation": "Car exhaust and glacier melting might be related to pollution.",
+                "reasoning": "PossibleConnection(Pollution)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Phenomena",
+                "explanation": "Car exhaust is about air pollution, while glacier melting is about ice.",
+                "reasoning": "IsA(CarExhaust, AirPollution) ∧ IsA(GlacierMelting, Ice) → UnrelatedPhenomena"
+            }
+        }
+    },
+    {
+        "Magna Carta(invisible, phenomenon, relation, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Magna Carta",
+                "explanation": "King John signed the Magna Carta at Runnymede in 1215, marking a significant historical event.",
+                "reasoning": "Signed(KingJohn, MagnaCarta) ∧ LocationOf(Runnymede, MagnaCartaSigning) → MagnaCarta"
+            },
+            "specificity_level_3": {
+                "relation": "Historical Document",
+                "explanation": "The Magna Carta is a foundational document in legal history.",
+                "reasoning": "IsA(MagnaCarta, HistoricalDocument) → HistoricalDocument"
+            },
+            "specificity_level_2": {
+                "relation": "Legal Agreement",
+                "explanation": "The Magna Carta was an agreement between King John and his barons.",
+                "reasoning": "IsA(MagnaCarta, LegalAgreement) → LegalAgreement"
+            },
+            "specificity_level_1": {
+                "relation": "Important Event",
+                "explanation": "The signing of the Magna Carta was an important historical event.",
+                "reasoning": "PossibleConnection(HistoricalEvent)"
+            },
+            "specificity_level_0": {
+                "relation": "Unrelated Historical Figure",
+                "explanation": "King John is unrelated to the Magna Carta.",
+                "reasoning": "¬Related(KingJohn, MagnaCarta) → UnrelatedHistoricalFigure"
+            }
+        }
+    },
+    {
+        "Prayer(invisible, phenomenon, metaphor, NA, English)": {
+            "specificity_level_4": {
+                "relation": "Prayer",
+                "explanation": "A kneeling figure often represents humility and reverence, common postures in prayer. Open hands reaching upwards symbolize supplication and a connection to a higher power.",
+                "reasoning": "Symbolizes(KneelingFigure, Humility/Reverence) and Associates(Humility/Reverence, Prayer). Symbolizes(OpenHandsUpwards, Supplication/ConnectionToHigherPower) and Associates(Supplication/ConnectionToHigherPower, Prayer). Thus, KneelingFigure → Humility/Reverence → Prayer and OpenHandsUpwards → Supplication/ConnectionToHigherPower → Prayer"
+            },
+            "specificity_level_3": {
+                "relation": "Prayer",
+                "explanation": "Kneeling and open hands are common in prayer, showing humility and seeking connection.",
+                "reasoning": "Symbolizes(Kneeling, Humility) ∧ Symbolizes(OpenHands, Connection) → Prayer"
+            },
+            "specificity_level_2": {
+                "relation": "Prayer",
+                "explanation": "People often kneel and raise their hands when praying.",
+                "reasoning": "Kneeling ∧ OpenHands → Prayer"
+            },
+            "specificity_level_1": {
+                "relation": "Prayer",
+                "explanation": "Prayer involves certain body postures.",
+                "reasoning": "BodyPosture → Prayer"
+            },
+            "specificity_level_0": {
+                "relation": "Prayer",
+                "explanation": "Prayer is unrelated to body movements or gestures.",
+                "reasoning": "NoConnection(BodyPosture, Prayer)"
+            }
+        }
+    },
+    {
+        "Stille Wasser sind tief(invisible, phenomenon, metaphor, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Stille Wasser sind tief",
+                "explanation": "'Stille Wasser sind tief' translates to 'Still waters run deep,' indicating that those who appear calm or quiet may possess profound thoughts, emotions, or complexities beneath the surface.",
+                "reasoning": "Represents(CalmLake, SurfaceCalmness) Symbolizes(DeepOcean, HiddenDepths) Thus, CalmLake ∧ DeepOcean → 'Still waters run deep.'"
+            },
+            "specificity_level_3": {
+                "relation": "Stille Wasser sind tief",
+                "explanation": "Calm people often have deep thoughts.",
+                "reasoning": "Calmness ∧ Depth → Profoundness"
+            },
+            "specificity_level_2": {
+                "relation": "Stille Wasser sind tief",
+                "explanation": "Still waters can hide deeper meanings.",
+                "reasoning": "Stillness → Depth"
+            },
+            "specificity_level_1": {
+                "relation": "Stille Wasser sind tief",
+                "explanation": "Quiet people might have something hidden.",
+                "reasoning": "Quietness → Hiddenness"
+            },
+            "specificity_level_0": {
+                "relation": "Stille Wasser sind tief",
+                "explanation": "Still waters are just shallow and calm.",
+                "reasoning": "Stillness → Shallow"
+            }
+        }
+    },
+    {
+        "Der Apfel fällt nicht weit vom Stamm(invisible, phenomenon, metaphor, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Der Apfel fällt nicht weit vom Stamm",
+                "explanation": "This German proverb suggests that children resemble their parents in behavior or characteristics, much like an apple that falls close to the tree it grew from.",
+                "reasoning": "AppleOnGround ∧ TreeTrunk → Resemblance to Parents"
+            },
+            "specificity_level_3": {
+                "relation": "Der Apfel fällt nicht weit vom Stamm",
+                "explanation": "Children often inherit traits from their parents.",
+                "reasoning": "Apple ∧ Tree → Inheritance"
+            },
+            "specificity_level_2": {
+                "relation": "Der Apfel fällt nicht weit vom Stamm",
+                "explanation": "Apples don’t fall far from trees, just like children don’t stray far from parents.",
+                "reasoning": "AppleProximity → ChildProximity"
+            },
+            "specificity_level_1": {
+                "relation": "Der Apfel fällt nicht weit vom Stamm",
+                "explanation": "Apples and trees have something to do with parents and children.",
+                "reasoning": "AppleTree → ParentChild"
+            },
+            "specificity_level_0": {
+                "relation": "Der Apfel fällt nicht weit vom Stamm",
+                "explanation": "Apples falling has no relation to family traits.",
+                "reasoning": "NoConnection(AppleFall, Family)"
+            }
+        }
+    },
+    {
+        "Man lernt nie aus(invisible, ability, metaphor, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Man lernt nie aus",
+                "explanation": "'Man lernt nie aus' translates to 'One never stops learning.' The open book symbolizes knowledge and learning, while the endless staircase represents the continuous journey of education and personal growth.",
+                "reasoning": "Knowledge(OpenBook) ∧ Journey(EndlessStaircase) → Learning"
+            },
+            "specificity_level_3": {
+                "relation": "Man lernt nie aus",
+                "explanation": "Learning is a lifelong process.",
+                "reasoning": "OpenBook ∧ Staircase → LifelongLearning"
+            },
+            "specificity_level_2": {
+                "relation": "Man lernt nie aus",
+                "explanation": "Books and stairs represent ongoing learning.",
+                "reasoning": "Book ∧ Stairs → Learning"
+            },
+            "specificity_level_1": {
+                "relation": "Man lernt nie aus",
+                "explanation": "Learning never ends, like a staircase.",
+                "reasoning": "Staircase → Learning"
+            },
+            "specificity_level_0": {
+                "relation": "Man lernt nie aus",
+                "explanation": "Books and stairs have nothing to do with learning.",
+                "reasoning": "NoConnection(BookStairs, Learning)"
+            }
+        }
+    },
+    {
+        "Übung macht den Meister.(invisible, ability, metaphor, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Übung macht den Meister",
+                "explanation": "The sculptor represents the dedication and effort put into honing a craft through physical practice, while the musician symbolizes the repetitive effort needed to achieve mastery in performance. Both images illustrate the idea that consistent practice leads to improvement and mastery.",
+                "reasoning": "Represents(Sculptor, Chiseling) and Illustrates(Dedication, Mastery) Represents(Musician, Practicing) and Illustrates(Performance, Mastery) Thus, Sculptor → Practice → Mastery and Musician → Practice → Mastery"
+            },
+            "specificity_level_3": {
+                "relation": "Übung macht den Meister",
+                "explanation": "Practice is essential for mastering any skill.",
+                "reasoning": "Sculptor ∧ Musician → Practice → Mastery"
+            },
+            "specificity_level_2": {
+                "relation": "Übung macht den Meister",
+                "explanation": "Sculptors and musicians show that practice leads to skill.",
+                "reasoning": "Practice → Skill"
+            },
+            "specificity_level_1": {
+                "relation": "Übung macht den Meister",
+                "explanation": "Practice helps improve abilities.",
+                "reasoning": "Practice → Improvement"
+            },
+            "specificity_level_0": {
+                "relation": "Übung macht den Meister",
+                "explanation": "Practice has no effect on skill development.",
+                "reasoning": "NoConnection(Practice, Skill)"
+            }
+        }
+    },
+    {
+        "Was Hänschen nicht lernt, lernt Hans nimmermehr(invisible, ability, metaphor, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Was Hänschen nicht lernt, lernt Hans nimmermehr",
+                "explanation": "The young boy represents the potential for learning and growth in youth, while the old man symbolizes missed opportunities and the stagnation that can occur when lessons are not learned early on.",
+                "reasoning": "Learns(Boy, Knowledge) ∧ MissesOpportunity(OldMan, Knowledge) → Stagnation"
+            },
+            "specificity_level_3": {
+                "relation": "Was Hänschen nicht lernt, lernt Hans nimmermehr",
+                "explanation": "A young boy symbolizes learning opportunities, while an old man represents the consequences of not learning.",
+                "reasoning": "Learns(Boy, Skills) ∧ MissesOpportunity(OldMan, Skills) → Consequences"
+            },
+            "specificity_level_2": {
+                "relation": "Was Hänschen nicht lernt, lernt Hans nimmermehr",
+                "explanation": "A boy and an old man represent learning and its absence.",
+                "reasoning": "Learns(Boy) ∧ MissesOpportunity(OldMan) → LearningOutcome"
+            },
+            "specificity_level_1": {
+                "relation": "Was Hänschen nicht lernt, lernt Hans nimmermehr",
+                "explanation": "Something about learning and not learning.",
+                "reasoning": "PossibleConnection(Learning)"
+            },
+            "specificity_level_0": {
+                "relation": "Was Hänschen nicht lernt, lernt Hans nimmermehr",
+                "explanation": "A boy and an old man are unrelated.",
+                "reasoning": "NoConnection(Boy, OldMan)"
+            }
+        }
+    },
+    {
+        "Die Welt ist meine Vorstellung(invisible, culture, metaphor, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Die Welt ist meine Vorstellung",
+                "explanation": "A painter's palette represents creativity and the ability to create one's own vision or reality through colors and art. The globe symbolizes the world itself, representing the vastness and diversity of experiences and perspectives that can be imagined or created.",
+                "reasoning": "Paint(PainterPalette, Creativity) ∧ Represents(Globe, CreatingDiversity) → Creativity"
+            },
+            "specificity_level_3": {
+                "relation": "Die Welt ist meine Vorstellung",
+                "explanation": "A palette symbolizes artistic creativity, while a globe represents the world's diversity.",
+                "reasoning": "Symbolizes(Palette, Art) ∧ Represents(Globe, Diversity) → Creativity"
+            },
+            "specificity_level_2": {
+                "relation": "Die Welt ist meine Vorstellung",
+                "explanation": "A palette and a globe are related to creativity and the world.",
+                "reasoning": "ConnectedTo(Palette, Creativity) ∧ ConnectedTo(Globe, World)"
+            },
+            "specificity_level_1": {
+                "relation": "Die Welt ist meine Vorstellung",
+                "explanation": "Maybe about art and the world.",
+                "reasoning": "PossibleConnection(Art, World)"
+            },
+            "specificity_level_0": {
+                "relation": "Die Welt ist meine Vorstellung",
+                "explanation": "A palette is for mixing paint, and a globe is a map.",
+                "reasoning": "UsedFor(Palette, Paint) ∧ UsedFor(Globe, Geography) → NoRelation"
+            }
+        }
+    },
+    {
+        "Wer nicht wagt, der nicht gewinnt(invisible, culture, metaphor, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Wer nicht wagt, der nicht gewinnt",
+                "explanation": "The tightrope walker symbolizes taking risks and facing fears to achieve something extraordinary, while the treasure chest represents the rewards that come from such daring actions.",
+                "reasoning": "Symbolizes(RiskTaking, TightropeWalker) ∧ Represents(Reward, TreasureChest) → RiskTaking → Reward"
+            },
+            "specificity_level_3": {
+                "relation": "Wer nicht wagt, der nicht gewinnt",
+                "explanation": "A tightrope walker represents risk-taking, and a treasure chest symbolizes rewards.",
+                "reasoning": "Symbolizes(Risk, TightropeWalker) ∧ Represents(Reward, TreasureChest) → RiskAndReward"
+            },
+            "specificity_level_2": {
+                "relation": "Wer nicht wagt, der nicht gewinnt",
+                "explanation": "A tightrope walker and a treasure chest are about risk and reward.",
+                "reasoning": "ConnectedTo(TightropeWalker, Risk) ∧ ConnectedTo(TreasureChest, Reward)"
+            },
+            "specificity_level_1": {
+                "relation": "Wer nicht wagt, der nicht gewinnt",
+                "explanation": "Something about taking risks and getting rewards.",
+                "reasoning": "PossibleConnection(Risk, Reward)"
+            },
+            "specificity_level_0": {
+                "relation": "Wer nicht wagt, der nicht gewinnt",
+                "explanation": "A tightrope walker is a performer, and a treasure chest is for storing valuables.",
+                "reasoning": "UsedFor(TightropeWalker, Entertainment) ∧ UsedFor(TreasureChest, Storage) → NoRelation"
+            }
+        }
+    },
+    {
+        "Kaffee und Kuchen(invisible, phenomenon, mutual elements, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Kaffee und Kuchen",
+                "explanation": "The first image represents the classic combination of coffee and cake, specifically highlighting a popular German dessert, the Black Forest cake. The second image illustrates the cultural practice of enjoying coffee and cake together in a social setting, which is a cherished tradition in Germany. Together, these images reflect the essence of 'Kaffee und Kuchen' as both a culinary delight and a social experience.",
+                "reasoning": "Contain(CoffeeTableSetting, BlackForestCake) ∧ Enjoy(CoffeeTableSetting, KaffeeUndKuchen) ∧ Socialize(CaféScene, KaffeeUndKuchen) ∧ Contain(CaféScene, Pastries) → KaffeeUndKuchen"
+            },
+            "specificity_level_3": {
+                "relation": "Kaffee und Kuchen",
+                "explanation": "Coffee and cake, particularly Black Forest cake, are a traditional German combination enjoyed socially.",
+                "reasoning": "Contain(Table, BlackForestCake) ∧ Socialize(Café, CoffeeAndCake) → Tradition"
+            },
+            "specificity_level_2": {
+                "relation": "Kaffee und Kuchen",
+                "explanation": "Coffee and cake are a popular combination in Germany.",
+                "reasoning": "ConnectedTo(Coffee, Cake) ∧ ConnectedTo(Germany, Tradition)"
+            },
+            "specificity_level_1": {
+                "relation": "Kaffee und Kuchen",
+                "explanation": "Maybe about coffee and cake in Germany.",
+                "reasoning": "PossibleConnection(Coffee, Cake, Germany)"
+            },
+            "specificity_level_0": {
+                "relation": "Kaffee und Kuchen",
+                "explanation": "Coffee is a drink, and cake is a dessert.",
+                "reasoning": "UsedFor(Coffee, Drinking) ∧ UsedFor(Cake, Eating) → NoRelation"
+            }
+        }
+    },
+    {
+        "Fachwerkhäuser(invisible, culture, mutual elements, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Fachwerkhäuser",
+                "explanation": "The first image captures the aesthetic and cultural significance of Fachwerkhäuser, which are iconic in German architecture, representing the charm and historical importance of these structures. The second image zooms in on the craftsmanship that defines these houses, emphasizing the materials and techniques used in their construction. Together, they convey the theme of 'Fachwerkhäuser,' highlighting both their beauty and the skilled artistry behind them.",
+                "reasoning": "Contains(StreetView, Fachwerkhäuser) ∧ Craftsmanship(WoodBeam, Fachwerkhaus) → Fachwerkhäuser"
+            },
+            "specificity_level_3": {
+                "relation": "Fachwerkhäuser",
+                "explanation": "Fachwerkhäuser are traditional German houses known for their wooden beams and historical significance.",
+                "reasoning": "Contains(Street, Fachwerkhäuser) ∧ Craftsmanship(Wood, Fachwerkhaus) → Tradition"
+            },
+            "specificity_level_2": {
+                "relation": "Fachwerkhäuser",
+                "explanation": "Fachwerkhäuser are German houses with wooden beams.",
+                "reasoning": "ConnectedTo(Germany, Fachwerkhäuser) ∧ ConnectedTo(Wood, Fachwerkhaus)"
+            },
+            "specificity_level_1": {
+                "relation": "Fachwerkhäuser",
+                "explanation": "Maybe about traditional German houses.",
+                "reasoning": "PossibleConnection(Germany, TraditionalHouses)"
+            },
+            "specificity_level_0": {
+                "relation": "Fachwerkhäuser",
+                "explanation": "Fachwerkhäuser are just old houses.",
+                "reasoning": "IsA(Fachwerkhäuser, OldHouses) → NoSignificance"
+            }
+        }
+    },
+    {
+        "Rotkäppchen und der Wolf(invisible, culture, mutual elements, Non-English European, German)": {
+            "specificity_level_4": {
+                "relation": "Rotkäppchen und der Wolf",
+                "explanation": "The red cloak symbolizes Little Red Riding Hood's innocence, while the wolf represents danger and confrontation in the fairy tale. Together, they encapsulate the central conflict of the story.",
+                "reasoning": "Contains(RedCloak, Rotkäppchen) ∧ Lurk(Wolf, Forest) ∧ Oppose(Wolf, Rotkäppchen) → RedCloak → Rotkäppchen ∧ Wolf → Rotkäppchen"
+            },
+            "specificity_level_3": {
+                "relation": "fairy tale elements",
+                "explanation": "The red cloak and the wolf are key elements in the story of Little Red Riding Hood, representing innocence and danger.",
+                "reasoning": "Contains(RedCloak, Rotkäppchen) ∧ Contains(Wolf, Rotkäppchen) → FairyTaleElements"
+            },
+            "specificity_level_2": {
+                "relation": "symbolic confrontation",
+                "explanation": "The red cloak and the wolf are symbols of opposing forces in a story.",
+                "reasoning": "Symbolizes(RedCloak, Innocence) ∧ Symbolizes(Wolf, Danger) → Conflict"
+            },
+            "specificity_level_1": {
+                "relation": "vague story elements",
+                "explanation": "The red cloak and the wolf seem to be part of a story but their exact relationship is unclear.",
+                "reasoning": "PossibleConnection(StoryElements)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated symbols",
+                "explanation": "The red cloak is for warmth, and the wolf is just an animal in the forest.",
+                "reasoning": "UsedFor(RedCloak, Warmth) ∧ IsA(Wolf, Animal) → ¬Connection"
+            }
+        }
+    },
+    {
+        "Chi dorme non piglia pesci(invisible, culture, mutual elements, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "Chi dorme non piglia pesci",
+                "explanation": "The sleeping person represents missed opportunities, while the successful fisherman embodies seizing opportunities. Together, they illustrate the Italian proverb emphasizing the importance of action.",
+                "reasoning": "Sleep(Person, FishingBoat) ∧ MissOpportunity(Person, Fish) ∧ Catch(Fisherman, Fish) ∧ SeizeOpportunity(Fisherman, Fishing) → Person → Sleep → MissOpportunity → Opportunity ∧ Fisherman → Catch → SeizeOpportunity → Opportunity"
+            },
+            "specificity_level_3": {
+                "relation": "proverb illustration",
+                "explanation": "The images depict the consequences of inactivity and the rewards of taking action, as highlighted in the proverb.",
+                "reasoning": "Represents(Person, Inactivity) ∧ Represents(Fisherman, Action) → ProverbIllustration"
+            },
+            "specificity_level_2": {
+                "relation": "opportunity contrast",
+                "explanation": "The sleeping person misses out, while the fisherman succeeds, showing a contrast in outcomes.",
+                "reasoning": "MissOpportunity(Person, Fish) ∧ Catch(Fisherman, Fish) → OpportunityContrast"
+            },
+            "specificity_level_1": {
+                "relation": "vague activity difference",
+                "explanation": "One person is asleep, and another is fishing, but the deeper meaning is unclear.",
+                "reasoning": "PossibleConnection(ActivityDifference)"
+            },
+            "specificity_level_0": {
+                "relation": "incorrect interpretation",
+                "explanation": "The sleeping person is just resting, and the fisherman is just doing their job.",
+                "reasoning": "IsA(Person, Resting) ∧ IsA(Fisherman, Working) → ¬Proverb"
+            }
+        }
+    },
+    {
+        "Cucina(visible, culture, mutual elements, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "Cucina",
+                "explanation": "The rustic Italian kitchen represents the environment of traditional Italian cooking, while Risotto alla Milanese exemplifies a signature dish. Together, they embody the concept of 'Cucina,' highlighting both the setting and a culinary masterpiece.",
+                "reasoning": "Represents(RusticItalianKitchen, Cucina) ∧ Contains(RisottoAllaMilanese, Cucina) → RusticItalianKitchen → Cucina ∧ RisottoAllaMilanese → Cucina"
+            },
+            "specificity_level_3": {
+                "relation": "Italian culinary culture",
+                "explanation": "The kitchen and the dish are key elements of Italian cooking traditions.",
+                "reasoning": "Represents(RusticItalianKitchen, ItalianCooking) ∧ Represents(RisottoAllaMilanese, ItalianDish) → ItalianCulinaryCulture"
+            },
+            "specificity_level_2": {
+                "relation": "cooking environment and dish",
+                "explanation": "The kitchen is where cooking happens, and the dish is a result of that process.",
+                "reasoning": "UsedFor(RusticItalianKitchen, Cooking) ∧ IsA(RisottoAllaMilanese, Dish) → CookingProcess"
+            },
+            "specificity_level_1": {
+                "relation": "vague kitchen and food connection",
+                "explanation": "The kitchen and the dish seem related to cooking but their specific connection is unclear.",
+                "reasoning": "PossibleConnection(Cooking)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated kitchen and food",
+                "explanation": "The kitchen is just a room, and the dish is just food.",
+                "reasoning": "IsA(RusticItalianKitchen, Room) ∧ IsA(RisottoAllaMilanese, Food) → ¬Connection"
+            }
+        }
+    },
+    {
+        "Architettura barocca(invisible, culture, mutual elements, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "Architettura barocca",
+                "explanation": "The Church of Gesù ceiling exemplifies Baroque architecture's dramatic religious design, while the Palace of Versailles ballroom showcases its royal grandeur. Together, they highlight the key characteristics of Baroque style, including ornamentation, movement, and emotional depth.",
+                "reasoning": "Contains(ChurchOfGesùCeiling, BaroqueArchitecture) ∧ Style(BaroqueArchitecture, Religious) ∧ Contains(PalaceOfVersaillesBallroom, BaroqueArchitecture) ∧ Style(BaroqueArchitecture, Royal) → ChurchOfGesùCeiling → BaroqueArchitecture ∧ PalaceOfVersaillesBallroom → BaroqueArchitecture"
+            },
+            "specificity_level_3": {
+                "relation": "Baroque style elements",
+                "explanation": "The church ceiling and palace ballroom are iconic examples of Baroque architecture, emphasizing its ornate and grand nature.",
+                "reasoning": "Represents(ChurchOfGesùCeiling, Baroque) ∧ Represents(PalaceOfVersaillesBallroom, Baroque) → BaroqueElements"
+            },
+            "specificity_level_2": {
+                "relation": "ornate architectural features",
+                "explanation": "The church ceiling and palace ballroom are both highly decorated and elaborate.",
+                "reasoning": "HasProperty(ChurchOfGesùCeiling, Ornate) ∧ HasProperty(PalaceOfVersaillesBallroom, Ornate) → OrnateArchitecture"
+            },
+            "specificity_level_1": {
+                "relation": "vague architectural connection",
+                "explanation": "The church and palace seem related to architecture but their specific style is unclear.",
+                "reasoning": "PossibleConnection(Architecture)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated buildings",
+                "explanation": "The church is for worship, and the palace is for royalty.",
+                "reasoning": "UsedFor(ChurchOfGesùCeiling, Worship) ∧ UsedFor(PalaceOfVersaillesBallroom, Royalty) → ¬ArchitecturalStyle"
+            }
+        }
+    },
+    {
+        "Lasciate ogne speranza, voi ch'intrate.(invisible, culture, metaphor, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "Lasciate ogne speranza, voi ch'intrate",
+                "explanation": "The dark gate symbolizes despair and hopelessness, while the flickering candle flame represents fragile hope. Together, they evoke the theme of hopelessness and the dire warning from Dante's Inferno.",
+                "reasoning": "Symbolizes(Gate, Despair) ∧ Represents(CandleFlame, FragileHope) → Gate ∧ CandleFlame → Hopelessness"
+            },
+            "specificity_level_3": {
+                "relation": "metaphor of despair and hope",
+                "explanation": "The gate and candle flame symbolize the contrast between despair and fragile hope, as depicted in Dante's Inferno.",
+                "reasoning": "Symbolizes(Gate, Despair) ∧ Represents(CandleFlame, Hope) → DespairAndHope"
+            },
+            "specificity_level_2": {
+                "relation": "symbolic warning",
+                "explanation": "The gate and candle flame seem to convey a warning about entering a place of despair.",
+                "reasoning": "Symbolizes(Gate, Warning) ∧ Represents(CandleFlame, Fragility) → Warning"
+            },
+            "specificity_level_1": {
+                "relation": "vague symbolic connection",
+                "explanation": "The gate and candle flame might symbolize something, but their exact meaning is unclear.",
+                "reasoning": "PossibleConnection(Symbolism)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated symbols",
+                "explanation": "The gate is just an entrance, and the candle flame is just light.",
+                "reasoning": "UsedFor(Gate, Entrance) ∧ UsedFor(CandleFlame, Light) → ¬Symbolism"
+            }
+        }
+    },
+    {
+        "L’abito non fa il monaco(invisible, culture, metaphor, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "L’abito non fa il monaco",
+                "explanation": "'L’abito non fa il monaco' translates to 'The habit does not make the monk,' meaning that outward appearances do not determine a person's true character or worth.",
+                "reasoning": "Represent(Suit, OutwardAppearance) ∧ Define(Monk, InnerCharacter) → 'L’abito non fa il monaco'"
+            },
+            "specificity_level_3": {
+                "relation": "Appearance vs. Character",
+                "explanation": "The proverb suggests that what someone wears doesn’t reflect their true nature.",
+                "reasoning": "Represent(Clothing, Appearance) ∧ Define(Character, InnerSelf) → Appearance ≠ Character"
+            },
+            "specificity_level_2": {
+                "relation": "Superficial Judgment",
+                "explanation": "The saying warns against judging someone based on their looks.",
+                "reasoning": "Judge(Appearance) → ¬Determine(Character)"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Cultural Saying",
+                "explanation": "It’s an Italian phrase about not judging by appearances.",
+                "reasoning": "CulturalPhrase(Italian) → Appearance ≠ Reality"
+            },
+            "specificity_level_0": {
+                "relation": "Misinterpreted Proverb",
+                "explanation": "The phrase means that monks must wear specific habits.",
+                "reasoning": "Define(Monk, Habit) → Habit = Monk"
+            }
+        }
+    },
+    {
+        "E il naufragar m'è dolce in questo mare.(invisible, culture, mutual elements, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "E il naufragar m'è dolce in questo mare",
+                "explanation": "The phrase captures the bittersweet beauty of the sea, blending tranquility and melancholy.",
+                "reasoning": "Evoke(SereneSea, NauticalMelancholy) ∧ Reflect(BoatDrifting, Calm) ∧ Contrast(Lighthouse, StormySky) → NauticalMelancholy"
+            },
+            "specificity_level_3": {
+                "relation": "Sea’s Duality",
+                "explanation": "The sea is depicted as both peaceful and foreboding, evoking mixed emotions.",
+                "reasoning": "Contrast(CalmSea, StormySky) → BittersweetBeauty"
+            },
+            "specificity_level_2": {
+                "relation": "Marine Imagery",
+                "explanation": "The images show the sea’s beauty and its potential for danger.",
+                "reasoning": "Represent(Sea, Beauty) ∧ Represent(Storm, Danger) → Sea’sContrast"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Maritime Theme",
+                "explanation": "The phrase seems to be about the sea and its emotional impact.",
+                "reasoning": "PossibleConnection(Sea, Emotions)"
+            },
+            "specificity_level_0": {
+                "relation": "Incorrect Interpretation",
+                "explanation": "The phrase is about the joy of sailing in calm waters.",
+                "reasoning": "Define(Naufragar, Joy) ∧ Define(Mare, CalmSea) → JoyOfSailing"
+            }
+        }
+    },
+    {
+        "Non dire gatto se non ce l'hai nel sacco(invisible, culture, mutual elements, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "Non dire gatto se non ce l'hai nel sacco",
+                "explanation": "The phrase means one should not claim to have something unless it is proven, emphasizing the importance of evidence before making assertions.",
+                "reasoning": "Claim(HoldingBag, Cat) ∧ ShowPossession(Cat, Bag) ∧ Realization(SurprisePerson, UnexpectedClaim) → 'Non dire gatto se non ce l'hai nel sacco'"
+            },
+            "specificity_level_3": {
+                "relation": "Proof Before Claim",
+                "explanation": "The saying advises against making claims without proof.",
+                "reasoning": "Claim(Assertion) ∧ Require(Proof) → ProofBeforeClaim"
+            },
+            "specificity_level_2": {
+                "relation": "Avoid Unfounded Claims",
+                "explanation": "The phrase warns against stating something without evidence.",
+                "reasoning": "State(Claim) ∧ Lack(Evidence) → AvoidClaim"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Italian Proverb",
+                "explanation": "It’s an Italian saying about not making claims without proof.",
+                "reasoning": "CulturalPhrase(Italian) → ProofRequired"
+            },
+            "specificity_level_0": {
+                "relation": "Misunderstood Proverb",
+                "explanation": "The phrase means that cats should always be kept in bags.",
+                "reasoning": "Define(Gatto, Cat) ∧ Define(Sacco, Bag) → KeepCatInBag"
+            }
+        }
+    },
+    {
+        "Moda italiana(invisible, phenomenon, mutual elements, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "Moda italiana",
+                "explanation": "Italian fashion is characterized by its blend of modern runway presentations and traditional craftsmanship, exemplified by Milan Fashion Week and bespoke tailoring.",
+                "reasoning": "Showcase(MilanFashionWeek, ItalianFashion) ∧ Craft(BespokeTailoring, ItalianTradition) → ItalianFashion"
+            },
+            "specificity_level_3": {
+                "relation": "Fashion and Craftsmanship",
+                "explanation": "Italian fashion combines contemporary designs with artisanal tailoring.",
+                "reasoning": "Represent(Runway, ModernDesign) ∧ Represent(Tailoring, Tradition) → ItalianFashion"
+            },
+            "specificity_level_2": {
+                "relation": "Italian Style",
+                "explanation": "Italy is known for its fashion, blending modern and traditional elements.",
+                "reasoning": "Define(Fashion, Modern) ∧ Define(Craftsmanship, Traditional) → ItalianStyle"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Fashion Concept",
+                "explanation": "The term refers to something related to Italian fashion.",
+                "reasoning": "PossibleConnection(Fashion, Italy)"
+            },
+            "specificity_level_0": {
+                "relation": "Incorrect Interpretation",
+                "explanation": "'Moda italiana' refers to Italian food trends.",
+                "reasoning": "Define(Moda, Food) ∧ Define(Italiana, Italian) → ItalianFoodTrends"
+            }
+        }
+    },
+    {
+        "Canovaccio(invisible, culture, mutual elements, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "Canovaccio",
+                "explanation": "Canovaccio refers to the framework used in Commedia dell'Arte, guiding improvisation and performance, while hand-painted costumes enhance the visual spectacle.",
+                "reasoning": "Use(CommediaDellArte, Canovaccio) ∧ Decorate(Costumes, HandPaintedFabric) → Canovaccio"
+            },
+            "specificity_level_3": {
+                "relation": "Theatrical Framework",
+                "explanation": "Canovaccio is a script outline used in Commedia dell'Arte, supported by vibrant costumes.",
+                "reasoning": "Define(Canovaccio, Script) ∧ Represent(Costumes, VisualArt) → TheatricalFramework"
+            },
+            "specificity_level_2": {
+                "relation": "Performance Structure",
+                "explanation": "Canovaccio provides structure for performances, complemented by colorful costumes.",
+                "reasoning": "Define(Canovaccio, Structure) ∧ Define(Costumes, Color) → PerformanceStructure"
+            },
+            "specificity_level_1": {
+                "relation": "Vague Theatrical Concept",
+                "explanation": "Canovaccio seems to be related to theater and costumes.",
+                "reasoning": "PossibleConnection(Theater, Costumes)"
+            },
+            "specificity_level_0": {
+                "relation": "Misinterpreted Term",
+                "explanation": "Canovaccio refers to a type of Italian pasta.",
+                "reasoning": "Define(Canovaccio, Pasta) → ItalianPasta"
+            }
+        }
+    },
+    {
+        "avere culo(invisible, phenomenon, mutual elements, Non-English European, Italian)": {
+            "specificity_level_4": {
+                "relation": "avere culo",
+                "explanation": "The first image symbolizes luck through the lottery, a common representation of good fortune. The second image depicts the joy of experiencing a fortunate event in a culturally significant location like the Colosseum, emphasizing the theme of luck in Italian culture.",
+                "reasoning": "Win(LotteryTicket, Luck) ∧ Celebrate(Person, GoodFortune) ∧ Location(Person, Colosseum) → LotteryTicket → Luck ∧ Person → GoodFortune → Luck"
+            },
+            "specificity_level_3": {
+                "relation": "luck",
+                "explanation": "The first image shows luck through a lottery win, while the second image portrays the celebration of good fortune in a culturally important setting. Together, they highlight the concept of luck.",
+                "reasoning": "Win(LotteryTicket, Luck) ∧ Celebrate(Person, GoodFortune) → LotteryTicket → Luck ∧ Person → GoodFortune"
+            },
+            "specificity_level_2": {
+                "relation": "good fortune",
+                "explanation": "The images depict scenarios associated with luck, such as winning a lottery and celebrating a fortunate event.",
+                "reasoning": "Win(LotteryTicket, Luck) ∧ Celebrate(Person, GoodFortune) → Luck"
+            },
+            "specificity_level_1": {
+                "relation": "vague association with luck",
+                "explanation": "The images seem to be related to luck or fortunate events, but the connection is not fully clear.",
+                "reasoning": "PossibleConnection(Luck)"
+            },
+            "specificity_level_0": {
+                "relation": "unrelated concepts",
+                "explanation": "The first image is about a lottery ticket, and the second is about a person celebrating. There is no clear link to luck.",
+                "reasoning": "Win(LotteryTicket, Prize) ∧ Celebrate(Person, Event) → ¬Luck"
+            }
+        }
+    }
+]
