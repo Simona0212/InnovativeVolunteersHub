@@ -35,12 +35,12 @@ for TESTMODEL in TESTMODEL_LIST:
             if foldername in score_v3_data:
                 combine_data_after[foldername][i]["MLLM_answer"] = (
                     score_v3_data[foldername][i]["MLLM_answer"]
-                    if "MLLM_answer" in score_v3_data[foldername]
+                    if "MLLM_answer" in score_v3_data[foldername][i]
                     else ""
                 )
                 combine_data_after[foldername][i]["ordinary_judge"] = (
                     score_v3_data[foldername][i]["judge_answer"]
-                    if "judge_answer" in score_v3_data[foldername]
+                    if "judge_answer" in score_v3_data[foldername][i]
                     else {
                         "score_4o": 0,
                         "score_reason": "Error",

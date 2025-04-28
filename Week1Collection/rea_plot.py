@@ -97,13 +97,13 @@ print("DONE")
 TESTMODEL_TITLE_LIST = [
     # 调整顺序
     "GPT-4o",
-    "Gemini-1.5-\nPro-001",
-    "Gemini-1.5-\nFlash-001",
-    "Claude-3-5-\nSonnet",
-    "Qwen-VL-\nMax-0809",
-    "Qwen-VL-\nPlus-0809",
+    "Gemini-1.5-\nPro",
+    "Gemini-1.5-\nFlash",
+    "Claude-3.5-\nSonnet",
+    "Qwen-VL-\nMax",
+    "Qwen-VL-\nPlus",
     "Yi-VL-34B",
-    "InternLM-\nXComposer2-VL",
+    "InternLM-XCom-\nposer2.5-7B",
     "VILA1.5",
 ]
 
@@ -119,6 +119,15 @@ if not os.path.exists(
 CALCULATED_DATA_DICT = read_json(
     os.path.join(CURRENT_DIR, "500reasoning_4o", "reasoning_data_calculated.json")
 )
+
+COLOR_BAR = [
+    "#c6dbee",
+    "#9ecae1",
+    "#6badd6",
+    "#4392c6",
+    "#2272b5",
+    "#07529c",
+]
 
 
 # 维度1：score_reason 平均分(mean)、取值分布
@@ -226,7 +235,7 @@ CALCULATED_DATA_DICT = read_json(
 #         CURRENT_DIR,
 #         "500reasoning_4o",
 #         "plots",
-#         "reasoning_score_distribution_3.5.pdf",
+#         "reasoning_score_distribution_3.5_ria.pdf",
 #         # "reasoning_score_distribution.png",
 #     ),
 #     # 周围空白去除
@@ -234,120 +243,154 @@ CALCULATED_DATA_DICT = read_json(
 # )
 
 # # RIA占半行
-plt.figure(figsize=(17, 3.5))
-plt.suptitle(
-    "Reasoning Score Distribution (RIA)",
-    fontsize=24,
-    ha="center",  # ha是horizontal alignment
-    va="top",  # va是vertical alignment top是顶部
-    y=0.93,  # 位置
-    fontweight="semibold",  # 轻微加粗
-)
+# plt.figure(figsize=(17, 3.5))
+# plt.suptitle(
+#     "Reasoning Score Distribution (RIA)",
+#     # "Reasoning Score Distribution (RIA) — Evaluated by Deepseek-V3",
+#     # "Reasoning Score Distribution (RIA) — Evaluated by GPT-4o",
+#     fontsize=24,
+#     ha="center",  # ha是horizontal alignment
+#     va="top",  # va是vertical alignment top是顶部
+#     y=0.93,  # 位置
+#     fontweight="semibold",  # 轻微加粗
+# )
 
-# 先计算所有数据的最大频率，以固定0.5的组距计算
-max_frequency = 0
-all_hist_data = []
-for TESTMODEL in TESTMODEL_LIST:
-    SCORE_FILE_PATH = os.path.join(
-        CURRENT_DIR,
-        "500reasoning_4o",
-        TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
-    )
-    SCORE_DATA = read_json(SCORE_FILE_PATH)
-    score_reason_list = []
-    for key, value in SCORE_DATA.items():
-        score_reason_list.append(value["reason_judge"]["score_reason"])
-    if len(score_reason_list) < 500:
-        score_reason_list.extend([0] * (500 - len(score_reason_list)))
+# # 先计算所有数据的最大频率，以固定0.5的组距计算
+# max_frequency = 0
+# max_percentage = 0
+# all_hist_data = []
+# for TESTMODEL in TESTMODEL_LIST:
+#     SCORE_FILE_PATH_1 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_4o",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_1 = read_json(SCORE_FILE_PATH_1)
+#     score_reason_list_1 = []
+#     for key, value in SCORE_DATA_1.items():
+#         score_reason_list_1.append(value["reason_judge"]["score_reason"])
+#     if len(score_reason_list_1) < 500:
+#         score_reason_list_1.extend([0] * (500 - len(score_reason_list_1)))
 
-    # 使用固定0.5组距计算直方图
-    data_min = min(score_reason_list)
-    data_max = max(score_reason_list)
-    bin_width = 0.5
-    start_bin = math.floor(data_min / bin_width) * bin_width
-    end_bin = math.ceil(data_max / bin_width) * bin_width
-    bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+#     SCORE_FILE_PATH_2 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_v3",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_2 = read_json(SCORE_FILE_PATH_2)
+#     score_reason_list_2 = []
+#     for key, value in SCORE_DATA_2.items():
+#         score_reason_list_2.append(value["reason_judge"]["score_reason"])
+#     if len(score_reason_list_2) < 500:
+#         score_reason_list_2.extend([0] * (500 - len(score_reason_list_2)))
 
-    hist_data = np.histogram(score_reason_list, bins=bins)
-    max_frequency = max(max_frequency, max(hist_data[0]))
-    all_hist_data.append(score_reason_list)
+#     # 求平均
+#     score_reason_list = [
+#         (score_reason_list_1[i] + score_reason_list_2[i]) / 2 for i in range(0, 500)
+#     ]
 
+#     # score_reason_list = score_reason_list_1
 
-# 绘制子图
-for i, (TESTMODEL, score_reason_list) in enumerate(zip(TESTMODEL_LIST, all_hist_data)):
-    ax = plt.subplot(1, 9, i + 1)
+#     # 使用固定0.5组距计算直方图
+#     data_min = min(score_reason_list)
+#     data_max = max(score_reason_list)
+#     bin_width = 0.5
+#     start_bin = math.floor(data_min / bin_width) * bin_width
+#     end_bin = math.ceil(data_max / bin_width) * bin_width
+#     bins = np.arange(start_bin, end_bin + bin_width, bin_width)
 
-    # 计算当前数据的范围并设置合适的刻度间隔
-    data_min = min(score_reason_list)
-    data_max = max(score_reason_list)
-    bin_width = 0.5  # 设置组距为0.5
-
-    # 计算bin的边界，确保完全覆盖数据范围
-    start_bin = math.floor(data_min / bin_width) * bin_width
-    end_bin = math.ceil(data_max / bin_width) * bin_width
-    bins = np.arange(start_bin, end_bin + bin_width, bin_width)
-
-    plt.hist(
-        score_reason_list,
-        bins=bins,
-        edgecolor="black",
-        color="lightblue",
-        linewidth=0.5,
-        width=0.5,
-    )
-    # plt.margins(0)
-    plt.title(TESTMODEL_TITLE_LIST[i], fontsize=20, fontweight="medium")
-
-    if i == 4:
-        plt.xlabel(
-            "Reasoning Score", fontsize=18, va="top", ha="center", fontweight="medium"
-        )
-    else:
-        plt.xlabel("")
-
-    # 设置x轴刻度，只有整数刻度
-    plt.xticks(
-        np.arange(start_bin, end_bin + bin_width, 1), fontsize=16, fontweight="medium"
-    )
-
-    # 统一y轴范围
-    plt.ylim(0, max_frequency * 1.1)  # 留出10%的余量
-
-    # 只在每行最左边的图显示y轴标签和刻度
-    if i == 0:  # 第一列
-        plt.ylabel("Frequency", fontsize=18, fontweight="medium", va="bottom")
-        plt.yticks(
-            np.arange(0, max_frequency * 1.1, 25), fontsize=16, fontweight="medium"
-        )
-    else:
-        ax.set_yticklabels([])  # 隐藏y轴刻度标签
-        ax.set_ylabel("")  # 隐藏y轴标签
-
-    plt.tight_layout(
-        # pad=3.0,  # 子图之间的间距
-        w_pad=2,  # 子图之间的水平间距
-        # h_pad=2.0,  # 子图之间的垂直间距
-        # rect=[0, 0, 1, 1],  # 整体图形的边界范围 [left, bottom, right, top]
-    )
-
-# 设置标题，位置移上
-# plt.show()
-# 保存图片
-plt.savefig(
-    os.path.join(
-        CURRENT_DIR,
-        "500reasoning_4o",
-        "plots",
-        "reasoning_score_distribution_3.5_half.pdf",
-        # "reasoning_score_distribution.png",
-    ),
-    # 周围空白去除
-    bbox_inches="tight",
-)
+#     hist_data = np.histogram(score_reason_list, bins=bins)
+#     # max_frequency = max(max_frequency, max(hist_data[0]))
+#     percentages = hist_data[0] / len(score_reason_list) * 100
+#     max_percentage = max(max_percentage, max(percentages))
+#     all_hist_data.append(score_reason_list)
 
 
-# # 维度2：score_4o 得分率(accuracy)、取值分布
-# plt.suptitle("Accuracy Distribution", fontsize=12)
+# # 绘制子图
+# for i, (TESTMODEL, score_reason_list) in enumerate(zip(TESTMODEL_LIST, all_hist_data)):
+#     ax = plt.subplot(1, 9, i + 1)
+
+#     # 计算当前数据的范围并设置合适的刻度间隔
+#     data_min = min(score_reason_list)
+#     data_max = max(score_reason_list)
+#     bin_width = 0.5  # 设置组距为0.5
+
+#     # 计算bin的边界，确保完全覆盖数据范围
+#     start_bin = math.floor(data_min / bin_width) * bin_width
+#     end_bin = math.ceil(data_max / bin_width) * bin_width
+#     bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+
+#     plt.hist(
+#         score_reason_list,
+#         bins=bins,
+#         weights=np.ones_like(score_reason_list)
+#         / len(score_reason_list)
+#         * 100,  # 转换为百分比
+#         edgecolor="white",
+#         # color=COLOR_BAR[0],
+#         color=COLOR_BAR[5],
+#         linewidth=0.5,
+#         width=0.5,
+#     )
+#     # plt.margins(0)
+#     plt.title(TESTMODEL_TITLE_LIST[i], fontsize=20, fontweight="medium")
+
+#     if i == 4:
+#         plt.xlabel(
+#             "Avg. Reasoning Score",
+#             fontsize=18,
+#             va="top",
+#             ha="center",
+#             fontweight="medium",
+#         )
+#     else:
+#         plt.xlabel("")
+
+#     # 设置x轴刻度，只有整数刻度
+#     plt.xticks(
+#         np.arange(start_bin, end_bin + bin_width, 1), fontsize=16, fontweight="medium"
+#     )
+
+#     # 统一y轴范围
+#     plt.ylim(0, max_percentage * 1.1)
+
+#     # 只在每行最左边的图显示y轴标签和刻度
+#     if i == 0:  # 第一列
+#         plt.ylabel("Percentage (%)", fontsize=18, fontweight="medium", va="bottom")
+#         plt.yticks(
+#             np.arange(0, max_percentage * 1.1, 10), fontsize=16, fontweight="medium"
+#         )
+#     else:
+#         ax.set_ylabel("")  # 隐藏y轴标签
+#         plt.yticks(np.arange(0, max_percentage * 1.1, 10))
+#         ax.set_yticklabels([])  # 隐藏y轴刻度标签
+
+# plt.tight_layout(
+#     # pad=3.0,  # 子图之间的间距
+#     w_pad=2,  # 子图之间的水平间距
+#     # h_pad=2.0,  # 子图之间的垂直间距
+#     # rect=[0, 0, 1, 1],  # 整体图形的边界范围 [left, bottom, right, top]
+# )
+
+# # 设置标题，位置移上
+# # plt.show()
+# # 保存图片
+# plt.savefig(
+#     os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_plots",
+#         # "v3_reasoning_score_distribution_ria.pdf",
+#         # "4o_reasoning_score_distribution_ria.pdf",
+#         "reasoning_score_distribution_3.5_half_ria.pdf",
+#         # "reasoning_score_distribution.png",
+#     ),
+#     # 周围空白去除
+#     bbox_inches="tight",
+# )
+
+
+# # 维度2：score_4o 得分率(SR)、取值分布
+# plt.suptitle("Score Rate Distribution", fontsize=12)
 # for i, TESTMODEL in enumerate(TESTMODEL_LIST):
 #     SCORE_FILE_PATH = os.path.join(
 #         CURRENT_DIR,
@@ -357,7 +400,7 @@ plt.savefig(
 #     SCORE_DATA = read_json(SCORE_FILE_PATH)
 #     print(f"TESTMODEL: {TESTMODEL}")
 #     print(f"\tTOTAL: {len(SCORE_DATA)}")
-#     # 2. score_4o 得分率(accuracy)、取值分布
+#     # 2. score_4o 得分率(SR)、取值分布
 #     score_4o_list = []
 #     for key, value in SCORE_DATA.items():
 #         score_4o = value.get("ordinary_judge", {}).get("score_4o", 0)
@@ -396,6 +439,318 @@ plt.savefig(
 #         "accuracy_distribution.png",
 #     ),
 #     # 周围空白去除
+#     bbox_inches="tight",
+# )
+
+# plt.figure(figsize=(17, 3.5))
+# plt.suptitle(
+#     "Holistic Score Distribution (RIA)",
+#     fontsize=24,
+#     ha="center",  # ha是horizontal alignment
+#     va="top",  # va是vertical alignment top是顶部
+#     y=0.93,  # 位置
+#     fontweight="semibold",  # 轻微加粗
+# )
+
+# # 先计算所有数据的最大频率，以固定0.5的组距计算
+# max_frequency = 0
+# max_percentage = 0
+# all_hist_data = []
+# for TESTMODEL in TESTMODEL_LIST:
+#     SCORE_FILE_PATH_1 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_4o",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     # 2. score_4o 得分取值分布
+#     SCORE_DATA_1 = read_json(SCORE_FILE_PATH_1)
+#     score_4o_list_1 = []
+#     for key, value in SCORE_DATA_1.items():
+#         score_4o = value.get("ordinary_judge", {}).get("score_4o", 0)
+#         if not isinstance(score_4o, float) or not isinstance(score_4o, int):
+#             try:
+#                 score_4o = float(score_4o)
+#             except ValueError:
+#                 score_4o = 0
+#         score_4o_list_1.append(score_4o)
+#     if len(score_4o_list_1) < 500:
+#         score_4o_list_1.extend([0] * (500 - len(score_4o_list_1)))
+
+#     SCORE_FILE_PATH_2 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_v3",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_2 = read_json(SCORE_FILE_PATH_2)
+#     score_4o_list_2 = []
+#     for key, value in SCORE_DATA_2.items():
+#         try:
+#             score_4o = value.get("ordinary_judge", {}).get("score_4o", 0)
+#         except:
+#             score_4o = 0
+#         if not isinstance(score_4o, float) or not isinstance(score_4o, int):
+#             try:
+#                 score_4o = float(score_4o)
+#             except ValueError:
+#                 score_4o = 0
+#         score_4o_list_2.append(score_4o)
+#     if len(score_4o_list_2) < 500:
+#         score_4o_list_2.extend([0] * (500 - len(score_4o_list_2)))
+
+#     # 求平均
+#     score_4o_list = [
+#         (score_4o_list_1[i] + score_4o_list_2[i]) / 2 for i in range(0, 500)
+#     ]
+
+#     # 使用固定0.5组距计算直方图
+#     # 纵轴是frequency，要归一化处理  , density=True
+#     data_min = min(score_4o_list)
+#     data_max = max(score_4o_list)
+#     bin_width = 0.5
+#     # start_bin = math.floor(data_min / bin_width) * bin_width
+#     # end_bin = math.ceil(data_max / bin_width) * bin_width
+#     # bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+#     bins = np.arange(0, 5, 1)
+
+#     hist_data = np.histogram(score_4o_list, bins=bins)  # , density=True)
+#     max_frequency = max(max_frequency, max(hist_data[0]))
+#     percentages = hist_data[0] / len(score_4o_list) * 100
+#     max_percentage = max(max_percentage, max(percentages))
+#     all_hist_data.append(score_4o_list)
+
+# # 绘制子图
+# actual_values = np.arange(0, 4.5, 0.5)  # 实际数据点：0, 0.5, 1.0, ..., 4.0
+# bin_edges = np.arange(-0.25, 4.25, 0.5)  # bin边界：-0.25, 0.25, 0.75, ..., 4.25
+# for i, (TESTMODEL, score_4o_list) in enumerate(zip(TESTMODEL_LIST, all_hist_data)):
+#     ax = plt.subplot(1, 9, i + 1)
+
+#     # 计算当前数据的范围并设置合适的刻度间隔
+#     data_min = min(score_4o_list)
+#     data_max = max(score_4o_list)
+#     bin_width = 0.5
+#     start_bin = math.floor(data_min / bin_width) * bin_width
+#     # end_bin = math.ceil(data_max / bin_width) * bin_width
+#     # bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+#     bins = np.arange(0, 5, 1)  # bins是指定bins的边界
+
+#     plt.hist(
+#         score_4o_list,
+#         # bins=bins,
+#         bins=bin_edges,
+#         weights=np.ones_like(score_4o_list) / len(score_4o_list) * 100,  # 转换为百分比
+#         # density=True,  # 使用密度而不是频数
+#         edgecolor="black",
+#         color=COLOR_BAR[1],
+#         linewidth=0.5,
+#         width=0.5,
+#     )
+#     plt.title(TESTMODEL_TITLE_LIST[i], fontsize=20, fontweight="medium")
+
+#     if i == 4:
+#         plt.xlabel(
+#             "Avg. Holistic Score",
+#             fontsize=18,
+#             va="top",
+#             ha="center",
+#             fontweight="medium",
+#         )
+#     else:
+#         plt.xlabel("")
+
+#     # 设置x轴刻度，只有整数刻度
+#     # plt.xticks(np.arange(0, 5, 1), fontsize=16, fontweight="medium")
+#     plt.xticks(actual_values[::2], fontsize=16, fontweight="medium")
+#     plt.xlim(-0.25, 4.25)
+
+#     # 统一y轴范围
+#     plt.ylim(0, max_percentage)
+
+#     # 只在每行最左边的图显示y轴标签和刻度
+#     if i == 0:  # 第一列
+#         # plt.ylabel("Count", fontsize=18, fontweight="medium", va="bottom")
+#         plt.ylabel("Percentage (%)", fontsize=18, fontweight="medium", va="bottom")
+#         plt.yticks(
+#             # np.arange(0, max_frequency * 1.0, 0.2), # 密度
+#             # np.arange(0, max_frequency * 1.1, 50), # 频数
+#             np.arange(0, max_percentage, 10),  # 百分比
+#             fontsize=16,
+#             fontweight="medium",
+#         )
+#     else:
+
+#         ax.set_ylabel("")  # 隐藏y轴标签
+#         plt.yticks(
+#             # np.arange(0, max_frequency * 1.0, 0.2), # 密度
+#             # np.arange(0, max_frequency * 1.1, 50), # 频数
+#             np.arange(0, max_percentage, 10),  # 百分比
+#             # fontsize=16,
+#             # fontweight="medium",
+#         )
+#         ax.set_yticklabels([])  # 隐藏y轴刻度标签
+
+# plt.tight_layout(
+#     # pad=3.0,  # 子图之间的间距
+#     w_pad=2,  # 子图之间的水平间距
+#     # h_pad=2.0,  # 子图之间的垂直间距
+#     # rect=[0, 0, 1, 1],  # 整体图形的边界范围 [left, bottom, right, top]
+# )
+# plt.margins(y=0)  # 去除y轴空白
+
+# # 保存图片
+# plt.savefig(
+#     os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_plots",
+#         "avg_score_distribution_3.5_half_ria.pdf",
+#     ),
+#     # 周围空白去除
+#     bbox_inches="tight",
+# )
+
+## holistic score折线图
+# plt.figure(figsize=(17, 3.5))
+# plt.suptitle(
+#     # "Holistic Score Distribution (RIA)",
+#     # "Holistic Score Distribution (RIA) — Evaluated by GPT-4o",
+#     "Holistic Score Distribution (RIA) — Evaluated by Deepseek-V3",
+#     fontsize=24,
+#     ha="center",  # ha是horizontal alignment
+#     va="top",  # va是vertical alignment top是顶部
+#     y=0.93,  # 位置
+#     fontweight="semibold",  # 轻微加粗
+# )
+
+# # 先计算所有数据的最大频率，以固定0.5的组距计算
+# max_percentage = 0
+# all_hist_data = []
+# for TESTMODEL in TESTMODEL_LIST:
+#     SCORE_FILE_PATH_1 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_4o",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     # 2. score_4o 得分取值分布
+#     SCORE_DATA_1 = read_json(SCORE_FILE_PATH_1)
+#     score_4o_list_1 = []
+#     for key, value in SCORE_DATA_1.items():
+#         score_4o = value.get("ordinary_judge", {}).get("score_4o", 0)
+#         if not isinstance(score_4o, float) or not isinstance(score_4o, int):
+#             try:
+#                 score_4o = float(score_4o)
+#             except ValueError:
+#                 score_4o = 0
+#         score_4o_list_1.append(score_4o)
+#     if len(score_4o_list_1) < 500:
+#         score_4o_list_1.extend([0] * (500 - len(score_4o_list_1)))
+
+#     SCORE_FILE_PATH_2 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_v3",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_2 = read_json(SCORE_FILE_PATH_2)
+#     score_4o_list_2 = []
+#     for key, value in SCORE_DATA_2.items():
+#         try:
+#             score_4o = value.get("ordinary_judge", {}).get("score_4o", 0)
+#         except:
+#             score_4o = 0
+#         if not isinstance(score_4o, float) or not isinstance(score_4o, int):
+#             try:
+#                 score_4o = float(score_4o)
+#             except ValueError:
+#                 score_4o = 0
+#         score_4o_list_2.append(score_4o)
+#     if len(score_4o_list_2) < 500:
+#         score_4o_list_2.extend([0] * (500 - len(score_4o_list_2)))
+
+#     # # 求平均
+#     # score_4o_list = [
+#     #     (score_4o_list_1[i] + score_4o_list_2[i]) / 2 for i in range(0, 500)
+#     # ]
+#     score_4o_list = score_4o_list_2
+
+#     all_hist_data.append(score_4o_list)
+
+# # 定义精确的离散值
+# discrete_values = np.arange(0, 4.5, 1)  # 0, 0.5, 1.0, ..., 4.0
+
+# # 绘制子图
+# for i, (TESTMODEL, score_4o_list) in enumerate(zip(TESTMODEL_LIST, all_hist_data)):
+#     ax = plt.subplot(1, 9, i + 1)
+
+#     # 计算每个离散值的频率
+#     counts = np.zeros(len(discrete_values))
+#     for val in score_4o_list:
+#         # 找到最接近的离散值索引
+#         idx = np.abs(discrete_values - val).argmin()
+#         counts[idx] += 1
+
+#     # 转换为百分比
+#     percentages = counts / len(score_4o_list) * 100
+#     # max_percentage = max(max_percentage, max(percentages))
+
+#     # 添加浅色网格
+#     plt.grid(True, linestyle="--", linewidth=0.5, alpha=0.6, color="#A2ACBD")
+
+#     # 绘制折线图
+#     plt.plot(
+#         discrete_values,
+#         percentages,
+#         marker="o",  # 添加圆点标记
+#         markersize=6,
+#         linestyle="-",
+#         # color=COLOR_BAR[1],
+#         color=COLOR_BAR[4],
+#         linewidth=2,
+#     )
+
+#     plt.title(TESTMODEL_TITLE_LIST[i], fontsize=20, fontweight="medium")
+
+#     if i == 4:
+#         plt.xlabel(
+#             "Avg. Holistic Score",
+#             fontsize=18,
+#             va="top",
+#             ha="center",
+#             fontweight="medium",
+#         )
+#     else:
+#         plt.xlabel("")
+
+#     # 设置x轴刻度，只显示整数刻度
+#     plt.xticks(np.arange(0, 4.5, 1), fontsize=16, fontweight="medium")  # 只显示整数刻度
+#     plt.xlim(-0.2, 4.2)  # 设置x轴范围
+
+#     # 统一y轴范围
+#     maxper = 70
+#     plt.ylim(0, maxper * 1.01)
+
+#     # 只在每行最左边的图显示y轴标签和刻度
+#     if i == 0:
+#         plt.ylabel("Percentage (%)", fontsize=18, fontweight="medium", va="bottom")
+#         plt.yticks(
+#             np.arange(0, maxper * 1.1, 10),
+#             fontsize=16,
+#             fontweight="medium",
+#         )
+#     else:
+#         plt.yticks(np.arange(0, maxper * 1.1, 10))
+#         ax.set_yticklabels([])
+#         ax.set_ylabel("")
+
+# plt.tight_layout(w_pad=2)
+# plt.margins(y=0)  # 去除y轴空白
+
+# # 保存图片
+# plt.savefig(
+#     os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_plots",
+#         "v3_avg_score_distribution_ria.pdf",
+#         # "4o_avg_score_distribution_ria.pdf",
+#         # "avg_score_distribution_3.5_half_line_ria.pdf",
+#     ),
 #     bbox_inches="tight",
 # )
 
@@ -443,6 +798,274 @@ plt.savefig(
 #         "500reasoning_4o",
 #         "plots",
 #         "hop_number_distribution.png",
+#     ),
+#     # 周围空白去除
+#     bbox_inches="tight",
+# )
+
+# hop数量（"hop_quality"里的key数量）分布，平均值
+# plt.figure(figsize=(17, 3.5))
+# plt.suptitle(
+#     "Hop Count Distribution (RIA)",
+#     fontsize=24,
+#     ha="center",  # ha是horizontal alignment
+#     va="top",  # va是vertical alignment top是顶部
+#     y=0.93,  # 位置
+#     fontweight="semibold",  # 轻微加粗
+# )
+# max_percentage = 0
+# all_hist_data = []
+# for TESTMODEL in TESTMODEL_LIST:
+#     SCORE_FILE_PATH_1 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_4o",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_1 = read_json(SCORE_FILE_PATH_1)
+#     hop_quality_list_1 = []
+#     for key, value in SCORE_DATA_1.items():
+#         value_ = value.get("reason_judge", {}).get("hop_quality", {})
+#         if not isinstance(value_, dict):
+#             value_ = {}
+#         hop_quality_list_1.append(len(value_))
+#     if len(hop_quality_list_1) < 500:
+#         hop_quality_list_1.extend([0] * (500 - len(hop_quality_list_1)))
+
+#     SCORE_FILE_PATH_2 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_v3",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_2 = read_json(SCORE_FILE_PATH_2)
+#     hop_quality_list_2 = []
+#     for key, value in SCORE_DATA_2.items():
+#         value_ = value.get("reason_judge", {}).get("hop_quality", {})
+#         if not isinstance(value_, dict):
+#             value_ = {}
+#         hop_quality_list_2.append(len(value_))
+#     if len(hop_quality_list_2) < 500:
+#         hop_quality_list_2.extend([0] * (500 - len(hop_quality_list_2)))
+
+#     # 求平均
+#     hop_quality_list = [
+#         (hop_quality_list_1[i] + hop_quality_list_2[i]) / 2 for i in range(0, 500)
+#     ]
+
+#     # 使用固定0.5组距计算直方图
+#     # 纵轴是percentage
+#     data_min = min(hop_quality_list)
+#     data_max = max(hop_quality_list)
+#     bin_width = 0.5
+#     start_bin = math.floor(data_min / bin_width) * bin_width
+#     end_bin = math.ceil(data_max / bin_width) * bin_width
+#     bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+
+#     hist_data = np.histogram(hop_quality_list, bins=bins)
+#     percentages = hist_data[0] / len(hop_quality_list) * 100
+#     max_percentage = max(max_percentage, max(percentages))
+#     all_hist_data.append(hop_quality_list)
+
+# # 绘制子图
+# for i, (TESTMODEL, hop_quality_list) in enumerate(zip(TESTMODEL_LIST, all_hist_data)):
+#     ax = plt.subplot(1, 9, i + 1)
+#     plt.hist(
+#         hop_quality_list,
+#         bins=bins,
+#         weights=np.ones_like(hop_quality_list) / len(hop_quality_list) * 100,
+#         edgecolor="black",
+#         color=COLOR_BAR[2],
+#         linewidth=0.5,
+#         width=0.5,
+#     )
+#     plt.title(TESTMODEL_TITLE_LIST[i], fontsize=20, fontweight="medium")
+
+#     if i == 4:
+#         plt.xlabel("Avg. Hop Count", fontsize=18, fontweight="medium")
+#     else:
+#         plt.xlabel("")
+
+#     plt.xticks(
+#         np.arange(start_bin, end_bin + bin_width, 1), fontsize=16, fontweight="medium"
+#     )
+
+#     plt.ylim(0, max_percentage * 1.1)
+
+#     if i == 0:
+#         plt.yticks(
+#             np.arange(0, max_percentage * 1.1, 10),
+#             fontsize=16,
+#             fontweight="medium",
+#         )
+#         ax.set_ylabel("Percentage (%)", fontsize=18, fontweight="medium")
+#     else:
+#         plt.yticks(
+#             np.arange(0, max_percentage * 1.1, 10),
+#             fontsize=16,
+#             fontweight="medium",
+#         )
+#         ax.set_yticklabels([])
+#         ax.set_ylabel("")
+
+# plt.tight_layout(
+#     # pad=3.0,  # 子图之间的间距
+#     w_pad=2,  # 子图之间的水平间距
+#     # h_pad=2.0,  # 子图之间的垂直间距
+#     # rect=[0, 0, 1, 1],  # 整体图形的边界范围 [left, bottom, right, top]
+# )
+
+# # 保存图片
+# plt.savefig(
+#     os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_plots",
+#         "hop_count_distribution_3.5_half_ria.pdf",
+#     ),
+#     # 周围空白去除
+#     bbox_inches="tight",
+# )
+
+# hop cnt 折线图
+# plt.figure(figsize=(17, 3.5))
+# plt.suptitle(
+#     "Hop Count Distribution (RIA)",
+#     # "Hop Count Distribution (RIA) — Evaluated by Deepseek-V3",
+#     # "Hop Count Distribution (RIA) — Evaluated by GPT-4o",
+#     fontsize=24,
+#     ha="center",  # ha是horizontal alignment
+#     va="top",  # va是vertical alignment top是顶部
+#     y=0.93,  # 位置
+#     fontweight="semibold",  # 轻微加粗
+# )
+# max_percentage = 0
+# all_hist_data = []
+# for TESTMODEL in TESTMODEL_LIST:
+#     SCORE_FILE_PATH_1 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_4o",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_1 = read_json(SCORE_FILE_PATH_1)
+#     hop_quality_list_1 = []
+#     for key, value in SCORE_DATA_1.items():
+#         value_ = value.get("reason_judge", {}).get("hop_quality", {})
+#         if not isinstance(value_, dict):
+#             value_ = {}
+#         hop_quality_list_1.append(len(value_))
+#     if len(hop_quality_list_1) < 500:
+#         hop_quality_list_1.extend([0] * (500 - len(hop_quality_list_1)))
+
+#     SCORE_FILE_PATH_2 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_v3",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_2 = read_json(SCORE_FILE_PATH_2)
+#     hop_quality_list_2 = []
+#     for key, value in SCORE_DATA_2.items():
+#         value_ = value.get("reason_judge", {}).get("hop_quality", {})
+#         if not isinstance(value_, dict):
+#             value_ = {}
+#         hop_quality_list_2.append(len(value_))
+#     if len(hop_quality_list_2) < 500:
+#         hop_quality_list_2.extend([0] * (500 - len(hop_quality_list_2)))
+
+#     # # 求平均
+#     hop_quality_list = [
+#         (hop_quality_list_1[i] + hop_quality_list_2[i]) / 2 for i in range(0, 500)
+#     ]
+
+#     # hop_quality_list = hop_quality_list_2
+#     # 使用固定0.5组距计算直方图
+#     # 纵轴是percentage
+#     data_min = min(hop_quality_list)
+#     data_max = max(hop_quality_list)
+#     bin_width = 0.5
+#     start_bin = math.floor(data_min / bin_width) * bin_width
+#     end_bin = math.ceil(data_max / bin_width) * bin_width
+#     bins = np.arange(-0.25, 5.25, bin_width)
+
+#     hist_data = np.histogram(hop_quality_list, bins=bins)
+#     percentages = hist_data[0] / len(hop_quality_list) * 100
+#     max_percentage = max(max_percentage, max(percentages))
+#     all_hist_data.append(hop_quality_list)
+
+# # 绘制子图
+# for i, (TESTMODEL, hop_quality_list) in enumerate(zip(TESTMODEL_LIST, all_hist_data)):
+#     ax = plt.subplot(1, 9, i + 1)
+
+#     # 定义精确的离散值
+#     discrete_values = np.arange(0, 5, 0.5)
+
+#     # 计算每个离散值的频率
+#     counts = np.zeros(len(discrete_values))
+#     for val in hop_quality_list:
+#         # 找到最接近的离散值索引
+#         idx = np.abs(discrete_values - val).argmin()
+#         counts[idx] += 1
+
+#     # 转换为百分比
+#     percentages = counts / len(hop_quality_list) * 100
+#     # 添加浅色网格
+#     plt.grid(True, linestyle=(0, (5, 10)), linewidth=0.5, alpha=0.6, color="#9DADBC")
+
+#     # 绘制折线图
+#     plt.plot(
+#         discrete_values,
+#         percentages,
+#         marker="o",  # 添加圆点标记，空心
+#         markersize=6,
+#         linestyle="-",
+#         # color=COLOR_BAR[2],
+#         color=COLOR_BAR[3],
+#         linewidth=3,
+#     )
+
+#     plt.title(TESTMODEL_TITLE_LIST[i], fontsize=20, fontweight="medium")
+
+#     if i == 4:
+#         plt.xlabel("Avg. Hop Count", fontsize=18, fontweight="medium")
+#     else:
+#         plt.xlabel("")
+
+#     # 设置x轴刻度为整数值
+#     plt.xticks(np.arange(0, 5, 1), fontsize=16, fontweight="medium")
+
+#     # 设置x轴范围
+#     plt.xlim(-0.2, 4.2)
+
+#     plt.ylim(0, max_percentage * 1.1)
+
+#     if i == 0:
+#         plt.yticks(
+#             np.arange(0, max_percentage * 1.1, 10),
+#             fontsize=16,
+#             fontweight="medium",
+#         )
+#         ax.set_ylabel("Percentage (%)", fontsize=18, fontweight="medium")
+#     else:
+#         plt.yticks(
+#             np.arange(0, max_percentage * 1.1, 10),
+#             fontsize=16,
+#             fontweight="medium",
+#         )
+#         ax.set_yticklabels([])
+#         ax.set_ylabel("")
+
+# plt.tight_layout(
+#     # pad=3.0,  # 子图之间的间距
+#     w_pad=2,  # 子图之间的水平间距
+#     # h_pad=2.0,  # 子图之间的垂直间距
+#     # rect=[0, 0, 1, 1],  # 整体图形的边界范围 [left, bottom, right, top]
+# )
+
+# # 保存图片
+# plt.savefig(
+#     os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_plots",
+#         "hop_count_distribution_3.5_half_line_ria.pdf",
+#         # "v3_hop_count_distribution_ria.pdf",
+#         # "4o_hop_count_distribution_ria.pdf",
 #     ),
 #     # 周围空白去除
 #     bbox_inches="tight",
@@ -646,6 +1269,483 @@ plt.savefig(
 #         "knowledgeable_distribution.png",
 #     ),
 # )
+
+# Reasonable、Precise、Knowledgeable分布
+# # Reasonableness
+# plt.figure(figsize=(17, 3.5))
+# plt.suptitle(
+#     "Reasonableness Distribution (RIA)",
+#     fontsize=24,
+#     ha="center",
+#     va="top",
+#     y=0.93,
+#     fontweight="semibold",
+# )
+# max_percentage = 0
+# all_hist_data = []
+# # 1. 单 Judge 内部的归一化：
+# # 对于每一道题，对于某一维度（例如 reasonableness），先计算该 judge 对这道题所有 hops 得分的平均值。这样，每道题在每个 judge 下都有一个该维度的平均得分，无论 hops 数量如何。
+# # Judge 间的平均：
+# # 对于每一道题，再将两个 judge 得到的平均分进行平均，得到该题在该维度上的统一评分。
+# for TESTMODEL in TESTMODEL_LIST:
+#     SCORE_FILE_PATH_1 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_4o",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_1 = read_json(SCORE_FILE_PATH_1)
+#     reasonable_list_1 = []
+#     for key, value in SCORE_DATA_1.items():
+#         hop_quality = value.get("reason_judge", {}).get("hop_quality", {})
+#         if not isinstance(hop_quality, dict):
+#             hop_quality = {}
+#         # 计算平均分
+#         average_reasonable = 0
+#         for hop_quality_key, hop_quality_value in hop_quality.items():
+#             if isinstance(hop_quality_value, list) and len(hop_quality_value) == 3:
+#                 reasonable = hop_quality_value[0]
+#                 average_reasonable += reasonable
+#         if len(hop_quality) > 0:
+#             average_reasonable /= len(hop_quality)
+#         else:
+#             average_reasonable = 0
+#         reasonable_list_1.append(average_reasonable)
+#     if len(reasonable_list_1) < 500:
+#         reasonable_list_1.extend([0] * (500 - len(reasonable_list_1)))
+#     SCORE_FILE_PATH_2 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_v3",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_2 = read_json(SCORE_FILE_PATH_2)
+#     reasonable_list_2 = []
+#     for key, value in SCORE_DATA_2.items():
+#         hop_quality = value.get("reason_judge", {}).get("hop_quality", {})
+#         if not isinstance(hop_quality, dict):
+#             hop_quality = {}
+#         # 计算平均分
+#         average_reasonable = 0
+#         for hop_quality_key, hop_quality_value in hop_quality.items():
+#             if isinstance(hop_quality_value, list) and len(hop_quality_value) == 3:
+#                 reasonable = hop_quality_value[0]
+#                 average_reasonable += reasonable
+#         if len(hop_quality) > 0:
+#             average_reasonable /= len(hop_quality)
+#         else:
+#             average_reasonable = 0
+#         reasonable_list_2.append(average_reasonable)
+#     if len(reasonable_list_2) < 500:
+#         reasonable_list_2.extend([0] * (500 - len(reasonable_list_2)))
+#     # judge间求平均
+#     reasonable_list = [
+#         (reasonable_list_1[i] + reasonable_list_2[i]) / 2 for i in range(0, 500)
+#     ]
+
+#     data_min = min(reasonable_list)
+#     data_max = max(reasonable_list)
+#     bin_width = 0.2
+#     start_bin = math.floor(data_min / bin_width) * bin_width
+#     end_bin = math.ceil(data_max / bin_width) * bin_width
+#     bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+
+#     hist_data = np.histogram(reasonable_list, bins=bins)
+#     percentages = hist_data[0] / len(reasonable_list) * 100
+#     max_percentage = max(max_percentage, max(percentages))
+#     all_hist_data.append(reasonable_list)
+
+# # 画折线图
+# for i, (TESTMODEL, reasonable_list) in enumerate(zip(TESTMODEL_LIST, all_hist_data)):
+#     ax = plt.subplot(1, 9, i + 1)
+
+#     # 计算当前数据的范围并设置合适的刻度间隔
+#     data_min = min(reasonable_list)
+#     data_max = max(reasonable_list)
+#     bin_width = 0.2
+#     start_bin = math.floor(data_min / bin_width) * bin_width
+#     end_bin = math.ceil(data_max / bin_width) * bin_width
+#     bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+
+#     plt.hist(
+#         reasonable_list,
+#         bins=bins,
+#         weights=np.ones_like(reasonable_list) / len(reasonable_list) * 100,
+#         # edgecolor="white",
+#         # edgecolor="#2F799F",
+#         edgecolor="#384955",
+#         # color=COLOR_BAR[3],
+#         color=COLOR_BAR[2],
+#         linewidth=1,
+#         width=0.2,
+#     )
+
+#     plt.title(TESTMODEL_TITLE_LIST[i], fontsize=20, fontweight="medium")
+
+#     if i == 4:
+#         plt.xlabel(
+#             "Avg. Reasonableness",
+#             fontsize=18,
+#             va="top",
+#             ha="center",
+#             fontweight="medium",
+#         )
+#     else:
+#         plt.xlabel("")
+
+#     # 设置x轴刻度
+#     plt.xticks(
+#         np.arange(0, 1.05, 0.5), fontsize=16, fontweight="medium"  # 从0到5，步长为1
+#     )
+#     plt.xlim(-0.1, 1.1)  # 稍微扩大一点显示范围
+
+#     # 设置y轴
+#     plt.ylim(0, max_percentage * 1.05)
+#     if i == 0:
+#         plt.ylabel("Percentage (%)", fontsize=18, fontweight="medium", va="bottom")
+#         plt.yticks(
+#             np.arange(0, max_percentage * 1.05, 20),
+#             fontsize=16,
+#             fontweight="medium",
+#         )
+#     else:
+#         plt.yticks(np.arange(0, max_percentage * 1.05, 20))
+#         ax.set_yticklabels([])
+#         ax.set_ylabel("")
+
+# plt.tight_layout(
+#     # pad=3.0,  # 子图之间的间距
+#     w_pad=2,  # 子图之间的水平间距
+#     # h_pad=2.0,  # 子图之间的垂直间距
+#     # rect=[0, 0, 1, 1],  # 整体图形的边界范围 [left, bottom, right, top]
+# )
+
+# # 保存图片
+# plt.savefig(
+#     os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_plots",
+#         "reasonableness_distribution.pdf",
+#     ),
+#     # 周围空白去除
+#     bbox_inches="tight",
+# )
+
+# # Precision
+plt.figure(figsize=(17, 3.5))
+plt.suptitle(
+    "Distinctiveness Distribution (RIA)",
+    # "Clarity Distribution (RIA)",
+    # "Precision Distribution (RIA)",
+    fontsize=24,
+    ha="center",
+    va="top",
+    y=0.93,
+    fontweight="semibold",
+)
+max_percentage = 0
+all_hist_data = []
+# 1. 单 Judge 内部的归一化：
+# 对于每一道题，对于某一维度（例如 reasonableness），先计算该 judge 对这道题所有 hops 得分的平均值。这样，每道题在每个 judge 下都有一个该维度的平均得分，无论 hops 数量如何。
+# Judge 间的平均：
+# 对于每一道题，再将两个 judge 得到的平均分进行平均，得到该题在该维度上的统一评分。
+for TESTMODEL in TESTMODEL_LIST:
+    SCORE_FILE_PATH_1 = os.path.join(
+        CURRENT_DIR,
+        "500reasoning_4o",
+        TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+    )
+    SCORE_DATA_1 = read_json(SCORE_FILE_PATH_1)
+    precise_list_1 = []
+    for key, value in SCORE_DATA_1.items():
+        hop_quality = value.get("reason_judge", {}).get("hop_quality", {})
+        if not isinstance(hop_quality, dict):
+            hop_quality = {}
+        # 计算平均分
+        average_precise = 0
+        for hop_quality_key, hop_quality_value in hop_quality.items():
+            if isinstance(hop_quality_value, list) and len(hop_quality_value) == 3:
+                precise = hop_quality_value[1]
+                average_precise += precise
+        if len(hop_quality) > 0:
+            average_precise /= len(hop_quality)
+        else:
+            average_precise = 0
+        precise_list_1.append(average_precise)
+    if len(precise_list_1) < 500:
+        precise_list_1.extend([0] * (500 - len(precise_list_1)))
+    SCORE_FILE_PATH_2 = os.path.join(
+        CURRENT_DIR,
+        "500reasoning_v3",
+        TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+    )
+    SCORE_DATA_2 = read_json(SCORE_FILE_PATH_2)
+    precise_list_2 = []
+    for key, value in SCORE_DATA_2.items():
+        hop_quality = value.get("reason_judge", {}).get("hop_quality", {})
+        if not isinstance(hop_quality, dict):
+            hop_quality = {}
+        # 计算平均分
+        average_precise = 0
+        for hop_quality_key, hop_quality_value in hop_quality.items():
+            if isinstance(hop_quality_value, list) and len(hop_quality_value) == 3:
+                precise = hop_quality_value[1]
+                average_precise += precise
+        if len(hop_quality) > 0:
+            average_precise /= len(hop_quality)
+        else:
+            average_precise = 0
+        precise_list_2.append(average_precise)
+    if len(precise_list_2) < 500:
+        precise_list_2.extend([0] * (500 - len(precise_list_2)))
+    # judge间求平均
+    precise_list = [(precise_list_1[i] + precise_list_2[i]) / 2 for i in range(0, 500)]
+
+    data_min = min(precise_list)
+    data_max = max(precise_list)
+    bin_width = 0.2
+    start_bin = math.floor(data_min / bin_width) * bin_width
+    end_bin = math.ceil(data_max / bin_width) * bin_width
+    bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+
+    hist_data = np.histogram(precise_list, bins=bins)
+    percentages = hist_data[0] / len(precise_list) * 100
+    max_percentage = max(max_percentage, max(percentages))
+    all_hist_data.append(precise_list)
+
+# 画折线图
+for i, (TESTMODEL, precise_list) in enumerate(zip(TESTMODEL_LIST, all_hist_data)):
+    ax = plt.subplot(1, 9, i + 1)
+
+    # 计算当前数据的范围并设置合适的刻度间隔
+    data_min = min(precise_list)
+    data_max = max(precise_list)
+    bin_width = 0.2
+    start_bin = math.floor(data_min / bin_width) * bin_width
+    end_bin = math.ceil(data_max / bin_width) * bin_width
+    bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+
+    plt.hist(
+        precise_list,
+        bins=bins,
+        weights=np.ones_like(precise_list) / len(precise_list) * 100,
+        edgecolor="#354A54",
+        color=COLOR_BAR[1],
+        # edgecolor="white",
+        # color=COLOR_BAR[4],
+        linewidth=1,
+        width=0.2,
+    )
+
+    plt.title(TESTMODEL_TITLE_LIST[i], fontsize=20, fontweight="medium")
+
+    if i == 4:
+        plt.xlabel(
+            # "Avg. Clarity",
+            "Avg. Distinctiveness",
+            # "Avg. Precision",
+            fontsize=18,
+            va="top",
+            ha="center",
+            fontweight="medium",
+        )
+    else:
+        plt.xlabel("")
+
+    # 设置x轴刻度
+    plt.xticks(
+        np.arange(0, 1.05, 0.5), fontsize=16, fontweight="medium"  # 从0到5，步长为1
+    )
+    plt.xlim(-0.1, 1.1)  # 稍微扩大一点显示范围
+
+    # 设置y轴
+    plt.ylim(0, max_percentage * 1.05)
+    if i == 0:
+        plt.ylabel("Percentage (%)", fontsize=18, fontweight="medium", va="bottom")
+        plt.yticks(
+            np.arange(0, max_percentage * 1.05, 20),
+            fontsize=16,
+            fontweight="medium",
+        )
+    else:
+        plt.yticks(np.arange(0, max_percentage * 1.05, 20))
+        ax.set_yticklabels([])
+        ax.set_ylabel("")
+
+plt.tight_layout(
+    # pad=3.0,  # 子图之间的间距
+    w_pad=2,  # 子图之间的水平间距
+    # h_pad=2.0,  # 子图之间的垂直间距
+    # rect=[0, 0, 1, 1],  # 整体图形的边界范围 [left, bottom, right, top]
+)
+
+# 保存图片
+plt.savefig(
+    os.path.join(
+        CURRENT_DIR,
+        "500reasoning_plots",
+        "precision_distribution.pdf",
+    ),
+    # 周围空白去除
+    bbox_inches="tight",
+)
+
+# # Knowledgeability
+# plt.figure(figsize=(17, 3.5))
+# plt.suptitle(
+#     "Knowledgeability Distribution (RIA)",
+#     fontsize=24,
+#     ha="center",
+#     va="top",
+#     y=0.93,
+#     fontweight="semibold",
+# )
+# max_percentage = 0
+# all_hist_data = []
+# # 1. 单 Judge 内部的归一化：
+# # 对于每一道题，对于某一维度（例如 reasonableness），先计算该 judge 对这道题所有 hops 得分的平均值。这样，每道题在每个 judge 下都有一个该维度的平均得分，无论 hops 数量如何。
+# # Judge 间的平均：
+# # 对于每一道题，再将两个 judge 得到的平均分进行平均，得到该题在该维度上的统一评分。
+# for TESTMODEL in TESTMODEL_LIST:
+#     SCORE_FILE_PATH_1 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_4o",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_1 = read_json(SCORE_FILE_PATH_1)
+#     knowledgeable_list_1 = []
+#     for key, value in SCORE_DATA_1.items():
+#         hop_quality = value.get("reason_judge", {}).get("hop_quality", {})
+#         if not isinstance(hop_quality, dict):
+#             hop_quality = {}
+#         # 计算平均分
+#         average_knowledgeable = 0
+#         for hop_quality_key, hop_quality_value in hop_quality.items():
+#             if isinstance(hop_quality_value, list) and len(hop_quality_value) == 3:
+#                 knowledgeable = hop_quality_value[2]
+#                 average_knowledgeable += knowledgeable
+#         if len(hop_quality) > 0:
+#             average_knowledgeable /= len(hop_quality)
+#         else:
+#             average_knowledgeable = 0
+#         knowledgeable_list_1.append(average_knowledgeable)
+#     if len(knowledgeable_list_1) < 500:
+#         knowledgeable_list_1.extend([0] * (500 - len(knowledgeable_list_1)))
+#     SCORE_FILE_PATH_2 = os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_v3",
+#         TESTMODEL + f"_reason_score_{DECAY_FACTOR}_{ALPHA}.json",
+#     )
+#     SCORE_DATA_2 = read_json(SCORE_FILE_PATH_2)
+#     knowledgeable_list_2 = []
+#     for key, value in SCORE_DATA_2.items():
+#         hop_quality = value.get("reason_judge", {}).get("hop_quality", {})
+#         if not isinstance(hop_quality, dict):
+#             hop_quality = {}
+#         # 计算平均分
+#         average_knowledgeable = 0
+#         for hop_quality_key, hop_quality_value in hop_quality.items():
+#             if isinstance(hop_quality_value, list) and len(hop_quality_value) == 3:
+#                 knowledgeable = hop_quality_value[2]
+#                 average_knowledgeable += knowledgeable
+#         if len(hop_quality) > 0:
+#             average_knowledgeable /= len(hop_quality)
+#         else:
+#             average_knowledgeable = 0
+#         knowledgeable_list_2.append(average_knowledgeable)
+#     if len(knowledgeable_list_2) < 500:
+#         knowledgeable_list_2.extend([0] * (500 - len(knowledgeable_list_2)))
+#     # judge间求平均
+#     knowledgeable_list = [
+#         (knowledgeable_list_1[i] + knowledgeable_list_2[i]) / 2 for i in range(0, 500)
+#     ]
+
+#     data_min = min(knowledgeable_list)
+#     data_max = max(knowledgeable_list)
+#     bin_width = 0.5
+#     start_bin = math.floor(data_min / bin_width) * bin_width
+#     end_bin = math.ceil(data_max / bin_width) * bin_width
+#     bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+
+#     hist_data = np.histogram(knowledgeable_list, bins=bins)
+#     percentages = hist_data[0] / len(knowledgeable_list) * 100
+#     max_percentage = max(max_percentage, max(percentages))
+#     all_hist_data.append(knowledgeable_list)
+
+# # 画折线图
+# for i, (TESTMODEL, knowledgeable_list) in enumerate(zip(TESTMODEL_LIST, all_hist_data)):
+#     ax = plt.subplot(1, 9, i + 1)
+
+#     # 计算当前数据的范围并设置合适的刻度间隔
+#     data_min = min(knowledgeable_list)
+#     data_max = max(knowledgeable_list)
+#     bin_width = 0.5
+#     start_bin = math.floor(data_min / bin_width) * bin_width
+#     end_bin = math.ceil(data_max / bin_width) * bin_width
+#     bins = np.arange(start_bin, end_bin + bin_width, bin_width)
+
+#     plt.hist(
+#         knowledgeable_list,
+#         bins=bins,
+#         weights=np.ones_like(knowledgeable_list) / len(knowledgeable_list) * 100,
+#         edgecolor="#394955",
+#         color=COLOR_BAR[0],
+#         # edgecolor="white",
+#         # color=COLOR_BAR[5],
+#         linewidth=2,
+#         width=0.5,
+#     )
+
+#     plt.title(TESTMODEL_TITLE_LIST[i], fontsize=20, fontweight="medium")
+
+#     if i == 4:
+#         plt.xlabel(
+#             "Avg. Knowledgeability",
+#             fontsize=18,
+#             va="top",
+#             ha="center",
+#             fontweight="medium",
+#         )
+#     else:
+#         plt.xlabel("")
+
+#     # 设置x轴刻度
+#     plt.xticks(
+#         np.arange(0, 1.05, 0.5), fontsize=16, fontweight="medium"  # 从0到5，步长为1
+#     )
+#     plt.xlim(-0.1, 1.1)  # 稍微扩大一点显示范围
+
+#     # 设置y轴
+#     plt.ylim(0, max_percentage * 1.05)
+#     if i == 0:
+#         plt.ylabel("Percentage (%)", fontsize=18, fontweight="medium", va="bottom")
+#         plt.yticks(
+#             np.arange(0, max_percentage * 1.05, 20),
+#             fontsize=16,
+#             fontweight="medium",
+#         )
+#     else:
+#         plt.yticks(np.arange(0, max_percentage * 1.05, 20))
+#         ax.set_yticklabels([])
+#         ax.set_ylabel("")
+
+# plt.tight_layout(
+#     # pad=3.0,  # 子图之间的间距
+#     w_pad=2,  # 子图之间的水平间距
+#     # h_pad=2.0,  # 子图之间的垂直间距
+#     # rect=[0, 0, 1, 1],  # 整体图形的边界范围 [left, bottom, right, top]
+# )
+
+# # 保存图片
+# plt.savefig(
+#     os.path.join(
+#         CURRENT_DIR,
+#         "500reasoning_plots",
+#         "knowledgeable_distribution.pdf",
+#     ),
+#     # 周围空白去除
+#     bbox_inches="tight",
+# )
+
+# 画出取值分布
 
 
 # 维度7：score_reason和score_4o的相关性分析（相关系数）
