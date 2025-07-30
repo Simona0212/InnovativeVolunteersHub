@@ -1,0 +1,914 @@
+2025-07-28 15:41:21 - Initializing model...
+2025-07-28 15:41:38 - Model initialized successfully.
+Folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [animal]\n- Second image: [food]\n- Relation: [chocolate]\n- Explanation: In the images, there is a chocolate bar broken into pieces and a small brown rabbit. The chocolate bar is a food item, while the rabbit is an animal. The connection between the two images is that chocolate is a popular treat often associated with rabbits in popular culture, particularly around Easter."
+}
+
+2025-07-28 15:41:55 - Successfully processed folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English), testid: 1
+2025-07-28 15:41:55 - Error in generate_response: CUDA out of memory. Tried to allocate 88.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 74.44 MiB is free. Process 97433 has 6.70 GiB memory in use. Process 101390 has 5.12 GiB memory in use. Including non-PyTorch memory, this process has 11.65 GiB memory in use. Of the allocated memory 11.21 GiB is allocated by PyTorch, and 135.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-07-28 15:41:55 - Traceback (most recent call last):
+  File "/home/jusheng/mmopera/Multi_Images/hzm/2.py", line 126, in generate_response
+    generated_ids = model.generate(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 2465, in generate
+    result = self._sample(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 3431, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2602, in forward
+    outputs = self.language_model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2180, in forward
+    outputs = self.model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2049, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1781, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1412, in forward
+    attn_weights = nn.functional.softmax(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/functional.py", line 2139, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 88.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 74.44 MiB is free. Process 97433 has 6.70 GiB memory in use. Process 101390 has 5.12 GiB memory in use. Including non-PyTorch memory, this process has 11.65 GiB memory in use. Of the allocated memory 11.21 GiB is allocated by PyTorch, and 135.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English)
+TestID: 2
+{
+    "response": "Error"
+}
+
+2025-07-28 15:41:55 - Successfully processed folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English), testid: 2
+2025-07-28 15:41:56 - Error in generate_response: CUDA out of memory. Tried to allocate 88.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 74.44 MiB is free. Process 97433 has 6.70 GiB memory in use. Process 101390 has 5.12 GiB memory in use. Including non-PyTorch memory, this process has 11.65 GiB memory in use. Of the allocated memory 11.21 GiB is allocated by PyTorch, and 135.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-07-28 15:41:56 - Traceback (most recent call last):
+  File "/home/jusheng/mmopera/Multi_Images/hzm/2.py", line 126, in generate_response
+    generated_ids = model.generate(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 2465, in generate
+    result = self._sample(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 3431, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2602, in forward
+    outputs = self.language_model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2180, in forward
+    outputs = self.model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2049, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1781, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1412, in forward
+    attn_weights = nn.functional.softmax(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/functional.py", line 2139, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 88.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 74.44 MiB is free. Process 97433 has 6.70 GiB memory in use. Process 101390 has 5.12 GiB memory in use. Including non-PyTorch memory, this process has 11.65 GiB memory in use. Of the allocated memory 11.21 GiB is allocated by PyTorch, and 135.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English)
+TestID: 3
+{
+    "response": "Error"
+}
+
+2025-07-28 15:41:56 - Successfully processed folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English), testid: 3
+Folder: Elvis Presley(invisible, music, mutual elements, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [royal blue suede men's dress shoes]\n- Second image: [microphone with crown]\n- Relation: [royal]\n- Explanation: Both images have a theme of royalty, with the first image showcasing royal blue suede men's dress shoes and the second image featuring a microphone with a crown on top."
+}
+
+2025-07-28 15:42:09 - Successfully processed folder: Elvis Presley(invisible, music, mutual elements, USAEnglish, English), testid: 1
+2025-07-28 15:42:10 - Error in generate_response: CUDA out of memory. Tried to allocate 90.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 26.38 MiB is free. Process 97433 has 6.70 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.49 GiB memory in use. Of the allocated memory 11.10 GiB is allocated by PyTorch, and 87.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-07-28 15:42:10 - Traceback (most recent call last):
+  File "/home/jusheng/mmopera/Multi_Images/hzm/2.py", line 126, in generate_response
+    generated_ids = model.generate(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 2465, in generate
+    result = self._sample(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 3431, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2602, in forward
+    outputs = self.language_model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2180, in forward
+    outputs = self.model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2049, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1781, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1412, in forward
+    attn_weights = nn.functional.softmax(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/functional.py", line 2139, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 90.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 26.38 MiB is free. Process 97433 has 6.70 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.49 GiB memory in use. Of the allocated memory 11.10 GiB is allocated by PyTorch, and 87.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Folder: Elvis Presley(invisible, music, mutual elements, USAEnglish, English)
+TestID: 2
+{
+    "response": "Error"
+}
+
+2025-07-28 15:42:10 - Successfully processed folder: Elvis Presley(invisible, music, mutual elements, USAEnglish, English), testid: 2
+Folder: Forrest Gump's box of chocolates(visible, movie, relation, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [assortment of chocolates]\n- Second image: [forrest gump]\n- Relation: tom hanks\n- Explanation: both images feature the actor tom hanks."
+}
+
+2025-07-28 15:42:19 - Successfully processed folder: Forrest Gump's box of chocolates(visible, movie, relation, USAEnglish, English), testid: 1
+Folder: Forrest Gump's box of chocolates(visible, movie, relation, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [contrasting]\n- Explanation: [1-5 sentences]"
+}
+
+2025-07-28 15:42:28 - Successfully processed folder: Forrest Gump's box of chocolates(visible, movie, relation, USAEnglish, English), testid: 2
+Folder: Forrest Gump's box of chocolates(visible, movie, relation, USAEnglish, English)
+TestID: 3
+{
+    "response": "- First image: [image of assorted chocolates]\n- Second image: [image of Forrest Gump sitting on a bench]\n- Relation: movie\n- Explanation: Both images are related to the movie Forrest Gump, where Forrest Gump sits on a bench and shares stories with strangers."
+}
+
+2025-07-28 15:42:42 - Successfully processed folder: Forrest Gump's box of chocolates(visible, movie, relation, USAEnglish, English), testid: 3
+Folder: sun(visible, STEM, mutual elements, NA, English)
+TestID: 1
+{
+    "response": "- First image: [image of solar panels]\n- Second image: [image of sunflowers]\n- Relation: renewable energy\n- Explanation: While the first image showcases solar panels, a form of renewable energy, the second image features sunflowers, which are not directly related to renewable energy but can be associated with sustainable practices in agriculture. However, the connection between the two images lies in their representation of sustainable practices, as both solar panels and sunflowers contribute to environmentally friendly solutions."
+}
+
+2025-07-28 15:43:03 - Successfully processed folder: sun(visible, STEM, mutual elements, NA, English), testid: 1
+Folder: sun(visible, STEM, mutual elements, NA, English)
+TestID: 2
+{
+    "response": "- First image: [solar energy]\n- Second image: [nature]\n- Relation: [sustainable]\n- Explanation: Both images represent sustainable energy sources, with the first image showcasing solar panels, a form of renewable energy, and the second image depicting nature, which is inherently sustainable and renewable. The theme connecting these images is the focus on sustainable practices and energy sources that have minimal environmental impact."
+}
+
+2025-07-28 15:43:20 - Successfully processed folder: sun(visible, STEM, mutual elements, NA, English), testid: 2
+Folder: sun(visible, STEM, mutual elements, NA, English)
+TestID: 3
+{
+    "response": "- First image: [solar energy panels on roof]\n- Second image: [sunflowers]\n- Relation: sunlight\n- Explanation: The two images have the theme of sunlight. In the first image the sun lights up the solar panels, in the second image the sun sets over a field of sunflowers."
+}
+
+2025-07-28 15:43:35 - Successfully processed folder: sun(visible, STEM, mutual elements, NA, English), testid: 3
+Folder: Halloween(invisible, culture, mutual elements, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [fresh food]\n- Second image: [family]\n- Relation: [people]\n- Explanation: Both images include people. The first image shows a mother, father, and daughter, while the second image shows a woman with four children."
+}
+
+2025-07-28 15:43:47 - Successfully processed folder: Halloween(invisible, culture, mutual elements, USAEnglish, English), testid: 1
+Folder: Halloween(invisible, culture, mutual elements, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [halloween]\n- Explanation: [Both images have elements of halloween in them. The first image has pumpkins, which are often used in halloween decorations. The second image has children dressed in costumes, which is common during halloween.]"
+}
+
+2025-07-28 15:44:00 - Successfully processed folder: Halloween(invisible, culture, mutual elements, USAEnglish, English), testid: 2
+Folder: Leonardo da Vinci(invisible, people, mutual elements, Non-English European, English)
+TestID: 1
+{
+    "response": "- First image: [anatomical illustration]\n- Second image: [portrait of a woman]\n- Relation: [mona lisa]\n- Explanation: [both images are of women, one being a famous painting the other a portrait of a woman, both women have a mysterious look to them]"
+}
+
+2025-07-28 15:44:12 - Successfully processed folder: Leonardo da Vinci(invisible, people, mutual elements, Non-English European, English), testid: 1
+Folder: Leonardo da Vinci(invisible, people, mutual elements, Non-English European, English)
+TestID: 2
+{
+    "response": "- First image: [anatomical illustration of the human torso]\n- Second image: [mona lisa]\n- Relation: art\n- Explanation: both images are considered works of art, one being a detailed anatomical illustration and the other a famous painting."
+}
+
+2025-07-28 15:44:23 - Successfully processed folder: Leonardo da Vinci(invisible, people, mutual elements, Non-English European, English), testid: 2
+Folder: 西游记(visible, art, mutual elements, East Asia, Chinese)
+TestID: 1
+{
+    "response": "- First image: [monkey]\n- Second image: [monk]\n- Relation: [youth]\n- Explanation: In both images, there is a juxtaposition of youth and age. The first image features a young monkey, while the second image features a monk, who is typically viewed as wise and aged. The monkey's open mouth and the monk's meditative pose could symbolize the different stages of life and the transition from youth to wisdom."
+}
+
+2025-07-28 15:44:42 - Successfully processed folder: 西游记(visible, art, mutual elements, East Asia, Chinese), testid: 1
+2025-07-28 15:44:42 - Error in generate_response: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 66.38 MiB is free. Process 97433 has 6.71 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.45 GiB memory in use. Of the allocated memory 11.11 GiB is allocated by PyTorch, and 29.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-07-28 15:44:42 - Traceback (most recent call last):
+  File "/home/jusheng/mmopera/Multi_Images/hzm/2.py", line 126, in generate_response
+    generated_ids = model.generate(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 2465, in generate
+    result = self._sample(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 3431, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2602, in forward
+    outputs = self.language_model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2180, in forward
+    outputs = self.model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2049, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1781, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1412, in forward
+    attn_weights = nn.functional.softmax(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/functional.py", line 2139, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 66.38 MiB is free. Process 97433 has 6.71 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.45 GiB memory in use. Of the allocated memory 11.11 GiB is allocated by PyTorch, and 29.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Folder: 西游记(visible, art, mutual elements, East Asia, Chinese)
+TestID: 2
+{
+    "response": "Error"
+}
+
+2025-07-28 15:44:42 - Successfully processed folder: 西游记(visible, art, mutual elements, East Asia, Chinese), testid: 2
+Folder: To Kill a Mockingbird(visible, art, relation, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [portrait of an elderly woman]\n- Second image: [wildlife - small bird]\n- Relation: [animal]\n- Explanation: The two images depict two entirely different subjects: the first image features a human subject while the second one captures a wildlife subject. There are no apparent connections or themes between these images, as they belong to different categories and lack any evident shared elements."
+}
+
+2025-07-28 15:44:59 - Successfully processed folder: To Kill a Mockingbird(visible, art, relation, USAEnglish, English), testid: 1
+Folder: To Kill a Mockingbird(visible, art, relation, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [a portrait of Harper Lee]\n- Second image: [a mockingbird]\n- Relation: [harper lee]\n- Explanation: \n    - Harper Lee is the author of the classic novel \"To Kill a Mockingbird\"\n    - The mockingbird is a key symbol in the novel\n    - The novel explores themes of racial injustice and moral growth\n    - The title itself references the act of killing a mockingbird, which is considered a sin\n    - Harper Lee's work had a profound impact on American literature and culture"
+}
+
+2025-07-28 15:45:20 - Successfully processed folder: To Kill a Mockingbird(visible, art, relation, USAEnglish, English), testid: 2
+Folder: To Kill a Mockingbird(visible, art, relation, USAEnglish, English)
+TestID: 3
+{
+    "response": "- First image: [senior woman]\n- Second image: [magic card]\n- Relation: bird\n- Explanation: Both images contain a bird, although they are not directly related."
+}
+
+2025-07-28 15:45:28 - Successfully processed folder: To Kill a Mockingbird(visible, art, relation, USAEnglish, English), testid: 3
+Folder: The Beatles(invisible, music, mutual elements, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [nature]\n- Second image: [city]\n- Relation: [similarity]\n- Explanation: Both images depict a scene from nature, one focused on a small insect and the other on a busy city street."
+}
+
+2025-07-28 15:45:38 - Successfully processed folder: The Beatles(invisible, music, mutual elements, USAEnglish, English), testid: 1
+2025-07-28 15:45:39 - Error in generate_response: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 66.38 MiB is free. Process 97433 has 6.71 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.45 GiB memory in use. Of the allocated memory 11.11 GiB is allocated by PyTorch, and 29.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-07-28 15:45:39 - Traceback (most recent call last):
+  File "/home/jusheng/mmopera/Multi_Images/hzm/2.py", line 126, in generate_response
+    generated_ids = model.generate(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 2465, in generate
+    result = self._sample(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 3431, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2602, in forward
+    outputs = self.language_model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2180, in forward
+    outputs = self.model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2049, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1781, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1412, in forward
+    attn_weights = nn.functional.softmax(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/functional.py", line 2139, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 66.38 MiB is free. Process 97433 has 6.71 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.45 GiB memory in use. Of the allocated memory 11.11 GiB is allocated by PyTorch, and 29.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Folder: The Beatles(invisible, music, mutual elements, USAEnglish, English)
+TestID: 2
+{
+    "response": "Error"
+}
+
+2025-07-28 15:45:39 - Successfully processed folder: The Beatles(invisible, music, mutual elements, USAEnglish, English), testid: 2
+Folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese)
+TestID: 1
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [art and literature]\n- Explanation: [One image showcases a stack of books, symbolizing literature, education, and intellectual pursuits. The other image features a finely carved jade sculpture, representing the art and craftsmanship involved in creating intricate and beautiful objects. Both images highlight the cultural and artistic significance of their respective mediums, with books being a primary source of knowledge and jade sculptures being a form of artistic expression and heritage.]"
+}
+
+2025-07-28 15:45:58 - Successfully processed folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese), testid: 1
+2025-07-28 15:45:58 - Error in generate_response: CUDA out of memory. Tried to allocate 100.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 76.38 MiB is free. Process 97433 has 6.71 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.44 GiB memory in use. Of the allocated memory 11.10 GiB is allocated by PyTorch, and 34.01 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-07-28 15:45:58 - Traceback (most recent call last):
+  File "/home/jusheng/mmopera/Multi_Images/hzm/2.py", line 126, in generate_response
+    generated_ids = model.generate(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 2465, in generate
+    result = self._sample(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 3431, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2602, in forward
+    outputs = self.language_model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2180, in forward
+    outputs = self.model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2049, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1781, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1412, in forward
+    attn_weights = nn.functional.softmax(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/functional.py", line 2139, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 100.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 76.38 MiB is free. Process 97433 has 6.71 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.44 GiB memory in use. Of the allocated memory 11.10 GiB is allocated by PyTorch, and 34.01 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese)
+TestID: 2
+{
+    "response": "Error"
+}
+
+2025-07-28 15:45:58 - Successfully processed folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese), testid: 2
+2025-07-28 15:45:59 - Error in generate_response: CUDA out of memory. Tried to allocate 100.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 32.38 MiB is free. Process 97433 has 6.71 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.48 GiB memory in use. Of the allocated memory 11.10 GiB is allocated by PyTorch, and 77.85 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-07-28 15:45:59 - Traceback (most recent call last):
+  File "/home/jusheng/mmopera/Multi_Images/hzm/2.py", line 126, in generate_response
+    generated_ids = model.generate(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 2465, in generate
+    result = self._sample(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/transformers/generation/utils.py", line 3431, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2602, in forward
+    outputs = self.language_model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2180, in forward
+    outputs = self.model(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 2049, in forward
+    layer_outputs = decoder_layer(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1781, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jusheng/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/jusheng/.cache/huggingface/modules/transformers_modules/moonshotai/Kimi-VL-A3B-Instruct/cc6452511d00c99f3b3bed213e96ab7802c415c8/modeling_kimi_vl.py", line 1412, in forward
+    attn_weights = nn.functional.softmax(
+  File "/home/jusheng/anaconda3/envs/mmopera_new/lib/python3.10/site-packages/torch/nn/functional.py", line 2139, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 100.00 MiB. GPU 1 has a total capacity of 23.56 GiB of which 32.38 MiB is free. Process 97433 has 6.71 GiB memory in use. Process 101390 has 5.32 GiB memory in use. Including non-PyTorch memory, this process has 11.48 GiB memory in use. Of the allocated memory 11.10 GiB is allocated by PyTorch, and 77.85 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese)
+TestID: 3
+{
+    "response": "Error"
+}
+
+2025-07-28 15:45:59 - Successfully processed folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese), testid: 3
+Folder: St. Patrick's Day(invisible, culture, mutual elements, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [natural foliage]\n- Second image: [stereotypical Irish man]\n- Relation: [st patrick's day]\n- Explanation: The image of the clover is often associated with St. Patrick's Day, and the man is dressed in a manner that would be commonly associated with an Irish stereotype, thus the relation is that the image of the clover could be used to represent St. Patrick's Day, which includes Irish stereotypes such as the man depicted in the second image."
+}
+
+2025-07-28 15:46:18 - Successfully processed folder: St. Patrick's Day(invisible, culture, mutual elements, USAEnglish, English), testid: 1
+Folder: St. Patrick's Day(invisible, culture, mutual elements, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [stylized close-up of clover with dew]\n- Second image: [man in a costume with a green hat]\n- Relation: [leprechaun]\n- Explanation: While one image is a close-up of clover plants with dew drops, the other image is a man dressed as a leprechaun.  Both images feature green colors and suggest a theme of luck or fortune, although the clover is a natural object and the leprechaun is a mythical creature."
+}
+
+2025-07-28 15:46:37 - Successfully processed folder: St. Patrick's Day(invisible, culture, mutual elements, USAEnglish, English), testid: 2
+Folder: St. Patrick's Day(invisible, culture, mutual elements, USAEnglish, English)
+TestID: 3
+{
+    "response": "- First image: [natural and serene]\n- Second image: [eerie and unsettling]\n- Relation: [contrast]\n- Explanation: The first image depicts a serene and natural scene of clover leaves with water droplets, evoking a sense of calm and tranquility. In contrast, the second image shows a figure with a distorted and eerie appearance, creating a jarring and unsettling atmosphere. The stark difference between the two images highlights a theme of contrasting emotions and settings."
+}
+
+2025-07-28 15:46:58 - Successfully processed folder: St. Patrick's Day(invisible, culture, mutual elements, USAEnglish, English), testid: 3
+2025-07-28 15:48:03 - Initializing model...
+2025-07-28 15:48:25 - Model initialized successfully.
+Folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [image of cute rabbits]\n- Second image: [image of chocolate]\n- Relation: easter\n- Explanation: Both images are associated with the celebration of Easter, which is a springtime holiday. The first image features adorable rabbits, which are a common symbol of Easter, while the second image shows chocolate, which is often associated with Easter traditions such as chocolate bunnies and egg hunts."
+}
+
+2025-07-28 15:48:37 - Successfully processed folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English), testid: 2
+Folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English)
+TestID: 3
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [same]\n- Explanation: [1-5 sentences] both have a brown in color"
+}
+
+2025-07-28 15:48:43 - Successfully processed folder: Easter or chocolate bunny(invisible, culture, relation, USAEnglish, English), testid: 3
+Folder: Elvis Presley(invisible, music, mutual elements, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [concept of performance]\n- Relation: [opposing]\n- Explanation: \nThe first image showcases a pair of men's shoes, carefully arranged to highlight their design and color, suggesting a focus on fashion and personal style. In contrast, the second image depicts a vintage microphone adorned with a crown, set against a backdrop of a blurred audience under vibrant stage lights, evoking a sense of performance and entertainment. The juxtaposition of these two images highlights the contrast between individual fashion and collective performance, with one emphasizing personal expression and the other capturing the energy of a public event."
+}
+
+2025-07-28 15:48:59 - Successfully processed folder: Elvis Presley(invisible, music, mutual elements, USAEnglish, English), testid: 2
+2025-07-28 15:48:59 - All tasks already completed for folder Forrest Gump's box of chocolates(visible, movie, relation, USAEnglish, English)
+2025-07-28 15:48:59 - All tasks already completed for folder sun(visible, STEM, mutual elements, NA, English)
+2025-07-28 15:48:59 - All tasks already completed for folder Halloween(invisible, culture, mutual elements, USAEnglish, English)
+2025-07-28 15:48:59 - All tasks already completed for folder Leonardo da Vinci(invisible, people, mutual elements, Non-English European, English)
+Folder: 西游记(visible, art, mutual elements, East Asia, Chinese)
+TestID: 2
+{
+    "response": "- First image: [mythical warrior]\n- Second image: [monk]\n- Relation: meditation\n- Explanation: \nThe first image shows an adventurer with a sword overlooking the clouds. The second image shows a monk meditating. Both images have a common theme of being in a meditative state, although they represent different contexts: an adventurer looking over a landscape and a monk in a peaceful setting."
+}
+
+2025-07-28 15:49:10 - Successfully processed folder: 西游记(visible, art, mutual elements, East Asia, Chinese), testid: 2
+2025-07-28 15:49:10 - All tasks already completed for folder To Kill a Mockingbird(visible, art, relation, USAEnglish, English)
+Folder: The Beatles(invisible, music, mutual elements, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [city, nature]\n- Explanation: [These images showcase the contrast between urban and natural environments. The first image highlights the diversity of nature and the beauty of insects and plants, while the second image captures the hustle and bustle of city life. However, the presence of people and the urban landscape in the second image suggests an interaction between humans and the natural world.]"
+}
+
+2025-07-28 15:49:22 - Successfully processed folder: The Beatles(invisible, music, mutual elements, USAEnglish, English), testid: 2
+Folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese)
+TestID: 2
+{
+    "response": "- First image: [books]\n- Second image: [statue]\n- Relation: literature and art\n- Explanation: Both images represent different forms of art and knowledge. The first image depicts a stack of books, symbolizing knowledge, learning, and the written word. The second image showcases a statue, representing the art of sculpture and possibly mythology or history. The connection between the two images is the theme of art and its role in preserving and conveying cultural and intellectual heritage."
+}
+
+2025-07-28 15:49:34 - Successfully processed folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese), testid: 2
+Folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese)
+TestID: 3
+{
+    "response": "- First image: [stack of books]\n- Second image: [statue]\n- Relation: art\n- Explanation: Both the stack of books and the statue are forms of artistry, with the former being a collection of written works and the latter being a sculpted representation of a person."
+}
+
+2025-07-28 15:49:42 - Successfully processed folder: 书中自有颜如玉(invisible, art, metaphor, East Asia, Chinese), testid: 3
+2025-07-28 15:49:42 - All tasks already completed for folder St. Patrick's Day(invisible, culture, mutual elements, USAEnglish, English)
+Folder: Guns N' Roses(invisible, music, mutual elements, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: contrast\n- Explanation: One is a dangerous weapon, the other is a delicate flower."
+}
+
+2025-07-28 15:49:47 - Successfully processed folder: Guns N' Roses(invisible, music, mutual elements, USAEnglish, English), testid: 1
+Folder: Chicago(invisible, city, mutual elements, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [aerial view of a cityscape with tall buildings]\n- Second image: [a large, bean-shaped sculpture in a public space]\n- Relation: [both are in chicago]\n- Explanation: The first image depicts an aerial view of a bustling cityscape, showcasing a dense collection of tall buildings that create a modern and urban atmosphere. The second image features a large, bean-shaped sculpture situated in a public space, surrounded by people and set against a backdrop of tall buildings, adding a unique and artistic element to the city. Both images highlight iconic aspects of Chicago, with the first emphasizing its architectural prowess and the second showcasing its artistic and cultural contributions."
+}
+
+2025-07-28 15:50:03 - Successfully processed folder: Chicago(invisible, city, mutual elements, USAEnglish, English), testid: 1
+Folder: Chicago(invisible, city, mutual elements, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [aerial view of a cityscape]\n- Second image: [a large, reflective sculpture]\n- Relation: [urban environment]\n- Explanation: The two images depict different aspects of an urban environment. The first image showcases a city's skyline with various high-rise buildings, while the second image features a unique, reflective sculpture set within the city. Both images highlight the architectural and artistic elements that contribute to the city's character."
+}
+
+2025-07-28 15:50:13 - Successfully processed folder: Chicago(invisible, city, mutual elements, USAEnglish, English), testid: 2
+Folder: 1729(invisible, number, relation, NA, English)
+TestID: 1
+{
+    "response": "- First image: [black and white portrait photograph]\n- Second image: [two-dimensional geometric shapes]\n- Relation: [photograph and cartoon]\n- Explanation: The first image is a black and white portrait of a person, while the second image shows two two-dimensional geometric shapes. Both images are forms of visual art, with the first being a photographic representation and the second being a graphical illustration."
+}
+
+2025-07-28 15:50:23 - Successfully processed folder: 1729(invisible, number, relation, NA, English), testid: 1
+Folder: 1729(invisible, number, relation, NA, English)
+TestID: 2
+{
+    "response": "- First image: [black and white portrait of a man]\n- Second image: [watercolor illustration of ice cubes]\n- Relation: [cold]\n- Explanation: The first image captures a man who appears to be in a reflective or serious mood, perhaps associated with the coolness of the scene in the second image. The grayscale tones of the portrait could suggest a timeless quality, while the ice cubes in the second image evoke a sense of freshness or chilliness, possibly linking to the man's contemplative state or the overall mood of the image."
+}
+
+2025-07-28 15:50:36 - Successfully processed folder: 1729(invisible, number, relation, NA, English), testid: 2
+Folder: 23(invisible, number, mutual elements, NA, English)
+TestID: 1
+{
+    "response": "- First image: [portrait of Michael Jordan]\n- Second image: [stylized image of a person]\n- Relation: [black and white]\n- Explanation: Both images are in black and white, giving them a timeless quality."
+}
+
+2025-07-28 15:50:42 - Successfully processed folder: 23(invisible, number, mutual elements, NA, English), testid: 1
+Folder: 23(invisible, number, mutual elements, NA, English)
+TestID: 2
+{
+    "response": "- First image: [sport]\n- Second image: [art]\n- Relation: [basketball]\n- Explanation: The first image is a depiction of a basketball game while the second image is a pictorial representation."
+}
+
+2025-07-28 15:50:48 - Successfully processed folder: 23(invisible, number, mutual elements, NA, English), testid: 2
+Folder: 0(invisible, number, mutual elements, NA, English)
+TestID: 1
+{
+    "response": "- First image: [mathematical symbol]\n- Second image: [thermometer diagram]\n- Relation: [temperature scales]\n- Explanation: The first image depicts a mathematical symbol representing the concept of subtraction, which is a fundamental operation in mathematics. The second image shows a thermometer diagram comparing the Kelvin and Fahrenheit temperature scales, which are both methods of measuring temperature. The common theme between the two images is temperature, as both the mathematical symbol and the thermometer diagram are related to the concept of temperature measurement. The subtraction symbol could be used in calculations involving temperature differences, while the thermometer diagram provides a visual representation of the specific temperature values in both scales."
+}
+
+2025-07-28 15:51:04 - Successfully processed folder: 0(invisible, number, mutual elements, NA, English), testid: 1
+Folder: 0(invisible, number, mutual elements, NA, English)
+TestID: 2
+{
+    "response": "- First image: [textbook page]\n- Second image: [diagram of temperature scales]\n- Relation: science\n- Explanation: The first image shows a textbook page with handwritten notes and corrections, suggesting a study or learning context related to science. The second image is a diagram explaining temperature scales, which is also related to science, specifically the study of thermodynamics. Both images are connected by the theme of scientific education and the study of physical phenomena."
+}
+
+2025-07-28 15:51:16 - Successfully processed folder: 0(invisible, number, mutual elements, NA, English), testid: 2
+Folder: 101010(invisible, number, relation, NA, English)
+TestID: 1
+{
+    "response": "- First image: [binary code]\n- Second image: [text with repeated character]\n- Relation: [same]\n- Explanation: Both images feature repeating patterns. The first image shows a binary pattern, which is a sequence of 0s and 1s, often used in computing and digital systems. The second image displays a text pattern with the letter 'A' repeated multiple times. The concept of repetition is a common theme in both images, where elements are repeated in a structured and consistent manner."
+}
+
+2025-07-28 15:51:29 - Successfully processed folder: 101010(invisible, number, relation, NA, English), testid: 1
+Folder: 101010(invisible, number, relation, NA, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [one keyword, phrase or sentence]\n- Explanation: [1-5 sentences]"
+}
+
+2025-07-28 15:51:34 - Successfully processed folder: 101010(invisible, number, relation, NA, English), testid: 2
+Folder: Confucius has 72 disciples(invisible, history, relation, East Asia, English)
+TestID: 1
+{
+    "response": "- First image: [a book cover with the title \"论语\"]\n- Second image: [a black circle with the number 72]\n- Relation: [cover]\n- Explanation: [The first image shows a book cover with the title \"论语\", which is the Chinese title for the book \"The Analects\" in English. The second image shows a black circle with the number 72. The connection between the two images is that the book cover is likely the cover of \"The Analects\", which is a collection of sayings and ideas attributed to the Chinese philosopher Confucius and his contemporaries, traditionally thought to have been written by Confucius's disciples, and the number 72 could be a reference to a specific chapter or section within the book.]"
+}
+
+2025-07-28 15:51:53 - Successfully processed folder: Confucius has 72 disciples(invisible, history, relation, East Asia, English), testid: 1
+Folder: Confucius has 72 disciples(invisible, history, relation, East Asia, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: clock\n- Explanation: \n   - Both images feature a clock as their central subject.\n   - The clock in the first image is a traditional Chinese clock with a blue cover and a small illustration of a table.\n   - In the second image, the clock is a modern digital clock with red LED numbers showing the time.\n   - The shared element between the two images is the presence of a clock, connecting the concepts of time and reading."
+}
+
+2025-07-28 15:52:07 - Successfully processed folder: Confucius has 72 disciples(invisible, history, relation, East Asia, English), testid: 2
+Folder: Confucius has 72 disciples(invisible, history, relation, East Asia, English)
+TestID: 3
+{
+    "response": "- First image: [book about chinese tradition]\n- Second image: [colorful mosaic]\n- Relation: book\n- Explanation: The first image is a book about Chinese tradition and the second image is a colorful mosaic. They are both about Chinese art and culture."
+}
+
+2025-07-28 15:52:14 - Successfully processed folder: Confucius has 72 disciples(invisible, history, relation, East Asia, English), testid: 3
+Folder: Silk Road(invisible, history, mutual elements, East Asia, English)
+TestID: 1
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [diversity]\n- Explanation: [The first image depicts a desert scene with people riding camels across a mountainous landscape, while the second image showcases a collection of rolled-up ties in various colors and patterns. Despite their differences in context and subject matter, both images emphasize the concept of diversity, as they highlight the variety and uniqueness found in their respective scenes.]"
+}
+
+2025-07-28 15:52:25 - Successfully processed folder: Silk Road(invisible, history, mutual elements, East Asia, English), testid: 1
+Folder: Silk Road(invisible, history, mutual elements, East Asia, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [one keyword, phrase or sentence]\n- Explanation: [1-5 sentences]"
+}
+
+2025-07-28 15:52:30 - Successfully processed folder: Silk Road(invisible, history, mutual elements, East Asia, English), testid: 2
+Folder: The Cold War(invisible, history, metaphor, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [historical landmark]\n- Second image: [winter scene]\n- Relation: [cold]\n- Explanation: The images share the theme of coldness, with the first image depicting graffiti on a wall that has been exposed to the elements, and the second image showing a person in winter attire standing in a snowy environment. Both images evoke a sense of chilliness, but they represent different contexts: one is historical and urban, while the other is personal and natural."
+}
+
+2025-07-28 15:52:42 - Successfully processed folder: The Cold War(invisible, history, metaphor, USAEnglish, English), testid: 1
+Folder: The Cold War(invisible, history, metaphor, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: winter\n- Explanation: Both images have a winter theme, as indicated by the snow on the person's clothing and the snow-covered cars in the second image, and the overall cold atmosphere in the first image."
+}
+
+2025-07-28 15:52:49 - Successfully processed folder: The Cold War(invisible, history, metaphor, USAEnglish, English), testid: 2
+Folder: D-Day(invisible, history, mutual elements, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [WWII]\n- Second image: [Letter camouflage]\n- Relation: [military]\n- Explanation: The first image depicts World War II soldiers coming ashore under fire, which is a clear military operation. The second image shows the letter 'D' designed with a camouflage pattern, which is often associated with military insignia and equipment. The connection between the two images is their military theme, as both the historical scene of soldiers and the stylized letter with a camouflage pattern suggest a connection to military or wartime contexts."
+}
+
+2025-07-28 15:53:03 - Successfully processed folder: D-Day(invisible, history, mutual elements, USAEnglish, English), testid: 1
+Folder: D-Day(invisible, history, mutual elements, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation:  camouflage\n- Explanation: Both images feature camouflage patterns. The first image shows soldiers on a beach with a camouflage pattern on their uniforms, while the second image is a letter 'D' with a camouflage pattern on it."
+}
+
+2025-07-28 15:53:12 - Successfully processed folder: D-Day(invisible, history, mutual elements, USAEnglish, English), testid: 2
+Folder: 4'33(invisible, music, relation, NA, English)
+TestID: 1
+{
+    "response": "- First image: [traditional clock]\n- Second image: [classical music performance]\n- Relation: [time]\n- Explanation: The first image represents the concept of time, as it is a clock showing the current time. The second image also involves the concept of time, as it captures a moment during a classical music performance, which typically occurs at specific times. The connection between the two images lies in the theme of time, as both images inherently involve the measurement or experience of time in different contexts."
+}
+
+2025-07-28 15:53:24 - Successfully processed folder: 4'33(invisible, music, relation, NA, English), testid: 1
+Folder: 4'33(invisible, music, relation, NA, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [one keyword, phrase or sentence]\n- Explanation: [1-5 sentences]"
+}
+
+2025-07-28 15:53:29 - Successfully processed folder: 4'33(invisible, music, relation, NA, English), testid: 2
+Folder: 快板(visible, music, mutual elements, East Asia, Chinese)
+TestID: 1
+{
+    "response": "- First image: [traditional Chinese percussion instrument]\n- Second image: [sheet music]\n- Relation: musical\n- Explanation: Both images represent concepts related to music. The first image shows a traditional Chinese percussion instrument, which is used in musical performances, while the second image shows sheet music with musical notation, which is a written representation of music."
+}
+
+2025-07-28 15:53:37 - Successfully processed folder: 快板(visible, music, mutual elements, East Asia, Chinese), testid: 1
+Folder: 快板(visible, music, mutual elements, East Asia, Chinese)
+TestID: 2
+{
+    "response": "- First image: [musical instrument]\n- Second image: [sheet music]\n- Relation: performance\n- Explanation: They are related because the first image shows a musical instrument while the second image shows sheet music."
+}
+
+2025-07-28 15:53:43 - Successfully processed folder: 快板(visible, music, mutual elements, East Asia, Chinese), testid: 2
+Folder: 快板(visible, music, mutual elements, East Asia, Chinese)
+TestID: 3
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: musical instrument\n- Explanation: Both images are related to music, as they feature musical instruments (Chinese percussion instruments and sheet music) and the term \"allegro\" is used as a tempo marking in music."
+}
+
+2025-07-28 15:53:51 - Successfully processed folder: 快板(visible, music, mutual elements, East Asia, Chinese), testid: 3
+Folder: moonlight(invisible, music, relation, NA, English)
+TestID: 1
+{
+    "response": "- First image: [night scene]\n- Second image: [black and white portrait]\n- Relation: [black and white]\n- Explanation: Both images are black and white, creating a sense of timelessness and classic beauty. The night scene captures a serene and natural setting under the moonlight, while the portrait presents a historical figure in a formal and composed manner."
+}
+
+2025-07-28 15:54:00 - Successfully processed folder: moonlight(invisible, music, relation, NA, English), testid: 1
+Folder: moonlight(invisible, music, relation, NA, English)
+TestID: 2
+{
+    "response": "- First image: [moonlight through clouds]\n- Second image: [portrait of Beethoven]\n- Relation: [both images depict light]\n- Explanation: Both images capture the interplay of light, with the first depicting the moon's light breaking through clouds and the second showing the light of art illuminating the portrayal of Beethoven."
+}
+
+2025-07-28 15:54:08 - Successfully processed folder: moonlight(invisible, music, relation, NA, English), testid: 2
+Folder: E pluribus unum(invisible, culture, metaphor, USAEnglish, Latin)
+TestID: 1
+{
+    "response": "- First image: [dried sticks bound with rope]\n- Second image: [bird of prey with wings spread]\n- Relation: [eagle]\n- Explanation: The bird of prey is an eagle. Eagles are birds of prey that also eat fish. The dried sticks and rope can be used to make a fish trap."
+}
+
+2025-07-28 15:54:16 - Successfully processed folder: E pluribus unum(invisible, culture, metaphor, USAEnglish, Latin), testid: 1
+Folder: E pluribus unum(invisible, culture, metaphor, USAEnglish, Latin)
+TestID: 2
+{
+    "response": "- First image: [bundle of sticks]\n- Second image: [eagle with arrows]\n- Relation: [hunting]\n- Explanation: The first image is a bundle of sticks that are commonly used as kindling for a fire. The second image shows an eagle holding a bundle of arrows in its talons. Both images are connected through the concept of hunting, as the bundle of sticks can be used for starting a fire to cook prey, and the eagle is known for hunting and carrying arrows."
+}
+
+2025-07-28 15:54:28 - Successfully processed folder: E pluribus unum(invisible, culture, metaphor, USAEnglish, Latin), testid: 2
+Folder: Spinach power-up(invisible, cartoon or game, relation, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [food product]\n- Second image: [body part]\n- Relation: [healthy food]\n- Explanation: Although the two images are of completely different subjects, the man flexing his biceps is a common representation of health and fitness, and eating healthy foods such as the spinach in the first image can contribute to a healthy lifestyle."
+}
+
+2025-07-28 15:54:37 - Successfully processed folder: Spinach power-up(invisible, cartoon or game, relation, USAEnglish, English), testid: 1
+Folder: Spinach power-up(invisible, cartoon or game, relation, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: bodybuilding\n- Explanation: Both images depict individuals engaged in bodybuilding activities. The first image shows a group of bodybuilders flexing their muscles, while the second image focuses on a muscular individual showcasing his arm muscles. The common theme is the display of physical fitness and strength, which is central to both scenarios."
+}
+
+2025-07-28 15:54:47 - Successfully processed folder: Spinach power-up(invisible, cartoon or game, relation, USAEnglish, English), testid: 2
+Folder: Spinach power-up(invisible, cartoon or game, relation, USAEnglish, English)
+TestID: 3
+{
+    "response": "- First image: [food]\n- Second image: [fitness]\n- Relation: Fit lifestyle\n- Explanation: Eating healthy food like Del Monte Quality Made with Fresh Cut Leaf Spinach can help maintain a fit lifestyle."
+}
+
+2025-07-28 15:54:53 - Successfully processed folder: Spinach power-up(invisible, cartoon or game, relation, USAEnglish, English), testid: 3
+Folder: All that glitters is not gold.(invisible, culture, metaphor, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [shiny]\n- Explanation: [Both images feature shiny elements, with the first image focusing on the visual effect of the confetti and the second image highlighting the reflective surface of the gold bars. The shared concept of shine and reflection adds a sense of luxury and value to both the celebratory and financial contexts.]"
+}
+
+2025-07-28 15:55:03 - Successfully processed folder: All that glitters is not gold.(invisible, culture, metaphor, USAEnglish, English), testid: 1
+Folder: All that glitters is not gold.(invisible, culture, metaphor, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [abstract, colorful, bokeh, glitter]\n- Second image: [realistic, objects, gold]\n- Relation: [gold]\n- Explanation: While the first image uses glitter and bokeh to create a colorful and abstract effect, the second image presents a realistic depiction of gold bars, which are tangible objects. The common element between the two images is the color gold, which is present in both the glitter of the first image and the gold bars of the second. The first image is more about visual aesthetics and creativity, whereas the second image represents wealth and material value."
+}
+
+2025-07-28 15:55:17 - Successfully processed folder: All that glitters is not gold.(invisible, culture, metaphor, USAEnglish, English), testid: 2
+Folder: All that glitters is not gold.(invisible, culture, metaphor, USAEnglish, English)
+TestID: 3
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [one keyword, phrase or sentence]\n- Explanation: [1-5 sentences]"
+}
+
+2025-07-28 15:55:22 - Successfully processed folder: All that glitters is not gold.(invisible, culture, metaphor, USAEnglish, English), testid: 3
+Folder: Animal Farm(invisible, art, relation, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [portrait of a man]\n- Second image: [landscape of a barn]\n- Relation: [old]\n- Explanation: Although the two images are vastly different in content, the theme of \"old\" can be discerned due to the aged appearance of the photograph in the first image and the rustic, timeless nature of the barn scene in the second image. The first image has a grainy texture and a monochromatic color scheme, which are indicative of older photographic techniques and styles. The second image, while not as old-looking as the first, still evokes a sense of antiquity through the traditional architecture of the barn and the classic rural setting. Both images, in their own ways, suggest a connection to the past and the enduring quality of the subjects they depict."
+}
+
+2025-07-28 15:55:41 - Successfully processed folder: Animal Farm(invisible, art, relation, USAEnglish, English), testid: 1
+Folder: Animal Farm(invisible, art, relation, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [vintage photograph of a man]\n- Second image: [rural landscape with a barn]\n- Relation: [timeless]\n- Explanation: Both images evoke a sense of timelessness, with the vintage photograph capturing a moment from the past and the rural landscape suggesting a scene that could have been set in any era. The man's photograph, with its classic attire and hairstyle, and the barn, a symbol of rural life, both contribute to a feeling of continuity and the enduring nature of certain aspects of human experience."
+}
+
+2025-07-28 15:55:53 - Successfully processed folder: Animal Farm(invisible, art, relation, USAEnglish, English), testid: 2
+Folder: 野草(invisible, art, relation, East Asia, Chinese)
+TestID: 1
+{
+    "response": "- First image: [black and white portrait of a man with a serious expression]\n- Second image: [close-up of a green plant with small leaves and a budding flower]\n- Relation: [traditional Chinese attire]\n- Explanation: The man in the first image is wearing a traditional Chinese turtleneck, which is a notable element in the photograph. This attire is distinct and provides a cultural context to the image."
+}
+
+2025-07-28 15:56:04 - Successfully processed folder: 野草(invisible, art, relation, East Asia, Chinese), testid: 1
+Folder: 野草(invisible, art, relation, East Asia, Chinese)
+TestID: 2
+{
+    "response": "- First image: [portrait of a man]\n- Second image: [grass field]\n- Relation: black and white\n- Explanation: Both images are in black and white."
+}
+
+2025-07-28 15:56:09 - Successfully processed folder: 野草(invisible, art, relation, East Asia, Chinese), testid: 2
+Folder: The Pit and the Pendulum(invisible, art, metaphor, USAEnglish, English)
+TestID: 1
+{
+    "response": "- First image: [a deep hole in the ground]\n- Second image: [a diagram of a pendulum]\n- Relation: [similar in shape]\n- Explanation: Although the pictures are very different in many ways they are similar in that they are both shaped like a deep hole."
+}
+
+2025-07-28 15:56:16 - Successfully processed folder: The Pit and the Pendulum(invisible, art, metaphor, USAEnglish, English), testid: 1
+Folder: The Pit and the Pendulum(invisible, art, metaphor, USAEnglish, English)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: clock\n- Explanation: Both images have a clock, but in different settings and contexts. The first image shows a hole in the ground where a clock might be placed, while the second image features an ornate wall clock with a pendulum."
+}
+
+2025-07-28 15:56:24 - Successfully processed folder: The Pit and the Pendulum(invisible, art, metaphor, USAEnglish, English), testid: 2
+Folder: Siempre imaginé que el Paraíso sería algún tipo de biblioteca(invisible, art, metaphor, USAEnglish, Spanish)
+TestID: 1
+{
+    "response": "- First image: [heavenly landscape]\n- Second image: [academic setting]\n- Relation: [heavenly]\n- Explanation: The first image depicts a heavenly landscape with a grand staircase leading to a palace under a bright sun, symbolizing a spiritual or divine ascent. The second image shows a person in a library, pointing at a book, which represents an academic or intellectual pursuit. The common theme between the two images is the concept of 'heavenly,' with the first image representing a heavenly or divine realm and the second image representing a place of learning and enlightenment. The staircase in the first image can be seen as a path to higher knowledge or wisdom, aligning with the library setting in the second image where one seeks to acquire knowledge. Both images evoke a sense of aspiration and the pursuit of something greater, whether it be spiritual enlightenment or academic achievement."
+}
+
+2025-07-28 15:56:44 - Successfully processed folder: Siempre imaginé que el Paraíso sería algún tipo de biblioteca(invisible, art, metaphor, USAEnglish, Spanish), testid: 1
+Folder: Siempre imaginé que el Paraíso sería algún tipo de biblioteca(invisible, art, metaphor, USAEnglish, Spanish)
+TestID: 2
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [similarity]\n- Explanation: [1-5 sentences]"
+}
+
+2025-07-28 15:56:48 - Successfully processed folder: Siempre imaginé que el Paraíso sería algún tipo de biblioteca(invisible, art, metaphor, USAEnglish, Spanish), testid: 2
+Folder: Siempre imaginé que el Paraíso sería algún tipo de biblioteca(invisible, art, metaphor, USAEnglish, Spanish)
+TestID: 3
+{
+    "response": "- First image: [image concept]\n- Second image: [image concept]\n- Relation: [quiet]\n- Explanation: Both images depict a state of tranquility and silence in their respective environments. The first image shows a peaceful beach scene with no people, suggesting a quiet and serene atmosphere. Similarly, the second image shows a library where people are engaged in quiet activities, such as studying or reading, which is typical of a quiet environment."
+}
+
+2025-07-28 15:56:58 - Successfully processed folder: Siempre imaginé que el Paraíso sería algún tipo de biblioteca(invisible, art, metaphor, USAEnglish, Spanish), testid: 3
+2025-07-28 15:56:58 - Processing complete. Results saved to ./moonshotai/Kimi-VL-A3B-Instruct_multi_results.json
